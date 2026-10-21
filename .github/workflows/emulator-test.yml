@@ -1,0 +1,74 @@
+name: emulator-test
+on:
+  push:
+    branches: [emulator-tests]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: emulator-test
+  cancel-in-progress: true
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # API 30 x86_64 images translate 32-bit ARM; API 34/35 check the install block and loading
+          - { api: 30, target: default, tag: api30 }
+          - { api: 34, target: google_apis, tag: api34 }
+          - { api: 35, target: google_apis, tag: api35 }
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Run ${{ matrix.tag }}
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: ${{ matrix.api }}
+          arch: x86_64
+          target: ${{ matrix.target }}
+          profile: pixel_4
+          cores: 4
+          ram-size: 4096M
+          disk-size: 6000M
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -no-snapshot
+          disable-animations: true
+          emulator-boot-timeout: 900
+          script: timeout 1500 bash tests/run.sh || true
+      - name: Build video from frames
+        if: always()
+        run: |
+          mkdir -p out/frames
+          if ls out/frames/*.png >/dev/null 2>&1; then
+            sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || true
+            ffmpeg -loglevel error -framerate 2 -pattern_type glob -i 'out/frames/*.png' -vf "scale=1140:-2,format=yuv420p" -c:v libx264 -crf 30 out/video.mp4 || true
+          fi
+          rm -rf out/frames out/.stop
+          ls -la out
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ${{ matrix.tag }}
+          path: out
+  publish:
+    needs: run
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: out
+      - name: Push results to the emulator-results branch
+        run: |
+          cd out
+          echo "run ${{ github.run_number }} sha ${{ github.sha }} $(date -u)" > RUN.txt
+          git init -q -b emulator-results
+          git config user.name "emulator-bot"; git config user.email "emulator-bot@users.noreply.github.com"
+          git add -A && git commit -qm "results run ${{ github.run_number }}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" emulator-results
