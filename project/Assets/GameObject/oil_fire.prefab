@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  - 114: {fileID: 11405782}
+  - 114: {fileID: 11461526}
+  - 114: {fileID: 11454010}
+  m_Layer: 0
+  m_Name: oil_fire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.339461, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b67cbba7ed8b6750834cb0d5b01fb2, type: 3}
+  m_Name:
+  _mass: 1
+  _blastRadius: 0
+  _detonateAfterInterval: 0.2
+  _detonateWithinRange: 0
+  _detonateOnContact: 0
+  _detonateOnPlayerContact: 1
+  _stick: 0
+  _crawl: 0
+  _crawlSpeed: 2
+  _concussionRadius: 5
+  _concussionImpulse: 0
+  _concussionKnockUp: 0
+  _concussionUpThreshold: 1
+  _concussionHorizontalOnly: 0
+  _alignToFlight: 0
+  _damageMax: 0
+  _damageMin: 0
+  _shotSpeedMin: 0
+  _shotSpeedMax: 85
+  _gravityScale: 1.3
+  _restitution: 0.1
+  _linearDamping: 0
+  _postCollisionDampening: 0.4
+  _width: 0.5
+  _height: 0.5
+  _ePrim: 0
+  _shakeMagnitude: 2
+  _shakeCycles: 2
+  _reactionRadius: 60
+  _reactionCheckStartTime: 1
+  _shotCount: 1
+  _firingArc: 0
+  _shotInterval: 0
+  _displayConcussionDebug: 0
+  _explosionObject: {fileID: 0}
+  _contactObject: {fileID: 0}
+  _muzzleFlashObject: {fileID: 0}
+  _muzzleFlashOffset: {x: 0, y: 0}
+  _secondaryProjectile: {fileID: 0}
+  _secondaryShotArc: 0
+  _secondaryShotLaunchPower: 0
+  _secondaryShotCount: 1
+  _secondaryShotUseDir: 0
+  _teleport: 0
+  _postTriggerDetonationInterval: 0
+  _powerCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0.935122
+      outSlope: 0.935122
+      tangentMode: 0
+    - time: 0.95960474
+      value: 0.8973475
+      inSlope: 0.9362413
+      outSlope: 0.9362413
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 2.5412014
+      outSlope: 2.5412014
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  _activateOwnerCollisionAfterInterval: 0.1
+  _damagePerInterval: 0
+  _intervalDamageRadius: 0
+  _pointsMin: 250
+  _pointsMax: 750
+  _activationDelay: 0
+  _stickToPlayer: 0
+  _residualObject: {fileID: 147589, guid: eb8a3800496b33e4a9836b49d5c9bd58, type: 2}
+  _statusEffect:
+    _eType: 0
+    _eVisualType: 0
+    _amount: 0
+    _applicationInterval: 0
+    _lifetime: 0
+  _noOwnerDamage: 0
+  _triggerAudio: {fileID: 0}
+  _impactAudio: {fileID: 0}
+--- !u!114 &11405782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64690d21dbf5ba222f2f1842e3ebcc56, type: 3}
+  m_Name:
+  m_PlayAtStart: 1
+  m_AudioEvent: {fileID: 11409266, guid: 5b7979d5651dedd4296b85c736e28f66, type: 2}
+  m_PlayMode: 3
+  m_InitialVolumeDB: 0
+  m_InitialPitchST: 0
+--- !u!114 &11461526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e197fc04f904171e53f290394a1048b5, type: 3}
+  m_Name:
+  _impactAudioEvent: {fileID: 11409266, guid: 877e0a65ae45b594c9e1c9060004664c, type: 2}
+  _impactAudioMinVel: 3
+  _impactAudioMaxVel: 10
+  _scalarVolumeResponse:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11454010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64690d21dbf5ba222f2f1842e3ebcc56, type: 3}
+  m_Name:
+  m_PlayAtStart: 1
+  m_AudioEvent: {fileID: 11409266, guid: 37266b23e1efc324ba2275beaa64611f, type: 2}
+  m_PlayMode: 0
+  m_InitialVolumeDB: 0
+  m_InitialPitchST: 0
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

@@ -1,0 +1,490 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: sequence_tutorial_levelup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2db22cfa3191b54769b0044a4e3c42d, type: 3}
+  m_Name:
+  NextId: 55
+  Nodes:
+  - nodeType: 1
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 256
+      width: 138
+      height: 109
+    id: 1
+    runtimeTypeName: SequenceEvent_SequenceStarted
+    properties:
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: On Level Up Close
+    rect:
+      serializedVersion: 2
+      x: 45
+      y: 502
+      width: 125
+      height: 109
+    id: 6
+    runtimeTypeName: SequenceEvent_OnButtonClick
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: LevelUpUIClose
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 425
+      width: 76
+      height: 107
+    id: 9
+    runtimeTypeName: SequenceCondition_Gate
+    properties:
+    - type: 5
+      name: StartOpen
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: CloseImmediate
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Kill Sequence
+    rect:
+      serializedVersion: 2
+      x: 932
+      y: 392
+      width: 120
+      height: 61
+    id: 33
+    runtimeTypeName: SequenceAction_KillSequence
+    properties: []
+    propertyArrays: []
+  - nodeType: 2
+    comment: Trigger next sequence
+    rect:
+      serializedVersion: 2
+      x: 535
+      y: 427
+      width: 98
+      height: 74
+    id: 34
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 2
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_levelupfinished
+    rect:
+      serializedVersion: 2
+      x: 568
+      y: 547
+      width: 89.07591
+      height: 89.07591
+    id: 35
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_levelupfinished
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Disable Buttons on Level Up
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 227
+      width: 159
+      height: 61
+    id: 40
+    runtimeTypeName: SequenceAction_EnableScreenInput
+    properties:
+    - type: 5
+      name: enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: screenName
+      intValue: 0
+      floatValue: 0
+      stringValue: LevelUpUI
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Enable arrow on X
+    rect:
+      serializedVersion: 2
+      x: 755
+      y: 225
+      width: 140
+      height: 61
+    id: 44
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: Tutorial_LevelUp
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Tutorial_LevelUp
+    rect:
+      serializedVersion: 2
+      x: 354
+      y: 428
+      width: 140
+      height: 61
+    id: 45
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: Tutorial_LevelUp
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Close Level up UI panel
+    rect:
+      serializedVersion: 2
+      x: 748
+      y: 404
+      width: 126
+      height: 61
+    id: 46
+    runtimeTypeName: SequenceAction_CallScreenFn
+    properties:
+    - type: 3
+      name: screenName
+      intValue: 0
+      floatValue: 0
+      stringValue: LevelUpUI
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: functionName
+      intValue: 0
+      floatValue: 0
+      stringValue: Close
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: parameter
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 991
+      y: 481
+      width: 137
+      height: 61
+    id: 50
+    runtimeTypeName: SequenceAction_TelemetryEvent
+    properties:
+    - type: 3
+      name: name
+      intValue: 0
+      floatValue: 0
+      stringValue: leveledup
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: category
+      intValue: 0
+      floatValue: 0
+      stringValue: tut
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: flush
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 496
+      y: 197
+      width: 188
+      height: 97
+    id: 53
+    runtimeTypeName: SequenceAction_Timer
+    properties:
+    - type: 5
+      name: OneShot
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: .5 Seconds
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 324
+      width: 89.07591
+      height: 89.07591
+    id: 54
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0.5
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  Links:
+  - outId: 6
+    outName: Out
+    inId: 9
+    inName: Check
+  - outId: 1
+    outName: Out
+    inId: 9
+    inName: Open
+  - outId: 35
+    outName: Value
+    inId: 34
+    inName: Target
+  - outId: 9
+    outName: Out
+    inId: 45
+    inName: Process
+  - outId: 46
+    outName: Finished
+    inId: 33
+    inName: Destroy
+  - outId: 45
+    outName: Finished
+    inId: 34
+    inName: Set
+  - outId: 46
+    outName: Finished
+    inId: 50
+    inName: Record
+  - outId: 1
+    outName: Out
+    inId: 40
+    inName: Process
+  - outId: 34
+    outName: Finished
+    inId: 46
+    inName: Process
+  - outId: 40
+    outName: Finished
+    inId: 53
+    inName: Start
+  - outId: 54
+    outName: Value
+    inId: 53
+    inName: Interval
+  - outId: 53
+    outName: OnTimer
+    inId: 44
+    inName: Process
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

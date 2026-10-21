@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: mechbot_legs_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b80866749e6ddd84468fe9aa8e26d0, type: 3}
+  m_Name:
+  Category: 2
+  TextureAtlas: {fileID: 11400000, guid: 46381ede7520dab48972e24583f7f82b, type: 2}
+  FaceAtlas: {fileID: 0}
+  inGameMaterial: {fileID: 2100000, guid: 775923b313e31694490dc4ce0c0bf232, type: 2}
+  uiMaterial: {fileID: 2100000, guid: 275220bffe2926445b4481ff7d616ea5, type: 2}
+  inGameFaceMaterial: {fileID: 0}
+  uiFaceMaterial: {fileID: 0}
+  CAC_UI_SpriteName: mechbot_nickel_leg
+  CAC_UI_SpritePivot: {x: 0, y: 0}
+  FriendlyName: Flimsy Mechbot Legs
+  Description: You can run, but you can't hide.  No, wait.  With these legs you can run and jump...better!
+  Bucks: 45
+  Coins: 52000
+  UnlockLevel: 0
+  IsDefault: 0
+  IsHidden: 1
+  IsHiddenUnderAge: 0
+  IsRemove: 0
+  IsNew: 0
+  IsChampionshipBoss: 0
+  IsEpic: 0
+  XP: 25
+  numUpgradeStars: 3
+  OverideSortOrder: 20
+  Attributes: {fileID: 11409266, guid: 5ef668ecf898c544fabf812167232562, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

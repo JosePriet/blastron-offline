@@ -1,0 +1,7204 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: sequence_tutorial_firstdeathmatch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2db22cfa3191b54769b0044a4e3c42d, type: 3}
+  m_Name:
+  NextId: 389
+  Nodes:
+  - nodeType: 1
+    comment: CheckforPlayersTurn
+    rect:
+      serializedVersion: 2
+      x: -1
+      y: 1170
+      width: 124
+      height: 109
+    id: 62
+    runtimeTypeName: SequenceEvent_BeginTurn
+    properties:
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 75
+      y: 1354
+      width: 95.98837
+      height: 95.98837
+    id: 63
+    runtimeTypeName: SequenceVariable_PlayerId
+    properties: []
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 1132
+      width: 98
+      height: 97
+    id: 65
+    runtimeTypeName: SequenceCondition_IsHuman
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: How many times have we seen this?
+    rect:
+      serializedVersion: 2
+      x: 281
+      y: 1119
+      width: 98
+      height: 189
+    id: 66
+    runtimeTypeName: SequenceCondition_Equality
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_introdmpopup
+    rect:
+      serializedVersion: 2
+      x: 233
+      y: 1429
+      width: 89.07591
+      height: 89.07591
+    id: 67
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_introdmpopup
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 1
+    rect:
+      serializedVersion: 2
+      x: 452
+      y: 1436
+      width: 89.07591
+      height: 89.07591
+    id: 68
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 1
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Set to one
+    rect:
+      serializedVersion: 2
+      x: 445
+      y: 1298
+      width: 98
+      height: 74
+    id: 70
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: set to zero
+    rect:
+      serializedVersion: 2
+      x: 15
+      y: 162
+      width: 145
+      height: 109
+    id: 77
+    runtimeTypeName: SequenceEvent_SequenceStarted
+    properties:
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Change DM state to 1
+    rect:
+      serializedVersion: 2
+      x: 1963
+      y: 823
+      width: 98
+      height: 74
+    id: 83
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 1935
+      y: 951
+      width: 89.07591
+      height: 89.07591
+    id: 84
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: ShowArrowOnInventory Select
+    rect:
+      serializedVersion: 2
+      x: 2869
+      y: 102
+      width: 98
+      height: 189
+    id: 85
+    runtimeTypeName: SequenceCondition_Equality
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 2786
+      y: 319
+      width: 89.07591
+      height: 89.07591
+    id: 88
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 1
+    rect:
+      serializedVersion: 2
+      x: 2955
+      y: 326
+      width: 89.07591
+      height: 89.07591
+    id: 89
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 1
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 3026
+      y: 90
+      width: 140
+      height: 61
+    id: 90
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_inventory_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: button_inventory_arrow
+    rect:
+      serializedVersion: 2
+      x: 1301
+      y: 1154
+      width: 132
+      height: 109
+    id: 92
+    runtimeTypeName: SequenceEvent_OnButtonClick
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_inventory_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1479
+      y: 1156
+      width: 97
+      height: 97
+    id: 93
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 1975
+      y: 1297
+      width: 89.07591
+      height: 89.07591
+    id: 94
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1691
+      y: 1131
+      width: 140
+      height: 61
+    id: 95
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_inventory_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Change DM state to 2
+    rect:
+      serializedVersion: 2
+      x: 1970
+      y: 1173
+      width: 98
+      height: 74
+    id: 96
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 2
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: ShowArrowOnRightArrow
+    rect:
+      serializedVersion: 2
+      x: 3236
+      y: 70
+      width: 98
+      height: 189
+    id: 97
+    runtimeTypeName: SequenceCondition_Equality
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 3257
+      y: 404
+      width: 89.07591
+      height: 89.07591
+    id: 98
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 2
+    rect:
+      serializedVersion: 2
+      x: 3325
+      y: 298
+      width: 89.07591
+      height: 89.07591
+    id: 99
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 2
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutorial_rightarrow_select
+    rect:
+      serializedVersion: 2
+      x: 3464
+      y: 21
+      width: 147
+      height: 61
+    id: 100
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutorial_rightarrow_select
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: tutorial_rightarrow_select
+    rect:
+      serializedVersion: 2
+      x: 2166
+      y: 1135
+      width: 139
+      height: 109
+    id: 101
+    runtimeTypeName: SequenceEvent_OnButtonClick
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutorial_rightarrow_select
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: 2
+    rect:
+      serializedVersion: 2
+      x: 2328
+      y: 1147
+      width: 97
+      height: 97
+    id: 102
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 2
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 2
+    comment: tutorial_rightarrow_select
+    rect:
+      serializedVersion: 2
+      x: 2459
+      y: 1099
+      width: 147
+      height: 61
+    id: 103
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutorial_rightarrow_select
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Change DM state to 3
+    rect:
+      serializedVersion: 2
+      x: 2647
+      y: 1108
+      width: 105
+      height: 74
+    id: 104
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 3
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 2570
+      y: 1270
+      width: 95.98837
+      height: 95.98837
+    id: 105
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: Elephant Gun
+    rect:
+      serializedVersion: 2
+      x: 1227
+      y: 1509
+      width: 139
+      height: 109
+    id: 112
+    runtimeTypeName: SequenceEvent_OnButtonClick
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: Elephant Gun
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: ShowArrowOnInventory Select
+    rect:
+      serializedVersion: 2
+      x: 3668
+      y: 77
+      width: 98
+      height: 189
+    id: 113
+    runtimeTypeName: SequenceCondition_Equality
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: 3
+    rect:
+      serializedVersion: 2
+      x: 1392
+      y: 1524
+      width: 97
+      height: 120
+    id: 114
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 3
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[1]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 1888
+      y: 1718
+      width: 95.98837
+      height: 95.98837
+    id: 115
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Elephant Gun
+    rect:
+      serializedVersion: 2
+      x: 1947
+      y: 1409
+      width: 147
+      height: 61
+    id: 116
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: Elephant Gun
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Change DM state to 4
+    rect:
+      serializedVersion: 2
+      x: 2235
+      y: 1515
+      width: 105
+      height: 74
+    id: 117
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 4
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 3587
+      y: 379
+      width: 95.98837
+      height: 95.98837
+    id: 118
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 3
+    rect:
+      serializedVersion: 2
+      x: 3784
+      y: 391
+      width: 95.98837
+      height: 95.98837
+    id: 119
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 3
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Elephant Gun
+    rect:
+      serializedVersion: 2
+      x: 3985
+      y: 10
+      width: 147
+      height: 61
+    id: 120
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: Elephant Gun
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Set to zero
+    rect:
+      serializedVersion: 2
+      x: 447
+      y: 22
+      width: 105
+      height: 74
+    id: 122
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm1
+    rect:
+      serializedVersion: 2
+      x: 1392
+      y: 773
+      width: 207
+      height: 61
+    id: 125
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm1
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm2
+    rect:
+      serializedVersion: 2
+      x: 3415
+      y: 113
+      width: 207
+      height: 61
+    id: 127
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm2
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm3
+    rect:
+      serializedVersion: 2
+      x: 3930
+      y: 96
+      width: 207
+      height: 61
+    id: 129
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm3
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm4
+    rect:
+      serializedVersion: 2
+      x: 1855
+      y: 1490
+      width: 207
+      height: 61
+    id: 131
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm4
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: on damage taken
+    rect:
+      serializedVersion: 2
+      x: 27
+      y: 2032
+      width: 195
+      height: 109
+    id: 133
+    runtimeTypeName: SequenceEvent_DamageTaken
+    properties:
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 65
+    rect:
+      serializedVersion: 2
+      x: 290.38354
+      y: 2228
+      width: 95.98837
+      height: 95.98837
+    id: 134
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 65
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 103.383545
+      y: 2234
+      width: 102.91394
+      height: 102.91394
+    id: 135
+    runtimeTypeName: SequenceVariable_PlayerId
+    properties: []
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 2047
+      width: 105
+      height: 97
+    id: 136
+    runtimeTypeName: SequenceCondition_IsHuman
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Set to zero
+    rect:
+      serializedVersion: 2
+      x: 303
+      y: 33
+      width: 105
+      height: 74
+    id: 139
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_closetutpopup
+    rect:
+      serializedVersion: 2
+      x: 318
+      y: 141
+      width: 95.98837
+      height: 95.98837
+    id: 140
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_closetutpopup
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 813
+      y: 799
+      width: 97
+      height: 120
+    id: 141
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[1]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 4
+    comment: s_closetutpopup
+    rect:
+      serializedVersion: 2
+      x: 853
+      y: 956
+      width: 95.98837
+      height: 95.98837
+    id: 142
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_closetutpopup
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: 1
+    rect:
+      serializedVersion: 2
+      x: 995
+      y: 774
+      width: 105
+      height: 74
+    id: 144
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 197
+      y: 1719
+      width: 97
+      height: 120
+    id: 146
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[1]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 4
+    comment: s_closetutpopup
+    rect:
+      serializedVersion: 2
+      x: 613
+      y: 1909
+      width: 95.98837
+      height: 95.98837
+    id: 147
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_closetutpopup
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm1
+    rect:
+      serializedVersion: 2
+      x: 563
+      y: 1789
+      width: 207
+      height: 61
+    id: 148
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm1
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Set to one
+    rect:
+      serializedVersion: 2
+      x: 858
+      y: 1765
+      width: 105
+      height: 74
+    id: 150
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: button_move_arrow
+    rect:
+      serializedVersion: 2
+      x: 902
+      y: 1308
+      width: 147
+      height: 61
+    id: 152
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_move_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: HIDE THE ARROW
+    rect:
+      serializedVersion: 2
+      x: 371
+      y: 1618
+      width: 147
+      height: 61
+    id: 153
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_move_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: Check for Big ass Bombs
+    rect:
+      serializedVersion: 2
+      x: 397
+      y: 2052
+      width: 97
+      height: 97
+    id: 154
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 5
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 463
+      y: 2266
+      width: 95.98837
+      height: 95.98837
+    id: 155
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: set to zero
+    rect:
+      serializedVersion: 2
+      x: 1071
+      y: 274
+      width: 105
+      height: 74
+    id: 167
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 1119
+      y: 129
+      width: 95.98837
+      height: 95.98837
+    id: 168
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Set to Six
+    rect:
+      serializedVersion: 2
+      x: 533
+      y: 2077
+      width: 105
+      height: 74
+    id: 169
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 6
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 1740
+      width: 188
+      height: 97
+    id: 175
+    runtimeTypeName: SequenceAction_Timer
+    properties:
+    - type: 5
+      name: OneShot
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: .5
+    rect:
+      serializedVersion: 2
+      x: 237.38354
+      y: 1876
+      width: 95.98837
+      height: 95.98837
+    id: 176
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0.5
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 2820
+      y: 1091
+      width: 188
+      height: 97
+    id: 178
+    runtimeTypeName: SequenceAction_Timer
+    properties:
+    - type: 5
+      name: OneShot
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 5
+    rect:
+      serializedVersion: 2
+      x: 2866
+      y: 1237
+      width: 95.98837
+      height: 95.98837
+    id: 179
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 5
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm3
+    rect:
+      serializedVersion: 2
+      x: 3074
+      y: 1110
+      width: 207
+      height: 61
+    id: 180
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm3
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: button_move_arrow
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1776
+      width: 156
+      height: 109
+    id: 183
+    runtimeTypeName: SequenceEvent_OnButtonPressed
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_move_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 861
+      y: 2070
+      width: 147
+      height: 61
+    id: 184
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: arrow_tutorial_boost
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: 'Check if player has finished BAB '
+    rect:
+      serializedVersion: 2
+      x: 1315
+      y: 1882
+      width: 97
+      height: 97
+    id: 187
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 6
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 1500
+      y: 2019
+      width: 95.98837
+      height: 95.98837
+    id: 188
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Set to seven
+    rect:
+      serializedVersion: 2
+      x: 2047
+      y: 1924
+      width: 105
+      height: 74
+    id: 189
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 7
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm5
+    rect:
+      serializedVersion: 2
+      x: 1714
+      y: 1932
+      width: 207
+      height: 61
+    id: 190
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm5
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1623
+      y: 2170
+      width: 188
+      height: 97
+    id: 198
+    runtimeTypeName: SequenceAction_Timer
+    properties:
+    - type: 5
+      name: OneShot
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 4
+    rect:
+      serializedVersion: 2
+      x: 1580
+      y: 2289
+      width: 95.98837
+      height: 95.98837
+    id: 199
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 4
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm6
+    rect:
+      serializedVersion: 2
+      x: 1884
+      y: 2138
+      width: 207
+      height: 61
+    id: 200
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm6
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Turn off arrow on boost
+    rect:
+      serializedVersion: 2
+      x: 1543
+      y: 1801
+      width: 147
+      height: 61
+    id: 201
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: arrow_tutorial_boost
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: HIDE THE ARROW
+    rect:
+      serializedVersion: 2
+      x: 1162
+      y: 780
+      width: 147
+      height: 61
+    id: 202
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_move_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: One minute left
+    rect:
+      serializedVersion: 2
+      x: 1266
+      y: 103
+      width: 188
+      height: 97
+    id: 203
+    runtimeTypeName: SequenceAction_Timer
+    properties:
+    - type: 5
+      name: OneShot
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: End of Game
+    rect:
+      serializedVersion: 2
+      x: 309
+      y: 399
+      width: 188
+      height: 97
+    id: 204
+    runtimeTypeName: SequenceAction_Timer
+    properties:
+    - type: 5
+      name: OneShot
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 110
+    rect:
+      serializedVersion: 2
+      x: 1322
+      y: 214
+      width: 95.98837
+      height: 95.98837
+    id: 205
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 110
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: Check for Big ass Bombs
+    rect:
+      serializedVersion: 2
+      x: 1974
+      y: 116
+      width: 97
+      height: 97
+    id: 206
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 8
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 2288
+      y: 255
+      width: 95.98837
+      height: 95.98837
+    id: 207
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Ten Seconds
+    rect:
+      serializedVersion: 2
+      x: 1580
+      y: 71
+      width: 188
+      height: 97
+    id: 208
+    runtimeTypeName: SequenceAction_Timer
+    properties:
+    - type: 5
+      name: OneShot
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 10
+    rect:
+      serializedVersion: 2
+      x: 1734
+      y: 220
+      width: 95.98837
+      height: 95.98837
+    id: 209
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 10
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Set to Eight
+    rect:
+      serializedVersion: 2
+      x: 2138
+      y: 2156
+      width: 105
+      height: 74
+    id: 210
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 8
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Six seconds
+    rect:
+      serializedVersion: 2
+      x: 2080
+      y: 114
+      width: 188
+      height: 97
+    id: 212
+    runtimeTypeName: SequenceAction_Timer
+    properties:
+    - type: 5
+      name: OneShot
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 4.5
+    rect:
+      serializedVersion: 2
+      x: 2604
+      y: 216
+      width: 95.98837
+      height: 95.98837
+    id: 213
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 4.5
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm8
+    rect:
+      serializedVersion: 2
+      x: 2364
+      y: 106
+      width: 207
+      height: 61
+    id: 214
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm8
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 180
+    rect:
+      serializedVersion: 2
+      x: 363
+      y: 525
+      width: 95.98837
+      height: 95.98837
+    id: 217
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 180
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Mark mp tutorial as done
+    rect:
+      serializedVersion: 2
+      x: 1707.3491
+      y: 489
+      width: 159
+      height: 61
+    id: 218
+    runtimeTypeName: SequenceAction_MarkTutorialDone
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: mp
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: -433.62427
+      y: 633
+      width: 127
+      height: 61
+    id: 219
+    runtimeTypeName: SequenceAction_KillSequence
+    properties: []
+    propertyArrays: []
+  - nodeType: 3
+    comment: Show arrow on boost button
+    rect:
+      serializedVersion: 2
+      x: 1156
+      y: 2149
+      width: 98
+      height: 189
+    id: 220
+    runtimeTypeName: SequenceCondition_Equality
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: arrow_tutorial_boost
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 1873
+      width: 139
+      height: 109
+    id: 221
+    runtimeTypeName: SequenceEvent_OnButtonClick
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: arrow_tutorial_boost
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 1541
+      y: 2421
+      width: 95.98837
+      height: 95.98837
+    id: 222
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 7
+    rect:
+      serializedVersion: 2
+      x: 1111
+      y: 2396
+      width: 95.98837
+      height: 95.98837
+    id: 223
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 7
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_introdmpopup
+    rect:
+      serializedVersion: 2
+      x: 468
+      y: 147
+      width: 95.98837
+      height: 95.98837
+    id: 224
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_introdmpopup
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: tutorial_exit_yes
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 657
+      width: 139
+      height: 109
+    id: 226
+    runtimeTypeName: SequenceEvent_OnButtonClick
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutorial_exit_yes
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Mark mp tutorial as done if player exits
+    rect:
+      serializedVersion: 2
+      x: 214.34912
+      y: 673
+      width: 159
+      height: 61
+    id: 228
+    runtimeTypeName: SequenceAction_MarkTutorialDone
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: mp
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: Wait ten seconds till boost tutorial can be triggered
+    rect:
+      serializedVersion: 2
+      x: 134
+      y: 2390
+      width: 98
+      height: 189
+    id: 234
+    runtimeTypeName: SequenceCondition_Equality
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: Look for 4
+    rect:
+      serializedVersion: 2
+      x: 68.383545
+      y: 2653
+      width: 95.98837
+      height: 95.98837
+    id: 235
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 4
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 279
+      y: 2693
+      width: 95.98837
+      height: 95.98837
+    id: 237
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 281
+      y: 2399
+      width: 188
+      height: 97
+    id: 238
+    runtimeTypeName: SequenceAction_Timer
+    properties:
+    - type: 5
+      name: OneShot
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 20
+    rect:
+      serializedVersion: 2
+      x: 323.38354
+      y: 2549
+      width: 95.98837
+      height: 95.98837
+    id: 239
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 20
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Set to five
+    rect:
+      serializedVersion: 2
+      x: 520
+      y: 2456
+      width: 105
+      height: 74
+    id: 240
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 5
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 553
+      y: 460
+      width: 144
+      height: 61
+    id: 241
+    runtimeTypeName: SequenceAction_TelemetryEvent
+    properties:
+    - type: 3
+      name: name
+      intValue: 0
+      floatValue: 0
+      stringValue: match_finished
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: category
+      intValue: 0
+      floatValue: 0
+      stringValue: tut_dm
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: flush
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 744
+      width: 144
+      height: 61
+    id: 242
+    runtimeTypeName: SequenceAction_TelemetryEvent
+    properties:
+    - type: 3
+      name: name
+      intValue: 0
+      floatValue: 0
+      stringValue: quit_match
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: category
+      intValue: 0
+      floatValue: 0
+      stringValue: tut_dm
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: flush
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1503
+      y: 260
+      width: 144
+      height: 61
+    id: 243
+    runtimeTypeName: SequenceAction_TelemetryEvent
+    properties:
+    - type: 3
+      name: name
+      intValue: 0
+      floatValue: 0
+      stringValue: one_minuteleft
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: category
+      intValue: 0
+      floatValue: 0
+      stringValue: tut_dm
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: flush
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 827
+      y: 696
+      width: 144
+      height: 61
+    id: 245
+    runtimeTypeName: SequenceAction_TelemetryEvent
+    properties:
+    - type: 3
+      name: name
+      intValue: 0
+      floatValue: 0
+      stringValue: bots_firstturn
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: category
+      intValue: 0
+      floatValue: 0
+      stringValue: tut_dm
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: flush
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1680
+      y: 1223
+      width: 144
+      height: 61
+    id: 246
+    runtimeTypeName: SequenceAction_TelemetryEvent
+    properties:
+    - type: 3
+      name: name
+      intValue: 0
+      floatValue: 0
+      stringValue: opened_weapons
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: category
+      intValue: 0
+      floatValue: 0
+      stringValue: tut_dm
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: flush
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1800
+      y: 1586
+      width: 144
+      height: 61
+    id: 247
+    runtimeTypeName: SequenceAction_TelemetryEvent
+    properties:
+    - type: 3
+      name: name
+      intValue: 0
+      floatValue: 0
+      stringValue: selected_nuke
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: category
+      intValue: 0
+      floatValue: 0
+      stringValue: tut_dm
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: flush
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1492
+      y: 1940
+      width: 144
+      height: 61
+    id: 249
+    runtimeTypeName: SequenceAction_TelemetryEvent
+    properties:
+    - type: 3
+      name: name
+      intValue: 0
+      floatValue: 0
+      stringValue: opened_boost
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: category
+      intValue: 0
+      floatValue: 0
+      stringValue: tut_dm
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: flush
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1948
+      y: 2250
+      width: 144
+      height: 61
+    id: 250
+    runtimeTypeName: SequenceAction_TelemetryEvent
+    properties:
+    - type: 3
+      name: name
+      intValue: 0
+      floatValue: 0
+      stringValue: selecteded_boost
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: category
+      intValue: 0
+      floatValue: 0
+      stringValue: tut_dm
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: flush
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tut_hook_options1
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 436
+      width: 168
+      height: 61
+    id: 253
+    runtimeTypeName: SequenceAction_EnableTutorialHook
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tut_hook_options1
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: HideItem
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tut_hook_options2
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 527
+      width: 168
+      height: 61
+    id: 254
+    runtimeTypeName: SequenceAction_EnableTutorialHook
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tut_hook_options2
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: HideItem
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm2
+    rect:
+      serializedVersion: 2
+      x: 848
+      y: 417
+      width: 207
+      height: 61
+    id: 256
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm2
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm3
+    rect:
+      serializedVersion: 2
+      x: 1108
+      y: 419
+      width: 207
+      height: 61
+    id: 257
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm3
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm4
+    rect:
+      serializedVersion: 2
+      x: 846
+      y: 506
+      width: 207
+      height: 61
+    id: 258
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm4
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm5
+    rect:
+      serializedVersion: 2
+      x: 1105
+      y: 559
+      width: 207
+      height: 61
+    id: 259
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm5
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm6
+    rect:
+      serializedVersion: 2
+      x: 1421
+      y: 421
+      width: 207
+      height: 61
+    id: 260
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm6
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm8
+    rect:
+      serializedVersion: 2
+      x: 1417
+      y: 497
+      width: 207
+      height: 61
+    id: 262
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm8
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: set to nine
+    rect:
+      serializedVersion: 2
+      x: 2481
+      y: 2
+      width: 105
+      height: 74
+    id: 265
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 9
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: set to 10
+    rect:
+      serializedVersion: 2
+      x: 2678
+      y: 98
+      width: 105
+      height: 74
+    id: 266
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 10
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1933.3757
+      y: 460
+      width: 127
+      height: 61
+    id: 270
+    runtimeTypeName: SequenceAction_KillSequence
+    properties: []
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm1
+    rect:
+      serializedVersion: 2
+      x: 620
+      y: 1307
+      width: 205
+      height: 61
+    id: 277
+    runtimeTypeName: SequenceAction_OpenTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm1
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Title
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_63
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Description
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_63
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: headTexture
+      intValue: 0
+      floatValue: 0
+      stringValue: micketron_tutorial_head
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: headScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 195, y: 195, z: 0, w: 0}
+    - type: 3
+      name: faceTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceOffset
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 4
+      name: prefab
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: uiTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm2
+    rect:
+      serializedVersion: 2
+      x: 1673.408
+      y: 824
+      width: 205
+      height: 61
+    id: 278
+    runtimeTypeName: SequenceAction_OpenTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm2
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Title
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_64
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Description
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_64
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: headTexture
+      intValue: 0
+      floatValue: 0
+      stringValue: micketron_tutorial_head
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: headScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 195, y: 195, z: 0, w: 0}
+    - type: 3
+      name: faceTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceOffset
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 4
+      name: prefab
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: uiTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm3
+    rect:
+      serializedVersion: 2
+      x: 3418
+      y: 199
+      width: 205
+      height: 61
+    id: 279
+    runtimeTypeName: SequenceAction_OpenTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm3
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Title
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_65
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Description
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_65
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: headTexture
+      intValue: 0
+      floatValue: 0
+      stringValue: micketron_tutorial_head
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: headScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 195, y: 195, z: 0, w: 0}
+    - type: 3
+      name: faceTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceOffset
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 4
+      name: prefab
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: uiTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm4
+    rect:
+      serializedVersion: 2
+      x: 3893
+      y: 169
+      width: 205
+      height: 61
+    id: 280
+    runtimeTypeName: SequenceAction_OpenTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm4
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Title
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_66
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Description
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_66
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: headTexture
+      intValue: 0
+      floatValue: 0
+      stringValue: micketron_tutorial_head
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: headScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 195, y: 195, z: 0, w: 0}
+    - type: 3
+      name: faceTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceOffset
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 4
+      name: prefab
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: uiTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm5
+    rect:
+      serializedVersion: 2
+      x: 856.6908
+      y: 1989
+      width: 205
+      height: 61
+    id: 281
+    runtimeTypeName: SequenceAction_OpenTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm5
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Title
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_67
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Description
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_67
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: headTexture
+      intValue: 0
+      floatValue: 0
+      stringValue: micketron_tutorial_head
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: headScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 195, y: 195, z: 0, w: 0}
+    - type: 3
+      name: faceTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceOffset
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 4
+      name: prefab
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: uiTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm6
+    rect:
+      serializedVersion: 2
+      x: 1267.013
+      y: 2173
+      width: 205
+      height: 61
+    id: 282
+    runtimeTypeName: SequenceAction_OpenTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm6
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Title
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_68
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Description
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_68
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: headTexture
+      intValue: 0
+      floatValue: 0
+      stringValue: micketron_tutorial_head
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: headScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 195, y: 195, z: 0, w: 0}
+    - type: 3
+      name: faceTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceOffset
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 4
+      name: prefab
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: uiTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm8
+    rect:
+      serializedVersion: 2
+      x: 2161.9893
+      y: 28
+      width: 205
+      height: 61
+    id: 283
+    runtimeTypeName: SequenceAction_OpenTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm8
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Title
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_69
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Description
+      intValue: 0
+      floatValue: 0
+      stringValue: ID_SEQUENCE_69
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: headTexture
+      intValue: 0
+      floatValue: 0
+      stringValue: micketron_tutorial_head
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: headScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 195, y: 195, z: 0, w: 0}
+    - type: 3
+      name: faceTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceScale
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 8
+      name: faceOffset
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 4
+      name: prefab
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: uiTexture
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: Safety
+    rect:
+      serializedVersion: 2
+      x: 710
+      y: 568
+      width: 156
+      height: 109
+    id: 285
+    runtimeTypeName: SequenceEvent_OnScreenStarted
+    properties:
+    - type: 3
+      name: ScreenId
+      intValue: 0
+      floatValue: 0
+      stringValue: ResultsUI
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: Dealing with zero elephant guns
+    rect:
+      serializedVersion: 2
+      x: 880
+      y: 74
+      width: 98
+      height: 189
+    id: 288
+    runtimeTypeName: SequenceCondition_Equality
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: set to five
+    rect:
+      serializedVersion: 2
+      x: 1043
+      y: 24
+      width: 105
+      height: 74
+    id: 289
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 5
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 784
+      y: 315
+      width: 95.98837
+      height: 95.98837
+    id: 290
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 2
+    rect:
+      serializedVersion: 2
+      x: 924
+      y: 290
+      width: 95.98837
+      height: 95.98837
+    id: 291
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 2
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Enable Arrow on movement
+    rect:
+      serializedVersion: 2
+      x: 1031
+      y: 1736
+      width: 147
+      height: 61
+    id: 294
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_aim_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: button_aim_icon
+    rect:
+      serializedVersion: 2
+      x: 660
+      y: 1619
+      width: 156
+      height: 109
+    id: 295
+    runtimeTypeName: SequenceEvent_OnButtonPressed
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_aim_icon
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 873
+      y: 1596
+      width: 97
+      height: 120
+    id: 296
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[1]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 2
+    comment: Enable Arrow on movement
+    rect:
+      serializedVersion: 2
+      x: 1034
+      y: 1616
+      width: 147
+      height: 61
+    id: 297
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_aim_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Hide arrow
+    rect:
+      serializedVersion: 2
+      x: 1022
+      y: 871
+      width: 147
+      height: 61
+    id: 298
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_aim_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 3874
+      y: 258
+      width: 188
+      height: 97
+    id: 300
+    runtimeTypeName: SequenceAction_Timer
+    properties:
+    - type: 5
+      name: OneShot
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: 8
+    rect:
+      serializedVersion: 2
+      x: 4086
+      y: 465
+      width: 95.98837
+      height: 95.98837
+    id: 301
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 8
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: 0
+    rect:
+      serializedVersion: 2
+      x: 4090
+      y: 241
+      width: 97
+      height: 97
+    id: 302
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 4
+    comment: select_elegun
+    rect:
+      serializedVersion: 2
+      x: 4265
+      y: 413
+      width: 95.98837
+      height: 95.98837
+    id: 303
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: select_elegun
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm4
+    rect:
+      serializedVersion: 2
+      x: 4237
+      y: 288
+      width: 207
+      height: 61
+    id: 304
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm4
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: 1
+    rect:
+      serializedVersion: 2
+      x: 4457
+      y: 236
+      width: 105
+      height: 74
+    id: 305
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: 0
+    rect:
+      serializedVersion: 2
+      x: 1537
+      y: 1461
+      width: 97
+      height: 97
+    id: 306
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 2
+    comment: Elephant Gun
+    rect:
+      serializedVersion: 2
+      x: 4275
+      y: 179
+      width: 147
+      height: 61
+    id: 307
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: Elephant Gun
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 4452
+      y: 487
+      width: 95.98837
+      height: 95.98837
+    id: 308
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: 4
+    rect:
+      serializedVersion: 2
+      x: 4479
+      y: 352
+      width: 105
+      height: 74
+    id: 309
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 4
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: select_elegun
+    rect:
+      serializedVersion: 2
+      x: 1539
+      y: 1667
+      width: 95.98837
+      height: 95.98837
+    id: 310
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: select_elegun
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1196
+      y: 876
+      width: 97
+      height: 97
+    id: 311
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 1227
+      y: 999
+      width: 95.98837
+      height: 95.98837
+    id: 312
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: 1
+    rect:
+      serializedVersion: 2
+      x: 1692
+      y: 1474
+      width: 105
+      height: 74
+    id: 313
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Kill Lobby
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 23
+      width: 105
+      height: 74
+    id: 315
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_gamestart
+    rect:
+      serializedVersion: 2
+      x: 166
+      y: 129
+      width: 95.98837
+      height: 95.98837
+    id: 316
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_gamestart
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1365
+      y: 867
+      width: 97
+      height: 120
+    id: 317
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[1]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 3
+    comment: 0
+    rect:
+      serializedVersion: 2
+      x: 2610
+      y: 1510
+      width: 97
+      height: 120
+    id: 319
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[1]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 4
+    comment: s_invenopen
+    rect:
+      serializedVersion: 2
+      x: 2548
+      y: 1711
+      width: 95.98837
+      height: 95.98837
+    id: 320
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_invenopen
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Change DM state to 1
+    rect:
+      serializedVersion: 2
+      x: 2912
+      y: 1443
+      width: 105
+      height: 74
+    id: 321
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Change DM state to 0
+    rect:
+      serializedVersion: 2
+      x: 2919
+      y: 1573
+      width: 105
+      height: 74
+    id: 322
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_invenopen
+    rect:
+      serializedVersion: 2
+      x: 1416
+      y: 1013
+      width: 95.98837
+      height: 95.98837
+    id: 323
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_invenopen
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Change DM state to 2
+    rect:
+      serializedVersion: 2
+      x: 1691
+      y: 928
+      width: 105
+      height: 74
+    id: 324
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 2
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: arrow_tutorial_boost
+    rect:
+      serializedVersion: 2
+      x: 2377
+      y: 1954
+      width: 139
+      height: 109
+    id: 325
+    runtimeTypeName: SequenceEvent_OnButtonClick
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: arrow_tutorial_boost
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: 1
+    rect:
+      serializedVersion: 2
+      x: 3152.6445
+      y: 1444
+      width: 70
+      height: 74
+    id: 331
+    runtimeTypeName: SequenceAction_Log
+    properties:
+    - type: 3
+      name: Format
+      intValue: 0
+      floatValue: 0
+      stringValue: ONEONEONEONEONEONEONEONEONEONE
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: 0
+    rect:
+      serializedVersion: 2
+      x: 3099.6445
+      y: 1646
+      width: 70
+      height: 74
+    id: 332
+    runtimeTypeName: SequenceAction_Log
+    properties:
+    - type: 3
+      name: Format
+      intValue: 0
+      floatValue: 0
+      stringValue: ZEROZEROZEROZEROZEROZEROZEROZEROZEROZEROZEROZEROZEROZEROZEROZERO
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: 0
+    rect:
+      serializedVersion: 2
+      x: 2595
+      y: 1958
+      width: 97
+      height: 120
+    id: 333
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[1]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 2
+    comment: Change DM state to 1
+    rect:
+      serializedVersion: 2
+      x: 2848
+      y: 2027
+      width: 105
+      height: 74
+    id: 334
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Change DM state to 0
+    rect:
+      serializedVersion: 2
+      x: 2832
+      y: 2139
+      width: 105
+      height: 74
+    id: 335
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_invenopenboost
+    rect:
+      serializedVersion: 2
+      x: 3190
+      y: 2219
+      width: 95.98837
+      height: 95.98837
+    id: 336
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_invenopenboost
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: 0
+    rect:
+      serializedVersion: 2
+      x: 2718
+      y: 1854
+      width: 97
+      height: 120
+    id: 339
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[1]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 3
+    comment: 0
+    rect:
+      serializedVersion: 2
+      x: 2751
+      y: 1646
+      width: 97
+      height: 120
+    id: 340
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[1]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 4
+    comment: s_invenopen
+    rect:
+      serializedVersion: 2
+      x: 2991
+      y: 1921
+      width: 95.98837
+      height: 95.98837
+    id: 342
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_invenopen
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_invenopenboost
+    rect:
+      serializedVersion: 2
+      x: 3037
+      y: 1805
+      width: 95.98837
+      height: 95.98837
+    id: 343
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_invenopenboost
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: Check boost state
+    rect:
+      serializedVersion: 2
+      x: 699
+      y: 2078
+      width: 97
+      height: 120
+    id: 344
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[1]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 2
+    comment: Set to seven
+    rect:
+      serializedVersion: 2
+      x: 863
+      y: 2148
+      width: 105
+      height: 74
+    id: 345
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 7
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: sequence_tutorial_forcetohome
+    rect:
+      serializedVersion: 2
+      x: 537
+      y: 555
+      width: 148
+      height: 61
+    id: 349
+    runtimeTypeName: SequenceAction_RunSequence
+    properties:
+    - type: 3
+      name: sequenceName
+      intValue: 0
+      floatValue: 0
+      stringValue: sequence_tutorial_forcetohome
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: parentToCreator
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: persistent
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: mustBeConnected
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_invenopenboost
+    rect:
+      serializedVersion: 2
+      x: 711
+      y: 2281
+      width: 95.98837
+      height: 95.98837
+    id: 350
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_invenopenboost
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: 'SET INVENO TO ZERO '
+    rect:
+      serializedVersion: 2
+      x: 638
+      y: 25
+      width: 105
+      height: 74
+    id: 352
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: 'SET INVENO TO ZERO '
+    rect:
+      serializedVersion: 2
+      x: 269
+      y: 267
+      width: 105
+      height: 74
+    id: 353
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_invenopen
+    rect:
+      serializedVersion: 2
+      x: 611
+      y: 160
+      width: 95.98837
+      height: 95.98837
+    id: 354
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_invenopen
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_invenopenboost
+    rect:
+      serializedVersion: 2
+      x: 444
+      y: 287
+      width: 95.98837
+      height: 95.98837
+    id: 355
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_invenopenboost
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: HIDE THE ARROW
+    rect:
+      serializedVersion: 2
+      x: 1026
+      y: 963
+      width: 147
+      height: 61
+    id: 356
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_move_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: button_inventory_arrow
+    rect:
+      serializedVersion: 2
+      x: 2401.317
+      y: 1506
+      width: 156
+      height: 109
+    id: 358
+    runtimeTypeName: SequenceEvent_OnButtonPressed
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_inventory_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: GenericTutorialWeapon
+    rect:
+      serializedVersion: 2
+      x: 2333
+      y: 2433
+      width: 139
+      height: 109
+    id: 361
+    runtimeTypeName: SequenceEvent_OnButtonClick
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: GenericTutorialWeapon
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Change DM state to 0
+    rect:
+      serializedVersion: 2
+      x: 2552
+      y: 2189
+      width: 105
+      height: 74
+    id: 362
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_invenopen
+    rect:
+      serializedVersion: 2
+      x: 2556
+      y: 2287
+      width: 95.98837
+      height: 95.98837
+    id: 364
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_invenopen
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: 0
+    rect:
+      serializedVersion: 2
+      x: 2528
+      y: 2437
+      width: 97
+      height: 143
+    id: 367
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[1]
+        intValue: 0
+        floatValue: 0
+        stringValue: 2
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[2]
+        intValue: 0
+        floatValue: 0
+        stringValue: 3
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 4
+    comment: selectweaponstate
+    rect:
+      serializedVersion: 2
+      x: 2548
+      y: 2706
+      width: 95.98837
+      height: 95.98837
+    id: 368
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_dmstate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm2
+    rect:
+      serializedVersion: 2
+      x: 2745
+      y: 2378
+      width: 207
+      height: 61
+    id: 369
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm2
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm3
+    rect:
+      serializedVersion: 2
+      x: 2742
+      y: 2473
+      width: 207
+      height: 61
+    id: 370
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm3
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm4
+    rect:
+      serializedVersion: 2
+      x: 2746
+      y: 2561
+      width: 207
+      height: 61
+    id: 371
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm4
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Change weapon state to 4
+    rect:
+      serializedVersion: 2
+      x: 2699
+      y: 2659
+      width: 105
+      height: 74
+    id: 372
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 4
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: button_inventory_arrow
+    rect:
+      serializedVersion: 2
+      x: 3028
+      y: 2381
+      width: 147
+      height: 61
+    id: 373
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_inventory_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutorial_rightarrow_select
+    rect:
+      serializedVersion: 2
+      x: 3030
+      y: 2470
+      width: 147
+      height: 61
+    id: 374
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutorial_rightarrow_select
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Elephant Gun
+    rect:
+      serializedVersion: 2
+      x: 3036
+      y: 2563
+      width: 147
+      height: 61
+    id: 375
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: Elephant Gun
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 473
+      y: 994
+      width: 97
+      height: 143
+    id: 376
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[1]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[2]
+        intValue: 0
+        floatValue: 0
+        stringValue: 2
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 2
+    comment: viewturn
+    rect:
+      serializedVersion: 2
+      x: 669
+      y: 864
+      width: 105
+      height: 74
+    id: 377
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_viewturn
+    rect:
+      serializedVersion: 2
+      x: 525
+      y: 1197
+      width: 95.98837
+      height: 95.98837
+    id: 378
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_viewturn
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: viewturn
+    rect:
+      serializedVersion: 2
+      x: 671
+      y: 973
+      width: 105
+      height: 74
+    id: 379
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 2
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1253
+      y: 1296
+      width: 97
+      height: 97
+    id: 380
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 3
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 4
+    comment: s_viewturn
+    rect:
+      serializedVersion: 2
+      x: 1138
+      y: 1346
+      width: 95.98837
+      height: 95.98837
+    id: 381
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_viewturn
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: SET VALUE TO ZERO
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 275
+      width: 105
+      height: 74
+    id: 382
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: s_viewturn
+    rect:
+      serializedVersion: 2
+      x: 670
+      y: 356
+      width: 95.98837
+      height: 95.98837
+    id: 383
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 1
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: s_viewturn
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1389
+      y: 1299
+      width: 97
+      height: 97
+    id: 384
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1544
+      y: 1302
+      width: 147
+      height: 61
+    id: 385
+    runtimeTypeName: SequenceAction_EnableUIArrow
+    properties:
+    - type: 3
+      name: tutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_inventory_arrow
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: show
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: autoHide
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Change DM state to 4
+    rect:
+      serializedVersion: 2
+      x: 1774
+      y: 1311
+      width: 105
+      height: 74
+    id: 386
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 4
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutdm2
+    rect:
+      serializedVersion: 2
+      x: 1526
+      y: 1383
+      width: 207
+      height: 61
+    id: 387
+    runtimeTypeName: SequenceAction_CloseTutorialTextOverlay
+    properties:
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: tutdm2
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: viewturn3
+    rect:
+      serializedVersion: 2
+      x: 681
+      y: 1103
+      width: 105
+      height: 74
+    id: 388
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 3
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  Links:
+  - outId: 63
+    outName: Value
+    inId: 62
+    inName: TriggeringPlayerId
+  - outId: 62
+    outName: Out
+    inId: 65
+    inName: Check
+  - outId: 63
+    outName: Value
+    inId: 65
+    inName: PlayerId
+  - outId: 65
+    outName: Human
+    inId: 66
+    inName: Check
+  - outId: 67
+    outName: Value
+    inId: 66
+    inName: A
+  - outId: 68
+    outName: Value
+    inId: 66
+    inName: B
+  - outId: 67
+    outName: Value
+    inId: 70
+    inName: Target
+  - outId: 66
+    outName: Check3
+    inId: 70
+    inName: Set
+  - outId: 84
+    outName: Value
+    inId: 83
+    inName: Target
+  - outId: 88
+    outName: Value
+    inId: 85
+    inName: A
+  - outId: 89
+    outName: Value
+    inId: 85
+    inName: B
+  - outId: 85
+    outName: Check1
+    inId: 90
+    inName: Process
+  - outId: 92
+    outName: Out
+    inId: 93
+    inName: Check
+  - outId: 94
+    outName: Value
+    inId: 93
+    inName: Value
+  - outId: 93
+    outName: Triggers[0]
+    inId: 95
+    inName: Process
+  - outId: 95
+    outName: Finished
+    inId: 96
+    inName: Set
+  - outId: 94
+    outName: Value
+    inId: 96
+    inName: Target
+  - outId: 98
+    outName: Value
+    inId: 97
+    inName: A
+  - outId: 99
+    outName: Value
+    inId: 97
+    inName: B
+  - outId: 97
+    outName: Check1
+    inId: 100
+    inName: Process
+  - outId: 101
+    outName: Out
+    inId: 102
+    inName: Check
+  - outId: 102
+    outName: Triggers[0]
+    inId: 103
+    inName: Process
+  - outId: 103
+    outName: Finished
+    inId: 104
+    inName: Set
+  - outId: 105
+    outName: Value
+    inId: 102
+    inName: Value
+  - outId: 105
+    outName: Value
+    inId: 104
+    inName: Target
+  - outId: 65
+    outName: AI
+    inId: 66
+    inName: Check
+  - outId: 112
+    outName: Out
+    inId: 114
+    inName: Check
+  - outId: 115
+    outName: Value
+    inId: 114
+    inName: Value
+  - outId: 116
+    outName: Finished
+    inId: 117
+    inName: Set
+  - outId: 115
+    outName: Value
+    inId: 117
+    inName: Target
+  - outId: 118
+    outName: Value
+    inId: 113
+    inName: A
+  - outId: 119
+    outName: Value
+    inId: 113
+    inName: B
+  - outId: 113
+    outName: Check1
+    inId: 120
+    inName: Process
+  - outId: 77
+    outName: Out
+    inId: 122
+    inName: Set
+  - outId: 97
+    outName: Check1
+    inId: 127
+    inName: Process
+  - outId: 113
+    outName: Check1
+    inId: 129
+    inName: Process
+  - outId: 134
+    outName: Value
+    inId: 133
+    inName: PlayerHealthPercent
+  - outId: 135
+    outName: Value
+    inId: 133
+    inName: PlayerId
+  - outId: 135
+    outName: Value
+    inId: 136
+    inName: PlayerId
+  - outId: 77
+    outName: Out
+    inId: 139
+    inName: Set
+  - outId: 140
+    outName: Value
+    inId: 139
+    inName: Target
+  - outId: 142
+    outName: Value
+    inId: 141
+    inName: Value
+  - outId: 141
+    outName: Triggers[0]
+    inId: 144
+    inName: Set
+  - outId: 142
+    outName: Value
+    inId: 144
+    inName: Target
+  - outId: 147
+    outName: Value
+    inId: 146
+    inName: Value
+  - outId: 148
+    outName: Finished
+    inId: 150
+    inName: Set
+  - outId: 147
+    outName: Value
+    inId: 150
+    inName: Target
+  - outId: 136
+    outName: Human
+    inId: 154
+    inName: Check
+  - outId: 155
+    outName: Value
+    inId: 154
+    inName: Value
+  - outId: 168
+    outName: Value
+    inId: 167
+    inName: Target
+  - outId: 154
+    outName: Triggers[0]
+    inId: 169
+    inName: Set
+  - outId: 155
+    outName: Value
+    inId: 169
+    inName: Target
+  - outId: 175
+    outName: OnTimer
+    inId: 148
+    inName: Process
+  - outId: 176
+    outName: Value
+    inId: 175
+    inName: Interval
+  - outId: 104
+    outName: Finished
+    inId: 178
+    inName: Start
+  - outId: 179
+    outName: Value
+    inId: 178
+    inName: Interval
+  - outId: 178
+    outName: OnTimer
+    inId: 180
+    inName: Process
+  - outId: 146
+    outName: Triggers[0]
+    inId: 175
+    inName: Start
+  - outId: 146
+    outName: Triggers[0]
+    inId: 153
+    inName: Process
+  - outId: 183
+    outName: Out
+    inId: 146
+    inName: Check
+  - outId: 133
+    outName: Out
+    inId: 136
+    inName: Check
+  - outId: 188
+    outName: Value
+    inId: 187
+    inName: Value
+  - outId: 188
+    outName: Value
+    inId: 189
+    inName: Target
+  - outId: 199
+    outName: Value
+    inId: 198
+    inName: Interval
+  - outId: 198
+    outName: OnTimer
+    inId: 200
+    inName: Process
+  - outId: 144
+    outName: Finished
+    inId: 202
+    inName: Process
+  - outId: 202
+    outName: Finished
+    inId: 125
+    inName: Process
+  - outId: 77
+    outName: Out
+    inId: 203
+    inName: Start
+  - outId: 77
+    outName: Out
+    inId: 204
+    inName: Start
+  - outId: 205
+    outName: Value
+    inId: 203
+    inName: Interval
+  - outId: 207
+    outName: Value
+    inId: 206
+    inName: Value
+  - outId: 208
+    outName: OnTimer
+    inId: 206
+    inName: Check
+  - outId: 203
+    outName: OnTimer
+    inId: 208
+    inName: Start
+  - outId: 209
+    outName: Value
+    inId: 208
+    inName: Interval
+  - outId: 206
+    outName: Triggers[0]
+    inId: 208
+    inName: Stop
+  - outId: 213
+    outName: Value
+    inId: 212
+    inName: Interval
+  - outId: 212
+    outName: OnTimer
+    inId: 214
+    inName: Process
+  - outId: 187
+    outName: Triggers[0]
+    inId: 201
+    inName: Process
+  - outId: 217
+    outName: Value
+    inId: 204
+    inName: Interval
+  - outId: 200
+    outName: Finished
+    inId: 210
+    inName: Set
+  - outId: 221
+    outName: Out
+    inId: 187
+    inName: Check
+  - outId: 222
+    outName: Value
+    inId: 220
+    inName: B
+  - outId: 223
+    outName: Value
+    inId: 220
+    inName: A
+  - outId: 222
+    outName: Value
+    inId: 210
+    inName: Target
+  - outId: 224
+    outName: Value
+    inId: 122
+    inName: Target
+  - outId: 226
+    outName: Out
+    inId: 228
+    inName: Process
+  - outId: 235
+    outName: Value
+    inId: 234
+    inName: A
+  - outId: 237
+    outName: Value
+    inId: 234
+    inName: B
+  - outId: 234
+    outName: Check1
+    inId: 238
+    inName: Start
+  - outId: 239
+    outName: Value
+    inId: 238
+    inName: Interval
+  - outId: 238
+    outName: OnTimer
+    inId: 240
+    inName: Set
+  - outId: 237
+    outName: Value
+    inId: 240
+    inName: Target
+  - outId: 204
+    outName: OnTimer
+    inId: 241
+    inName: Record
+  - outId: 228
+    outName: Finished
+    inId: 242
+    inName: Record
+  - outId: 203
+    outName: OnTimer
+    inId: 243
+    inName: Record
+  - outId: 93
+    outName: Triggers[0]
+    inId: 246
+    inName: Record
+  - outId: 187
+    outName: Triggers[0]
+    inId: 249
+    inName: Record
+  - outId: 200
+    outName: Finished
+    inId: 250
+    inName: Record
+  - outId: 253
+    outName: Finished
+    inId: 254
+    inName: Process
+  - outId: 204
+    outName: OnTimer
+    inId: 203
+    inName: Stop
+  - outId: 204
+    outName: OnTimer
+    inId: 208
+    inName: Stop
+  - outId: 207
+    outName: Value
+    inId: 265
+    inName: Target
+  - outId: 206
+    outName: Triggers[0]
+    inId: 212
+    inName: Start
+  - outId: 214
+    outName: Finished
+    inId: 266
+    inName: Set
+  - outId: 207
+    outName: Value
+    inId: 266
+    inName: Target
+  - outId: 218
+    outName: Finished
+    inId: 270
+    inName: Destroy
+  - outId: 70
+    outName: Finished
+    inId: 277
+    inName: Process
+  - outId: 277
+    outName: Finished
+    inId: 152
+    inName: Process
+  - outId: 125
+    outName: Finished
+    inId: 278
+    inName: Process
+  - outId: 278
+    outName: Finished
+    inId: 83
+    inName: Set
+  - outId: 127
+    outName: Finished
+    inId: 279
+    inName: Process
+  - outId: 129
+    outName: Finished
+    inId: 280
+    inName: Process
+  - outId: 220
+    outName: Check1
+    inId: 282
+    inName: Process
+  - outId: 282
+    outName: Finished
+    inId: 198
+    inName: Start
+  - outId: 187
+    outName: Triggers[0]
+    inId: 190
+    inName: Process
+  - outId: 190
+    outName: Finished
+    inId: 189
+    inName: Set
+  - outId: 206
+    outName: Triggers[0]
+    inId: 283
+    inName: Process
+  - outId: 283
+    outName: Finished
+    inId: 265
+    inName: Set
+  - outId: 228
+    outName: Finished
+    inId: 256
+    inName: Process
+  - outId: 204
+    outName: OnTimer
+    inId: 256
+    inName: Process
+  - outId: 256
+    outName: Finished
+    inId: 257
+    inName: Process
+  - outId: 257
+    outName: Finished
+    inId: 258
+    inName: Process
+  - outId: 258
+    outName: Finished
+    inId: 259
+    inName: Process
+  - outId: 259
+    outName: Finished
+    inId: 260
+    inName: Process
+  - outId: 260
+    outName: Finished
+    inId: 262
+    inName: Process
+  - outId: 262
+    outName: Finished
+    inId: 218
+    inName: Process
+  - outId: 285
+    outName: Out
+    inId: 256
+    inName: Process
+  - outId: 77
+    outName: Out
+    inId: 288
+    inName: Check
+  - outId: 168
+    outName: Value
+    inId: 289
+    inName: Target
+  - outId: 290
+    outName: Value
+    inId: 288
+    inName: A
+  - outId: 291
+    outName: Value
+    inId: 288
+    inName: B
+  - outId: 288
+    outName: Check5
+    inId: 167
+    inName: Set
+  - outId: 288
+    outName: Check2
+    inId: 289
+    inName: Set
+  - outId: 150
+    outName: Finished
+    inId: 294
+    inName: Process
+  - outId: 295
+    outName: Out
+    inId: 296
+    inName: Check
+  - outId: 296
+    outName: Triggers[1]
+    inId: 297
+    inName: Process
+  - outId: 147
+    outName: Value
+    inId: 296
+    inName: Value
+  - outId: 141
+    outName: Triggers[1]
+    inId: 298
+    inName: Process
+  - outId: 280
+    outName: Finished
+    inId: 300
+    inName: Start
+  - outId: 301
+    outName: Value
+    inId: 300
+    inName: Interval
+  - outId: 300
+    outName: OnTimer
+    inId: 302
+    inName: Check
+  - outId: 303
+    outName: Value
+    inId: 302
+    inName: Value
+  - outId: 302
+    outName: Triggers[0]
+    inId: 304
+    inName: Process
+  - outId: 304
+    outName: Finished
+    inId: 305
+    inName: Set
+  - outId: 303
+    outName: Value
+    inId: 305
+    inName: Target
+  - outId: 306
+    outName: Triggers[0]
+    inId: 247
+    inName: Record
+  - outId: 306
+    outName: Triggers[0]
+    inId: 116
+    inName: Process
+  - outId: 114
+    outName: Triggers[0]
+    inId: 306
+    inName: Check
+  - outId: 302
+    outName: Triggers[0]
+    inId: 307
+    inName: Process
+  - outId: 308
+    outName: Value
+    inId: 309
+    inName: Target
+  - outId: 304
+    outName: Finished
+    inId: 309
+    inName: Set
+  - outId: 310
+    outName: Value
+    inId: 306
+    inName: Value
+  - outId: 114
+    outName: Triggers[1]
+    inId: 117
+    inName: Set
+  - outId: 141
+    outName: Triggers[1]
+    inId: 311
+    inName: Check
+  - outId: 312
+    outName: Value
+    inId: 311
+    inName: Value
+  - outId: 313
+    outName: Finished
+    inId: 131
+    inName: Process
+  - outId: 306
+    outName: Triggers[0]
+    inId: 313
+    inName: Set
+  - outId: 310
+    outName: Value
+    inId: 313
+    inName: Target
+  - outId: 77
+    outName: Out
+    inId: 315
+    inName: Set
+  - outId: 316
+    outName: Value
+    inId: 315
+    inName: Target
+  - outId: 311
+    outName: Triggers[0]
+    inId: 317
+    inName: Check
+  - outId: 320
+    outName: Value
+    inId: 319
+    inName: Value
+  - outId: 320
+    outName: Value
+    inId: 321
+    inName: Target
+  - outId: 319
+    outName: Triggers[1]
+    inId: 322
+    inName: Set
+  - outId: 320
+    outName: Value
+    inId: 322
+    inName: Target
+  - outId: 323
+    outName: Value
+    inId: 317
+    inName: Value
+  - outId: 317
+    outName: Triggers[0]
+    inId: 278
+    inName: Process
+  - outId: 317
+    outName: Triggers[1]
+    inId: 324
+    inName: Set
+  - outId: 84
+    outName: Value
+    inId: 324
+    inName: Target
+  - outId: 322
+    outName: Finished
+    inId: 332
+    inName: Log
+  - outId: 321
+    outName: Finished
+    inId: 331
+    inName: Log
+  - outId: 325
+    outName: Out
+    inId: 333
+    inName: Check
+  - outId: 333
+    outName: Triggers[0]
+    inId: 334
+    inName: Set
+  - outId: 333
+    outName: Triggers[1]
+    inId: 335
+    inName: Set
+  - outId: 336
+    outName: Value
+    inId: 333
+    inName: Value
+  - outId: 336
+    outName: Value
+    inId: 335
+    inName: Target
+  - outId: 319
+    outName: Triggers[0]
+    inId: 321
+    inName: Set
+  - outId: 333
+    outName: Triggers[1]
+    inId: 339
+    inName: Check
+  - outId: 339
+    outName: Triggers[1]
+    inId: 322
+    inName: Set
+  - outId: 319
+    outName: Triggers[1]
+    inId: 340
+    inName: Check
+  - outId: 340
+    outName: Triggers[1]
+    inId: 335
+    inName: Set
+  - outId: 342
+    outName: Value
+    inId: 339
+    inName: Value
+  - outId: 336
+    outName: Value
+    inId: 334
+    inName: Target
+  - outId: 343
+    outName: Value
+    inId: 340
+    inName: Value
+  - outId: 169
+    outName: Finished
+    inId: 344
+    inName: Check
+  - outId: 344
+    outName: Triggers[0]
+    inId: 281
+    inName: Process
+  - outId: 344
+    outName: Triggers[0]
+    inId: 184
+    inName: Process
+  - outId: 344
+    outName: Triggers[1]
+    inId: 345
+    inName: Set
+  - outId: 188
+    outName: Value
+    inId: 345
+    inName: Target
+  - outId: 350
+    outName: Value
+    inId: 344
+    inName: Value
+  - outId: 77
+    outName: Out
+    inId: 352
+    inName: Set
+  - outId: 77
+    outName: Out
+    inId: 353
+    inName: Set
+  - outId: 354
+    outName: Value
+    inId: 352
+    inName: Target
+  - outId: 355
+    outName: Value
+    inId: 353
+    inName: Target
+  - outId: 204
+    outName: OnTimer
+    inId: 349
+    inName: RunSequence
+  - outId: 141
+    outName: Triggers[1]
+    inId: 356
+    inName: Process
+  - outId: 358
+    outName: Out
+    inId: 319
+    inName: Check
+  - outId: 361
+    outName: Out
+    inId: 362
+    inName: Set
+  - outId: 364
+    outName: Value
+    inId: 362
+    inName: Target
+  - outId: 361
+    outName: Out
+    inId: 367
+    inName: Check
+  - outId: 368
+    outName: Value
+    inId: 367
+    inName: Value
+  - outId: 367
+    outName: Triggers[0]
+    inId: 369
+    inName: Process
+  - outId: 367
+    outName: Triggers[1]
+    inId: 370
+    inName: Process
+  - outId: 367
+    outName: Triggers[2]
+    inId: 371
+    inName: Process
+  - outId: 368
+    outName: Value
+    inId: 372
+    inName: Target
+  - outId: 367
+    outName: Triggers[2]
+    inId: 372
+    inName: Set
+  - outId: 367
+    outName: Triggers[1]
+    inId: 372
+    inName: Set
+  - outId: 367
+    outName: Triggers[0]
+    inId: 372
+    inName: Set
+  - outId: 369
+    outName: Finished
+    inId: 373
+    inName: Process
+  - outId: 370
+    outName: Finished
+    inId: 374
+    inName: Process
+  - outId: 371
+    outName: Finished
+    inId: 375
+    inName: Process
+  - outId: 376
+    outName: Triggers[0]
+    inId: 245
+    inName: Record
+  - outId: 376
+    outName: Triggers[0]
+    inId: 141
+    inName: Check
+  - outId: 376
+    outName: Triggers[0]
+    inId: 377
+    inName: Set
+  - outId: 378
+    outName: Value
+    inId: 377
+    inName: Target
+  - outId: 378
+    outName: Value
+    inId: 376
+    inName: Value
+  - outId: 376
+    outName: Triggers[1]
+    inId: 379
+    inName: Set
+  - outId: 378
+    outName: Value
+    inId: 379
+    inName: Target
+  - outId: 381
+    outName: Value
+    inId: 380
+    inName: Value
+  - outId: 77
+    outName: Out
+    inId: 382
+    inName: Set
+  - outId: 383
+    outName: Value
+    inId: 382
+    inName: Target
+  - outId: 66
+    outName: Check1
+    inId: 376
+    inName: Check
+  - outId: 380
+    outName: Triggers[0]
+    inId: 384
+    inName: Check
+  - outId: 94
+    outName: Value
+    inId: 384
+    inName: Value
+  - outId: 384
+    outName: Triggers[0]
+    inId: 246
+    inName: Record
+  - outId: 384
+    outName: Triggers[0]
+    inId: 385
+    inName: Process
+  - outId: 385
+    outName: Finished
+    inId: 386
+    inName: Set
+  - outId: 94
+    outName: Value
+    inId: 386
+    inName: Target
+  - outId: 384
+    outName: Triggers[0]
+    inId: 387
+    inName: Process
+  - outId: 376
+    outName: Triggers[2]
+    inId: 388
+    inName: Set
+  - outId: 378
+    outName: Value
+    inId: 388
+    inName: Target
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

@@ -1,0 +1,732 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  - 114: {fileID: 11405782}
+  m_Layer: 0
+  m_Name: sequence_tutorialdeathmatch
+  m_TagString: Sequence
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b14dd8ba6626dca50376b6d5d2a7214, type: 3}
+  m_Name:
+  observed: {fileID: 11405782}
+  stateSynchronization: 1
+  migrationSynchronization: 0
+  updateInterval: 0
+--- !u!114 &11405782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470298c30737cb3edc671e97cf158f05, type: 3}
+  m_Name:
+  NextId: 39
+  Nodes:
+  - nodeType: 1
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 63
+      width: 125
+      height: 109
+    id: 1
+    runtimeTypeName: SequenceEvent_SequenceStarted
+    properties:
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Turn Handler
+    rect:
+      serializedVersion: 2
+      x: 574
+      y: 414
+      width: 579
+      height: 143
+    id: 3
+    runtimeTypeName: SequenceAction_NextTurn
+    properties: []
+    propertyArrays: []
+  - nodeType: 4
+    comment: Current Player Id
+    rect:
+      serializedVersion: 2
+      x: 463
+      y: 615
+      width: 79.2315
+      height: 79.2315
+    id: 4
+    runtimeTypeName: SequenceVariable_PlayerId
+    properties: []
+    propertyArrays: []
+  - nodeType: 4
+    comment: Timer_Countdown
+    rect:
+      serializedVersion: 2
+      x: 597
+      y: 667
+      width: 79.2315
+      height: 79.2315
+    id: 11
+    runtimeTypeName: SequenceVariable_Tuning
+    properties:
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: Timer_Countdown
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: Timer_Gap
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 263
+      width: 79.2315
+      height: 79.2315
+    id: 12
+    runtimeTypeName: SequenceVariable_Tuning
+    properties:
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: Timer_Gap
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 255
+      width: 102
+      height: 109
+    id: 13
+    runtimeTypeName: SequenceEvent_PlayerFired
+    properties:
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: Truncate Timer
+    rect:
+      serializedVersion: 2
+      x: 767
+      y: 632
+      width: 79.2315
+      height: 79.2315
+    id: 14
+    runtimeTypeName: SequenceVariable_Tuning
+    properties:
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: Timer_Fire_Truncate
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Total Match Length
+    rect:
+      serializedVersion: 2
+      x: 1093
+      y: 31
+      width: 173
+      height: 97
+    id: 15
+    runtimeTypeName: SequenceAction_Timer
+    properties:
+    - type: 5
+      name: OneShot
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: Total Game Time
+    rect:
+      serializedVersion: 2
+      x: 897
+      y: 107
+      width: 79.2315
+      height: 79.2315
+    id: 16
+    runtimeTypeName: SequenceVariable_Tuning
+    properties:
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: Timer_TutorialDeathMatch
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: Game Over
+    rect:
+      serializedVersion: 2
+      x: 1304
+      y: 595
+      width: 84.1485
+      height: 84.1485
+    id: 17
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1521
+      y: 93
+      width: 88
+      height: 74
+    id: 18
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Show the game timer
+    rect:
+      serializedVersion: 2
+      x: 644
+      y: 25
+      width: 91
+      height: 74
+    id: 19
+    runtimeTypeName: SequenceAction_RPC
+    properties:
+    - type: 3
+      name: name
+      intValue: 0
+      floatValue: 0
+      stringValue: ShowGameTimer
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Mode
+      intValue: 2
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 772
+      y: 173
+      width: 91
+      height: 120
+    id: 20
+    runtimeTypeName: SequenceCondition_Switch
+    properties:
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays:
+    - name: TestValues
+      type: 3
+      items:
+      - type: 3
+        name: TestValues[0]
+        intValue: 0
+        floatValue: 0
+        stringValue: 0
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      - type: 3
+        name: TestValues[1]
+        intValue: 0
+        floatValue: 0
+        stringValue: 1
+        gameObjectValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vector4Value: {x: 0, y: 0, z: 0, w: 0}
+  - nodeType: 2
+    comment: End The Game
+    rect:
+      serializedVersion: 2
+      x: 1330
+      y: 329
+      width: 91
+      height: 74
+    id: 21
+    runtimeTypeName: SequenceAction_RPC
+    properties:
+    - type: 3
+      name: name
+      intValue: 0
+      floatValue: 0
+      stringValue: EndGame
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Mode
+      intValue: 2
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 261
+      y: 30
+      width: 132
+      height: 61
+    id: 22
+    runtimeTypeName: SequenceAction_SetScoringMode
+    properties:
+    - type: 1
+      name: Mode
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1768
+      y: 380
+      width: 110
+      height: 61
+    id: 23
+    runtimeTypeName: SequenceAction_KillSequence
+    properties: []
+    propertyArrays: []
+  - nodeType: 1
+    comment: End the game once when there's not enough teams
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 454
+      width: 139
+      height: 109
+    id: 24
+    runtimeTypeName: SequenceEvent_TeamCheckFailed
+    properties:
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 469
+      width: 88
+      height: 74
+    id: 25
+    runtimeTypeName: SequenceAction_SetValue
+    properties:
+    - type: 1
+      name: value
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 527
+      y: 155
+      width: 120
+      height: 74
+    id: 26
+    runtimeTypeName: SequenceAction_GapTimer
+    properties: []
+    propertyArrays: []
+  - nodeType: 4
+    comment: NextId
+    rect:
+      serializedVersion: 2
+      x: 686
+      y: 299
+      width: 86.11833
+      height: 86.11833
+    id: 27
+    runtimeTypeName: SequenceVariable_PlayerId
+    properties: []
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 241
+      y: 151
+      width: 73
+      height: 61
+    id: 28
+    runtimeTypeName: SequenceAction_Intro
+    properties: []
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1141
+      y: 314
+      width: 73
+      height: 61
+    id: 29
+    runtimeTypeName: SequenceAction_Outro
+    properties: []
+    propertyArrays: []
+  - nodeType: 4
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1073
+      y: 685
+      width: 75.30697
+      height: 75.30697
+    id: 30
+    runtimeTypeName: SequenceVariable_Prefab
+    properties:
+    - type: 4
+      name: Prefab
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 147589, guid: 3ad131b3fffdd15438b5627ca77203db, type: 2}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Wait for active projectiles to finish doing their business
+    rect:
+      serializedVersion: 2
+      x: 971
+      y: 285
+      width: 125
+      height: 61
+    id: 33
+    runtimeTypeName: SequenceAction_EndGameDelay
+    properties: []
+    propertyArrays: []
+  - nodeType: 4
+    comment: PercentTimeElapsed
+    rect:
+      serializedVersion: 2
+      x: 1226.5187
+      y: 444
+      width: 84.1485
+      height: 84.1485
+    id: 35
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: game_timer
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment: Timer_Countdown2Player
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 759
+      width: 79.2315
+      height: 79.2315
+    id: 38
+    runtimeTypeName: SequenceVariable_Tuning
+    properties:
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue: Timer_Countdown2Player
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  Links:
+  - outId: 4
+    outName: Value
+    inId: 3
+    inName: PlayerId
+  - outId: 11
+    outName: Value
+    inId: 3
+    inName: TurnLength
+  - outId: 13
+    outName: Out
+    inId: 3
+    inName: Truncate
+  - outId: 14
+    outName: Value
+    inId: 3
+    inName: TruncateTime
+  - outId: 16
+    outName: Value
+    inId: 15
+    inName: Interval
+  - outId: 1
+    outName: Out
+    inId: 15
+    inName: Start
+  - outId: 17
+    outName: Value
+    inId: 18
+    inName: Target
+  - outId: 16
+    outName: Value
+    inId: 19
+    inName: Args
+  - outId: 1
+    outName: Out
+    inId: 19
+    inName: Call
+  - outId: 17
+    outName: Value
+    inId: 20
+    inName: Value
+  - outId: 1
+    outName: Out
+    inId: 22
+    inName: Set
+  - outId: 21
+    outName: Complete
+    inId: 23
+    inName: Destroy
+  - outId: 24
+    outName: Out
+    inId: 25
+    inName: Set
+  - outId: 17
+    outName: Value
+    inId: 25
+    inName: Target
+  - outId: 25
+    outName: Finished
+    inId: 3
+    inName: EndTurn
+  - outId: 27
+    outName: Value
+    inId: 3
+    inName: NextId
+  - outId: 27
+    outName: Value
+    inId: 26
+    inName: NextPlayer
+  - outId: 12
+    outName: Value
+    inId: 26
+    inName: Interval
+  - outId: 1
+    outName: Out
+    inId: 28
+    inName: Start
+  - outId: 28
+    outName: Done
+    inId: 3
+    inName: StartGame
+  - outId: 26
+    outName: Complete
+    inId: 3
+    inName: NextTurn
+  - outId: 20
+    outName: Triggers[0]
+    inId: 26
+    inName: Start
+  - outId: 3
+    outName: TurnEnded
+    inId: 20
+    inName: Check
+  - outId: 29
+    outName: Done
+    inId: 21
+    inName: Call
+  - outId: 30
+    outName: Value
+    inId: 3
+    inName: YourTurnSound
+  - outId: 20
+    outName: Triggers[1]
+    inId: 33
+    inName: Start
+  - outId: 33
+    outName: Done
+    inId: 29
+    inName: Start
+  - outId: 15
+    outName: OnTimer
+    inId: 18
+    inName: Set
+  - outId: 35
+    outName: Value
+    inId: 15
+    inName: PercentTimeElapsed
+  - outId: 35
+    outName: Value
+    inId: 21
+    inName: Args
+  - outId: 4
+    outName: Value
+    inId: 13
+    inName: Filter
+  - outId: 38
+    outName: Value
+    inId: 3
+    inName: TurnLength2Player
+  - outId: 11
+    outName: Value
+    inId: 3
+    inName: TurnLengthAI
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

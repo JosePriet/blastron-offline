@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: Jello Shots
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c9c4808d7a4ebfad56f9a8f0ea30b5, type: 3}
+  m_Name:
+  IsDefault: 0
+  Rivets: 7500
+  Gears: 13
+  UnlockRivets: 999999
+  UnlockGears: 42
+  StoreQuantity: 6
+  LevelRequired: 16
+  StartingCount: 0
+  SortOrderOverride: 95
+  FriendlyName: Jello Shots
+  Description: Shoots toxic green jello sludge that lingers and does damage while slowing opponents.
+  campaignPlusWeight: 35
+  campaignPlusCount: 5
+  uiTexturePath: weapon_ui/UI_weapon_sludge
+  isHidden: 0
+  kabamItemId: 1197
+  isChampionshipTierReward: 0
+  RevengeSaleQuantity: 0
+  itemLevelPrefabName: itemlevel_jelloshots
+  weaponPrefab: {fileID: 147589, guid: 2c7a37d98693b5b4097d68d489d7ba19, type: 2}
+  _eType: 0
+  _postActivationAim: 0
+  spriteName: jello_sludge
+  spriteAtlas: {fileID: 11400000, guid: 6f1eedcfb3ba12843a4fe7b5796d49d9, type: 2}
+  proxyOffset: {x: 0.7, y: 0.2}
+  proxyScale: {x: 0, y: 0}
+  deviceOffset: {x: 0.3, y: 0.3}
+  proxyMaterial: {fileID: 0}
+  _endsTurn: 1
+  _isPlaced: 0
+  _aimEffect: {fileID: 0}
+  _percentChanceOfAIChoosing: 10
+  _fireImpulse: 0
+  _eFiringAnimation: 0
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

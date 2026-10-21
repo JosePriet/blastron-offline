@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: HoF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.036825635, y: 0.8492279, z: -0.021972656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fae6915c97897dd02c3cc1387e7f1ad, type: 3}
+  m_Name:
+  _brackets:
+  - _name: Grey
+    _max: 50
+    _scoreMultiplier: 0.0001
+    _differentialBonus: 0
+    _bracketBonus: 19000000190000001900000019000000
+    _rivetMultiplier: 1
+  - _name: Nickel
+    _max: 500
+    _scoreMultiplier: 0.0002
+    _differentialBonus: 1
+    _bracketBonus: 14000000100000000c00000008000000
+    _rivetMultiplier: 1.05
+  - _name: Bronze
+    _max: 1500
+    _scoreMultiplier: 0.0002
+    _differentialBonus: 2
+    _bracketBonus: 0c000000080000000600000004000000
+    _rivetMultiplier: 1.1
+  - _name: Silver
+    _max: 3000
+    _scoreMultiplier: 0.0003
+    _differentialBonus: 3
+    _bracketBonus: 080000000500000000000000fbffffff
+    _rivetMultiplier: 1.2
+  - _name: Gold
+    _max: 25000
+    _scoreMultiplier: 0.0003
+    _differentialBonus: 4
+    _bracketBonus: 0500000000000000fbfffffff6ffffff
+    _rivetMultiplier: 1.3
+  - _name: Platinum
+    _max: 1000000
+    _scoreMultiplier: 0.0003
+    _differentialBonus: 5
+    _bracketBonus: 05000000fbfffffff6ffffffecffffff
+    _rivetMultiplier: 1.5
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

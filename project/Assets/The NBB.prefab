@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: The NBB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c9c4808d7a4ebfad56f9a8f0ea30b5, type: 3}
+  m_Name:
+  IsDefault: 0
+  Rivets: 999999
+  Gears: 45
+  UnlockRivets: 999999
+  UnlockGears: 90
+  StoreQuantity: 4
+  LevelRequired: 46
+  StartingCount: 0
+  SortOrderOverride: 245
+  FriendlyName: The NBB
+  Description: Devastating bomb that leaves terrain intact but kills bots...Nothing But Bots!
+  campaignPlusWeight: 8
+  campaignPlusCount: 1
+  uiTexturePath: weapon_ui/UI_weapon_neutronbomb
+  isHidden: 0
+  kabamItemId: 1227
+  isChampionshipTierReward: 0
+  RevengeSaleQuantity: 0
+  itemLevelPrefabName: itemlevel_thenbb
+  weaponPrefab: {fileID: 147589, guid: 9b0851677f57c9146b61cb0a7cf1c418, type: 2}
+  _eType: 0
+  _postActivationAim: 0
+  spriteName: super_nuke
+  spriteAtlas: {fileID: 11400000, guid: 594f154d95d29914b86dc24e3c2e7470, type: 2}
+  proxyOffset: {x: 0.55, y: 0.5}
+  proxyScale: {x: 0, y: 0}
+  deviceOffset: {x: -0.1, y: 0.2}
+  proxyMaterial: {fileID: 0}
+  _endsTurn: 1
+  _isPlaced: 0
+  _aimEffect: {fileID: 0}
+  _percentChanceOfAIChoosing: 10
+  _fireImpulse: 0
+  _eFiringAnimation: 0
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

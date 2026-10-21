@@ -1,0 +1,1494 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: sequence_tutorial
+  m_TagString: Sequence
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2db22cfa3191b54769b0044a4e3c42d, type: 3}
+  m_Name:
+  NextId: 92
+  Nodes:
+  - nodeType: 1
+    comment: Start Tutorial 1
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 246
+      width: 160
+      height: 109
+    id: 1
+    runtimeTypeName: SequenceEvent_CampaignStartedEvent
+    properties:
+    - type: 3
+      name: campaignId
+      intValue: 0
+      floatValue: 0
+      stringValue: sp_00
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Mobile tutorial
+    rect:
+      serializedVersion: 2
+      x: 395
+      y: 21
+      width: 140
+      height: 61
+    id: 2
+    runtimeTypeName: SequenceAction_RunSequence
+    properties:
+    - type: 3
+      name: sequenceName
+      intValue: 0
+      floatValue: 0
+      stringValue: GameModes/sequence_tutorial_1
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: parentToCreator
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: persistent
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: mustBeConnected
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Mobile tutorial 2
+    rect:
+      serializedVersion: 2
+      x: 1259
+      y: 90
+      width: 140
+      height: 61
+    id: 10
+    runtimeTypeName: SequenceAction_RunSequence
+    properties:
+    - type: 3
+      name: sequenceName
+      intValue: 0
+      floatValue: 0
+      stringValue: GameModes/sequence_tutorial_2
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: parentToCreator
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: persistent
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: mustBeConnected
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 888
+      y: 17
+      width: 123
+      height: 109
+    id: 23
+    runtimeTypeName: SequenceEvent_SequenceKilled
+    properties:
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 856
+      y: 157
+      width: 92.036575
+      height: 92.036575
+    id: 24
+    runtimeTypeName: SequenceVariable_Sequence
+    properties:
+    - type: 3
+      name: SequenceId
+      intValue: 0
+      floatValue: 0
+      stringValue: sequence_tutorial_1
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1531
+      y: 449
+      width: 110
+      height: 61
+    id: 25
+    runtimeTypeName: SequenceAction_KillSequence
+    properties: []
+    propertyArrays: []
+  - nodeType: 2
+    comment: End the Game
+    rect:
+      serializedVersion: 2
+      x: 1380.5311
+      y: 449
+      width: 91
+      height: 74
+    id: 26
+    runtimeTypeName: SequenceAction_RPC
+    properties:
+    - type: 3
+      name: name
+      intValue: 0
+      floatValue: 0
+      stringValue: EndGame
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Mode
+      intValue: 2
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 856
+      y: 315
+      width: 123
+      height: 109
+    id: 27
+    runtimeTypeName: SequenceEvent_SequenceKilled
+    properties:
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 764
+      y: 448
+      width: 92.036575
+      height: 92.036575
+    id: 28
+    runtimeTypeName: SequenceVariable_Sequence
+    properties:
+    - type: 3
+      name: SequenceId
+      intValue: 0
+      floatValue: 0
+      stringValue: sequence_tutorial_2
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable turn timer
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 634
+      width: 151
+      height: 61
+    id: 44
+    runtimeTypeName: SequenceAction_EnableTutorialHook
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_turntimer
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: HideItem
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable boost button
+    rect:
+      serializedVersion: 2
+      x: 341
+      y: 799
+      width: 151
+      height: 61
+    id: 46
+    runtimeTypeName: SequenceAction_EnableTutorialHook
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_boost
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: HideItem
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable weapon inventory button
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 877
+      width: 151
+      height: 61
+    id: 47
+    runtimeTypeName: SequenceAction_EnableTutorialHook
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_inventory
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: HideItem
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable player input
+    rect:
+      serializedVersion: 2
+      x: 335
+      y: 955
+      width: 141
+      height: 61
+    id: 49
+    runtimeTypeName: SequenceAction_EnablePlayerInput
+    properties:
+    - type: 5
+      name: enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable camera input
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 391
+      width: 119
+      height: 61
+    id: 50
+    runtimeTypeName: SequenceAction_CameraEnable
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: respawn player; don't respawn bots
+    rect:
+      serializedVersion: 2
+      x: 333
+      y: 1036
+      width: 160
+      height: 61
+    id: 51
+    runtimeTypeName: SequenceAction_EnablePlayerRespawn
+    properties:
+    - type: 5
+      name: enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: localPlayerEnableOverride
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: all weapons free
+    rect:
+      serializedVersion: 2
+      x: 333
+      y: 1115
+      width: 177
+      height: 61
+    id: 52
+    runtimeTypeName: SequenceAction_InventoryEverythingFree
+    properties:
+    - type: 5
+      name: enable
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable move button
+    rect:
+      serializedVersion: 2
+      x: 335
+      y: 550
+      width: 151
+      height: 61
+    id: 55
+    runtimeTypeName: SequenceAction_EnableTutorialHook
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_move
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: HideItem
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable aim button
+    rect:
+      serializedVersion: 2
+      x: 341
+      y: 719
+      width: 151
+      height: 61
+    id: 59
+    runtimeTypeName: SequenceAction_EnableTutorialHook
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_aim
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: HideItem
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1126
+      y: 439
+      width: 177
+      height: 61
+    id: 61
+    runtimeTypeName: SequenceAction_InventoryEverythingFree
+    properties:
+    - type: 5
+      name: enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1261
+      y: 9
+      width: 122
+      height: 61
+    id: 62
+    runtimeTypeName: SequenceAction_FirstBootDone
+    properties: []
+    propertyArrays: []
+  - nodeType: 4
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1401
+      y: 565
+      width: 84.1485
+      height: 84.1485
+    id: 63
+    runtimeTypeName: SequenceVariable_Number
+    properties:
+    - type: 2
+      name: IntialValue
+      intValue: 0
+      floatValue: 1
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: Name
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable teleport button
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 469
+      width: 151
+      height: 61
+    id: 65
+    runtimeTypeName: SequenceAction_EnableTutorialHook
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_teleport
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: HideItem
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: tutorial master
+    rect:
+      serializedVersion: 2
+      x: 573
+      y: 268
+      width: 140
+      height: 61
+    id: 67
+    runtimeTypeName: SequenceAction_RunSequence
+    properties:
+    - type: 3
+      name: sequenceName
+      intValue: 0
+      floatValue: 0
+      stringValue: sequence_tutorial_master
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: parentToCreator
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: persistent
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: mustBeConnected
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment: check if mp tutorial is complete
+    rect:
+      serializedVersion: 2
+      x: 338
+      y: 253
+      width: 136
+      height: 84
+    id: 68
+    runtimeTypeName: SequenceCondition_TutorialComplete
+    properties:
+    - type: 3
+      name: tutorialName
+      intValue: 0
+      floatValue: 0
+      stringValue: mp
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 3
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 147
+      y: 715
+      width: 73
+      height: 107
+    id: 69
+    runtimeTypeName: SequenceCondition_Gate
+    properties:
+    - type: 5
+      name: StartOpen
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: CloseImmediate
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AutoCheck
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment: Checks to see if player has started the shooting range
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 704
+      width: 167
+      height: 109
+    id: 70
+    runtimeTypeName: SequenceEvent_CampaignStartedEvent
+    properties:
+    - type: 3
+      name: campaignId
+      intValue: 0
+      floatValue: 0
+      stringValue: sp_01
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable camera input
+    rect:
+      serializedVersion: 2
+      x: 864
+      y: 897
+      width: 119
+      height: 61
+    id: 71
+    runtimeTypeName: SequenceAction_CameraEnable
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable teleport button
+    rect:
+      serializedVersion: 2
+      x: 1197
+      y: 796
+      width: 151
+      height: 61
+    id: 72
+    runtimeTypeName: SequenceAction_EnableTutorialHook
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_teleport
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: HideItem
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable move button
+    rect:
+      serializedVersion: 2
+      x: 1165
+      y: 877
+      width: 151
+      height: 61
+    id: 73
+    runtimeTypeName: SequenceAction_EnableTutorialHook
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_move
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: HideItem
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable turn timer
+    rect:
+      serializedVersion: 2
+      x: 858
+      y: 974
+      width: 151
+      height: 61
+    id: 74
+    runtimeTypeName: SequenceAction_EnableTutorialHook
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_turntimer
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: HideItem
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable boost button
+    rect:
+      serializedVersion: 2
+      x: 1151
+      y: 979
+      width: 151
+      height: 61
+    id: 75
+    runtimeTypeName: SequenceAction_EnableTutorialHook
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_boost
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: HideItem
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: disable player input
+    rect:
+      serializedVersion: 2
+      x: 865
+      y: 819
+      width: 141
+      height: 61
+    id: 76
+    runtimeTypeName: SequenceAction_EnablePlayerInput
+    properties:
+    - type: 5
+      name: enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: Mobile shooting range sequence
+    rect:
+      serializedVersion: 2
+      x: 940
+      y: 655
+      width: 140
+      height: 61
+    id: 77
+    runtimeTypeName: SequenceAction_RunSequence
+    properties:
+    - type: 3
+      name: sequenceName
+      intValue: 0
+      floatValue: 0
+      stringValue: GameModes/sequence_tutorial_shootingrange
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: parentToCreator
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: persistent
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: mustBeConnected
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: button_aim
+    rect:
+      serializedVersion: 2
+      x: 1207
+      y: 696
+      width: 151
+      height: 61
+    id: 81
+    runtimeTypeName: SequenceAction_EnableTutorialHook
+    properties:
+    - type: 5
+      name: Enable
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 3
+      name: TutorialId
+      intValue: 0
+      floatValue: 0
+      stringValue: button_aim
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: HideItem
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 48
+      width: 90
+      height: 107
+    id: 82
+    runtimeTypeName: SequenceAction_Platform
+    properties: []
+    propertyArrays: []
+  - nodeType: 2
+    comment: FB tutorial
+    rect:
+      serializedVersion: 2
+      x: 388
+      y: 102
+      width: 140
+      height: 61
+    id: 83
+    runtimeTypeName: SequenceAction_RunSequence
+    properties:
+    - type: 3
+      name: sequenceName
+      intValue: 0
+      floatValue: 0
+      stringValue: GameModes/sequence_tutorial_1_FB
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: parentToCreator
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: persistent
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: mustBeConnected
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 1
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1010
+      y: 148
+      width: 123
+      height: 109
+    id: 84
+    runtimeTypeName: SequenceEvent_SequenceKilled
+    properties:
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 292
+      width: 92.036575
+      height: 92.036575
+    id: 85
+    runtimeTypeName: SequenceVariable_Sequence
+    properties:
+    - type: 3
+      name: SequenceId
+      intValue: 0
+      floatValue: 0
+      stringValue: sequence_tutorial_1_FB
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: FB tutorial 2
+    rect:
+      serializedVersion: 2
+      x: 1256
+      y: 190
+      width: 140
+      height: 61
+    id: 87
+    runtimeTypeName: SequenceAction_RunSequence
+    properties:
+    - type: 3
+      name: sequenceName
+      intValue: 0
+      floatValue: 0
+      stringValue: GameModes/sequence_tutorial_2
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: parentToCreator
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: persistent
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: mustBeConnected
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment: FB Shooting range
+    rect:
+      serializedVersion: 2
+      x: 931
+      y: 740
+      width: 140
+      height: 61
+    id: 88
+    runtimeTypeName: SequenceAction_RunSequence
+    properties:
+    - type: 3
+      name: sequenceName
+      intValue: 0
+      floatValue: 0
+      stringValue: GameModes/sequence_tutorial_shootingrange
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: parentToCreator
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: persistent
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: mustBeConnected
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 2
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 758
+      y: 688
+      width: 90
+      height: 107
+    id: 89
+    runtimeTypeName: SequenceAction_Platform
+    properties: []
+    propertyArrays: []
+  - nodeType: 1
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 903
+      y: 472
+      width: 123
+      height: 109
+    id: 90
+    runtimeTypeName: SequenceEvent_SequenceKilled
+    properties:
+    - type: 1
+      name: Priority
+      intValue: 0
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    - type: 5
+      name: AllowPropagation
+      intValue: 1
+      floatValue: 0
+      stringValue:
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  - nodeType: 4
+    comment:
+    rect:
+      serializedVersion: 2
+      x: 1083
+      y: 532
+      width: 92.036575
+      height: 92.036575
+    id: 91
+    runtimeTypeName: SequenceVariable_Sequence
+    properties:
+    - type: 3
+      name: SequenceId
+      intValue: 0
+      floatValue: 0
+      stringValue: sequence_tutorial_2_FB
+      gameObjectValue: {fileID: 0}
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    propertyArrays: []
+  Links:
+  - outId: 24
+    outName: Value
+    inId: 23
+    inName: Sequence
+  - outId: 26
+    outName: Complete
+    inId: 25
+    inName: Destroy
+  - outId: 28
+    outName: Value
+    inId: 27
+    inName: Sequence
+  - outId: 27
+    outName: Out
+    inId: 61
+    inName: Process
+  - outId: 61
+    outName: Finished
+    inId: 26
+    inName: Call
+  - outId: 23
+    outName: Out
+    inId: 62
+    inName: Process
+  - outId: 63
+    outName: Value
+    inId: 26
+    inName: Args
+  - outId: 23
+    outName: Out
+    inId: 10
+    inName: RunSequence
+  - outId: 1
+    outName: Out
+    inId: 68
+    inName: Check
+  - outId: 68
+    outName: No
+    inId: 67
+    inName: RunSequence
+  - outId: 69
+    outName: Out
+    inId: 65
+    inName: Process
+  - outId: 1
+    outName: Out
+    inId: 69
+    inName: Check
+  - outId: 69
+    outName: Out
+    inId: 55
+    inName: Process
+  - outId: 69
+    outName: Out
+    inId: 44
+    inName: Process
+  - outId: 69
+    outName: Out
+    inId: 59
+    inName: Process
+  - outId: 69
+    outName: Out
+    inId: 46
+    inName: Process
+  - outId: 69
+    outName: Out
+    inId: 47
+    inName: Process
+  - outId: 69
+    outName: Out
+    inId: 49
+    inName: Process
+  - outId: 69
+    outName: Out
+    inId: 50
+    inName: Process
+  - outId: 69
+    outName: Out
+    inId: 51
+    inName: Process
+  - outId: 69
+    outName: Out
+    inId: 52
+    inName: Process
+  - outId: 70
+    outName: Out
+    inId: 71
+    inName: Process
+  - outId: 70
+    outName: Out
+    inId: 72
+    inName: Process
+  - outId: 70
+    outName: Out
+    inId: 73
+    inName: Process
+  - outId: 70
+    outName: Out
+    inId: 74
+    inName: Process
+  - outId: 70
+    outName: Out
+    inId: 75
+    inName: Process
+  - outId: 70
+    outName: Out
+    inId: 76
+    inName: Process
+  - outId: 70
+    outName: Out
+    inId: 81
+    inName: Process
+  - outId: 82
+    outName: Mobile
+    inId: 2
+    inName: RunSequence
+  - outId: 82
+    outName: Web
+    inId: 83
+    inName: RunSequence
+  - outId: 85
+    outName: Value
+    inId: 84
+    inName: Sequence
+  - outId: 84
+    outName: Out
+    inId: 87
+    inName: RunSequence
+  - outId: 70
+    outName: Out
+    inId: 89
+    inName: Select
+  - outId: 89
+    outName: Mobile
+    inId: 77
+    inName: RunSequence
+  - outId: 89
+    outName: Web
+    inId: 88
+    inName: RunSequence
+  - outId: 84
+    outName: Out
+    inId: 62
+    inName: Process
+  - outId: 90
+    outName: Out
+    inId: 61
+    inName: Process
+  - outId: 91
+    outName: Value
+    inId: 90
+    inName: Sequence
+  - outId: 1
+    outName: Out
+    inId: 2
+    inName: RunSequence
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

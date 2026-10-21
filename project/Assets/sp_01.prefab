@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  - 114: {fileID: 11405782}
+  m_Layer: 0
+  m_Name: sp_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5e4ec285c84aea20ba6e9cb170f7f36, type: 3}
+  m_Name:
+  Players:
+  - {fileID: 11409266, guid: d7743fdc7532dee48b456e47d64434e4, type: 2}
+  - {fileID: 11409266, guid: 138de51e98584394cb8388adf4f7cd4d, type: 2}
+  - {fileID: 11409266, guid: 82d044a026b7f1f489c081a239739b33, type: 2}
+  CampaignPlusTable: []
+  AiSpawnPoints: []
+  Level: level_shootingrange
+  LevelTexture: level_shootingrange
+  GameMode: 4
+  ReloadableLevel: 1
+  EnableBlastVisualization: 1
+  InfiniteAmmo: 1
+  playerSpawnPointName: p0
+  Inventory:
+  - name: Rocket
+    count: 99
+  - name: 40 Bomb
+    count: 99
+  - name: Battering Ram
+    count: 99
+  - name: Big Ass Bomb
+    count: 99
+  - name: Blow-It-Up-Fish
+    count: 99
+  - name: Boing Cluster
+    count: 99
+  - name: Dragon Breath
+    count: 99
+  - name: Elephant Gun
+    count: 99
+  - name: End of the World
+    count: 99
+  - name: Fatal Fugu
+    count: 99
+  - name: Flame-Yuken
+    count: 99
+  - name: Flamethrower
+    count: 99
+  - name: Flubonic Balls
+    count: 99
+  - name: Ginsusaw
+    count: 99
+  - name: Gong Show
+    count: 99
+  - name: Grenade
+    count: 99
+  - name: Hand Cannon
+    count: 99
+  - name: Hanzo Special
+    count: 99
+  - name: Jack Hammer
+    count: 99
+  - name: Jello Shots
+    count: 99
+  - name: Knight Stick
+    count: 99
+  - name: Land Mine
+    count: 99
+  - name: Laser Mine
+    count: 99
+  - name: Little Ass Bomb
+    count: 99
+  - name: MARV Rocket
+    count: 99
+  - name: Minigun
+    count: 99
+  - name: Mo' Betta Rocket
+    count: 99
+  - name: Mothership
+    count: 99
+  - name: Mr. Nibbles
+    count: 99
+  - name: Nail 'em Grenade
+    count: 99
+  - name: Ninja Mine
+    count: 99
+  - name: Ninja Reign
+    count: 99
+  - name: Octo Death
+    count: 99
+  - name: Octo MARV
+    count: 99
+  - name: Pandamonigun
+    count: 99
+  - name: Penta Death
+    count: 99
+  - name: Ultra Robo Zappiter
+    count: 99
+  - name: Pineapple Trifecta
+    count: 99
+  - name: Plumber Pummeler
+    count: 99
+  - name: Port-A-Bomby
+    count: 99
+  - name: Positronic Dart
+    count: 99
+  - name: Precipitation Rocket
+    count: 99
+  - name: Quatro Bouncers
+    count: 99
+  - name: Ricochet Grenade
+    count: 99
+  - name: Ricochet Shower
+    count: 99
+  - name: Robo Zappiter
+    count: 99
+  - name: 5 Of A Kind
+    count: 99
+  - name: Sarcophacats
+    count: 99
+  - name: Scorching Sticks
+    count: 99
+  - name: Shuriken San
+    count: 99
+  - name: Six Shooter
+    count: 99
+  - name: Spear
+    count: 99
+  - name: Taze Your Bro Mine
+    count: 99
+  - name: The NBB
+    count: 99
+  - name: Teleport Grenade
+    count: 99
+  - name: Pineapple Express
+    count: 99
+  - name: Exploding Barrel
+    count: 99
+  Rewards: []
+--- !u!114 &11405782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e063d89ec4492a9a0693e17d68f2254d, type: 3}
+  m_Name:
+  PracticeRewardXp: 125
+  PracticeRewardRivets: 100
+  PlusRewardXp: 150
+  PlusRewardRivets: 250
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

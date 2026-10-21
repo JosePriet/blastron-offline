@@ -1,0 +1,17 @@
+using Holoville.HOTween;
+using UnityEngine;
+
+public class Transition_Slide_Intro_FromTop : EBUI_Transition
+{
+	public override void StartTransition()
+	{
+		float z = base.gameObject.transform.localPosition.z;
+		base.gameObject.transform.localPosition = new Vector3(0f, Screen.height * 2, z);
+		TweenParms tweenParms = new TweenParms();
+		tweenParms.Prop("localPosition", new Vector3(0f, 0f, z));
+		tweenParms.Ease(EaseType.EaseOutCubic);
+		tweenParms.Delay(info.delay);
+		tweenParms.OnComplete(StopTransition);
+		HOTween.To(base.gameObject.transform, info.duration, tweenParms);
+	}
+}

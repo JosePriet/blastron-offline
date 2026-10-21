@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  - 114: {fileID: 11405782}
+  - 114: {fileID: 11461526}
+  - 54: {fileID: 5454010}
+  - 114: {fileID: 11419550}
+  - 114: {fileID: 11484216}
+  m_Layer: 0
+  m_Name: PlayerAI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35f8c4d42304d9a7cd31d22caa78f503, type: 3}
+  m_Name:
+  tutorialId:
+  severeDamagePercentage: 0.5
+  severeDamageParticlesPrefab: {fileID: 19805782, guid: c9ccade2c5dbce046847f374c5cf14bf, type: 2}
+  severeDamageMinDelay: 0
+  severeDamageMaxDelay: 1
+  criticalDamagePercentage: 0.3
+  criticalDamageParticlesPrefab: {fileID: 19809266, guid: 493396bb005e4a44599d2bd88ba77d44, type: 2}
+  _eventLand: {fileID: 11409266, guid: 18fbb4bb67fd0ea418a84e4b99cfa985, type: 2}
+  _eventMove: {fileID: 11409266, guid: 6778619ca544ac541a9d75839ddd035e, type: 2}
+  _eventMyTurn: {fileID: 0}
+  _eventCelebrate: {fileID: 0}
+  respawnFX: {fileID: 147589, guid: c7ef2849e076dc24f811b5569b6a2f9e, type: 2}
+  _animationAudioEvents:
+  - {fileID: 11409266, guid: 349b691b5d3c720459ecfc6c8a0ccd20, type: 2}
+  - {fileID: 11409266, guid: 45922fb0fdcb124458b39a1a5bb84918, type: 2}
+  - {fileID: 11409266, guid: 77460bc650e58074287da1d722cb95c7, type: 2}
+  - {fileID: 11409266, guid: db4abc1811b1dea45af4e2e8c443bb39, type: 2}
+  - {fileID: 11409266, guid: 6f37909b88d6bbc438d5ede95ab42080, type: 2}
+  - {fileID: 11409266, guid: 7196f386c419114479e905ea467f8cb8, type: 2}
+  - {fileID: 11409266, guid: cee7890b978cd944a9f1c53ac6fc745f, type: 2}
+--- !u!114 &11405782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e4a0c897508b2a5f6975d27d086bd3f, type: 3}
+  m_Name:
+  hitPoints: 0
+  _autoDestroy: 0
+  _deathParticles: {fileID: 147589, guid: b9c6dfdd2e6a30b43b3fad1e476bfe14, type: 2}
+  _selfDamageReductionPercentage: 25
+--- !u!114 &11461526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b14dd8ba6626dca50376b6d5d2a7214, type: 3}
+  m_Name:
+  observed: {fileID: 11409266}
+  stateSynchronization: 2
+  migrationSynchronization: 0
+  updateInterval: 0
+--- !u!54 &5454010
+Rigidbody:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &11419550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7922622652caee696e14f9f62d380a, type: 3}
+  m_Name:
+  _PhysicsObjectTarget: {fileID: 0}
+--- !u!114 &11484216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c09d1a2cb226cf876e5f9ca2f1e156, type: 3}
+  m_Name:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 8
+  m_Name: bronze_05
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a571bdc71cc910cb9e8c0838f85b04, type: 3}
+  m_Name:
+  AiPlayers:
+  - {fileID: 11409266, guid: 0efb3df358c351c4784d0c0274a09e0d, type: 2}
+  - {fileID: 11409266, guid: 5ad6775914e299d43b3fdcf2e54fa2a4, type: 2}
+  - {fileID: 11409266, guid: bb1b9cd5bb227fe43b1f5263088fffe9, type: 2}
+  AiSpawnPoints:
+  - spawn01a
+  - spawn02a
+  - spawn03a
+  - 
+  AiInventory:
+  - name: Mo`Betta Rocket
+    count: 4
+  - name: Land Mine
+    count: 2
+  - name: Teleport Grenade
+    count: 5
+  - name: Nail 'em Grenade
+    count: 2
+  - name: Positronic Dart
+    count: 5
+  - name: Spear
+    count: 5
+  - name: Dragon Breath
+    count: 6
+  - name:
+    count: 0
+  - name:
+    count: 0
+  - name:
+    count: 0
+  AdvancedInventoryIndex: 5
+  AdvancedInventoryScoreThreshold: 2000
+  PlayerSpawnPointName: player
+  onlyAttackPlayer: 0
+  Cinematic: []
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

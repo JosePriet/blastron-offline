@@ -1,0 +1,1340 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: Tuning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c03c704057759d6581dd848a519f4c23, type: 3}
+  m_Name:
+  Player_JumpHeight: 52
+  Player_RunSpeed: 5
+  Player_Height: 36.12
+  Player_FlySpeed: 9
+  Player_CollisionHeightFrac: 0.66
+  Player_CollisionWidthFrac: 0.66
+  Player_MaxStepHeight: 25
+  Player_KillFloor: -10
+  Player_SpecialIdleWaitMin: 30
+  Player_SpecialIdleWaitMax: 45
+  Player_PlayStunnedAtPercentHealth: 25
+  Player_RespawnDelay: 5
+  Player_MinFallHeight: 40
+  Player_MaxFallHeight: 60
+  Player_FallDamageMultiplier: 15
+  Player_DrownPeriod: 3
+  Control_MinPowerActivationDeflection: 0.2
+  Control_MaxPowerDeactiavationDeflection: 0.1
+  Control_PowerMeterDisplayScale: 13
+  Control_PowerMeterRotationCatchup: 0.2
+  Control_StopMovingMinAngle: 60
+  Control_StopMovingMinDeflection: 0.25
+  Control_StartMovingMaxAngle: 60
+  Control_StartMovingMinDeflection: 0.15
+  Control_StopJumpingMaxAngle: 22.5
+  Control_StopJumpingMaxDeflection: 0.25
+  Control_StartJumpingMinAngle: 25
+  Control_StartJumpingMinDeflection: 0.25
+  Control_LateralDeadZone: 0.25
+  Camera_OrthoFracMin: 0.4428
+  Camera_OrthoFracDefault: 0.975
+  Camera_OrthoFracMax: 0.975
+  Camera_OrthoFracMinPhone: 0.4428
+  Camera_OrthoFracDefaultPhone: 0.975
+  Camera_OrthoFracMaxPhone: 0.975
+  Camera_OrthoZoomGap: 0.3
+  Camera_OrthoFracCatchup: 10
+  Camera_ZoomSensitivity: 0.005
+  Camera_TruckSensitivity: 0.1
+  Camera_ZoomOutOnFire: 0
+  Camera_ZoomOnGap: 0
+  Camera_ReturnToLocalOnGap: 1
+  Camera_KeepPlayerOnScreenDuringAim: 1
+  Camera_CenterPlayerOnMove: 1
+  Camera_KeepOnScreenZone: {x: 0.85, y: 0.75}
+  Camera_Intro_X_Time: 1
+  Camera_Intro_Y_Time: 2
+  Camera_Intro_Z_Time: 0.3
+  Gacha_Attract_TimeToShowItem: 3
+  Gacha_Attract_TimeBetweenItems: 0.3
+  Gacha_Attract_FadeDuration: 0.15
+  Gacha_Table_ColorBlendTime: 0.1
+  Gacha_Token_ScaleDownTime: 0.1
+  Gacha_Token_ScaleUpTime: 0.1
+  Gacha_Token_LerpTime: 0.2
+  Gacha_Spin_PrespinCount: 16
+  Gacha_Spin_PrespinsAtFullSpeed: 6
+  Gacha_Spin_PauseForEachReward: 0.02
+  Gacha_Spin_PauseBetweenEachReward: 0.01
+  Gacha_Spin_RewardFadeTime: 0.02
+  Gacha_Spin_PauseAndFadeTimeScale: 1.4
+  Gacha_Spin_FinalRewardPauseTime: 2
+  Gacha_Spin_FinalRewardFadeOutTime: 0.1
+  Gacha_Spin_RewardFlyOffTime: 0.3
+  Gacha_Restock_WaitTime: 3
+  Outro_Camera_PlayerZoom: 0.3
+  Outro_Camera_HoldTime: 5.75
+  Outro_Camera_HoldTime1_Team: 3
+  Outro_Camera_HoldTime2_Team: 3
+  Outro_CelebMsg_StartDelay: 0
+  Outro_CelebAnimName: bot_celeb_cheer_2
+  Outro_Camera_OrthoFracCatchup: 1
+  World_Gravity: -25
+  World_DurationTillStop: 0.2
+  World_Brake: 0.95
+  World_DistanceThreshold: 8
+  Body_MinDamageSpeed: 4
+  Body_MaxDamageSpeed: 20
+  Body_DamageMultiplier: 12
+  Timer_Countdown: 25
+  Timer_Countdown2Player: 30
+  Timer_Gap: 1
+  Timer_Fire_Truncate: 5
+  Timer_Countdown_AI: 10
+  Timer_Countdown_AI_DeathMatch: 10
+  Timer_Countdown_AI_TeamDeathMatch: 10
+  Timer_Countdown_AI_KillCount: 10
+  Timer_Countdown_AI_SuddenDeath: 10
+  Timer_DeathMatch: 300
+  Timer_TutorialDeathMatch: 180
+  Timer_ShowYourTurn: 2
+  Timer_ShowOthersTurn: 1
+  Timer_CratePickup: 2
+  Timer_Multiplier: 2
+  Timer_SuddenDeath: 300
+  Timer_KillCount: 300
+  TrialPay_Enabled: 1
+  TrialPay_Countries: all
+  TrialPay_Time: 604800
+  Chat_MessageDuration: 10
+  Chat_MessageFadeTime: 2
+  Loot_PreSuckPeriod: 3
+  DeathMessage_Duration: 2
+  DefaultRivets: 15000
+  HUD_KeySizeRelativeToPlayer: 0.75
+  Scoring_Points_Kill: 1000
+  Scoring_Points_Suicide: -250
+  Scoring_Bonus_Multiplier_Timer: 4
+  Scoring_Bonus_Multiplier_Max: 3
+  Scoring_Championship_SuddenDeath_TimerBonusMultiplier: 100
+  Scoring_KillCountTo_Win: 5
+  BackToLobbyTimer: 15
+  LevelUpTimer: 5
+  TutorialDoneTimer: 1.5
+  NewHighScoreTimer: 3
+  GameStartTimer: 25
+  FullPlayersTimer: 5
+  LockoutTime: 3
+  ProjectileIndicatorZDepth: -10
+  bigarrow_uiAmplitude: 30
+  bigarrow_uiSpeed: 5
+  bigarrow_uiSquish: 0.05
+  bigarrow_uiScale: 1.5
+  bigarrow_worldScale: 1
+  Respawn_MinDistance: 4
+  UpgradeUI_TimeToDoLerp: 0.5
+  UpgradeUI_TimeToDoSineWave: 0
+  UpgradeUI_TimeBetweenWheelAndBar: 1
+  UpgradeUI_NumSineWaveOscillations: 0
+  UpgradeUI_ColorSwapDuration: 0.3
+  UpgradeUI_TimeToShowResponsePanel: 4
+  UpgradeUI_SpinTimeBeforeDecay: 0.6
+  UpgradeUI_SpinVelocity: 4
+  UpgradeUI_SpinVelocityDecay: 0.98
+  UpgradeUI_SpinMinVelocity: 0.8
+  UpgradeUI_UpgradeColor: {r: 0.21678329, g: 1, b: 0, a: 1}
+  UpgradeUI_WheelTop: {x: 30, y: 140, z: -1}
+  UpgradeUI_WheelBottom: {x: 30, y: -140, z: -1}
+  UpgradeBracketStringTiers:
+  - 0.8
+  - 0.6
+  - 0.4
+  - 0.2
+  - 0
+  Vault_TimerIntervalSeconds: 28800
+  Vault_TimerExpiryMinutesReminder: 60
+  Chest_ChanceToSpawn: 0.05
+  Chest_ChanceToSpawnChampionship: 0.03
+  Matchmaking_EnableRandom: 0
+  Matchmaking_EnableLevelSelect: 0
+  Matchmaking_EnableTeamDeathMatch: 1
+  Matchmaking_EnableKillCount: 0
+  Matchmaking_EnableSuddenDeath: 0
+  ColorTint_Owned: {r: 0.39166066, g: 0.7089552, b: 0, a: 1}
+  ColorTint_Store: {r: 0, g: 1, b: 1, a: 1}
+  ColorTint_Tier1: {r: 0.3882353, g: 0.5372549, b: 0.23137255, a: 1}
+  ColorTint_Tier2: {r: 0.7411765, g: 0.44313726, b: 0.2, a: 1}
+  ColorTint_Tier3: {r: 0.50595903, g: 0.7251914, b: 0.85820895, a: 1}
+  ColorTint_Tier4: {r: 1, g: 0.6772727, b: 0, a: 1}
+  ColorTint_Tier5: {r: 0.3432836, g: 0.3432836, b: 0.3432836, a: 1}
+  ColorTint_Tier6: {r: 1, g: 1, b: 1, a: 1}
+  ColorTint_Championship: {r: 1, g: 0, b: 0, a: 1}
+  ColorTint_Epic: {r: 0.703125, g: 0.375, b: 0.96484375, a: 1}
+  RateInventoryObject:
+  RateInventoryCount: 0
+  StoreUnlock_RemovePadlockFaderDelay: 0
+  DamageTextOffset: {x: 0, y: 60, z: 0}
+  KeyDamageRespawnThreshold: 1000000
+  GrantEnergyInSecs: 1800
+  NoEnergyShowMultiplayer: 1
+  EnergyStartMax: 3
+  EnergyUpgradedMax: 6
+  EnergyRefillCost: 10
+  EnergyUpgradeCost: 100
+  DailyRewardsResetTime24HUTC: 9
+  ImpulseWeaponSalePurchaseDiscount: 0.15
+  ImpulseWeaponSaleUnlockDiscount: 0.15
+  ImpulseWeaponPopupDurationSecs: 20
+  RevengeSaleDiscount: 0.3
+  RevengeSalePopupDurationSecs: 20
+  RevengeSaleGapNumberOfGames: 5
+  RevengeSaleProbability: 0.2
+  RevengeSaleMinimumGameTimeSecs: 30
+  RevengeSaleMaxFrequencyPerGame: 2
+  MaxInaccuracyforBotsBronze: 10
+  MaxInaccuracyforBotsSilver: 3
+  MaxInaccuracyforBotsGold: 1
+  ConsecutiveChampionshipLossesForContextualPopups: 2
+  ChampionshipFacebookGlobalLeaderboardCountMultiplier: 10
+  ItemLevelling_MaxLevel: 10
+  ItemLevelling_HudRange: 000000000300000007000000
+  NameChangeCost: 50
+  HiddenSoftCostThreshold: 999999
+  ExtraFloat1: 3
+  ExtraFloat2: 0
+  ExtraFloat3: 0
+  ExtraFloat4: 0
+  ExtraFloat5: 0
+  ExtraFloat7: 0
+  ExtraFloat8: 0
+  ExtraFloat9: 0
+  ExtraFloat10: 0
+  SkillPointsData:
+    InitialSkillPoints: 10
+    SkillPointsLevelOneCost: 3
+    MaxAttributeLevel: 99
+    ResetSkillPointsCost: 14000000190000001e00000028000000320000003c00000046000000550000006400000096000000
+    SkillPointsFormula:
+    - AddedValue: 1
+      MultipliedValue: 1.038
+    - AddedValue: 1
+      MultipliedValue: 1.03
+    - AddedValue: 3
+      MultipliedValue: 1.03
+    - AddedValue: 1
+      MultipliedValue: 1.025
+    - AddedValue: 2
+      MultipliedValue: 1.025
+    baseAttackModifier: 35
+    baseHealthModifier: 75
+    baseArmorModifier: 5
+    baseJumpHeightModifier: 8
+    baseSpeedModifier: 5
+    InitialHealth: 2000
+  PointRewardTable:
+  - GameMode: 0
+    rivetMultiplier: 0.008
+    xpMultiplier: 0.0015
+  - GameMode: 1
+    rivetMultiplier: 0.005
+    xpMultiplier: 0.0009
+  - GameMode: 2
+    rivetMultiplier: 0.01
+    xpMultiplier: 0.003
+  - GameMode: 3
+    rivetMultiplier: 0.015
+    xpMultiplier: 0.005
+  PlaceRewardTable:
+  - GameMode: 0
+    rivetBonus: e8030000ee020000f4010000fa000000
+    xpBonus: fa000000960000006400000032000000
+  - GameMode: 1
+    rivetBonus: 52030000520300002c0100002c010000
+    xpBonus: fa000000fa0000004b0000004b000000
+  - GameMode: 2
+    rivetBonus: e8030000ee020000f4010000fa000000
+    xpBonus: fa000000960000006400000032000000
+  - GameMode: 3
+    rivetBonus: e8030000ee020000f4010000fa000000
+    xpBonus: fa000000960000006400000032000000
+  - GameMode: 4
+    rivetBonus: 96000000000000000000000000000000
+    xpBonus: 69000000000000000000000000000000
+  Levels:
+  - XP: 30
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Ricochet Grenade
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 110
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Spear
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 570
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Mr. Nibbles
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 1020
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Nail 'em Grenade
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 1590
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 5
+      name: Port-A-Bomby
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 2295
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: 40 Bomb
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 3150
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Six Shooter
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 4155
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 2
+      name: Positronic Dart
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 5325
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Ninja Mine
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 6660
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Hand Cannon
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 8160
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Robo Zappiter
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 9855
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Battering Ram
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 11745
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Blow-It-Up-Fish
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 13830
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Hanzo Special
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 16140
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Gong Show
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 18660
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Shuriken San
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 21255
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Penta Death
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 24075
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 5
+      name: Pineapple Trifecta
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 27135
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Fatal Fugu
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 30435
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: 5 Of A Kind
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 33960
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: MARV Rocket
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 37740
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Dragon Breath
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 41775
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Jello Shots
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 46050
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Ginsusaw
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 50580
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Dragon Breath
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 55380
+    Bucket: 1
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Flamethrower
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 60450
+    Bucket: 2
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Penta Death
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 65820
+    Bucket: 2
+    Rewards:
+    - type: 0
+      quantity: 500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Knight Stick
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 71565
+    Bucket: 2
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 5
+      name: Pineapple Express
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 77730
+    Bucket: 2
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Scorching Sticks
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 84345
+    Bucket: 2
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Quatro Bouncers
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 91470
+    Bucket: 2
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 5
+      name: 40 Bomb
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 99105
+    Bucket: 2
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Ninja Reign
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 107250
+    Bucket: 2
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Little Ass Bomb
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 115950
+    Bucket: 2
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 5
+      name: Pineapple Trifecta
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 125205
+    Bucket: 2
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Ricochet Shower
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 135030
+    Bucket: 2
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 5
+      name: Penta Death
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 145455
+    Bucket: 2
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Precipitation Rocket
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 156495
+    Bucket: 2
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 3
+      name:
+    - type: 2
+      quantity: 4
+      name: Elephant Gun
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 168165
+    Bucket: 3
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Boing Cluster
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 180480
+    Bucket: 3
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Plumber Pummeler
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 193440
+    Bucket: 3
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Gong Show
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 207075
+    Bucket: 3
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Octo MARV
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 221415
+    Bucket: 3
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Sarcophacats
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 236460
+    Bucket: 3
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Octo Death
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 252225
+    Bucket: 3
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Scorching Sticks
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 268725
+    Bucket: 3
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 6
+      name: 5 Of A Kind
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 285975
+    Bucket: 3
+    Rewards:
+    - type: 0
+      quantity: 750
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 8
+      name: Mo' Betta Rocket
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 304005
+    Bucket: 3
+    Rewards:
+    - type: 0
+      quantity: 1500
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 3
+      name: Big Ass Bomb
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 322815
+    Bucket: 3
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Octo MARV
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 342435
+    Bucket: 3
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Quatro Bouncers
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 362880
+    Bucket: 3
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 3
+      name: The NBB
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 384150
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 5
+      name: Flamethrower
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 406275
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 3
+      name: Ultra Robo Zappiter
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 429270
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 2000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 2
+      name: End of the World
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 453135
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Octo Death
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 477885
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 5
+      name: MARV Rocket
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 503565
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 5
+      name: Ninja Reign
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 530145
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 5
+      name: Quatro Bouncers
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 557775
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 6
+      name: 5 Of A Kind
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 586605
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 5
+      name: Little Ass Bomb
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 616635
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Plumber Pummeler
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 648015
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 5
+      name: Elephant Gun
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 680745
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 6
+      name: Flubonic Balls
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 714900
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Ultra Robo Zappiter
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 750555
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 5
+      name: Gong Show
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 787710
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Octo Death
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 826515
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 1000
+      name:
+    - type: 1
+      quantity: 1
+      name:
+    - type: 2
+      quantity: 4
+      name: Plumber Pummeler
+    - type: 3
+      quantity: 10
+      name:
+  - XP: 867120
+    Bucket: 4
+    Rewards:
+    - type: 0
+      quantity: 5000
+      name:
+    - type: 1
+      quantity: 5
+      name:
+    - type: 2
+      quantity: 4
+      name: The NBB
+    - type: 3
+      quantity: 10
+      name:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

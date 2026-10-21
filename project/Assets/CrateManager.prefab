@@ -1,0 +1,380 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: CrateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321da6aa0ec2ef6eb64ce40a322d196a, type: 3}
+  m_Name:
+  initialSpawnMin: 0
+  initialSpawnMax: 0
+  _weaponCrateAudioEvent: {fileID: 11409266, guid: 28c3fab0161842a49929736d588499a9, type: 2}
+  _healthPackAudioEvent: {fileID: 11409266, guid: c190926f91f61b345938639c74ea779f, type: 2}
+  _keyAudioEvent: {fileID: 11409266, guid: 220d14ac0b7b96343be35e6f61fc961f, type: 2}
+  _boostAudioEvent: {fileID: 11409266, guid: 32bcdcdb01b906f4dbda0e33c0ec824e, type: 2}
+  _chestAudioEvent: {fileID: 11409266, guid: 072388d0fa27297478c3c6373e58f395, type: 2}
+  spawnChanceData: {fileID: 147589, guid: 7ae9de6523094b94a99cde25df8deb55, type: 2}
+  _spawnData:
+  - crateType: 0
+    typeWeight: 25
+    itemData:
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: c7fc09dddca1a9c4c98e140e4a45cf11, type: 2}
+      itemPrefabName: Crate_Weapon_5OfAKind
+    - itemWeight: 5
+      itemPrefab: {fileID: 147589, guid: 61674c52c54c5e046819080bf59d0c25, type: 2}
+      itemPrefabName: Crate_Weapon_40Bomb
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: ce05a384518b8054bb788faa7f4e7baf, type: 2}
+      itemPrefabName: Crate_Weapon_BatteringRam
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: 5ff79f2ba2448ae48ae9e32dbe9801e1, type: 2}
+      itemPrefabName: Crate_Weapon_BigAssBomb
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: a094aa46c63e7d340a68114982ff60ad, type: 2}
+      itemPrefabName: Crate_Weapon_Blowfish
+    - itemWeight: 1
+      itemPrefab: {fileID: 147589, guid: 5f79b380791a0174984fa90402d011c9, type: 2}
+      itemPrefabName: Crate_Weapon_BoingCluster
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: 1bf20f669aee47a4788e417d6b327092, type: 2}
+      itemPrefabName: Crate_Weapon_DragonBreath
+    - itemWeight: 1
+      itemPrefab: {fileID: 147589, guid: 622f69d5dd9d7a24bb6dcbe9ace90cfa, type: 2}
+      itemPrefabName: Crate_Weapon_Elephant
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: e27482f3bddb0184bba395197347e266, type: 2}
+      itemPrefabName: Crate_Weapon_EOTW
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: 18335f841f2c3d441a0eba02ad3bdd7a, type: 2}
+      itemPrefabName: Crate_Weapon_FatalFugu
+    - itemWeight: 1
+      itemPrefab: {fileID: 147589, guid: cf23e681d388a234186051504a952037, type: 2}
+      itemPrefabName: Crate_Weapon_Flamethrower
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: e5945e4eb49e58d4e817188fe4ce430d, type: 2}
+      itemPrefabName: Crate_Weapon_FlubonicBalls
+    - itemWeight: 1
+      itemPrefab: {fileID: 147589, guid: e44968157ff0e7c46afa8bff8fbcb554, type: 2}
+      itemPrefabName: Crate_Weapon_GongShow
+    - itemWeight: 5
+      itemPrefab: {fileID: 147589, guid: 57e060b9b36a1314d8afd46bd077e50e, type: 2}
+      itemPrefabName: Crate_Weapon_Grenade
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: d2ef9a1a771c17f4ab0ace1cffe2eab2, type: 2}
+      itemPrefabName: Crate_Weapon_Handcannon
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: 176960e662b3c37478630e55666a9ea5, type: 2}
+      itemPrefabName: Crate_Weapon_HanzoSpecial
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: afbace5f9d93b154f8f81ab6825c50a2, type: 2}
+      itemPrefabName: Crate_Weapon_JelloShots
+    - itemWeight: 1
+      itemPrefab: {fileID: 147589, guid: 2efda0010df2493459a1b4e001cee866, type: 2}
+      itemPrefabName: Crate_Weapon_KnightStick
+    - itemWeight: 5
+      itemPrefab: {fileID: 147589, guid: 29c1eea6dd1726c42ab32341112fea00, type: 2}
+      itemPrefabName: Crate_Weapon_LandMine
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: 1c6f597b70dbd414ea313b9c4530c7b4, type: 2}
+      itemPrefabName: Crate_Weapon_LittleABomb
+    - itemWeight: 1
+      itemPrefab: {fileID: 147589, guid: 448905e2ac16d434980010e0a13424d1, type: 2}
+      itemPrefabName: Crate_Weapon_MARV
+    - itemWeight: 1
+      itemPrefab: {fileID: 147589, guid: a22c391c41b69d34e8fe3184927e6e04, type: 2}
+      itemPrefabName: Crate_Weapon_Minigun
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: 0745472962ac2a84a9c1edf135ff70db, type: 2}
+      itemPrefabName: Crate_Weapon_MoBetta
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: 5ec1eb8443797ba4fbd1dece6a9666f5, type: 2}
+      itemPrefabName: Crate_Weapon_MrNibbles
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: 78cba94804e01f24788ef9c6352d6267, type: 2}
+      itemPrefabName: Crate_Weapon_NailemGrenade
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: a11e226bc7c00804fb30f07c7bb54259, type: 2}
+      itemPrefabName: Crate_Weapon_NinjaMine
+    - itemWeight: 1
+      itemPrefab: {fileID: 147589, guid: 06b32822dff271f40a93891a7a28c190, type: 2}
+      itemPrefabName: Crate_Weapon_NinjaReign
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: 8d3920fc40158f341b90bead8b67c14a, type: 2}
+      itemPrefabName: Crate_Weapon_OctoDeath
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: f9263980587582a499015b84afb53327, type: 2}
+      itemPrefabName: Crate_Weapon_OctoMARV
+    - itemWeight: 1
+      itemPrefab: {fileID: 147589, guid: 3543650a60c25cd41b97eeb7defb46f5, type: 2}
+      itemPrefabName: Crate_Weapon_PentaDeath
+    - itemWeight: 1
+      itemPrefab: {fileID: 147589, guid: 97bb8ea3facb6924c93c6d7d3f0acbd2, type: 2}
+      itemPrefabName: Crate_Weapon_Picante
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: fc7d389d61bc84a489c9b34a4f6b9827, type: 2}
+      itemPrefabName: Crate_Weapon_PineappleExpress
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: 0bcf4b1bd8622bb49ade977b24dfdb7c, type: 2}
+      itemPrefabName: Crate_Weapon_PineappleTrifecta
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: 8c20add9c3566784f9d1559b8cede0ec, type: 2}
+      itemPrefabName: Crate_Weapon_PlumberPummeler
+    - itemWeight: 5
+      itemPrefab: {fileID: 147589, guid: d11fdb2071ecb9f41a01a83949c93bbe, type: 2}
+      itemPrefabName: Crate_Weapon_PortABomby
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: 85083cdb88e7f7345b3b18212fb59b99, type: 2}
+      itemPrefabName: Crate_Weapon_PositronicDart
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: 4212f5d3c3086b142908298929169284, type: 2}
+      itemPrefabName: Crate_Weapon_PrecipitationRocket
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: cd89b01680372fe4eb7fb66185cf21ca, type: 2}
+      itemPrefabName: Crate_Weapon_Quatro
+    - itemWeight: 5
+      itemPrefab: {fileID: 147589, guid: 304ef49aaa379814cb694961fefd143c, type: 2}
+      itemPrefabName: Crate_Weapon_RicochetGrenade
+    - itemWeight: 1
+      itemPrefab: {fileID: 147589, guid: 9c2d9777a57ca254abaa10c02382ef3f, type: 2}
+      itemPrefabName: Crate_Weapon_RicochetShower
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: 17303d207d78a274c8c0b8766b065bb9, type: 2}
+      itemPrefabName: Crate_Weapon_RoboZappiter
+    - itemWeight: 5
+      itemPrefab: {fileID: 147589, guid: 691985307f911b24bb4a05b614156c9f, type: 2}
+      itemPrefabName: Crate_Weapon_Rocket
+    - itemWeight: 1
+      itemPrefab: {fileID: 147589, guid: 15834f3697333fe4aa7f46b816ddc31a, type: 2}
+      itemPrefabName: Crate_Weapon_Sarcophacats
+    - itemWeight: 1
+      itemPrefab: {fileID: 147589, guid: 2efcacf52da058246b2a18db6f940310, type: 2}
+      itemPrefabName: Crate_Weapon_ShurikenSan
+    - itemWeight: 5
+      itemPrefab: {fileID: 147589, guid: 1db054699561f764a946b89b81db94d3, type: 2}
+      itemPrefabName: Crate_Weapon_SixShooter
+    - itemWeight: 5
+      itemPrefab: {fileID: 147589, guid: a0db409f3ef51eb4885a74530e59fdeb, type: 2}
+      itemPrefabName: Crate_Weapon_Spear
+    - itemWeight: 3
+      itemPrefab: {fileID: 147589, guid: 253034dec7f57d940b114ec1dae17542, type: 2}
+      itemPrefabName: Crate_Weapon_TazeYourBroMine
+    - itemWeight: 5
+      itemPrefab: {fileID: 147589, guid: e3bb47a5f4ef3d34797680f6bd2babc0, type: 2}
+      itemPrefabName: Crate_Weapon_TeleportGrenade
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: 4a008434eef260343b1d3471f2361607, type: 2}
+      itemPrefabName: Crate_Weapon_TheNBB
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: 7c47dc141327f47449c20fdbeeece851, type: 2}
+      itemPrefabName: Crate_Weapon_UltraRoboZappiter
+    - itemWeight: 5
+      itemPrefab: {fileID: 147589, guid: e3bb47a5f4ef3d34797680f6bd2babc0, type: 2}
+      itemPrefabName: Crate_Weapon_TeleportGrenade
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: 41cd8b4b050498a46a2aed827cacae5b, type: 2}
+      itemPrefabName: Crate_Weapon_TeleportGrenade
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: a4a339914ad98b347b37dfe9d39e3759, type: 2}
+      itemPrefabName: Crate_Weapon_TeleportGrenade
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: eac874002bea97548859db8b5d492872, type: 2}
+      itemPrefabName: Crate_Weapon_TeleportGrenade
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: f8f4cfa30d6a8aa468796e87287daa52, type: 2}
+      itemPrefabName: Crate_Weapon_TeleportGrenade
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: ccfaa252e26d99e488d0c736c93954fb, type: 2}
+      itemPrefabName: Crate_Weapon_TeleportGrenade
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: c0bdd1130073a0c41a3c6117cb09d2cb, type: 2}
+      itemPrefabName: Crate_Weapon_TeleportGrenade
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: bc58b9d756382d041abde7f7b921dc6c, type: 2}
+      itemPrefabName: Crate_Weapon_TeleportGrenade
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: 0c90b806f1053ba4e884b42a9fc13c04, type: 2}
+      itemPrefabName: Crate_Weapon_TeleportGrenade
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: a115b3a03b65f2f45b4392ce42505077, type: 2}
+      itemPrefabName: Crate_Weapon_TeleportGrenade
+  - crateType: 2
+    typeWeight: 28
+    itemData:
+    - itemWeight: 75
+      itemPrefab: {fileID: 147589, guid: ec1f6017b88026442807ad8fe6935923, type: 2}
+      itemPrefabName: Crate_Health_Small
+    - itemWeight: 25
+      itemPrefab: {fileID: 147589, guid: a17a88bce3068bb40801567154b44d4f, type: 2}
+      itemPrefabName: Crate_Health_Large
+  - crateType: 5
+    typeWeight: 5
+    itemData:
+    - itemWeight: 100
+      itemPrefab: {fileID: 147589, guid: 38e52a9f275630c4694698d60dbdf8d1, type: 2}
+      itemPrefabName: Vault_Bronze
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: 374acc127ecd2e9408c1adff6fe1676d, type: 2}
+      itemPrefabName: Vault_Silver
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: 9b0a228d7d6faed46a7622fd198d4f03, type: 2}
+      itemPrefabName: Vault_Gold
+    - itemWeight: 0
+      itemPrefab: {fileID: 147589, guid: 0c192c4166537c0438d9104821aadabc, type: 2}
+      itemPrefabName: Vault_Platinum
+  - crateType: 1
+    typeWeight: 27
+    itemData:
+    - itemWeight: 50
+      itemPrefab: {fileID: 147589, guid: aa2f6ce29268b3943a3629e1ff2be337, type: 2}
+      itemPrefabName: Crate_Point_500
+    - itemWeight: 35
+      itemPrefab: {fileID: 147589, guid: f8e6e84a192e70e408934bb94b08aa8f, type: 2}
+      itemPrefabName: Crate_Point_1000
+    - itemWeight: 15
+      itemPrefab: {fileID: 147589, guid: cff24ce5681da5b4f93394cb8289c931, type: 2}
+      itemPrefabName: Crate_Point_2000
+  - crateType: 6
+    typeWeight: 15
+    itemData:
+    - itemWeight: 100
+      itemPrefab: {fileID: 147589, guid: 21c0f638cbfeab149aa4bc0563cdb48b, type: 2}
+      itemPrefabName: Crate_Point_500
+  campaignSpawnData: {fileID: 147589, guid: d0a3b0571befc2941a154f2263fc1937, type: 2}
+  privateSpawnData: {fileID: 147589, guid: d0a3b0571befc2941a154f2263fc1937, type: 2}
+  championshipSpawnData: {fileID: 147589, guid: 29dbfbe549f95bc4b9a319fcbc3360f2, type: 2}
+  keyPrefab: {fileID: 147589, guid: 8cda1c1edf80c544bb848d55881fc786, type: 2}
+  chestPrefabs:
+  - Prefab: {fileID: 147589, guid: d27ee16e18179e54e9508724eb3244b2, type: 2}
+    Chance: 3
+  - Prefab: {fileID: 147589, guid: f2f484d4a06a7da45b3e3f1d9d0a5623, type: 2}
+    Chance: 10
+  - Prefab: {fileID: 147589, guid: b109f37c9dd85c147907924e6101d7a3, type: 2}
+    Chance: 3
+  - Prefab: {fileID: 147589, guid: 9b365429b5ccdaa4590b1978d054299d, type: 2}
+    Chance: 15
+  - Prefab: {fileID: 147589, guid: 7244a4e5b2ce4fe418ee239dc3d5a723, type: 2}
+    Chance: 15
+  - Prefab: {fileID: 147589, guid: 2982162c6c3a7844ab2edaf3d6186795, type: 2}
+    Chance: 15
+  - Prefab: {fileID: 147589, guid: eaac7257262287747ba4e768b45de3b4, type: 2}
+    Chance: 10
+  - Prefab: {fileID: 147589, guid: 7a19c6ba2d8ab694e8c513d8a0f1d5ac, type: 2}
+    Chance: 15
+  - Prefab: {fileID: 147589, guid: f1c0b52cbd5e83a4581eaa23f586865a, type: 2}
+    Chance: 1
+  - Prefab: {fileID: 147589, guid: d94f0888f17707b4b81c9bd3f344f8aa, type: 2}
+    Chance: 4
+  - Prefab: {fileID: 147589, guid: 2f63632b2b7f98a459d39d7ca886eb78, type: 2}
+    Chance: 15
+  - Prefab: {fileID: 147589, guid: 7397abb0cdff0b34297cd2faf34d81e8, type: 2}
+    Chance: 15
+  - Prefab: {fileID: 147589, guid: 4acf7654f5298034a96e1bc08719fd48, type: 2}
+    Chance: 15
+  - Prefab: {fileID: 147589, guid: ba15239122d1b2a4698229ce1d6a1284, type: 2}
+    Chance: 15
+  - Prefab: {fileID: 147589, guid: bdc6115cba5d6fb4581c2522a053e776, type: 2}
+    Chance: 5
+  - Prefab: {fileID: 147589, guid: 64df7bd61e079974bbedebf21b73a2cd, type: 2}
+    Chance: 1
+  - Prefab: {fileID: 147589, guid: f4a2dd8dbf496804b91ca1dad2710456, type: 2}
+    Chance: 1
+  - Prefab: {fileID: 147589, guid: 0ed0b1934c1fd0a4da3913454ad0abbe, type: 2}
+    Chance: 7
+  - Prefab: {fileID: 147589, guid: a95ac8e547d907c489c56189a1bdba19, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: 7ee8ea78131c2e044b3d31cf5362f1a5, type: 2}
+    Chance: 1
+  - Prefab: {fileID: 147589, guid: 906f7cbb343a92a44a0606464cdef5fa, type: 2}
+    Chance: 6
+  - Prefab: {fileID: 147589, guid: 92ac00edcb6a4ae45a4d678d63edadbc, type: 2}
+    Chance: 1
+  - Prefab: {fileID: 147589, guid: e6db4d87c0176454a98f55945f196f44, type: 2}
+    Chance: 15
+  - Prefab: {fileID: 147589, guid: 56018197e68757f4683478b827ebe5c5, type: 2}
+    Chance: 35
+  - Prefab: {fileID: 147589, guid: 05fb94810b0e2934fafba89d26eec770, type: 2}
+    Chance: 1
+  - Prefab: {fileID: 147589, guid: a7d3f1633b6b13345a35112ae903cce1, type: 2}
+    Chance: 1
+  - Prefab: {fileID: 147589, guid: c19706f4feb575846814e0941f3470be, type: 2}
+    Chance: 1
+  - Prefab: {fileID: 147589, guid: df459cff77fda9c4ab189f49b4fd1ad4, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: d301c0b6b8cad6449b59aba5c88bcb50, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: 46b171282f20c7647adee7488ce2f2ed, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: a82546a5a40dd594a917039648055ba9, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: aae95725f030de7498b5b434115ef39b, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: 2da7610fc2801e64f97ce90325c0a327, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: b275afdd8a5625844b1441d4da131a3e, type: 2}
+    Chance: 5
+  - Prefab: {fileID: 147589, guid: 577fa8a8a5d80bf44bec0306411da48e, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: d48df572e7685a94094c9107e686981f, type: 2}
+    Chance: 5
+  - Prefab: {fileID: 147589, guid: 07471031cf59ab940990d28b5012c526, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: e677191a9d5093f478cc08d74101448d, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: d4792c6a29f264d4ca258672bbc7df59, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: d4792c6a29f264d4ca258672bbc7df59, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: 58d1cfc1ddb3a3d4ab98ba109978a223, type: 2}
+    Chance: 30
+  - Prefab: {fileID: 147589, guid: f11f0471f443f3c47b7fec550081a92d, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: 577166565f09e384cab68f943fa6c659, type: 2}
+    Chance: 2
+  - Prefab: {fileID: 147589, guid: de459d7628b1c764b9c11840e1eaa4e0, type: 2}
+    Chance: 15
+  - Prefab: {fileID: 147589, guid: 00dd4f4a543865a448f9ce72fccdc47b, type: 2}
+    Chance: 10
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 8
+  m_Name: gold_08
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a571bdc71cc910cb9e8c0838f85b04, type: 3}
+  m_Name:
+  AiPlayers:
+  - {fileID: 11409266, guid: 3e703c5aebcc8554baaa69ee63e4a0b5, type: 2}
+  - {fileID: 11409266, guid: 62f713b8c89e5c94fb8245a5f5d9738a, type: 2}
+  - {fileID: 11409266, guid: bbc2e1c6814394248a036286b2191eed, type: 2}
+  AiSpawnPoints:
+  - spawn01a
+  - spawn02a
+  - spawn03a
+  - 
+  AiInventory:
+  - name: Mo' Betta Rocket
+    count: 4
+  - name: Teleport Grenade
+    count: 5
+  - name: Pineapple Trifecta
+    count: 2
+  - name: Shuriken San
+    count: 2
+  - name: 5 Of A Kind
+    count: 5
+  - name: Penta Death
+    count: 1
+  - name: Elephant Gun
+    count: 1
+  - name: Positronic Dart
+    count: 1
+  - name:
+    count: 0
+  - name:
+    count: 0
+  AdvancedInventoryIndex: 5
+  AdvancedInventoryScoreThreshold: 1500
+  PlayerSpawnPointName: player
+  onlyAttackPlayer: 0
+  Cinematic: []
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: AudioEvent_PHX_Rock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d71f903076709e6d12236e7caf85a2a5, type: 3}
+  m_Name:
+  m_AudioClips:
+  - {fileID: 8300000, guid: fea7583c5ad1ec44598fa3c11f902460, type: 3}
+  - {fileID: 8300000, guid: c4e690ba61adcbe4f9cc5325b50ea3cf, type: 3}
+  - {fileID: 8300000, guid: 44c9e014909ac154991a801f44805a2e, type: 3}
+  - {fileID: 8300000, guid: 9fbc5601bee9aec45b9b987b311d9401, type: 3}
+  - {fileID: 8300000, guid: b5a007a26305d614f99e0a29356f0013, type: 3}
+  - {fileID: 8300000, guid: cfd81037612fe284083aa9267d75ec1e, type: 3}
+  - {fileID: 8300000, guid: 001ecc6b0acd48e4d9d1aed6965d62ea, type: 3}
+  - {fileID: 8300000, guid: c98f4d4b7dc92774a8254fac4c5461b8, type: 3}
+  m_SelectMode: 2
+  m_AudioCategory: {fileID: 11409266, guid: d39324206dc0e0f4d81bba05eb1f9302, type: 2}
+  m_ChanceToNotPlay: 0
+  m_VolumeDB: 0
+  m_VolumeDBRandomDelta: 0
+  m_FadeInTime: 0
+  m_FadeOutTime: 0
+  m_PitchST: 0
+  m_PitchSTRandomDelta: 0
+  m_Loop: 0
+  m_Priority: 10
+  m_DopplerLevel: 0
+  m_MinDistance: 50
+  m_MaxDistance: 350
+  m_RolloffMode: 1
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

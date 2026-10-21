@@ -1,0 +1,13 @@
+namespace EB.ENet
+{
+	public enum SocketOption
+	{
+		SOCKOPT_NONBLOCK = 1,
+		SOCKOPT_BROADCAST = 2,
+		SOCKOPT_RCVBUF = 3,
+		SOCKOPT_SNDBUF = 4,
+		SOCKOPT_REUSEADDR = 5,
+		SOCKOPT_RCVTIMEO = 6,
+		SOCKOPT_SNDTIMEO = 7
+	}
+}

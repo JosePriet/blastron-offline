@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 8
+  m_Name: bronze_15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a571bdc71cc910cb9e8c0838f85b04, type: 3}
+  m_Name:
+  AiPlayers:
+  - {fileID: 11409266, guid: 369f9180c556e1e4f8b2e2b68f414711, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  AiSpawnPoints:
+  - spawn01a
+  - 
+  - 
+  - 
+  AiInventory:
+  - name: Mo' Betta Rocket
+    count: 5
+  - name: Boing Cluster
+    count: 2
+  - name: Teleport Grenade
+    count: 5
+  - name: Shuriken San
+    count: 1
+  - name: Pandamonigun
+    count: 2
+  - name: Mo' Betta Rocket
+    count: 2
+  - name:
+    count: 0
+  - name:
+    count: 0
+  - name:
+    count: 0
+  - name:
+    count: 0
+  AdvancedInventoryIndex: 5
+  AdvancedInventoryScoreThreshold: 2000
+  PlayerSpawnPointName: player
+  onlyAttackPlayer: 1
+  Cinematic:
+  - ImageAssetName: bronze01
+    ImageParams:
+    - Duration: 2.7
+      label: ID_CINEMATIC_2A
+      isSubtitle: 0
+  - ImageAssetName: bronze02
+    ImageParams:
+    - Duration: 2.5
+      label: ID_CINEMATIC_2B
+      isSubtitle: 0
+    - Duration: 2.5
+      label: ID_CINEMATIC_2C
+      isSubtitle: 0
+    - Duration: 4.5
+      label:
+      isSubtitle: 0
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

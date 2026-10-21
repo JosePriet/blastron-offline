@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: Land Mine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c9c4808d7a4ebfad56f9a8f0ea30b5, type: 3}
+  m_Name:
+  IsDefault: 0
+  Rivets: 400
+  Gears: 1
+  UnlockRivets: 999999
+  UnlockGears: 0
+  StoreQuantity: 8
+  LevelRequired: 0
+  StartingCount: 0
+  SortOrderOverride: 15
+  FriendlyName: Land Mine
+  Description: Chuck this sucker at an enemy to do some serious damage.  Added bonus, if you miss, it stays there until someone detonates it.  Kablooey!
+  campaignPlusWeight: 0
+  campaignPlusCount: 0
+  uiTexturePath: weapon_ui/UI_weapon_landmine
+  isHidden: 0
+  kabamItemId: 1199
+  isChampionshipTierReward: 0
+  RevengeSaleQuantity: 0
+  itemLevelPrefabName: itemlevel_landmine
+  weaponPrefab: {fileID: 147589, guid: b7c43cdbd8857b3459a66bfb96100154, type: 2}
+  _eType: 0
+  _postActivationAim: 0
+  spriteName: land_mine
+  spriteAtlas: {fileID: 11400000, guid: 4e48645ccb5421f4d87afb8aaaf114f1, type: 2}
+  proxyOffset: {x: 0.15, y: 0.3}
+  proxyScale: {x: 0, y: 0}
+  deviceOffset: {x: -0.3, y: 0.3}
+  proxyMaterial: {fileID: 0}
+  _endsTurn: 1
+  _isPlaced: 0
+  _aimEffect: {fileID: 0}
+  _percentChanceOfAIChoosing: 10
+  _fireImpulse: 0
+  _eFiringAnimation: 0
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

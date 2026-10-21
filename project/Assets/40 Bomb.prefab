@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: 40 Bomb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c9c4808d7a4ebfad56f9a8f0ea30b5, type: 3}
+  m_Name:
+  IsDefault: 0
+  Rivets: 2000
+  Gears: 5
+  UnlockRivets: 999999
+  UnlockGears: 19
+  StoreQuantity: 6
+  LevelRequired: 7
+  StartingCount: 0
+  SortOrderOverride: 50
+  FriendlyName: 40 Bomb
+  Description: A bomb that spills some for the homies...some blood!  Better yet, it leaves some fire on the ground.
+  campaignPlusWeight: 30
+  campaignPlusCount: 5
+  uiTexturePath: weapon_ui/UI_weapon_40bomb
+  isHidden: 0
+  kabamItemId: 1163
+  isChampionshipTierReward: 0
+  RevengeSaleQuantity: 0
+  itemLevelPrefabName: itemlevel_40bomb
+  weaponPrefab: {fileID: 147589, guid: 870340d0f22ed904c9eba635418ed943, type: 2}
+  _eType: 0
+  _postActivationAim: 0
+  spriteName: left_arm
+  spriteAtlas: {fileID: 11400000, guid: d1504df9c06164e40af62de71edb285a, type: 2}
+  proxyOffset: {x: -165, y: -5}
+  proxyScale: {x: 100, y: 150}
+  deviceOffset: {x: -0.4, y: 0.3}
+  proxyMaterial: {fileID: 2100000, guid: be7893c1337350842b16d86cbd85b3c8, type: 2}
+  _endsTurn: 1
+  _isPlaced: 0
+  _aimEffect: {fileID: 0}
+  _percentChanceOfAIChoosing: 10
+  _fireImpulse: 0
+  _eFiringAnimation: 0
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

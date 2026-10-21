@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: gongbot_head_t4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b80866749e6ddd84468fe9aa8e26d0, type: 3}
+  m_Name:
+  Category: 0
+  TextureAtlas: {fileID: 11400000, guid: 33167b1447d0e034fb5db9159890666b, type: 2}
+  FaceAtlas: {fileID: 11400000, guid: 4e70ef174c6dc454c8bf859f1ea3aaf5, type: 2}
+  inGameMaterial: {fileID: 2100000, guid: 1e6e6d71d2fff714d902389c8812764d, type: 2}
+  uiMaterial: {fileID: 2100000, guid: a054fac4c605f2847846b9cba1f17d39, type: 2}
+  inGameFaceMaterial: {fileID: 2100000, guid: b85ae17d919679f4d871ee22f87f9fd5, type: 2}
+  uiFaceMaterial: {fileID: 2100000, guid: b85ae17d919679f4d871ee22f87f9fd5, type: 2}
+  CAC_UI_SpriteName: gongbot_head
+  CAC_UI_SpritePivot: {x: -10, y: 0}
+  FriendlyName: Gongbot Mask
+  Description: Don this mask, imbued with ancient attack secrets from the Middle Kingdom and watch all other bots cringe in fear.
+  Bucks: 50
+  Coins: 38000
+  UnlockLevel: 65
+  IsDefault: 0
+  IsHidden: 1
+  IsHiddenUnderAge: 0
+  IsRemove: 0
+  IsNew: 0
+  IsChampionshipBoss: 0
+  IsEpic: 1
+  XP: 300
+  numUpgradeStars: 8
+  OverideSortOrder: 100
+  Attributes: {fileID: 11409266, guid: 4b5d7af16ea0b584c9d71f6f88e28852, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

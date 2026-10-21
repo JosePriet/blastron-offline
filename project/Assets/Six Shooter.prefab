@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: Six Shooter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c9c4808d7a4ebfad56f9a8f0ea30b5, type: 3}
+  m_Name:
+  IsDefault: 0
+  Rivets: 900
+  Gears: 2
+  UnlockRivets: 999999
+  UnlockGears: 12
+  StoreQuantity: 6
+  LevelRequired: 4
+  StartingCount: 0
+  SortOrderOverride: 35
+  FriendlyName: Six Shooter
+  Description: Pack a straight and hefty wallop with this gun that shoots six bullets in a row.
+  campaignPlusWeight: 20
+  campaignPlusCount: 5
+  uiTexturePath: weapon_ui/UI_weapon_sixshooter
+  isHidden: 0
+  kabamItemId: 1223
+  isChampionshipTierReward: 0
+  RevengeSaleQuantity: 0
+  itemLevelPrefabName: itemlevel_sixshooter
+  weaponPrefab: {fileID: 147589, guid: a019dbeb1c8bb224bbe5755b133f198b, type: 2}
+  _eType: 1
+  _postActivationAim: 1
+  spriteName: six_shooter_right
+  spriteAtlas: {fileID: 11400000, guid: 9b3cde745e4c3f849b7d694182bc7873, type: 2}
+  proxyOffset: {x: 0.5, y: 0.4}
+  proxyScale: {x: 0, y: 0}
+  deviceOffset: {x: 10, y: 0.8}
+  proxyMaterial: {fileID: 0}
+  _endsTurn: 1
+  _isPlaced: 0
+  _aimEffect: {fileID: 0}
+  _percentChanceOfAIChoosing: 10
+  _fireImpulse: 0
+  _eFiringAnimation: 0
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
