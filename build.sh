@@ -9,7 +9,7 @@ HERE=$(cd "$(dirname "$0")" && pwd); W=$(mktemp -d)
 unzip -q "$APK" -d "$W/apk"
 mkdir -p "$W/obb" && tar xzf "$OBB" -C "$W/obb"
 M=$W/apk/assets/bin/Data/Managed
-CSC=$(ls /usr/lib/dotnet/sdk/*/Roslyn/bincore/csc.dll "$HOME"/.dotnet/sdk/*/Roslyn/bincore/csc.dll 2>/dev/null | head -1)
+CSC=$( (ls /usr/lib/dotnet/sdk/*/Roslyn/bincore/csc.dll "$HOME"/.dotnet/sdk/*/Roslyn/bincore/csc.dll 2>/dev/null || true) | head -1)
 
 # 1. on-device server, store and catalog (compiled against the game's own Mono 2.0 assemblies)
 dotnet "$CSC" -nologo -nostdlib -noconfig -target:library -langversion:7.3 -optimize -out:"$W/SparxOffline.dll" \
@@ -18,11 +18,13 @@ dotnet "$CSC" -nologo -nostdlib -noconfig -target:library -langversion:7.3 -opti
 
 # 2. redirect EndPointFactory/ProviderFactory, mark the bundled OBB packs mounted
 dotnet build -c Release -o "$W/patcher" "$HERE/src/patcher" >/dev/null
-dotnet "$W/patcher/patcher.dll" patch $M/Assembly-CSharp-firstpass.dll "$W/SparxOffline.dll" "$W/Assembly-CSharp-firstpass.dll" obb-in-apk
+dotnet "$W/patcher/patcher.dll" patch $M/Assembly-CSharp-firstpass.dll "$W/SparxOffline.dll" "$W/Assembly-CSharp-firstpass.dll" obb-in-apk no-dead-sdks ${PATCH_EXTRA:-}
 
-# 3. modern Android: targetSdk 24, loadable stub libraries
+# 3. modern Android: targetSdk 24. lib/ held Unity 4's ARMv6/v7 proxy stubs, whose private linker
+#    crashes in JNI_OnLoad on current Android; ship the real ARMv7 engine libraries there instead.
 python3 "$HERE/tools/axml_sdk.py" "$W/apk/AndroidManifest.xml" "$W/AndroidManifest.xml" 24
-for f in libunity.so libmono.so libenetlib.so; do python3 "$HERE/tools/elf_textrel.py" "$W/apk/lib/armeabi-v7a/$f" "$W/$f"; done
+for f in libunity.so libmono.so; do python3 "$HERE/tools/elf_textrel.py" "$W/apk/assets/libs/armeabi-v7a/$f" "$W/$f"; done
+python3 "$HERE/tools/elf_textrel.py" "$W/apk/lib/armeabi-v7a/libenetlib.so" "$W/libenetlib.so"
 
 # 4. OBB packs become built-in packs
 python3 -c "import json,sys;a=json.load(open(sys.argv[1]));b=json.load(open(sys.argv[2]));open(sys.argv[3],'w').write(json.dumps(a+b,separators=(',',':')))" \
