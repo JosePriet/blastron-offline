@@ -20,7 +20,6 @@ jobs:
           # google_apis images for API 30-32 ship ARM translation incl. 32-bit.
           - { api: 30, target: google_apis, arch: x86, tag: api30x86 }
           - { api: 30, target: google_apis, arch: x86_64, tag: api30 }
-          - { api: 32, target: google_apis, arch: x86_64, tag: api32 }
     steps:
       - uses: actions/checkout@v4
       - name: Enable KVM
