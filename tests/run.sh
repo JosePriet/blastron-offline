@@ -24,6 +24,7 @@ finish() {
 { a shell getprop ro.build.version.release; a shell getprop ro.build.version.sdk; a shell getprop ro.product.cpu.abilist; a shell getprop ro.dalvik.vm.native.bridge; a shell wm size; } > $OUT/device.txt 2>&1; cat $OUT/device.txt
 log install; timeout 300 adb install -r $APK > $OUT/install.txt 2>&1; cat $OUT/install.txt
 a shell dumpsys package $PKG | grep -E "versionName|targetSdk|primaryCpuAbi" >> $OUT/install.txt
+grep -q Success $OUT/install.txt || { log "install FAILED"; exit 0; }
 a logcat -c; adb logcat -v time > $OUT/logcat_live.txt 2>&1 & LC=$!
 frames
 log "launch"; a shell monkey -p $PKG -c android.intent.category.LAUNCHER 1 >/dev/null

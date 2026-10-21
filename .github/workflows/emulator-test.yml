@@ -16,10 +16,11 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # API 30 x86_64 images translate 32-bit ARM; API 34/35 check the install block and loading
-          - { api: 30, target: default, tag: api30 }
-          - { api: 34, target: google_apis, tag: api34 }
-          - { api: 35, target: google_apis, tag: api35 }
+          # Run 1: default/x86_64 images list no armeabi-v7a ABI, so install failed.
+          # google_apis images for API 30-32 ship ARM translation incl. 32-bit.
+          - { api: 30, target: google_apis, arch: x86, tag: api30x86 }
+          - { api: 30, target: google_apis, arch: x86_64, tag: api30 }
+          - { api: 32, target: google_apis, arch: x86_64, tag: api32 }
     steps:
       - uses: actions/checkout@v4
       - name: Enable KVM
@@ -31,7 +32,7 @@ jobs:
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: ${{ matrix.api }}
-          arch: x86_64
+          arch: ${{ matrix.arch }}
           target: ${{ matrix.target }}
           profile: pixel_4
           cores: 4
