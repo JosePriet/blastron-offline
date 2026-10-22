@@ -151,7 +151,8 @@ namespace GAOffline
             return Reply(s);
         }
 
-        // tier N: every Level 1 unit of rarity N that is in no squad, is not a fusion result and is not upgrading
+        // tier N: every Level 1 unit of rarity N that is in no squad and is not upgrading. The client's count also skips
+        // cards with a fusion_level, which the rebuilt cards do not set, so nothing else is skipped.
         public static Dictionary<string, object> BulkSalvage(Save s, int tier)
         {
             var up = Json.O(s.D, "upgrade");
@@ -160,7 +161,7 @@ namespace GAOffline
             foreach (Dictionary<string, object> u in all)
             {
                 int id = Json.I(u, "unit_id");
-                if (Json.I(u, "deck_id") <= 0 && Json.I(u, "level", 1) <= 1 && Rarity(id) == tier && !Fusion.IsResult(id)
+                if (Json.I(u, "deck_id") <= 0 && Json.I(u, "level", 1) <= 1 && Rarity(id) == tier
                     && Json.I(u, "unit_index") != busy)
                     Remove(s, u);
             }
