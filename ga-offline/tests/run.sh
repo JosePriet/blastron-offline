@@ -25,6 +25,13 @@ dismiss() {
   done
   log "no sdk warning found"
 }
+# the immersive-mode hint's OK, found by text (the hint is a system window, so it is in the UI dump)
+hintok() {
+  a shell uiautomator dump /sdcard/ui.xml >/dev/null 2>&1; a pull /sdcard/ui.xml $OUT/ui.xml >/dev/null 2>&1
+  grep -qi 'full screen' $OUT/ui.xml 2>/dev/null || return 0
+  xy=$(python3 $T/tap.py $OUT/ui.xml '^OK\b|^Got it' 2>/dev/null)
+  if [ -n "$xy" ]; then tap $xy hint_ok; sleep 2; else log "hint showing, no OK found"; cp $OUT/ui.xml $OUT/ui_hint.xml; fi
+}
 frames() { ( i=0; while [ ! -f $OUT/.stop ]; do cap $OUT/frames/$1$(printf %04d $i).png || true; i=$((i+1)); sleep 3; done ) & FR=$!; }
 stopframes() { touch $OUT/.stop; sleep 4; kill $FR 2>/dev/null; rm -f $OUT/.stop; }
 gamelog() { pid=$(gpid); a logcat -d -v time > $OUT/$1_logcat.txt 2>&1; grep -E "\( *$pid\)|Unity|GAOffline" $OUT/$1_logcat.txt | grep -v RcsClient | head -3000 > $OUT/$1_game.txt; log "$1: $(wc -l < $OUT/$1_game.txt) game log lines"; }
@@ -34,8 +41,15 @@ launch() { a logcat -c; a shell monkey -p $PKG -c android.intent.category.LAUNCH
 # let the freshly booted system settle (run 4: system_server restarted during run O)
 sleep 60
 adb root >/dev/null 2>&1; sleep 5; adb wait-for-device
-# Android 4.4's "swipe down to exit full screen" hint is a system window over the game that swallows touches
+# Android 4.4's "swipe down to exit full screen" hint is a system window over the game that swallows touches.
+# Run 14: global policy_control did not stop it on 4.4. 4.4 keeps confirmed packages in secure
+# immersive_mode_confirmations and reads it only when the window manager starts, so restart the framework after
+# setting it; hintok() below presses the hint's OK if it still shows.
+a shell settings put secure immersive_mode_confirmations $PKG
 a shell settings put global policy_control immersive.preconfirms=\*
+a shell stop; sleep 3; a shell start
+for i in $(seq 1 60); do [ "$(timeout 5 adb shell getprop sys.boot_completed | tr -d '\r')" = 1 ] && break; sleep 3; done
+sleep 30; log "framework restarted: $(a shell settings get secure immersive_mode_confirmations | tr -d '\r')"
 log "run O: original APK"
 timeout 300 adb install -r $G ${ABI:+--abi $ABI} $T/apk/original.apk > $OUT/O_install.txt 2>&1; cat $OUT/O_install.txt
 frames o; launch
@@ -51,11 +65,12 @@ a shell dumpsys package $PKG | grep -E "primaryCpuAbi|targetSdk" > $OUT/A_abi.tx
 frames a; launch
 for i in 1 2 3 4 5 6; do sleep 10; shot A_boot_$i; done
 # Android 4.4 takes input in the display's natural (portrait 1080x1920) coordinates, the same frame as screencap:
-# positions below are read straight off the screenshots. OK of the immersive-mode hint first.
-tap 660 1250 A_hint_ok; sleep 3
+# positions below are read straight off the screenshots.
+hintok
 # tutorial turns: drag hand card 1, then card 2, to the highlighted slot (the tutorial accepts only the card its
 # pointer shows), then tap through the dialogue
 for i in $(seq 1 8); do
+  hintok
   log "swipe card 1 -> slot (A_tutorial)"; a shell input swipe 150 150 605 740 1500; sleep 3
   log "swipe card 2 -> slot (A_tutorial)"; a shell input swipe 150 420 605 740 1500; sleep 4; shot A_tut_${i}a
   tap 540 960 A_tutorial; sleep 4; tap 540 960 A_tutorial; sleep 4; shot A_tut_${i}b
@@ -74,7 +89,7 @@ echo 3 > $OUT/autotest.txt; a push $OUT/autotest.txt $DATA/autotest >> $OUT/B_pu
 frames b; launch
 sleep 15; shot B_boot
 # autopilot plays the cards; the mission briefing and result screens still need taps
-for i in $(seq 1 24); do sleep 13; tap 540 960 B_dialogue; sleep 2; shot B_$i; done
+for i in $(seq 1 24); do sleep 11; hintok; tap 540 960 B_dialogue; sleep 2; shot B_$i; done
 stopframes; gamelog B
 a shell cat $DATA/save.json > $OUT/B_save.json 2>&1; a shell cat $DATA/log.txt > $OUT/B_trace.txt 2>&1  # log.txt is appended: B continues A
 a logcat -d -b crash > $OUT/crash.txt 2>&1
