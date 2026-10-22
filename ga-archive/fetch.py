@@ -73,7 +73,7 @@ for name, prefix in PREFIXES.items():
                 continue
             fname = re.sub(r"[^A-Za-z0-9._-]", "_", (path_part.path.strip("/") or "index") + ("_" + path_part.query if path_part.query else ""))[:180]
             sub = "files" if is_data else "reference/kongregate"
-            p = save(f"{sub}/{path_part.netloc}/{ts}_{fname}", data)
+            p = save(f"{sub}/{path_part.hostname}/{ts}_{fname}", data)
             got += 1
             log(f"  saved {p} ({len(data)} bytes)")
             time.sleep(1)

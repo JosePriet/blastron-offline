@@ -1,8 +1,5 @@
 name: ga-archive-search
 on:
-  push:
-    branches: [claude/project-thread-wv9u62]
-    paths: [ga-archive/fetch.py, .github/workflows/ga-archive.yml]
   workflow_dispatch:
 jobs:
   fetch:
@@ -13,11 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 ga-archive/fetch.py ga-archive/results
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: ga-archive-results
-          path: ga-archive/results
       - name: Commit results
         if: always()
         run: |
