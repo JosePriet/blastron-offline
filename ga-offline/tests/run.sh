@@ -29,10 +29,12 @@ launch() { a logcat -c; a shell monkey -p $PKG -c android.intent.category.LAUNCH
 
 # let the freshly booted system settle (run 4: system_server restarted during run O)
 sleep 60
+adb root >/dev/null 2>&1; sleep 5; adb wait-for-device
 log "run O: original APK"
 timeout 300 adb install -r -g ${ABI:+--abi $ABI} $T/apk/original.apk > $OUT/O_install.txt 2>&1; cat $OUT/O_install.txt
 frames o; launch
 for i in 1 2 3 4 5 6; do sleep 10; shot O_$i; done
+a shell debuggerd -b $(gpid) > $OUT/O_stacks.txt 2>&1
 stopframes; gamelog O
 a uninstall $PKG >/dev/null 2>&1
 
@@ -44,6 +46,8 @@ frames a; launch
 for i in 1 2 3 4 5 6 7 8 9; do sleep 10; shot A_boot_$i; done
 for i in 1 2 3 4 5 6; do tap 1140 540 A_center; sleep 5; done; shot A_after_taps
 sleep 20; shot A_final
+a shell debuggerd -b $(gpid) > $OUT/A_stacks.txt 2>&1
+a shell ls -laR /data/data/$PKG > $OUT/A_internal.txt 2>&1; a shell cat /data/data/$PKG/files/ga_offline/log.txt > $OUT/A_trace_internal.txt 2>&1
 stopframes; gamelog A
 a shell ls -laR /sdcard/Android/data/$PKG > $OUT/A_files.txt 2>&1; a shell cat $DATA/log.txt > $OUT/A_trace.txt 2>&1; a shell cat $DATA/save.json > $OUT/A_save.json 2>&1
 

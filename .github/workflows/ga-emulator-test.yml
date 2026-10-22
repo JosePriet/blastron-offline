@@ -31,7 +31,7 @@ jobs:
           cores: 4
           ram-size: 2048M
           disk-size: 6000M
-          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -no-snapshot
+          emulator-options: -no-window -gpu swiftshader_indirect -feature -GLESDynamicVersion -noaudio -no-boot-anim -no-snapshot
           disable-animations: true
           emulator-boot-timeout: 900
           script: OUT=out ABI= timeout 1500 bash ga-offline/tests/run.sh || true

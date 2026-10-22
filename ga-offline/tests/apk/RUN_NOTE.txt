@@ -2,3 +2,4 @@ run 3: arm abi
 run 4: API 23 x86 image, native x86 libs. Run 3 (API 30, ARM libs under ndk_translation) crashed with SIGSEGV
 inside libndk_translation for the original APK as well, so that emulator cannot run the game at all.
 run 5: same image; APK adds boot tracing (Trace.cs: Unity log mirrored to logcat tag GAOffline + heartbeat of unstarted managers).
+run 6: emulator limited to GLES 2.0 (-feature -GLESDynamicVersion); native stack dumps (debuggerd -b) of the stalled game; internal files pulled via adb root.
