@@ -1,0 +1,1823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root> 
+    <!-- 
+    	Events
+    
+    	<start_day> is in days played
+    	<duration> is in days
+    	
+	    <type>
+	    	1: PvE campaign
+	    	10: Gacha Box
+	    	11: NBP Bundle Package
+    -->
+    <!-- Type 11 = 5.99
+		 Type 12 = 9.99
+	  	 Type 13 = 14.99
+		 Type 14 = 19.99
+		 Type 15 = 8.99
+		 Type 16 = 12.99
+		 Type 17 = 39.99 -->
+
+    <event>
+        <id>1</id>
+        <name>New Recruit Pack</name>
+        <desc>Welcome to Havoc, recruit! The Watchtower has authorized a one-time pack to help your squad get started.</desc>
+        <type>11</type>
+		<portrait>elia</portrait>
+        <bundle_package>101</bundle_package>
+	    <start_level>5</start_level>
+	   <!--  <link>
+	    	<url>http://www.kongregate.com/forums/2280-global-assault/topics/461248-where-did-my-kara-go</url>
+	    	<name>Read More</name>
+	    </link> -->
+        <duration>2</duration> 
+    </event>
+    <event>
+        <id>2</id>
+        <name>Arclight</name>
+        <desc>Far to the north lies a clue that may reveal more of the Shattered Sun criminal organization.</desc>
+        <type>1</type>
+		<portrait>vargas</portrait>
+        <campaign>101</campaign>
+        <start_level>6</start_level>
+        <duration>2</duration>
+    </event>
+    <event>
+        <id>3</id>
+        <name>Havoc Rising</name>
+        <desc>Even under duress, your command of Havoc grows stronger! A new 3-Star unit pack is available for a limited time.</desc>
+        <type>11</type>
+		<portrait>darius</portrait>
+        <bundle_package>102</bundle_package>
+	    <start_day>2</start_day>
+        <duration>1</duration>
+    </event>
+    <event>
+        <id>14</id>
+        <name>Scrap Pack</name>
+		<desc>Get your squad into fighting shape with the Scrap Pack!</desc>
+		<type>12</type>
+		<portrait>darius</portrait>
+        <bundle_package>108</bundle_package>
+        <start_day>3</start_day>
+        <duration>1</duration>
+    </event>
+    <event>
+        <id>4</id>
+        <name>Rogue Warden</name>
+        <type>1</type>
+		<desc>Commander Kara managed to survive the destruction of her Havoc carrier! She could make powerful ally if we reach her in time.</desc>
+        <portrait>kara</portrait>
+        <campaign>102</campaign>
+	    <start_day>4</start_day>
+	    <start_level>5</start_level>
+        <duration>2</duration>
+    </event>
+    <event>
+        <id>13</id>
+        <name>Stingray Pack</name>
+		<desc>Rip apart your enemy's defenses with lasers! A new 3-Star pack is available for a limited time.</desc>
+        <type>12</type>
+		<portrait>soldier</portrait>
+        <bundle_package>107</bundle_package>
+        <start_day>4</start_day>
+        <duration>1</duration>
+    </event>
+    <event>
+        <id>10</id>
+        <name>Puncture Pack</name>
+		<desc>Tear through the enemy's armor and keep shooting! A new 3-Star pack is available for a limited time.</desc>
+        <type>11</type>
+		<portrait>elia</portrait>
+        <bundle_package>104</bundle_package>
+        <start_day>5</start_day>
+        <duration>0.125</duration>
+    </event>
+    <event>
+        <id>5</id>
+        <name>Finest Hour</name>
+        <type>12</type>
+		<desc>To overcome the new threat of Shattered Sun, we must augment our squad with Equipment. A new 3-Star pack with equipment is available for a limited time.</desc>
+		<portrait>soldier</portrait>
+        <bundle_package>103</bundle_package>
+        <start_day>6</start_day>
+        <duration>1</duration>
+    </event>
+    <event>
+        <id>12</id>
+        <name>Light Wall Pack</name>
+		<desc>Use barriers to protect your squad! A new 4-Star pack with equipment is available for a limited time.</desc>
+        <type>13</type>
+		<portrait>soldier</portrait>
+        <bundle_package>106</bundle_package>
+        <start_day>7</start_day>
+        <duration>1</duration>
+    </event>
+    <event>
+        <id>6</id>
+        <name>Burning Tide</name>
+		<desc>A tide of fire sweeps across the globe as Vile's forces decimate their surroundings. Capture him, and bring him back alive.</desc>
+        <type>1</type>
+		<portrait>flamethrower</portrait>
+        <campaign>103</campaign>
+        <start_day>7</start_day>
+        <duration>3</duration>
+    </event>
+    <event>
+        <id>15</id>
+        <name>Scrap Pack</name>
+		<desc>Get your squad into fighting shape with the Scrap Pack!</desc>
+		<type>12</type>
+		<portrait>darius</portrait>
+        <bundle_package>109</bundle_package>
+        <start_day>8</start_day>
+        <duration>1</duration>
+    </event>
+    <event>
+        <id>11</id>
+        <name>Dark Days Pack</name>
+		<desc>Don't give your enemy a chance to focus! A new 4-Star pack is available for a limited time.</desc>
+        <type>11</type>
+		<portrait>soldier</portrait>
+        <bundle_package>105</bundle_package>
+        <start_day>9</start_day>
+        <duration>1</duration>
+    </event>
+    <event>
+        <id>8</id>
+        <name>High Impact</name>
+		<desc>The Havoc team receives a distress call from a port town being assaulted by pirates with Shattered Sun technology.</desc>
+        <type>1</type>
+		<portrait>elia</portrait>
+        <campaign>105</campaign>
+        <start_day>10</start_day>
+        <duration>3</duration>
+    </event> 
+    <event>
+        <id>9</id>
+        <name>Eclipse</name>
+		<desc>Eclipse is a terrorist group fragmented from Shattered Sun. They believe they can finish what Shattered Sun began.</desc>
+        <type>1</type>
+		<portrait>darius</portrait>
+        <campaign>106</campaign>
+        <start_day>15</start_day>
+        <duration>3</duration>
+    </event>
+    <event>
+        <id>7</id>
+        <name>The Grinder</name>
+		<desc>Vargas assembles a crack team of Shattered Sun assassins to finish off Havoc for good.</desc>
+        <type>1</type>
+		<portrait>vargas</portrait>
+        <campaign>104</campaign>
+        <start_day>20</start_day>
+        <duration>5</duration>
+    </event>
+    <event>
+        <id>16</id>  
+        <name>Watchtower Siege</name>
+		<desc>It's time to seize the Watchtower and take it back from Shattered Sun.</desc>
+		<portrait>vargas</portrait>
+        <campaign>112</campaign>
+        <start_level>30</start_level>
+        <permanent>1</permanent>
+        <web_picture>watchtower_border.png</web_picture>
+    </event>
+    
+    <!-- EVENT BOXES --> 
+    <event>
+        <id>101</id>
+        <name>Flank Crate</name>
+		<desc>Find your enemy's weak spot with the new Flank skill!</desc>
+		<type>10</type>
+		<portrait>darius</portrait>
+        <event_box>301</event_box>
+        <campaign>109</campaign>
+        <start_level>100</start_level>
+        <duration>3</duration>
+    </event>
+    <event>
+        <id>103</id>
+        <name>Devastator Crate</name>
+		<desc>Bring deadly new skills into the fray with the addition of Laser and Shrapnel. Fight against 5 new missions featuring the skills!</desc>
+		<type>10</type>
+		<portrait>darius</portrait>
+        <event_box>305</event_box>
+        <campaign>107</campaign>
+        <start_level>100</start_level>
+        <duration>3</duration>
+    </event>
+    <event>
+        <id>104</id>
+        <name>Laser Crate</name>
+		<desc>Fire up the new Laser skill on these brand new units! Fight against 5 new missions featuring Laser!</desc>
+		<type>10</type>
+		<portrait>darius</portrait>
+        <event_box>306</event_box>
+         <campaign>108</campaign>
+        <start_level>100</start_level>
+        <duration>3</duration>
+    </event>
+    <!--  
+    <event>
+        <id>102</id>
+        <name>Test Box</name>
+		<desc>DON'T RELEASE</desc>
+		<portrait>darius</portrait>
+        <event_box>302</event_box>
+        <start_day>0</start_day>
+        <duration>700</duration>
+    </event>
+    <event>
+        <id>105</id>
+        <name>EMP Crate</name>
+		<desc>Shut down your enemy with new EMP skill! Fight against 5 new missions featuring EMP!</desc>
+		<type>10</type>
+		<portrait>darius</portrait>
+        <event_box>307</event_box>
+        <campaign>110</campaign>
+        <start_day>10</start_day>
+        <duration>3</duration>
+    </event>
+    -->
+    <event>
+        <id>106</id>
+        <name>Flank Cache</name>
+		<desc>Find your enemy's weak spot with the new Flank skill!</desc>
+		<type>10</type>
+		<portrait>darius</portrait>
+        <event_box>308</event_box>
+        <campaign>111</campaign>
+        <start_day>3</start_day>
+        <duration>2</duration>
+    </event>
+    <event>
+        <id>108</id>
+        <name>Laser Crate</name>
+		<desc>Fire up the new Laser skill on these brand new units!</desc>
+		<type>10</type>
+		<portrait>elia</portrait>
+        <event_box>306</event_box>
+        <start_day>5</start_day>
+        <duration>2</duration>
+    </event>
+    <event>
+        <id>109</id>
+        <name>Devastator Crate</name>
+		<desc>Bring deadly new skills into the fray with the addition of Laser and Shrapnel.</desc>
+		<type>10</type>
+		<portrait>darius</portrait>
+        <event_box>305</event_box>
+        <start_day>7</start_day>
+        <duration>2</duration>
+    </event>
+    <event>
+        <id>110</id>
+        <name>Overdrive Crate</name>
+		<desc>Kick your squad into overdrive with the Overdrive Crate!</desc>
+		<type>10</type>
+		<portrait>elia</portrait>
+        <event_box>309</event_box>
+        <start_day>14</start_day>
+        <duration>3</duration>
+    </event>
+    <event>
+        <id>111</id>
+        <name>Accelerator Crate</name>
+		<desc>Accelerate to victory with the Accelerator Crate!</desc>
+		<type>10</type>
+		<portrait>darius</portrait>
+        <event_box>310</event_box>
+        <start_day>17</start_day>
+        <duration>3</duration>
+    </event>
+    <event>
+        <id>112</id>
+        <name>Heavy Steel Cache</name>
+		<desc>Bring your rivals down with the Heavy Steel Cache!</desc>
+		<type>10</type>
+		<portrait>elia</portrait>
+        <event_box>1001</event_box>
+        <start_day>20</start_day>
+        <duration>1</duration>
+    </event>
+    <event>
+        <id>113</id>
+        <name>Impact Crate</name>
+		<desc>Unleash heavy firepower with the Impact Crate!</desc>
+		<type>10</type>
+		<portrait>darius</portrait>
+        <event_box>313</event_box>
+        <start_day>30</start_day>
+        <duration>3</duration>
+    </event>
+    <event>
+        <id>114</id>
+        <name>Shatter Crate</name>
+		<desc>Bring your enemies down with the Shatter Crate!</desc>
+		<type>10</type>
+		<portrait>darius</portrait>
+        <event_box>315</event_box>
+        <start_day>35</start_day> 
+        <duration>3</duration>
+    </event>
+    <!--  
+    <event>
+        <id>115</id>
+        <name>Vanguard Crate</name>
+		<desc>Bring your enemies down with a new Vanguard unit!</desc>
+		<portrait>vargas</portrait>
+        <event_box>317</event_box>
+        <start_day>40</start_day> 
+        <duration>3</duration>
+    </event>
+    -->
+    
+    
+    <!-- GLOBAL EVENTS -->
+    <event>
+        <id>5001</id>
+        <name>Weekend Sale!</name>
+		<desc>Gain 20% more Volt Coins all weekend long. Also check out the limited time Overdrive Crate!</desc>
+		<portrait>elia</portrait>
+        <event_box>309</event_box>
+        <sale>purchases_20sale_v2h</sale>
+        <start_time>1417197600</start_time> <!-- 1417197600 -->
+        <end_time>1417456800</end_time> <!-- 1417456800 -->
+    </event>
+    <event>
+        <id>5002</id>
+        <name>Accelerator Crate!</name>
+		<desc>The limited time Accelerator Crate has arrived!</desc>
+		<portrait>elia</portrait>
+        <event_box>310</event_box>
+        <start_time>1418061600</start_time> <!-- 12/8/2014 -->
+        <end_time>1418320800</end_time> <!-- 12/8/2014 -->
+    </event>
+    <event>
+        <id>5003</id>
+        <name>Beast Cache!</name>
+		<desc>The limited time Beast Cache has arrived!</desc>
+		<portrait>darius</portrait>
+        <event_box>311</event_box>
+        <start_time>1418407200</start_time> <!-- 12/12/2014 -->
+        <end_time>1418666400</end_time> <!-- 12/15/2014 -->
+    </event>
+    <event>
+        <id>5004</id>
+        <name>Holiday Sale!</name>
+		<desc>Gain 20% more Volt Coins. Also check out the limited time Ignition Crate!</desc>
+		<portrait>elia</portrait>
+        <event_box>314</event_box>
+        <sale>purchases_20sale_v2h</sale>
+        <start_time>1419444000</start_time> <!-- 12/24/2014 -->
+        <end_time>1419703200</end_time> <!-- 12/27/2014 -->
+    </event>
+    <!--
+    <event>
+        <id>5005</id>
+        <name>TEST GLOBAL EVENT!</name>
+		<desc>THIS IS A TEST GLOBAL EVENT</desc>
+		<portrait>elia</portrait>
+        <event_box>309</event_box>
+        <start_time>1420757100</start_time>
+        <end_time>1420759500</end_time> 
+    </event>-->
+    <event>
+        <id>5006</id>
+        <name>Volt Coin Sale!</name>
+		<desc>Gain 30% more Volt Coins. Also check out the limited time Triumph Crate!</desc>
+		<portrait>elia</portrait>
+		<event_box>316</event_box>
+        <sale>purchases_30sale_v2h</sale>
+        <start_time>1422471600</start_time> <!-- 1/28/2015 -->
+        <end_time>1423159200</end_time> <!-- 2/5/2015 -->
+    </event>
+    <event>
+        <id>5007</id>
+        <name>Trample Pack</name>
+		<desc>Grind your enemies to dust! A new 5-Star pack is available for a limited time.</desc>
+        <type>14</type>
+		<portrait>vargas</portrait>
+        <bundle_package>110</bundle_package>
+        <start_time>1422637200</start_time> <!-- 1/30/2015 12:00 -->
+        <end_time>1422725400</end_time> <!-- 1/31/2015 11:30 -->
+    </event>
+    <event>
+        <id>5008</id>
+        <name>Scrap Pack</name>
+		<desc>Get your squad into fighting shape with the Scrap Pack!</desc>
+		<type>12</type>
+		<portrait>darius</portrait>
+        <bundle_package>111</bundle_package>
+        <start_time>1422727200</start_time> <!-- 1/31/2015 12:00 -->
+        <end_time>1422811800</end_time> <!-- 2/1/2015 11:30 -->
+    </event> 
+    <event>
+        <id>5009</id>
+        <name>Titan Pack</name>
+		<desc>Crush your foes into dust! A new 5-Star pack is available for a limited time.</desc>
+        <type>14</type>
+		<portrait>elia</portrait>
+        <bundle_package>112</bundle_package>
+        <start_time>1422813600</start_time> <!-- 2/1/2015 12:00 -->
+        <end_time>1422900000</end_time> <!-- 2/2/2015 12:00 -->
+    </event>
+    <event>
+        <id>5010</id>
+        <name>Vanguard Crate!</name>
+		<desc>The limited time Vanguard Crate has arrived! The mighty Seraph has entered the battlefield.</desc>
+		<portrait>vargas</portrait>
+        <event_box>317</event_box>
+        <start_time>1423238400</start_time> <!-- 2/6/2015 10:00  am  -->
+        <end_time>1423508400</end_time> <!-- 2/9/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5011</id>
+        <name>Large Scrap Pack</name>
+		<desc>Crush your foes into dust! A new 5-Star pack is available for a limited time.</desc>
+        <type>13</type>
+		<portrait>elia</portrait>
+        <bundle_package>113</bundle_package>
+        <start_time>1423335600</start_time> <!-- 2/7/2015 1:00 pm -->
+        <end_time>1423508400</end_time> <!-- 2/9/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5012</id>
+        <name>Splinter Crate!</name>
+		<desc>The limited time Splinter Crate has arrived!</desc>
+		<portrait>vargas</portrait>
+        <event_box>318</event_box>
+        <start_time>1423854000</start_time> <!-- 2/13/2015 1:00  pm  -->
+        <end_time>1424113200</end_time> <!-- 2/16/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5013</id>
+        <name>Large Scrap Pack</name>
+		<desc>Get your squad into fighting shape with the Scrap Pack!</desc>
+        <type>13</type>
+		<portrait>elia</portrait>
+        <bundle_package>114</bundle_package>
+        <start_time>1423940400</start_time> <!-- 2/14/2015 1:00 pm -->
+        <end_time>1424113200</end_time> <!-- 2/16/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5014</id>
+        <name>Pulverize Crate!</name>
+		<desc>The limited time Pulverize Crate has arrived!</desc>
+		<portrait>vargas</portrait>
+        <event_box>319</event_box>
+        <start_time>1424458800</start_time> <!-- 2/19/2015 1:00  pm  -->
+        <end_time>1424718000</end_time> <!-- 2/23/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5015</id>
+        <name>Strider Pack</name>
+		<desc>Crush your foes into dust! A new 4-Star pack is available for a limited time.</desc>
+        <type>13</type>
+		<portrait>elia</portrait>
+        <bundle_package>116</bundle_package>
+        <start_time>1424458800</start_time> <!-- 2/20/2015 1:00 pm -->
+        <end_time>1424545200</end_time> <!-- 2/21/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5016</id>
+        <name>Large Scrap Pack</name>
+		<desc>Get your squad into fighting shape with the Scrap Pack!</desc>
+        <type>13</type>
+		<portrait>darius</portrait>
+        <bundle_package>115</bundle_package>
+        <start_time>1424631600</start_time> <!-- 2/22/2015 1:00 pm -->
+        <end_time>1424718000</end_time> <!-- 2/23/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5017</id>
+        <name>Volt Coin Surge</name>
+		<desc>We've been authorized for a limited time Volt Coin surge!</desc>
+        <type>12</type>
+		<portrait>elia</portrait>
+        <bundle_package>117</bundle_package>
+        <start_time>1424721600</start_time> <!-- 2/23/2015 2:00 pm -->
+        <end_time>1424890800</end_time> <!-- 2/25/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5018</id>
+        <name>Large Scrap Pack</name>
+		<desc>Get your squad into fighting shape with the Scrap Pack!</desc>
+        <type>13</type>
+		<portrait>darius</portrait>
+        <bundle_package>118</bundle_package>
+        <start_time>1424894400</start_time> <!-- 2/25/2015 2:00 pm -->
+        <end_time>1425063600</end_time> <!-- 2/27/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5019</id>
+        <name>Burning Pack</name>
+		<desc>Crush your foes into dust! A new 4-Star pack is available for a limited time.</desc>
+        <type>13</type>
+		<portrait>elia</portrait>
+        <bundle_package>119</bundle_package>
+        <start_time>1425150000</start_time> <!-- 2/28/2015 1:00 pm -->
+        <end_time>1425322800</end_time> <!-- 3/2/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5028</id>
+        <name>Dawn Crate!</name>
+		<desc>The limited time Dawn Crate has arrived! The powerful Medusa has entered the battlefield.</desc>
+		<portrait>vargas</portrait>
+        <event_box>322</event_box>
+        <start_time>1425063600</start_time> <!-- 2/27/2015 1:00 pm -->
+        <end_time>1425322800</end_time> <!-- 3/2/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5020</id>
+        <name>Triumph Crate!</name>
+		<desc>The limited time Triumph Crate has arrived!</desc>
+		<portrait>vargas</portrait>
+        <event_box>320</event_box>
+        <start_time>1425322800</start_time> <!-- 3/2/2015 1:00  pm  -->
+        <end_time>1425495600</end_time> <!-- 3/4/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5021</id>
+        <name>Small Scrap Pack</name>
+		<desc>Get your squad into fighting shape with the Scrap Pack!</desc>
+        <type>11</type>
+		<portrait>darius</portrait>
+        <bundle_package>120</bundle_package>
+        <start_time>1425495600</start_time> <!-- 3/4/2015 1:00 pm -->
+        <end_time>1425668400</end_time> <!-- 3/6/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5022</id>
+        <name>Drift Pack</name>
+		<desc>Crush your foes into dust! A new 4-Star pack is available for a limited time.</desc>
+        <type>13</type>
+		<portrait>elia</portrait>
+        <bundle_package>121</bundle_package>
+        <start_time>1425582000</start_time> <!-- 3/5/2015 1:00 pm -->
+        <end_time>1425754800</end_time> <!-- 3/7/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5029</id>
+        <name>Archon Crate!</name>
+		<desc>The limited time Archon Crate has arrived! The mighty Shogun has entered the battlefield.</desc>
+		<portrait>vargas</portrait>
+        <event_box>323</event_box>
+        <start_time>1425668400</start_time> <!-- 3/6/2015 1:00  pm  -->
+        <end_time>1425924000</end_time> <!-- 3/9/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5023</id>
+        <name>Large Scrap Pack</name>
+		<desc>Get your squad into fighting shape with the Scrap Pack!</desc>
+        <type>13</type>
+		<portrait>darius</portrait>
+        <bundle_package>122</bundle_package>
+        <start_time>1425754800</start_time> <!-- 3/7/2015 2:00 pm -->
+        <end_time>1425924000</end_time> <!-- 3/9/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5033</id>
+        <name>Volt Coin Surge</name>
+		<desc>We've been authorized for a limited time Volt Coin surge!</desc>
+        <type>12</type>
+		<portrait>elia</portrait>
+        <bundle_package>127</bundle_package>
+        <start_time>1425837600</start_time> <!-- 3/8/2015 1:00 pm -->
+        <end_time>1425924000</end_time> <!-- 3/9/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5024</id>
+        <name>Jolt Pack</name>
+		<desc>Crush your foes into dust! A new 4-Star pack is available for a limited time.</desc>
+        <type>13</type>
+		<portrait>elia</portrait>
+        <bundle_package>123</bundle_package>
+        <start_time>1425927600</start_time> <!-- 3/9/2015 2:00 pm -->
+        <end_time>1426096800</end_time> <!-- 3/11/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5034</id>
+        <name>Underworld Pack</name>
+		<desc>Crush your foes into dust! A new 4-Star pack is available for a limited time.</desc>
+        <type>14</type>
+		<portrait>elia</portrait>
+        <bundle_package>128</bundle_package>
+        <start_time>1426010400</start_time> <!--  3/10/2015 1:00 pm -->
+        <end_time>1426183200</end_time> <!--  3/12/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5035</id>
+        <name>Huge Scrap Pack</name>
+		<desc>Get your squad into fighting shape with the Scrap Pack!</desc>
+        <type>17</type>
+		<portrait>darius</portrait>
+        <bundle_package>129</bundle_package>
+        <start_time>1426096800</start_time> <!-- 3/11/2015 1:00 pm -->
+        <end_time>1426356000</end_time> <!-- 3/14/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5036</id>
+        <name>Ignition Crate!</name>
+		<desc>The limited time Ignition Crate has arrived!</desc>
+		<portrait>vargas</portrait>
+        <event_box>326</event_box>
+        <start_time>1426183200</start_time> <!-- 3/12/2015 1:00  pm  -->
+        <end_time>1426269600</end_time> <!-- 3/13/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5037</id>
+        <name>24 Hour Sale!</name>
+		<desc>Gain 20% more Volt Coins for 24 hours!</desc>
+		<portrait>elia</portrait>
+        <sale>purchases_20sale_v2h</sale>
+        <start_time>1426269600</start_time> <!--  3/13/2015 1:00 pm -->
+        <end_time>1426356000</end_time> <!--  3/14/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5030</id>
+        <name>Aeon Crate!</name>
+		<desc>The limited time Aeon Crate has arrived! The powerful Widow has entered the battlefield.</desc>
+		<portrait>vargas</portrait>
+        <event_box>324</event_box>
+        <start_time>1426269600</start_time> <!-- 3/13/2015 1:00  pm  -->
+        <end_time>1426528800</end_time> <!-- 3/16/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5025</id>
+        <name>Glory Pack</name>
+		<desc>Crush your foes into dust! A new 3-Star pack is available for a limited time.</desc>
+        <type>11</type>
+		<portrait>elia</portrait>
+        <bundle_package>124</bundle_package>
+        <start_time>1426356000</start_time> <!-- 3/14/2015 1:00 pm -->
+        <end_time>1426528800</end_time> <!-- 3/16/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5026</id>
+        <name>Vanguard Crate!</name>
+		<desc>The limited time Vanguard Crate has arrived! The mighty Seraph has entered the battlefield.</desc>
+		<portrait>vargas</portrait>
+        <event_box>321</event_box>
+        <start_time>1426528800</start_time> <!-- 3/16/2015 1:00  pm  -->
+        <end_time>1426701600</end_time> <!-- 3/18/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5038</id>
+        <name>Vendetta Pack</name>
+		<desc>Grind your enemies to dust! A new 5-Star pack is available for a limited time.</desc>
+        <type>17</type>
+		<portrait>vargas</portrait>
+        <bundle_package>130</bundle_package>
+        <start_level>20</start_level>
+        <start_time>1426615200</start_time> <!-- 3/17/2015 1:00 -->
+        <end_time>1426701600</end_time> <!-- 3/18/2015 1:00 -->
+    </event>
+    <event>
+        <id>5027</id>
+        <name>Large Scrap Pack</name>
+		<desc>Get your squad into fighting shape with the Scrap Pack!</desc>
+        <type>13</type>
+		<portrait>darius</portrait>
+        <bundle_package>125</bundle_package>
+        <start_time>1426701600</start_time> <!-- 3/18/2015 2:00 pm -->
+        <end_time>1426874400</end_time> <!-- 3/20/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5031</id>
+        <name>Volt Coin Surge</name>
+		<desc>We've been authorized for a limited time Volt Coin surge!</desc>
+        <type>12</type>
+		<portrait>elia</portrait>
+        <bundle_package>126</bundle_package>
+        <start_time>1426788000</start_time> <!-- 3/19/2015 1:00 pm -->
+        <end_time>1426960800</end_time> <!-- 3/21/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5032</id>
+        <name>Harbinger Crate!</name>
+		<desc>The limited time Harbinger Crate has arrived! The powerful Fortress has entered the battlefield.</desc>
+		<portrait>vargas</portrait>
+        <event_box>325</event_box>
+        <start_time>1426874400</start_time> <!-- 3/20/2015 1:00  pm  -->
+        <end_time>1427133600</end_time> <!-- 3/23/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5039</id>
+        <name>Scrap Box!</name>
+		<desc>The limited time Scrap Box has arrived! </desc>
+		<portrait>vargas</portrait>
+        <event_box>4001</event_box>
+        <start_time>1426874400</start_time> <!-- 3/20/2015 1:00  pm  -->
+        <end_time>1427133600</end_time> <!-- 3/23/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5040</id>
+        <name>Tremor Pack</name>
+		<desc>Grind your enemies to dust! A new 4-Star pack is available for a limited time.</desc>
+        <type>13</type>
+		<portrait>vargas</portrait>
+        <bundle_package>131</bundle_package>
+        <start_time>1426960800</start_time> <!-- 3/21/2015 1:00 -->
+        <end_time>1427133600</end_time> <!-- 3/23/2015 1:00 -->
+    </event>
+    <event>
+        <id>5046</id>
+        <name>Vendetta Pack</name>
+		<desc>Grind your enemies to dust! A new 5-Star pack is available for a limited time.</desc>
+        <type>17</type>
+		<portrait>vargas</portrait>
+        <bundle_package>136</bundle_package>
+        <start_level>20</start_level>
+        <start_time>1427140800</start_time> <!-- 3/23/2015 3:00 -->
+        <end_time>1427220000</end_time> <!-- 3/24/2015 1:00 -->
+    </event>
+    <event>
+        <id>5041</id>
+        <name>Dawn Crate!</name>
+		<desc>The limited time Dawn Crate has arrived! The powerful Medusa has entered the battlefield.</desc>
+		<portrait>vargas</portrait>
+        <event_box>327</event_box>
+        <start_time>1427220000</start_time> <!-- 3/24/2015 1:00 pm -->
+        <end_time>1427392800</end_time> <!-- 3/26/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5042</id>
+        <name>Large Volt Coin Surge</name>
+		<desc>We've been authorized for a limited time Volt Coin surge!</desc>
+        <type>16</type>
+		<portrait>elia</portrait>
+        <bundle_package>132</bundle_package>
+        <start_time>1427220000</start_time> <!-- 3/24/2015 1:00 pm -->
+        <end_time>1427306400</end_time> <!-- 3/25/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5043</id>
+        <name>Large Scrap Pack</name>
+		<desc>Get your squad into fighting shape with the Scrap Pack!</desc>
+        <type>13</type>
+		<portrait>darius</portrait>
+        <bundle_package>133</bundle_package>
+        <start_time>1427306400</start_time> <!-- 3/25/2015 2:00 pm -->
+        <end_time>1427479200</end_time> <!-- 3/27/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5044</id>
+        <name>Track Pack</name>
+		<desc>Crush your foes into dust! A new 3-Star pack is available for a limited time.</desc>
+        <type>11</type>
+		<portrait>elia</portrait>
+        <bundle_package>134</bundle_package>
+        <start_time>1427392800</start_time> <!-- 3/26/2015 1:00 pm -->
+        <end_time>1427479200</end_time> <!-- 3/27/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5045</id>
+        <name>Huntsman Pack</name>
+		<desc>Crush your foes into dust! A new 3-Star pack is available for a limited time.</desc>
+        <type>11</type>
+		<portrait>elia</portrait>
+        <bundle_package>135</bundle_package>
+        <start_time>1427479200</start_time> <!-- 3/27/2015 1:00 pm -->
+        <end_time>1427565600</end_time> <!-- 3/28/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5047</id>
+        <name>Small Scrap Pack</name>
+		<desc>Get your squad into fighting shape with the Scrap Pack!</desc>
+        <type>11</type>
+		<portrait>darius</portrait>
+        <bundle_package>137</bundle_package>
+        <start_time>1427565600</start_time> <!-- 3/28/2015 1:00 pm -->
+        <end_time>1427738400</end_time> <!-- 3/30/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5048</id>
+        <name>Scrap Box!</name>
+		<desc>The limited time Scrap Box has arrived! </desc>
+		<portrait>vargas</portrait>
+        <event_box>4002</event_box>
+        <start_time>1427738400</start_time> <!-- 3/30/2015 1:00  pm  -->
+        <end_time>1428170400</end_time> <!-- 4/4/2015 1:00 pm -->
+    </event>
+    <event>
+        <id>5049</id>
+        <name>Slayer Pack</name>
+		<desc>Crush your foes into dust! A new 3-Star pack is available for a limited time.</desc>
+        <type>11</type>
+		<portrait>elia</portrait>
+        <bundle_package>138</bundle_package>
+        <start_time>1427824800</start_time> <!-- 3/31/2015 1:00 pm -->
+        <end_time>1427911200</end_time> <!-- 4/1/2015 1:00 pm -->
+    </event>
+   
+    
+    <event>
+        <id>6001</id>
+        <name>Scorched Earth</name>
+		<desc>Rise through the Dominance ranks to crush your enemies and earn awesome rewards!</desc>
+		<portrait>flamethrower</portrait>
+        <start_time>1419030000</start_time> <!-- 12/19/2014 --> 
+        <end_time>1419289200</end_time> <!-- 12/22/2014 -->
+        <start_level>10</start_level>
+        <objective>
+        	<desc>Win 10 Rival Battles with 500+ Dominance</desc>
+        	<tier>1</tier>
+        	<req>
+        		<num_wins>10</num_wins>
+        		<min_dominance>500</min_dominance>
+        	</req>
+        	<reward>
+        		<sc>500</sc> 
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Win 10 Rival Battles with 1500+ Dominance</desc>
+        	<tier>2</tier>
+        	<req>
+	        	<num_wins>10</num_wins>
+    	    	<min_dominance>1500</min_dominance>
+        	</req>
+        	<reward>
+	        	<sc>1000</sc> 
+	        </reward>
+        </objective>
+        <objective>
+        	<desc>Win 10 Rival Battles with 3000+ Dominance</desc>
+        	<tier>3</tier>
+        	<req>
+	        	<num_wins>10</num_wins>
+    	    	<min_dominance>3000</min_dominance>
+    	    </req>
+    	    <reward>
+        		<sc>2000</sc>  
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Win 10 Rival Battles with 4000+ Dominance</desc>
+        	<tier>4</tier>
+        	<req>
+	        	<num_wins>10</num_wins>
+    	    	<min_dominance>4000</min_dominance>
+    	    </req>
+    	    <reward>
+        		<unit id='21' level='1' />
+        	</reward>
+        </objective>
+    </event>
+    <event>
+        <id>6002</id>
+        <name>Scorched Earth</name>
+		<desc>Rise through the Dominance ranks to crush your enemies and earn awesome rewards!</desc>
+		<portrait>darius</portrait>
+        <start_time>1421431200</start_time> <!--  1/16/2015 --> 
+        <end_time>1421690400</end_time> <!--  1/19/2015 -->
+        <start_level>10</start_level>
+        <objective>
+        	<desc>Win 10 Rival Battles with 500+ Dominance</desc>
+        	<tier>1</tier>
+        	<req>
+        		<num_wins>10</num_wins>
+        		<min_dominance>500</min_dominance>
+        	</req>
+        	<reward>
+        		<sc>500</sc> 
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Win 10 Rival Battles with 1500+ Dominance</desc>
+        	<tier>2</tier>
+        	<req>
+	        	<num_wins>10</num_wins>
+    	    	<min_dominance>1500</min_dominance>
+        	</req>
+        	<reward>
+	        	<sc>1000</sc> 
+	        </reward>
+        </objective>
+        <objective>
+        	<desc>Win 10 Rival Battles with 3000+ Dominance</desc>
+        	<tier>3</tier>
+        	<req>
+	        	<num_wins>10</num_wins>
+    	    	<min_dominance>3000</min_dominance>
+    	    </req>
+    	    <reward>
+        		<sc>2000</sc>  
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Win 10 Rival Battles with 4000+ Dominance</desc>
+        	<tier>4</tier>
+        	<req>
+	        	<num_wins>10</num_wins>
+    	    	<min_dominance>4000</min_dominance>
+    	    </req>
+    	    <reward>
+        		<unit id='19' level='1' />
+        	</reward>
+        </objective>
+    </event>
+
+
+    <event>
+        <id>7001</id>
+        <name>Overkill Event</name>
+		<desc>Earn rewards by defeating enemy rivals! Destroy their Command Pod and climb the ranks to victory! Damage will be tracked until Monday. Any objectives you're eligible for will become claimable soon after.</desc>
+		<link>
+	    	<url>http://www.kongregate.com/forums/2280-global-assault/topics/466768-dev-overkill-event</url>
+	    	<name>Read More</name>
+	    </link>
+		<portrait>darius</portrait>
+        <start_time>1422446400</start_time> <!-- 1/28/2015 -->
+        <end_time>1423159200</end_time> <!-- 2/5/2015 -->
+        <tracking_end_time>1422900000</tracking_end_time> <!-- 2/2/2015 -->
+        <tracking_buffer_duration_minutes>20</tracking_buffer_duration_minutes>
+        <start_level>10</start_level>
+        <event_type>4</event_type>
+        <hide_event>0</hide_event>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 3 or higher.</desc>
+        	<tier>1</tier>
+        	<req>
+        		<min_rank>3</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='1040' level='1' />
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 25 or higher.</desc>
+        	<tier>2</tier>
+        	<req>
+        		<min_rank>25</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='27' level='1' />
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 100 or higher.</desc>
+        	<tier>3</tier>
+        	<req>
+        		<min_rank>100</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='31' level='1' />
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 500 or higher.</desc>
+        	<tier>4</tier>
+        	<req>
+        		<min_rank>500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='52' level='1' />
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 2500 or higher.</desc>
+        	<tier>5</tier>
+        	<req>
+        		<min_rank>2500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='4' level='1' />
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 20000 or higher.</desc>
+        	<tier>6</tier>
+        	<req>
+        		<min_rank>20000</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='36' level='1' />
+        	</reward>
+        </objective>
+    </event>
+    
+    <!--  
+    <event>
+        <id>7002</id>
+        <name>Overkill Event</name>
+		<desc>Earn rewards by defeating enemy rivals! Destroy their Command Pod and climb the ranks to victory! Damage will be tracked until Monday. Any objectives you're eligible for will become claimable soon after.</desc>
+		<link>
+	    	<url>http://www.kongregate.com/forums/2280-global-assault/topics/466768-dev-overkill-event</url>
+	    	<name>Read More</name>
+	    </link>
+		<portrait>darius</portrait>
+        <start_time>1423249200</start_time> 
+        <end_time>1423767600</end_time> 
+        <tracking_end_time>1423508400</tracking_end_time> 
+        <tracking_buffer_duration_minutes>20</tracking_buffer_duration_minutes>
+        <start_level>10</start_level>
+        <event_type>4</event_type>
+        <hide_event>0</hide_event>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 3 or higher.</desc>
+        	<tier>1</tier>
+        	<req>
+        		<min_rank>3</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='917' level='1' />
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 25 or higher.</desc>
+        	<tier>2</tier>
+        	<req>
+        		<min_rank>25</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='26' level='1' />
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 100 or higher.</desc>
+        	<tier>3</tier>
+        	<req>
+        		<min_rank>100</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='51' level='1' />
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 500 or higher.</desc>
+        	<tier>4</tier>
+        	<req>
+        		<min_rank>500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='54' level='1' />
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 2500 or higher.</desc>
+        	<tier>5</tier>
+        	<req>
+        		<min_rank>2500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='61' level='1' />
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 10000 or higher.</desc>
+        	<tier>6</tier>
+        	<req>
+        		<min_rank>10000</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='32' level='1' />
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 20000 or higher.</desc>
+        	<tier>7</tier>
+        	<req>
+        		<min_rank>20000</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='42' level='1' />
+        	</reward>
+        </objective>
+    </event>
+-->
+
+
+	 <event>
+        <id>7003</id>
+        <name>Guild Overkill Event</name>
+		<desc>Earn rewards by defeating enemy rivals! Destroy their Command Pod and bring your guild to victory! Damage will be tracked until Monday. Objectives you're eligible for will become claimable soon after.</desc>
+		<link>
+	    	<url>http://www.kongregate.com/forums/4496-general/topics/471225-dev-overkill-guild-event</url>
+	    	<name>Read More</name>
+	    </link>
+	    <ranking_id>7003</ranking_id>
+		<ranking_index></ranking_index>
+		<portrait>flamethrower</portrait>
+        <start_time>1424458800</start_time> <!-- 2/20/2015 1:00 pm -->
+        <end_time>1424977200</end_time> <!-- 2/26/2015 1:00 pm -->
+        <tracking_end_time>1424718000</tracking_end_time> <!-- 2/23/2015 1:00 pm -->
+        <tracking_buffer_duration_minutes>20</tracking_buffer_duration_minutes>
+        <start_level>10</start_level>
+        <event_type>3</event_type>
+        <hide_event>0</hide_event>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 1 or higher.</desc>
+        	<tier>1</tier>
+        	<req>
+        		<min_rank>1</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='24' level='1' /> <!-- Phantom -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 3 or higher.</desc>
+        	<tier>2</tier>
+        	<req>
+        		<min_rank>3</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='37' level='1' /> <!-- Hunter -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 10 or higher.</desc>
+        	<tier>3</tier>
+        	<req>
+        		<min_rank>10</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='1012' level='1' /> <!-- Omen Raven -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 25 or higher.</desc>
+        	<tier>4</tier>
+        	<req>
+        		<min_rank>25</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='31' level='1' /> <!-- Hornet -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 100 or higher.</desc>
+        	<tier>5</tier>
+        	<req>
+        		<min_rank>100</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='52' level='1' /> <!-- Galvanizer -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 500 or higher.</desc>
+        	<tier>6</tier>
+        	<req>
+        		<min_rank>500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='50' level='1' /> <!-- Needler -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Overkill event at Rank 1300 or higher.</desc>
+        	<tier>7</tier>
+        	<req>
+        		<min_rank>1300</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='29' level='1' /> <!-- Guerilla Tank -->
+        	</reward>
+        </objective>
+    </event>
+
+	<event>
+        <id>7004</id>
+        <name>Bounty Hunter</name>
+		<desc>Shattered Sun forces have begun gathering in Eastern Canada for a concerted attack on Havoc forces. Bounty targets will be uncovered over time. Stop them, protect Havoc, and earn powerful Bounty rewards!</desc>
+		<link>
+	    	<url>http://www.kongregate.com/forums/2280-global-assault/topics/468000-dev-upcoming-event-bounty-hunter</url>
+	    	<name>Read More</name>
+	    </link>
+		<portrait>flamethrower</portrait>
+        <start_time>1423238400</start_time> <!-- 2/6/2015 10am -->
+        <end_time>1423767600</end_time> <!-- 2/12/2015 1pm -->
+        <tracking_end_time>1423508400</tracking_end_time> <!-- 2/9/2015 1pm -->
+        <tracking_buffer_duration_minutes>10</tracking_buffer_duration_minutes>
+        <start_level>10</start_level>
+        <event_type>5</event_type>
+        <hide_event>0</hide_event>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 3 or higher.</desc>
+        	<tier>1</tier>
+        	<req>
+        		<min_rank>3</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='917' level='1' /> <!-- Dreadnought -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 25 or higher.</desc>
+        	<tier>2</tier>
+        	<req>
+        		<min_rank>25</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='26' level='1' /> <!-- Red Hawk -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 100 or higher.</desc>
+        	<tier>3</tier>
+        	<req>
+        		<min_rank>100</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='51' level='1' /> <!-- S.A.W. -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 500 or higher.</desc>
+        	<tier>4</tier>
+        	<req>
+        		<min_rank>500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='54' level='1' /> <!-- Spitfire -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 2500 or higher.</desc>
+        	<tier>5</tier>
+        	<req>
+        		<min_rank>2500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='61' level='1' /> <!-- Jackhammer -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 8000 or higher.</desc>
+        	<tier>6</tier>
+        	<req>
+        		<min_rank>8000</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='29' level='1' /> <!-- Guerilla Tank -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 20000 or higher.</desc>
+        	<tier>7</tier>
+        	<req>
+        		<min_rank>20000</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='42' level='1' /> <!-- Rhino Humvee -->
+        	</reward>
+        </objective>
+    </event>
+    
+    <!--  
+    <event>
+        <id>7005</id>
+        <name>Bounty Hunter</name>
+		<desc>Shattered Sun forces have begun gathering in Eastern Canada for a concerted attack on Havoc forces. Bounty targets will be uncovered over time. Stop them, protect Havoc, and earn powerful Bounty rewards!</desc>
+		<link>
+	    	<url>http://www.kongregate.com/forums/2280-global-assault/topics/468000-dev-upcoming-event-bounty-hunter</url>
+	    	<name>Read More</name>
+	    </link>
+		<portrait>flamethrower</portrait>
+        <start_time>1424714400</start_time> 
+        <end_time>1423767600</end_time> 
+        <tracking_end_time>1423508400</tracking_end_time> 
+        <tracking_buffer_duration_minutes>10</tracking_buffer_duration_minutes>
+        <start_level>10</start_level>
+        <event_type>5</event_type>
+        <view_action>Bounty</view_action>
+        <hide_event>0</hide_event>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 3 or higher.</desc>
+        	<tier>1</tier>
+        	<req>
+        		<min_rank>3</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='917' level='1' /> 
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 25 or higher.</desc>
+        	<tier>2</tier>
+        	<req>
+        		<min_rank>25</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='26' level='1' /> 
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 100 or higher.</desc>
+        	<tier>3</tier>
+        	<req>
+        		<min_rank>100</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='51' level='1' /> 
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 500 or higher.</desc>
+        	<tier>4</tier>
+        	<req>
+        		<min_rank>500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='54' level='1' /> 
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 2500 or higher.</desc>
+        	<tier>5</tier>
+        	<req>
+        		<min_rank>2500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='61' level='1' /> 
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 8000 or higher.</desc>
+        	<tier>6</tier>
+        	<req>
+        		<min_rank>8000</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='29' level='1' /> 
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 20000 or higher.</desc>
+        	<tier>7</tier>
+        	<req>
+        		<min_rank>20000</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='42' level='1' /> 
+        	</reward>
+        </objective>
+    </event>
+    -->
+
+    <event>
+        <id>7006</id>
+        <name>Guild Bounty Hunter</name>
+		<desc>Shattered Sun forces have begun gathering in New Zealand for a concerted attack on Havoc forces. Bounty targets will be uncovered over time. Stop them, protect Havoc, and earn powerful Bounty rewards!</desc>
+		<link>
+	    	<url>http://www.kongregate.com/forums/4496-general/topics/473083-dev-guild-bounty-hunter-event-announcement</url>
+	    	<name>Read More</name>
+	    </link>
+	    <map>jungle_fire_2</map>
+	    <region>42</region>
+		<portrait>flamethrower</portrait>
+        <start_time>1425063600</start_time> <!-- 2/27/2015 1:00 pm -->
+        <end_time>1425582000</end_time> <!-- 3/5/2015 1:00 pm -->
+        <tracking_end_time>1425322800</tracking_end_time> <!-- 3/2/2015 1:00 pm -->
+        <tracking_buffer_duration_minutes>20</tracking_buffer_duration_minutes>
+        <start_level>10</start_level>
+        <event_type>6</event_type>
+        <view_action>Bounty</view_action>
+        <hide_event>0</hide_event>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 1 or higher.</desc>
+        	<tier>1</tier>
+        	<req>
+        		<min_rank>1</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='27' level='1' /> <!--  -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 3 or higher.</desc>
+        	<tier>2</tier>
+        	<req>
+        		<min_rank>3</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='58' level='1' /> 
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 10 or higher.</desc>
+        	<tier>3</tier>
+        	<req>
+        		<min_rank>10</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='1016' level='1' /> 
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 25 or higher.</desc>
+        	<tier>4</tier>
+        	<req>
+        		<min_rank>25</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='21' level='1' /> 
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 100 or higher.</desc>
+        	<tier>5</tier>
+        	<req>
+        		<min_rank>100</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='54' level='1' /> 
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 500 or higher.</desc>
+        	<tier>6</tier>
+        	<req>
+        		<min_rank>500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='61' level='1' /> 
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 1300 or higher.</desc>
+        	<tier>7</tier>
+        	<req>
+        		<min_rank>1300</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='46' level='1' /> 
+        	</reward>
+        </objective>
+    </event>
+
+    <event>
+        <id>7007</id>
+        <name>Bounty Hunter India</name>
+		<desc>Shattered Sun forces have begun gathering in India for a concerted attack on Havoc forces. Bounty targets will be uncovered over time. Stop them, protect Havoc, and earn powerful Bounty rewards!</desc>
+		<link>
+	    	<url>http://www.kongregate.com/forums/4496-general/topics/474555-dev-bounty-hunter-india-event-march-6th</url>
+	    	<name>Read More</name>
+	    </link>
+	    <region>38</region>
+		<portrait>flamethrower</portrait>
+        <start_time>1425668400</start_time> <!-- 3/6/2015 1:00 pm -->
+        <end_time>1426183200</end_time> <!-- 3/12/2015 1:00 pm -->
+        <tracking_end_time>1425924000</tracking_end_time> <!-- 3/9/2015 1:00 pm -->
+        <tracking_buffer_duration_minutes>20</tracking_buffer_duration_minutes>
+        <start_level>10</start_level>
+        <event_type>5</event_type>
+        <view_action>Bounty</view_action>
+        <hide_event>0</hide_event>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 3 or higher.</desc>
+        	<tier>1</tier>
+        	<req>
+        		<min_rank>3</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='917' level='1' /> <!-- Dreadnought -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 25 or higher.</desc>
+        	<tier>2</tier>
+        	<req>
+        		<min_rank>25</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='55' level='1' /> <!-- Sandstorm -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 50 or higher.</desc>
+        	<tier>3</tier>
+        	<req>
+        		<min_rank>50</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='997' level='1' /> <!-- T4 Crate -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 100 or higher.</desc>
+        	<tier>4</tier>
+        	<req>
+        		<min_rank>100</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='62' level='1' /> <!-- Jackrabbit -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 250 or higher.</desc>
+        	<tier>5</tier>
+        	<req>
+        		<min_rank>250</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='997' level='1' /> <!-- T4 Crate -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 500 or higher.</desc>
+        	<tier>6</tier>
+        	<req>
+        		<min_rank>500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='52' level='1' /> <!-- Galvanizer -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 1250 or higher.</desc>
+        	<tier>7</tier>
+        	<req>
+        		<min_rank>1250</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='996' level='1' /> <!-- T3 Crate -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 2500 or higher.</desc>
+        	<tier>8</tier>
+        	<req>
+        		<min_rank>2500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='16' level='1' /> <!-- Tomahawk  -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 8000 or higher.</desc>
+        	<tier>9</tier>
+        	<req>
+        		<min_rank>8000</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='32' level='1' /> <!-- Mule -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 20000 or higher.</desc>
+        	<tier>10</tier>
+        	<req>
+        		<min_rank>20000</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='43' level='1' /> <!-- Shrike -->
+        	</reward>
+        </objective>
+    </event>
+    
+    <event>
+        <id>7008</id>
+        <name>Guild Bounty Hunter</name>
+		<desc>Shattered Sun forces have begun gathering in India for a concerted attack on Havoc forces. Bounty targets will be uncovered over time. Stop them, protect Havoc, and earn powerful Bounty rewards!</desc>
+		<link>
+	    	<url>http://www.kongregate.com/forums/4496-general/topics/479402-dev-guild-bounty-hunter-india</url>
+	    	<name>Read More</name>
+	    </link>
+	    <map>jungle_fire_2</map>
+	    <region>38</region>
+		<portrait>flamethrower</portrait>
+        <start_time>1426874400</start_time> <!-- 3/20/2015 1:00 pm -->
+        <end_time>1427392800</end_time> <!-- 3/26/2015 1:00 pm -->
+        <tracking_end_time>1427133600</tracking_end_time> <!-- 3/23/2015 1:00 pm -->
+        <tracking_buffer_duration_minutes>15</tracking_buffer_duration_minutes>
+        <start_level>10</start_level>
+        <event_type>6</event_type>
+        <view_action>Bounty</view_action>
+        <hide_event>0</hide_event>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 1 or higher.</desc>
+        	<tier>1</tier>
+        	<req>
+        		<min_rank>1</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='55' level='1' /> <!-- Sandstorm -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 3 or higher.</desc>
+        	<tier>2</tier>
+        	<req>
+        		<min_rank>3</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='26' level='1' /> <!-- Red Hawk -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 10 or higher.</desc>
+        	<tier>3</tier>
+        	<req>
+        		<min_rank>10</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='1006' level='1' /> <!-- Howling Whirlwind -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 25 or higher.</desc>
+        	<tier>4</tier>
+        	<req>
+        		<min_rank>25</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='62' level='1' /> <!-- Jackrabbit -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 50 or higher.</desc>
+        	<tier>5</tier>
+        	<req>
+        		<min_rank>50</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='997' level='1' /> <!-- T4 Salvage Crate -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 100 or higher.</desc>
+        	<tier>6</tier>
+        	<req>
+        		<min_rank>100</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='19' level='1' /> <!-- Raider -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 500 or higher.</desc>
+        	<tier>7</tier>
+        	<req>
+        		<min_rank>500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='45' level='1' /> <!-- Halefire Humvee -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 1300 or higher.</desc>
+        	<tier>8</tier>
+        	<req>
+        		<min_rank>1300</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='4' level='1' /> <!-- Phoenix -->
+        	</reward>
+        </objective>
+    </event>
+    
+    <event>
+        <id>7009</id>
+        <name>Bounty Hunter Siam</name>
+		<desc>Shattered Sun forces have begun gathering in Siam for a concerted attack on Havoc forces. Bounty targets will be uncovered over time. Stop them, protect Havoc, and earn powerful Bounty rewards!</desc>
+		<link>
+	    	<url>http://www.kongregate.com/forums/4496-general/topics/474555-dev-bounty-hunter-india-event-march-6th</url>
+	    	<name>Read More</name>
+	    </link>
+	    <region>39</region>
+		<portrait>flamethrower</portrait>
+        <start_time>1427308200</start_time> <!-- 3/6/2015 1:00 pm -->
+        <end_time>1427315400</end_time> <!-- 3/12/2015 1:00 pm -->
+        <tracking_end_time>1427313600</tracking_end_time> <!-- 3/9/2015 1:00 pm -->
+        <tracking_buffer_duration_minutes>10</tracking_buffer_duration_minutes>
+        <start_level>10</start_level>
+        <event_type>5</event_type>
+        <view_action>Bounty</view_action>
+        <hide_event>0</hide_event>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 3 or higher.</desc>
+        	<tier>1</tier>
+        	<req>
+        		<min_rank>3</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='960' level='1' /> <!-- Gunship -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 25 or higher.</desc>
+        	<tier>2</tier>
+        	<req>
+        		<min_rank>25</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='27' level='1' /> <!-- Myrmidon -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 50 or higher.</desc>
+        	<tier>3</tier>
+        	<req>
+        		<min_rank>50</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='997' level='1' /> <!-- T4 Crate -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 100 or higher.</desc>
+        	<tier>4</tier>
+        	<req>
+        		<min_rank>100</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='18' level='1' /> <!-- Whirlwind -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 250 or higher.</desc>
+        	<tier>5</tier>
+        	<req>
+        		<min_rank>250</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='997' level='1' /> <!-- T4 Crate -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 500 or higher.</desc>
+        	<tier>6</tier>
+        	<req>
+        		<min_rank>500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='54' level='1' /> <!-- Spitfire -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 1250 or higher.</desc>
+        	<tier>7</tier>
+        	<req>
+        		<min_rank>1250</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='996' level='1' /> <!-- T3 Crate -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 2500 or higher.</desc>
+        	<tier>8</tier>
+        	<req>
+        		<min_rank>2500</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='48' level='1' /> <!-- Falcon  -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 8000 or higher.</desc>
+        	<tier>9</tier>
+        	<req>
+        		<min_rank>8000</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='46' level='1' /> <!-- Auroch -->
+        	</reward>
+        </objective>
+        <objective>
+        	<desc>Complete the Bounty Hunter event at Rank 20000 or higher.</desc>
+        	<tier>10</tier>
+        	<req>
+        		<min_rank>20000</min_rank>
+        	</req>
+        	<reward>
+       			<unit id='41' level='1' /> <!-- Stealth Humvee -->
+        	</reward>
+        </objective>
+    </event>
+    
+	<!-- NEWS EVENTS -->
+    <event>
+        <id>10001</id>  
+        <name>The Watchtower Raid</name>
+		<desc>The Watchtower Raid has started! Make sure your squad is ready and review how rewards will work.</desc>
+		<campaign>-1</campaign>
+        <start_level>8</start_level>
+        <permanent>1</permanent>
+        <view_action>Raid</view_action>
+        <web_picture>watchtower_border.png</web_picture>
+        <link>
+	    	<url>http://www.kongregate.com/forums/4496-general/topics/476388-dev-watchtower-raid</url>
+	    	<name>Read More</name>
+	    </link>
+    </event>
+
+	<!-- <event>
+        <id>10002</id>
+        <name>KREEPY KLOWNZ</name>
+		<desc>KREEPY KLOWN forces have begun gathering in Eastern Canada for a concerted attack on Havoc forces. Bounty targets will be uncovered over time. Stop them, protect Havoc, and earn powerful Bounty rewards!</desc>
+		<ranking_id>dom</ranking_id>
+		<ranking_index>101</ranking_index>
+		<portrait>flamethrower</portrait>
+       	<campaign>-1</campaign>
+        <start_level>10</start_level>
+        <permanent>1</permanent>
+    </event> -->
+    
+</root>
