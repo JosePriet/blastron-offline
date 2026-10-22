@@ -111,8 +111,8 @@ namespace GAOffline
             return b;
         }
 
-        // the card a battle uses for this unit: its own, or a copy with the equipped item's bonuses (Equipment); copies
-        // stay clear of the client's commander ids (1000-1999)
+        // the card a battle uses for this unit: its own, or a copy with the equipped item's bonuses (Equipment); copy ids
+        // stay clear of the real card ids (up to 2141)
         const int CardCopyBase = 100000;
 
         static int EquippedCard(Dictionary<string, object> u)
