@@ -7,6 +7,7 @@ using Mono.Cecil.Cil;
 // Routes WWWManager.Begin through GAOffline.LocalServer:
 //   Begin(url, form): "var w = LocalServer.BeginForm(this, url, form); if (w != null) return w;" then the original body
 //   Begin(url):       "url = LocalServer.MapUrl(url);" then the original body
+// and calls GAOffline.Trace.Install() at the start of AbstractManagers.Awake.
 class P {
   static int Main(string[] a) {
     var res = new DefaultAssemblyResolver();
@@ -36,8 +37,14 @@ class P {
     foreach (var i in new[] { il.Create(OpCodes.Ldarg_1), il.Create(OpCodes.Call, mapUrl), il.Create(OpCodes.Starg, plain.Parameters[0]) })
       il.InsertBefore(first, i);
 
+    // boot diagnostics: "Trace.Install();" first thing in AbstractManagers.Awake
+    var install = mod.ImportReference(off.MainModule.GetType("GAOffline.Trace").Methods.Single(m => m.Name == "Install"));
+    var awake = mod.GetType("SynCore.AbstractManagers").Methods.Single(m => m.Name == "Awake");
+    il = awake.Body.GetILProcessor();
+    il.InsertBefore(awake.Body.Instructions[0], il.Create(OpCodes.Call, install));
+
     asm.Write(a[2]);
-    Console.WriteLine("patched WWWManager.Begin(url, form) and Begin(url)");
+    Console.WriteLine("patched WWWManager.Begin(url, form), Begin(url) and AbstractManagers.Awake");
     return 0;
   }
 }
