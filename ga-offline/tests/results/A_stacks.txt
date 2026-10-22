@@ -1,274 +1,387 @@
-Sending request to dump task 4930.
+Sending request to dump task 3604.
 
 
------ pid 4930 at 2026-10-22 09:17:37 -----
+----- pid 3604 at 2026-10-22 09:29:58 -----
 Cmd line: com.kongregate.mobile.globalassault.google
-ABI: 'x86'
 
-"lassault.google" sysTid=4930
-  #00 pc 00084685  /system/lib/libc.so (__epoll_pwait+37)
-  #01 pc 0002215d  /system/lib/libc.so (epoll_pwait+96)
-  #02 pc 000221a1  /system/lib/libc.so (epoll_wait+58)
-  #03 pc 0001ae98  /system/lib/libutils.so (android::Looper::pollInner(int)+168)
-  #04 pc 0001b307  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+53)
-  #05 pc 000c0e9b  /system/lib/libandroid_runtime.so (android::NativeMessageQueue::pollOnce(_JNIEnv*, _jobject*, int)+77)
-  #06 pc 000c0f0c  /system/lib/libandroid_runtime.so
-  #07 pc 730bc704  /data/dalvik-cache/x86/system@framework@boot.oat (offset 0x1eb2000)
+"lassault.google" sysTid=3604
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc fffffffe  <unknown>
+  #02  pc 00047f9f  [heap]
+  #03  pc 0001e0ff  /system/lib/libutils.so
+  #04  pc 00012e8f  /system/lib/libutils.so
+  #05  pc 00012e9f  /system/lib/libutils.so
+  #06  pc 00012eaf  /system/lib/libutils.so
+  #07  pc 00012ebf  /system/lib/libutils.so
+  #08  pc ffffffff  <unknown>
+  #09  pc 0073208f  /system/usr/icu/icudt51l.dat
 
-"Signal Catcher" sysTid=4935
-  #00 pc 000838bb  /system/lib/libc.so (__rt_sigtimedwait+27)
-  #01 pc 00027fcc  /system/lib/libc.so (sigwait+69)
-  #02 pc 00522bd6  /system/lib/libart.so (art::SignalCatcher::WaitForSignal(art::Thread*, art::SignalSet&)+118)
-  #03 pc 005263ce  /system/lib/libart.so (art::SignalCatcher::Run(void*)+302)
-  #04 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #05 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #06 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"GC" sysTid=3606
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0000843f  [heap]
 
-"JDWP" sysTid=4936
-  #00 pc 00083ba3  /system/lib/libc.so (recvmsg+19)
-  #01 pc 0066e27f  /system/lib/libart.so (art::JDWP::JdwpAdbState::Accept()+267)
-  #02 pc 003be9fa  /system/lib/libart.so (art::JDWP::JdwpState::Run()+282)
-  #03 pc 003c08b1  /system/lib/libart.so (art::JDWP::StartJdwpThread(void*)+32)
-  #04 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #05 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #06 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"Signal Catcher" sysTid=3607
+  #00  pc 0003d66b  /system/lib/libc.so (__rt_sigtimedwait+27)
+  #01  pc 000fcc97  [stack:3607]
 
-"ReferenceQueueD" sysTid=4937
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 00155034  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+772)
-  #02 pc 0044f511  /system/lib/libart.so (art::Monitor::Wait(art::Thread*, long long, int, bool, art::ThreadState)+1777)
-  #03 pc 00453195  /system/lib/libart.so (art::Monitor::Wait(art::Thread*, art::mirror::Object*, long long, int, bool, art::ThreadState)+197)
-  #04 pc 00470aa9  /system/lib/libart.so (art::Object_wait(_JNIEnv*, _jobject*)+90)
-  #05 pc 730bc494  /data/dalvik-cache/x86/system@framework@boot.oat (offset 0x1eb2000)
-  #06 pc 8b018b33  <unknown>
+"JDWP" sysTid=3608
+  #00  pc 0003d9b3  /system/lib/libc.so (recvmsg+19)
+  #01  pc 00068ea1  [stack:3647]
 
-"FinalizerDaemon" sysTid=4938
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 00155034  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+772)
-  #02 pc 0044f511  /system/lib/libart.so (art::Monitor::Wait(art::Thread*, long long, int, bool, art::ThreadState)+1777)
-  #03 pc 00453195  /system/lib/libart.so (art::Monitor::Wait(art::Thread*, art::mirror::Object*, long long, int, bool, art::ThreadState)+197)
-  #04 pc 00470b0c  /system/lib/libart.so (art::Object_waitJI(_JNIEnv*, _jobject*, long long, int)+92)
-  #05 pc 730bc704  /data/dalvik-cache/x86/system@framework@boot.oat (offset 0x1eb2000)
-  #06 pc 181cc417  /dev/ashmem/dalvik-main space 1 (deleted) (offset 0x1000)
-  #07 pc 181cc3ff  /dev/ashmem/dalvik-main space 1 (deleted) (offset 0x1000)
+"Compiler" sysTid=3609
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 00072193  /system/lib/libdvm.so
 
-"FinalizerWatchd" sysTid=4939
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 00155034  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+772)
-  #02 pc 0044f511  /system/lib/libart.so (art::Monitor::Wait(art::Thread*, long long, int, bool, art::ThreadState)+1777)
-  #03 pc 00453195  /system/lib/libart.so (art::Monitor::Wait(art::Thread*, art::mirror::Object*, long long, int, bool, art::ThreadState)+197)
-  #04 pc 00470aa9  /system/lib/libart.so (art::Object_wait(_JNIEnv*, _jobject*)+90)
-  #05 pc 730bc494  /data/dalvik-cache/x86/system@framework@boot.oat (offset 0x1eb2000)
-  #06 pc 188049d7  /dev/ashmem/dalvik-main space 1 (deleted) (offset 0x1000)
+"ReferenceQueueD" sysTid=3610
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0004b8cf  [heap]
 
-"HeapTaskDaemon" sysTid=4940
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 00155034  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+772)
-  #02 pc 002da419  /system/lib/libart.so (art::gc::TaskProcessor::GetTask(art::Thread*)+153)
-  #03 pc 002daf35  /system/lib/libart.so (art::gc::TaskProcessor::RunAllTasks(art::Thread*)+37)
-  #04 pc 0045f34c  /system/lib/libart.so (art::VMRuntime_runHeapTasks(_JNIEnv*, _jobject*)+53)
-  #05 pc 730bc494  /data/dalvik-cache/x86/system@framework@boot.oat (offset 0x1eb2000)
+"FinalizerDaemon" sysTid=3612
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0004bf4f  [heap]
 
-"Binder_1" sysTid=4941
-  #00 pc 000841a6  /system/lib/libc.so (__ioctl+22)
-  #01 pc 00094faa  /system/lib/libc.so (ioctl+42)
-  #02 pc 000267ab  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+187)
-  #03 pc 000270e7  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+37)
-  #04 pc 00027227  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+151)
-  #05 pc 0003004a  /system/lib/libbinder.so (android::PoolThread::threadLoop()+40)
-  #06 pc 00014aac  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+418)
-  #07 pc 0006bfee  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+98)
-  #08 pc 000141cf  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+122)
-  #09 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #10 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #11 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"FinalizerWatchd" sysTid=3613
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0004c81f  [heap]
 
-"Binder_2" sysTid=4942
-  #00 pc 000841a6  /system/lib/libc.so (__ioctl+22)
-  #01 pc 00094faa  /system/lib/libc.so (ioctl+42)
-  #02 pc 000267ab  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+187)
-  #03 pc 000270e7  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+37)
-  #04 pc 000271e1  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+81)
-  #05 pc 0003004a  /system/lib/libbinder.so (android::PoolThread::threadLoop()+40)
-  #06 pc 00014aac  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+418)
-  #07 pc 0006bfee  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+98)
-  #08 pc 000141cf  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+122)
-  #09 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #10 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #11 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"Binder_1" sysTid=3615
+  #00  pc 0003c426  /system/lib/libc.so (__ioctl+22)
+  #01  pc 0004d8af  [heap]
 
-"Thread-215" sysTid=4945
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 0008083e  /system/lib/libc.so (pthread_cond_timedwait_monotonic+161)
-  #02 pc 000808a6  /system/lib/libc.so (pthread_cond_timedwait_monotonic_np+42)
-  #03 pc 00002e57  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmain.so
-  #04 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #05 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #06 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"Binder_2" sysTid=3616
+  #00  pc 0003c426  /system/lib/libc.so (__ioctl+22)
+  #01  pc 0015e2ef  [heap]
 
-"asyncProcessor" sysTid=4946
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 00080698  /system/lib/libc.so (pthread_cond_wait+106)
-  #02 pc 0042c361  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #03 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #04 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #05 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"watchdog" sysTid=3618
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 00019f77  [heap]
 
-"UnityMain" sysTid=4948
-  #00 pc 000849db  /system/lib/libc.so (__rt_sigprocmask+27)
-  #01 pc 00027e6d  /system/lib/libc.so (sigprocmask+101)
-  #02 pc 000023a8  /system/bin/app_process32 (sigprocmask+140)
-  #03 pc 00083128  /system/lib/libc.so (pthread_sigmask+53)
-  #04 pc 00586557  /system/lib/libart.so (art::FaultManager::HandleFault(int, siginfo*, void*)+663)
-  #05 pc 00586f09  /system/lib/libart.so (art::art_fault_handler(int, siginfo*, void*)+52)
-  #06 pc 000170ef  /system/lib/libc.so
-  #07 pc 00004218  <unknown>
-  #08 pc 000212e2  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so
-  #09 pc 001d4a60  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so (mono_runtime_invoke+140)
-  #10 pc 002497e1  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #11 pc 00318803  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #12 pc 003187a2  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #13 pc 00318c5f  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #14 pc 00235ab9  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #15 pc 00235e04  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #16 pc 0021305e  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #17 pc 00235a34  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #18 pc 00336d0a  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #19 pc 00336a28  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #20 pc 0033a6d3  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #21 pc 002de05c  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #22 pc 002dc6cb  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #23 pc 002e0dc3  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #24 pc 002e005a  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #25 pc 002dd947  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #26 pc 002df4be  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #27 pc 002de74f  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #28 pc 00430949  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #29 pc 00439af3  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #30 pc 012748b4  /data/app/com.kongregate.mobile.globalassault.google-1/oat/x86/base.odex (offset 0x990000)
-  #31 pc 8b436a27  <unknown>
+"asyncProcessor" sysTid=3619
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 00119b73  <unknown>
 
-"FMODAudioDevice" sysTid=4950
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 0008252d  /system/lib/libmedia.so (android::ClientProxy::obtainBuffer(android::Proxy::Buffer*, timespec const*, timespec*)+717)
-  #02 pc 0007f60d  /system/lib/libmedia.so (android::AudioTrack::obtainBuffer(android::AudioTrack::Buffer*, timespec const*, timespec*, unsigned int*)+413)
-  #03 pc 0007f8e1  /system/lib/libmedia.so (android::AudioTrack::write(void const*, unsigned int, bool)+337)
-  #04 pc 00102e44  /system/lib/libandroid_runtime.so
-  #05 pc 73f7f998  /data/dalvik-cache/x86/system@framework@boot.oat (offset 0x1eb2000)
+"UnityMain" sysTid=3621
+  #00  pc 0003bfe6  /system/lib/libc.so (read+22)
+  #01  pc 00000007  <unknown>
+  #02  pc ffffffff  <unknown>
+  #03  pc 0000515f  /system/lib/libOpenglSystemCommon.so
+  #04  pc 0000528f  /system/lib/libOpenglSystemCommon.so
+  #05  pc 0000549f  /system/lib/libOpenglSystemCommon.so
 
-"UnityMain" sysTid=4951
-  #00 pc 00084e01  /system/lib/libc.so (nanosleep+17)
-  #01 pc 00230fdf  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so
-  #02 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #03 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #04 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"FMODAudioDevice" sysTid=3622
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc ffffffff  <unknown>
+  #02  pc 0020fbef  [heap]
+  #03  pc 0005f3cf  /system/lib/libmedia.so
+  #04  pc 00012e8f  /system/lib/libutils.so
+  #05  pc 0005eb1f  /system/lib/libmedia.so
+  #06  pc 0005ebcf  /system/lib/libmedia.so
+  #07  pc 0005eb2f  /system/lib/libmedia.so
+  #08  pc ffffffff  <unknown>
+  #09  pc 0073208f  /system/usr/icu/icudt51l.dat
 
-"__MONO__" sysTid=4952
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 000276f1  /system/lib/libc.so (sem_wait+169)
-  #02 pc 0025c1b0  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so (mono_sem_wait+44)
-  #03 pc 00169f49  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so
-  #04 pc 00209faa  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so
-  #05 pc 0024d53a  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so
-  #06 pc 00280ee1  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so
-  #07 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #08 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #09 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"UnityMain" sysTid=3623
+  #00  pc 0003d1e1  /system/lib/libc.so (nanosleep+17)
+  #01  pc 00003bc3  <unknown>
+  #02  pc 0000bc0c  /system/lib/libc.so (__thread_entry+236)
+  #03  pc 0003e075  /system/lib/libc.so (__pthread_clone+69)
+  #04  pc 00230fa9  /data/app-lib/com.kongregate.mobile.globalassault.google-1/libmono.so
+  #05  pc ffffffff  <unknown>
+  #06  pc 0006835f  [heap]
+  #07  pc 00054e7f  [heap]
+  #08  pc 00025aef  [heap]
+  #09  pc 000203cf  [heap]
+  #10  pc 0001db6f  [heap]
+  #11  pc 00019f9f  [heap]
+  #12  pc 0004db9f  [heap]
+  #13  pc 0004cd5f  [heap]
+  #14  pc 0004c8ff  [heap]
+  #15  pc 0004c02f  [heap]
+  #16  pc 00026a5f  [heap]
+  #17  pc 0002618f  [heap]
+  #18  pc 000258bf  [heap]
+  #19  pc 00048dbf  [heap]
 
-"UnityWorker" sysTid=4953
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 000276f1  /system/lib/libc.so (sem_wait+169)
-  #02 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #03 pc 0035cc18  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #04 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #05 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #06 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #07 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"__MONO__" sysTid=3624
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"UnityWorker" sysTid=4954
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 000276f1  /system/lib/libc.so (sem_wait+169)
-  #02 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #03 pc 0035cc18  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #04 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #05 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #06 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #07 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"UnityWorker" sysTid=3625
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"UnityWorker" sysTid=4955
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 000276f1  /system/lib/libc.so (sem_wait+169)
-  #02 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #03 pc 0035cc18  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #04 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #05 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #06 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #07 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"UnityWorker" sysTid=3626
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"UnityMain" sysTid=4956
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 000276f1  /system/lib/libc.so (sem_wait+169)
-  #02 pc 009cd188  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #03 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #04 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #05 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"UnityWorker" sysTid=3627
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"UnityMain" sysTid=4957
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 000276f1  /system/lib/libc.so (sem_wait+169)
-  #02 pc 009cd188  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #03 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #04 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #05 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"UnityMain" sysTid=3628
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"UnityMain" sysTid=4958
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 000276f1  /system/lib/libc.so (sem_wait+169)
-  #02 pc 009cd188  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #03 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #04 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #05 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"UnityMain" sysTid=3629
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"UnitySubstanceT" sysTid=4959
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 000276f1  /system/lib/libc.so (sem_wait+169)
-  #02 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #03 pc 00278d5b  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #04 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #05 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #06 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #07 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"UnityMain" sysTid=3630
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"FMOD stream thr" sysTid=4962
-  #00 pc 00084e01  /system/lib/libc.so (nanosleep+17)
-  #01 pc 00049ef0  /system/lib/libc.so (usleep+93)
-  #02 pc 00696071  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #03 pc 00692536  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #04 pc 00695fd4  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #05 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #06 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #07 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"UnitySubstanceT" sysTid=3631
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"AudioTrack" sysTid=4963
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 00080914  /system/lib/libc.so (pthread_cond_timedwait_relative_np+104)
-  #02 pc 0008193b  /system/lib/libmedia.so (android::AudioTrack::AudioTrackThread::threadLoop()+251)
-  #03 pc 00014aac  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+418)
-  #04 pc 0006bfee  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+98)
-  #05 pc 000141cf  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+122)
-  #06 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #07 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #08 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"FMOD stream thr" sysTid=3633
+  #00  pc 0003d1e1  /system/lib/libc.so (nanosleep+17)
+  #01  pc 0001667f  <unknown>
+  #02  pc 00692536  /data/app-lib/com.kongregate.mobile.globalassault.google-1/libunity.so
+  #03  pc 00695fd4  /data/app-lib/com.kongregate.mobile.globalassault.google-1/libunity.so
+  #04  pc 0000bc0c  /system/lib/libc.so (__thread_entry+236)
+  #05  pc 0003e075  /system/lib/libc.so (__pthread_clone+69)
+  #06  pc 00695f7f  /data/app-lib/com.kongregate.mobile.globalassault.google-1/libunity.so
+  #07  pc 0020edef  [heap]
+  #08  pc 001beb8f  [heap]
+  #09  pc 0019ae3f  [heap]
+  #10  pc 0019abef  [heap]
+  #11  pc 0019a99f  [heap]
+  #12  pc 0019a74f  [heap]
+  #13  pc 0019567f  [heap]
+  #14  pc 0019542f  [heap]
+  #15  pc 001951df  [heap]
+  #16  pc 0006835f  [heap]
+  #17  pc 00054e7f  [heap]
+  #18  pc 00025aef  [heap]
+  #19  pc 000203cf  [heap]
+  #20  pc 0001db6f  [heap]
+  #21  pc 00019f9f  [heap]
+  #22  pc 0004db9f  [heap]
+  #23  pc 0004cd5f  [heap]
+  #24  pc 0004c8ff  [heap]
+  #25  pc 0004c02f  [heap]
+  #26  pc 00026a5f  [heap]
+  #27  pc 0002618f  [heap]
+  #28  pc 000258bf  [heap]
+  #29  pc 00048dbf  [heap]
 
-"UnityPreload" sysTid=4964
-  #00 pc 000171e2  /system/lib/libc.so (syscall+34)
-  #01 pc 000276f1  /system/lib/libc.so (sem_wait+169)
-  #02 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #03 pc 002e03e6  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #04 pc 002e0153  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #05 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
-  #06 pc 00080ab3  /system/lib/libc.so (__pthread_start(void*)+56)
-  #07 pc 00021952  /system/lib/libc.so (__start_thread+25)
-  #08 pc 000170b6  /system/lib/libc.so (__bionic_clone+70)
+"AudioTrack" sysTid=3634
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0020edc7  [heap]
 
------ end 4930 -----
+"OkHttp Connecti" sysTid=3635
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 000195af  [heap]
+
+"UnityPreload" sysTid=3637
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"pool-3-thread-1" sysTid=3640
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0159044f  [heap]
+
+"AsyncTask #1" sysTid=3641
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 015bd7af  [heap]
+
+"KongregateAPI-W" sysTid=3642
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 015b0f2f  [heap]
+
+"Binder_3" sysTid=3646
+  #00  pc 0003c426  /system/lib/libc.so (__ioctl+22)
+  #01  pc 015af66f  [heap]
+
+"CookieSyncManag" sysTid=3647
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 000413df  <unknown>
+  #02  pc 0160dfff  [heap]
+  #03  pc 0001e0ff  /system/lib/libutils.so
+  #04  pc 00012e8f  /system/lib/libutils.so
+  #05  pc 00012e9f  /system/lib/libutils.so
+  #06  pc 00012eaf  /system/lib/libutils.so
+  #07  pc 00012ebf  /system/lib/libutils.so
+  #08  pc ffffffff  <unknown>
+  #09  pc 0073208f  /system/usr/icu/icudt51l.dat
+
+"RefQueueWorker@" sysTid=3648
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 01619adf  [heap]
+
+".ProcessManager" sysTid=3654
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0167295f  [heap]
+
+"Binder_4" sysTid=3656
+  #00  pc 0003c426  /system/lib/libc.so (__ioctl+22)
+  #01  pc 0167396f  [heap]
+
+"pool-6-thread-1" sysTid=3658
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0167f86f  [heap]
+
+"pool-7-thread-1" sysTid=3659
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0169a46f  [heap]
+
+"pool-8-thread-1" sysTid=3660
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0169a8df  [heap]
+
+"pool-9-thread-1" sysTid=3661
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0169b23f  [heap]
+
+"pool-11-thread-" sysTid=3662
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0169bf9f  [heap]
+
+"Adjust" sysTid=3664
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc fffffffe  <unknown>
+  #02  pc 00083b5f  [heap]
+  #03  pc 0001e0ff  /system/lib/libutils.so
+  #04  pc 00012e8f  /system/lib/libutils.so
+  #05  pc 00012e9f  /system/lib/libutils.so
+  #06  pc 00012eaf  /system/lib/libutils.so
+  #07  pc 00012ebf  /system/lib/libutils.so
+  #08  pc ffffffff  <unknown>
+  #09  pc 0073208f  /system/usr/icu/icudt51l.dat
+
+"Adjust" sysTid=3666
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc fffffffe  <unknown>
+  #02  pc 0166acff  [heap]
+  #03  pc 0001e0ff  /system/lib/libutils.so
+  #04  pc 00012e8f  /system/lib/libutils.so
+  #05  pc 00012e9f  /system/lib/libutils.so
+  #06  pc 00012eaf  /system/lib/libutils.so
+  #07  pc 00012ebf  /system/lib/libutils.so
+  #08  pc ffffffff  <unknown>
+  #09  pc 0073208f  /system/usr/icu/icudt51l.dat
+
+"Adjust" sysTid=3667
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc fffffffe  <unknown>
+  #02  pc 0001fbaf  [heap]
+  #03  pc 0001e0ff  /system/lib/libutils.so
+  #04  pc 00012e8f  /system/lib/libutils.so
+  #05  pc 00012e9f  /system/lib/libutils.so
+  #06  pc 00012eaf  /system/lib/libutils.so
+  #07  pc 00012ebf  /system/lib/libutils.so
+  #08  pc ffffffff  <unknown>
+  #09  pc 0073208f  /system/usr/icu/icudt51l.dat
+
+"pool-13-thread-" sysTid=3669
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 016ca84f  [heap]
+
+"pool-15-thread-" sysTid=3671
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 016daaff  [heap]
+
+"KongregateAPI-h" sysTid=3672
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 016de6cf  [heap]
+
+"lassault.google" sysTid=3754
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3755
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3756
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
+
+"lassault.google" sysTid=3757
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3758
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3759
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
+
+"lassault.google" sysTid=3760
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
+
+"lassault.google" sysTid=3761
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3762
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3763
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3764
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3765
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
+
+"CleanupReferenc" sysTid=3767
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 01a7c37f  [heap]
+
+"lassault.google" sysTid=3768
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 000fcb03  [stack:3768]
+
+"lassault.google" sysTid=3769
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
+
+"lassault.google" sysTid=3770
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"OptimizingCompi" sysTid=3771
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"v8:SweeperThrea" sysTid=3772
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"v8:SweeperThrea" sysTid=3773
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"v8:SweeperThrea" sysTid=3774
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"v8:SweeperThrea" sysTid=3775
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3776
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3777
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3778
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3779
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 01b479cf  [heap]
+
+"lassault.google" sysTid=3782
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3790
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3792
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3794
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 01b479cf  [heap]
+
+"pool-19-thread-" sysTid=3916
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 01c55e3f  [heap]
+
+"AsyncTask #2" sysTid=3918
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 01db5c0f  [heap]
+
+"pool-23-thread-" sysTid=4132
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 01ba3ccf  [heap]
+
+"AsyncTask #3" sysTid=4134
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 01c9516f  [heap]
+
+----- end 3604 -----
