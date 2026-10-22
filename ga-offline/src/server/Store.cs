@@ -7,12 +7,12 @@ namespace GAOffline
     // (archived wiki, "Credits" page) for one random unit from the units the wiki lists as "Open in Supply Drop", plus
     // the base 4-star units it lists in the Silver/Platinum drops. Odds are a share per star tier, split evenly within
     // the tier (our shares, 5-star tier 0.75%; the drop odds were server-side; tools/rewards_to_json.py). Finishing a campaign for the first time gives
-    // the units the wiki lists as its reward. Finishing the tutorial campaign tops Credits up to one drop, as the
+    // the units the wiki lists as its reward. Winning the tutorial's first battle tops Credits up to one drop, as the
     // tutorial's own line says ("We've given you Credits to buy a Supply Drop").
     public static class Store
     {
         const int SupplyDropId = 1;
-        const int TutorialCampaign = 1;
+        public const int TutorialCampaign = 1;
         static readonly Random Rng = new Random();
 
         static Dictionary<string, object> Drop { get { return Json.O(GameData.Rewards, "supply_drop"); } }
@@ -70,8 +70,14 @@ namespace GAOffline
                     s.AddUnit(Convert.ToInt32(c), 1);
                     cards.Add(Convert.ToInt32(c));
                 }
-            if (id == TutorialCampaign && s.Int("money") < Json.I(Drop, "cost")) s.Set("money", Json.I(Drop, "cost"));
             return cards;
+        }
+
+        // The tutorial's first battle is followed by its store step ("We've given you Credits to buy a Supply Drop"):
+        // winning it the first time tops Credits up to one drop.
+        public static void TutorialCredits(Save s)
+        {
+            if (s.Int("money") < Json.I(Drop, "cost")) s.Set("money", Json.I(Drop, "cost"));
         }
     }
 }

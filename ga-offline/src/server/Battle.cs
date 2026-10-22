@@ -172,6 +172,7 @@ namespace GAOffline
                 {
                     int progress = Json.I(st, "progress") + 1;
                     st["progress"] = progress;
+                    if (CampaignId == Store.TutorialCampaign && progress == 1) Store.TutorialCredits(s);
                     if (progress >= count)
                     {
                         st["level"] = 1;
