@@ -1,623 +1,616 @@
 --------- beginning of main
-10-22 08:55:16.987 D/CarrierConfigLoader( 2965): mHandler: 9 phoneId: 0
-10-22 08:55:17.000 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:45.467 W/GCM     ( 3239): Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.kongregate.mobile.globalassault.google flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-22 09:14:45.501 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:45.504 I/ChromeSync( 3264): [Persistence,AffiliationManager] One of affiliation or grouping data for android://3Sv01qwXGzJ_ZaboPHWoKUMNoN3ELAj1JZ47hiHHgyqsZDBeOgbcgP27pFz1O24LGonoD27T3VYr2Be-ecjf7g==@com.kongregate.mobile.globalassault.google/ was not found. Marking affiliation data as stale...
+10-22 09:14:45.510 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:45.521 D/CarrierServiceBindHelper( 2964): Receive action: android.intent.action.PACKAGE_ADDED
+10-22 09:14:45.529 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:45.530 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:45.534 D/CarrierServiceBindHelper( 2964): mHandler: 3
+10-22 09:14:45.534 D/CarrierConfigLoader( 2964): mHandler: 9 phoneId: 0
+10-22 09:14:45.545 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
 --------- beginning of system
-10-22 08:55:17.013 W/ActivityManager( 2446): Unbind failed: could not find connection for android.os.BinderProxy@9f7fad9
-10-22 08:55:17.015 E/GmsClient( 3258): unable to connect to service: com.google.android.gms.auth.key.retrieval.service.START on com.google.android.gms
-10-22 08:55:17.019 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:17.019 I/UpdateIcingCorporaServi( 3038): Updating corpora: APPS=com.kongregate.mobile.globalassault.google, CONTACTS=MAYBE
-10-22 08:55:17.021 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:17.026 D/        ( 4932): HostConnection::get() New Host Connection established 0xb65cd300, tid 4932
-10-22 08:55:17.128 I/Icing   ( 3258): IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=null serviceId=36
-10-22 08:55:17.139 W/Icing   ( 3258): No valid account for uploading user actions
-10-22 08:55:17.217 I/Icing   ( 3258): Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
-10-22 08:55:17.229 I/UpdateIcingCorporaServi( 3038): UpdateCorporaTask done [took 210 ms] updated apps [took 210 ms] 
-10-22 08:55:17.270 D/AndroidRuntime( 4933): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:55:17.273 D/AndroidRuntime( 4933): CheckJNI is OFF
-10-22 08:55:17.284 D/ICU     ( 4933): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:55:17.298 E/memtrack( 4933): Couldn't load memtrack module (No such file or directory)
-10-22 08:55:17.298 E/android.os.Debug( 4933): failed to load memtrack module: -2
-10-22 08:55:17.299 I/Radio-JNI( 4933): register_android_hardware_Radio DONE
-10-22 08:55:17.304 D/AndroidRuntime( 4933): Calling main entry com.android.commands.monkey.Monkey
-10-22 08:55:17.313 W/BroadcastQueue( 2446): Skipping deliver [background] BroadcastRecord{41dc250 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{bc04c49 4933 (unknown name)/0/u-1 remote:543df02}: process crashing
-10-22 08:55:17.318 I/ActivityManager( 2446): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity} from uid 0 on display 0
-10-22 08:55:17.339 I/ActivityManager( 2446): Start proc 4946:com.kongregate.mobile.globalassault.google/u0a62 for activity com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity
-10-22 08:55:17.373 I/art     ( 4933): System.exit called, status: 0
-10-22 08:55:17.373 I/AndroidRuntime( 4933): VM exiting with result code 0.
-10-22 08:55:17.401 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:17.457 I/ActivityManager( 2446): Config changes=480 {1.0 310mcc260mnc en_US ldltr sw360dp w598dp h336dp 480dpi nrml land finger -keyb/v/h -nav/h s.10}
-10-22 08:55:17.475 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:17.547 I/InputReader( 2446): Reconfiguring input devices.  changes=0x00000004
-10-22 08:55:17.547 I/InputReader( 2446): Device reconfigured: id=0, name='qwerty2', size 1080x1920, orientation 1, mode 1, display id 0
-10-22 08:55:17.628 W/art     ( 2446): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.attachApplication(android.app.IApplicationThread) from ActivityManagerService.java:6186 waiters=1 for 209ms
-10-22 08:55:17.634 D/EGL_emulation( 3781): eglMakeCurrent: 0xaa182de0: ver 3 0 (tinfo 0xaa1917e0)
-10-22 08:55:17.641 E/Surface ( 3781): getSlotFromBufferLocked: unknown buffer: 0xb40bc8a0
-10-22 08:55:17.743 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:17.831 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:17.835 E/Surface ( 2705): getSlotFromBufferLocked: unknown buffer: 0xa1ace460
-10-22 08:55:17.848 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:17.862 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:17.873 D/        ( 4946): HostConnection::get() New Host Connection established 0xaf74c680, tid 4946
-10-22 08:55:17.902 E/Surface ( 2705): getSlotFromBufferLocked: unknown buffer: 0xa1ace320
-10-22 08:55:17.919 V/WindowManager( 2446): Layouts looping: On entry to LockedInner, mPendingLayoutChanges = 0x1
-10-22 08:55:17.920 V/WindowManager( 2446): Layouts looping: after finishPostLayoutPolicyLw, mPendingLayoutChanges = 0x0
-10-22 08:55:17.920 V/WindowManager( 2446): Layouts looping: mLayoutNeeded, mPendingLayoutChanges = 0x1
-10-22 08:55:17.920 V/WindowManager( 2446): Layouts looping: On entry to LockedInner, mPendingLayoutChanges = 0x1
-10-22 08:55:17.920 V/WindowManager( 2446): Layouts looping: after finishPostLayoutPolicyLw, mPendingLayoutChanges = 0x0
-10-22 08:55:17.921 V/WindowManager( 2446): Layouts looping: mLayoutNeeded, mPendingLayoutChanges = 0x1
-10-22 08:55:17.923 E/WindowManager( 2446): Performed 6 layouts in a row. Skipping
-10-22 08:55:17.950 I/ActivityManager( 2446): Displayed com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity: +623ms
-10-22 08:55:17.959 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:17.963 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:18.018 D/        ( 4946): HostConnection::get() New Host Connection established 0xadc77640, tid 4964
-10-22 08:55:18.047 D/EGL_emulation( 4946): eglCreateContext: 0xadd0f6c0: maj 3 min 0 rcv 3
-10-22 08:55:18.048 D/EGL_emulation( 4946): eglMakeCurrent: 0xadd0f6c0: ver 3 0 (tinfo 0xadc6fe50)
-10-22 08:55:18.049 E/eglCodecCommon( 4946): glUtilsParamSize: unknow param 0x00008cdf
-10-22 08:55:18.049 E/eglCodecCommon( 4946): glUtilsParamSize: unknow param 0x00008824
-10-22 08:55:18.050 D/Unity   ( 4946): GL_EXT_debug_marker GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_sync_buffer_data ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:55:18.072 I/WindowManager( 2446): Screen frozen for +693ms due to Window{83cf9d7 u0 NavigationBar}
-10-22 08:55:18.075 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:18.119 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:18.160 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:18.234 I/Icing   ( 3258): Indexing com.google.android.gms-apps from com.google.android.gms
-10-22 08:55:18.250 I/Icing   ( 3258): Indexing done com.google.android.gms-apps
-10-22 08:55:18.250 I/Icing   ( 3258): Indexing com.google.android.googlequicksearchbox-applications_uri from com.google.android.googlequicksearchbox
-10-22 08:55:18.250 W/libc    ( 4946): pthread_create sched_setscheduler call failed: Operation not permitted
-10-22 08:55:18.395 I/Icing   ( 3258): Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
-10-22 08:55:18.502 I/Icing   ( 3258): Indexing done com.google.android.googlequicksearchbox-applications_uri
-10-22 08:55:18.510 I/Icing   ( 3258): Indexing done com.google.android.gms-internal.3p:MobileApplication
-10-22 08:55:18.546 E/Surface ( 4946): getSlotFromBufferLocked: unknown buffer: 0xb40be100
-10-22 08:55:18.548 D/EGL_emulation( 4946): eglMakeCurrent: 0xadd0f6c0: ver 3 0 (tinfo 0xadc6fe50)
-10-22 08:55:19.031 W/SensorService( 2446): sensor 00000000 already enabled in connection 0x98ad3ea0 (ignoring)
-10-22 08:55:19.078 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.081 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.109 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.115 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.125 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.137 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.156 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.173 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.179 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.197 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.219 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.223 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.243 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.267 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.284 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.291 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.298 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.316 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.338 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.360 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.371 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.382 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.388 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.406 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.418 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.434 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.445 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.464 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.468 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.492 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.507 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.520 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.531 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.539 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.551 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.573 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.590 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.594 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.602 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.610 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.624 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.657 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.681 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.688 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.693 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.711 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.732 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.736 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.754 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.759 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.778 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.786 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.797 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.803 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.827 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.835 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.860 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:19.867 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:20.095 I/art     ( 2446): Starting a blocking GC Explicit
-10-22 08:55:20.108 I/art     ( 2446): Explicit concurrent mark sweep GC freed 18246(1348KB) AllocSpace objects, 2(40KB) LOS objects, 33% free, 7MB/11MB, paused 567us total 12.744ms
-10-22 08:55:20.532 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:20.534 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:20.536 D/        ( 4984): HostConnection::get() New Host Connection established 0xb65cd300, tid 4984
-10-22 08:55:21.484 D/AndroidRuntime( 4988): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:55:21.485 D/AndroidRuntime( 4988): CheckJNI is OFF
-10-22 08:55:21.495 D/ICU     ( 4988): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:55:21.509 E/memtrack( 4988): Couldn't load memtrack module (No such file or directory)
-10-22 08:55:21.509 E/android.os.Debug( 4988): failed to load memtrack module: -2
-10-22 08:55:21.510 I/Radio-JNI( 4988): register_android_hardware_Radio DONE
-10-22 08:55:21.515 D/AndroidRuntime( 4988): Calling main entry com.android.commands.uiautomator.Launcher
-10-22 08:55:22.142 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:55:22.142 I/Vision  ( 3258): Checking for download completion for 194857 -- ocr
-10-22 08:55:22.537 W/AccessibilityNodeInfoDumper( 4988): Fetch time: 2ms
-10-22 08:55:22.537 W/WindowManager( 2446): Attempted to remove non-existing token: android.os.Binder@6779fdc
-10-22 08:55:22.555 D/AndroidRuntime( 4988): Shutting down VM
-10-22 08:55:22.750 I/ActivityManager( 2446): Killing 4028:com.google.android.gm/u0a47 (adj 15): empty #17
-10-22 08:55:23.703 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:23.705 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:23.707 D/        ( 5001): HostConnection::get() New Host Connection established 0xb660d300, tid 5001
-10-22 08:55:25.951 D/AndroidRuntime( 5004): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:55:25.952 D/AndroidRuntime( 5004): CheckJNI is OFF
-10-22 08:55:25.960 D/ICU     ( 5004): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:55:25.974 E/memtrack( 5004): Couldn't load memtrack module (No such file or directory)
-10-22 08:55:25.974 E/android.os.Debug( 5004): failed to load memtrack module: -2
-10-22 08:55:25.975 I/Radio-JNI( 5004): register_android_hardware_Radio DONE
-10-22 08:55:25.982 D/AndroidRuntime( 5004): Calling main entry com.android.commands.uiautomator.Launcher
-10-22 08:55:26.874 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:26.875 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:26.877 D/        ( 5016): HostConnection::get() New Host Connection established 0xb65cd300, tid 5016
-10-22 08:55:27.022 W/AccessibilityNodeInfoDumper( 5004): Fetch time: 2ms
-10-22 08:55:27.022 W/WindowManager( 2446): Attempted to remove non-existing token: android.os.Binder@24effba
-10-22 08:55:27.034 D/AndroidRuntime( 5004): Shutting down VM
-10-22 08:55:30.061 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:30.062 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:30.064 D/        ( 5023): HostConnection::get() New Host Connection established 0xb65cd300, tid 5023
-10-22 08:55:30.428 D/AndroidRuntime( 5026): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:55:30.429 D/AndroidRuntime( 5026): CheckJNI is OFF
-10-22 08:55:30.438 D/ICU     ( 5026): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:55:30.452 E/memtrack( 5026): Couldn't load memtrack module (No such file or directory)
-10-22 08:55:30.452 E/android.os.Debug( 5026): failed to load memtrack module: -2
-10-22 08:55:30.453 I/Radio-JNI( 5026): register_android_hardware_Radio DONE
-10-22 08:55:30.460 D/AndroidRuntime( 5026): Calling main entry com.android.commands.uiautomator.Launcher
-10-22 08:55:31.484 W/AccessibilityNodeInfoDumper( 5026): Fetch time: 2ms
-10-22 08:55:31.484 W/WindowManager( 2446): Attempted to remove non-existing token: android.os.Binder@169be6b
-10-22 08:55:31.511 D/AndroidRuntime( 5026): Shutting down VM
-10-22 08:55:32.155 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:55:32.155 I/Vision  ( 3258): Checking for download completion for 204869 -- ocr
-10-22 08:55:33.238 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:33.240 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:33.241 D/        ( 5040): HostConnection::get() New Host Connection established 0xb654d300, tid 5040
-10-22 08:55:35.262 W/ChimeraConfigurator( 3258): Error syncing flags: qoq: COMMIT_TIMEOUT
-10-22 08:55:35.262 I/ChmraDebugLogger( 3258): [79] COMMIT_TIMEOUT
-10-22 08:55:35.263 I/ChmraDebugLogger( 3258): [52] null
-10-22 08:55:35.268 I/ChimeraConfigService( 3258): Scheduling checkin for one-off execution between [3300,43200] seconds from now (1792659335268)
-10-22 08:55:35.268 W/art     ( 3258): Long monitor contention event with owner method=void java.lang.Thread.sleep!(java.lang.Object, long, int) from Thread.java:4294967294 waiters=0 for 39.489s
-10-22 08:55:35.269 I/ChimeraConfigurator( 3258): Starting update, reason: 1 urgentFeatures: 
-10-22 08:55:35.279 I/ChmraDebugLogger( 3258): [52] null
-10-22 08:55:35.280 W/ChimeraConfigService( 3258): Retry attempt was throttled.
-10-22 08:55:35.289 I/ChimeraConfigService( 3258): Scheduling checkin every 43200 seconds, with flex of 1800 seconds
-10-22 08:55:35.325 I/TelephonySpam( 3258): TelephonySpamChimeraService - Running Telephony Spam Chimera Service
-10-22 08:55:35.390 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:55:35.440 D/EGL_emulation( 4003): eglCreateContext: 0xaa1833e0: maj 3 min 0 rcv 3
-10-22 08:55:35.441 D/EGL_emulation( 4003): eglMakeCurrent: 0xaa1833e0: ver 3 0 (tinfo 0xb406d890)
-10-22 08:55:35.441 E/eglCodecCommon( 4003): glUtilsParamSize: unknow param 0x00008cdf
-10-22 08:55:35.441 E/eglCodecCommon( 4003): glUtilsParamSize: unknow param 0x00008824
-10-22 08:55:35.643 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
-10-22 08:55:35.643 W/GLSUser ( 3235): [AppCertManager] Failed to get security token.
-10-22 08:55:35.643 W/GLSUser ( 3235): java.io.IOException: Invalid scope
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at adiw.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):23)
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at adiw.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):18)
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at adiw.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):11)
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at hwy.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):17)
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at hww.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):45)
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at hwr.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at hwu.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):10)
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at gbi.call(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at soy.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):12)
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at soy.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):7)
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at sux.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
-10-22 08:55:35.643 W/GLSUser ( 3235): 	at java.lang.Thread.run(Thread.java:818)
-10-22 08:55:35.644 I/Auth    ( 3235): [ReflectiveChannelBinder] Successfully bound channel!
-10-22 08:55:35.651 W/Conscrypt( 3235): Could not set socket write timeout: java.net.SocketException: Socket closed
-10-22 08:55:35.651 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
-10-22 08:55:35.651 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
-10-22 08:55:35.651 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
-10-22 08:55:35.652 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:55:35.674 W/Conscrypt( 3235): Could not set socket write timeout: java.net.SocketException: Socket closed
-10-22 08:55:35.674 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
-10-22 08:55:35.674 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
-10-22 08:55:35.674 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
-10-22 08:55:35.674 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:55:35.726 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
-10-22 08:55:35.726 W/GLSUser ( 3235): [AppCertManager] IOException while requesting key: 
-10-22 08:55:35.726 W/GLSUser ( 3235): java.io.IOException: Invalid device key response.
-10-22 08:55:35.726 W/GLSUser ( 3235): 	at hwy.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):49)
-10-22 08:55:35.726 W/GLSUser ( 3235): 	at hww.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):45)
-10-22 08:55:35.726 W/GLSUser ( 3235): 	at hwr.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:55:35.726 W/GLSUser ( 3235): 	at hwu.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):10)
-10-22 08:55:35.726 W/GLSUser ( 3235): 	at gbi.call(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
-10-22 08:55:35.726 W/GLSUser ( 3235): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
-10-22 08:55:35.726 W/GLSUser ( 3235): 	at soy.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):12)
-10-22 08:55:35.726 W/GLSUser ( 3235): 	at soy.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):7)
-10-22 08:55:35.726 W/GLSUser ( 3235): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
-10-22 08:55:35.726 W/GLSUser ( 3235): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
-10-22 08:55:35.726 W/GLSUser ( 3235): 	at sux.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
-10-22 08:55:35.726 W/GLSUser ( 3235): 	at java.lang.Thread.run(Thread.java:818)
-10-22 08:55:36.241 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:55:36.416 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:36.417 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:36.419 D/        ( 5051): HostConnection::get() New Host Connection established 0xb654d300, tid 5051
-10-22 08:55:39.598 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:39.600 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:39.601 D/        ( 5056): HostConnection::get() New Host Connection established 0xb654d300, tid 5056
-10-22 08:55:42.157 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:55:42.157 I/Vision  ( 3258): Exceeded maximum feature download tries for ocr
-10-22 08:55:42.157 W/Vision  ( 3258): Request of optional module download of ocr failed.
-10-22 08:55:42.157 I/Vision  ( 3258): Checking for download completion for 214872 -- ocr
-10-22 08:55:42.776 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:42.778 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:42.780 D/        ( 5061): HostConnection::get() New Host Connection established 0xb660d300, tid 5061
-10-22 08:55:43.680 I/ContentMaintenance( 3258): Internal cache bytes used: 0; limit: 100000000; download size: 0
-10-22 08:55:43.687 I/RealtimeCacheCleanup( 3258): Beginning Realtime garbage collection.
-10-22 08:55:43.687 I/RealtimeCacheCleanup( 3258): Finished Realtime garbage collection.
-10-22 08:55:44.826 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:44.827 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:44.829 D/        ( 5066): HostConnection::get() New Host Connection established 0xb658d300, tid 5066
-10-22 08:55:45.952 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:45.953 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:45.955 D/        ( 5075): HostConnection::get() New Host Connection established 0xb654d300, tid 5075
-10-22 08:55:49.123 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:49.125 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:49.127 D/        ( 5080): HostConnection::get() New Host Connection established 0xb654d300, tid 5080
-10-22 08:55:49.197 I/ActivityManager( 2446): Killing 3578:com.google.android.calendar/u0a22 (adj 15): empty #17
-10-22 08:55:52.169 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:55:52.173 I/Vision  ( 3258): Checking for download completion for 224888 -- ocr
-10-22 08:55:52.178 I/ChimeraConfigurator( 3258): Starting update, reason: 4 urgentFeatures: vision.ocr:-1
-10-22 08:55:52.309 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:52.310 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:52.312 D/        ( 5087): HostConnection::get() New Host Connection established 0xb660d300, tid 5087
-10-22 08:55:55.020 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:55.021 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:55.023 D/        ( 5092): HostConnection::get() New Host Connection established 0xb65cd300, tid 5092
-10-22 08:55:55.485 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:55.486 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:55.488 D/        ( 5099): HostConnection::get() New Host Connection established 0xb65cd300, tid 5099
-10-22 08:55:58.656 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:58.658 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:58.660 D/        ( 5104): HostConnection::get() New Host Connection established 0xb660d300, tid 5104
-10-22 08:56:00.059 D/hwcomposer( 1264): hw_composer sent 227 syncs in 65s
-10-22 08:56:01.217 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:56:01.840 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:01.841 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:01.843 D/        ( 5109): HostConnection::get() New Host Connection established 0xb65cd300, tid 5109
-10-22 08:56:02.176 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:56:02.176 I/Vision  ( 3258): Checking for download completion for 234891 -- ocr
-10-22 08:56:05.033 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:05.034 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:05.036 D/        ( 5115): HostConnection::get() New Host Connection established 0xb658d300, tid 5115
-10-22 08:56:05.227 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:05.228 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:05.230 D/        ( 5120): HostConnection::get() New Host Connection established 0xb660d300, tid 5120
-10-22 08:56:08.217 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:08.218 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:08.220 D/        ( 5127): HostConnection::get() New Host Connection established 0xb65cd300, tid 5127
-10-22 08:56:11.395 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:11.397 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:11.399 D/        ( 5132): HostConnection::get() New Host Connection established 0xb658d300, tid 5132
-10-22 08:56:12.181 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:56:12.181 I/Vision  ( 3258): Checking for download completion for 244895 -- ocr
-10-22 08:56:14.579 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:14.580 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:14.582 D/        ( 5138): HostConnection::get() New Host Connection established 0xb658d300, tid 5138
-10-22 08:56:15.428 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:15.430 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:15.431 D/        ( 5143): HostConnection::get() New Host Connection established 0xb658d300, tid 5143
-10-22 08:56:17.344 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:56:17.758 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:17.760 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:17.761 D/        ( 5150): HostConnection::get() New Host Connection established 0xb654d300, tid 5150
-10-22 08:56:20.935 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:20.936 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:20.938 D/        ( 5155): HostConnection::get() New Host Connection established 0xb660d300, tid 5155
-10-22 08:56:22.184 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:56:22.184 I/Vision  ( 3258): Checking for download completion for 254899 -- ocr
-10-22 08:56:24.117 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:24.118 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:24.120 D/        ( 5161): HostConnection::get() New Host Connection established 0xb65cd300, tid 5161
-10-22 08:56:25.628 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:25.629 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:25.631 D/        ( 5166): HostConnection::get() New Host Connection established 0xb658d300, tid 5166
-10-22 08:56:27.294 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:27.295 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:27.297 D/        ( 5173): HostConnection::get() New Host Connection established 0xb660d300, tid 5173
-10-22 08:56:30.473 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:30.474 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:30.476 D/        ( 5178): HostConnection::get() New Host Connection established 0xb65cd300, tid 5178
-10-22 08:56:32.188 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:56:32.188 I/Vision  ( 3258): Checking for download completion for 264903 -- ocr
-10-22 08:56:32.407 W/ChimeraConfigurator( 3258): Error syncing flags: qoq: COMMIT_TIMEOUT
-10-22 08:56:32.408 I/ChmraDebugLogger( 3258): [79] COMMIT_TIMEOUT
-10-22 08:56:32.408 I/ChmraDebugLogger( 3258): [52] null
-10-22 08:56:32.409 W/ChimeraConfigService( 3258): Retry attempt was throttled.
-10-22 08:56:32.437 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:56:33.656 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:33.657 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:33.659 D/        ( 5184): HostConnection::get() New Host Connection established 0xb658d300, tid 5184
-10-22 08:56:35.831 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:35.832 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:35.834 D/        ( 5189): HostConnection::get() New Host Connection established 0xb660d300, tid 5189
-10-22 08:56:36.834 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:36.836 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:36.838 D/        ( 5196): HostConnection::get() New Host Connection established 0xb65cd300, tid 5196
-10-22 08:56:40.010 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:40.012 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:40.013 D/        ( 5201): HostConnection::get() New Host Connection established 0xb654d300, tid 5201
-10-22 08:56:42.194 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:56:42.194 I/Vision  ( 3258): Exceeded maximum feature download tries for ocr
-10-22 08:56:42.194 W/Vision  ( 3258): Request of optional module download of ocr failed.
-10-22 08:56:42.194 I/Vision  ( 3258): Checking for download completion for 274909 -- ocr
-10-22 08:56:43.194 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:43.195 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:43.197 D/        ( 5208): HostConnection::get() New Host Connection established 0xb658d300, tid 5208
-10-22 08:56:46.041 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:46.043 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:46.044 D/        ( 5213): HostConnection::get() New Host Connection established 0xb65cd300, tid 5213
-10-22 08:56:46.091 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:56:46.372 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:46.373 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:46.375 D/        ( 5220): HostConnection::get() New Host Connection established 0xb660d300, tid 5220
-10-22 08:56:49.553 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:49.555 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:49.556 D/        ( 5225): HostConnection::get() New Host Connection established 0xb65cd300, tid 5225
-10-22 08:56:52.198 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:56:52.201 I/Vision  ( 3258): Checking for download completion for 284916 -- ocr
-10-22 08:56:52.208 I/ChimeraConfigurator( 3258): Starting update, reason: 4 urgentFeatures: vision.ocr:-1
-10-22 08:56:52.725 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:52.726 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:52.728 D/        ( 5232): HostConnection::get() New Host Connection established 0xb65cd300, tid 5232
-10-22 08:56:55.898 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:55.900 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:55.902 D/        ( 5237): HostConnection::get() New Host Connection established 0xb658d300, tid 5237
-10-22 08:56:55.953 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:56:56.244 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:56.245 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:56.247 D/        ( 5242): HostConnection::get() New Host Connection established 0xb658d300, tid 5242
-10-22 08:56:59.071 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:56:59.073 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:56:59.075 D/        ( 5249): HostConnection::get() New Host Connection established 0xb660d300, tid 5249
-10-22 08:57:00.061 D/hwcomposer( 1264): hw_composer sent 3 syncs in 60s
-10-22 08:57:02.205 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:57:02.206 I/Vision  ( 3258): Checking for download completion for 294920 -- ocr
-10-22 08:57:02.245 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:02.247 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:02.248 D/        ( 5255): HostConnection::get() New Host Connection established 0xb660d300, tid 5255
-10-22 08:57:05.417 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:05.419 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:05.420 D/        ( 5260): HostConnection::get() New Host Connection established 0xb654d300, tid 5260
-10-22 08:57:06.175 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:57:06.437 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:06.438 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:06.440 D/        ( 5265): HostConnection::get() New Host Connection established 0xb65cd300, tid 5265
-10-22 08:57:06.710 D/AndroidRuntime( 5270): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:57:06.711 D/AndroidRuntime( 5270): CheckJNI is OFF
-10-22 08:57:06.719 D/ICU     ( 5270): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:57:06.731 E/memtrack( 5270): Couldn't load memtrack module (No such file or directory)
-10-22 08:57:06.731 E/android.os.Debug( 5270): failed to load memtrack module: -2
-10-22 08:57:06.731 I/Radio-JNI( 5270): register_android_hardware_Radio DONE
-10-22 08:57:06.737 D/AndroidRuntime( 5270): Calling main entry com.android.commands.input.Input
-10-22 08:57:06.740 I/Input   ( 5270): injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=289452, downTime=289452, deviceId=0, source=0x1002 }
-10-22 08:57:07.068 I/Input   ( 5270): injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=289452, downTime=289452, deviceId=0, source=0x1002 }
-10-22 08:57:08.068 D/AndroidRuntime( 5270): Shutting down VM
-10-22 08:57:08.603 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:08.605 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:08.606 D/        ( 5281): HostConnection::get() New Host Connection established 0xb660d300, tid 5281
-10-22 08:57:11.783 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:11.784 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:11.786 D/        ( 5286): HostConnection::get() New Host Connection established 0xb654d300, tid 5286
-10-22 08:57:12.214 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:57:12.214 I/Vision  ( 3258): Checking for download completion for 304929 -- ocr
-10-22 08:57:13.385 D/AndroidRuntime( 5290): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:57:13.387 D/AndroidRuntime( 5290): CheckJNI is OFF
-10-22 08:57:13.396 D/ICU     ( 5290): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:57:13.408 E/memtrack( 5290): Couldn't load memtrack module (No such file or directory)
-10-22 08:57:13.408 E/android.os.Debug( 5290): failed to load memtrack module: -2
-10-22 08:57:13.409 I/Radio-JNI( 5290): register_android_hardware_Radio DONE
-10-22 08:57:13.414 D/AndroidRuntime( 5290): Calling main entry com.android.commands.input.Input
-10-22 08:57:13.417 I/Input   ( 5290): injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=296130, downTime=296130, deviceId=0, source=0x1002 }
-10-22 08:57:14.070 I/Input   ( 5290): injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=296130, downTime=296130, deviceId=0, source=0x1002 }
-10-22 08:57:14.953 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:14.954 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:14.956 D/        ( 5302): HostConnection::get() New Host Connection established 0xb654d300, tid 5302
-10-22 08:57:15.070 D/AndroidRuntime( 5290): Shutting down VM
-10-22 08:57:18.126 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:18.128 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:18.129 D/        ( 5307): HostConnection::get() New Host Connection established 0xb658d300, tid 5307
-10-22 08:57:20.386 D/AndroidRuntime( 5310): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:57:20.387 D/AndroidRuntime( 5310): CheckJNI is OFF
-10-22 08:57:20.397 D/ICU     ( 5310): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:57:20.409 E/memtrack( 5310): Couldn't load memtrack module (No such file or directory)
-10-22 08:57:20.409 E/android.os.Debug( 5310): failed to load memtrack module: -2
-10-22 08:57:20.409 I/Radio-JNI( 5310): register_android_hardware_Radio DONE
-10-22 08:57:20.414 D/AndroidRuntime( 5310): Calling main entry com.android.commands.input.Input
-10-22 08:57:20.418 I/Input   ( 5310): injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=303130, downTime=303130, deviceId=0, source=0x1002 }
-10-22 08:57:21.072 I/Input   ( 5310): injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=303130, downTime=303130, deviceId=0, source=0x1002 }
-10-22 08:57:21.302 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:21.304 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:21.306 D/        ( 5321): HostConnection::get() New Host Connection established 0xb65cd300, tid 5321
-10-22 08:57:22.072 D/AndroidRuntime( 5310): Shutting down VM
-10-22 08:57:22.218 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:57:22.218 I/Vision  ( 3258): Checking for download completion for 314933 -- ocr
-10-22 08:57:24.485 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:24.486 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:24.489 D/        ( 5327): HostConnection::get() New Host Connection established 0xb65cd300, tid 5327
-10-22 08:57:25.644 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:57:27.387 D/AndroidRuntime( 5330): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:57:27.388 D/AndroidRuntime( 5330): CheckJNI is OFF
-10-22 08:57:27.396 D/ICU     ( 5330): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:57:27.407 E/memtrack( 5330): Couldn't load memtrack module (No such file or directory)
-10-22 08:57:27.407 E/android.os.Debug( 5330): failed to load memtrack module: -2
-10-22 08:57:27.408 I/Radio-JNI( 5330): register_android_hardware_Radio DONE
-10-22 08:57:27.413 D/AndroidRuntime( 5330): Calling main entry com.android.commands.input.Input
-10-22 08:57:27.416 I/Input   ( 5330): injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=310129, downTime=310129, deviceId=0, source=0x1002 }
-10-22 08:57:27.662 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:27.664 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:27.666 D/        ( 5341): HostConnection::get() New Host Connection established 0xb658d300, tid 5341
-10-22 08:57:28.074 I/Input   ( 5330): injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=310129, downTime=310129, deviceId=0, source=0x1002 }
-10-22 08:57:29.074 D/AndroidRuntime( 5330): Shutting down VM
-10-22 08:57:30.841 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:30.843 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:30.844 D/        ( 5346): HostConnection::get() New Host Connection established 0xb654d300, tid 5346
-10-22 08:57:32.222 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:57:32.222 I/Vision  ( 3258): Checking for download completion for 324936 -- ocr
-10-22 08:57:32.427 W/ChimeraConfigurator( 3258): Error syncing flags: qoq: COMMIT_TIMEOUT
-10-22 08:57:32.427 I/ChmraDebugLogger( 3258): [79] COMMIT_TIMEOUT
-10-22 08:57:32.429 I/ChmraDebugLogger( 3258): [52] null
-10-22 08:57:32.430 W/ChimeraConfigService( 3258): Retry attempt was throttled.
-10-22 08:57:34.013 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:34.015 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:34.017 D/        ( 5352): HostConnection::get() New Host Connection established 0xb654d300, tid 5352
-10-22 08:57:34.068 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:57:34.388 D/AndroidRuntime( 5355): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:57:34.389 D/AndroidRuntime( 5355): CheckJNI is OFF
-10-22 08:57:34.397 D/ICU     ( 5355): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:57:34.410 E/memtrack( 5355): Couldn't load memtrack module (No such file or directory)
-10-22 08:57:34.410 E/android.os.Debug( 5355): failed to load memtrack module: -2
-10-22 08:57:34.411 I/Radio-JNI( 5355): register_android_hardware_Radio DONE
-10-22 08:57:34.419 D/AndroidRuntime( 5355): Calling main entry com.android.commands.input.Input
-10-22 08:57:34.421 I/Input   ( 5355): injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=317134, downTime=317134, deviceId=0, source=0x1002 }
-10-22 08:57:35.076 I/Input   ( 5355): injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=317134, downTime=317134, deviceId=0, source=0x1002 }
-10-22 08:57:36.076 D/AndroidRuntime( 5355): Shutting down VM
-10-22 08:57:37.186 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:37.187 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:37.189 D/        ( 5366): HostConnection::get() New Host Connection established 0xb658d300, tid 5366
-10-22 08:57:40.367 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:40.368 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:40.370 D/        ( 5371): HostConnection::get() New Host Connection established 0xb658d300, tid 5371
-10-22 08:57:41.392 D/AndroidRuntime( 5374): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:57:41.393 D/AndroidRuntime( 5374): CheckJNI is OFF
-10-22 08:57:41.401 D/ICU     ( 5374): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:57:41.413 E/memtrack( 5374): Couldn't load memtrack module (No such file or directory)
-10-22 08:57:41.413 E/android.os.Debug( 5374): failed to load memtrack module: -2
-10-22 08:57:41.414 I/Radio-JNI( 5374): register_android_hardware_Radio DONE
-10-22 08:57:41.421 D/AndroidRuntime( 5374): Calling main entry com.android.commands.input.Input
-10-22 08:57:41.424 I/Input   ( 5374): injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=324137, downTime=324137, deviceId=0, source=0x1002 }
-10-22 08:57:42.077 I/Input   ( 5374): injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=324137, downTime=324137, deviceId=0, source=0x1002 }
-10-22 08:57:42.226 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:57:42.226 I/Vision  ( 3258): Exceeded maximum feature download tries for ocr
-10-22 08:57:42.226 W/Vision  ( 3258): Request of optional module download of ocr failed.
-10-22 08:57:42.226 I/Vision  ( 3258): Checking for download completion for 334941 -- ocr
-10-22 08:57:43.078 D/AndroidRuntime( 5374): Shutting down VM
-10-22 08:57:43.541 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:43.543 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:43.544 D/        ( 5387): HostConnection::get() New Host Connection established 0xb658d300, tid 5387
-10-22 08:57:46.717 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:46.719 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:46.720 D/        ( 5393): HostConnection::get() New Host Connection established 0xb658d300, tid 5393
-10-22 08:57:48.311 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:48.312 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:48.314 D/        ( 5398): HostConnection::get() New Host Connection established 0xb654d300, tid 5398
-10-22 08:57:49.889 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:49.890 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:49.892 D/        ( 5405): HostConnection::get() New Host Connection established 0xb658d300, tid 5405
-10-22 08:57:49.955 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:57:52.230 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:57:52.235 I/Vision  ( 3258): Checking for download completion for 344949 -- ocr
-10-22 08:57:52.240 I/ChimeraConfigurator( 3258): Starting update, reason: 4 urgentFeatures: vision.ocr:-1
-10-22 08:57:53.063 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:53.065 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:53.067 D/        ( 5412): HostConnection::get() New Host Connection established 0xb654d300, tid 5412
-10-22 08:57:56.242 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:56.244 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:56.246 D/        ( 5417): HostConnection::get() New Host Connection established 0xb65cd300, tid 5417
-10-22 08:57:59.423 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:57:59.424 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:57:59.426 D/        ( 5423): HostConnection::get() New Host Connection established 0xb654d300, tid 5423
-10-22 08:57:59.550 D/hwcomposer( 1264): hw_composer sent 13 syncs in 60s
-10-22 08:57:59.862 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:58:02.238 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:58:02.238 I/Vision  ( 3258): Checking for download completion for 354953 -- ocr
-10-22 08:58:02.616 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:58:02.618 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:58:02.619 D/        ( 5429): HostConnection::get() New Host Connection established 0xb660d300, tid 5429
-10-22 08:58:05.795 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:58:05.797 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:58:05.798 D/        ( 5434): HostConnection::get() New Host Connection established 0xb65cd300, tid 5434
-10-22 08:58:08.506 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:58:08.507 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:58:08.509 D/        ( 5440): HostConnection::get() New Host Connection established 0xb658d300, tid 5440
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): Error inserting service_kind=0 source=16 tag=PhenotypeSyncImmediately requires_charging=0 target_package=com.google.android.gms source_version=202414000 required_network_type=0 extras={"fetchReason":{"6":0},"fetchPackage":{"com.google.android.gms.auth_api_phone":4}} flex_time=1000 persistence_level=1 target_class=com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator runtime=1792659206531 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} required_idleness_state=0 last_runtime=0 period=2000 task_type=0 job_id=-1 user_id=0
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:780)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1471)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1341)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at aqui.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):175)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at aqtk.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):182)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at aqtk.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):23)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at aqtk.c(:com.google.android.gms@202414022@20.24.14 (040700-319035315):9)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at aqtk.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):94)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at aqtg.handleMessage(:com.google.android.gms@202414022@20.24.14 (040700-319035315):16)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at android.os.Handler.dispatchMessage(Handler.java:102)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at aekz.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at aekz.dispatchMessage(:com.google.android.gms@202414022@20.24.14 (040700-319035315):14)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at android.os.Looper.loop(Looper.java:148)
-10-22 08:58:12.242 E/SQLiteDatabase( 3235): 	at android.os.HandlerThread.run(HandlerThread.java:61)
-10-22 08:58:12.248 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:58:12.248 I/Vision  ( 3258): Checking for download completion for 364962 -- ocr
-10-22 08:58:12.311 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:58:12.312 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:58:12.364 W/Conscrypt( 3235): Could not set socket write timeout: java.net.SocketException: Socket closed
-10-22 08:58:12.364 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
-10-22 08:58:12.365 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
-10-22 08:58:12.365 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:58:12.367 D/EGL_emulation( 4003): eglCreateContext: 0xadc5dbc0: maj 3 min 0 rcv 3
-10-22 08:58:12.368 D/EGL_emulation( 4003): eglMakeCurrent: 0xadc5dbc0: ver 3 0 (tinfo 0xa99fe2a0)
-10-22 08:58:12.368 E/eglCodecCommon( 4003): glUtilsParamSize: unknow param 0x00008cdf
-10-22 08:58:12.369 E/eglCodecCommon( 4003): glUtilsParamSize: unknow param 0x00008824
-10-22 08:58:12.390 W/Conscrypt( 3235): Could not set socket write timeout: java.net.SocketException: Socket closed
-10-22 08:58:12.390 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
-10-22 08:58:12.390 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
-10-22 08:58:12.390 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:58:12.422 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:58:12.580 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
-10-22 08:58:12.580 W/GLSUser ( 3235): [AppCertManager] Failed to get security token.
-10-22 08:58:12.580 W/GLSUser ( 3235): java.io.IOException: Invalid scope
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at adiw.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):23)
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at adiw.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):18)
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at adiw.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):11)
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at hwy.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):17)
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at hww.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):45)
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at hwr.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at hwu.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):10)
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at gbi.call(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at soy.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):12)
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at soy.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):7)
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at sux.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
-10-22 08:58:12.580 W/GLSUser ( 3235): 	at java.lang.Thread.run(Thread.java:818)
-10-22 08:58:12.595 I/aopq    ( 3235): Scheduling adaptive one off task with window [14400, 604800] in seconds [CONTEXT service_id=51 ]
-10-22 08:58:12.603 I/PGAPhenotypeBroadcastRe( 4352): Received Phenotype update.
-10-22 08:58:12.627 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
-10-22 08:58:12.627 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
-10-22 08:58:12.629 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
-10-22 08:58:12.633 I/aorp    ( 3235): updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
-10-22 08:58:12.657 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
-10-22 08:58:12.657 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
-10-22 08:58:12.659 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
-10-22 08:58:12.659 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
-10-22 08:58:12.659 W/GLSUser ( 3235): [AppCertManager] IOException while requesting key: 
-10-22 08:58:12.659 W/GLSUser ( 3235): java.io.IOException: Invalid device key response.
-10-22 08:58:12.659 W/GLSUser ( 3235): 	at hwy.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):49)
-10-22 08:58:12.659 W/GLSUser ( 3235): 	at hww.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):45)
-10-22 08:58:12.659 W/GLSUser ( 3235): 	at hwr.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:58:12.659 W/GLSUser ( 3235): 	at hwu.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):10)
-10-22 08:58:12.659 W/GLSUser ( 3235): 	at gbi.call(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
-10-22 08:58:12.659 W/GLSUser ( 3235): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
-10-22 08:58:12.659 W/GLSUser ( 3235): 	at soy.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):12)
-10-22 08:58:12.659 W/GLSUser ( 3235): 	at soy.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):7)
-10-22 08:58:12.659 W/GLSUser ( 3235): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
-10-22 08:58:12.659 W/GLSUser ( 3235): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
-10-22 08:58:12.659 W/GLSUser ( 3235): 	at sux.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
-10-22 08:58:12.659 W/GLSUser ( 3235): 	at java.lang.Thread.run(Thread.java:818)
-10-22 08:58:12.662 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
-10-22 08:58:12.662 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
-10-22 08:58:12.663 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-22 09:14:45.546 W/ActivityManager( 2458): Unable to start service Intent { act=com.google.android.gms.auth.key.retrieval.service.START pkg=com.google.android.gms } U=0: not found
+10-22 09:14:45.546 W/ActivityManager( 2458): Unbind failed: could not find connection for android.os.BinderProxy@9271869
+10-22 09:14:45.546 E/GmsClient( 3264): unable to connect to service: com.google.android.gms.auth.key.retrieval.service.START on com.google.android.gms
+10-22 09:14:45.548 D/        ( 4915): HostConnection::get() New Host Connection established 0xb660d300, tid 4915
+10-22 09:14:45.559 I/UpdateIcingCorporaServi( 3050): Updating corpora: APPS=com.kongregate.mobile.globalassault.google, CONTACTS=MAYBE
+10-22 09:14:45.647 D/hwcomposer( 1266): hw_composer sent 87 syncs in 61s
+10-22 09:14:45.693 D/AndroidRuntime( 4916): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:14:45.694 D/AndroidRuntime( 4916): CheckJNI is OFF
+10-22 09:14:45.705 D/ICU     ( 4916): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:14:45.722 I/Icing   ( 3264): IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=null serviceId=36
+10-22 09:14:45.754 E/memtrack( 4916): Couldn't load memtrack module (No such file or directory)
+10-22 09:14:45.755 E/android.os.Debug( 4916): failed to load memtrack module: -2
+10-22 09:14:45.755 I/Radio-JNI( 4916): register_android_hardware_Radio DONE
+10-22 09:14:45.781 D/AndroidRuntime( 4916): Calling main entry com.android.commands.monkey.Monkey
+10-22 09:14:45.809 W/BroadcastQueue( 2458): Skipping deliver [background] BroadcastRecord{8f9edd9 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{7b8939e 4916 (unknown name)/0/u-1 remote:3078323}: process crashing
+10-22 09:14:45.829 W/Icing   ( 3264): No valid account for uploading user actions
+10-22 09:14:45.832 I/ActivityManager( 2458): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity} from uid 0 on display 0
+10-22 09:14:45.844 I/Icing   ( 3264): Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-22 09:14:45.847 I/UpdateIcingCorporaServi( 3050): UpdateCorporaTask done [took 288 ms] updated apps [took 288 ms] 
+10-22 09:14:45.894 I/ActivityManager( 2458): Start proc 4930:com.kongregate.mobile.globalassault.google/u0a62 for activity com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity
+10-22 09:14:45.968 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:46.012 I/ActivityManager( 2458): Config changes=480 {1.0 310mcc260mnc en_US ldltr sw360dp w598dp h336dp 480dpi nrml land finger -keyb/v/h -nav/h s.10}
+10-22 09:14:46.047 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:46.094 I/InputReader( 2458): Reconfiguring input devices.  changes=0x00000004
+10-22 09:14:46.094 I/InputReader( 2458): Device reconfigured: id=0, name='qwerty2', size 1080x1920, orientation 1, mode 1, display id 0
+10-22 09:14:46.139 D/EGL_emulation( 3758): eglMakeCurrent: 0xaa1c2cc0: ver 2 0 (tinfo 0xaa2d6750)
+10-22 09:14:46.144 W/art     ( 2458): Long monitor contention event with owner method=void com.android.server.am.ActivityStackSupervisor$ActivityStackSupervisorHandler.activityIdleInternal(com.android.server.am.ActivityRecord) from ActivityStackSupervisor.java:4011 waiters=5 for 230ms
+10-22 09:14:46.145 W/art     ( 2458): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.attachApplication(android.app.IApplicationThread) from ActivityManagerService.java:6186 waiters=2 for 220ms
+10-22 09:14:46.152 I/art     ( 4916): System.exit called, status: 0
+10-22 09:14:46.152 I/AndroidRuntime( 4916): VM exiting with result code 0.
+10-22 09:14:46.172 E/Surface ( 3758): getSlotFromBufferLocked: unknown buffer: 0xb407dd40
+10-22 09:14:46.285 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:46.335 E/Surface ( 2717): getSlotFromBufferLocked: unknown buffer: 0xadefa960
+10-22 09:14:46.368 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:46.376 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:46.385 D/        ( 4930): HostConnection::get() New Host Connection established 0xaa2e4680, tid 4930
+10-22 09:14:46.435 E/Surface ( 2717): getSlotFromBufferLocked: unknown buffer: 0xadefaaa0
+10-22 09:14:46.446 V/WindowManager( 2458): Layouts looping: On entry to LockedInner, mPendingLayoutChanges = 0x1
+10-22 09:14:46.446 V/WindowManager( 2458): Layouts looping: after finishPostLayoutPolicyLw, mPendingLayoutChanges = 0x0
+10-22 09:14:46.447 V/WindowManager( 2458): Layouts looping: mLayoutNeeded, mPendingLayoutChanges = 0x1
+10-22 09:14:46.447 V/WindowManager( 2458): Layouts looping: On entry to LockedInner, mPendingLayoutChanges = 0x1
+10-22 09:14:46.447 V/WindowManager( 2458): Layouts looping: after finishPostLayoutPolicyLw, mPendingLayoutChanges = 0x0
+10-22 09:14:46.447 V/WindowManager( 2458): Layouts looping: mLayoutNeeded, mPendingLayoutChanges = 0x1
+10-22 09:14:46.447 E/WindowManager( 2458): Performed 6 layouts in a row. Skipping
+10-22 09:14:46.455 I/ActivityManager( 2458): Displayed com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity: +571ms
+10-22 09:14:46.457 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:46.484 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:46.553 D/        ( 4930): HostConnection::get() New Host Connection established 0xadc2b780, tid 4948
+10-22 09:14:46.559 I/WindowManager( 2458): Screen frozen for +634ms due to Window{996b7e u0 NavigationBar}
+10-22 09:14:46.605 D/EGL_emulation( 4930): eglCreateContext: 0xadd4c420: maj 2 min 0 rcv 2
+10-22 09:14:46.606 D/EGL_emulation( 4930): eglMakeCurrent: 0xadd4c420: ver 2 0 (tinfo 0xadc26e50)
+10-22 09:14:46.625 D/Unity   ( 4930): GL_EXT_debug_marker GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_sync_buffer_data ANDROID_EMU_hwc_color_transform GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+10-22 09:14:46.707 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:46.780 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:46.809 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:46.847 I/Icing   ( 3264): Indexing com.google.android.gms-apps from com.google.android.gms
+10-22 09:14:46.856 I/Icing   ( 3264): Indexing done com.google.android.gms-apps
+10-22 09:14:46.856 I/Icing   ( 3264): Indexing com.google.android.googlequicksearchbox-applications_uri from com.google.android.googlequicksearchbox
+10-22 09:14:46.906 W/libc    ( 4930): pthread_create sched_setscheduler call failed: Operation not permitted
+10-22 09:14:46.908 I/Icing   ( 3264): Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-22 09:14:46.931 I/Icing   ( 3264): Indexing done com.google.android.googlequicksearchbox-applications_uri
+10-22 09:14:46.935 I/Icing   ( 3264): Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-22 09:14:47.125 E/Surface ( 4930): getSlotFromBufferLocked: unknown buffer: 0xb407e2e0
+10-22 09:14:47.133 D/EGL_emulation( 4930): eglMakeCurrent: 0xadd4c420: ver 2 0 (tinfo 0xadc26e50)
+10-22 09:14:47.597 W/SensorService( 2458): sensor 00000000 already enabled in connection 0x99edf0c0 (ignoring)
+10-22 09:14:47.638 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.641 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.665 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.670 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.681 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.688 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.705 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.719 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.726 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.735 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.748 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.767 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.772 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.803 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.812 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.815 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.821 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.842 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.854 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.881 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.897 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.904 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.921 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.925 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.935 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.944 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.954 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.969 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:47.990 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.003 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.011 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.028 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.049 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.055 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.066 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.085 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.098 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.106 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.121 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.145 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.162 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.188 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.195 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.207 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.219 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.223 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.236 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.243 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.263 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.275 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.305 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.310 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.321 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.328 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.334 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.354 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.387 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.392 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.408 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.414 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:14:48.651 I/art     ( 2458): Starting a blocking GC Explicit
+10-22 09:14:48.665 I/art     ( 2458): Explicit concurrent mark sweep GC freed 18100(1337KB) AllocSpace objects, 2(40KB) LOS objects, 33% free, 7MB/11MB, paused 648us total 14.227ms
+10-22 09:14:49.061 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:49.063 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:49.064 D/        ( 4967): HostConnection::get() New Host Connection established 0xb654d300, tid 4967
+10-22 09:14:50.265 D/AndroidRuntime( 4971): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:14:50.266 D/AndroidRuntime( 4971): CheckJNI is OFF
+10-22 09:14:50.274 D/ICU     ( 4971): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:14:50.288 E/memtrack( 4971): Couldn't load memtrack module (No such file or directory)
+10-22 09:14:50.288 E/android.os.Debug( 4971): failed to load memtrack module: -2
+10-22 09:14:50.289 I/Radio-JNI( 4971): register_android_hardware_Radio DONE
+10-22 09:14:50.294 D/AndroidRuntime( 4971): Calling main entry com.android.commands.uiautomator.Launcher
+10-22 09:14:51.150 I/ActivityManager( 2458): Killing 4066:com.google.android.gm/u0a47 (adj 15): empty #17
+10-22 09:14:51.318 W/AccessibilityNodeInfoDumper( 4971): Fetch time: 2ms
+10-22 09:14:51.319 W/WindowManager( 2458): Attempted to remove non-existing token: android.os.Binder@36efb75
+10-22 09:14:51.332 D/AndroidRuntime( 4971): Shutting down VM
+10-22 09:14:52.234 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:52.236 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:52.237 D/        ( 4984): HostConnection::get() New Host Connection established 0xb654d300, tid 4984
+10-22 09:14:54.090 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:14:54.090 I/Vision  ( 3264): Checking for download completion for 202968 -- ocr
+10-22 09:14:54.683 D/AndroidRuntime( 4988): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:14:54.685 D/AndroidRuntime( 4988): CheckJNI is OFF
+10-22 09:14:54.693 D/ICU     ( 4988): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:14:54.707 E/memtrack( 4988): Couldn't load memtrack module (No such file or directory)
+10-22 09:14:54.707 E/android.os.Debug( 4988): failed to load memtrack module: -2
+10-22 09:14:54.707 I/Radio-JNI( 4988): register_android_hardware_Radio DONE
+10-22 09:14:54.715 D/AndroidRuntime( 4988): Calling main entry com.android.commands.uiautomator.Launcher
+10-22 09:14:55.410 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:55.411 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:55.413 D/        ( 5000): HostConnection::get() New Host Connection established 0xb660d300, tid 5000
+10-22 09:14:55.745 W/AccessibilityNodeInfoDumper( 4988): Fetch time: 2ms
+10-22 09:14:55.746 W/WindowManager( 2458): Attempted to remove non-existing token: android.os.Binder@9af9b7b
+10-22 09:14:55.766 D/AndroidRuntime( 4988): Shutting down VM
+10-22 09:14:58.585 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:58.586 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:58.588 D/        ( 5007): HostConnection::get() New Host Connection established 0xb654d300, tid 5007
+10-22 09:14:59.152 D/AndroidRuntime( 5010): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:14:59.153 D/AndroidRuntime( 5010): CheckJNI is OFF
+10-22 09:14:59.161 D/ICU     ( 5010): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:14:59.174 E/memtrack( 5010): Couldn't load memtrack module (No such file or directory)
+10-22 09:14:59.175 E/android.os.Debug( 5010): failed to load memtrack module: -2
+10-22 09:14:59.175 I/Radio-JNI( 5010): register_android_hardware_Radio DONE
+10-22 09:14:59.180 D/AndroidRuntime( 5010): Calling main entry com.android.commands.uiautomator.Launcher
+10-22 09:15:00.007 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:15:00.205 W/AccessibilityNodeInfoDumper( 5010): Fetch time: 2ms
+10-22 09:15:00.206 W/WindowManager( 2458): Attempted to remove non-existing token: android.os.Binder@d46dd98
+10-22 09:15:00.226 D/AndroidRuntime( 5010): Shutting down VM
+10-22 09:15:01.764 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:01.766 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:01.768 D/        ( 5023): HostConnection::get() New Host Connection established 0xb660d300, tid 5023
+10-22 09:15:02.800 W/ChimeraConfigurator( 3264): Error syncing flags: qoq: COMMIT_TIMEOUT
+10-22 09:15:02.800 I/ChmraDebugLogger( 3264): [79] COMMIT_TIMEOUT
+10-22 09:15:02.801 I/ChmraDebugLogger( 3264): [52] null
+10-22 09:15:02.805 I/ChimeraConfigService( 3264): Scheduling checkin for one-off execution between [3300,43200] seconds from now (1792660502805)
+10-22 09:15:02.806 W/art     ( 3264): Long monitor contention event with owner method=void java.lang.Object.wait!(long, int) from Object.java:4294967294 waiters=0 for 40.278s
+10-22 09:15:02.807 I/ChimeraConfigurator( 3264): Starting update, reason: 1 urgentFeatures: 
+10-22 09:15:02.820 I/ChmraDebugLogger( 3264): [52] null
+10-22 09:15:02.822 W/ChimeraConfigService( 3264): Retry attempt was throttled.
+10-22 09:15:02.829 I/ChimeraConfigService( 3264): Scheduling checkin every 43200 seconds, with flex of 1800 seconds
+10-22 09:15:02.868 I/TelephonySpam( 3264): TelephonySpamChimeraService - Running Telephony Spam Chimera Service
+10-22 09:15:02.926 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:15:02.947 D/        ( 3853): HostConnection::get() New Host Connection established 0xadca6b00, tid 3899
+10-22 09:15:02.948 D/EGL_emulation( 3853): eglCreateContext: 0xaa1e4640: maj 2 min 0 rcv 2
+10-22 09:15:02.949 D/EGL_emulation( 3853): eglMakeCurrent: 0xaa1e4640: ver 2 0 (tinfo 0x975aaed0)
+10-22 09:15:03.142 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
+10-22 09:15:03.142 W/GLSUser ( 3239): [AppCertManager] Failed to get security token.
+10-22 09:15:03.142 W/GLSUser ( 3239): java.io.IOException: Invalid scope
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at adiw.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):23)
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at adiw.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):18)
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at adiw.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):11)
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at hwy.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):17)
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at hww.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):45)
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at hwr.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at hwu.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):10)
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at gbi.call(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at soy.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):12)
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at soy.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):7)
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at sux.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-22 09:15:03.142 W/GLSUser ( 3239): 	at java.lang.Thread.run(Thread.java:818)
+10-22 09:15:03.143 I/Auth    ( 3239): [ReflectiveChannelBinder] Successfully bound channel!
+10-22 09:15:03.147 W/Conscrypt( 3239): Could not set socket write timeout: java.net.SocketException: Socket closed
+10-22 09:15:03.147 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
+10-22 09:15:03.148 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
+10-22 09:15:03.148 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 09:15:03.148 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:15:03.157 W/Conscrypt( 3239): Could not set socket write timeout: java.net.SocketException: Socket closed
+10-22 09:15:03.158 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
+10-22 09:15:03.158 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
+10-22 09:15:03.158 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 09:15:03.158 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:15:03.182 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
+10-22 09:15:03.182 W/GLSUser ( 3239): [AppCertManager] IOException while requesting key: 
+10-22 09:15:03.182 W/GLSUser ( 3239): java.io.IOException: Invalid device key response.
+10-22 09:15:03.182 W/GLSUser ( 3239): 	at hwy.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):49)
+10-22 09:15:03.182 W/GLSUser ( 3239): 	at hww.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):45)
+10-22 09:15:03.182 W/GLSUser ( 3239): 	at hwr.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:15:03.182 W/GLSUser ( 3239): 	at hwu.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):10)
+10-22 09:15:03.182 W/GLSUser ( 3239): 	at gbi.call(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-22 09:15:03.182 W/GLSUser ( 3239): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+10-22 09:15:03.182 W/GLSUser ( 3239): 	at soy.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):12)
+10-22 09:15:03.182 W/GLSUser ( 3239): 	at soy.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):7)
+10-22 09:15:03.182 W/GLSUser ( 3239): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+10-22 09:15:03.182 W/GLSUser ( 3239): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+10-22 09:15:03.182 W/GLSUser ( 3239): 	at sux.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-22 09:15:03.182 W/GLSUser ( 3239): 	at java.lang.Thread.run(Thread.java:818)
+10-22 09:15:04.093 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:15:04.093 I/Vision  ( 3264): Checking for download completion for 212971 -- ocr
+10-22 09:15:04.940 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:04.941 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:04.943 D/        ( 5035): HostConnection::get() New Host Connection established 0xb660d300, tid 5035
+10-22 09:15:08.110 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:08.112 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:08.114 D/        ( 5040): HostConnection::get() New Host Connection established 0xb65cd300, tid 5040
+10-22 09:15:11.110 I/ActivityManager( 2458): Killing 3628:com.google.android.calendar/u0a22 (adj 15): empty #17
+10-22 09:15:11.287 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:11.289 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:11.291 D/        ( 5045): HostConnection::get() New Host Connection established 0xb658d300, tid 5045
+10-22 09:15:12.002 I/ContentMaintenance( 3264): Internal cache bytes used: 0; limit: 100000000; download size: 0
+10-22 09:15:12.009 I/RealtimeCacheCleanup( 3264): Beginning Realtime garbage collection.
+10-22 09:15:12.009 I/RealtimeCacheCleanup( 3264): Finished Realtime garbage collection.
+10-22 09:15:13.551 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:13.552 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:13.554 D/        ( 5052): HostConnection::get() New Host Connection established 0xb65cd300, tid 5052
+10-22 09:15:14.096 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:15:14.097 I/Vision  ( 3264): Exceeded maximum feature download tries for ocr
+10-22 09:15:14.097 W/Vision  ( 3264): Request of optional module download of ocr failed.
+10-22 09:15:14.097 I/Vision  ( 3264): Checking for download completion for 222975 -- ocr
+10-22 09:15:14.460 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:14.461 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:14.463 D/        ( 5061): HostConnection::get() New Host Connection established 0xb658d300, tid 5061
+10-22 09:15:17.641 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:17.643 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:17.644 D/        ( 5066): HostConnection::get() New Host Connection established 0xb660d300, tid 5066
+10-22 09:15:20.820 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:20.821 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:20.824 D/        ( 5071): HostConnection::get() New Host Connection established 0xb65cd300, tid 5071
+10-22 09:15:23.756 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:23.757 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:23.759 D/        ( 5076): HostConnection::get() New Host Connection established 0xb658d300, tid 5076
+10-22 09:15:24.002 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:24.004 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:24.006 D/        ( 5083): HostConnection::get() New Host Connection established 0xb654d300, tid 5083
+10-22 09:15:24.102 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:15:24.105 I/Vision  ( 3264): Checking for download completion for 232983 -- ocr
+10-22 09:15:24.107 I/ChimeraConfigurator( 3264): Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+10-22 09:15:27.183 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:27.184 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:27.186 D/        ( 5091): HostConnection::get() New Host Connection established 0xb65cd300, tid 5091
+10-22 09:15:30.362 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:30.363 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:30.364 D/        ( 5096): HostConnection::get() New Host Connection established 0xb660d300, tid 5096
+10-22 09:15:33.539 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:33.541 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:33.543 D/        ( 5101): HostConnection::get() New Host Connection established 0xb65cd300, tid 5101
+10-22 09:15:33.952 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:33.954 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:33.956 D/        ( 5106): HostConnection::get() New Host Connection established 0xb660d300, tid 5106
+10-22 09:15:34.113 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:15:34.113 I/Vision  ( 3264): Checking for download completion for 242991 -- ocr
+10-22 09:15:34.718 W/audio_hw_generic( 2192): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 09:15:36.716 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:36.717 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:36.719 D/        ( 5114): HostConnection::get() New Host Connection established 0xb654d300, tid 5114
+10-22 09:15:39.896 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:39.897 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:39.899 D/        ( 5119): HostConnection::get() New Host Connection established 0xb660d300, tid 5119
+10-22 09:15:43.093 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:43.095 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:43.097 D/        ( 5124): HostConnection::get() New Host Connection established 0xb654d300, tid 5124
+10-22 09:15:44.117 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:15:44.117 I/Vision  ( 3264): Checking for download completion for 252996 -- ocr
+10-22 09:15:44.191 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:44.193 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:44.195 D/        ( 5130): HostConnection::get() New Host Connection established 0xb65cd300, tid 5130
+10-22 09:15:46.094 W/audio_hw_generic( 2192): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 09:15:46.273 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:46.274 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:46.276 D/        ( 5137): HostConnection::get() New Host Connection established 0xb65cd300, tid 5137
+10-22 09:15:49.455 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:49.457 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:49.458 D/        ( 5142): HostConnection::get() New Host Connection established 0xb654d300, tid 5142
+10-22 09:15:52.641 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:52.643 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:52.644 D/        ( 5147): HostConnection::get() New Host Connection established 0xb658d300, tid 5147
+10-22 09:15:54.124 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:15:54.124 I/Vision  ( 3264): Checking for download completion for 263002 -- ocr
+10-22 09:15:54.390 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:54.391 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:54.393 D/        ( 5153): HostConnection::get() New Host Connection established 0xb65cd300, tid 5153
+10-22 09:15:55.815 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:55.817 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:55.818 D/        ( 5160): HostConnection::get() New Host Connection established 0xb658d300, tid 5160
+10-22 09:15:58.993 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:15:58.995 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:15:58.997 D/        ( 5165): HostConnection::get() New Host Connection established 0xb654d300, tid 5165
+10-22 09:16:00.058 D/hwcomposer( 1266): hw_composer sent 132 syncs in 74s
+10-22 09:16:01.007 W/audio_hw_generic( 2192): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 09:16:02.170 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:02.172 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:02.173 D/        ( 5170): HostConnection::get() New Host Connection established 0xb65cd300, tid 5170
+10-22 09:16:04.127 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:16:04.127 I/Vision  ( 3264): Checking for download completion for 273005 -- ocr
+10-22 09:16:04.354 W/ChimeraConfigurator( 3264): Error syncing flags: qoq: COMMIT_TIMEOUT
+10-22 09:16:04.354 I/ChmraDebugLogger( 3264): [79] COMMIT_TIMEOUT
+10-22 09:16:04.355 I/ChmraDebugLogger( 3264): [52] null
+10-22 09:16:04.355 W/ChimeraConfigService( 3264): Retry attempt was throttled.
+10-22 09:16:04.590 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:04.591 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:04.593 D/        ( 5176): HostConnection::get() New Host Connection established 0xb654d300, tid 5176
+10-22 09:16:05.346 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:05.347 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:05.349 D/        ( 5183): HostConnection::get() New Host Connection established 0xb65cd300, tid 5183
+10-22 09:16:08.517 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:08.519 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:08.520 D/        ( 5188): HostConnection::get() New Host Connection established 0xb658d300, tid 5188
+10-22 09:16:10.599 W/audio_hw_generic( 2192): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 09:16:11.691 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:11.692 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:11.694 D/        ( 5193): HostConnection::get() New Host Connection established 0xb65cd300, tid 5193
+10-22 09:16:14.130 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:16:14.130 I/Vision  ( 3264): Exceeded maximum feature download tries for ocr
+10-22 09:16:14.130 W/Vision  ( 3264): Request of optional module download of ocr failed.
+10-22 09:16:14.131 I/Vision  ( 3264): Checking for download completion for 283009 -- ocr
+10-22 09:16:14.791 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:14.793 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:14.795 D/        ( 5200): HostConnection::get() New Host Connection established 0xb660d300, tid 5200
+10-22 09:16:14.872 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:14.873 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:14.875 D/        ( 5205): HostConnection::get() New Host Connection established 0xb660d300, tid 5205
+10-22 09:16:18.101 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:18.102 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:18.104 D/        ( 5212): HostConnection::get() New Host Connection established 0xb65cd300, tid 5212
+10-22 09:16:21.277 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:21.278 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:21.280 D/        ( 5217): HostConnection::get() New Host Connection established 0xb65cd300, tid 5217
+10-22 09:16:24.135 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:16:24.140 I/Vision  ( 3264): Checking for download completion for 293018 -- ocr
+10-22 09:16:24.144 I/ChimeraConfigurator( 3264): Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+10-22 09:16:24.460 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:24.462 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:24.464 D/        ( 5225): HostConnection::get() New Host Connection established 0xb654d300, tid 5225
+10-22 09:16:25.030 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:25.032 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:25.034 D/        ( 5230): HostConnection::get() New Host Connection established 0xb65cd300, tid 5230
+10-22 09:16:27.632 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:27.634 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:27.635 D/        ( 5237): HostConnection::get() New Host Connection established 0xb660d300, tid 5237
+10-22 09:16:28.285 W/audio_hw_generic( 2192): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 09:16:30.811 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:30.812 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:30.814 D/        ( 5242): HostConnection::get() New Host Connection established 0xb660d300, tid 5242
+10-22 09:16:33.987 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:33.989 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:33.991 D/        ( 5247): HostConnection::get() New Host Connection established 0xb658d300, tid 5247
+10-22 09:16:34.143 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:16:34.143 I/Vision  ( 3264): Checking for download completion for 303022 -- ocr
+10-22 09:16:35.223 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:35.225 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:35.227 D/        ( 5253): HostConnection::get() New Host Connection established 0xb660d300, tid 5253
+10-22 09:16:35.434 W/audio_hw_generic( 2192): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 09:16:35.497 D/AndroidRuntime( 5258): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:16:35.498 D/AndroidRuntime( 5258): CheckJNI is OFF
+10-22 09:16:35.506 D/ICU     ( 5258): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:16:35.518 E/memtrack( 5258): Couldn't load memtrack module (No such file or directory)
+10-22 09:16:35.518 E/android.os.Debug( 5258): failed to load memtrack module: -2
+10-22 09:16:35.519 I/Radio-JNI( 5258): register_android_hardware_Radio DONE
+10-22 09:16:35.524 D/AndroidRuntime( 5258): Calling main entry com.android.commands.input.Input
+10-22 09:16:35.526 I/Input   ( 5258): injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=294404, downTime=294404, deviceId=0, source=0x1002 }
+10-22 09:16:35.623 I/Input   ( 5258): injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=294404, downTime=294404, deviceId=0, source=0x1002 }
+10-22 09:16:36.623 D/AndroidRuntime( 5258): Shutting down VM
+10-22 09:16:37.174 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:37.176 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:37.178 D/        ( 5270): HostConnection::get() New Host Connection established 0xb664d300, tid 5270
+10-22 09:16:40.360 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:40.362 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:40.364 D/        ( 5275): HostConnection::get() New Host Connection established 0xb65cd300, tid 5275
+10-22 09:16:41.944 D/AndroidRuntime( 5278): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:16:41.945 D/AndroidRuntime( 5278): CheckJNI is OFF
+10-22 09:16:41.953 D/ICU     ( 5278): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:16:41.964 E/memtrack( 5278): Couldn't load memtrack module (No such file or directory)
+10-22 09:16:41.964 E/android.os.Debug( 5278): failed to load memtrack module: -2
+10-22 09:16:41.965 I/Radio-JNI( 5278): register_android_hardware_Radio DONE
+10-22 09:16:41.970 D/AndroidRuntime( 5278): Calling main entry com.android.commands.input.Input
+10-22 09:16:41.974 I/Input   ( 5278): injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=300850, downTime=300850, deviceId=0, source=0x1002 }
+10-22 09:16:42.625 I/Input   ( 5278): injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=300850, downTime=300850, deviceId=0, source=0x1002 }
+10-22 09:16:43.536 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:43.538 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:43.540 D/        ( 5289): HostConnection::get() New Host Connection established 0xb658d300, tid 5289
+10-22 09:16:43.625 D/AndroidRuntime( 5278): Shutting down VM
+10-22 09:16:44.147 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:16:44.148 I/Vision  ( 3264): Checking for download completion for 313026 -- ocr
+10-22 09:16:46.709 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:46.711 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:46.713 D/        ( 5295): HostConnection::get() New Host Connection established 0xb654d300, tid 5295
+10-22 09:16:46.765 W/audio_hw_generic( 2192): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 09:16:48.939 D/AndroidRuntime( 5298): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:16:48.940 D/AndroidRuntime( 5298): CheckJNI is OFF
+10-22 09:16:48.948 D/ICU     ( 5298): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:16:48.960 E/memtrack( 5298): Couldn't load memtrack module (No such file or directory)
+10-22 09:16:48.960 E/android.os.Debug( 5298): failed to load memtrack module: -2
+10-22 09:16:48.961 I/Radio-JNI( 5298): register_android_hardware_Radio DONE
+10-22 09:16:48.967 D/AndroidRuntime( 5298): Calling main entry com.android.commands.input.Input
+10-22 09:16:48.970 I/Input   ( 5298): injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=307846, downTime=307846, deviceId=0, source=0x1002 }
+10-22 09:16:49.627 I/Input   ( 5298): injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=307846, downTime=307846, deviceId=0, source=0x1002 }
+10-22 09:16:49.889 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:49.898 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:49.899 D/        ( 5309): HostConnection::get() New Host Connection established 0xb658d300, tid 5309
+10-22 09:16:50.627 D/AndroidRuntime( 5298): Shutting down VM
+10-22 09:16:53.067 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:53.069 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:53.071 D/        ( 5314): HostConnection::get() New Host Connection established 0xb65cd300, tid 5314
+10-22 09:16:54.150 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:16:54.150 I/Vision  ( 3264): Checking for download completion for 323029 -- ocr
+10-22 09:16:55.952 D/AndroidRuntime( 5318): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:16:55.953 D/AndroidRuntime( 5318): CheckJNI is OFF
+10-22 09:16:55.961 D/ICU     ( 5318): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:16:55.973 E/memtrack( 5318): Couldn't load memtrack module (No such file or directory)
+10-22 09:16:55.973 E/android.os.Debug( 5318): failed to load memtrack module: -2
+10-22 09:16:55.974 I/Radio-JNI( 5318): register_android_hardware_Radio DONE
+10-22 09:16:55.978 D/AndroidRuntime( 5318): Calling main entry com.android.commands.input.Input
+10-22 09:16:55.981 I/Input   ( 5318): injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=314858, downTime=314858, deviceId=0, source=0x1002 }
+10-22 09:16:56.240 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:56.241 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:56.243 D/        ( 5329): HostConnection::get() New Host Connection established 0xb654d300, tid 5329
+10-22 09:16:56.628 I/Input   ( 5318): injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=314858, downTime=314858, deviceId=0, source=0x1002 }
+10-22 09:16:57.629 D/AndroidRuntime( 5318): Shutting down VM
+10-22 09:16:59.413 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:16:59.415 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:16:59.417 D/        ( 5334): HostConnection::get() New Host Connection established 0xb654d300, tid 5334
+10-22 09:17:00.064 D/hwcomposer( 1266): hw_composer sent 10 syncs in 60s
+10-22 09:17:00.254 W/audio_hw_generic( 2192): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 09:17:02.589 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:02.590 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:02.592 D/        ( 5340): HostConnection::get() New Host Connection established 0xb664d300, tid 5340
+10-22 09:17:02.962 D/AndroidRuntime( 5344): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:17:02.963 D/AndroidRuntime( 5344): CheckJNI is OFF
+10-22 09:17:02.971 D/ICU     ( 5344): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:17:02.983 E/memtrack( 5344): Couldn't load memtrack module (No such file or directory)
+10-22 09:17:02.983 E/android.os.Debug( 5344): failed to load memtrack module: -2
+10-22 09:17:02.984 I/Radio-JNI( 5344): register_android_hardware_Radio DONE
+10-22 09:17:02.990 D/AndroidRuntime( 5344): Calling main entry com.android.commands.input.Input
+10-22 09:17:02.993 I/Input   ( 5344): injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=321869, downTime=321869, deviceId=0, source=0x1002 }
+10-22 09:17:03.630 I/Input   ( 5344): injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=321869, downTime=321869, deviceId=0, source=0x1002 }
+10-22 09:17:04.158 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:17:04.158 I/Vision  ( 3264): Checking for download completion for 333037 -- ocr
+10-22 09:17:04.395 W/ChimeraConfigurator( 3264): Error syncing flags: qoq: COMMIT_TIMEOUT
+10-22 09:17:04.395 I/ChmraDebugLogger( 3264): [79] COMMIT_TIMEOUT
+10-22 09:17:04.396 I/ChmraDebugLogger( 3264): [52] null
+10-22 09:17:04.398 W/ChimeraConfigService( 3264): Retry attempt was throttled.
+10-22 09:17:04.631 D/AndroidRuntime( 5344): Shutting down VM
+10-22 09:17:05.764 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:05.766 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:05.768 D/        ( 5356): HostConnection::get() New Host Connection established 0xb658d300, tid 5356
+10-22 09:17:08.937 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:08.938 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:08.941 D/        ( 5361): HostConnection::get() New Host Connection established 0xb660d300, tid 5361
+10-22 09:17:09.947 D/AndroidRuntime( 5364): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:17:09.948 D/AndroidRuntime( 5364): CheckJNI is OFF
+10-22 09:17:09.957 D/ICU     ( 5364): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:17:09.969 E/memtrack( 5364): Couldn't load memtrack module (No such file or directory)
+10-22 09:17:09.969 E/android.os.Debug( 5364): failed to load memtrack module: -2
+10-22 09:17:09.970 I/Radio-JNI( 5364): register_android_hardware_Radio DONE
+10-22 09:17:09.976 D/AndroidRuntime( 5364): Calling main entry com.android.commands.input.Input
+10-22 09:17:09.979 I/Input   ( 5364): injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=328856, downTime=328856, deviceId=0, source=0x1002 }
+10-22 09:17:10.632 I/Input   ( 5364): injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=328856, downTime=328856, deviceId=0, source=0x1002 }
+10-22 09:17:11.632 D/AndroidRuntime( 5364): Shutting down VM
+10-22 09:17:12.113 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:12.115 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:12.116 D/        ( 5375): HostConnection::get() New Host Connection established 0xb654d300, tid 5375
+10-22 09:17:14.163 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:17:14.163 I/Vision  ( 3264): Exceeded maximum feature download tries for ocr
+10-22 09:17:14.163 W/Vision  ( 3264): Request of optional module download of ocr failed.
+10-22 09:17:14.163 I/Vision  ( 3264): Checking for download completion for 343042 -- ocr
+10-22 09:17:15.288 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:15.289 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:15.291 D/        ( 5383): HostConnection::get() New Host Connection established 0xb654d300, tid 5383
+10-22 09:17:15.482 W/audio_hw_generic( 2192): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 09:17:16.866 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:16.868 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:16.870 D/        ( 5388): HostConnection::get() New Host Connection established 0xb660d300, tid 5388
+10-22 09:17:18.467 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:18.469 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:18.471 D/        ( 5395): HostConnection::get() New Host Connection established 0xb660d300, tid 5395
+10-22 09:17:21.646 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:21.648 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:21.650 D/        ( 5401): HostConnection::get() New Host Connection established 0xb654d300, tid 5401
+10-22 09:17:24.167 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:17:24.171 I/Vision  ( 3264): Checking for download completion for 353049 -- ocr
+10-22 09:17:24.174 I/ChimeraConfigurator( 3264): Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+10-22 09:17:24.825 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:24.826 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:24.828 D/        ( 5408): HostConnection::get() New Host Connection established 0xb658d300, tid 5408
+10-22 09:17:26.109 W/audio_hw_generic( 2192): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 09:17:28.000 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:28.001 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:28.003 D/        ( 5413): HostConnection::get() New Host Connection established 0xb65cd300, tid 5413
+10-22 09:17:31.180 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:31.182 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:31.184 D/        ( 5419): HostConnection::get() New Host Connection established 0xb65cd300, tid 5419
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): Error inserting service_kind=0 source=16 tag=PhenotypeSyncImmediately requires_charging=0 target_package=com.google.android.gms source_version=202414000 required_network_type=0 extras={"fetchReason":{"6":0},"fetchPackage":{"com.google.android.gms.people":4}} flex_time=1000 persistence_level=1 target_class=com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator runtime=1792660364626 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} required_idleness_state=0 last_runtime=0 period=2000 task_type=0 job_id=-1 user_id=0
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:780)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1471)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1341)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at aqui.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):175)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at aqtk.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):182)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at aqtk.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):23)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at aqtk.c(:com.google.android.gms@202414022@20.24.14 (040700-319035315):9)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at aqtk.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):94)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at aqtg.handleMessage(:com.google.android.gms@202414022@20.24.14 (040700-319035315):16)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at aekz.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at aekz.dispatchMessage(:com.google.android.gms@202414022@20.24.14 (040700-319035315):14)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at android.os.Looper.loop(Looper.java:148)
+10-22 09:17:34.175 E/SQLiteDatabase( 3239): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+10-22 09:17:34.176 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:17:34.176 I/Vision  ( 3264): Checking for download completion for 363055 -- ocr
+10-22 09:17:34.235 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:17:34.262 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:17:34.292 D/EGL_emulation( 3853): eglCreateContext: 0xadcd4cc0: maj 2 min 0 rcv 2
+10-22 09:17:34.294 D/EGL_emulation( 3853): eglMakeCurrent: 0xadcd4cc0: ver 2 0 (tinfo 0x976336e0)
+10-22 09:17:34.327 W/Conscrypt( 3239): Could not set socket write timeout: java.net.SocketException: Socket closed
+10-22 09:17:34.327 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
+10-22 09:17:34.327 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 09:17:34.327 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:17:34.341 W/Conscrypt( 3239): Could not set socket write timeout: java.net.SocketException: Socket closed
+10-22 09:17:34.341 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
+10-22 09:17:34.341 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 09:17:34.341 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:17:34.368 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:34.374 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:34.378 D/        ( 5429): HostConnection::get() New Host Connection established 0xb660d300, tid 5429
+10-22 09:17:34.518 I/aopq    ( 3239): Scheduling adaptive one off task with window [14400, 604800] in seconds [CONTEXT service_id=51 ]
+10-22 09:17:34.566 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
+10-22 09:17:34.566 W/GLSUser ( 3239): [AppCertManager] Failed to get security token.
+10-22 09:17:34.566 W/GLSUser ( 3239): java.io.IOException: Invalid scope
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at adiw.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):23)
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at adiw.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):18)
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at adiw.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):11)
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at hwy.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):17)
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at hww.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):45)
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at hwr.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at hwu.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):10)
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at gbi.call(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at soy.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):12)
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at soy.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):7)
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at sux.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-22 09:17:34.566 W/GLSUser ( 3239): 	at java.lang.Thread.run(Thread.java:818)
+10-22 09:17:34.598 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
+10-22 09:17:34.598 W/GLSUser ( 3239): [AppCertManager] IOException while requesting key: 
+10-22 09:17:34.598 W/GLSUser ( 3239): java.io.IOException: Invalid device key response.
+10-22 09:17:34.598 W/GLSUser ( 3239): 	at hwy.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):49)
+10-22 09:17:34.598 W/GLSUser ( 3239): 	at hww.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):45)
+10-22 09:17:34.598 W/GLSUser ( 3239): 	at hwr.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:17:34.598 W/GLSUser ( 3239): 	at hwu.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):10)
+10-22 09:17:34.598 W/GLSUser ( 3239): 	at gbi.call(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-22 09:17:34.598 W/GLSUser ( 3239): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+10-22 09:17:34.598 W/GLSUser ( 3239): 	at soy.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):12)
+10-22 09:17:34.598 W/GLSUser ( 3239): 	at soy.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):7)
+10-22 09:17:34.598 W/GLSUser ( 3239): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+10-22 09:17:34.598 W/GLSUser ( 3239): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+10-22 09:17:34.598 W/GLSUser ( 3239): 	at sux.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-22 09:17:34.598 W/GLSUser ( 3239): 	at java.lang.Thread.run(Thread.java:818)
+10-22 09:17:37.059 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:37.060 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:37.062 D/        ( 5436): HostConnection::get() New Host Connection established 0xb654d300, tid 5436
+10-22 09:17:37.679 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:17:37.682 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:17:37.684 D/        ( 5447): HostConnection::get() New Host Connection established 0xb658d300, tid 5447

@@ -1,562 +1,424 @@
 --------- beginning of main
-10-22 08:53:47.468 I/Fitness ( 3235): OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.google.android.gms flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
-10-22 08:53:47.478 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:53:47.481 I/UpdateIcingCorporaServi( 3038): Updating corpora: APPS=com.google.android.gms, CONTACTS=MAYBE
-10-22 08:53:47.525 I/Fitness ( 3235): FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
-10-22 08:53:47.529 I/UpdateIcingCorporaServi( 3038): UpdateCorporaTask done [took 43 ms] updated apps [took 43 ms] 
-10-22 08:53:47.534 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:53:47.538 D/        ( 4474): HostConnection::get() New Host Connection established 0xb65cd300, tid 4474
-10-22 08:53:47.620 D/AndroidRuntime( 4484): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:53:47.621 D/AndroidRuntime( 4484): CheckJNI is OFF
-10-22 08:53:47.635 D/CarrierServiceBindHelper( 2965): Receive action: android.intent.action.PACKAGE_ADDED
-10-22 08:53:47.636 D/CarrierServiceBindHelper( 2965): mHandler: 3
-10-22 08:53:47.636 D/CarrierConfigLoader( 2965): mHandler: 9 phoneId: 0
-10-22 08:53:47.636 D/ICU     ( 4484): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:53:47.637 I/Icing   ( 3258): updateResources: need to parse acek{com.google.android.gms}
-10-22 08:53:47.656 E/memtrack( 4484): Couldn't load memtrack module (No such file or directory)
-10-22 08:53:47.656 E/android.os.Debug( 4484): failed to load memtrack module: -2
-10-22 08:53:47.656 I/Radio-JNI( 4484): register_android_hardware_Radio DONE
-10-22 08:53:47.665 D/AndroidRuntime( 4484): Calling main entry com.android.commands.monkey.Monkey
-10-22 08:53:47.686 I/UpdateIcingCorporaServi( 3038): Updating corpora: APPS=com.google.android.gsf, CONTACTS=MAYBE
-10-22 08:53:47.692 I/UpdateIcingCorporaServi( 3038): UpdateCorporaTask done [took 5 ms] updated apps [took 5 ms] 
+10-22 09:13:14.881 D/CarrierConfigLoader( 2964): mHandler: 9 phoneId: 0
+10-22 09:13:14.918 W/GCM     ( 3239): Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.kongregate.mobile.globalassault.google flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-22 09:13:14.924 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:14.927 W/GCM     ( 3239): Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.kongregate.mobile.globalassault.google flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-22 09:13:14.960 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:14.964 D/        ( 4441): HostConnection::get() New Host Connection established 0xb65cd300, tid 4441
+10-22 09:13:14.971 I/UpdateIcingCorporaServi( 3050): Updating corpora: APPS=com.kongregate.mobile.globalassault.google, CONTACTS=MAYBE
 --------- beginning of system
-10-22 08:53:47.698 W/BroadcastQueue( 2446): Skipping deliver [background] BroadcastRecord{97b70a9 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{198a62e 4484 (unknown name)/0/u-1 remote:1b27573}: process crashing
-10-22 08:53:47.716 I/ActivityManager( 2446): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity} from uid 0 on display 0
-10-22 08:53:47.800 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:53:47.806 I/ActivityManager( 2446): Start proc 4497:com.kongregate.mobile.globalassault.google/u0a61 for activity com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity
-10-22 08:53:47.919 D/PermissionCache( 1264): checking android.permission.READ_FRAME_BUFFER for uid=1000 => granted (13615 us)
-10-22 08:53:47.920 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:53:47.963 I/ActivityManager( 2446): Config changes=480 {1.0 310mcc260mnc en_US ldltr sw360dp w598dp h336dp 480dpi nrml land finger -keyb/v/h -nav/h s.8}
-10-22 08:53:47.963 I/InputReader( 2446): Reconfiguring input devices.  changes=0x00000004
-10-22 08:53:47.964 I/InputReader( 2446): Device reconfigured: id=0, name='qwerty2', size 1080x1920, orientation 1, mode 1, display id 0
-10-22 08:53:48.102 D/EGL_emulation( 3781): eglMakeCurrent: 0xaa182de0: ver 3 0 (tinfo 0xaa1917e0)
-10-22 08:53:48.109 E/Surface ( 3781): getSlotFromBufferLocked: unknown buffer: 0xb40bc940
-10-22 08:53:48.116 W/art     ( 2446): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.updateConfiguration(android.content.res.Configuration) from ActivityManagerService.java:17276 waiters=2 for 289ms
-10-22 08:53:48.116 W/art     ( 2446): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.attachApplication(android.app.IApplicationThread) from ActivityManagerService.java:6186 waiters=3 for 268ms
-10-22 08:53:48.117 W/art     ( 2446): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.attachApplication(android.app.IApplicationThread) from ActivityManagerService.java:6186 waiters=1 for 274ms
-10-22 08:53:48.118 W/art     ( 2446): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.attachApplication(android.app.IApplicationThread) from ActivityManagerService.java:6186 waiters=4 for 263ms
-10-22 08:53:48.118 W/art     ( 2446): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.attachApplication(android.app.IApplicationThread) from ActivityManagerService.java:6186 waiters=7 for 230ms
-10-22 08:53:48.118 W/art     ( 2446): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.attachApplication(android.app.IApplicationThread) from ActivityManagerService.java:6186 waiters=6 for 246ms
-10-22 08:53:48.139 I/art     ( 4484): System.exit called, status: 0
-10-22 08:53:48.139 I/AndroidRuntime( 4484): VM exiting with result code 0.
-10-22 08:53:48.147 I/Fitness ( 3235): OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.google.android.gsf flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
-10-22 08:53:48.290 I/Fitness ( 3235): FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
-10-22 08:53:48.297 W/art     ( 3258): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 174ms
-10-22 08:53:48.329 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:53:48.476 W/GCM     ( 3235): Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.kongregate.mobile.globalassault.google flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
-10-22 08:53:48.478 W/GCM     ( 3235): Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.kongregate.mobile.globalassault.google flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
-10-22 08:53:48.559 I/UpdateIcingCorporaServi( 3038): Updating corpora: APPS=com.kongregate.mobile.globalassault.google, CONTACTS=MAYBE
-10-22 08:53:48.574 I/ActivityManager( 2446): Start proc 4519:com.svox.pico/u0a45 for broadcast com.svox.pico/.VoiceDataInstallerReceiver
-10-22 08:53:48.625 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:48.646 E/Surface ( 2705): getSlotFromBufferLocked: unknown buffer: 0xa1acedc0
-10-22 08:53:48.673 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:48.675 I/Auth    ( 3258): [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
-10-22 08:53:48.744 I/ChromeSync( 3258): [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.kongregate.mobile.globalassault.google flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
-10-22 08:53:48.744 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:53:48.753 E/Surface ( 2705): getSlotFromBufferLocked: unknown buffer: 0xa1ace460
-10-22 08:53:48.753 I/Icing   ( 3258): IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=null serviceId=36
-10-22 08:53:48.759 D/        ( 4497): HostConnection::get() New Host Connection established 0xaa304680, tid 4497
-10-22 08:53:48.761 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:48.785 I/Icing   ( 3258): Indexing com.google.android.gms-apps from com.google.android.gms
-10-22 08:53:48.804 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:53:48.809 I/ChromeSync( 3258): [Persistence,AffiliationManager] One of affiliation or grouping data for android://XNzGIg0Ss5dIg3Nok1a9HAvWvb-6dhBIWEwPdUyOXcUfYK5MS34FoyhDvZ5IwraPH7WkydP-A1abEOkILkmm0A==@com.kongregate.mobile.globalassault.google/ was not found. Marking affiliation data as stale...
-10-22 08:53:48.839 V/WindowManager( 2446): Layouts looping: On entry to LockedInner, mPendingLayoutChanges = 0x1
-10-22 08:53:48.839 V/WindowManager( 2446): Layouts looping: after finishPostLayoutPolicyLw, mPendingLayoutChanges = 0x0
-10-22 08:53:48.840 V/WindowManager( 2446): Layouts looping: mLayoutNeeded, mPendingLayoutChanges = 0x1
-10-22 08:53:48.844 V/WindowManager( 2446): Layouts looping: On entry to LockedInner, mPendingLayoutChanges = 0x1
-10-22 08:53:48.844 V/WindowManager( 2446): Layouts looping: after finishPostLayoutPolicyLw, mPendingLayoutChanges = 0x0
-10-22 08:53:48.845 I/Auth    ( 3258): [SupervisedAccountIntentOperation] This operation is disabled
-10-22 08:53:48.845 V/WindowManager( 2446): Layouts looping: mLayoutNeeded, mPendingLayoutChanges = 0x1
-10-22 08:53:48.845 E/WindowManager( 2446): Performed 6 layouts in a row. Skipping
-10-22 08:53:48.846 I/ActivityManager( 2446): Displayed com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity: +1s52ms
-10-22 08:53:48.863 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:53:48.911 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:53:48.912 I/WindowManager( 2446): Screen frozen for +1s68ms due to Window{b0354f9 u0 com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity}
-10-22 08:53:49.169 D/        ( 4497): HostConnection::get() New Host Connection established 0xadc6d780, tid 4515
-10-22 08:53:49.227 W/art     ( 3258): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 127ms
-10-22 08:53:49.245 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:53:49.248 I/Icing   ( 3258): Indexing done com.google.android.gms-apps
-10-22 08:53:49.286 D/EGL_emulation( 4497): eglCreateContext: 0xb409a920: maj 3 min 0 rcv 3
-10-22 08:53:49.287 D/EGL_emulation( 4497): eglMakeCurrent: 0xb409a920: ver 3 0 (tinfo 0xadc68c30)
-10-22 08:53:49.313 E/eglCodecCommon( 4497): glUtilsParamSize: unknow param 0x00008cdf
-10-22 08:53:49.314 E/eglCodecCommon( 4497): glUtilsParamSize: unknow param 0x00008824
-10-22 08:53:49.321 D/Unity   ( 4497): GL_EXT_debug_marker GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_sync_buffer_data ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:53:49.374 I/Choreographer( 2705): Skipped 40 frames!  The application may be doing too much work on its main thread.
-10-22 08:53:49.379 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:49.428 W/Icing   ( 3258): No valid account for uploading user actions
-10-22 08:53:49.459 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:49.466 I/Icing   ( 3258): IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
-10-22 08:53:49.513 W/libc    ( 4497): pthread_create sched_setscheduler call failed: Operation not permitted
-10-22 08:53:49.567 E/native  ( 3258): document-store.cc:1218 Failed to update per-doc-data with usage report
-10-22 08:53:49.567 I/Icing   ( 3258): Usage reports ok 0, Failed Usage reports 1, indexed 0, rejected 0
-10-22 08:53:49.575 I/UpdateIcingCorporaServi( 3038): UpdateCorporaTask done [took 1016 ms] updated apps [took 1016 ms] 
-10-22 08:53:49.577 I/ActivityManager( 2446): Killing 3932:com.android.managedprovisioning/u0a10 (adj 15): empty #17
-10-22 08:53:49.580 W/Icing   ( 3258): No valid account for uploading user actions
-10-22 08:53:49.589 I/Icing   ( 3258): Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
-10-22 08:53:49.642 E/Surface ( 4497): getSlotFromBufferLocked: unknown buffer: 0xb40bdfc0
-10-22 08:53:49.645 D/EGL_emulation( 4497): eglMakeCurrent: 0xb409a920: ver 3 0 (tinfo 0xadc68c30)
-10-22 08:53:49.808 W/MediaScanner( 3115): Error opening directory '/oem/media/', skipping: No such file or directory.
-10-22 08:53:49.809 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui; assuming invalid
-10-22 08:53:49.813 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Andromeda.ogg; assuming invalid
-10-22 08:53:49.814 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Aquila.ogg; assuming invalid
-10-22 08:53:49.815 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/ArgoNavis.ogg; assuming invalid
-10-22 08:53:49.817 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Atria.ogg; assuming invalid
-10-22 08:53:49.818 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/BOOTES.ogg; assuming invalid
-10-22 08:53:49.819 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Backroad.ogg; assuming invalid
-10-22 08:53:49.820 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/BeatPlucker.ogg; assuming invalid
-10-22 08:53:49.821 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/BentleyDubs.ogg; assuming invalid
-10-22 08:53:49.822 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Big_Easy.ogg; assuming invalid
-10-22 08:53:49.823 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/BirdLoop.ogg; assuming invalid
-10-22 08:53:49.825 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Bollywood.ogg; assuming invalid
-10-22 08:53:49.826 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/BussaMove.ogg; assuming invalid
-10-22 08:53:49.827 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/CANISMAJOR.ogg; assuming invalid
-10-22 08:53:49.828 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/CASSIOPEIA.ogg; assuming invalid
-10-22 08:53:49.829 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Cairo.ogg; assuming invalid
-10-22 08:53:49.830 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Calypso_Steel.ogg; assuming invalid
-10-22 08:53:49.832 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/CanisMajor.ogg; assuming invalid
-10-22 08:53:49.833 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/CaribbeanIce.ogg; assuming invalid
-10-22 08:53:49.835 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Carina.ogg; assuming invalid
-10-22 08:53:49.836 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Centaurus.ogg; assuming invalid
-10-22 08:53:49.838 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Champagne_Edition.ogg; assuming invalid
-10-22 08:53:49.839 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Club_Cubano.ogg; assuming invalid
-10-22 08:53:49.840 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/CrayonRock.ogg; assuming invalid
-10-22 08:53:49.841 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/CrazyDream.ogg; assuming invalid
-10-22 08:53:49.843 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/CurveBall.ogg; assuming invalid
-10-22 08:53:49.844 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Cygnus.ogg; assuming invalid
-10-22 08:53:49.846 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/DancinFool.ogg; assuming invalid
-10-22 08:53:49.847 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Ding.ogg; assuming invalid
-10-22 08:53:49.848 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/DonMessWivIt.ogg; assuming invalid
-10-22 08:53:49.858 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Draco.ogg; assuming invalid
-10-22 08:53:49.858 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/DreamTheme.ogg; assuming invalid
-10-22 08:53:49.860 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Eastern_Sky.ogg; assuming invalid
-10-22 08:53:49.862 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Enter_the_Nexus.ogg; assuming invalid
-10-22 08:53:49.863 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Eridani.ogg; assuming invalid
-10-22 08:53:49.864 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/EtherShake.ogg; assuming invalid
-10-22 08:53:49.866 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/FreeFlight.ogg; assuming invalid
-10-22 08:53:49.875 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/FriendlyGhost.ogg; assuming invalid
-10-22 08:53:49.877 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Funk_Yall.ogg; assuming invalid
-10-22 08:53:49.879 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/GameOverGuitar.ogg; assuming invalid
-10-22 08:53:49.881 W/art     ( 3235): No such thread id for suspend: 30
-10-22 08:53:49.883 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Gimme_Mo_Town.ogg; assuming invalid
-10-22 08:53:49.886 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Girtab.ogg; assuming invalid
-10-22 08:53:49.888 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Glacial_Groove.ogg; assuming invalid
-10-22 08:53:49.891 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Growl.ogg; assuming invalid
-10-22 08:53:49.893 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/HalfwayHome.ogg; assuming invalid
-10-22 08:53:49.895 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Hydra.ogg; assuming invalid
-10-22 08:53:49.900 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/InsertCoin.ogg; assuming invalid
-10-22 08:53:49.903 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Kuma.ogg; assuming invalid
-10-22 08:53:49.909 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/LoopyLounge.ogg; assuming invalid
-10-22 08:53:49.912 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/LoveFlute.ogg; assuming invalid
-10-22 08:53:49.915 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Lyra.ogg; assuming invalid
-10-22 08:53:49.916 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Machina.ogg; assuming invalid
-10-22 08:53:49.917 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/MidEvilJaunt.ogg; assuming invalid
-10-22 08:53:49.924 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/MildlyAlarming.ogg; assuming invalid
-10-22 08:53:49.926 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Nairobi.ogg; assuming invalid
-10-22 08:53:49.933 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Nassau.ogg; assuming invalid
-10-22 08:53:49.934 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/NewPlayer.ogg; assuming invalid
-10-22 08:53:49.934 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/No_Limits.ogg; assuming invalid
-10-22 08:53:49.935 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Noises1.ogg; assuming invalid
-10-22 08:53:49.936 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Noises2.ogg; assuming invalid
-10-22 08:53:49.947 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Noises3.ogg; assuming invalid
-10-22 08:53:49.951 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/OrganDub.ogg; assuming invalid
-10-22 08:53:49.953 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Orion.ogg; assuming invalid
-10-22 08:53:49.954 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/PERSEUS.ogg; assuming invalid
-10-22 08:53:49.956 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Paradise_Island.ogg; assuming invalid
-10-22 08:53:49.962 E/MetadataRetrieverClient( 2180): failed to extract an album art
-10-22 08:53:49.963 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Pegasus.ogg; assuming invalid
-10-22 08:53:49.965 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Perseus.ogg; assuming invalid
-10-22 08:53:49.966 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Playa.ogg; assuming invalid
-10-22 08:53:49.967 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Pyxis.ogg; assuming invalid
-10-22 08:53:49.968 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Rasalas.ogg; assuming invalid
-10-22 08:53:49.969 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Revelation.ogg; assuming invalid
-10-22 08:53:49.971 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Rigel.ogg; assuming invalid
-10-22 08:53:49.972 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Ring_Classic_02.ogg; assuming invalid
-10-22 08:53:49.973 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Ring_Digital_02.ogg; assuming invalid
-10-22 08:53:49.974 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Ring_Synth_02.ogg; assuming invalid
-10-22 08:53:49.976 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Ring_Synth_04.ogg; assuming invalid
-10-22 08:53:49.977 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Road_Trip.ogg; assuming invalid
-10-22 08:53:49.978 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/RomancingTheTone.ogg; assuming invalid
-10-22 08:53:49.979 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Safari.ogg; assuming invalid
-10-22 08:53:49.980 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Savannah.ogg; assuming invalid
-10-22 08:53:49.981 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Scarabaeus.ogg; assuming invalid
-10-22 08:53:49.983 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Sceptrum.ogg; assuming invalid
-10-22 08:53:49.984 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Seville.ogg; assuming invalid
-10-22 08:53:49.985 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Shes_All_That.ogg; assuming invalid
-10-22 08:53:49.986 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/SilkyWay.ogg; assuming invalid
-10-22 08:53:49.987 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/SitarVsSitar.ogg; assuming invalid
-10-22 08:53:49.988 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Solarium.ogg; assuming invalid
-10-22 08:53:49.989 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/SpringyJalopy.ogg; assuming invalid
-10-22 08:53:49.994 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Steppin_Out.ogg; assuming invalid
-10-22 08:53:49.996 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Terminated.ogg; assuming invalid
-10-22 08:53:49.997 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Testudo.ogg; assuming invalid
-10-22 08:53:49.998 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Themos.ogg; assuming invalid
-10-22 08:53:49.999 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Third_Eye.ogg; assuming invalid
-10-22 08:53:50.000 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Thunderfoot.ogg; assuming invalid
-10-22 08:53:50.001 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/TwirlAway.ogg; assuming invalid
-10-22 08:53:50.001 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/URSAMINOR.ogg; assuming invalid
-10-22 08:53:50.002 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/UrsaMinor.ogg; assuming invalid
-10-22 08:53:50.003 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/VeryAlarmed.ogg; assuming invalid
-10-22 08:53:50.004 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Vespa.ogg; assuming invalid
-10-22 08:53:50.005 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/World.ogg; assuming invalid
-10-22 08:53:50.006 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/Zeta.ogg; assuming invalid
-10-22 08:53:50.008 W/MediaProvider( 3115): Missing volume for /system/media/audio/ringtones/hydra.ogg; assuming invalid
-10-22 08:53:50.010 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/Dock.ogg; assuming invalid
-10-22 08:53:50.016 E/MetadataRetrieverClient( 2180): failed to extract an album art
-10-22 08:53:50.016 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/Effect_Tick.ogg; assuming invalid
-10-22 08:53:50.017 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/KeypressDelete.ogg; assuming invalid
-10-22 08:53:50.019 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/KeypressInvalid.ogg; assuming invalid
-10-22 08:53:50.020 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/KeypressReturn.ogg; assuming invalid
-10-22 08:53:50.021 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/KeypressSpacebar.ogg; assuming invalid
-10-22 08:53:50.023 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/KeypressStandard.ogg; assuming invalid
-10-22 08:53:50.024 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/Lock.ogg; assuming invalid
-10-22 08:53:50.025 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/LowBattery.ogg; assuming invalid
-10-22 08:53:50.027 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/Trusted.ogg; assuming invalid
-10-22 08:53:50.028 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/Undock.ogg; assuming invalid
-10-22 08:53:50.029 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/Unlock.ogg; assuming invalid
-10-22 08:53:50.030 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/VideoRecord.ogg; assuming invalid
-10-22 08:53:50.031 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/WirelessChargingStarted.ogg; assuming invalid
-10-22 08:53:50.033 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/camera_click.ogg; assuming invalid
-10-22 08:53:50.034 W/MediaProvider( 3115): Missing volume for /system/media/audio/ui/camera_focus.ogg; assuming invalid
-10-22 08:53:50.133 V/MediaScanner( 3115): pruneDeadThumbnailFiles... android.database.sqlite.SQLiteCursor@6ae4439
-10-22 08:53:50.133 V/MediaScanner( 3115): /pruneDeadThumbnailFiles... android.database.sqlite.SQLiteCursor@6ae4439
-10-22 08:53:50.147 I/ActivityManager( 2446): Killing 2952:com.google.process.gapps/u0a33 (adj 15): empty #17
-10-22 08:53:50.221 W/SensorService( 2446): sensor 00000000 already enabled in connection 0x9b097de0 (ignoring)
-10-22 08:53:50.261 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.264 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.294 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.301 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.315 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.323 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.342 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.355 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.362 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.376 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.384 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.403 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.423 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.426 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.455 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.476 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.498 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.510 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.530 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.534 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.549 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.563 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.579 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.583 I/Icing   ( 3258): Indexing com.google.android.googlequicksearchbox-applications_uri from com.google.android.googlequicksearchbox
-10-22 08:53:50.594 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.610 I/Icing   ( 3258): Indexing com.google.android.gms-apps from com.google.android.gms
-10-22 08:53:50.622 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.630 I/Icing   ( 3258): Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
-10-22 08:53:50.630 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.659 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.676 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.689 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.689 I/Icing   ( 3258): Indexing done com.google.android.googlequicksearchbox-applications_uri
-10-22 08:53:50.690 I/Icing   ( 3258): Indexing done com.google.android.gms-apps
-10-22 08:53:50.700 I/Icing   ( 3258): Indexing done com.google.android.gms-internal.3p:MobileApplication
-10-22 08:53:50.713 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.722 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.739 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.748 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.757 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.771 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.790 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.808 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.817 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.836 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.853 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.874 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.888 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.909 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.914 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.919 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.927 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.944 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.960 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.980 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:53:50.980 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.989 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:50.992 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:53:50.992 I/art     ( 2446): Starting a blocking GC Explicit
-10-22 08:53:50.993 D/        ( 4552): HostConnection::get() New Host Connection established 0xb654d300, tid 4552
-10-22 08:53:51.003 I/art     ( 2446): Explicit concurrent mark sweep GC freed 21268(1422KB) AllocSpace objects, 8(232KB) LOS objects, 33% free, 7MB/11MB, paused 437us total 11.212ms
-10-22 08:53:51.082 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:51.099 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:51.109 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:51.131 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:51.383 I/ActivityManager( 2446): Killing 3977:com.google.android.play.games/u0a46 (adj 15): empty #17
-10-22 08:53:51.603 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:53:51.608 I/Vision  ( 3258): Checking for download completion for 104322 -- ocr
-10-22 08:53:52.244 D/AndroidRuntime( 4555): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:53:52.245 D/AndroidRuntime( 4555): CheckJNI is OFF
-10-22 08:53:52.253 D/ICU     ( 4555): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:53:52.267 E/memtrack( 4555): Couldn't load memtrack module (No such file or directory)
-10-22 08:53:52.267 E/android.os.Debug( 4555): failed to load memtrack module: -2
-10-22 08:53:52.268 I/Radio-JNI( 4555): register_android_hardware_Radio DONE
-10-22 08:53:52.273 D/AndroidRuntime( 4555): Calling main entry com.android.commands.uiautomator.Launcher
-10-22 08:53:52.653 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:53:53.297 W/AccessibilityNodeInfoDumper( 4555): Fetch time: 3ms
-10-22 08:53:53.297 W/WindowManager( 2446): Attempted to remove non-existing token: android.os.Binder@dff14d
-10-22 08:53:53.312 D/AndroidRuntime( 4555): Shutting down VM
-10-22 08:53:54.277 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:53:54.278 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:53:54.280 D/        ( 4569): HostConnection::get() New Host Connection established 0xb654d300, tid 4569
-10-22 08:53:54.970 D/EGL_emulation( 2705): eglMakeCurrent: 0xadd54c00: ver 3 0 (tinfo 0xadd525b0)
-10-22 08:53:56.713 D/AndroidRuntime( 4572): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:53:56.713 D/AndroidRuntime( 4572): CheckJNI is OFF
-10-22 08:53:56.723 D/ICU     ( 4572): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:53:56.737 E/memtrack( 4572): Couldn't load memtrack module (No such file or directory)
-10-22 08:53:56.738 E/android.os.Debug( 4572): failed to load memtrack module: -2
-10-22 08:53:56.738 I/Radio-JNI( 4572): register_android_hardware_Radio DONE
-10-22 08:53:56.743 D/AndroidRuntime( 4572): Calling main entry com.android.commands.uiautomator.Launcher
-10-22 08:53:57.448 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:53:57.450 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:53:57.452 D/        ( 4584): HostConnection::get() New Host Connection established 0xb654d300, tid 4584
-10-22 08:53:57.621 I/ActivityManager( 2446): Killing 3694:com.android.messaging/u0a52 (adj 15): empty #17
-10-22 08:53:57.772 W/AccessibilityNodeInfoDumper( 4572): Fetch time: 2ms
-10-22 08:53:57.773 W/WindowManager( 2446): Attempted to remove non-existing token: android.os.Binder@c1dfb6f
-10-22 08:53:57.792 D/AndroidRuntime( 4572): Shutting down VM
-10-22 08:53:59.292 W/Nearby  ( 3235): Failed attempt #3 out of 3 for RestoreDeviceName [CONTEXT service_id=49 ]
-10-22 08:53:59.292 W/Nearby  ( 3235): java.lang.IllegalStateException: BluetoothAdapter not ready yet!
-10-22 08:53:59.292 W/Nearby  ( 3235): 	at ajpy.d(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
-10-22 08:53:59.292 W/Nearby  ( 3235): 	at ajpx.run(Unknown Source)
-10-22 08:53:59.292 W/Nearby  ( 3235): 	at bwuj.call(Unknown Source)
-10-22 08:53:59.292 W/Nearby  ( 3235): 	at bwuo.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
-10-22 08:53:59.292 W/Nearby  ( 3235): 	at bwuo.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):9)
-10-22 08:53:59.292 W/Nearby  ( 3235): 	at ajpw.run(Unknown Source)
-10-22 08:53:59.292 W/Nearby  ( 3235): 	at java.lang.Thread.run(Thread.java:818)
-10-22 08:53:59.292 W/Nearby  ( 3235): 	at sow.run(Unknown Source)
-10-22 08:53:59.292 W/Nearby  ( 3235): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
-10-22 08:53:59.292 W/Nearby  ( 3235): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
-10-22 08:53:59.292 W/Nearby  ( 3235): 	at sux.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
-10-22 08:53:59.292 W/Nearby  ( 3235): 	at java.lang.Thread.run(Thread.java:818)
-10-22 08:54:00.621 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:00.623 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:00.624 D/        ( 4590): HostConnection::get() New Host Connection established 0xb664d300, tid 4590
-10-22 08:54:01.194 D/AndroidRuntime( 4593): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-22 08:54:01.195 D/AndroidRuntime( 4593): CheckJNI is OFF
-10-22 08:54:01.205 D/ICU     ( 4593): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-10-22 08:54:01.219 E/memtrack( 4593): Couldn't load memtrack module (No such file or directory)
-10-22 08:54:01.219 E/android.os.Debug( 4593): failed to load memtrack module: -2
-10-22 08:54:01.220 I/Radio-JNI( 4593): register_android_hardware_Radio DONE
-10-22 08:54:01.225 D/AndroidRuntime( 4593): Calling main entry com.android.commands.uiautomator.Launcher
-10-22 08:54:01.611 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:54:01.611 I/Vision  ( 3258): Checking for download completion for 114325 -- ocr
-10-22 08:54:02.247 W/AccessibilityNodeInfoDumper( 4593): Fetch time: 2ms
-10-22 08:54:02.247 W/WindowManager( 2446): Attempted to remove non-existing token: android.os.Binder@23a107c
-10-22 08:54:02.260 D/AndroidRuntime( 4593): Shutting down VM
-10-22 08:54:03.797 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:03.799 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:03.801 D/        ( 4609): HostConnection::get() New Host Connection established 0xb660d300, tid 4609
-10-22 08:54:05.547 I/MediaFocusControl( 2446):  AudioFocus  abandonAudioFocus() from android.media.AudioManager@488956bcom.android.music.MediaPlaybackService$3@77068c8
-10-22 08:54:05.548 I/ActivityManager( 2446): Killing 3085:com.android.music/u0a40 (adj 15): empty #17
-10-22 08:54:06.975 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:06.976 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:06.978 D/        ( 4616): HostConnection::get() New Host Connection established 0xb654d300, tid 4616
-10-22 08:54:09.538 W/SQLiteConnectionPool( 3258): A SQLiteConnection object for database '/data/user/0/com.google.android.gms/databases/lighter_registration.db' was leaked!  Please fix your application to end transactions in progress properly and to close the database when it is no longer needed.
-10-22 08:54:09.538 I/LT_StubFactory( 3258): tachyonHostName = instantmessaging-pa.googleapis.com and tachyonPortNumber = 443
-10-22 08:54:09.538 D/LT_OkHttpChannelBuilder( 3258): Using Spatula header keyless authentication.
-10-22 08:54:09.552 D/LT_Lighter( 3258): finalizing
-10-22 08:54:09.552 D/LT_LiMsgController( 3258): No accounts with open bind channel
-10-22 08:54:09.553 I/LT_PhenotypeApiImplV12( 3258): Retrieve experiment configurations for: 
-10-22 08:54:09.571 W/GLSUser ( 3235): [DeviceKeyStore] Cannot load key: Device key file not found.
-10-22 08:54:09.572 W/GLSUser ( 3235): [DeviceKeyStore] Cannot load key: Device key file not found.
-10-22 08:54:09.574 I/LT_PhenotypeApiImplV12( 3258): Phenotype registration succeeded
-10-22 08:54:09.577 D/LT_ClntIntrcptrFctryV12( 3258): Spatula header: CjYKFmNvbS5nb29nbGUuYW5kcm9pZC5nbXMaHFdPSEVFejkwUWV3OUxDY0NjS0ZJQXRwSHVnND0YuJ+Gg4LBwtYz
-10-22 08:54:10.158 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:10.160 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:10.161 D/        ( 4632): HostConnection::get() New Host Connection established 0xb654d300, tid 4632
-10-22 08:54:11.614 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:54:11.614 I/Vision  ( 3258): Checking for download completion for 124328 -- ocr
-10-22 08:54:13.340 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:13.341 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:13.343 D/        ( 4638): HostConnection::get() New Host Connection established 0xb660d300, tid 4638
-10-22 08:54:14.450 W/ChimeraConfigurator( 3258): Error syncing flags: qoq: COMMIT_TIMEOUT
-10-22 08:54:14.450 I/ChmraDebugLogger( 3258): [79] COMMIT_TIMEOUT
-10-22 08:54:14.459 I/ChmraDebugLogger( 3258): [52] null
-10-22 08:54:14.479 I/ChimeraConfigService( 3258): Scheduling checkin for one-off execution between [3300,43200] seconds from now (1792659254479)
-10-22 08:54:14.487 I/ChimeraConfigurator( 3258): Starting update, reason: 4 urgentFeatures: vision.ocr:-1
-10-22 08:54:14.550 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:15.582 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:15.584 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:15.586 D/        ( 4646): HostConnection::get() New Host Connection established 0xb658d300, tid 4646
-10-22 08:54:16.514 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:16.515 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:16.517 D/        ( 4653): HostConnection::get() New Host Connection established 0xb658d300, tid 4653
-10-22 08:54:19.688 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:19.690 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:19.692 D/        ( 4658): HostConnection::get() New Host Connection established 0xb658d300, tid 4658
-10-22 08:54:20.117 I/GmscoreIpa( 3258): how are you::
-10-22 08:54:21.614 W/ActivityManager( 2446): Unable to start service Intent { act=com.google.android.gms.drive.ApiService.RESET_AFTER_BOOT flg=0x4 cmp=com.google.android.gms/.drive.api.ApiService (has extras) } U=0: not found
-10-22 08:54:21.623 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:54:21.623 I/Vision  ( 3258): Checking for download completion for 134338 -- ocr
-10-22 08:54:21.624 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:21.630 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:21.631 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:21.631 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:21.637 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:22.872 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:22.874 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:22.876 D/        ( 4665): HostConnection::get() New Host Connection established 0xb660d300, tid 4665
-10-22 08:54:25.781 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:25.783 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:25.784 D/        ( 4671): HostConnection::get() New Host Connection established 0xb654d300, tid 4671
-10-22 08:54:26.043 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:26.044 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:26.046 D/        ( 4678): HostConnection::get() New Host Connection established 0xb654d300, tid 4678
-10-22 08:54:29.214 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:29.215 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:29.217 D/        ( 4683): HostConnection::get() New Host Connection established 0xb654d300, tid 4683
-10-22 08:54:31.628 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:54:31.628 I/Vision  ( 3258): Checking for download completion for 144342 -- ocr
-10-22 08:54:32.394 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:32.396 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:32.398 D/        ( 4689): HostConnection::get() New Host Connection established 0xb65cd300, tid 4689
-10-22 08:54:35.579 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:35.581 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:35.582 D/        ( 4694): HostConnection::get() New Host Connection established 0xb65cd300, tid 4694
-10-22 08:54:35.981 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:35.982 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:35.984 D/        ( 4699): HostConnection::get() New Host Connection established 0xb658d300, tid 4699
-10-22 08:54:38.416 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:54:38.754 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:38.755 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:38.757 D/        ( 4706): HostConnection::get() New Host Connection established 0xb654d300, tid 4706
-10-22 08:54:41.631 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:54:41.632 I/Vision  ( 3258): Exceeded maximum feature download tries for ocr
-10-22 08:54:41.632 W/Vision  ( 3258): Request of optional module download of ocr failed.
-10-22 08:54:41.632 I/Vision  ( 3258): Checking for download completion for 154347 -- ocr
-10-22 08:54:41.944 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:41.946 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:41.948 D/        ( 4712): HostConnection::get() New Host Connection established 0xb654d300, tid 4712
-10-22 08:54:45.125 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:45.127 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:45.128 D/        ( 4717): HostConnection::get() New Host Connection established 0xb654d300, tid 4717
-10-22 08:54:46.175 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:46.177 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:46.179 D/        ( 4722): HostConnection::get() New Host Connection established 0xb65cd300, tid 4722
-10-22 08:54:46.839 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:54:48.302 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:48.303 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:48.305 D/        ( 4729): HostConnection::get() New Host Connection established 0xb65cd300, tid 4729
-10-22 08:54:51.474 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:51.475 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:51.477 D/        ( 4734): HostConnection::get() New Host Connection established 0xb654d300, tid 4734
-10-22 08:54:51.636 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:51.639 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:54:51.644 I/Vision  ( 3258): Checking for download completion for 164359 -- ocr
-10-22 08:54:51.649 E/WakeLock( 3258): IntentOp:.chimera.container.InitConfigOperation ** IS FORCE-RELEASED ON TIMEOUT **
-10-22 08:54:51.686 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:51.686 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:51.687 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:51.692 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:51.701 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:51.702 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:51.702 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:51.703 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:51.708 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:54.649 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:54.651 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:54.652 D/        ( 4741): HostConnection::get() New Host Connection established 0xb654d300, tid 4741
-10-22 08:54:54.768 W/ChimeraConfigurator( 3258): Error syncing flags: qoq: COMMIT_TIMEOUT
-10-22 08:54:54.768 I/ChmraDebugLogger( 3258): [79] COMMIT_TIMEOUT
-10-22 08:54:54.769 I/ChmraDebugLogger( 3258): [52] null
-10-22 08:54:54.770 W/ChimeraConfigService( 3258): Retry attempt was throttled.
-10-22 08:54:54.770 I/ChimeraConfigurator( 3258): Starting update, reason: 4 urgentFeatures: vision.ocr:-1
-10-22 08:54:54.787 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:54.847 W/Conscrypt( 3235): Could not set socket write timeout: java.net.SocketException: Socket closed
-10-22 08:54:54.847 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
-10-22 08:54:54.847 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
-10-22 08:54:54.847 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:54:54.873 W/Conscrypt( 3235): Could not set socket write timeout: java.net.SocketException: Socket closed
-10-22 08:54:54.873 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
-10-22 08:54:54.873 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
-10-22 08:54:54.873 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:54:55.081 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.084 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.090 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.092 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.094 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.095 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.097 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.099 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.101 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.104 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.106 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.108 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.110 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.112 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.113 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.114 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.129 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.136 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.139 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.141 I/aopq    ( 3235): Scheduling Phenotype for a PhenotypeSyncImmediately(13, com.google.android.gms) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
-10-22 08:54:55.141 D/hwcomposer( 1264): hw_composer sent 223 syncs in 94s
-10-22 08:54:55.145 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.145 I/PGAPhenotypeBroadcastRe( 4352): Received Phenotype update.
-10-22 08:54:55.151 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.195 I/aorp    ( 3235): updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
-10-22 08:54:55.195 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
-10-22 08:54:55.195 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
-10-22 08:54:55.197 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
-10-22 08:54:55.211 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.216 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.217 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.221 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.222 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
-10-22 08:54:55.222 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
-10-22 08:54:55.223 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
-10-22 08:54:55.225 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
-10-22 08:54:55.225 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
-10-22 08:54:55.225 I/Auth    ( 3235): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
-10-22 08:54:55.229 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.231 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.233 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.234 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.236 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.238 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.254 W/Conscrypt( 3235): Could not set socket write timeout: java.net.SocketException: Socket closed
-10-22 08:54:55.254 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
-10-22 08:54:55.254 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
-10-22 08:54:55.255 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:54:55.280 W/Conscrypt( 3235): Could not set socket write timeout: java.net.SocketException: Socket closed
-10-22 08:54:55.280 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
-10-22 08:54:55.280 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
-10-22 08:54:55.280 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:54:55.410 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.538 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.540 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.542 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.544 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.546 I/AccountManagerService( 2446): getTypesVisibleToCaller: isPermitted? true
-10-22 08:54:55.550 W/Conscrypt( 3235): Could not set socket write timeout: java.net.SocketException: Socket closed
-10-22 08:54:55.550 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
-10-22 08:54:55.550 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
-10-22 08:54:55.550 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:54:55.576 W/Conscrypt( 3235): Could not set socket write timeout: java.net.SocketException: Socket closed
-10-22 08:54:55.576 E/art     ( 3235): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
-10-22 08:54:55.576 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
-10-22 08:54:55.576 W/Conscrypt( 3235): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
-10-22 08:54:56.368 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:56.370 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:56.372 D/        ( 4763): HostConnection::get() New Host Connection established 0xb660d300, tid 4763
-10-22 08:54:57.844 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:54:57.845 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:54:57.847 D/        ( 4770): HostConnection::get() New Host Connection established 0xb65cd300, tid 4770
-10-22 08:55:01.028 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:01.029 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:01.031 D/        ( 4775): HostConnection::get() New Host Connection established 0xb65cd300, tid 4775
-10-22 08:55:01.648 I/Vision  ( 3258): Requesting optional module download of ocr.
-10-22 08:55:01.648 I/Vision  ( 3258): Checking for download completion for 174362 -- ocr
-10-22 08:55:04.201 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:04.203 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:04.204 D/        ( 4781): HostConnection::get() New Host Connection established 0xb654d300, tid 4781
-10-22 08:55:04.465 I/CastDatabase( 3258): Saving the database
-10-22 08:55:04.467 I/SQLiteCastStore( 3258): [CastNetworkInfo] saved: 0, skipped: 0, [CastDeviceInfo]: saved 0, skipped 0, [Paired Guest Mode DeviceInfo] saved: 0, skipped: 0. [ProbedNetworks]: saved 0, skipped: 0, [ProbedSocketAddress]: saved 0, skipped: 0, [Network-Device pairs]: saved: 0
-10-22 08:55:05.334 W/audio_hw_generic( 2180): Hardware backing HAL too slow, could only write 0 of 661 frames
-10-22 08:55:06.570 E/SurfaceFlinger( 1264): ro.sf.lcd_density must be defined as a build property
-10-22 08:55:06.572 D/gralloc_ranchu( 1264): gralloc_alloc: Creating ashmem region of size 8294400
-10-22 08:55:06.575 D/        ( 4787): HostConnection::get() New Host Connection established 0xb654d300, tid 4787
+10-22 09:13:14.984 I/ActivityManager( 2458): Start proc 4458:com.svox.pico/u0a45 for broadcast com.svox.pico/.VoiceDataInstallerReceiver
+10-22 09:13:15.042 I/Auth    ( 3264): [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
+10-22 09:13:15.059 W/ActivityManager( 2458): Unable to start service Intent { act=com.google.android.gms.auth.key.retrieval.service.START pkg=com.google.android.gms } U=0: not found
+10-22 09:13:15.081 I/ChromeSync( 3264): [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.kongregate.mobile.globalassault.google flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-22 09:13:15.093 D/AndroidRuntime( 4455): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:13:15.095 D/AndroidRuntime( 4455): CheckJNI is OFF
+10-22 09:13:15.111 D/ICU     ( 4455): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:13:15.126 E/memtrack( 4455): Couldn't load memtrack module (No such file or directory)
+10-22 09:13:15.126 E/android.os.Debug( 4455): failed to load memtrack module: -2
+10-22 09:13:15.127 I/Radio-JNI( 4455): register_android_hardware_Radio DONE
+10-22 09:13:15.133 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:15.135 I/ChromeSync( 3264): [Persistence,AffiliationManager] One of affiliation or grouping data for android://XNzGIg0Ss5dIg3Nok1a9HAvWvb-6dhBIWEwPdUyOXcUfYK5MS34FoyhDvZ5IwraPH7WkydP-A1abEOkILkmm0A==@com.kongregate.mobile.globalassault.google/ was not found. Marking affiliation data as stale...
+10-22 09:13:15.137 D/AndroidRuntime( 4455): Calling main entry com.android.commands.monkey.Monkey
+10-22 09:13:15.153 I/Icing   ( 3264): IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=null serviceId=36
+10-22 09:13:15.167 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:15.173 I/Auth    ( 3264): [SupervisedAccountIntentOperation] This operation is disabled
+10-22 09:13:15.176 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:15.180 W/BroadcastQueue( 2458): Skipping deliver [background] BroadcastRecord{63043b7 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{db8c724 4455 (unknown name)/0/u-1 remote:7b88251}: process crashing
+10-22 09:13:15.267 I/ActivityManager( 2458): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity} from uid 0 on display 0
+10-22 09:13:15.307 W/ActivityManager( 2458): Unbind failed: could not find connection for android.os.BinderProxy@8cda1c1
+10-22 09:13:15.317 E/GmsClient( 3264): unable to connect to service: com.google.android.gms.auth.key.retrieval.service.START on com.google.android.gms
+10-22 09:13:15.367 I/ActivityManager( 2458): Start proc 4484:com.kongregate.mobile.globalassault.google/u0a61 for activity com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity
+10-22 09:13:15.404 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:15.411 I/art     ( 4455): System.exit called, status: 0
+10-22 09:13:15.411 I/AndroidRuntime( 4455): VM exiting with result code 0.
+10-22 09:13:15.425 I/UpdateIcingCorporaServi( 3050): UpdateCorporaTask done [took 455 ms] updated apps [took 454 ms] 
+10-22 09:13:15.441 D/PermissionCache( 1266): checking android.permission.READ_FRAME_BUFFER for uid=1000 => granted (2213 us)
+10-22 09:13:15.463 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:15.488 I/ActivityManager( 2458): Config changes=480 {1.0 310mcc260mnc en_US ldltr sw360dp w598dp h336dp 480dpi nrml land finger -keyb/v/h -nav/h s.8}
+10-22 09:13:15.496 I/InputReader( 2458): Reconfiguring input devices.  changes=0x00000004
+10-22 09:13:15.496 I/InputReader( 2458): Device reconfigured: id=0, name='qwerty2', size 1080x1920, orientation 1, mode 1, display id 0
+10-22 09:13:15.596 W/art     ( 2458): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.attachApplication(android.app.IApplicationThread) from ActivityManagerService.java:6186 waiters=0 for 181ms
+10-22 09:13:15.596 D/EGL_emulation( 3758): eglMakeCurrent: 0xaa1c2cc0: ver 2 0 (tinfo 0xaa2d6750)
+10-22 09:13:15.598 W/art     ( 2458): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.attachApplication(android.app.IApplicationThread) from ActivityManagerService.java:6186 waiters=3 for 173ms
+10-22 09:13:15.607 E/Surface ( 3758): getSlotFromBufferLocked: unknown buffer: 0xb407c940
+10-22 09:13:15.808 I/ActivityManager( 2458): Killing 3371:com.google.android.apps.maps/u0a39 (adj 15): empty #17
+10-22 09:13:15.831 W/Icing   ( 3264): No valid account for uploading user actions
+10-22 09:13:15.836 I/Icing   ( 3264): Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-22 09:13:15.837 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:15.917 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:15.918 E/Surface ( 2717): getSlotFromBufferLocked: unknown buffer: 0xadefb360
+10-22 09:13:15.922 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:15.924 I/Icing   ( 3264): IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+10-22 09:13:15.929 W/Icing   ( 3264): No valid account for uploading user actions
+10-22 09:13:15.964 E/Surface ( 2717): getSlotFromBufferLocked: unknown buffer: 0xadefb540
+10-22 09:13:15.970 E/native  ( 3264): document-store.cc:1218 Failed to update per-doc-data with usage report
+10-22 09:13:15.970 I/Icing   ( 3264): Usage reports ok 0, Failed Usage reports 1, indexed 0, rejected 0
+10-22 09:13:15.987 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:15.992 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:16.022 D/        ( 4484): HostConnection::get() New Host Connection established 0xaa1ff680, tid 4484
+10-22 09:13:16.072 V/WindowManager( 2458): Layouts looping: On entry to LockedInner, mPendingLayoutChanges = 0x1
+10-22 09:13:16.072 V/WindowManager( 2458): Layouts looping: after finishPostLayoutPolicyLw, mPendingLayoutChanges = 0x0
+10-22 09:13:16.074 V/WindowManager( 2458): Layouts looping: mLayoutNeeded, mPendingLayoutChanges = 0x1
+10-22 09:13:16.074 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:16.075 V/WindowManager( 2458): Layouts looping: On entry to LockedInner, mPendingLayoutChanges = 0x1
+10-22 09:13:16.075 V/WindowManager( 2458): Layouts looping: after finishPostLayoutPolicyLw, mPendingLayoutChanges = 0x0
+10-22 09:13:16.078 V/WindowManager( 2458): Layouts looping: mLayoutNeeded, mPendingLayoutChanges = 0x1
+10-22 09:13:16.079 E/WindowManager( 2458): Performed 6 layouts in a row. Skipping
+10-22 09:13:16.079 I/ActivityManager( 2458): Displayed com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity: +723ms
+10-22 09:13:16.127 I/WindowManager( 2458): Screen frozen for +707ms due to Window{8f60843 u0 Starting com.kongregate.mobile.globalassault.google}
+10-22 09:13:16.180 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:16.185 D/        ( 4484): HostConnection::get() New Host Connection established 0xa9b2b780, tid 4502
+10-22 09:13:16.208 D/EGL_emulation( 4484): eglCreateContext: 0xadc4be20: maj 2 min 0 rcv 2
+10-22 09:13:16.211 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:16.212 D/EGL_emulation( 4484): eglMakeCurrent: 0xadc4be20: ver 2 0 (tinfo 0xa9b26cc0)
+10-22 09:13:16.233 D/Unity   ( 4484): GL_EXT_debug_marker GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_sync_buffer_data ANDROID_EMU_hwc_color_transform GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+10-22 09:13:16.365 I/Icing   ( 3264): Indexing com.google.android.googlequicksearchbox-applications_uri from com.google.android.googlequicksearchbox
+10-22 09:13:16.444 I/Icing   ( 3264): Indexing done com.google.android.googlequicksearchbox-applications_uri
+10-22 09:13:16.478 W/libc    ( 4484): pthread_create sched_setscheduler call failed: Operation not permitted
+10-22 09:13:16.625 I/Icing   ( 3264): Indexing com.google.android.gms-apps from com.google.android.gms
+10-22 09:13:16.634 I/Icing   ( 3264): Indexing done com.google.android.gms-apps
+10-22 09:13:16.679 E/Surface ( 4484): getSlotFromBufferLocked: unknown buffer: 0xb407e100
+10-22 09:13:16.681 D/EGL_emulation( 4484): eglMakeCurrent: 0xadc4be20: ver 2 0 (tinfo 0xa9b26cc0)
+10-22 09:13:16.870 I/Icing   ( 3264): Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-22 09:13:16.877 I/Icing   ( 3264): Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-22 09:13:17.160 W/SensorService( 2458): sensor 00000000 already enabled in connection 0xa0ae4a20 (ignoring)
+10-22 09:13:17.199 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.203 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.229 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.234 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.238 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.252 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.266 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.271 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.285 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.294 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.302 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.309 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.319 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.329 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.348 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.365 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.392 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.395 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.413 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.432 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.454 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.464 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.468 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.484 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.511 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.530 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.545 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.550 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.588 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.590 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.596 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.604 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.613 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.616 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.638 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.667 W/Nearby  ( 3239): Failed attempt #3 out of 3 for RestoreDeviceName [CONTEXT service_id=49 ]
+10-22 09:13:17.667 W/Nearby  ( 3239): java.lang.IllegalStateException: BluetoothAdapter not ready yet!
+10-22 09:13:17.667 W/Nearby  ( 3239): 	at ajpy.d(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 09:13:17.667 W/Nearby  ( 3239): 	at ajpx.run(Unknown Source)
+10-22 09:13:17.667 W/Nearby  ( 3239): 	at bwuj.call(Unknown Source)
+10-22 09:13:17.667 W/Nearby  ( 3239): 	at bwuo.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 09:13:17.667 W/Nearby  ( 3239): 	at bwuo.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):9)
+10-22 09:13:17.667 W/Nearby  ( 3239): 	at ajpw.run(Unknown Source)
+10-22 09:13:17.667 W/Nearby  ( 3239): 	at java.lang.Thread.run(Thread.java:818)
+10-22 09:13:17.667 W/Nearby  ( 3239): 	at sow.run(Unknown Source)
+10-22 09:13:17.667 W/Nearby  ( 3239): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+10-22 09:13:17.667 W/Nearby  ( 3239): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+10-22 09:13:17.667 W/Nearby  ( 3239): 	at sux.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-22 09:13:17.667 W/Nearby  ( 3239): 	at java.lang.Thread.run(Thread.java:818)
+10-22 09:13:17.677 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.692 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.695 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.702 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.720 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.737 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.758 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.760 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.770 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.784 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.791 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.799 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.809 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.837 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.842 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.855 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.870 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.889 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.893 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.916 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.941 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.968 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.973 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.981 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:17.998 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:18.178 I/art     ( 2458): Starting a blocking GC Explicit
+10-22 09:13:18.189 I/art     ( 2458): Explicit concurrent mark sweep GC freed 21586(1828KB) AllocSpace objects, 1(20KB) LOS objects, 33% free, 7MB/11MB, paused 423us total 10.584ms
+10-22 09:13:18.417 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:18.418 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:18.420 D/        ( 4521): HostConnection::get() New Host Connection established 0xb65cd300, tid 4521
+10-22 09:13:19.517 D/AndroidRuntime( 4525): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:13:19.518 D/AndroidRuntime( 4525): CheckJNI is OFF
+10-22 09:13:19.527 D/ICU     ( 4525): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:13:19.539 E/memtrack( 4525): Couldn't load memtrack module (No such file or directory)
+10-22 09:13:19.539 E/android.os.Debug( 4525): failed to load memtrack module: -2
+10-22 09:13:19.540 I/Radio-JNI( 4525): register_android_hardware_Radio DONE
+10-22 09:13:19.545 D/AndroidRuntime( 4525): Calling main entry com.android.commands.uiautomator.Launcher
+10-22 09:13:19.932 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:20.569 W/AccessibilityNodeInfoDumper( 4525): Fetch time: 3ms
+10-22 09:13:20.570 W/WindowManager( 2458): Attempted to remove non-existing token: android.os.Binder@62cc952
+10-22 09:13:20.583 D/AndroidRuntime( 4525): Shutting down VM
+10-22 09:13:20.713 I/ActivityManager( 2458): Killing 4009:com.google.android.play.games/u0a46 (adj 15): empty #17
+10-22 09:13:21.631 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:21.633 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:21.635 D/        ( 4539): HostConnection::get() New Host Connection established 0xb654d300, tid 4539
+10-22 09:13:22.262 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:13:22.266 I/Vision  ( 3264): Checking for download completion for 111145 -- ocr
+10-22 09:13:23.977 D/AndroidRuntime( 4542): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:13:23.978 D/AndroidRuntime( 4542): CheckJNI is OFF
+10-22 09:13:23.986 D/ICU     ( 4542): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:13:24.001 E/memtrack( 4542): Couldn't load memtrack module (No such file or directory)
+10-22 09:13:24.002 E/android.os.Debug( 4542): failed to load memtrack module: -2
+10-22 09:13:24.002 I/Radio-JNI( 4542): register_android_hardware_Radio DONE
+10-22 09:13:24.009 D/AndroidRuntime( 4542): Calling main entry com.android.commands.uiautomator.Launcher
+10-22 09:13:24.332 D/EGL_emulation( 2717): eglMakeCurrent: 0xadcd4c60: ver 2 0 (tinfo 0xa9858230)
+10-22 09:13:24.805 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:24.807 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:24.809 D/        ( 4555): HostConnection::get() New Host Connection established 0xb65cd300, tid 4555
+10-22 09:13:25.030 W/AccessibilityNodeInfoDumper( 4542): Fetch time: 1ms
+10-22 09:13:25.030 W/WindowManager( 2458): Attempted to remove non-existing token: android.os.Binder@60c30aa
+10-22 09:13:25.044 D/AndroidRuntime( 4542): Shutting down VM
+10-22 09:13:27.415 I/MediaFocusControl( 2458):  AudioFocus  abandonAudioFocus() from android.media.AudioManager@87e832dcom.android.music.MediaPlaybackService$3@ba3c062
+10-22 09:13:27.417 I/ActivityManager( 2458): Killing 3074:com.android.music/u0a40 (adj 15): empty #17
+10-22 09:13:27.985 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:27.986 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:27.989 D/        ( 4561): HostConnection::get() New Host Connection established 0xb654d300, tid 4561
+10-22 09:13:28.445 D/AndroidRuntime( 4564): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 09:13:28.446 D/AndroidRuntime( 4564): CheckJNI is OFF
+10-22 09:13:28.456 D/ICU     ( 4564): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 09:13:28.471 E/memtrack( 4564): Couldn't load memtrack module (No such file or directory)
+10-22 09:13:28.471 E/android.os.Debug( 4564): failed to load memtrack module: -2
+10-22 09:13:28.472 I/Radio-JNI( 4564): register_android_hardware_Radio DONE
+10-22 09:13:28.479 D/AndroidRuntime( 4564): Calling main entry com.android.commands.uiautomator.Launcher
+10-22 09:13:29.504 W/AccessibilityNodeInfoDumper( 4564): Fetch time: 1ms
+10-22 09:13:29.504 W/WindowManager( 2458): Attempted to remove non-existing token: android.os.Binder@780b49b
+10-22 09:13:29.516 D/AndroidRuntime( 4564): Shutting down VM
+10-22 09:13:31.166 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:31.168 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:31.169 D/        ( 4577): HostConnection::get() New Host Connection established 0xb658d300, tid 4577
+10-22 09:13:32.270 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:13:32.270 I/Vision  ( 3264): Checking for download completion for 121149 -- ocr
+10-22 09:13:34.338 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:34.343 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:34.345 D/        ( 4585): HostConnection::get() New Host Connection established 0xb65cd300, tid 4585
+10-22 09:13:34.498 W/ChimeraConfigurator( 3264): Error syncing flags: qoq: COMMIT_TIMEOUT
+10-22 09:13:34.498 I/ChmraDebugLogger( 3264): [79] COMMIT_TIMEOUT
+10-22 09:13:34.503 I/ChmraDebugLogger( 3264): [52] null
+10-22 09:13:34.520 I/ChimeraConfigService( 3264): Scheduling checkin for one-off execution between [3300,43200] seconds from now (1792660414520)
+10-22 09:13:34.540 I/ChimeraConfigurator( 3264): Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+10-22 09:13:35.997 I/LT_StubFactory( 3264): tachyonHostName = instantmessaging-pa.googleapis.com and tachyonPortNumber = 443
+10-22 09:13:35.997 D/LT_OkHttpChannelBuilder( 3264): Using Spatula header keyless authentication.
+10-22 09:13:35.997 W/SQLiteConnectionPool( 3264): A SQLiteConnection object for database '/data/user/0/com.google.android.gms/databases/lighter_registration.db' was leaked!  Please fix your application to end transactions in progress properly and to close the database when it is no longer needed.
+10-22 09:13:36.020 D/LT_Lighter( 3264): finalizing
+10-22 09:13:36.021 I/LT_PhenotypeApiImplV12( 3264): Retrieve experiment configurations for: 
+10-22 09:13:36.020 D/LT_LiMsgController( 3264): No accounts with open bind channel
+10-22 09:13:36.024 I/LT_PhenotypeApiImplV12( 3264): Phenotype registration succeeded
+10-22 09:13:36.028 W/GLSUser ( 3239): [DeviceKeyStore] Cannot load key: Device key file not found.
+10-22 09:13:36.029 W/GLSUser ( 3239): [DeviceKeyStore] Cannot load key: Device key file not found.
+10-22 09:13:36.032 D/LT_ClntIntrcptrFctryV12( 3264): Spatula header: CjYKFmNvbS5nb29nbGUuYW5kcm9pZC5nbXMaHFdPSEVFejkwUWV3OUxDY0NjS0ZJQXRwSHVnND0YttvVsrymobE9
+10-22 09:13:37.551 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:37.552 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:37.554 D/        ( 4601): HostConnection::get() New Host Connection established 0xb658d300, tid 4601
+10-22 09:13:39.673 I/GmscoreIpa( 3264): how are you::
+10-22 09:13:40.723 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:40.725 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:40.727 D/        ( 4607): HostConnection::get() New Host Connection established 0xb658d300, tid 4607
+10-22 09:13:41.015 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:42.273 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:13:42.273 I/Vision  ( 3264): Checking for download completion for 131152 -- ocr
+10-22 09:13:42.828 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:42.829 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:42.831 D/        ( 4613): HostConnection::get() New Host Connection established 0xb654d300, tid 4613
+10-22 09:13:43.899 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:43.901 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:43.902 D/        ( 4620): HostConnection::get() New Host Connection established 0xb660d300, tid 4620
+10-22 09:13:44.247 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.250 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.252 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.254 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.255 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.257 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.259 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.261 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.263 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.265 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.267 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.268 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.270 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.272 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.274 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.275 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.277 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.279 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.281 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.283 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.285 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.287 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.288 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.290 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.292 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.294 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.296 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.298 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.300 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.302 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.304 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.310 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.312 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.313 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.332 W/Conscrypt( 3239): Could not set socket write timeout: java.net.SocketException: Socket closed
+10-22 09:13:44.332 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
+10-22 09:13:44.332 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 09:13:44.332 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:13:44.345 W/Conscrypt( 3239): Could not set socket write timeout: java.net.SocketException: Socket closed
+10-22 09:13:44.345 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
+10-22 09:13:44.345 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 09:13:44.345 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:13:44.421 D/hwcomposer( 1266): hw_composer sent 197 syncs in 61s
+10-22 09:13:44.441 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.514 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.516 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.520 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.522 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.525 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.527 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:44.533 W/Conscrypt( 3239): Could not set socket write timeout: java.net.SocketException: Socket closed
+10-22 09:13:44.533 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
+10-22 09:13:44.533 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 09:13:44.533 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:13:44.547 W/Conscrypt( 3239): Could not set socket write timeout: java.net.SocketException: Socket closed
+10-22 09:13:44.547 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
+10-22 09:13:44.547 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 09:13:44.547 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:13:47.073 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:47.074 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:47.076 D/        ( 4632): HostConnection::get() New Host Connection established 0xb65cd300, tid 4632
+10-22 09:13:50.246 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:50.248 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:50.249 D/        ( 4637): HostConnection::get() New Host Connection established 0xb658d300, tid 4637
+10-22 09:13:52.274 W/ActivityManager( 2458): Unable to start service Intent { act=com.google.android.gms.drive.ApiService.RESET_AFTER_BOOT flg=0x4 cmp=com.google.android.gms/.drive.api.ApiService (has extras) } U=0: not found
+10-22 09:13:52.285 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:13:52.285 I/Vision  ( 3264): Checking for download completion for 141164 -- ocr
+10-22 09:13:52.292 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:52.309 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:52.309 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:52.310 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:52.315 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:13:53.035 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:53.037 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:53.039 D/        ( 4644): HostConnection::get() New Host Connection established 0xb65cd300, tid 4644
+10-22 09:13:53.423 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:53.425 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:53.426 D/        ( 4651): HostConnection::get() New Host Connection established 0xb660d300, tid 4651
+10-22 09:13:56.618 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:56.619 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:56.621 D/        ( 4657): HostConnection::get() New Host Connection established 0xb65cd300, tid 4657
+10-22 09:13:59.810 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:13:59.812 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:13:59.813 D/        ( 4662): HostConnection::get() New Host Connection established 0xb658d300, tid 4662
+10-22 09:14:02.288 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:02.289 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:02.290 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:02.290 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:02.297 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:14:02.297 I/Vision  ( 3264): Checking for download completion for 151176 -- ocr
+10-22 09:14:02.299 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:02.310 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:02.311 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:02.312 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:02.312 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:02.319 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:02.990 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:02.992 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:02.994 D/        ( 4669): HostConnection::get() New Host Connection established 0xb660d300, tid 4669
+10-22 09:14:03.236 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:03.238 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:03.239 D/        ( 4674): HostConnection::get() New Host Connection established 0xb654d300, tid 4674
+10-22 09:14:06.162 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:06.164 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:06.166 D/        ( 4681): HostConnection::get() New Host Connection established 0xb65cd300, tid 4681
+10-22 09:14:09.337 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:09.339 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:09.340 D/        ( 4686): HostConnection::get() New Host Connection established 0xb658d300, tid 4686
+10-22 09:14:12.300 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:14:12.300 I/Vision  ( 3264): Exceeded maximum feature download tries for ocr
+10-22 09:14:12.300 W/Vision  ( 3264): Request of optional module download of ocr failed.
+10-22 09:14:12.301 I/Vision  ( 3264): Checking for download completion for 161179 -- ocr
+10-22 09:14:12.512 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:12.514 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:12.515 D/        ( 4692): HostConnection::get() New Host Connection established 0xb660d300, tid 4692
+10-22 09:14:12.958 W/audio_hw_generic( 2192): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 09:14:13.428 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:13.430 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:13.432 D/        ( 4697): HostConnection::get() New Host Connection established 0xb660d300, tid 4697
+10-22 09:14:14.742 W/ChimeraConfigurator( 3264): Error syncing flags: qoq: COMMIT_TIMEOUT
+10-22 09:14:14.742 I/ChmraDebugLogger( 3264): [79] COMMIT_TIMEOUT
+10-22 09:14:14.743 I/ChmraDebugLogger( 3264): [52] null
+10-22 09:14:14.746 W/ChimeraConfigService( 3264): Retry attempt was throttled.
+10-22 09:14:15.686 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:15.688 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:15.689 D/        ( 4704): HostConnection::get() New Host Connection established 0xb654d300, tid 4704
+10-22 09:14:18.860 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:18.862 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:18.864 D/        ( 4709): HostConnection::get() New Host Connection established 0xb660d300, tid 4709
+10-22 09:14:19.073 W/audio_hw_generic( 2192): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 09:14:21.757 I/ActivityManager( 2458): Killing 3705:com.android.messaging/u0a52 (adj 15): empty #17
+10-22 09:14:22.044 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:22.045 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:22.047 D/        ( 4714): HostConnection::get() New Host Connection established 0xb658d300, tid 4714
+10-22 09:14:22.312 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:14:22.315 I/Vision  ( 3264): Checking for download completion for 171193 -- ocr
+10-22 09:14:22.316 I/ChimeraConfigurator( 3264): Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+10-22 09:14:22.368 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:22.426 W/Conscrypt( 3239): Could not set socket write timeout: java.net.SocketException: Socket closed
+10-22 09:14:22.426 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
+10-22 09:14:22.426 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 09:14:22.426 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:14:22.437 W/Conscrypt( 3239): Could not set socket write timeout: java.net.SocketException: Socket closed
+10-22 09:14:22.437 E/art     ( 3239): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
+10-22 09:14:22.437 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 09:14:22.437 W/Conscrypt( 3239): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 09:14:22.617 I/aopq    ( 3239): Scheduling Phenotype for a PhenotypeSyncImmediately(13, com.google.android.gms) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-22 09:14:22.622 I/PGAPhenotypeBroadcastRe( 4323): Received Phenotype update.
+10-22 09:14:22.687 I/Auth    ( 3239): [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-22 09:14:22.687 I/Auth    ( 3239): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-22 09:14:22.689 I/Auth    ( 3239): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-22 09:14:23.631 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:23.633 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:23.634 D/        ( 4734): HostConnection::get() New Host Connection established 0xb658d300, tid 4734
+10-22 09:14:25.220 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:25.222 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:25.224 D/        ( 4741): HostConnection::get() New Host Connection established 0xb65cd300, tid 4741
+10-22 09:14:27.639 I/AccountManagerService( 2458): getTypesVisibleToCaller: isPermitted? true
+10-22 09:14:28.336 W/audio_hw_generic( 2192): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 09:14:28.392 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:28.394 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:28.395 D/        ( 4747): HostConnection::get() New Host Connection established 0xb654d300, tid 4747
+10-22 09:14:30.955 I/CastDatabase( 3264): Saving the database
+10-22 09:14:30.957 I/SQLiteCastStore( 3264): [CastNetworkInfo] saved: 0, skipped: 0, [CastDeviceInfo]: saved 0, skipped 0, [Paired Guest Mode DeviceInfo] saved: 0, skipped: 0. [ProbedNetworks]: saved 0, skipped: 0, [ProbedSocketAddress]: saved 0, skipped: 0, [Network-Device pairs]: saved: 0
+10-22 09:14:31.574 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:31.576 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:31.578 D/        ( 4752): HostConnection::get() New Host Connection established 0xb658d300, tid 4752
+10-22 09:14:32.317 I/Vision  ( 3264): Requesting optional module download of ocr.
+10-22 09:14:32.317 I/Vision  ( 3264): Checking for download completion for 181196 -- ocr
+10-22 09:14:33.827 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:33.829 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:33.831 D/        ( 4758): HostConnection::get() New Host Connection established 0xb65cd300, tid 4758
+10-22 09:14:34.750 E/SurfaceFlinger( 1266): ro.sf.lcd_density must be defined as a build property
+10-22 09:14:34.752 D/gralloc_ranchu( 1266): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 09:14:34.754 D/        ( 4769): HostConnection::get() New Host Connection established 0xb65cd300, tid 4769
