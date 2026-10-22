@@ -37,7 +37,7 @@ adb root >/dev/null 2>&1; sleep 5; adb wait-for-device
 log "run O: original APK"
 timeout 300 adb install -r $G ${ABI:+--abi $ABI} $T/apk/original.apk > $OUT/O_install.txt 2>&1; cat $OUT/O_install.txt
 frames o; launch
-for i in 1 2 3 4 5 6; do sleep 10; shot O_$i; done
+for i in 1 2 3; do sleep 15; shot O_$i; done
 a shell debuggerd -b $(gpid) > $OUT/O_stacks.txt 2>&1
 stopframes; gamelog O
 a uninstall $PKG >/dev/null 2>&1
@@ -47,9 +47,10 @@ timeout 300 adb install -r $G ${ABI:+--abi $ABI} $T/apk/ga.apk > $OUT/A_install.
 grep -q Success $OUT/A_install.txt || { log "install FAILED"; exit 0; }
 a shell dumpsys package $PKG | grep -E "primaryCpuAbi|targetSdk" > $OUT/A_abi.txt
 frames a; launch
-for i in 1 2 3 4 5 6 7 8 9; do sleep 10; shot A_boot_$i; done
-for i in 1 2 3 4 5 6; do tap 1140 540 A_center; sleep 5; done; shot A_after_taps
-sleep 20; shot A_final
+for i in 1 2 3 4 5 6; do sleep 10; shot A_boot_$i; done
+# landscape coordinates (1920x1080): OK of the immersive-mode hint, then the screen centre to step the tutorial
+tap 1250 420 A_hint_ok; sleep 3
+for i in $(seq 1 12); do tap 960 540 A_tutorial; sleep 6; shot A_tut_$i; done
 a shell debuggerd -b $(gpid) > $OUT/A_stacks.txt 2>&1
 a shell cat $DATA/log.txt > $OUT/A_trace.txt 2>&1
 stopframes; gamelog A
@@ -59,10 +60,11 @@ log "run B: seeded save (campaign 1 done)"
 a shell am force-stop $PKG; sleep 2
 a shell mkdir -p $DATA; a push $T/seed_save.json $DATA/save.json > $OUT/B_push.txt 2>&1
 U=$(a shell ls -ld /data/data/$PKG | tr -d '\r' | awk '{print $2}'); a shell chown $U:$U $DATA $DATA/save.json >> $OUT/B_push.txt 2>&1; a shell chmod 0660 $DATA/save.json; a shell ls -l $DATA >> $OUT/B_push.txt 2>&1; cat $OUT/B_push.txt
+# test builds only: the in-game driver (src/test/Autotest.cs) fights this many battles from the base on autopilot
+echo 3 > $OUT/autotest.txt; a push $OUT/autotest.txt $DATA/autotest >> $OUT/B_push.txt 2>&1; a shell chown $U:$U $DATA/autotest
 frames b; launch
-for i in 1 2 3 4 5 6 7 8; do sleep 10; shot B_boot_$i; done
-tap 1140 540 B_center; sleep 8; shot B_after_tap
-sleep 15; shot B_final
+sleep 15; shot B_boot; log "back key (Google Play Games sign-in screen)"; a shell input keyevent 4
+for i in $(seq 1 24); do sleep 15; shot B_$i; done
 stopframes; gamelog B
 a shell cat $DATA/save.json > $OUT/B_save.json 2>&1; a shell cat $DATA/log.txt > $OUT/B_trace.txt 2>&1  # log.txt is appended: B continues A
 a logcat -d -b crash > $OUT/crash.txt 2>&1

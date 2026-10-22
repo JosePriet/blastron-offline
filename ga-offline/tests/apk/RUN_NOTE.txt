@@ -5,3 +5,4 @@ run 5: same image; APK adds boot tracing (Trace.cs: Unity log mirrored to logcat
 run 6: emulator limited to GLES 2.0 (-feature -GLESDynamicVersion); native stack dumps (debuggerd -b) of the stalled game; internal files pulled via adb root.
 run 7: Android 4.4 x86 (Dalvik). Run 6 stacks: on ART x86 the UnityMain thread loops in art::FaultManager::HandleFault under mono_runtime_invoke (Mono's null-check SIGSEGV never reaches Mono's handler), original APK too.
 run 8: cards.xml gains command centers 1001/1002 (run 7: CommanderEntity ctor NRE, no cards 1001/1002); screenshots via /data/local/tmp; seed save pushed to the internal persistentDataPath.
+run 9: test build (GA_TEST=1): run A taps through the tutorial; run B fights 3 campaign battles on autopilot from the base via src/test/Autotest.cs.

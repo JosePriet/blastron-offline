@@ -15,6 +15,7 @@ namespace GAOffline
         const int PlayerHealth = 10; // commander health came from the lost Command Center upgrade table
 
         public static Battle Current;
+        public static Battle LastFinished;
 
         static readonly BindingFlags Any = BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public;
         static readonly MethodInfo HandlePhase = typeof(CombatSim).GetMethod("HandlePhase", Any);
@@ -29,6 +30,8 @@ namespace GAOffline
         readonly CombatSimDeck player = new CombatSimDeck();
         readonly CombatSimDeck enemy = new CombatSimDeck();
         bool over, won;
+        public bool Won { get { return won; } }
+        public int Turns { get { return (int)TurnField.GetValue(sim); } }
         Dictionary<string, object> reward;
 
         public static Battle Start(Save s, int campaignId)
@@ -172,6 +175,8 @@ namespace GAOffline
             }
             s.Write();
             Current = null;
+            LastFinished = this;
+            Debug.Log("[GAOffline] battle " + Id + " campaign " + CampaignId + " mission " + MissionId + (won ? " won" : " lost") + " at turn " + Turns);
         }
 
         public Dictionary<string, object> ToJson()

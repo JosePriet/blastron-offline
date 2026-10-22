@@ -32,6 +32,8 @@ namespace GAOffline
             var go = new GameObject("GAOfflineTrace");
             UnityEngine.Object.DontDestroyOnLoad(go);
             go.AddComponent<Beat>();
+            var test = Type.GetType("GAOffline.Autotest"); // only in test builds (build.sh with GA_TEST=1)
+            if (test != null) go.AddComponent(test);
             Write("I", "boot " + Api.Version + ", level " + Application.loadedLevelName + ", data " + Application.persistentDataPath);
         }
 
