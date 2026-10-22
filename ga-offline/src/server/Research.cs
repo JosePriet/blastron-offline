@@ -97,7 +97,10 @@ namespace GAOffline
         public static bool ArmoryOpen(Save s)
         {
             foreach (var kv in Json.O(s.D, "research") ?? new Dictionary<string, object>())
-                if (int.Parse(kv.Key) >= FusionBase && Convert.ToInt32(kv.Value) > 0) return true;
+            {
+                int id;
+                if (int.TryParse(kv.Key, out id) && id >= FusionBase && Convert.ToInt32(kv.Value) > 0) return true;
+            }
             return false;
         }
 
@@ -122,7 +125,6 @@ namespace GAOffline
             var levels = Json.O(s.D, "research");
             if (levels == null) { levels = new Dictionary<string, object>(); s.D["research"] = levels; }
             int id = Json.I(lab, "id");
-            Bank(s);  // the old rate and cap apply up to now
             levels[id.ToString()] = Level(s, id) + 1;
             s.D.Remove("lab");
             s.Write();
@@ -177,7 +179,8 @@ namespace GAOffline
             return g;
         }
 
-        // fold the Credits produced since the last collect into the stored amount, as the client does
+        // fold the Credits produced since the last collect into the stored amount, as the client does: the current
+        // bank cap applies to the whole time since the last collect, also across a Generator upgrade
         static void Bank(Save s)
         {
             var g = Gen(s);
