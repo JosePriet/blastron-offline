@@ -15,9 +15,11 @@ Sources (archived Global Assault wiki, units_wiki.json "obtain" lines, and the a
     takes one unit out of the crate. Only crates whose units all exist in the rebuilt cards are offered; test boxes
     are skipped.
   - "Reward for completing <campaign>" / "Reward from <campaign>" gives the unit for finishing that campaign.
-  - Fusion recipes: the wiki's "Fuse X and Y" lines (fusion_from); a single name means two copies of it. Every recipe
-    takes 30 minutes, the time the 2014 videos show for Hyperion Darius. Recipes whose units are missing from the
-    rebuilt cards are skipped.
+  - Fusion recipes: the wiki's "Fuse X and Y" lines (fusion_from); a single name means two copies of it. Recipes
+    whose units are missing from the rebuilt cards are skipped. A recipe's rank is the wiki's (Armory page): the
+    result's stars plus the number of times it was fused with itself (dual +1, quad +2), at least 2. Fusion time and
+    Armory research Credits and time follow the rank (wiki Armory "Unit Fusion Times" and Research_Lab "Armory
+    Research"); the 2014 videos' 30-minute fusions are all rank 2.
 """
 import json, re, sys
 
@@ -126,7 +128,19 @@ for name, c in crates.items():
         offered.append(c)
 print(f"event crates offered {len(offered)}: " + ", ".join(c["name"] for c in offered))
 print(f"event crates skipped (units missing from the rebuilt cards) {len(skipped)}")
-FUSE_TIME = 1800
+# rank: {fusion seconds, research Credits, research seconds}; rank 8 (Vanguard Quad) is "?" on the wiki
+H, D = 3600, 86400
+RANKS = {2: (30 * 60, 100, H), 3: (H, 250, 12 * H), 4: (3 * H, 500, 2 * D), 5: (12 * H, 1000, 4 * D),
+         6: (18 * H, 1500, 6 * D), 7: (D, 1500, 7 * D)}
+
+
+def self_fusions(name, seen=()):
+    for parts in (units.get(name) or {}).get("fusion_from") or []:
+        if (len(parts) == 1 or parts[0] == parts[1]) and name not in seen:
+            return 1 + self_fusions(parts[0], seen + (name,))
+    return 0
+
+
 fusions, fskipped = [], []
 for name, u in sorted(units.items()):
     for parts in u.get("fusion_from") or []:
@@ -134,7 +148,10 @@ for name, u in sorted(units.items()):
         if name not in card or any(x not in card for x in parts):
             fskipped.append(name)
             continue
-        fusions.append({"id": len(fusions) + 1, "name": name, "card_id": card[name], "time": FUSE_TIME,
+        rank = min(7, max(2, int(u.get("stars") or 1) + self_fusions(name)))
+        fuse, cost, research = RANKS[rank]
+        fusions.append({"id": len(fusions) + 1, "name": name, "card_id": card[name], "rank": rank, "time": fuse,
+                        "research_cost": cost, "research_time": research,
                         "resource": [{"card_id": card[x], "number": 1} for x in parts]})
 print(f"fusion recipes {len(fusions)}, skipped (unit missing from the rebuilt cards) {len(fskipped)}")
 out = {"drops": drops, "event_crates": offered, "campaign_rewards": rewards, "fusion_recipes": fusions}

@@ -7,11 +7,22 @@ namespace GAOffline
     // archived wiki's "Fuse X and Y" lines (tools/rewards_to_json.py). As in the 2014 videos, the parts must be at
     // their maximum level, they are used up when the fusion starts, and the new unit (level 1) arrives when the timer
     // ends. One fusion runs at a time. A recipe must be researched first (Research, user decision 2026-10-22).
+    // Equipment recipes (Equipment) run the same way: their components are items, and they make items.
     public static class Fusion
     {
-        static List<object> Recipes { get { return Json.L(GameData.Rewards, "fusion_recipes"); } }
+        static List<object> recipes;
+        static List<object> Recipes
+        {
+            get
+            {
+                if (recipes != null) return recipes;
+                recipes = new List<object>(Json.L(GameData.Rewards, "fusion_recipes"));
+                recipes.AddRange(Equipment.Recipes());
+                return recipes;
+            }
+        }
 
-        // each recipe is researched in the lab's Armory tab first (Research, id 500 + recipe id)
+        // each recipe is researched in the lab's Armory or Equipment tab first (Research, id 500 + recipe id)
         public static List<object> Served(Save s)
         {
             var list = new List<object>();
@@ -49,6 +60,13 @@ namespace GAOffline
             if (f == null) return Units.Refuse(s, "That fusion is not available.");
             if (Json.O(s.D, "forge") != null) return Units.Refuse(s, "Another fusion is already running.");
             if (Research.Level(s, Research.FusionBase + fusionId) <= 0) return Units.Refuse(s, "Research this fusion first.");
+            if (Json.I(f, "item_id") > 0)
+            {
+                foreach (Dictionary<string, object> r in Json.L(f, "resource"))
+                    if (Equipment.Count(s, Json.I(r, "item_id")) < Json.I(r, "number")) return Units.Refuse(s, "You do not have the components for that.");
+                foreach (Dictionary<string, object> r in Json.L(f, "resource")) Equipment.Add(s, Json.I(r, "item_id"), -Json.I(r, "number"));
+                return Forge(s, f);
+            }
             var need = new List<int>();
             foreach (Dictionary<string, object> r in Json.L(f, "resource"))
                 for (int i = 0; i < Math.Max(1, Json.I(r, "number")); i++) need.Add(Json.I(r, "card_id"));
@@ -66,7 +84,12 @@ namespace GAOffline
             }
             if (need.Count > 0) return Units.Refuse(s, "Those units do not make this fusion.");
             foreach (var u in parts) s.Units.Remove(u);
-            s.D["forge"] = new Dictionary<string, object> { { "id", fusionId }, { "start", Api.Now }, { "end", Api.Now + Json.I(f, "time") } };
+            return Forge(s, f);
+        }
+
+        static Dictionary<string, object> Forge(Save s, Dictionary<string, object> f)
+        {
+            s.D["forge"] = new Dictionary<string, object> { { "id", Json.I(f, "id") }, { "start", Api.Now }, { "end", Api.Now + Json.I(f, "time") } };
             s.Write();
             return Units.Reply(s);
         }
@@ -79,7 +102,8 @@ namespace GAOffline
             var f = Recipe(Json.I(fo, "id"));
             s.D.Remove("forge");
             if (f != null) Objectives.Fused(s, Json.I(f, "id"));
-            var unit = f != null ? s.AddUnit(Json.I(f, "card_id"), 1) : null;
+            if (f != null && Json.I(f, "item_id") > 0) Equipment.Add(s, Json.I(f, "item_id"), Json.I(f, "number", 1));
+            var unit = f != null && Json.I(f, "card_id") > 0 ? s.AddUnit(Json.I(f, "card_id"), 1) : null;
             s.Write();
             var r = Units.Reply(s);
             r["store_items"] = Store.Items(s);

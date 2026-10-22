@@ -81,15 +81,17 @@ namespace GAOffline
             }
             // then the unit systems and the lab, through the client's own managers: upgrade a unit and speed it up, collect
             // the Generator, research Generator 2 and recipe 47, fuse the seeded max-level Cobra (4) and Bazooka Jeep (5)
-            // into an RPG Tank and speed it up, salvage a unit
-            if (step < 11)
+            // into an RPG Tank and speed it up, salvage a unit; then equip the seeded Steelpoint Ammo on squad unit 1 and
+            // build a second one from the seeded Havoc Tech (its research is seeded) and speed it up
+            if (step < 14)
             {
                 var t = Managers.Player.taskData;
                 Debug.Log("[GAOffline] autotest: unit step " + step + ", Credits " + Managers.Player.Gold + "/" + Managers.Player.MaxGold
                           + ", Generator " + Managers.Upgrade.getUpgradeLevel(2) + ", recipe 47 research " + Managers.Upgrade.getUpgradeLevel(547)
                           + ", Scrap " + Managers.Player.SalvagePoints + ", Volt Coins "
                           + Managers.Player.WarBonds + ", upgrading " + (t != null ? t.UnitUpgradeIndex : -1) + ", fusing " + (t != null ? t.ForgeItem : -1)
-                          + ", units " + Managers.Deck.Inventory.Count);
+                          + ", units " + Managers.Deck.Inventory.Count + ", Steelpoint Ammo " + Managers.Inventory.getNumOwned(11)
+                          + ", Havoc Tech " + Managers.Inventory.getNumOwned(1001) + ", unit 1 equipment " + Managers.Deck.getCard(1).EquipmentID);
                 switch (step++)
                 {
                     case 0: Managers.Store.UpgradeCard(1); break;
@@ -102,6 +104,9 @@ namespace GAOffline
                     case 7: Managers.Fusion.startFusion(47, new List<int> { 4, 5 }, 0); break;
                     case 8: Managers.Store.rushForging(); break;
                     case 9: Managers.Store.SalvageCard(6); break;
+                    case 10: Managers.Equipment.equipItem(1, 11); break;
+                    case 11: Managers.Fusion.startFusion(1011, new List<int>(), 0); break;
+                    case 12: Managers.Store.rushForging(); break;
                 }
                 onBaseSince = Time.realtimeSinceStartup;
                 return;
@@ -119,7 +124,8 @@ namespace GAOffline
                             if (a.isComplete()) Managers.Achievement.completeAchievement(a.achievement_id);
                         }
                     Debug.Log("[GAOffline] autotest: done, Credits " + Managers.Player.Gold + ", Volt Coins " + Managers.Player.WarBonds
-                              + ", units " + Managers.Deck.Inventory.Count);
+                              + ", units " + Managers.Deck.Inventory.Count + ", Steelpoint Ammo " + Managers.Inventory.getNumOwned(11)
+                              + ", Havoc Tech " + Managers.Inventory.getNumOwned(1001) + ", unit 1 equipment " + Managers.Deck.getCard(1).EquipmentID);
                     started++;
                 }
                 return;

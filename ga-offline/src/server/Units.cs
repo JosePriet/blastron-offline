@@ -50,6 +50,23 @@ namespace GAOffline
         }
 
         public static int Rarity(int cardId) { return Card(cardId).Rarity; }
+
+        // the client's CardMapper: each upgrade keeps the earlier levels' skills and adds or overrides its own
+        public static bool HasSkill(int cardId, int level, string skill)
+        {
+            foreach (Match m in Regex.Matches(GameData.Resource("cards.xml") ?? "", @"<unit>(.*?)</unit>", RegexOptions.Singleline))
+            {
+                string u = m.Groups[1].Value;
+                if (Num(u, "id", 0) != cardId) continue;
+                foreach (string part in Regex.Split(u, "<upgrade>"))
+                {
+                    int l = Num(part, "level", 1);
+                    if (l <= level && Regex.IsMatch(part, "<skill id=\"" + Regex.Escape(skill) + "\"")) return true;
+                }
+                return false;
+            }
+            return false;
+        }
         public static int MaxLevel(int cardId) { return Card(cardId).MaxLevel; }
 
         static int Step(int[] t, int level) { return t[Math.Max(0, Math.Min(t.Length, level) - 1)]; }
@@ -186,6 +203,7 @@ namespace GAOffline
             r["base_upgrades"] = Research.Served(s);
             r["fusion_recipes"] = Fusion.Served(s);
             r["feature_locks"] = Api.FeatureLocks(s);
+            r["user_inventory"] = Equipment.Inventory(s);
             return r;
         }
 

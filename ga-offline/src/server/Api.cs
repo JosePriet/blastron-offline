@@ -110,6 +110,12 @@ namespace GAOffline
                 case "completeAchievement":
                     r = Objectives.Collect(s, ArgInt(args, "achievement_id"));
                     break;
+                case "equipUnit":
+                    r = Equipment.Equip(s, ArgInt(args, "unit_index"), ArgInt(args, "equipment_id"));
+                    break;
+                case "unequipUnit":
+                    r = Equipment.Unequip(s, ArgInt(args, "unit_index"));
+                    break;
                 case "startCampaign":
                     r = BattleReply(s, Battle.Start(s, ArgInt(args, "campaign_id")));
                     break;
@@ -180,6 +186,8 @@ namespace GAOffline
             r["news"] = new List<object>();
             r["store_items"] = Store.Items(s);
             r["fusion_recipes"] = Fusion.Served(s);
+            r["equipment"] = Equipment.Definitions();
+            r["user_inventory"] = Equipment.Inventory(s);
             r["is_vc_on_sale"] = 0;
             r["feature_locks"] = FeatureLocks(s);
             r["locations"] = GameData.Locations;

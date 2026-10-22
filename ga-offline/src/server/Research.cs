@@ -10,15 +10,15 @@ namespace GAOffline
     // helicarrier ids (3 Repair Bay, 6 Engineering) have no archived table and are not served. Category 1 is the
     // lab's "Helicarrier" tab (game assets: tabs 1 Helicarrier, 2 Armory, 4 Equipment).
     // Armory research (user decision 2026-10-22): each fusion recipe is a one-level project, id 500 + recipe id, in
-    // tab 2, priced by the result unit's rarity with the wiki's Equipment Research tiers (250/300/500/750/1200
-    // Credits, 1 h/6 h/12 h/2 d/4 d). The Armory opens once any of them is done.
+    // tab 2, priced by the recipe's rank with the wiki's Armory Research table (rewards.json research_cost and
+    // research_time). The Armory opens once any of them is done.
+    // Equipment research (user decision 2026-10-22): each equipment recipe likewise, id 500 + recipe id, in tab 4, with
+    // the wiki's Equipment Research Credits and time by the item's stars and its player level requirement.
     public static class Research
     {
         public const int MobileCommand = 1, Generator = 2, SquadBay = 4, Sensors = 5;
-        const int Helicarrier = 1, Armory = 2, GeneratorRate = 20, Triple = 3;
+        const int Helicarrier = 1, Armory = 2, EquipmentTab = 4, GeneratorRate = 20, Triple = 3;
         public const int FusionBase = 500;
-        static readonly int[] TierCost = { 250, 300, 500, 750, 1200 };
-        static readonly int[] TierHours = { 1, 6, 12, 48, 96 };
 
         // {cost, minutes, player level} for levels 2.. (level 1 is free)
         static readonly int[][] McLevels = { new[] { 150, 15, 5 }, new[] { 250, 60, 10 }, new[] { 500, 120, 15 }, new[] { 750, 240, 20 }, new[] { 1000, 480, 25 }, new[] { 1500, 720, 30 } };
@@ -45,13 +45,21 @@ namespace GAOffline
             };
             foreach (Dictionary<string, object> f in Json.L(GameData.Rewards, "fusion_recipes"))
             {
-                int card = Json.I(f, "card_id"), tier = Math.Max(1, Math.Min(TierCost.Length, Units.Rarity(card)));
+                int card = Json.I(f, "card_id");
                 defs.Add(new Dictionary<string, object> {
                     { "id", FusionBase + Json.I(f, "id") }, { "type", Armory }, { "name", Json.S(f, "name") },
                     { "desc", "Research this fusion to build it in the Armory." }, { "order", Json.I(f, "id") }, { "card", card },
                     { "stats", new List<object> { new Dictionary<string, object> {
-                        { "level", 1 }, { "sc_cost", TierCost[tier - 1] }, { "time", TierHours[tier - 1] * 3600 }, { "player_level_req", 0 } } } } });
+                        { "level", 1 }, { "sc_cost", Json.I(f, "research_cost") }, { "time", Json.I(f, "research_time") }, { "player_level_req", 0 } } } } });
             }
+            foreach (Dictionary<string, object> f in Equipment.Recipes())
+                defs.Add(new Dictionary<string, object> {
+                    { "id", FusionBase + Json.I(f, "id") }, { "type", EquipmentTab }, { "name", Json.S(f, "name") },
+                    { "desc", "Research this equipment to build it in the Armory." }, { "order", Json.I(f, "id") },
+                    { "equipment_id", Json.I(f, "item_id") },
+                    { "stats", new List<object> { new Dictionary<string, object> {
+                        { "level", 1 }, { "sc_cost", Json.I(f, "research_cost") }, { "time", Json.I(f, "research_time") },
+                        { "player_level_req", Json.I(f, "level_req") } } } } });
             return defs;
         }
 

@@ -10,6 +10,7 @@ namespace GAOffline
     //   cards.xml      rebuilt unit file (ga-archive/rebuild/gen_cards.py)
     //   tutorial1.xml  archived tutorial script
     //   rewards.json   Supply Drop pool and campaign unit rewards (tools/rewards_to_json.py, from the archived wiki)
+    //   equipment.json equipment, components and their recipes (tools/equipment_to_json.py, from the archived wiki)
     public static class GameData
     {
         static Dictionary<string, object> missions;

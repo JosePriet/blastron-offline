@@ -80,7 +80,7 @@ namespace GAOffline
             squad.Sort((x, y) => Json.I(x, "slot_id").CompareTo(Json.I(y, "slot_id")));
             foreach (var u in squad)
             {
-                var card = Map(uid++, Json.I(u, "unit_id"), Json.I(u, "level", 1));
+                var card = Map(uid++, EquippedCard(u), Json.I(u, "level", 1));
                 if (card == null) continue;
                 // the hand only lets a card be dragged when it carries the player's unit_index (UnitDragController)
                 card.UnitIndex = Json.I(u, "unit_index");
@@ -109,6 +109,39 @@ namespace GAOffline
             b.Run(s);
             Current = b;
             return b;
+        }
+
+        // the card a battle uses for this unit: its own, or a copy with the equipped item's bonuses (Equipment); copies
+        // stay clear of the client's commander ids (1000-1999)
+        const int CardCopyBase = 100000;
+
+        static int EquippedCard(Dictionary<string, object> u)
+        {
+            int cardId = Json.I(u, "unit_id");
+            var e = Equipment.Find(Json.I(u, "equipment_id"));
+            Card card = Managers.Card.GetCardByID(cardId);
+            if (e == null || card == null) return cardId;
+            int copyId = CardCopyBase + Json.I(u, "unit_index");
+            var copy = new Card {
+                ID = copyId, Name = card.Name, Picture = card.Picture, BundleID = card.BundleID, Type = card.Type,
+                MeshName = card.MeshName, Reserve = card.Reserve, Rarity = card.Rarity, Fusion = card.Fusion,
+                CardTypes = card.CardTypes, CardSet = card.CardSet, AttackType = card.AttackType,
+                IsInfantry = card.IsInfantry, IsHero = card.IsHero, maxLevel = card.maxLevel,
+                angle = card.angle, scale = card.scale, stats = new List<CardLevelStats>() };
+            foreach (CardLevelStats l in card.stats)
+            {
+                var c = new CardLevelStats { Level = l.Level, Attack = l.Attack + Json.I(e, "attack"), Health = l.Health + Json.I(e, "health"), Cost = l.Cost };
+                foreach (CardSkill k in l.Skills)
+                {
+                    int bonus = 0;
+                    foreach (Dictionary<string, object> b in Json.L(e, "skill")) if (Json.S(b, "id") == k.SkillID) bonus += Json.I(b, "x");
+                    c.Skills.Add(new CardSkill { SkillID = k.SkillID, X = k.X + bonus, C = k.C, C0 = k.C0, S = k.S });
+                }
+                copy.stats.Add(c);
+            }
+            var dict = (Dictionary<int, Card>)typeof(CardManager).GetField("_CardDict", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(Managers.Card);
+            dict[copyId] = copy;
+            return copyId;
         }
 
         static ServiceCombatCardMapData Map(int uid, int cardId, int level)
@@ -167,6 +200,7 @@ namespace GAOffline
                 Store.AddMoney(s, gold);
                 s.Set("salvage", Math.Min(Api.MaxSalvage, s.Int("salvage") + sp));
                 Api.AddXp(s, XpPerWin);
+                reward["items"] = Equipment.Drop(s);
                 var done = Json.O(s.D, "missions");
                 var md = Json.O(done, MissionId.ToString()) ?? new Dictionary<string, object>();
                 if (Json.I(md, "number") == 0) s.Set("tokens", s.Int("tokens") + VoltFirstWin);
