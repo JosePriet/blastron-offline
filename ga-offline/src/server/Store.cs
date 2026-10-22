@@ -4,8 +4,9 @@ using System.Collections.Generic;
 namespace GAOffline
 {
     // The Credits store and campaign unit rewards (user decision 2026-10-22). One item, the Supply Drop: 100 Credits
-    // (archived wiki, "Credits" page) for one random unit from the units the wiki lists as "Open in Supply Drop",
-    // weighted by stars (our weights; the drop odds were server-side). Finishing a campaign for the first time gives
+    // (archived wiki, "Credits" page) for one random unit from the units the wiki lists as "Open in Supply Drop", plus
+    // the base 4-star units it lists in the Silver/Platinum drops. Odds are a share per star tier, split evenly within
+    // the tier (our shares, 5-star tier 0.75%; the drop odds were server-side; tools/rewards_to_json.py). Finishing a campaign for the first time gives
     // the units the wiki lists as its reward. Finishing the tutorial campaign tops Credits up to one drop, as the
     // tutorial's own line says ("We've given you Credits to buy a Supply Drop").
     public static class Store
