@@ -1,144 +1,186 @@
-16:40:04.905 I boot offline-1, level BootLoader, data /data/data/com.kongregate.mobile.globalassault.google/files
-16:40:04.927 I Log: IAPAmazon OnEnable
-16:40:04.953 I Log: Creating FingerGestures using TouchScreen Gestures
-16:40:04.960 E Error: Cannot change GameObject hierarchy while activating or deactivating the parent.
+17:57:09.386 I boot offline-1, level BootLoader, data /data/data/com.kongregate.mobile.globalassault.google/files
+17:57:09.410 I Log: IAPAmazon OnEnable
+17:57:09.439 I Log: Creating FingerGestures using TouchScreen Gestures
+17:57:09.447 E Error: Cannot change GameObject hierarchy while activating or deactivating the parent.
 
-16:40:04.967 I Log: Unity 4.x, set default AllowImmersiveMode to true
-16:40:04.970 I Log: KongregateAPI: DEBUG: initializating from Unity
-16:40:04.970 I Log: Kongregate Initializing from Unity
-16:40:04.987 I Log: KongregateAPI: DEBUG: initialization from Unity complete
-16:40:04.993 I Log: KongregateAPI: DEBUG: Setting common props callback
-16:40:04.993 I Log: KongregateAPI: DEBUG: using CommonPropsCallback
-16:40:04.996 I Log: KongregateAPI: DEBUG: Analytics update common props: { "player_id" : "","client_version" : 30 }
-16:40:05.030 I Log: BuildInfo
-16:40:05.037 I beat t=1 frame=3 level=BootLoader ready=False not started: AppManager=Uninitialized, ScreenManager=Uninitialized, AudioManager=Uninitialized, SpriteManager=Uninitialized, CombatManager=Uninitialized, MissionManager=Uninitialized, RaidManager=Uninitialized, GuildWarManager=Uninitialized, ChatManager=Uninitialized, ExperimentManager=Uninitialized, PlayerManager=Uninitialized, CardManager=Uninitialized, FusionManager=Uninitialized, EquipmentManager=Uninitialized, InventoryManager=Uninitialized, AchievementManager=Uninitialized, StoreManager=Uninitialized, StatsManager=Uninitialized, UpgradeManager=Uninitialized, EntityManager=Uninitialized, AuthenticationManager=Uninitialized, DeckManager=Uninitialized, RewardManager=Uninitialized, LoggingManager=Uninitialized, AnalyticsManager=Uninitialized, InitializationManager=Uninitialized, NewsManager=Uninitialized, EffectsManager=Uninitialized, IAPDroidManager=Uninitialized, TutorialManager=Uninitialized, GuildManager=Uninitialized, CinematicManager=Uninitialized, EventTimelineManager=Uninitialized, LeagueManager=Uninitialized, FactionManager=Uninitialized, EndlessDungeonManager=Uninitialized, AssetBundleManager=Uninitialized, WWWManager=Uninitialized, TimeManager=Uninitialized, DataManager=Uninitialized, PopupManager=Uninitialized
-16:40:05.749 I Log: Kongregate API is ready
-16:40:05.823 I Log: EVENT GAME AUTH: user 0 is a guest
-16:40:05.825 I Log: game auth has changed to:Guest_Game_Auth_Token
-16:40:05.893 I Log: Kongregate Service Unavailable
-16:40:05.944 I Log: server api: https://havoc.synapse-games.com/api.php?message=getUserAccount&user_id=
-16:40:05.987 I [GAOffline] getUserAccount -> 595 bytes
-16:40:06.059 I Log: version retrieved: offline-1
-16:40:06.081 I Log: user data updated
-16:40:06.089 I Log: user account received result: True
-16:40:06.096 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-16:40:06.110 I [GAOffline] unhandled message recordEvent, answering result:true
-16:40:06.111 I [GAOffline] recordEvent -> 55 bytes
-16:40:06.113 I Log: KongregateAPI: DEBUG: Adding event to collection: installs
-16:40:06.114 I Log: KongregateAPI: DEBUG: Analytics add event json=installs map={ "stub_field" : 0 }
-16:40:06.120 I Log: KongregateAPI: DEBUG: using CommonPropsCallback
-16:40:06.120 I Log: KongregateAPI: DEBUG: including common props: { "player_id" : "1","client_version" : 30 }
-16:40:06.125 I Log: Sent event installs with 1 params
-16:40:06.235 I Log: server api: https://havoc.synapse-games.com/api.php?message=init&user_id=1
-16:40:06.358 I [GAOffline] init -> 4340 bytes
-16:40:06.370 I [GAOffline] assets/tutorial1.xml served locally
-16:40:06.386 I [GAOffline] assets/cards.xml served locally
-16:40:06.459 I Log: init responsed with: {"result":true,"time":1792687206,"version":"offline-1","user_data":{"user_id":"1","name":"Commander","install_date":"2026-10-22 16:40:05","flags":{"music":1,"sound":1,"tutorial":0,"autopilot":0,"speed":1},"last_update_time":1792687206,"tokens":0,"money":0,"money_cap":999999,"energy":100,"energy_recharge_time":60,"stamina":10,"max_stamina":10,"stamina_recharge_time":300,"last_stam_update_time":1792687206,"salvage":0,"active_deck":1,"level":1,"xp":0,"base_xp":0,"next_xp":100,"caps":{"max_salvage":9999,"max_cards":500},"has_kong_id":0},"user_units":[{"unit_index":1,"unit_id":2,"level":1,"sp":0,"deck_id":1,"slot_id":0},{"unit_index":2,"unit_id":502,"level":1,"sp":0,"deck_id":1,"slot_id":1},{"unit_index":3,"unit_id":10,"level":1,"sp":0,"deck_id":1,"slot_id":2}],"user_decks":[{"deck_id":1,"name":"Squad 1","commander_item_id":0,"power_level":"1","units":[{"unit_index":1,"unit_id":2,"level":1,"sp":0,"deck_id":1,"slot_id":0},{"unit_index":2,"unit_id":502,"level":1,"sp":0,"deck_id":1,"slot_id":1},{"unit_index":3,"unit_id":10,"level":1,"sp":0,"deck_id":1,"slot_id":2}],"squad_damage":0,"max_damage":100,"repair_speed":60,"retreat_damage":0,"repair_start_time":0,"repair_end_time":0}],"user_tasks":{},"user_items":{},"mission_completions":{},"max_energy":100,"max_stamina":10,"base_upgrades":[],"upgrades_data":[],"news":[],"user_achievements":[],"store_items":[{"id":1,"item_type":1,"card":0,"sc_cost":100,"hc_cost":0,"name":"Supply Drop","desc":"One random unit.","model":"prefab_bronze_crate","priority":1}],"is_vc_on_sale":0,"feature_locks":{"lab":0,"command_room":0,"armory":0,"pvp":0,"pvp_league":0,"auto_research_duals_quads":0,"skip":0},"locations":[{"id":1,"name":"Alaska","map":"snowforest_dawn"},{"id":2,"name":"Northwest Territory","map":"snowforest_dawn"},{"id":3,"name":"Nunavut","map":"snowforest_dawn"},{"id":4,"name":"Greenland","map":"snowforest_dawn"},{"id":5,"name":"Alberta","map":"snowforest_dawn"},{"id":6,"name":"Ontario","map":"snowforest_dawn"},{"id":7,"name":"Eastern Canada","map":"snowforest_dawn"},{"id":8,"name":"Western United States","map":"jungle_sunset"},{"id":9,"name":"Eastern United States","map":"beach_sunny"},{"id":10,"name":"Central America","map":"jungle_fire_2"},{"id":11,"name":"Venezuela","map":"beach_sunny"},{"id":12,"name":"Peru","map":"beach_sunny"},{"id":13,"name":"Brazil","map":"jungle_sunset"},{"id":14,"name":"Argentina","map":"city_sunny"},{"id":15,"name":"Iceland","map":"helicarrier_map"},{"id":16,"name":"Scandinavia","map":"snowforest_dawn"},{"id":17,"name":"Russia","map":"snowforest_dawn"},{"id":18,"name":"Ural","map":"snowforest_dawn"},{"id":19,"name":"Siberia","map":"snowforest_dawn"},{"id":20,"name":"Yakutsk","map":"snowforest_dawn"},{"id":21,"name":"Kamchatka","map":"snowforest_dawn"},{"id":22,"name":"Great Britain","map":"beach_sunny"},{"id":23,"name":"Western Europe","map":"beach_sunny"},{"id":24,"name":"Northern Europe","map":"beach_sunny"},{"id":25,"name":"Southern Europe","map":"beach_sunny"},{"id":26,"name":"Middle East","map":"city_sunny"},{"id":27,"name":"Afghanistan","map":"helicarrier_map"},{"id":28,"name":"China","map":"city_sunny"},{"id":29,"name":"Mongolia","map":"jungle_sunset"},{"id":30,"name":"Irkutsk","map":"snowforest_dawn"},{"id":31,"name":"Japan","map":"beach_sunny"},{"id":32,"name":"North Africa","map":"city_sunny"},{"id":33,"name":"Egypt","map":"city_sunny"},{"id":34,"name":"East Africa","map":"helicarrier_map"},{"id":35,"name":"Congo","map":"jungle_sunset"},{"id":36,"name":"South Africa","map":"beach_sunny"},{"id":37,"name":"Madagascar","map":"beach_sunny"},{"id":38,"name":"India","map":"jungle_sunset"},{"id":39,"name":"Siam","map":"jungle_sunset"},{"id":40,"name":"Indonesia","map":"jungle_sunset"},{"id":41,"name":"New Guinea","map":"beach_sunny"},{"id":42,"name":"New Zealand","map":"jungle_fire_2"},{"id":43,"name":"Western Australia","map":"beach_sunny"},{"id":44,"name":"Eastern Australia","map":"beach_sunny"}],"current_campaigns":[{"id":1,"campaign_name":"It Begins","name":"It Begins 1","desc":"A warlord is attempting to overthrow the local democratic government. Put the rebellion down.","location":14,"level":0,"progress":0,"max_progress":3,"mission_type":0,"speech":{"line":[{"commander":"elia","text":"Commander, we're responding to a rebel threat in Argentina."}]},"speech_map":{"line":[]}}],"client_version":0}
-16:40:06.470 I Log: user data updated
-16:40:06.488 I Log: version retrieved: offline-1
-16:40:06.489 I Log: user data updated
-16:40:06.497 I Log: version retrieved: offline-1
-16:40:06.498 I Log: New Session event
-16:40:06.498 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-16:40:06.504 I [GAOffline] unhandled message recordEvent, answering result:true
-16:40:06.504 I [GAOffline] recordEvent -> 55 bytes
-16:40:06.507 I Log: Loading XML tutorialdata took 0.21788 seconds
-16:40:06.509 I Log: Loading XML cardsdata took 0.21788 seconds
-16:40:06.631 I Log: card data starting to load...
-16:40:07.462 I Log: cards loaded
-16:40:07.759 I Log: user data updated
-16:40:07.763 I Log: Google IAB starting...
-16:40:07.765 I Log: Google IAB started
-16:40:07.768 I Log: tutorial data starting to load...
-16:40:07.770 I Log: billingNotSupportedEvent: Billing service unavailable on device. (response: 3:Billing Unavailable)
-16:40:07.884 I Log: tutorials loaded
-16:40:07.922 I Log: server api: https://havoc.synapse-games.com/api.php?message=startCampaign&user_id=1
-16:40:07.937 I Log: Draw card=1
-16:40:07.937 I Log: Draw card=2
-16:40:07.938 I Log: Draw card=3
-16:40:07.940 I Log: Play card=1 pos=1
-16:40:07.942 I Log: Action card=1 skill=blitz value=1 target=System.Collections.Generic.List`1[System.Int32]
-16:40:07.943 I Log: ***FIELD: -1-
-16:40:07.947 I Log: Action card=1 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
-16:40:07.947 I Log: Draw card=4
-16:40:07.948 I Log: Draw card=5
-16:40:07.948 I Log: Draw card=6
-16:40:07.956 I [GAOffline] startCampaign -> 2763 bytes
-16:40:07.962 I Log: current level: BootLoader, loading level: Combat
-16:40:07.962 I Log: waiting for screen load...
-16:40:07.963 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-16:40:07.968 I [GAOffline] unhandled message recordEvent, answering result:true
-16:40:07.968 I [GAOffline] recordEvent -> 55 bytes
-16:40:08.021 W Warning: parsing combat data: {"battle_id":1792687207,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792687207,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":10,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
-16:40:08.024 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-16:40:08.030 I Log: user data updated
-16:40:08.030 I Log: version retrieved: offline-1
-16:40:08.030 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-16:40:08.030 I Log: user data updated
-16:40:08.030 W Warning: parsing combat data: {"battle_id":1792687207,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792687207,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":10,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
-16:40:08.033 I Log: mission started: True
-16:40:08.033 I Log: user data updated
-16:40:10.037 I beat t=6 frame=65 level=BootLoader ready=True not started: 
-16:40:10.037 I Log: current level: BootLoader, loading level: Combat
-16:40:10.262 I Log: Fading music out
-16:40:10.543 I Log: Using location=city_sunny bundle = 2
-16:40:10.580 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-16:40:10.584 I Log: on start combat...
-16:40:10.587 W Warning: CommanderEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CommanderEntity.
-16:40:10.651 I (previous message repeated 1 more times)
-16:40:10.651 I Log: tutorial event received: [TutorialFlaqReq: ID=inCombat, Key=, Value=1, Popup=]
-16:40:10.652 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-16:40:10.653 I Log: on update combat: [ServiceCombatData: BattleID=1792687207, HostID=1, HostIsAttacker=False, AttackCommanderID=0, AttackDeck=System.Collections.Generic.List`1[ServiceCombatCardMapData], DefendCommanderID=0, EnemySize=3, MissionID=1, Turns=System.Collections.Generic.List`1[ServiceCombatTurnData], CardMap=System.Collections.Generic.List`1[ServiceCombatCardMapData], EndTime=, IsWinner=False, IsLoser=False, InLiveBattle=False, MissionExists=True]
-16:40:10.980 I Log: tutorial screen loaded. refreshing UI for tutorial 5, step 1
-16:40:10.984 I Log: tutorial event received: [TutorialFlaqReq: ID=screen, Key=, Value=Combat, Popup=]
-16:40:10.984 I Log: Loading screen CombatScreen took 0.2611527 seconds
-16:40:15.059 I beat t=11 frame=123 level=CombatScreen ready=True not started: 
-16:40:20.069 I beat t=16 frame=190 level=CombatScreen ready=True not started: 
-16:40:25.075 I beat t=21 frame=256 level=CombatScreen ready=True not started: 
-16:40:30.107 I beat t=26 frame=328 level=CombatScreen ready=True not started: 
-16:40:35.134 I beat t=31 frame=397 level=CombatScreen ready=True not started: 
-16:40:40.168 I beat t=36 frame=467 level=CombatScreen ready=True not started: 
-16:40:45.225 I beat t=41 frame=537 level=CombatScreen ready=True not started: 
-16:40:50.232 I beat t=46 frame=609 level=CombatScreen ready=True not started: 
-16:40:55.264 I beat t=51 frame=678 level=CombatScreen ready=True not started: 
-16:41:00.266 I beat t=56 frame=747 level=CombatScreen ready=True not started: 
-16:41:05.271 I beat t=61 frame=816 level=CombatScreen ready=True not started: 
-16:41:10.331 I beat t=66 frame=888 level=CombatScreen ready=True not started: 
-16:41:15.354 I beat t=71 frame=957 level=CombatScreen ready=True not started: 
-16:41:20.374 I beat t=76 frame=1026 level=CombatScreen ready=True not started: 
-16:41:25.397 I beat t=81 frame=1098 level=CombatScreen ready=True not started: 
-16:41:30.400 I beat t=86 frame=1166 level=CombatScreen ready=True not started: 
-16:41:35.469 I beat t=91 frame=1236 level=CombatScreen ready=True not started: 
-16:41:40.513 I beat t=96 frame=1306 level=CombatScreen ready=True not started: 
-16:41:45.527 I beat t=101 frame=1376 level=CombatScreen ready=True not started: 
-16:41:50.603 I beat t=106 frame=1447 level=CombatScreen ready=True not started: 
-16:41:55.642 I beat t=111 frame=1515 level=CombatScreen ready=True not started: 
-16:42:00.687 I beat t=117 frame=1585 level=CombatScreen ready=True not started: 
-16:42:05.709 I beat t=122 frame=1654 level=CombatScreen ready=True not started: 
-16:42:10.784 I beat t=127 frame=1727 level=CombatScreen ready=True not started: 
-16:42:15.858 I beat t=132 frame=1791 level=CombatScreen ready=True not started: 
-16:42:20.862 I beat t=137 frame=1861 level=CombatScreen ready=True not started: 
-16:42:25.886 I beat t=142 frame=1930 level=CombatScreen ready=True not started: 
-16:42:30.900 I beat t=147 frame=2002 level=CombatScreen ready=True not started: 
-16:42:35.946 I beat t=152 frame=2068 level=CombatScreen ready=True not started: 
-16:42:41.006 I beat t=157 frame=2140 level=CombatScreen ready=True not started: 
-16:42:46.039 I beat t=162 frame=2209 level=CombatScreen ready=True not started: 
-16:42:51.079 I beat t=167 frame=2281 level=CombatScreen ready=True not started: 
-16:42:56.153 I beat t=172 frame=2348 level=CombatScreen ready=True not started: 
-16:43:01.161 I beat t=177 frame=2418 level=CombatScreen ready=True not started: 
-16:43:06.212 I beat t=182 frame=2489 level=CombatScreen ready=True not started: 
-16:43:11.238 I beat t=187 frame=2558 level=CombatScreen ready=True not started: 
-16:43:16.240 I beat t=192 frame=2627 level=CombatScreen ready=True not started: 
-16:43:21.300 I beat t=197 frame=2694 level=CombatScreen ready=True not started: 
-16:43:26.309 I beat t=202 frame=2765 level=CombatScreen ready=True not started: 
-16:43:31.375 I beat t=207 frame=2834 level=CombatScreen ready=True not started: 
-16:43:36.439 I beat t=212 frame=2904 level=CombatScreen ready=True not started: 
-16:43:41.481 I beat t=217 frame=2972 level=CombatScreen ready=True not started: 
-16:43:46.532 I beat t=222 frame=3043 level=CombatScreen ready=True not started: 
-16:43:51.569 I beat t=227 frame=3111 level=CombatScreen ready=True not started: 
-16:43:56.600 I beat t=232 frame=3180 level=CombatScreen ready=True not started: 
-16:44:01.613 I beat t=237 frame=3248 level=CombatScreen ready=True not started: 
-16:44:06.623 I beat t=242 frame=3318 level=CombatScreen ready=True not started: 
-16:44:11.687 I beat t=248 frame=3388 level=CombatScreen ready=True not started: 
-16:44:16.750 I beat t=253 frame=3457 level=CombatScreen ready=True not started: 
-16:44:21.823 I beat t=258 frame=3527 level=CombatScreen ready=True not started: 
+17:57:09.454 I Log: Unity 4.x, set default AllowImmersiveMode to true
+17:57:09.457 I Log: KongregateAPI: DEBUG: initializating from Unity
+17:57:09.457 I Log: Kongregate Initializing from Unity
+17:57:09.473 I Log: KongregateAPI: DEBUG: initialization from Unity complete
+17:57:09.479 I Log: KongregateAPI: DEBUG: Setting common props callback
+17:57:09.480 I Log: KongregateAPI: DEBUG: using CommonPropsCallback
+17:57:09.483 I Log: KongregateAPI: DEBUG: Analytics update common props: { "player_id" : "","client_version" : 30 }
+17:57:09.517 I Log: BuildInfo
+17:57:09.526 I beat t=1 frame=3 level=BootLoader ready=False not started: AppManager=Uninitialized, ScreenManager=Uninitialized, AudioManager=Uninitialized, SpriteManager=Uninitialized, CombatManager=Uninitialized, MissionManager=Uninitialized, RaidManager=Uninitialized, GuildWarManager=Uninitialized, ChatManager=Uninitialized, ExperimentManager=Uninitialized, PlayerManager=Uninitialized, CardManager=Uninitialized, FusionManager=Uninitialized, EquipmentManager=Uninitialized, InventoryManager=Uninitialized, AchievementManager=Uninitialized, StoreManager=Uninitialized, StatsManager=Uninitialized, UpgradeManager=Uninitialized, EntityManager=Uninitialized, AuthenticationManager=Uninitialized, DeckManager=Uninitialized, RewardManager=Uninitialized, LoggingManager=Uninitialized, AnalyticsManager=Uninitialized, InitializationManager=Uninitialized, NewsManager=Uninitialized, EffectsManager=Uninitialized, IAPDroidManager=Uninitialized, TutorialManager=Uninitialized, GuildManager=Uninitialized, CinematicManager=Uninitialized, EventTimelineManager=Uninitialized, LeagueManager=Uninitialized, FactionManager=Uninitialized, EndlessDungeonManager=Uninitialized, AssetBundleManager=Uninitialized, WWWManager=Uninitialized, TimeManager=Uninitialized, DataManager=Uninitialized, PopupManager=Uninitialized
+17:57:10.051 I Log: Kongregate API is ready
+17:57:10.055 I Log: EVENT GAME AUTH: user 0 is a guest
+17:57:10.055 I Log: game auth has changed to:Guest_Game_Auth_Token
+17:57:10.237 I Log: server api: https://havoc.synapse-games.com/api.php?message=getUserAccount&user_id=
+17:57:10.274 I [GAOffline] getUserAccount -> 595 bytes
+17:57:10.277 I Log: Kongregate Service Unavailable
+17:57:10.314 I Log: version retrieved: offline-1
+17:57:10.333 I Log: user data updated
+17:57:10.339 I Log: user account received result: True
+17:57:10.342 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+17:57:10.345 I [GAOffline] unhandled message recordEvent, answering result:true
+17:57:10.345 I [GAOffline] recordEvent -> 55 bytes
+17:57:10.346 I Log: KongregateAPI: DEBUG: Adding event to collection: installs
+17:57:10.346 I Log: KongregateAPI: DEBUG: Analytics add event json=installs map={ "stub_field" : 0 }
+17:57:10.346 I Log: KongregateAPI: DEBUG: using CommonPropsCallback
+17:57:10.346 I Log: KongregateAPI: DEBUG: including common props: { "player_id" : "1","client_version" : 30 }
+17:57:10.348 I Log: Sent event installs with 1 params
+17:57:10.417 I Log: server api: https://havoc.synapse-games.com/api.php?message=init&user_id=1
+17:57:10.471 I [GAOffline] init -> 4340 bytes
+17:57:10.473 I [GAOffline] assets/tutorial1.xml served locally
+17:57:10.479 I [GAOffline] assets/cards.xml served locally
+17:57:10.520 I Log: init responsed with: {"result":true,"time":1792691830,"version":"offline-1","user_data":{"user_id":"1","name":"Commander","install_date":"2026-10-22 17:57:10","flags":{"music":1,"sound":1,"tutorial":0,"autopilot":0,"speed":1},"last_update_time":1792691830,"tokens":0,"money":0,"money_cap":999999,"energy":100,"energy_recharge_time":60,"stamina":10,"max_stamina":10,"stamina_recharge_time":300,"last_stam_update_time":1792691830,"salvage":0,"active_deck":1,"level":1,"xp":0,"base_xp":0,"next_xp":100,"caps":{"max_salvage":9999,"max_cards":500},"has_kong_id":0},"user_units":[{"unit_index":1,"unit_id":2,"level":1,"sp":0,"deck_id":1,"slot_id":0},{"unit_index":2,"unit_id":502,"level":1,"sp":0,"deck_id":1,"slot_id":1},{"unit_index":3,"unit_id":10,"level":1,"sp":0,"deck_id":1,"slot_id":2}],"user_decks":[{"deck_id":1,"name":"Squad 1","commander_item_id":0,"power_level":"1","units":[{"unit_index":1,"unit_id":2,"level":1,"sp":0,"deck_id":1,"slot_id":0},{"unit_index":2,"unit_id":502,"level":1,"sp":0,"deck_id":1,"slot_id":1},{"unit_index":3,"unit_id":10,"level":1,"sp":0,"deck_id":1,"slot_id":2}],"squad_damage":0,"max_damage":100,"repair_speed":60,"retreat_damage":0,"repair_start_time":0,"repair_end_time":0}],"user_tasks":{},"user_items":{},"mission_completions":{},"max_energy":100,"max_stamina":10,"base_upgrades":[],"upgrades_data":[],"news":[],"user_achievements":[],"store_items":[{"id":1,"item_type":1,"card":0,"sc_cost":100,"hc_cost":0,"name":"Supply Drop","desc":"One random unit.","model":"prefab_bronze_crate","priority":1}],"is_vc_on_sale":0,"feature_locks":{"lab":0,"command_room":0,"armory":0,"pvp":0,"pvp_league":0,"auto_research_duals_quads":0,"skip":0},"locations":[{"id":1,"name":"Alaska","map":"snowforest_dawn"},{"id":2,"name":"Northwest Territory","map":"snowforest_dawn"},{"id":3,"name":"Nunavut","map":"snowforest_dawn"},{"id":4,"name":"Greenland","map":"snowforest_dawn"},{"id":5,"name":"Alberta","map":"snowforest_dawn"},{"id":6,"name":"Ontario","map":"snowforest_dawn"},{"id":7,"name":"Eastern Canada","map":"snowforest_dawn"},{"id":8,"name":"Western United States","map":"jungle_sunset"},{"id":9,"name":"Eastern United States","map":"beach_sunny"},{"id":10,"name":"Central America","map":"jungle_fire_2"},{"id":11,"name":"Venezuela","map":"beach_sunny"},{"id":12,"name":"Peru","map":"beach_sunny"},{"id":13,"name":"Brazil","map":"jungle_sunset"},{"id":14,"name":"Argentina","map":"city_sunny"},{"id":15,"name":"Iceland","map":"helicarrier_map"},{"id":16,"name":"Scandinavia","map":"snowforest_dawn"},{"id":17,"name":"Russia","map":"snowforest_dawn"},{"id":18,"name":"Ural","map":"snowforest_dawn"},{"id":19,"name":"Siberia","map":"snowforest_dawn"},{"id":20,"name":"Yakutsk","map":"snowforest_dawn"},{"id":21,"name":"Kamchatka","map":"snowforest_dawn"},{"id":22,"name":"Great Britain","map":"beach_sunny"},{"id":23,"name":"Western Europe","map":"beach_sunny"},{"id":24,"name":"Northern Europe","map":"beach_sunny"},{"id":25,"name":"Southern Europe","map":"beach_sunny"},{"id":26,"name":"Middle East","map":"city_sunny"},{"id":27,"name":"Afghanistan","map":"helicarrier_map"},{"id":28,"name":"China","map":"city_sunny"},{"id":29,"name":"Mongolia","map":"jungle_sunset"},{"id":30,"name":"Irkutsk","map":"snowforest_dawn"},{"id":31,"name":"Japan","map":"beach_sunny"},{"id":32,"name":"North Africa","map":"city_sunny"},{"id":33,"name":"Egypt","map":"city_sunny"},{"id":34,"name":"East Africa","map":"helicarrier_map"},{"id":35,"name":"Congo","map":"jungle_sunset"},{"id":36,"name":"South Africa","map":"beach_sunny"},{"id":37,"name":"Madagascar","map":"beach_sunny"},{"id":38,"name":"India","map":"jungle_sunset"},{"id":39,"name":"Siam","map":"jungle_sunset"},{"id":40,"name":"Indonesia","map":"jungle_sunset"},{"id":41,"name":"New Guinea","map":"beach_sunny"},{"id":42,"name":"New Zealand","map":"jungle_fire_2"},{"id":43,"name":"Western Australia","map":"beach_sunny"},{"id":44,"name":"Eastern Australia","map":"beach_sunny"}],"current_campaigns":[{"id":1,"campaign_name":"It Begins","name":"It Begins 1","desc":"A warlord is attempting to overthrow the local democratic government. Put the rebellion down.","location":14,"level":0,"progress":0,"max_progress":3,"mission_type":0,"speech":{"line":[{"commander":"elia","text":"Commander, we're responding to a rebel threat in Argentina."}]},"speech_map":{"line":[]}}],"client_version":0}
+17:57:10.525 I Log: user data updated
+17:57:10.532 I Log: version retrieved: offline-1
+17:57:10.533 I Log: user data updated
+17:57:10.537 I Log: version retrieved: offline-1
+17:57:10.538 I Log: New Session event
+17:57:10.539 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+17:57:10.541 I [GAOffline] unhandled message recordEvent, answering result:true
+17:57:10.543 I [GAOffline] recordEvent -> 55 bytes
+17:57:10.550 I Log: Loading XML tutorialdata took 0.1040803 seconds
+17:57:10.551 I Log: Loading XML cardsdata took 0.1040803 seconds
+17:57:10.636 I Log: card data starting to load...
+17:57:11.308 I Log: cards loaded
+17:57:11.578 I Log: user data updated
+17:57:11.581 I Log: Google IAB starting...
+17:57:11.583 I Log: Google IAB started
+17:57:11.584 I Log: tutorial data starting to load...
+17:57:11.586 I Log: billingNotSupportedEvent: Billing service unavailable on device. (response: 3:Billing Unavailable)
+17:57:11.676 I Log: tutorials loaded
+17:57:11.725 I Log: server api: https://havoc.synapse-games.com/api.php?message=startCampaign&user_id=1
+17:57:11.757 I Log: Draw card=1
+17:57:11.757 I Log: Draw card=2
+17:57:11.757 I Log: Draw card=3
+17:57:11.761 I Log: Play card=1 pos=1
+17:57:11.762 I Log: Action card=1 skill=blitz value=1 target=System.Collections.Generic.List`1[System.Int32]
+17:57:11.763 I Log: ***FIELD: -1-
+17:57:11.766 I Log: Action card=1 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
+17:57:11.766 I Log: Draw card=4
+17:57:11.766 I Log: Draw card=5
+17:57:11.766 I Log: Draw card=6
+17:57:11.770 I [GAOffline] startCampaign -> 2763 bytes
+17:57:11.772 I Log: current level: BootLoader, loading level: Combat
+17:57:11.772 I Log: waiting for screen load...
+17:57:11.774 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+17:57:11.778 I [GAOffline] unhandled message recordEvent, answering result:true
+17:57:11.778 I [GAOffline] recordEvent -> 55 bytes
+17:57:11.819 W Warning: parsing combat data: {"battle_id":1792691831,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792691831,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":10,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
+17:57:11.821 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+17:57:11.840 I Log: user data updated
+17:57:11.841 I Log: version retrieved: offline-1
+17:57:11.841 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+17:57:11.841 I Log: user data updated
+17:57:11.841 W Warning: parsing combat data: {"battle_id":1792691831,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792691831,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":10,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
+17:57:11.842 I Log: mission started: True
+17:57:11.843 I Log: user data updated
+17:57:13.825 I Log: current level: BootLoader, loading level: Combat
+17:57:14.042 I Log: Fading music out
+17:57:14.323 I Log: Using location=city_sunny bundle = 2
+17:57:14.357 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+17:57:14.363 I Log: on start combat...
+17:57:14.367 W Warning: CommanderEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CommanderEntity.
+17:57:14.437 I (previous message repeated 1 more times)
+17:57:14.437 I Log: tutorial event received: [TutorialFlaqReq: ID=inCombat, Key=, Value=1, Popup=]
+17:57:14.437 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+17:57:14.438 I Log: on update combat: [ServiceCombatData: BattleID=1792691831, HostID=1, HostIsAttacker=False, AttackCommanderID=0, AttackDeck=System.Collections.Generic.List`1[ServiceCombatCardMapData], DefendCommanderID=0, EnemySize=3, MissionID=1, Turns=System.Collections.Generic.List`1[ServiceCombatTurnData], CardMap=System.Collections.Generic.List`1[ServiceCombatCardMapData], EndTime=, IsWinner=False, IsLoser=False, InLiveBattle=False, MissionExists=True]
+17:57:14.760 I beat t=6 frame=68 level=CombatScreen ready=True not started: 
+17:57:14.763 I Log: tutorial screen loaded. refreshing UI for tutorial 5, step 1
+17:57:14.768 I Log: tutorial event received: [TutorialFlaqReq: ID=screen, Key=, Value=Combat, Popup=]
+17:57:14.768 I Log: Loading screen CombatScreen took 0.2533534 seconds
+17:57:19.776 I beat t=11 frame=146 level=CombatScreen ready=True not started: 
+17:57:24.782 I beat t=16 frame=222 level=CombatScreen ready=True not started: 
+17:57:29.789 I beat t=21 frame=292 level=CombatScreen ready=True not started: 
+17:57:34.824 I beat t=26 frame=369 level=CombatScreen ready=True not started: 
+17:57:39.835 I beat t=31 frame=443 level=CombatScreen ready=True not started: 
+17:57:44.866 I beat t=36 frame=517 level=CombatScreen ready=True not started: 
+17:57:49.913 I beat t=41 frame=592 level=CombatScreen ready=True not started: 
+17:57:54.934 I beat t=46 frame=668 level=CombatScreen ready=True not started: 
+17:57:59.949 I beat t=51 frame=741 level=CombatScreen ready=True not started: 
+17:58:04.997 I beat t=56 frame=818 level=CombatScreen ready=True not started: 
+17:58:09.998 I beat t=61 frame=892 level=CombatScreen ready=True not started: 
+17:58:15.051 I beat t=66 frame=970 level=CombatScreen ready=True not started: 
+17:58:20.114 I beat t=71 frame=1049 level=CombatScreen ready=True not started: 
+17:58:25.162 I beat t=76 frame=1122 level=CombatScreen ready=True not started: 
+17:58:30.168 I beat t=81 frame=1200 level=CombatScreen ready=True not started: 
+17:58:35.176 I beat t=86 frame=1272 level=CombatScreen ready=True not started: 
+17:58:38.046 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
+17:58:38.107 I Log: Doing phase=Play turn=1
+17:58:38.108 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+17:58:38.109 I Log: Doing phase=End turn=1
+17:58:38.110 I Log: phase end...turn:1
+17:58:38.111 I Log: Doing phase=Play turn=2
+17:58:38.111 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+17:58:38.112 I Log: Doing phase=End turn=2
+17:58:38.112 I Log: phase end...turn:2
+17:58:38.876 I Log: Doing phase=Draw turn=3
+17:58:38.879 I Log: Doing phase=Play turn=3
+17:58:38.880 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+17:58:38.881 W Warning: CombatEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CombatEntity.
+17:58:38.921 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
+17:58:38.921 I Log: tutorial event received: [TutorialFlaqReq: ID=playedSkill, Key=, Value=blitz, Popup=]
+17:58:39.651 I Log: Doing phase=Action turn=3
+17:58:39.652 I Log: handle card skill: [ServiceCombatActionData: CardUID=1, SkillID=blitz, Targets=1, Value=1, Block=, Status=]
+17:58:39.654 W Warning: unknown skill: blitz
+17:58:39.655 I Log: skill blitz with actor: 1 and value: 1
+17:58:39.655 I Log: handle card skill: [ServiceCombatActionData: CardUID=1, SkillID=0, Targets=-2, Value=2, Block=, Status=]
+17:58:39.655 I Log: skill  with actor: 1 and value: 2
+17:58:40.319 I beat t=91 frame=1355 level=CombatScreen ready=True not started: 
+17:58:40.446 I Log: Doing phase=Action turn=3
+17:58:40.446 I Log: Doing phase=End turn=3
+17:58:40.447 I Log: phase end...turn:3
+17:58:41.249 I Log: Doing phase=Draw turn=4
+17:58:41.249 I Log: Doing phase=Play turn=4
+17:58:41.302 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=1, Popup=]
+17:58:41.303 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+17:58:41.303 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+17:58:41.307 I [GAOffline] unhandled message recordEvent, answering result:true
+17:58:41.308 I [GAOffline] recordEvent -> 55 bytes
+17:58:45.370 I beat t=96 frame=1423 level=CombatScreen ready=True not started: 
+17:58:48.838 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
+17:58:48.838 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+17:58:48.839 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+17:58:48.842 I [GAOffline] unhandled message recordEvent, answering result:true
+17:58:48.842 I [GAOffline] recordEvent -> 55 bytes
+17:58:50.404 I beat t=102 frame=1490 level=CombatScreen ready=True not started: 
+17:58:55.424 I beat t=107 frame=1572 level=CombatScreen ready=True not started: 
+17:59:00.510 I beat t=112 frame=1649 level=CombatScreen ready=True not started: 
+17:59:05.517 I beat t=117 frame=1728 level=CombatScreen ready=True not started: 
+17:59:10.526 I beat t=122 frame=1809 level=CombatScreen ready=True not started: 
+17:59:15.554 I beat t=127 frame=1886 level=CombatScreen ready=True not started: 
+17:59:20.594 I beat t=132 frame=1969 level=CombatScreen ready=True not started: 
+17:59:25.597 I beat t=137 frame=2045 level=CombatScreen ready=True not started: 
+17:59:30.613 I beat t=142 frame=2128 level=CombatScreen ready=True not started: 
+17:59:35.632 I beat t=147 frame=2210 level=CombatScreen ready=True not started: 
+17:59:40.672 I beat t=152 frame=2287 level=CombatScreen ready=True not started: 
+17:59:45.702 I beat t=157 frame=2370 level=CombatScreen ready=True not started: 
+17:59:50.738 I beat t=162 frame=2446 level=CombatScreen ready=True not started: 
+17:59:55.766 I beat t=167 frame=2529 level=CombatScreen ready=True not started: 
+18:00:00.818 I beat t=172 frame=2613 level=CombatScreen ready=True not started: 
+18:00:05.837 I beat t=177 frame=2690 level=CombatScreen ready=True not started: 
+18:00:10.851 I beat t=182 frame=2773 level=CombatScreen ready=True not started: 
+18:00:15.902 I beat t=187 frame=2848 level=CombatScreen ready=True not started: 
+18:00:20.926 I beat t=192 frame=2929 level=CombatScreen ready=True not started: 
+18:00:25.972 I beat t=197 frame=3012 level=CombatScreen ready=True not started: 
+18:00:31.009 I beat t=202 frame=3089 level=CombatScreen ready=True not started: 
+18:00:36.032 I beat t=207 frame=3171 level=CombatScreen ready=True not started: 
+18:00:41.053 I beat t=212 frame=3247 level=CombatScreen ready=True not started: 
+18:00:46.062 I beat t=217 frame=3328 level=CombatScreen ready=True not started: 
+18:00:51.118 I beat t=222 frame=3409 level=CombatScreen ready=True not started: 
+18:00:56.167 I beat t=227 frame=3487 level=CombatScreen ready=True not started: 
+18:01:01.189 I beat t=232 frame=3570 level=CombatScreen ready=True not started: 
+18:01:06.200 I beat t=237 frame=3645 level=CombatScreen ready=True not started: 
+18:01:11.244 I beat t=242 frame=3726 level=CombatScreen ready=True not started: 
+18:01:16.290 I beat t=247 frame=3810 level=CombatScreen ready=True not started: 
+18:01:21.347 I beat t=252 frame=3887 level=CombatScreen ready=True not started: 
+18:01:26.382 I beat t=258 frame=3971 level=CombatScreen ready=True not started: 
+18:01:31.393 I beat t=263 frame=4047 level=CombatScreen ready=True not started: 
+18:01:36.433 I beat t=268 frame=4129 level=CombatScreen ready=True not started: 
+18:01:41.442 I beat t=273 frame=4212 level=CombatScreen ready=True not started: 
+18:01:46.483 I beat t=278 frame=4290 level=CombatScreen ready=True not started: 
+18:01:51.533 I beat t=283 frame=4372 level=CombatScreen ready=True not started: 
+18:01:56.538 I beat t=288 frame=4447 level=CombatScreen ready=True not started: 

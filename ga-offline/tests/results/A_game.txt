@@ -1,585 +1,1076 @@
-10-22 16:40:02.012 I/ActivityManager( 1585): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity} from pid 3550
-10-22 16:40:02.042 I/ActivityManager( 1585): Start proc com.kongregate.mobile.globalassault.google for activity com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity: pid=3562 uid=10058 gids={50058, 3003, 1028, 1015}
-10-22 16:40:05.402 E/ActivityThread( 3562): Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
-10-22 16:43:01.142 I/GAOffline( 3562): beat t=177 frame=2418 level=CombatScreen ready=True not started: 
-10-22 16:43:05.402 I/SwrveSDK( 3562): Sending queued events
-10-22 16:43:05.402 I/SwrveSDK( 3562): Sending 9 events to Swrve
-10-22 16:43:05.612 D/KONG    ( 3562): Sending SWRVE event: swrve.heartbeat : {}
-10-22 16:43:05.612 I/SwrveSDK( 3562): Not showing message for Kongregate.heartbeat: No campaigns available
-10-22 16:43:05.612 D/KONG    ( 3562): upload events
-10-22 16:43:05.652 I/SwrveSDK( 3562): event event queued
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562): Response code was NOT 200. It was: 404
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562): Response body was: {"message": "Resource not found.", "error_code": "ResourceNotFoundError"}
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562): Uploaded events: {
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):   "session_starts" : [ {
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "kong_username" : "Guest",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "idfv" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "client_os_version" : "4.4.2",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_server_version" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "num_sessions" : 1,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "filter_type" : "jailbroken,not_kong_signed",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "google_play_services_id" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_play_time" : "2026-10-22T16:40:05.233+0000",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "android_id" : "fef3e3a5c5bba653",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "carrier" : "Android",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_sdk_version" : "1.2.1.1",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "usd_spent_on_kreds" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "pkg_src" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "data_connection_type" : "mobile LTE",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "site_visitor_id" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_play_time_offset" : 0.0,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "imei" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "sdk_version" : "1.2.1.1",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "ad_tracking" : true,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "google_ad_id" : "2c58a487-50d0-46bf-9737-79ec42ec09da",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "gamecenter_id" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "ip_address" : "10.0.2.15",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "time_skew" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "external_ip_address" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "kong_user_id" : 0,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "event_time" : "2026-10-22T16:40:05.608+0000",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "client_os_type" : "android",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "player_id" : "",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "lang_code" : "en",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "idfa" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "session_id" : "550174dd-c5ee-4ce6-9153-5fddad1391f9",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "device_type" : "Android SDK built for x86",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "kong_plus" : false,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "device_event_id" : "399f3dd1-e961-438d-980e-9f10eff0b390",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "is_from_background" : true,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "dev_client_version" : "101",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "google_play_services_alias" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "country_code" : "US",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "gamecenter_alias" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "days_retained" : 0,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "mac_address" : "52:54:00:12:34:56",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "event_time_offset" : 0.0,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_client_version" : "1.30.1",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "num_purchases" : 0,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "pur_tier" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "keen" : {
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):       "timestamp" : "2026-10-22T16:40:05.624+0000"
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     },
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "client_version" : "1.30.1"
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):   } ],
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):   "invalid_states" : [ {
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "kong_username" : "Guest",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "idfv" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "client_os_version" : "4.4.2",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "reason" : "jailbroken",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_server_version" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "num_sessions" : 0,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "filter_type" : "jailbroken",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "google_play_services_id" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_play_time" : "2026-10-22T16:40:05.233+0000",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "android_id" : "fef3e3a5c5bba653",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "carrier" : "Android",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_sdk_version" : "1.2.1.1",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "usd_spent_on_kreds" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "pkg_src" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "data_connection_type" : "mobile LTE",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "site_visitor_id" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_play_time_offset" : 0.0,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "imei" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "sdk_version" : "1.2.1.1",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "ad_tracking" : true,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "google_ad_id" : "2c58a487-50d0-46bf-9737-79ec42ec09da",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "gamecenter_id" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "ip_address" : "10.0.2.15",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "time_skew" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "external_ip_address" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "kong_user_id" : 0,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "event_time" : "2026-10-22T16:40:05.430+0000",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "client_os_type" : "android",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "player_id" : "",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "lang_code" : "en",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "idfa" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "session_id" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "device_type" : "Android SDK built for x86",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "kong_plus" : false,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "device_event_id" : "1eb1c700-055e-4bbe-9cbf-7d27b81d6b27",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "dev_client_version" : "101",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "google_play_services_alias" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "country_code" : "US",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "gamecenter_alias" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "days_retained" : 0,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "mac_address" : "52:54:00:12:34:56",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "event_time_offset" : 0.0,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_client_version" : "1.30.1",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "num_purchases" : 0,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "pur_tier" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "keen" : {
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):       "timestamp" : "2026-10-22T16:40:05.440+0000"
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     },
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "client_version" : "1.30.1"
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):   } ],
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):   "installs" : [ {
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "kong_username" : "Guest",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "idfv" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "client_os_version" : "4.4.2",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_server_version" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "stub_field" : 0,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "num_sessions" : 1,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "filter_type" : "jailbroken,not_kong_signed",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "google_play_services_id" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_play_time" : "2026-10-22T16:40:05.233+0000",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "android_id" : "fef3e3a5c5bba653",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "carrier" : "Android",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_sdk_version" : "1.2.1.1",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "usd_spent_on_kreds" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "pkg_src" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "data_connection_type" : "mobile LTE",
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "site_visitor_id" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "first_play_time_offset" : 0.0,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "imei" : null,
-10-22 16:43:05.672 D/KEEN_CLIENT( 3562):     "sdk_version" 
-10-22 16:43:05.672 D/dalvikvm( 3562): GC_CONCURRENT freed 1059K, 17% free 6904K/8256K, paused 1ms+0ms, total 6ms
-10-22 16:43:06.202 I/GAOffline( 3562): beat t=182 frame=2489 level=CombatScreen ready=True not started: 
-10-22 16:43:08.512 W/System.err( 3562): java.net.ConnectException: failed to connect to 1567.api.swrve.com/2600:9000:201e:0:11:1825:d7c0:93a1 (port 443) after 15000ms: isConnected failed: ENETUNREACH (Network is unreachable)
-10-22 16:43:08.512 W/System.err( 3562): 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
-10-22 16:43:08.512 W/System.err( 3562): 	at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
-10-22 16:43:08.512 W/System.err( 3562): 	at libcore.io.IoBridge.connect(IoBridge.java:112)
-10-22 16:43:08.512 W/System.err( 3562): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
-10-22 16:43:08.512 W/System.err( 3562): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
-10-22 16:43:08.512 W/System.err( 3562): 	at java.net.Socket.connect(Socket.java:843)
-10-22 16:43:08.512 W/System.err( 3562): 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:131)
-10-22 16:43:08.512 W/System.err( 3562): 	at com.android.okhttp.Connection.connect(Connection.java:101)
-10-22 16:43:08.512 W/System.err( 3562): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
-10-22 16:43:08.512 W/System.err( 3562): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
-10-22 16:43:08.512 W/System.err( 3562): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
-10-22 16:43:08.512 W/System.err( 3562): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
-10-22 16:43:08.512 W/System.err( 3562): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:89)
-10-22 16:43:08.512 W/System.err( 3562): 	at com.android.okhttp.internal.http.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:161)
-10-22 16:43:08.512 W/System.err( 3562): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:147)
-10-22 16:43:08.512 W/System.err( 3562): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:119)
-10-22 16:43:08.512 W/System.err( 3562): 	at com.swrve.sdk.SwrveImp.postBatchRequest(SwrveImp.java:443)
-10-22 16:43:08.512 W/System.err( 3562): 	at com.swrve.sdk.SwrveBase$5.run(SwrveBase.java:438)
-10-22 16:43:08.512 W/System.err( 3562): 	at com.swrve.sdk.SwrveRunnables$1.run(SwrveRunnables.java:18)
-10-22 16:43:08.512 W/System.err( 3562): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
-10-22 16:43:08.512 W/System.err( 3562): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
-10-22 16:43:08.512 W/System.err( 3562): 	at java.lang.Thread.run(Thread.java:841)
-10-22 16:43:08.512 W/System.err( 3562): Caused by: libcore.io.ErrnoException: isConnected failed: ENETUNREACH (Network is unreachable)
-10-22 16:43:08.512 W/System.err( 3562): 	at libcore.io.IoBridge.isConnected(IoBridge.java:208)
-10-22 16:43:08.512 W/System.err( 3562): 	... 21 more
-10-22 16:43:08.512 E/SwrveSDK( 3562): Batch of events could not be sent, retrying
-10-22 16:43:11.222 I/GAOffline( 3562): beat t=187 frame=2558 level=CombatScreen ready=True not started: 
-10-22 16:43:16.222 I/GAOffline( 3562): beat t=192 frame=2627 level=CombatScreen ready=True not started: 
-10-22 16:43:21.282 I/GAOffline( 3562): beat t=197 frame=2694 level=CombatScreen ready=True not started: 
-10-22 16:43:26.302 I/GAOffline( 3562): beat t=202 frame=2765 level=CombatScreen ready=True not started: 
-10-22 16:43:31.362 I/GAOffline( 3562): beat t=207 frame=2834 level=CombatScreen ready=True not started: 
-10-22 16:43:36.432 I/GAOffline( 3562): beat t=212 frame=2904 level=CombatScreen ready=True not started: 
-10-22 16:43:41.472 I/GAOffline( 3562): beat t=217 frame=2972 level=CombatScreen ready=True not started: 
-10-22 16:43:46.512 I/GAOffline( 3562): beat t=222 frame=3043 level=CombatScreen ready=True not started: 
-10-22 16:43:51.562 I/GAOffline( 3562): beat t=227 frame=3111 level=CombatScreen ready=True not started: 
-10-22 16:43:56.582 I/GAOffline( 3562): beat t=232 frame=3180 level=CombatScreen ready=True not started: 
-10-22 16:44:01.612 I/GAOffline( 3562): beat t=237 frame=3248 level=CombatScreen ready=True not started: 
-10-22 16:44:05.402 I/SwrveSDK( 3562): Sending queued events
-10-22 16:44:05.402 I/SwrveSDK( 3562): Sending 10 events to Swrve
-10-22 16:44:05.622 D/KONG    ( 3562): Sending SWRVE event: swrve.heartbeat : {}
-10-22 16:44:05.622 I/SwrveSDK( 3562): Not showing message for Kongregate.heartbeat: No campaigns available
-10-22 16:44:05.622 D/KONG    ( 3562): upload events
-10-22 16:44:05.632 I/SwrveSDK( 3562): event event queued
-10-22 16:44:05.662 D/KEEN_CLIENT( 3562): Response code was NOT 200. It was: 404
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562): Response body was: {"message": "Resource not found.", "error_code": "ResourceNotFoundError"}
-10-22 16:44:05.672 I/System.out( 3562):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
-10-22 16:44:05.672 I/System.out( 3562):     "device_event_id" : "404f3b97-668a-4ca2-8631-ab75f812fcf9",
-10-22 16:44:05.672 I/System.out( 3562):     "dev_client_version" : "101",
-10-22 16:44:05.672 I/System.out( 3562):     "google_play_services_alias" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "country_code" : "US",
-10-22 16:44:05.672 I/System.out( 3562):     "gamecenter_alias" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "days_retained" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "mac_address" : "52:54:00:12:34:56",
-10-22 16:44:05.672 I/System.out( 3562):     "event_time_offset" : 0.0,
-10-22 16:44:05.672 I/System.out( 3562):     "first_client_version" : "1.30.1",
-10-22 16:44:05.672 I/System.out( 3562):     "num_purchases" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "pur_tier" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "keen" : {
-10-22 16:44:05.672 I/System.out( 3562):       "timestamp" : "2026-10-22T16:40:06.141+0000"
-10-22 16:44:05.672 I/System.out( 3562):     },
-10-22 16:44:05.672 I/System.out( 3562):     "client_version" : "1.30.1"
-10-22 16:44:05.672 I/System.out( 3562):   } ]
-10-22 16:44:05.672 I/System.out( 3562): }
-10-22 16:44:05.672 I/System.out( 3562): Oct 22, 2026 4:43:05 PM io.keen.client.android.KeenLogging log
-10-22 16:44:05.672 I/System.out( 3562): FINER: Response code was NOT 200. It was: 404
-10-22 16:44:05.672 I/System.out( 3562): Oct 22, 2026 4:43:05 PM io.keen.client.android.KeenLogging log
-10-22 16:44:05.672 I/System.out( 3562): FINER: Response body was: {"message": "Resource not found.", "error_code": "ResourceNotFoundError"}
-10-22 16:44:05.672 I/System.out( 3562): Oct 22, 2026 4:43:05 PM io.keen.client.android.KeenLogging log
-10-22 16:44:05.672 I/System.out( 3562): FINER: Uploaded events: {
-10-22 16:44:05.672 I/System.out( 3562):   "session_starts" : [ {
-10-22 16:44:05.672 I/System.out( 3562):     "kong_username" : "Guest",
-10-22 16:44:05.672 I/System.out( 3562):     "idfv" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "client_os_version" : "4.4.2",
-10-22 16:44:05.672 I/System.out( 3562):     "first_server_version" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "num_sessions" : 1,
-10-22 16:44:05.672 I/System.out( 3562):     "filter_type" : "jailbroken,not_kong_signed",
-10-22 16:44:05.672 I/System.out( 3562):     "google_play_services_id" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "first_play_time" : "2026-10-22T16:40:05.233+0000",
-10-22 16:44:05.672 I/System.out( 3562):     "android_id" : "fef3e3a5c5bba653",
-10-22 16:44:05.672 I/System.out( 3562):     "carrier" : "Android",
-10-22 16:44:05.672 I/System.out( 3562):     "first_sdk_version" : "1.2.1.1",
-10-22 16:44:05.672 I/System.out( 3562):     "usd_spent_on_kreds" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "pkg_src" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "data_connection_type" : "mobile LTE",
-10-22 16:44:05.672 I/System.out( 3562):     "site_visitor_id" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "first_play_time_offset" : 0.0,
-10-22 16:44:05.672 I/System.out( 3562):     "imei" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "sdk_version" : "1.2.1.1",
-10-22 16:44:05.672 I/System.out( 3562):     "ad_tracking" : true,
-10-22 16:44:05.672 I/System.out( 3562):     "google_ad_id" : "2c58a487-50d0-46bf-9737-79ec42ec09da",
-10-22 16:44:05.672 I/System.out( 3562):     "gamecenter_id" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "ip_address" : "10.0.2.15",
-10-22 16:44:05.672 I/System.out( 3562):     "time_skew" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "external_ip_address" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "kong_user_id" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "event_time" : "2026-10-22T16:40:05.608+0000",
-10-22 16:44:05.672 I/System.out( 3562):     "client_os_type" : "android",
-10-22 16:44:05.672 I/System.out( 3562):     "player_id" : "",
-10-22 16:44:05.672 I/System.out( 3562):     "lang_code" : "en",
-10-22 16:44:05.672 I/System.out( 3562):     "idfa" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "session_id" : "550174dd-c5ee-4ce6-9153-5fddad1391f9",
-10-22 16:44:05.672 I/System.out( 3562):     "device_type" : "Android SDK built for x86",
-10-22 16:44:05.672 I/System.out( 3562):     "kong_plus" : false,
-10-22 16:44:05.672 I/System.out( 3562):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
-10-22 16:44:05.672 I/System.out( 3562):     "device_event_id" : "399f3dd1-e961-438d-980e-9f10eff0b390",
-10-22 16:44:05.672 I/System.out( 3562):     "is_from_background" : true,
-10-22 16:44:05.672 I/System.out( 3562):     "dev_client_version" : "101",
-10-22 16:44:05.672 I/System.out( 3562):     "google_play_services_alias" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "country_code" : "US",
-10-22 16:44:05.672 I/System.out( 3562):     "gamecenter_alias" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "days_retained" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "mac_address" : "52:54:00:12:34:56",
-10-22 16:44:05.672 I/System.out( 3562):     "event_time_offset" : 0.0,
-10-22 16:44:05.672 I/System.out( 3562):     "first_client_version" : "1.30.1",
-10-22 16:44:05.672 I/System.out( 3562):     "num_purchases" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "pur_tier" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "keen" : {
-10-22 16:44:05.672 I/System.out( 3562):       "timestamp" : "2026-10-22T16:40:05.624+0000"
-10-22 16:44:05.672 I/System.out( 3562):     },
-10-22 16:44:05.672 I/System.out( 3562):     "client_version" : "1.30.1"
-10-22 16:44:05.672 I/System.out( 3562):   } ],
-10-22 16:44:05.672 I/System.out( 3562):   "invalid_states" : [ {
-10-22 16:44:05.672 I/System.out( 3562):     "kong_username" : "Guest",
-10-22 16:44:05.672 I/System.out( 3562):     "idfv" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "client_os_version" : "4.4.2",
-10-22 16:44:05.672 I/System.out( 3562):     "reason" : "jailbroken",
-10-22 16:44:05.672 I/System.out( 3562):     "first_server_version" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "num_sessions" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "filter_type" : "jailbroken",
-10-22 16:44:05.672 I/System.out( 3562):     "google_play_services_id" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "first_play_time" : "2026-10-22T16:40:05.233+0000",
-10-22 16:44:05.672 I/System.out( 3562):     "android_id" : "fef3e3a5c5bba653",
-10-22 16:44:05.672 I/System.out( 3562):     "carrier" : "Android",
-10-22 16:44:05.672 I/System.out( 3562):     "first_sdk_version" : "1.2.1.1",
-10-22 16:44:05.672 I/System.out( 3562):     "usd_spent_on_kreds" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "pkg_src" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "data_connection_type" : "mobile LTE",
-10-22 16:44:05.672 I/System.out( 3562):     "site_visitor_id" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "first_play_time_offset" : 0.0,
-10-22 16:44:05.672 I/System.out( 3562):     "imei" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "sdk_version" : "1.2.1.1",
-10-22 16:44:05.672 I/System.out( 3562):     "ad_tracking" : true,
-10-22 16:44:05.672 I/System.out( 3562):     "google_ad_id" : "2c58a487-50d0-46bf-9737-79ec42ec09da",
-10-22 16:44:05.672 I/System.out( 3562):     "gamecenter_id" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "ip_address" : "10.0.2.15",
-10-22 16:44:05.672 I/System.out( 3562):     "time_skew" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "external_ip_address" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "kong_user_id" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "event_time" : "2026-10-22T16:40:05.430+0000",
-10-22 16:44:05.672 I/System.out( 3562):     "client_os_type" : "android",
-10-22 16:44:05.672 I/System.out( 3562):     "player_id" : "",
-10-22 16:44:05.672 I/System.out( 3562):     "lang_code" : "en",
-10-22 16:44:05.672 I/System.out( 3562):     "idfa" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "session_id" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "device_type" : "Android SDK built for x86",
-10-22 16:44:05.672 I/System.out( 3562):     "kong_plus" : false,
-10-22 16:44:05.672 I/System.out( 3562):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
-10-22 16:44:05.672 I/System.out( 3562):     "device_event_id" : "1eb1c700-055e-4bbe-9cbf-7d27b81d6b27",
-10-22 16:44:05.672 I/System.out( 3562):     "dev_client_version" : "101",
-10-22 16:44:05.672 I/System.out( 3562):     "google_play_services_alias" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "country_code" : "US",
-10-22 16:44:05.672 I/System.out( 3562):     "gamecenter_alias" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "days_retained" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "mac_address" : "52:54:00:12:34:56",
-10-22 16:44:05.672 I/System.out( 3562):     "event_time_offset" : 0.0,
-10-22 16:44:05.672 I/System.out( 3562):     "first_client_version" : "1.30.1",
-10-22 16:44:05.672 I/System.out( 3562):     "num_purchases" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "pur_tier" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "keen" : {
-10-22 16:44:05.672 I/System.out( 3562):       "timestamp" : "2026-10-22T16:40:05.440+0000"
-10-22 16:44:05.672 I/System.out( 3562):     },
-10-22 16:44:05.672 I/System.out( 3562):     "client_version" : "1.30.1"
-10-22 16:44:05.672 I/System.out( 3562):   } ],
-10-22 16:44:05.672 I/System.out( 3562):   "installs" : [ {
-10-22 16:44:05.672 I/System.out( 3562):     "kong_username" : "Guest",
-10-22 16:44:05.672 I/System.out( 3562):     "idfv" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "client_os_version" : "4.4.2",
-10-22 16:44:05.672 I/System.out( 3562):     "first_server_version" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "stub_field" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "num_sessions" : 1,
-10-22 16:44:05.672 I/System.out( 3562):     "filter_type" : "jailbroken,not_kong_signed",
-10-22 16:44:05.672 I/System.out( 3562):     "google_play_services_id" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "first_play_time" : "2026-10-22T16:40:05.233+0000",
-10-22 16:44:05.672 I/System.out( 3562):     "android_id" : "fef3e3a5c5bba653",
-10-22 16:44:05.672 I/System.out( 3562):     "carrier" : "Android",
-10-22 16:44:05.672 I/System.out( 3562):     "first_sdk_version" : "1.2.1.1",
-10-22 16:44:05.672 I/System.out( 3562):     "usd_spent_on_kreds" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "pkg_src" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "data_connection_type" : "mobile LTE",
-10-22 16:44:05.672 I/System.out( 3562):     "site_visitor_id" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "first_play_time_offset" : 0.0,
-10-22 16:44:05.672 I/System.out( 3562):     "imei" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "sdk_version" : "1.2.1.1",
-10-22 16:44:05.672 I/System.out( 3562):     "ad_tracking" : true,
-10-22 16:44:05.672 I/System.out( 3562):     "google_ad_id" : "2c58a487-50d0-46bf-9737-79ec42ec09da",
-10-22 16:44:05.672 I/System.out( 3562):     "gamecenter_id" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "ip_address" : "10.0.2.15",
-10-22 16:44:05.672 I/System.out( 3562):     "time_skew" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "external_ip_address" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "kong_user_id" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "event_time" : "2026-10-22T16:40:06.125+0000",
-10-22 16:44:05.672 I/System.out( 3562):     "client_os_type" : "android",
-10-22 16:44:05.672 I/System.out( 3562):     "player_id" : "1",
-10-22 16:44:05.672 I/System.out( 3562):     "lang_code" : "en",
-10-22 16:44:05.672 I/System.out( 3562):     "idfa" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "session_id" : "550174dd-c5ee-4ce6-9153-5fddad1391f9",
-10-22 16:44:05.672 I/System.out( 3562):     "device_type" : "Android SDK built for x86",
-10-22 16:44:05.672 I/System.out( 3562):     "kong_plus" : false,
-10-22 16:44:05.672 I/System.out( 3562):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
-10-22 16:44:05.672 I/System.out( 3562):     "device_event_id" : "404f3b97-668a-4ca2-8631-ab75f812fcf9",
-10-22 16:44:05.672 I/System.out( 3562):     "dev_client_version" : "101",
-10-22 16:44:05.672 I/System.out( 3562):     "google_play_services_alias" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "country_code" : "US",
-10-22 16:44:05.672 I/System.out( 3562):     "gamecenter_alias" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "days_retained" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "mac_address" : "52:54:00:12:34:56",
-10-22 16:44:05.672 I/System.out( 3562):     "event_time_offset" : 0.0,
-10-22 16:44:05.672 I/System.out( 3562):     "first_client_version" : "1.30.1",
-10-22 16:44:05.672 I/System.out( 3562):     "num_purchases" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "pur_tier" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "keen" : {
-10-22 16:44:05.672 I/System.out( 3562):       "timestamp" : "2026-10-22T16:40:06.141+0000"
-10-22 16:44:05.672 I/System.out( 3562):     },
-10-22 16:44:05.672 I/System.out( 3562):     "client_version" : "1.30.1"
-10-22 16:44:05.672 I/System.out( 3562):   } ]
-10-22 16:44:05.672 I/System.out( 3562): }
-10-22 16:44:05.672 I/System.out( 3562): Oct 22, 2026 4:44:05 PM io.keen.client.android.KeenLogging log
-10-22 16:44:05.672 I/System.out( 3562): FINER: Response code was NOT 200. It was: 404
-10-22 16:44:05.672 I/System.out( 3562): Oct 22, 2026 4:44:05 PM io.keen.client.android.KeenLogging log
-10-22 16:44:05.672 I/System.out( 3562): FINER: Response body was: {"message": "Resource not found.", "error_code": "ResourceNotFoundError"}
-10-22 16:44:05.672 I/System.out( 3562): Oct 22, 2026 4:44:05 PM io.keen.client.android.KeenLogging log
-10-22 16:44:05.672 I/System.out( 3562): FINER: Uploaded events: {
-10-22 16:44:05.672 I/System.out( 3562):   "session_starts" : [ {
-10-22 16:44:05.672 I/System.out( 3562):     "kong_username" : "Guest",
-10-22 16:44:05.672 I/System.out( 3562):     "idfv" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "client_os_version" : "4.4.2",
-10-22 16:44:05.672 I/System.out( 3562):     "first_server_version" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "num_sessions" : 1,
-10-22 16:44:05.672 I/System.out( 3562):     "filter_type" : "jailbroken,not_kong_signed",
-10-22 16:44:05.672 I/System.out( 3562):     "google_play_services_id" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "first_play_time" : "2026-10-22T16:40:05.233+0000",
-10-22 16:44:05.672 I/System.out( 3562):     "android_id" : "fef3e3a5c5bba653",
-10-22 16:44:05.672 I/System.out( 3562):     "carrier" : "Android",
-10-22 16:44:05.672 I/System.out( 3562):     "first_sdk_version" : "1.2.1.1",
-10-22 16:44:05.672 I/System.out( 3562):     "usd_spent_on_kreds" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "pkg_src" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "data_connection_type" : "mobile LTE",
-10-22 16:44:05.672 I/System.out( 3562):     "site_visitor_id" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "first_play_time_offset" : 0.0,
-10-22 16:44:05.672 I/System.out( 3562):     "imei" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "sdk_version" : "1.2.1.1",
-10-22 16:44:05.672 I/System.out( 3562):     "ad_tracking" : true,
-10-22 16:44:05.672 I/System.out( 3562):     "google_ad_id" : "2c58a487-50d0-46bf-9737-79ec42ec09da",
-10-22 16:44:05.672 I/System.out( 3562):     "gamecenter_id" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "ip_address" : "10.0.2.15",
-10-22 16:44:05.672 I/System.out( 3562):     "time_skew" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "external_ip_address" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "kong_user_id" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "event_time" : "2026-10-22T16:40:05.608+0000",
-10-22 16:44:05.672 I/System.out( 3562):     "client_os_type" : "android",
-10-22 16:44:05.672 I/System.out( 3562):     "player_id" : "",
-10-22 16:44:05.672 I/System.out( 3562):     "lang_code" : "en",
-10-22 16:44:05.672 I/System.out( 3562):     "idfa" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "session_id" : "550174dd-c5ee-4ce6-9153-5fddad1391f9",
-10-22 16:44:05.672 I/System.out( 3562):     "device_type" : "Android SDK built for x86",
-10-22 16:44:05.672 I/System.out( 3562):     "kong_plus" : false,
-10-22 16:44:05.672 I/System.out( 3562):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
-10-22 16:44:05.672 I/System.out( 3562):     "device_event_id" : "399f3dd1-e961-438d-980e-9f10eff0b390",
-10-22 16:44:05.672 I/System.out( 3562):     "is_from_background" : true,
-10-22 16:44:05.672 I/System.out( 3562):     "dev_client_version" : "101",
-10-22 16:44:05.672 I/System.out( 3562):     "google_play_services_alias" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "country_code" : "US",
-10-22 16:44:05.672 I/System.out( 3562):     "gamecenter_alias" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "days_retained" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "mac_address" : "52:54:00:12:34:56",
-10-22 16:44:05.672 I/System.out( 3562):     "event_time_offset" : 0.0,
-10-22 16:44:05.672 I/System.out( 3562):     "first_client_version" : "1.30.1",
-10-22 16:44:05.672 I/System.out( 3562):     "num_purchases" : 0,
-10-22 16:44:05.672 I/System.out( 3562):     "pur_tier" : null,
-10-22 16:44:05.672 I/System.out( 3562):     "keen" : {
-10-22 16:44:05.672 I/System.out( 3562):       "timestamp" : "2026-10-22T16:40:05.624+0000"
-10-22 16:44:05.672 I/System.out( 3562):     },
-10-22 16:44:05.672 I/System.out( 3562):     "client_version" : "1.30.1"
-10-22 16:44:05.672 I/System.out( 3562):   } ],
-10-22 16:44:05.672 I/System.out( 3562):   "invalid_states" : [ {
-10-22 16:44:05.672 I/System.out( 3562):     "kong_username" : "Guest",
-10-22 16:44:05.672 I/System.out( 3562):     "idfv" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562): Uploaded events: {
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):   "session_starts" : [ {
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "kong_username" : "Guest",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "idfv" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "client_os_version" : "4.4.2",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_server_version" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "num_sessions" : 1,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "filter_type" : "jailbroken,not_kong_signed",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "google_play_services_id" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_play_time" : "2026-10-22T16:40:05.233+0000",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "android_id" : "fef3e3a5c5bba653",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "carrier" : "Android",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_sdk_version" : "1.2.1.1",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "usd_spent_on_kreds" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "pkg_src" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "data_connection_type" : "mobile LTE",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "site_visitor_id" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_play_time_offset" : 0.0,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "imei" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "sdk_version" : "1.2.1.1",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "ad_tracking" : true,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "google_ad_id" : "2c58a487-50d0-46bf-9737-79ec42ec09da",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "gamecenter_id" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "ip_address" : "10.0.2.15",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "time_skew" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "external_ip_address" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "kong_user_id" : 0,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "event_time" : "2026-10-22T16:40:05.608+0000",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "client_os_type" : "android",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "player_id" : "",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "lang_code" : "en",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "idfa" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "session_id" : "550174dd-c5ee-4ce6-9153-5fddad1391f9",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "device_type" : "Android SDK built for x86",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "kong_plus" : false,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "device_event_id" : "399f3dd1-e961-438d-980e-9f10eff0b390",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "is_from_background" : true,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "dev_client_version" : "101",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "google_play_services_alias" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "country_code" : "US",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "gamecenter_alias" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "days_retained" : 0,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "mac_address" : "52:54:00:12:34:56",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "event_time_offset" : 0.0,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_client_version" : "1.30.1",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "num_purchases" : 0,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "pur_tier" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "keen" : {
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):       "timestamp" : "2026-10-22T16:40:05.624+0000"
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     },
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "client_version" : "1.30.1"
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):   } ],
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):   "invalid_states" : [ {
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "kong_username" : "Guest",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "idfv" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "client_os_version" : "4.4.2",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "reason" : "jailbroken",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_server_version" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "num_sessions" : 0,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "filter_type" : "jailbroken",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "google_play_services_id" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_play_time" : "2026-10-22T16:40:05.233+0000",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "android_id" : "fef3e3a5c5bba653",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "carrier" : "Android",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_sdk_version" : "1.2.1.1",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "usd_spent_on_kreds" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "pkg_src" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "data_connection_type" : "mobile LTE",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "site_visitor_id" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_play_time_offset" : 0.0,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "imei" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "sdk_version" : "1.2.1.1",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "ad_tracking" : true,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "google_ad_id" : "2c58a487-50d0-46bf-9737-79ec42ec09da",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "gamecenter_id" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "ip_address" : "10.0.2.15",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "time_skew" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "external_ip_address" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "kong_user_id" : 0,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "event_time" : "2026-10-22T16:40:05.430+0000",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "client_os_type" : "android",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "player_id" : "",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "lang_code" : "en",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "idfa" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "session_id" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "device_type" : "Android SDK built for x86",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "kong_plus" : false,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "device_event_id" : "1eb1c700-055e-4bbe-9cbf-7d27b81d6b27",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "dev_client_version" : "101",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "google_play_services_alias" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "country_code" : "US",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "gamecenter_alias" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "days_retained" : 0,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "mac_address" : "52:54:00:12:34:56",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "event_time_offset" : 0.0,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_client_version" : "1.30.1",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "num_purchases" : 0,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "pur_tier" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "keen" : {
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):       "timestamp" : "2026-10-22T16:40:05.440+0000"
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     },
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "client_version" : "1.30.1"
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):   } ],
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):   "installs" : [ {
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "kong_username" : "Guest",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "idfv" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "client_os_version" : "4.4.2",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_server_version" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "stub_field" : 0,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "num_sessions" : 1,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "filter_type" : "jailbroken,not_kong_signed",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "google_play_services_id" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_play_time" : "2026-10-22T16:40:05.233+0000",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "android_id" : "fef3e3a5c5bba653",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "carrier" : "Android",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_sdk_version" : "1.2.1.1",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "usd_spent_on_kreds" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "pkg_src" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "data_connection_type" : "mobile LTE",
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "site_visitor_id" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "first_play_time_offset" : 0.0,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "imei" : null,
-10-22 16:44:05.672 D/KEEN_CLIENT( 3562):     "sdk_version" 
-10-22 16:44:06.612 I/GAOffline( 3562): beat t=242 frame=3318 level=CombatScreen ready=True not started: 
-10-22 16:44:08.482 W/System.err( 3562): java.net.ConnectException: failed to connect to 1567.api.swrve.com/2600:9000:201e:7000:11:1825:d7c0:93a1 (port 443) after 15000ms: isConnected failed: ENETUNREACH (Network is unreachable)
-10-22 16:44:08.482 W/System.err( 3562): 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
-10-22 16:44:08.482 W/System.err( 3562): 	at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
-10-22 16:44:08.482 W/System.err( 3562): 	at libcore.io.IoBridge.connect(IoBridge.java:112)
-10-22 16:44:08.482 W/System.err( 3562): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
-10-22 16:44:08.482 W/System.err( 3562): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
-10-22 16:44:08.482 W/System.err( 3562): 	at java.net.Socket.connect(Socket.java:843)
-10-22 16:44:08.482 W/System.err( 3562): 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:131)
-10-22 16:44:08.482 W/System.err( 3562): 	at com.android.okhttp.Connection.connect(Connection.java:101)
-10-22 16:44:08.482 W/System.err( 3562): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
-10-22 16:44:08.482 W/System.err( 3562): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
-10-22 16:44:08.482 W/System.err( 3562): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
-10-22 16:44:08.482 W/System.err( 3562): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
-10-22 16:44:08.482 W/System.err( 3562): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:89)
-10-22 16:44:08.482 W/System.err( 3562): 	at com.android.okhttp.internal.http.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:161)
-10-22 16:44:08.482 W/System.err( 3562): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:147)
-10-22 16:44:08.482 W/System.err( 3562): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:119)
-10-22 16:44:08.482 W/System.err( 3562): 	at com.swrve.sdk.SwrveImp.postBatchRequest(SwrveImp.java:443)
-10-22 16:44:08.482 W/System.err( 3562): 	at com.swrve.sdk.SwrveBase$5.run(SwrveBase.java:438)
-10-22 16:44:08.482 W/System.err( 3562): 	at com.swrve.sdk.SwrveRunnables$1.run(SwrveRunnables.java:18)
-10-22 16:44:08.482 W/System.err( 3562): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
-10-22 16:44:08.482 W/System.err( 3562): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
-10-22 16:44:08.482 W/System.err( 3562): 	at java.lang.Thread.run(Thread.java:841)
-10-22 16:44:08.482 W/System.err( 3562): Caused by: libcore.io.ErrnoException: isConnected failed: ENETUNREACH (Network is unreachable)
-10-22 16:44:08.482 W/System.err( 3562): 	at libcore.io.IoBridge.isConnected(IoBridge.java:208)
-10-22 16:44:08.482 W/System.err( 3562): 	... 21 more
-10-22 16:44:08.482 E/SwrveSDK( 3562): Batch of events could not be sent, retrying
-10-22 16:44:11.672 I/GAOffline( 3562): beat t=248 frame=3388 level=CombatScreen ready=True not started: 
-10-22 16:44:16.732 I/GAOffline( 3562): beat t=253 frame=3457 level=CombatScreen ready=True not started: 
-10-22 16:44:21.812 I/GAOffline( 3562): beat t=258 frame=3527 level=CombatScreen ready=True not started: 
-10-22 16:44:26.812 I/GAOffline( 3562): beat t=263 frame=3597 level=CombatScreen ready=True not started: 
-10-22 16:44:26.822 D/dalvikvm( 3562): GC_CONCURRENT freed 1200K, 18% free 6842K/8256K, paused 1ms+0ms, total 8ms
+10-22 17:57:07.014 I/ActivityManager( 3019): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity} from pid 4493
+10-22 17:57:07.054 I/ActivityManager( 3019): Start proc com.kongregate.mobile.globalassault.google for activity com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity: pid=4504 uid=10058 gids={50058, 3003, 1028, 1015}
+10-22 17:57:07.604 I/WindowManager( 3019): Screen frozen for +529ms due to Window{9d474ef0 u0 com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity}
+10-22 17:57:09.844 E/ActivityThread( 4504): Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+10-22 17:58:41.244 I/GAOffline( 4504): Log: Doing phase=Draw turn=4
+10-22 17:58:41.244 I/Unity   ( 4504): Doing phase=Draw turn=4
+10-22 17:58:41.244 I/Unity   ( 4504):  
+10-22 17:58:41.244 I/Unity   ( 4504): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-22 17:58:41.244 I/Unity   ( 4504): 
+10-22 17:58:41.244 I/GAOffline( 4504): Log: Doing phase=Play turn=4
+10-22 17:58:41.244 I/Unity   ( 4504): Doing phase=Play turn=4
+10-22 17:58:41.244 I/Unity   ( 4504):  
+10-22 17:58:41.244 I/Unity   ( 4504): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-22 17:58:41.244 I/Unity   ( 4504): 
+10-22 17:58:41.294 I/GAOffline( 4504): Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=1, Popup=]
+10-22 17:58:41.294 I/Unity   ( 4504): tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=1, Popup=]
+10-22 17:58:41.294 I/Unity   ( 4504):  
+10-22 17:58:41.294 I/Unity   ( 4504): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-22 17:58:41.294 I/Unity   ( 4504): 
+10-22 17:58:41.294 I/GAOffline( 4504): Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+10-22 17:58:41.294 I/Unity   ( 4504): New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+10-22 17:58:41.294 I/Unity   ( 4504):  
+10-22 17:58:41.294 I/Unity   ( 4504): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-22 17:58:41.294 I/Unity   ( 4504): 
+10-22 17:58:41.294 I/GAOffline( 4504): Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+10-22 17:58:41.294 I/Unity   ( 4504): server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+10-22 17:58:41.294 I/Unity   ( 4504):  
+10-22 17:58:41.294 I/Unity   ( 4504): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-22 17:58:41.294 I/Unity   ( 4504): 
+10-22 17:58:41.294 D/KONG    ( 4504): UnityWrapper : checking for guest
+10-22 17:58:41.304 I/GAOffline( 4504): [GAOffline] unhandled message recordEvent, answering result:true
+10-22 17:58:41.304 I/Unity   ( 4504): [GAOffline] unhandled message recordEvent, answering result:true
+10-22 17:58:41.304 I/Unity   ( 4504):  
+10-22 17:58:41.304 I/Unity   ( 4504): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-22 17:58:41.304 I/Unity   ( 4504): 
+10-22 17:58:41.304 I/GAOffline( 4504): [GAOffline] recordEvent -> 55 bytes
+10-22 17:58:41.304 I/Unity   ( 4504): [GAOffline] recordEvent -> 55 bytes
+10-22 17:58:41.304 I/Unity   ( 4504):  
+10-22 17:58:41.304 I/Unity   ( 4504): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-22 17:58:41.304 I/Unity   ( 4504): 
+10-22 17:58:41.304 D/dalvikvm( 4504): GC_CONCURRENT freed 1119K, 18% free 6807K/8232K, paused 0ms+0ms, total 5ms
+10-22 17:58:45.364 I/GAOffline( 4504): beat t=96 frame=1423 level=CombatScreen ready=True not started: 
+10-22 17:58:48.834 I/GAOffline( 4504): Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
+10-22 17:58:48.834 I/Unity   ( 4504): tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
+10-22 17:58:48.834 I/Unity   ( 4504):  
+10-22 17:58:48.834 I/Unity   ( 4504): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-22 17:58:48.834 I/Unity   ( 4504): 
+10-22 17:58:48.834 I/GAOffline( 4504): Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+10-22 17:58:48.834 I/Unity   ( 4504): New step tutorial=5 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+10-22 17:58:48.834 I/Unity   ( 4504):  
+10-22 17:58:48.834 I/Unity   ( 4504): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-22 17:58:48.834 I/Unity   ( 4504): 
+10-22 17:58:48.834 I/GAOffline( 4504): Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+10-22 17:58:48.834 I/Unity   ( 4504): server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+10-22 17:58:48.834 I/Unity   ( 4504):  
+10-22 17:58:48.834 I/Unity   ( 4504): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-22 17:58:48.834 I/Unity   ( 4504): 
+10-22 17:58:48.834 D/KONG    ( 4504): UnityWrapper : checking for guest
+10-22 17:58:48.834 I/GAOffline( 4504): [GAOffline] unhandled message recordEvent, answering result:true
+10-22 17:58:48.834 I/Unity   ( 4504): [GAOffline] unhandled message recordEvent, answering result:true
+10-22 17:58:48.834 I/Unity   ( 4504):  
+10-22 17:58:48.834 I/Unity   ( 4504): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-22 17:58:48.834 I/Unity   ( 4504): 
+10-22 17:58:48.834 I/GAOffline( 4504): [GAOffline] recordEvent -> 55 bytes
+10-22 17:58:48.834 I/Unity   ( 4504): [GAOffline] recordEvent -> 55 bytes
+10-22 17:58:48.834 I/Unity   ( 4504):  
+10-22 17:58:48.834 I/Unity   ( 4504): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-22 17:58:48.834 I/Unity   ( 4504): 
+10-22 17:58:50.394 I/GAOffline( 4504): beat t=102 frame=1490 level=CombatScreen ready=True not started: 
+10-22 17:58:55.414 I/GAOffline( 4504): beat t=107 frame=1572 level=CombatScreen ready=True not started: 
+10-22 17:59:00.504 I/GAOffline( 4504): beat t=112 frame=1649 level=CombatScreen ready=True not started: 
+10-22 17:59:05.514 I/GAOffline( 4504): beat t=117 frame=1728 level=CombatScreen ready=True not started: 
+10-22 17:59:09.784 I/SwrveSDK( 4504): Sending queued events
+10-22 17:59:09.794 I/SwrveSDK( 4504): Sending 8 events to Swrve
+10-22 17:59:10.024 D/KONG    ( 4504): Sending SWRVE event: swrve.heartbeat : {}
+10-22 17:59:10.024 I/SwrveSDK( 4504): Not showing message for Kongregate.heartbeat: No campaigns available
+10-22 17:59:10.024 D/KONG    ( 4504): upload events
+10-22 17:59:10.054 I/SwrveSDK( 4504): event event queued
+10-22 17:59:10.164 D/KEEN_CLIENT( 4504): Response code was NOT 200. It was: 404
+10-22 17:59:10.164 D/KEEN_CLIENT( 4504): Response body was: {"message": "Resource not found.", "error_code": "ResourceNotFoundError"}
+10-22 17:59:10.184 I/System.out( 4504):     "first_server_version" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "num_sessions" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "filter_type" : "jailbroken",
+10-22 17:59:10.184 I/System.out( 4504):     "google_play_services_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 17:59:10.184 I/System.out( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 17:59:10.184 I/System.out( 4504):     "carrier" : "Android",
+10-22 17:59:10.184 I/System.out( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 I/System.out( 4504):     "usd_spent_on_kreds" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "pkg_src" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "data_connection_type" : "mobile LTE",
+10-22 17:59:10.184 I/System.out( 4504):     "site_visitor_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "first_play_time_offset" : 0.0,
+10-22 17:59:10.184 I/System.out( 4504):     "imei" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 I/System.out( 4504):     "ad_tracking" : true,
+10-22 17:59:10.184 I/System.out( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 17:59:10.184 I/System.out( 4504):     "gamecenter_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "ip_address" : "10.0.2.15",
+10-22 17:59:10.184 I/System.out( 4504):     "time_skew" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "external_ip_address" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "kong_user_id" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "event_time" : "2026-10-22T17:57:09.900+0000",
+10-22 17:59:10.184 I/System.out( 4504):     "client_os_type" : "android",
+10-22 17:59:10.184 I/System.out( 4504):     "player_id" : "",
+10-22 17:59:10.184 I/System.out( 4504):     "lang_code" : "en",
+10-22 17:59:10.184 I/System.out( 4504):     "idfa" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "session_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "device_type" : "Android SDK built for x86",
+10-22 17:59:10.184 I/System.out( 4504):     "kong_plus" : false,
+10-22 17:59:10.184 I/System.out( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 17:59:10.184 I/System.out( 4504):     "device_event_id" : "38c8da64-6958-40e6-baad-0df13bf9c1f6",
+10-22 17:59:10.184 I/System.out( 4504):     "dev_client_version" : "101",
+10-22 17:59:10.184 I/System.out( 4504):     "google_play_services_alias" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "country_code" : "US",
+10-22 17:59:10.184 I/System.out( 4504):     "gamecenter_alias" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "days_retained" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 17:59:10.184 I/System.out( 4504):     "event_time_offset" : 0.0,
+10-22 17:59:10.184 I/System.out( 4504):     "first_client_version" : "1.30.1",
+10-22 17:59:10.184 I/System.out( 4504):     "num_purchases" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "pur_tier" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "keen" : {
+10-22 17:59:10.184 I/System.out( 4504):       "timestamp" : "2026-10-22T17:57:09.909+0000"
+10-22 17:59:10.184 I/System.out( 4504):     },
+10-22 17:59:10.184 I/System.out( 4504):     "client_version" : "1.30.1"
+10-22 17:59:10.184 I/System.out( 4504):   } ],
+10-22 17:59:10.184 I/System.out( 4504):   "installs" : [ {
+10-22 17:59:10.184 I/System.out( 4504):     "kong_username" : "Guest",
+10-22 17:59:10.184 I/System.out( 4504):     "idfv" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "client_os_version" : "4.4.2",
+10-22 17:59:10.184 I/System.out( 4504):     "first_server_version" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "stub_field" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "num_sessions" : 1,
+10-22 17:59:10.184 I/System.out( 4504):     "filter_type" : "jailbroken,not_kong_signed",
+10-22 17:59:10.184 I/System.out( 4504):     "google_play_services_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 17:59:10.184 I/System.out( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 17:59:10.184 I/System.out( 4504):     "carrier" : "Android",
+10-22 17:59:10.184 I/System.out( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 I/System.out( 4504):     "usd_spent_on_kreds" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "pkg_src" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "data_connection_type" : "mobile LTE",
+10-22 17:59:10.184 I/System.out( 4504):     "site_visitor_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "first_play_time_offset" : 0.0,
+10-22 17:59:10.184 I/System.out( 4504):     "imei" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 I/System.out( 4504):     "ad_tracking" : true,
+10-22 17:59:10.184 I/System.out( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 17:59:10.184 I/System.out( 4504):     "gamecenter_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "ip_address" : "10.0.2.15",
+10-22 17:59:10.184 I/System.out( 4504):     "time_skew" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "external_ip_address" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "kong_user_id" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "event_time" : "2026-10-22T17:57:10.348+0000",
+10-22 17:59:10.184 I/System.out( 4504):     "client_os_type" : "android",
+10-22 17:59:10.184 I/System.out( 4504):     "player_id" : "1",
+10-22 17:59:10.184 I/System.out( 4504):     "lang_code" : "en",
+10-22 17:59:10.184 I/System.out( 4504):     "idfa" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "session_id" : "16b564e7-b0f2-491f-9155-28f031e4660f",
+10-22 17:59:10.184 I/System.out( 4504):     "device_type" : "Android SDK built for x86",
+10-22 17:59:10.184 I/System.out( 4504):     "kong_plus" : false,
+10-22 17:59:10.184 I/System.out( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 17:59:10.184 I/System.out( 4504):     "device_event_id" : "af7de524-93e4-43eb-bd7f-abbef9a98be1",
+10-22 17:59:10.184 I/System.out( 4504):     "dev_client_version" : "101",
+10-22 17:59:10.184 I/System.out( 4504):     "google_play_services_alias" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "country_code" : "US",
+10-22 17:59:10.184 I/System.out( 4504):     "gamecenter_alias" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "days_retained" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 17:59:10.184 I/System.out( 4504):     "event_time_offset" : 0.0,
+10-22 17:59:10.184 I/System.out( 4504):     "first_client_version" : "1.30.1",
+10-22 17:59:10.184 I/System.out( 4504):     "num_purchases" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "pur_tier" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "keen" : {
+10-22 17:59:10.184 I/System.out( 4504):       "timestamp" : "2026-10-22T17:57:10.351+0000"
+10-22 17:59:10.184 I/System.out( 4504):     },
+10-22 17:59:10.184 I/System.out( 4504):     "client_version" : "1.30.1"
+10-22 17:59:10.184 I/System.out( 4504):   } ]
+10-22 17:59:10.184 I/System.out( 4504): }
+10-22 17:59:10.184 I/System.out( 4504): Oct 22, 2026 5:59:10 PM io.keen.client.android.KeenLogging log
+10-22 17:59:10.184 I/System.out( 4504): FINER: Response code was NOT 200. It was: 404
+10-22 17:59:10.184 I/System.out( 4504): Oct 22, 2026 5:59:10 PM io.keen.client.android.KeenLogging log
+10-22 17:59:10.184 I/System.out( 4504): FINER: Response body was: {"message": "Resource not found.", "error_code": "ResourceNotFoundError"}
+10-22 17:59:10.184 I/System.out( 4504): Oct 22, 2026 5:59:10 PM io.keen.client.android.KeenLogging log
+10-22 17:59:10.184 I/System.out( 4504): FINER: Uploaded events: {
+10-22 17:59:10.184 I/System.out( 4504):   "session_starts" : [ {
+10-22 17:59:10.184 I/System.out( 4504):     "kong_username" : "Guest",
+10-22 17:59:10.184 I/System.out( 4504):     "idfv" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "client_os_version" : "4.4.2",
+10-22 17:59:10.184 I/System.out( 4504):     "first_server_version" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "num_sessions" : 1,
+10-22 17:59:10.184 I/System.out( 4504):     "filter_type" : "jailbroken,not_kong_signed",
+10-22 17:59:10.184 I/System.out( 4504):     "google_play_services_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 17:59:10.184 I/System.out( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 17:59:10.184 I/System.out( 4504):     "carrier" : "Android",
+10-22 17:59:10.184 I/System.out( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 I/System.out( 4504):     "usd_spent_on_kreds" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "pkg_src" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "data_connection_type" : "mobile LTE",
+10-22 17:59:10.184 I/System.out( 4504):     "site_visitor_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "first_play_time_offset" : 0.0,
+10-22 17:59:10.184 I/System.out( 4504):     "imei" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 I/System.out( 4504):     "ad_tracking" : true,
+10-22 17:59:10.184 I/System.out( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 17:59:10.184 I/System.out( 4504):     "gamecenter_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "ip_address" : "10.0.2.15",
+10-22 17:59:10.184 I/System.out( 4504):     "time_skew" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "external_ip_address" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "kong_user_id" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "event_time" : "2026-10-22T17:57:10.001+0000",
+10-22 17:59:10.184 I/System.out( 4504):     "client_os_type" : "android",
+10-22 17:59:10.184 I/System.out( 4504):     "player_id" : "",
+10-22 17:59:10.184 I/System.out( 4504):     "lang_code" : "en",
+10-22 17:59:10.184 I/System.out( 4504):     "idfa" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "session_id" : "16b564e7-b0f2-491f-9155-28f031e4660f",
+10-22 17:59:10.184 I/System.out( 4504):     "device_type" : "Android SDK built for x86",
+10-22 17:59:10.184 I/System.out( 4504):     "kong_plus" : false,
+10-22 17:59:10.184 I/System.out( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 17:59:10.184 I/System.out( 4504):     "device_event_id" : "a31d0caf-3bcd-4005-bb63-587719051177",
+10-22 17:59:10.184 I/System.out( 4504):     "is_from_background" : true,
+10-22 17:59:10.184 I/System.out( 4504):     "dev_client_version" : "101",
+10-22 17:59:10.184 I/System.out( 4504):     "google_play_services_alias" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "country_code" : "US",
+10-22 17:59:10.184 I/System.out( 4504):     "gamecenter_alias" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "days_retained" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 17:59:10.184 I/System.out( 4504):     "event_time_offset" : 0.0,
+10-22 17:59:10.184 I/System.out( 4504):     "first_client_version" : "1.30.1",
+10-22 17:59:10.184 I/System.out( 4504):     "num_purchases" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "pur_tier" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "keen" : {
+10-22 17:59:10.184 I/System.out( 4504):       "timestamp" : "2026-10-22T17:57:10.007+0000"
+10-22 17:59:10.184 I/System.out( 4504):     },
+10-22 17:59:10.184 I/System.out( 4504):     "client_version" : "1.30.1"
+10-22 17:59:10.184 I/System.out( 4504):   } ],
+10-22 17:59:10.184 I/System.out( 4504):   "invalid_states" : [ {
+10-22 17:59:10.184 I/System.out( 4504):     "kong_username" : "Guest",
+10-22 17:59:10.184 I/System.out( 4504):     "idfv" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "client_os_version" : "4.4.2",
+10-22 17:59:10.184 I/System.out( 4504):     "reason" : "jailbroken",
+10-22 17:59:10.184 I/System.out( 4504):     "first_server_version" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "num_sessions" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "filter_type" : "jailbroken",
+10-22 17:59:10.184 I/System.out( 4504):     "google_play_services_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 17:59:10.184 I/System.out( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 17:59:10.184 I/System.out( 4504):     "carrier" : "Android",
+10-22 17:59:10.184 I/System.out( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 I/System.out( 4504):     "usd_spent_on_kreds" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "pkg_src" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "data_connection_type" : "mobile LTE",
+10-22 17:59:10.184 I/System.out( 4504):     "site_visitor_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "first_play_time_offset" : 0.0,
+10-22 17:59:10.184 I/System.out( 4504):     "imei" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 I/System.out( 4504):     "ad_tracking" : true,
+10-22 17:59:10.184 I/System.out( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 17:59:10.184 I/System.out( 4504):     "gamecenter_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "ip_address" : "10.0.2.15",
+10-22 17:59:10.184 I/System.out( 4504):     "time_skew" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "external_ip_address" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "kong_user_id" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "event_time" : "2026-10-22T17:57:09.900+0000",
+10-22 17:59:10.184 I/System.out( 4504):     "client_os_type" : "android",
+10-22 17:59:10.184 I/System.out( 4504):     "player_id" : "",
+10-22 17:59:10.184 I/System.out( 4504):     "lang_code" : "en",
+10-22 17:59:10.184 I/System.out( 4504):     "idfa" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "session_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "device_type" : "Android SDK built for x86",
+10-22 17:59:10.184 I/System.out( 4504):     "kong_plus" : false,
+10-22 17:59:10.184 I/System.out( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 17:59:10.184 I/System.out( 4504):     "device_event_id" : "38c8da64-6958-40e6-baad-0df13bf9c1f6",
+10-22 17:59:10.184 I/System.out( 4504):     "dev_client_version" : "101",
+10-22 17:59:10.184 I/System.out( 4504):     "google_play_services_alias" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "country_code" : "US",
+10-22 17:59:10.184 I/System.out( 4504):     "gamecenter_alias" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "days_retained" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 17:59:10.184 I/System.out( 4504):     "event_time_offset" : 0.0,
+10-22 17:59:10.184 I/System.out( 4504):     "first_client_version" : "1.30.1",
+10-22 17:59:10.184 I/System.out( 4504):     "num_purchases" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "pur_tier" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "keen" : {
+10-22 17:59:10.184 I/System.out( 4504):       "timestamp" : "2026-10-22T17:57:09.909+0000"
+10-22 17:59:10.184 I/System.out( 4504):     },
+10-22 17:59:10.184 I/System.out( 4504):     "client_version" : "1.30.1"
+10-22 17:59:10.184 I/System.out( 4504):   } ],
+10-22 17:59:10.184 I/System.out( 4504):   "installs" : [ {
+10-22 17:59:10.184 I/System.out( 4504):     "kong_username" : "Guest",
+10-22 17:59:10.184 I/System.out( 4504):     "idfv" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "client_os_version" : "4.4.2",
+10-22 17:59:10.184 I/System.out( 4504):     "first_server_version" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "stub_field" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "num_sessions" : 1,
+10-22 17:59:10.184 I/System.out( 4504):     "filter_type" : "jailbroken,not_kong_signed",
+10-22 17:59:10.184 I/System.out( 4504):     "google_play_services_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 17:59:10.184 I/System.out( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 17:59:10.184 I/System.out( 4504):     "carrier" : "Android",
+10-22 17:59:10.184 I/System.out( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 I/System.out( 4504):     "usd_spent_on_kreds" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "pkg_src" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "data_connection_type" : "mobile LTE",
+10-22 17:59:10.184 I/System.out( 4504):     "site_visitor_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "first_play_time_offset" : 0.0,
+10-22 17:59:10.184 I/System.out( 4504):     "imei" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 I/System.out( 4504):     "ad_tracking" : true,
+10-22 17:59:10.184 I/System.out( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 17:59:10.184 I/System.out( 4504):     "gamecenter_id" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "ip_address" : "10.0.2.15",
+10-22 17:59:10.184 I/System.out( 4504):     "time_skew" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "external_ip_address" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "kong_user_id" : 0,
+10-22 17:59:10.184 I/System.out( 4504):     "event_time" : "2026-10-22T17:57:10.348+0000",
+10-22 17:59:10.184 I/System.out( 4504):     "client_os_type" : "android",
+10-22 17:59:10.184 I/System.out( 4504):     "player_id" : "1",
+10-22 17:59:10.184 I/System.out( 4504):     "lang_code" : "en",
+10-22 17:59:10.184 I/System.out( 4504):     "idfa" : null,
+10-22 17:59:10.184 I/System.out( 4504):     "session_id" : "16b564e7-b0f2-491f-9155-28f031e4660f",
+10-22 17:59:10.184 I/System.out( 4504):     "device_type" : "Android SDK built for x86",
+10-22 17:59:10.184 I/System.out( 4504):     "kong_plus" : false,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504): Uploaded events: {
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):   "session_starts" : [ {
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "kong_username" : "Guest",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "idfv" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "client_os_version" : "4.4.2",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_server_version" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "num_sessions" : 1,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "filter_type" : "jailbroken,not_kong_signed",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "google_play_services_id" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "carrier" : "Android",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "usd_spent_on_kreds" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "pkg_src" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "data_connection_type" : "mobile LTE",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "site_visitor_id" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_play_time_offset" : 0.0,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "imei" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "ad_tracking" : true,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "gamecenter_id" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "ip_address" : "10.0.2.15",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "time_skew" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "external_ip_address" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "kong_user_id" : 0,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "event_time" : "2026-10-22T17:57:10.001+0000",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "client_os_type" : "android",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "player_id" : "",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "lang_code" : "en",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "idfa" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "session_id" : "16b564e7-b0f2-491f-9155-28f031e4660f",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "device_type" : "Android SDK built for x86",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "kong_plus" : false,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "device_event_id" : "a31d0caf-3bcd-4005-bb63-587719051177",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "is_from_background" : true,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "dev_client_version" : "101",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "google_play_services_alias" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "country_code" : "US",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "gamecenter_alias" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "days_retained" : 0,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "event_time_offset" : 0.0,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_client_version" : "1.30.1",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "num_purchases" : 0,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "pur_tier" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "keen" : {
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):       "timestamp" : "2026-10-22T17:57:10.007+0000"
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     },
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "client_version" : "1.30.1"
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):   } ],
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):   "invalid_states" : [ {
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "kong_username" : "Guest",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "idfv" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "client_os_version" : "4.4.2",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "reason" : "jailbroken",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_server_version" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "num_sessions" : 0,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "filter_type" : "jailbroken",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "google_play_services_id" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "carrier" : "Android",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "usd_spent_on_kreds" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "pkg_src" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "data_connection_type" : "mobile LTE",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "site_visitor_id" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_play_time_offset" : 0.0,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "imei" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "ad_tracking" : true,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "gamecenter_id" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "ip_address" : "10.0.2.15",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "time_skew" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "external_ip_address" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "kong_user_id" : 0,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "event_time" : "2026-10-22T17:57:09.900+0000",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "client_os_type" : "android",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "player_id" : "",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "lang_code" : "en",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "idfa" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "session_id" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "device_type" : "Android SDK built for x86",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "kong_plus" : false,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "device_event_id" : "38c8da64-6958-40e6-baad-0df13bf9c1f6",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "dev_client_version" : "101",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "google_play_services_alias" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "country_code" : "US",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "gamecenter_alias" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "days_retained" : 0,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "event_time_offset" : 0.0,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_client_version" : "1.30.1",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "num_purchases" : 0,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "pur_tier" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "keen" : {
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):       "timestamp" : "2026-10-22T17:57:09.909+0000"
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     },
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "client_version" : "1.30.1"
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):   } ],
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):   "installs" : [ {
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "kong_username" : "Guest",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "idfv" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "client_os_version" : "4.4.2",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_server_version" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "stub_field" : 0,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "num_sessions" : 1,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "filter_type" : "jailbroken,not_kong_signed",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "google_play_services_id" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "carrier" : "Android",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "usd_spent_on_kreds" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "pkg_src" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "data_connection_type" : "mobile LTE",
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "site_visitor_id" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "first_play_time_offset" : 0.0,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "imei" : null,
+10-22 17:59:10.184 D/KEEN_CLIENT( 4504):     "sdk_version" 
+10-22 17:59:10.524 I/GAOffline( 4504): beat t=122 frame=1809 level=CombatScreen ready=True not started: 
+10-22 17:59:12.144 W/System.err( 4504): java.net.ConnectException: failed to connect to 1567.api.swrve.com/2600:9000:215a:9a00:11:1825:d7c0:93a1 (port 443) after 15000ms: isConnected failed: ENETUNREACH (Network is unreachable)
+10-22 17:59:12.144 W/System.err( 4504): 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
+10-22 17:59:12.144 W/System.err( 4504): 	at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
+10-22 17:59:12.144 W/System.err( 4504): 	at libcore.io.IoBridge.connect(IoBridge.java:112)
+10-22 17:59:12.144 W/System.err( 4504): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+10-22 17:59:12.144 W/System.err( 4504): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+10-22 17:59:12.144 W/System.err( 4504): 	at java.net.Socket.connect(Socket.java:843)
+10-22 17:59:12.144 W/System.err( 4504): 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:131)
+10-22 17:59:12.144 W/System.err( 4504): 	at com.android.okhttp.Connection.connect(Connection.java:101)
+10-22 17:59:12.144 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
+10-22 17:59:12.144 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
+10-22 17:59:12.144 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
+10-22 17:59:12.144 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
+10-22 17:59:12.144 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:89)
+10-22 17:59:12.144 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:161)
+10-22 17:59:12.144 W/System.err( 4504): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:147)
+10-22 17:59:12.144 W/System.err( 4504): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:119)
+10-22 17:59:12.144 W/System.err( 4504): 	at com.swrve.sdk.SwrveImp.postBatchRequest(SwrveImp.java:443)
+10-22 17:59:12.144 W/System.err( 4504): 	at com.swrve.sdk.SwrveBase$5.run(SwrveBase.java:438)
+10-22 17:59:12.144 W/System.err( 4504): 	at com.swrve.sdk.SwrveRunnables$1.run(SwrveRunnables.java:18)
+10-22 17:59:12.144 W/System.err( 4504): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+10-22 17:59:12.144 W/System.err( 4504): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+10-22 17:59:12.144 W/System.err( 4504): 	at java.lang.Thread.run(Thread.java:841)
+10-22 17:59:12.144 W/System.err( 4504): Caused by: libcore.io.ErrnoException: isConnected failed: ENETUNREACH (Network is unreachable)
+10-22 17:59:12.144 W/System.err( 4504): 	at libcore.io.IoBridge.isConnected(IoBridge.java:208)
+10-22 17:59:12.144 W/System.err( 4504): 	... 21 more
+10-22 17:59:12.144 E/SwrveSDK( 4504): Batch of events could not be sent, retrying
+10-22 17:59:15.544 I/GAOffline( 4504): beat t=127 frame=1886 level=CombatScreen ready=True not started: 
+10-22 17:59:20.584 I/GAOffline( 4504): beat t=132 frame=1969 level=CombatScreen ready=True not started: 
+10-22 17:59:25.594 I/GAOffline( 4504): beat t=137 frame=2045 level=CombatScreen ready=True not started: 
+10-22 17:59:30.604 I/GAOffline( 4504): beat t=142 frame=2128 level=CombatScreen ready=True not started: 
+10-22 17:59:35.624 I/GAOffline( 4504): beat t=147 frame=2210 level=CombatScreen ready=True not started: 
+10-22 17:59:40.664 I/GAOffline( 4504): beat t=152 frame=2287 level=CombatScreen ready=True not started: 
+10-22 17:59:45.694 I/GAOffline( 4504): beat t=157 frame=2370 level=CombatScreen ready=True not started: 
+10-22 17:59:50.734 I/GAOffline( 4504): beat t=162 frame=2446 level=CombatScreen ready=True not started: 
+10-22 17:59:55.764 I/GAOffline( 4504): beat t=167 frame=2529 level=CombatScreen ready=True not started: 
+10-22 18:00:00.814 I/GAOffline( 4504): beat t=172 frame=2613 level=CombatScreen ready=True not started: 
+10-22 18:00:05.834 I/GAOffline( 4504): beat t=177 frame=2690 level=CombatScreen ready=True not started: 
+10-22 18:00:09.794 I/SwrveSDK( 4504): Sending queued events
+10-22 18:00:09.824 D/dalvikvm( 4504): GC_CONCURRENT freed 1047K, 17% free 6880K/8232K, paused 2ms+15ms, total 24ms
+10-22 18:00:09.824 I/SwrveSDK( 4504): Sending 9 events to Swrve
+10-22 18:00:10.024 D/KONG    ( 4504): Sending SWRVE event: swrve.heartbeat : {}
+10-22 18:00:10.024 I/SwrveSDK( 4504): Not showing message for Kongregate.heartbeat: No campaigns available
+10-22 18:00:10.024 D/KONG    ( 4504): upload events
+10-22 18:00:10.034 I/SwrveSDK( 4504): event event queued
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504): Response code was NOT 200. It was: 404
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504): Response body was: {"message": "Resource not found.", "error_code": "ResourceNotFoundError"}
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504): Uploaded events: {
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):   "session_starts" : [ {
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "kong_username" : "Guest",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "idfv" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "client_os_version" : "4.4.2",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_server_version" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "num_sessions" : 1,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "filter_type" : "jailbroken,not_kong_signed",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "google_play_services_id" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "carrier" : "Android",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "usd_spent_on_kreds" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "pkg_src" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "data_connection_type" : "mobile LTE",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "site_visitor_id" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_play_time_offset" : 0.0,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "imei" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "sdk_version" : "1.2.1.1",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "ad_tracking" : true,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "gamecenter_id" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "ip_address" : "10.0.2.15",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "time_skew" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "external_ip_address" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "kong_user_id" : 0,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "event_time" : "2026-10-22T17:57:10.001+0000",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "client_os_type" : "android",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "player_id" : "",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "lang_code" : "en",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "idfa" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "session_id" : "16b564e7-b0f2-491f-9155-28f031e4660f",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "device_type" : "Android SDK built for x86",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "kong_plus" : false,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "device_event_id" : "a31d0caf-3bcd-4005-bb63-587719051177",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "is_from_background" : true,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "dev_client_version" : "101",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "google_play_services_alias" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "country_code" : "US",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "gamecenter_alias" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "days_retained" : 0,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "event_time_offset" : 0.0,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_client_version" : "1.30.1",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "num_purchases" : 0,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "pur_tier" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "keen" : {
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):       "timestamp" : "2026-10-22T17:57:10.007+0000"
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     },
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "client_version" : "1.30.1"
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):   } ],
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):   "invalid_states" : [ {
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "kong_username" : "Guest",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "idfv" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "client_os_version" : "4.4.2",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "reason" : "jailbroken",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_server_version" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "num_sessions" : 0,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "filter_type" : "jailbroken",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "google_play_services_id" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "carrier" : "Android",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "usd_spent_on_kreds" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "pkg_src" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "data_connection_type" : "mobile LTE",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "site_visitor_id" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_play_time_offset" : 0.0,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "imei" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "sdk_version" : "1.2.1.1",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "ad_tracking" : true,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "gamecenter_id" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "ip_address" : "10.0.2.15",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "time_skew" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "external_ip_address" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "kong_user_id" : 0,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "event_time" : "2026-10-22T17:57:09.900+0000",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "client_os_type" : "android",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "player_id" : "",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "lang_code" : "en",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "idfa" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "session_id" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "device_type" : "Android SDK built for x86",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "kong_plus" : false,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "device_event_id" : "38c8da64-6958-40e6-baad-0df13bf9c1f6",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "dev_client_version" : "101",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "google_play_services_alias" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "country_code" : "US",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "gamecenter_alias" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "days_retained" : 0,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "event_time_offset" : 0.0,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_client_version" : "1.30.1",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "num_purchases" : 0,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "pur_tier" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "keen" : {
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):       "timestamp" : "2026-10-22T17:57:09.909+0000"
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     },
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "client_version" : "1.30.1"
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):   } ],
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):   "installs" : [ {
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "kong_username" : "Guest",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "idfv" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "client_os_version" : "4.4.2",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_server_version" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "stub_field" : 0,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "num_sessions" : 1,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "filter_type" : "jailbroken,not_kong_signed",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "google_play_services_id" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "carrier" : "Android",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "usd_spent_on_kreds" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "pkg_src" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "data_connection_type" : "mobile LTE",
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "site_visitor_id" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "first_play_time_offset" : 0.0,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "imei" : null,
+10-22 18:00:10.134 D/KEEN_CLIENT( 4504):     "sdk_version" 
+10-22 18:00:10.844 I/GAOffline( 4504): beat t=182 frame=2773 level=CombatScreen ready=True not started: 
+10-22 18:00:10.904 W/System.err( 4504): java.net.ConnectException: failed to connect to 1567.api.swrve.com/2600:9000:215a:e400:11:1825:d7c0:93a1 (port 443) after 15000ms: isConnected failed: ENETUNREACH (Network is unreachable)
+10-22 18:00:10.904 W/System.err( 4504): 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
+10-22 18:00:10.904 W/System.err( 4504): 	at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
+10-22 18:00:10.904 W/System.err( 4504): 	at libcore.io.IoBridge.connect(IoBridge.java:112)
+10-22 18:00:10.904 W/System.err( 4504): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+10-22 18:00:10.904 W/System.err( 4504): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+10-22 18:00:10.904 W/System.err( 4504): 	at java.net.Socket.connect(Socket.java:843)
+10-22 18:00:10.904 W/System.err( 4504): 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:131)
+10-22 18:00:10.904 W/System.err( 4504): 	at com.android.okhttp.Connection.connect(Connection.java:101)
+10-22 18:00:10.904 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
+10-22 18:00:10.904 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
+10-22 18:00:10.904 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
+10-22 18:00:10.904 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
+10-22 18:00:10.904 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:89)
+10-22 18:00:10.904 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:161)
+10-22 18:00:10.904 W/System.err( 4504): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:147)
+10-22 18:00:10.904 W/System.err( 4504): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:119)
+10-22 18:00:10.904 W/System.err( 4504): 	at com.swrve.sdk.SwrveImp.postBatchRequest(SwrveImp.java:443)
+10-22 18:00:10.904 W/System.err( 4504): 	at com.swrve.sdk.SwrveBase$5.run(SwrveBase.java:438)
+10-22 18:00:10.904 W/System.err( 4504): 	at com.swrve.sdk.SwrveRunnables$1.run(SwrveRunnables.java:18)
+10-22 18:00:10.904 W/System.err( 4504): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+10-22 18:00:10.904 W/System.err( 4504): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+10-22 18:00:10.904 W/System.err( 4504): 	at java.lang.Thread.run(Thread.java:841)
+10-22 18:00:10.904 W/System.err( 4504): Caused by: libcore.io.ErrnoException: isConnected failed: ENETUNREACH (Network is unreachable)
+10-22 18:00:10.904 W/System.err( 4504): 	at libcore.io.IoBridge.isConnected(IoBridge.java:208)
+10-22 18:00:10.904 W/System.err( 4504): 	... 21 more
+10-22 18:00:10.904 E/SwrveSDK( 4504): Batch of events could not be sent, retrying
+10-22 18:00:15.894 I/GAOffline( 4504): beat t=187 frame=2848 level=CombatScreen ready=True not started: 
+10-22 18:00:20.924 I/GAOffline( 4504): beat t=192 frame=2929 level=CombatScreen ready=True not started: 
+10-22 18:00:25.964 I/GAOffline( 4504): beat t=197 frame=3012 level=CombatScreen ready=True not started: 
+10-22 18:00:31.004 I/GAOffline( 4504): beat t=202 frame=3089 level=CombatScreen ready=True not started: 
+10-22 18:00:36.024 I/GAOffline( 4504): beat t=207 frame=3171 level=CombatScreen ready=True not started: 
+10-22 18:00:41.044 I/GAOffline( 4504): beat t=212 frame=3247 level=CombatScreen ready=True not started: 
+10-22 18:00:46.054 I/GAOffline( 4504): beat t=217 frame=3328 level=CombatScreen ready=True not started: 
+10-22 18:00:51.114 I/GAOffline( 4504): beat t=222 frame=3409 level=CombatScreen ready=True not started: 
+10-22 18:00:56.164 I/GAOffline( 4504): beat t=227 frame=3487 level=CombatScreen ready=True not started: 
+10-22 18:01:01.184 I/GAOffline( 4504): beat t=232 frame=3570 level=CombatScreen ready=True not started: 
+10-22 18:01:06.194 I/GAOffline( 4504): beat t=237 frame=3645 level=CombatScreen ready=True not started: 
+10-22 18:01:09.794 I/SwrveSDK( 4504): Sending queued events
+10-22 18:01:09.794 I/SwrveSDK( 4504): Sending 10 events to Swrve
+10-22 18:01:10.024 D/KONG    ( 4504): Sending SWRVE event: swrve.heartbeat : {}
+10-22 18:01:10.024 I/SwrveSDK( 4504): Not showing message for Kongregate.heartbeat: No campaigns available
+10-22 18:01:10.024 D/KONG    ( 4504): upload events
+10-22 18:01:10.054 D/dalvikvm( 4504): GC_CONCURRENT freed 1112K, 17% free 6913K/8232K, paused 0ms+1ms, total 7ms
+10-22 18:01:10.074 I/SwrveSDK( 4504): event event queued
+10-22 18:01:10.144 D/KEEN_CLIENT( 4504): Response code was NOT 200. It was: 404
+10-22 18:01:10.144 D/KEEN_CLIENT( 4504): Response body was: {"message": "Resource not found.", "error_code": "ResourceNotFoundError"}
+10-22 18:01:10.144 I/System.out( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 18:01:10.144 I/System.out( 4504):     "device_event_id" : "af7de524-93e4-43eb-bd7f-abbef9a98be1",
+10-22 18:01:10.144 I/System.out( 4504):     "dev_client_version" : "101",
+10-22 18:01:10.144 I/System.out( 4504):     "google_play_services_alias" : null,
+10-22 18:01:10.144 I/System.out( 4504):     "country_code" : "US",
+10-22 18:01:10.144 I/System.out( 4504):     "gamecenter_alias" : null,
+10-22 18:01:10.144 I/System.out( 4504):     "days_retained" : 0,
+10-22 18:01:10.144 I/System.out( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 18:01:10.144 I/System.out( 4504):     "event_time_offset" : 0.0,
+10-22 18:01:10.144 I/System.out( 4504):     "first_client_version" : "1.30.1",
+10-22 18:01:10.144 I/System.out( 4504):     "num_purchases" : 0,
+10-22 18:01:10.144 I/System.out( 4504):     "pur_tier" : null,
+10-22 18:01:10.144 I/System.out( 4504):     "keen" : {
+10-22 18:01:10.144 I/System.out( 4504):       "timestamp" : "2026-10-22T17:57:10.351+0000"
+10-22 18:01:10.144 I/System.out( 4504):     },
+10-22 18:01:10.144 I/System.out( 4504):     "client_version" : "1.30.1"
+10-22 18:01:10.144 I/System.out( 4504):   } ]
+10-22 18:01:10.144 I/System.out( 4504): }
+10-22 18:01:10.144 I/System.out( 4504): Oct 22, 2026 6:00:10 PM io.keen.client.android.KeenLogging log
+10-22 18:01:10.144 I/System.out( 4504): FINER: Response code was NOT 200. It was: 404
+10-22 18:01:10.144 I/System.out( 4504): Oct 22, 2026 6:00:10 PM io.keen.client.android.KeenLogging log
+10-22 18:01:10.144 I/System.out( 4504): FINER: Response body was: {"message": "Resource not found.", "error_code": "ResourceNotFoundError"}
+10-22 18:01:10.144 I/System.out( 4504): Oct 22, 2026 6:00:10 PM io.keen.client.android.KeenLogging log
+10-22 18:01:10.144 I/System.out( 4504): FINER: Uploaded events: {
+10-22 18:01:10.144 I/System.out( 4504):   "session_starts" : [ {
+10-22 18:01:10.144 I/System.out( 4504):     "kong_username" : "Guest",
+10-22 18:01:10.144 I/System.out( 4504):     "idfv" : null,
+10-22 18:01:10.144 I/System.out( 4504):     "client_os_version" : "4.4.2",
+10-22 18:01:10.144 I/System.out( 4504):     "first_server_version" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "num_sessions" : 1,
+10-22 18:01:10.154 I/System.out( 4504):     "filter_type" : "jailbroken,not_kong_signed",
+10-22 18:01:10.154 I/System.out( 4504):     "google_play_services_id" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 18:01:10.154 I/System.out( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 18:01:10.154 I/System.out( 4504):     "carrier" : "Android",
+10-22 18:01:10.154 I/System.out( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 18:01:10.154 I/System.out( 4504):     "usd_spent_on_kreds" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "pkg_src" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "data_connection_type" : "mobile LTE",
+10-22 18:01:10.154 I/System.out( 4504):     "site_visitor_id" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "first_play_time_offset" : 0.0,
+10-22 18:01:10.154 I/System.out( 4504):     "imei" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "sdk_version" : "1.2.1.1",
+10-22 18:01:10.154 I/System.out( 4504):     "ad_tracking" : true,
+10-22 18:01:10.154 I/System.out( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 18:01:10.154 I/System.out( 4504):     "gamecenter_id" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "ip_address" : "10.0.2.15",
+10-22 18:01:10.154 I/System.out( 4504):     "time_skew" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "external_ip_address" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "kong_user_id" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "event_time" : "2026-10-22T17:57:10.001+0000",
+10-22 18:01:10.154 I/System.out( 4504):     "client_os_type" : "android",
+10-22 18:01:10.154 I/System.out( 4504):     "player_id" : "",
+10-22 18:01:10.154 I/System.out( 4504):     "lang_code" : "en",
+10-22 18:01:10.154 I/System.out( 4504):     "idfa" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "session_id" : "16b564e7-b0f2-491f-9155-28f031e4660f",
+10-22 18:01:10.154 I/System.out( 4504):     "device_type" : "Android SDK built for x86",
+10-22 18:01:10.154 I/System.out( 4504):     "kong_plus" : false,
+10-22 18:01:10.154 I/System.out( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 18:01:10.154 I/System.out( 4504):     "device_event_id" : "a31d0caf-3bcd-4005-bb63-587719051177",
+10-22 18:01:10.154 I/System.out( 4504):     "is_from_background" : true,
+10-22 18:01:10.154 I/System.out( 4504):     "dev_client_version" : "101",
+10-22 18:01:10.154 I/System.out( 4504):     "google_play_services_alias" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "country_code" : "US",
+10-22 18:01:10.154 I/System.out( 4504):     "gamecenter_alias" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "days_retained" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 18:01:10.154 I/System.out( 4504):     "event_time_offset" : 0.0,
+10-22 18:01:10.154 I/System.out( 4504):     "first_client_version" : "1.30.1",
+10-22 18:01:10.154 I/System.out( 4504):     "num_purchases" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "pur_tier" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "keen" : {
+10-22 18:01:10.154 I/System.out( 4504):       "timestamp" : "2026-10-22T17:57:10.007+0000"
+10-22 18:01:10.154 I/System.out( 4504):     },
+10-22 18:01:10.154 I/System.out( 4504):     "client_version" : "1.30.1"
+10-22 18:01:10.154 I/System.out( 4504):   } ],
+10-22 18:01:10.154 I/System.out( 4504):   "invalid_states" : [ {
+10-22 18:01:10.154 I/System.out( 4504):     "kong_username" : "Guest",
+10-22 18:01:10.154 I/System.out( 4504):     "idfv" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "client_os_version" : "4.4.2",
+10-22 18:01:10.154 I/System.out( 4504):     "reason" : "jailbroken",
+10-22 18:01:10.154 I/System.out( 4504):     "first_server_version" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "num_sessions" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "filter_type" : "jailbroken",
+10-22 18:01:10.154 I/System.out( 4504):     "google_play_services_id" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 18:01:10.154 I/System.out( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 18:01:10.154 I/System.out( 4504):     "carrier" : "Android",
+10-22 18:01:10.154 I/System.out( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 18:01:10.154 I/System.out( 4504):     "usd_spent_on_kreds" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "pkg_src" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "data_connection_type" : "mobile LTE",
+10-22 18:01:10.154 I/System.out( 4504):     "site_visitor_id" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "first_play_time_offset" : 0.0,
+10-22 18:01:10.154 I/System.out( 4504):     "imei" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "sdk_version" : "1.2.1.1",
+10-22 18:01:10.154 I/System.out( 4504):     "ad_tracking" : true,
+10-22 18:01:10.154 I/System.out( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 18:01:10.154 I/System.out( 4504):     "gamecenter_id" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "ip_address" : "10.0.2.15",
+10-22 18:01:10.154 I/System.out( 4504):     "time_skew" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "external_ip_address" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "kong_user_id" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "event_time" : "2026-10-22T17:57:09.900+0000",
+10-22 18:01:10.154 I/System.out( 4504):     "client_os_type" : "android",
+10-22 18:01:10.154 I/System.out( 4504):     "player_id" : "",
+10-22 18:01:10.154 I/System.out( 4504):     "lang_code" : "en",
+10-22 18:01:10.154 I/System.out( 4504):     "idfa" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "session_id" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "device_type" : "Android SDK built for x86",
+10-22 18:01:10.154 I/System.out( 4504):     "kong_plus" : false,
+10-22 18:01:10.154 I/System.out( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 18:01:10.154 I/System.out( 4504):     "device_event_id" : "38c8da64-6958-40e6-baad-0df13bf9c1f6",
+10-22 18:01:10.154 I/System.out( 4504):     "dev_client_version" : "101",
+10-22 18:01:10.154 I/System.out( 4504):     "google_play_services_alias" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "country_code" : "US",
+10-22 18:01:10.154 I/System.out( 4504):     "gamecenter_alias" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "days_retained" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 18:01:10.154 I/System.out( 4504):     "event_time_offset" : 0.0,
+10-22 18:01:10.154 I/System.out( 4504):     "first_client_version" : "1.30.1",
+10-22 18:01:10.154 I/System.out( 4504):     "num_purchases" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "pur_tier" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "keen" : {
+10-22 18:01:10.154 I/System.out( 4504):       "timestamp" : "2026-10-22T17:57:09.909+0000"
+10-22 18:01:10.154 I/System.out( 4504):     },
+10-22 18:01:10.154 I/System.out( 4504):     "client_version" : "1.30.1"
+10-22 18:01:10.154 I/System.out( 4504):   } ],
+10-22 18:01:10.154 I/System.out( 4504):   "installs" : [ {
+10-22 18:01:10.154 I/System.out( 4504):     "kong_username" : "Guest",
+10-22 18:01:10.154 I/System.out( 4504):     "idfv" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "client_os_version" : "4.4.2",
+10-22 18:01:10.154 I/System.out( 4504):     "first_server_version" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "stub_field" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "num_sessions" : 1,
+10-22 18:01:10.154 I/System.out( 4504):     "filter_type" : "jailbroken,not_kong_signed",
+10-22 18:01:10.154 I/System.out( 4504):     "google_play_services_id" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 18:01:10.154 I/System.out( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 18:01:10.154 I/System.out( 4504):     "carrier" : "Android",
+10-22 18:01:10.154 I/System.out( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 18:01:10.154 I/System.out( 4504):     "usd_spent_on_kreds" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "pkg_src" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "data_connection_type" : "mobile LTE",
+10-22 18:01:10.154 I/System.out( 4504):     "site_visitor_id" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "first_play_time_offset" : 0.0,
+10-22 18:01:10.154 I/System.out( 4504):     "imei" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "sdk_version" : "1.2.1.1",
+10-22 18:01:10.154 I/System.out( 4504):     "ad_tracking" : true,
+10-22 18:01:10.154 I/System.out( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 18:01:10.154 I/System.out( 4504):     "gamecenter_id" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "ip_address" : "10.0.2.15",
+10-22 18:01:10.154 I/System.out( 4504):     "time_skew" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "external_ip_address" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "kong_user_id" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "event_time" : "2026-10-22T17:57:10.348+0000",
+10-22 18:01:10.154 I/System.out( 4504):     "client_os_type" : "android",
+10-22 18:01:10.154 I/System.out( 4504):     "player_id" : "1",
+10-22 18:01:10.154 I/System.out( 4504):     "lang_code" : "en",
+10-22 18:01:10.154 I/System.out( 4504):     "idfa" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "session_id" : "16b564e7-b0f2-491f-9155-28f031e4660f",
+10-22 18:01:10.154 I/System.out( 4504):     "device_type" : "Android SDK built for x86",
+10-22 18:01:10.154 I/System.out( 4504):     "kong_plus" : false,
+10-22 18:01:10.154 I/System.out( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 18:01:10.154 I/System.out( 4504):     "device_event_id" : "af7de524-93e4-43eb-bd7f-abbef9a98be1",
+10-22 18:01:10.154 I/System.out( 4504):     "dev_client_version" : "101",
+10-22 18:01:10.154 I/System.out( 4504):     "google_play_services_alias" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "country_code" : "US",
+10-22 18:01:10.154 I/System.out( 4504):     "gamecenter_alias" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "days_retained" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 18:01:10.154 I/System.out( 4504):     "event_time_offset" : 0.0,
+10-22 18:01:10.154 I/System.out( 4504):     "first_client_version" : "1.30.1",
+10-22 18:01:10.154 I/System.out( 4504):     "num_purchases" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "pur_tier" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "keen" : {
+10-22 18:01:10.154 I/System.out( 4504):       "timestamp" : "2026-10-22T17:57:10.351+0000"
+10-22 18:01:10.154 I/System.out( 4504):     },
+10-22 18:01:10.154 I/System.out( 4504):     "client_version" : "1.30.1"
+10-22 18:01:10.154 I/System.out( 4504):   } ]
+10-22 18:01:10.154 I/System.out( 4504): }
+10-22 18:01:10.154 I/System.out( 4504): Oct 22, 2026 6:01:10 PM io.keen.client.android.KeenLogging log
+10-22 18:01:10.154 I/System.out( 4504): FINER: Response code was NOT 200. It was: 404
+10-22 18:01:10.154 I/System.out( 4504): Oct 22, 2026 6:01:10 PM io.keen.client.android.KeenLogging log
+10-22 18:01:10.154 I/System.out( 4504): FINER: Response body was: {"message": "Resource not found.", "error_code": "ResourceNotFoundError"}
+10-22 18:01:10.154 I/System.out( 4504): Oct 22, 2026 6:01:10 PM io.keen.client.android.KeenLogging log
+10-22 18:01:10.154 I/System.out( 4504): FINER: Uploaded events: {
+10-22 18:01:10.154 I/System.out( 4504):   "session_starts" : [ {
+10-22 18:01:10.154 I/System.out( 4504):     "kong_username" : "Guest",
+10-22 18:01:10.154 I/System.out( 4504):     "idfv" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "client_os_version" : "4.4.2",
+10-22 18:01:10.154 I/System.out( 4504):     "first_server_version" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "num_sessions" : 1,
+10-22 18:01:10.154 I/System.out( 4504):     "filter_type" : "jailbroken,not_kong_signed",
+10-22 18:01:10.154 I/System.out( 4504):     "google_play_services_id" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 18:01:10.154 I/System.out( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 18:01:10.154 I/System.out( 4504):     "carrier" : "Android",
+10-22 18:01:10.154 I/System.out( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 18:01:10.154 I/System.out( 4504):     "usd_spent_on_kreds" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "pkg_src" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "data_connection_type" : "mobile LTE",
+10-22 18:01:10.154 I/System.out( 4504):     "site_visitor_id" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "first_play_time_offset" : 0.0,
+10-22 18:01:10.154 I/System.out( 4504):     "imei" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "sdk_version" : "1.2.1.1",
+10-22 18:01:10.154 I/System.out( 4504):     "ad_tracking" : true,
+10-22 18:01:10.154 I/System.out( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 18:01:10.154 I/System.out( 4504):     "gamecenter_id" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "ip_address" : "10.0.2.15",
+10-22 18:01:10.154 I/System.out( 4504):     "time_skew" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "external_ip_address" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "kong_user_id" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "event_time" : "2026-10-22T17:57:10.001+0000",
+10-22 18:01:10.154 I/System.out( 4504):     "client_os_type" : "android",
+10-22 18:01:10.154 I/System.out( 4504):     "player_id" : "",
+10-22 18:01:10.154 I/System.out( 4504):     "lang_code" : "en",
+10-22 18:01:10.154 I/System.out( 4504):     "idfa" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "session_id" : "16b564e7-b0f2-491f-9155-28f031e4660f",
+10-22 18:01:10.154 I/System.out( 4504):     "device_type" : "Android SDK built for x86",
+10-22 18:01:10.154 I/System.out( 4504):     "kong_plus" : false,
+10-22 18:01:10.154 I/System.out( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 18:01:10.154 I/System.out( 4504):     "device_event_id" : "a31d0caf-3bcd-4005-bb63-587719051177",
+10-22 18:01:10.154 I/System.out( 4504):     "is_from_background" : true,
+10-22 18:01:10.154 I/System.out( 4504):     "dev_client_version" : "101",
+10-22 18:01:10.154 I/System.out( 4504):     "google_play_services_alias" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "country_code" : "US",
+10-22 18:01:10.154 I/System.out( 4504):     "gamecenter_alias" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "days_retained" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 18:01:10.154 I/System.out( 4504):     "event_time_offset" : 0.0,
+10-22 18:01:10.154 I/System.out( 4504):     "first_client_version" : "1.30.1",
+10-22 18:01:10.154 I/System.out( 4504):     "num_purchases" : 0,
+10-22 18:01:10.154 I/System.out( 4504):     "pur_tier" : null,
+10-22 18:01:10.154 I/System.out( 4504):     "keen" : {
+10-22 18:01:10.154 I/System.out( 4504):       "timestamp" : "2026-10-22T17:57:10.007+0000"
+10-22 18:01:10.154 I/System.out( 4504):     },
+10-22 18:01:10.154 I/System.out( 4504):     "client_version" : "1.30.1"
+10-22 18:01:10.154 I/System.out( 4504):   } ],
+10-22 18:01:10.154 I/System.out( 4504):   "invalid_states" : [ {
+10-22 18:01:10.154 I/System.out( 4504):     "kong_username" : "Guest",
+10-22 18:01:10.154 I/System.out( 4504):     "idfv" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504): Uploaded events: {
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):   "session_starts" : [ {
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "kong_username" : "Guest",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "idfv" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "client_os_version" : "4.4.2",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_server_version" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "num_sessions" : 1,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "filter_type" : "jailbroken,not_kong_signed",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "google_play_services_id" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "carrier" : "Android",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "usd_spent_on_kreds" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "pkg_src" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "data_connection_type" : "mobile LTE",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "site_visitor_id" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_play_time_offset" : 0.0,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "imei" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "sdk_version" : "1.2.1.1",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "ad_tracking" : true,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "gamecenter_id" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "ip_address" : "10.0.2.15",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "time_skew" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "external_ip_address" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "kong_user_id" : 0,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "event_time" : "2026-10-22T17:57:10.001+0000",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "client_os_type" : "android",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "player_id" : "",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "lang_code" : "en",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "idfa" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "session_id" : "16b564e7-b0f2-491f-9155-28f031e4660f",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "device_type" : "Android SDK built for x86",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "kong_plus" : false,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "device_event_id" : "a31d0caf-3bcd-4005-bb63-587719051177",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "is_from_background" : true,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "dev_client_version" : "101",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "google_play_services_alias" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "country_code" : "US",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "gamecenter_alias" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "days_retained" : 0,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "event_time_offset" : 0.0,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_client_version" : "1.30.1",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "num_purchases" : 0,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "pur_tier" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "keen" : {
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):       "timestamp" : "2026-10-22T17:57:10.007+0000"
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     },
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "client_version" : "1.30.1"
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):   } ],
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):   "invalid_states" : [ {
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "kong_username" : "Guest",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "idfv" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "client_os_version" : "4.4.2",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "reason" : "jailbroken",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_server_version" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "num_sessions" : 0,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "filter_type" : "jailbroken",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "google_play_services_id" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "carrier" : "Android",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "usd_spent_on_kreds" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "pkg_src" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "data_connection_type" : "mobile LTE",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "site_visitor_id" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_play_time_offset" : 0.0,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "imei" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "sdk_version" : "1.2.1.1",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "ad_tracking" : true,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "google_ad_id" : "97f4e4c4-58dc-4155-a737-95256bc46bf1",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "gamecenter_id" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "ip_address" : "10.0.2.15",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "time_skew" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "external_ip_address" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "kong_user_id" : 0,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "event_time" : "2026-10-22T17:57:09.900+0000",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "client_os_type" : "android",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "player_id" : "",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "lang_code" : "en",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "idfa" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "session_id" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "device_type" : "Android SDK built for x86",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "kong_plus" : false,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "device_event_id" : "38c8da64-6958-40e6-baad-0df13bf9c1f6",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "dev_client_version" : "101",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "google_play_services_alias" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "country_code" : "US",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "gamecenter_alias" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "days_retained" : 0,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "mac_address" : "52:54:00:12:34:56",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "event_time_offset" : 0.0,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_client_version" : "1.30.1",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "num_purchases" : 0,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "pur_tier" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "keen" : {
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):       "timestamp" : "2026-10-22T17:57:09.909+0000"
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     },
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "client_version" : "1.30.1"
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):   } ],
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):   "installs" : [ {
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "kong_username" : "Guest",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "idfv" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "client_os_version" : "4.4.2",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_server_version" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "stub_field" : 0,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "num_sessions" : 1,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "filter_type" : "jailbroken,not_kong_signed",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "google_play_services_id" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_play_time" : "2026-10-22T17:57:09.706+0000",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "android_id" : "2aa894357467e6ec",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "carrier" : "Android",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_sdk_version" : "1.2.1.1",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "usd_spent_on_kreds" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "pkg_src" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "data_connection_type" : "mobile LTE",
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "site_visitor_id" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "first_play_time_offset" : 0.0,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "imei" : null,
+10-22 18:01:10.154 D/KEEN_CLIENT( 4504):     "sdk_version" 
+10-22 18:01:10.984 W/System.err( 4504): java.net.ConnectException: failed to connect to 1567.api.swrve.com/2600:9000:2032:8000:11:1825:d7c0:93a1 (port 443) after 15000ms: isConnected failed: ENETUNREACH (Network is unreachable)
+10-22 18:01:10.984 W/System.err( 4504): 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
+10-22 18:01:10.984 W/System.err( 4504): 	at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
+10-22 18:01:10.984 W/System.err( 4504): 	at libcore.io.IoBridge.connect(IoBridge.java:112)
+10-22 18:01:10.984 W/System.err( 4504): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+10-22 18:01:10.984 W/System.err( 4504): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+10-22 18:01:10.984 W/System.err( 4504): 	at java.net.Socket.connect(Socket.java:843)
+10-22 18:01:10.984 W/System.err( 4504): 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:131)
+10-22 18:01:10.984 W/System.err( 4504): 	at com.android.okhttp.Connection.connect(Connection.java:101)
+10-22 18:01:10.984 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
+10-22 18:01:10.984 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
+10-22 18:01:10.984 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
+10-22 18:01:10.984 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
+10-22 18:01:10.984 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:89)
+10-22 18:01:10.984 W/System.err( 4504): 	at com.android.okhttp.internal.http.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:161)
+10-22 18:01:10.984 W/System.err( 4504): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:147)
+10-22 18:01:10.984 W/System.err( 4504): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:119)
+10-22 18:01:10.984 W/System.err( 4504): 	at com.swrve.sdk.SwrveImp.postBatchRequest(SwrveImp.java:443)
+10-22 18:01:10.984 W/System.err( 4504): 	at com.swrve.sdk.SwrveBase$5.run(SwrveBase.java:438)
+10-22 18:01:10.984 W/System.err( 4504): 	at com.swrve.sdk.SwrveRunnables$1.run(SwrveRunnables.java:18)
+10-22 18:01:10.984 W/System.err( 4504): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+10-22 18:01:10.984 W/System.err( 4504): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+10-22 18:01:10.984 W/System.err( 4504): 	at java.lang.Thread.run(Thread.java:841)
+10-22 18:01:10.984 W/System.err( 4504): Caused by: libcore.io.ErrnoException: isConnected failed: ENETUNREACH (Network is unreachable)
+10-22 18:01:10.984 W/System.err( 4504): 	at libcore.io.IoBridge.isConnected(IoBridge.java:208)
+10-22 18:01:10.984 W/System.err( 4504): 	... 21 more
+10-22 18:01:10.984 E/SwrveSDK( 4504): Batch of events could not be sent, retrying
+10-22 18:01:11.234 I/GAOffline( 4504): beat t=242 frame=3726 level=CombatScreen ready=True not started: 
+10-22 18:01:16.284 I/GAOffline( 4504): beat t=247 frame=3810 level=CombatScreen ready=True not started: 
+10-22 18:01:21.344 I/GAOffline( 4504): beat t=252 frame=3887 level=CombatScreen ready=True not started: 
+10-22 18:01:26.374 I/GAOffline( 4504): beat t=258 frame=3971 level=CombatScreen ready=True not started: 
+10-22 18:01:31.384 I/GAOffline( 4504): beat t=263 frame=4047 level=CombatScreen ready=True not started: 
+10-22 18:01:36.424 I/GAOffline( 4504): beat t=268 frame=4129 level=CombatScreen ready=True not started: 
+10-22 18:01:41.434 I/GAOffline( 4504): beat t=273 frame=4212 level=CombatScreen ready=True not started: 
+10-22 18:01:46.474 I/GAOffline( 4504): beat t=278 frame=4290 level=CombatScreen ready=True not started: 
+10-22 18:01:51.524 I/GAOffline( 4504): beat t=283 frame=4372 level=CombatScreen ready=True not started: 
+10-22 18:01:56.534 I/GAOffline( 4504): beat t=288 frame=4447 level=CombatScreen ready=True not started: 
+10-22 18:02:01.554 I/GAOffline( 4504): beat t=293 frame=4531 level=CombatScreen ready=True not started: 
