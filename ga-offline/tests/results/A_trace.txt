@@ -1,573 +1,573 @@
-19:26:18.083 I boot offline-1, level BootLoader, data /data/data/com.kongregate.mobile.globalassault.google/files
-19:26:18.107 I Log: IAPAmazon OnEnable
-19:26:18.135 I Log: Creating FingerGestures using TouchScreen Gestures
-19:26:18.143 E Error: Cannot change GameObject hierarchy while activating or deactivating the parent.
+19:49:05.596 I boot offline-1, level BootLoader, data /data/data/com.kongregate.mobile.globalassault.google/files
+19:49:05.609 I Log: IAPAmazon OnEnable
+19:49:05.626 I Log: Creating FingerGestures using TouchScreen Gestures
+19:49:05.630 E Error: Cannot change GameObject hierarchy while activating or deactivating the parent.
 
-19:26:18.150 I Log: Unity 4.x, set default AllowImmersiveMode to true
-19:26:18.153 I Log: KongregateAPI: DEBUG: initializating from Unity
-19:26:18.154 I Log: Kongregate Initializing from Unity
-19:26:18.173 I Log: KongregateAPI: DEBUG: initialization from Unity complete
-19:26:18.176 I Log: KongregateAPI: DEBUG: Setting common props callback
-19:26:18.177 I Log: KongregateAPI: DEBUG: using CommonPropsCallback
-19:26:18.179 I Log: KongregateAPI: DEBUG: Analytics update common props: { "player_id" : "","client_version" : 30 }
-19:26:18.214 I Log: BuildInfo
-19:26:18.222 I beat t=1 frame=3 level=BootLoader ready=False not started: AppManager=Uninitialized, ScreenManager=Uninitialized, AudioManager=Uninitialized, SpriteManager=Uninitialized, CombatManager=Uninitialized, MissionManager=Uninitialized, RaidManager=Uninitialized, GuildWarManager=Uninitialized, ChatManager=Uninitialized, ExperimentManager=Uninitialized, PlayerManager=Uninitialized, CardManager=Uninitialized, FusionManager=Uninitialized, EquipmentManager=Uninitialized, InventoryManager=Uninitialized, AchievementManager=Uninitialized, StoreManager=Uninitialized, StatsManager=Uninitialized, UpgradeManager=Uninitialized, EntityManager=Uninitialized, AuthenticationManager=Uninitialized, DeckManager=Uninitialized, RewardManager=Uninitialized, LoggingManager=Uninitialized, AnalyticsManager=Uninitialized, InitializationManager=Uninitialized, NewsManager=Uninitialized, EffectsManager=Uninitialized, IAPDroidManager=Uninitialized, TutorialManager=Uninitialized, GuildManager=Uninitialized, CinematicManager=Uninitialized, EventTimelineManager=Uninitialized, LeagueManager=Uninitialized, FactionManager=Uninitialized, EndlessDungeonManager=Uninitialized, AssetBundleManager=Uninitialized, WWWManager=Uninitialized, TimeManager=Uninitialized, DataManager=Uninitialized, PopupManager=Uninitialized
-19:26:18.750 I Log: Kongregate API is ready
-19:26:18.758 I Log: EVENT GAME AUTH: user 0 is a guest
-19:26:18.758 I Log: game auth has changed to:Guest_Game_Auth_Token
-19:26:18.924 I Log: server api: https://havoc.synapse-games.com/api.php?message=getUserAccount&user_id=
-19:26:18.968 I [GAOffline] getUserAccount -> 595 bytes
-19:26:18.971 I Log: Kongregate Service Unavailable
-19:26:19.015 I Log: version retrieved: offline-1
-19:26:19.029 I Log: user data updated
-19:26:19.035 I Log: user account received result: True
-19:26:19.039 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:26:19.042 I [GAOffline] unhandled message recordEvent, answering result:true
-19:26:19.042 I [GAOffline] recordEvent -> 55 bytes
-19:26:19.043 I Log: KongregateAPI: DEBUG: Adding event to collection: installs
-19:26:19.043 I Log: KongregateAPI: DEBUG: Analytics add event json=installs map={ "stub_field" : 0 }
-19:26:19.043 I Log: KongregateAPI: DEBUG: using CommonPropsCallback
-19:26:19.043 I Log: KongregateAPI: DEBUG: including common props: { "player_id" : "1","client_version" : 30 }
-19:26:19.044 I Log: Sent event installs with 1 params
-19:26:19.111 I Log: server api: https://havoc.synapse-games.com/api.php?message=init&user_id=1
-19:26:19.170 I [GAOffline] init -> 4340 bytes
-19:26:19.173 I [GAOffline] assets/tutorial1.xml served locally
-19:26:19.177 I [GAOffline] assets/cards.xml served locally
-19:26:19.212 I Log: init responsed with: {"result":true,"time":1792697179,"version":"offline-1","user_data":{"user_id":"1","name":"Commander","install_date":"2026-10-22 19:26:18","flags":{"music":1,"sound":1,"tutorial":0,"autopilot":0,"speed":1},"last_update_time":1792697179,"tokens":0,"money":0,"money_cap":999999,"energy":100,"energy_recharge_time":60,"stamina":10,"max_stamina":10,"stamina_recharge_time":300,"last_stam_update_time":1792697179,"salvage":0,"active_deck":1,"level":1,"xp":0,"base_xp":0,"next_xp":100,"caps":{"max_salvage":9999,"max_cards":500},"has_kong_id":0},"user_units":[{"unit_index":1,"unit_id":2,"level":1,"sp":0,"deck_id":1,"slot_id":0},{"unit_index":2,"unit_id":502,"level":1,"sp":0,"deck_id":1,"slot_id":1},{"unit_index":3,"unit_id":10,"level":1,"sp":0,"deck_id":1,"slot_id":2}],"user_decks":[{"deck_id":1,"name":"Squad 1","commander_item_id":0,"power_level":"1","units":[{"unit_index":1,"unit_id":2,"level":1,"sp":0,"deck_id":1,"slot_id":0},{"unit_index":2,"unit_id":502,"level":1,"sp":0,"deck_id":1,"slot_id":1},{"unit_index":3,"unit_id":10,"level":1,"sp":0,"deck_id":1,"slot_id":2}],"squad_damage":0,"max_damage":100,"repair_speed":60,"retreat_damage":0,"repair_start_time":0,"repair_end_time":0}],"user_tasks":{},"user_items":{},"mission_completions":{},"max_energy":100,"max_stamina":10,"base_upgrades":[],"upgrades_data":[],"news":[],"user_achievements":[],"store_items":[{"id":1,"item_type":1,"card":0,"sc_cost":100,"hc_cost":0,"name":"Supply Drop","desc":"One random unit.","model":"prefab_bronze_crate","priority":1}],"is_vc_on_sale":0,"feature_locks":{"lab":0,"command_room":0,"armory":0,"pvp":0,"pvp_league":0,"auto_research_duals_quads":0,"skip":0},"locations":[{"id":1,"name":"Alaska","map":"snowforest_dawn"},{"id":2,"name":"Northwest Territory","map":"snowforest_dawn"},{"id":3,"name":"Nunavut","map":"snowforest_dawn"},{"id":4,"name":"Greenland","map":"snowforest_dawn"},{"id":5,"name":"Alberta","map":"snowforest_dawn"},{"id":6,"name":"Ontario","map":"snowforest_dawn"},{"id":7,"name":"Eastern Canada","map":"snowforest_dawn"},{"id":8,"name":"Western United States","map":"jungle_sunset"},{"id":9,"name":"Eastern United States","map":"beach_sunny"},{"id":10,"name":"Central America","map":"jungle_fire_2"},{"id":11,"name":"Venezuela","map":"beach_sunny"},{"id":12,"name":"Peru","map":"beach_sunny"},{"id":13,"name":"Brazil","map":"jungle_sunset"},{"id":14,"name":"Argentina","map":"city_sunny"},{"id":15,"name":"Iceland","map":"helicarrier_map"},{"id":16,"name":"Scandinavia","map":"snowforest_dawn"},{"id":17,"name":"Russia","map":"snowforest_dawn"},{"id":18,"name":"Ural","map":"snowforest_dawn"},{"id":19,"name":"Siberia","map":"snowforest_dawn"},{"id":20,"name":"Yakutsk","map":"snowforest_dawn"},{"id":21,"name":"Kamchatka","map":"snowforest_dawn"},{"id":22,"name":"Great Britain","map":"beach_sunny"},{"id":23,"name":"Western Europe","map":"beach_sunny"},{"id":24,"name":"Northern Europe","map":"beach_sunny"},{"id":25,"name":"Southern Europe","map":"beach_sunny"},{"id":26,"name":"Middle East","map":"city_sunny"},{"id":27,"name":"Afghanistan","map":"helicarrier_map"},{"id":28,"name":"China","map":"city_sunny"},{"id":29,"name":"Mongolia","map":"jungle_sunset"},{"id":30,"name":"Irkutsk","map":"snowforest_dawn"},{"id":31,"name":"Japan","map":"beach_sunny"},{"id":32,"name":"North Africa","map":"city_sunny"},{"id":33,"name":"Egypt","map":"city_sunny"},{"id":34,"name":"East Africa","map":"helicarrier_map"},{"id":35,"name":"Congo","map":"jungle_sunset"},{"id":36,"name":"South Africa","map":"beach_sunny"},{"id":37,"name":"Madagascar","map":"beach_sunny"},{"id":38,"name":"India","map":"jungle_sunset"},{"id":39,"name":"Siam","map":"jungle_sunset"},{"id":40,"name":"Indonesia","map":"jungle_sunset"},{"id":41,"name":"New Guinea","map":"beach_sunny"},{"id":42,"name":"New Zealand","map":"jungle_fire_2"},{"id":43,"name":"Western Australia","map":"beach_sunny"},{"id":44,"name":"Eastern Australia","map":"beach_sunny"}],"current_campaigns":[{"id":1,"campaign_name":"It Begins","name":"It Begins 1","desc":"A warlord is attempting to overthrow the local democratic government. Put the rebellion down.","location":14,"level":0,"progress":0,"max_progress":3,"mission_type":0,"speech":{"line":[{"commander":"elia","text":"Commander, we're responding to a rebel threat in Argentina."}]},"speech_map":{"line":[]}}],"client_version":0}
-19:26:19.227 I Log: user data updated
-19:26:19.246 I Log: version retrieved: offline-1
-19:26:19.246 I Log: user data updated
-19:26:19.251 I Log: version retrieved: offline-1
-19:26:19.252 I Log: New Session event
-19:26:19.252 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:26:19.261 I [GAOffline] unhandled message recordEvent, answering result:true
-19:26:19.261 I [GAOffline] recordEvent -> 55 bytes
-19:26:19.263 I Log: Loading XML tutorialdata took 0.1015486 seconds
-19:26:19.263 I Log: Loading XML cardsdata took 0.1015486 seconds
-19:26:19.339 I Log: card data starting to load...
-19:26:20.035 I Log: cards loaded
-19:26:20.288 I Log: user data updated
-19:26:20.291 I Log: Google IAB starting...
-19:26:20.293 I Log: Google IAB started
-19:26:20.294 I Log: tutorial data starting to load...
-19:26:20.296 I Log: billingNotSupportedEvent: Billing service unavailable on device. (response: 3:Billing Unavailable)
-19:26:20.395 I Log: tutorials loaded
-19:26:20.435 I Log: server api: https://havoc.synapse-games.com/api.php?message=startCampaign&user_id=1
-19:26:20.464 I Log: Draw card=1
-19:26:20.464 I Log: Draw card=2
-19:26:20.464 I Log: Draw card=3
-19:26:20.468 I Log: Play card=1 pos=1
-19:26:20.470 I Log: Action card=1 skill=blitz value=1 target=System.Collections.Generic.List`1[System.Int32]
-19:26:20.470 I Log: ***FIELD: -1-
-19:26:20.476 I Log: Action card=1 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
-19:26:20.477 I Log: Draw card=4
-19:26:20.477 I Log: Draw card=5
-19:26:20.477 I Log: Draw card=6
-19:26:20.483 I [GAOffline] startCampaign -> 2853 bytes
-19:26:20.485 I Log: current level: BootLoader, loading level: Combat
-19:26:20.486 I Log: waiting for screen load...
-19:26:20.487 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:26:20.490 I [GAOffline] unhandled message recordEvent, answering result:true
-19:26:20.490 I [GAOffline] recordEvent -> 55 bytes
-19:26:20.531 W Warning: parsing combat data: {"battle_id":1792697180,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792697180,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":10,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
-19:26:20.533 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-19:26:20.542 I Log: user data updated
-19:26:20.543 I Log: version retrieved: offline-1
-19:26:20.543 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-19:26:20.543 I Log: user data updated
-19:26:20.543 W Warning: parsing combat data: {"battle_id":1792697180,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792697180,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":10,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
-19:26:20.544 I Log: mission started: True
-19:26:20.545 I Log: user data updated
-19:26:22.534 I Log: current level: BootLoader, loading level: Combat
-19:26:22.748 I Log: Fading music out
-19:26:23.021 I Log: Using location=city_sunny bundle = 2
-19:26:23.052 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:26:23.057 I Log: on start combat...
-19:26:23.060 W Warning: CommanderEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CommanderEntity.
-19:26:23.125 I (previous message repeated 1 more times)
-19:26:23.125 I Log: tutorial event received: [TutorialFlaqReq: ID=inCombat, Key=, Value=1, Popup=]
-19:26:23.126 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:26:23.127 I Log: on update combat: [ServiceCombatData: BattleID=1792697180, HostID=1, HostIsAttacker=False, AttackCommanderID=0, AttackDeck=System.Collections.Generic.List`1[ServiceCombatCardMapData], DefendCommanderID=0, EnemySize=3, MissionID=1, Turns=System.Collections.Generic.List`1[ServiceCombatTurnData], CardMap=System.Collections.Generic.List`1[ServiceCombatCardMapData], EndTime=, IsWinner=False, IsLoser=False, InLiveBattle=False, MissionExists=True]
-19:26:23.451 I beat t=6 frame=69 level=CombatScreen ready=True not started: 
-19:26:23.454 I Log: tutorial screen loaded. refreshing UI for tutorial 5, step 1
-19:26:23.458 I Log: tutorial event received: [TutorialFlaqReq: ID=screen, Key=, Value=Combat, Popup=]
-19:26:23.458 I Log: Loading screen CombatScreen took 0.2550843 seconds
-19:26:28.455 I beat t=11 frame=147 level=CombatScreen ready=True not started: 
-19:26:33.457 I beat t=16 frame=223 level=CombatScreen ready=True not started: 
-19:26:38.495 I beat t=21 frame=293 level=CombatScreen ready=True not started: 
-19:26:43.542 I beat t=26 frame=371 level=CombatScreen ready=True not started: 
-19:26:48.547 I beat t=31 frame=444 level=CombatScreen ready=True not started: 
-19:26:53.566 I beat t=36 frame=516 level=CombatScreen ready=True not started: 
-19:26:58.570 I beat t=41 frame=591 level=CombatScreen ready=True not started: 
-19:27:03.624 I beat t=46 frame=667 level=CombatScreen ready=True not started: 
-19:27:08.647 I beat t=51 frame=741 level=CombatScreen ready=True not started: 
-19:27:13.677 I beat t=56 frame=820 level=CombatScreen ready=True not started: 
-19:27:18.728 I beat t=61 frame=898 level=CombatScreen ready=True not started: 
-19:27:23.745 I beat t=66 frame=976 level=CombatScreen ready=True not started: 
-19:27:28.760 I beat t=71 frame=1055 level=CombatScreen ready=True not started: 
-19:27:33.790 I beat t=76 frame=1128 level=CombatScreen ready=True not started: 
-19:27:38.840 I beat t=81 frame=1208 level=CombatScreen ready=True not started: 
-19:27:43.853 I beat t=86 frame=1282 level=CombatScreen ready=True not started: 
-19:27:45.101 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:27:45.171 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:27:45.400 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
-19:27:45.768 I Log: Doing phase=Play turn=1
-19:27:45.769 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:27:45.769 I Log: Doing phase=End turn=1
-19:27:45.770 I Log: phase end...turn:1
-19:27:45.772 I Log: Doing phase=Play turn=2
-19:27:45.772 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:27:45.773 I Log: Doing phase=End turn=2
-19:27:45.773 I Log: phase end...turn:2
-19:27:46.525 I Log: Doing phase=Draw turn=3
-19:27:46.526 I Log: Doing phase=Play turn=3
-19:27:46.526 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:27:46.528 W Warning: CombatEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CombatEntity.
-19:27:46.571 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
-19:27:46.571 I Log: tutorial event received: [TutorialFlaqReq: ID=playedSkill, Key=, Value=blitz, Popup=]
-19:27:47.299 I Log: Doing phase=Action turn=3
-19:27:47.302 I Log: handle card skill: [ServiceCombatActionData: CardUID=1, SkillID=blitz, Targets=1, Value=1, Block=, Status=]
-19:27:47.303 W Warning: unknown skill: blitz
-19:27:47.303 I Log: skill blitz with actor: 1 and value: 1
-19:27:47.304 I Log: handle card skill: [ServiceCombatActionData: CardUID=1, SkillID=0, Targets=-2, Value=2, Block=, Status=]
-19:27:47.304 I Log: skill  with actor: 1 and value: 2
-19:27:48.088 I Log: Doing phase=Action turn=3
-19:27:48.088 I Log: Doing phase=End turn=3
-19:27:48.088 I Log: phase end...turn:3
-19:27:48.861 I beat t=91 frame=1370 level=CombatScreen ready=True not started: 
-19:27:48.862 I Log: Doing phase=Draw turn=4
-19:27:48.865 I Log: Doing phase=Play turn=4
-19:27:48.915 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=1, Popup=]
-19:27:48.915 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
-19:27:48.916 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:27:48.918 I [GAOffline] unhandled message recordEvent, answering result:true
-19:27:48.918 I [GAOffline] recordEvent -> 55 bytes
-19:27:49.563 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:27:49.639 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:27:49.876 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
-19:27:49.876 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
-19:27:49.876 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:27:49.879 I [GAOffline] unhandled message recordEvent, answering result:true
-19:27:49.879 I [GAOffline] recordEvent -> 55 bytes
-19:27:53.880 I beat t=96 frame=1445 level=CombatScreen ready=True not started: 
-19:27:55.865 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:27:56.007 I [GAOffline] autotest: finger drag begin at (177.0, 183.9) from (177.0, 183.9)
-19:27:56.008 I Log: Disabling button Unit 1
-19:27:56.008 I [GAOffline] autotest: unit drag started, unit 1
-19:27:58.892 I beat t=101 frame=1521 level=CombatScreen ready=True not started: 
-19:27:59.946 I [GAOffline] autotest: touch Ended at (738.0, 607.4) on 1920x1080
-19:27:59.949 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:27:59.950 I (previous message repeated 1 more times)
-19:27:59.950 W Warning: CombatEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CombatEntity.
-19:27:59.955 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
-19:27:59.955 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
-19:27:59.955 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:27:59.962 I [GAOffline] unhandled message recordEvent, answering result:true
-19:27:59.962 I [GAOffline] recordEvent -> 55 bytes
-19:27:59.968 I Log: Playing card=4 skipAnimations=False
-19:27:59.968 I Log: play card: 4
-19:27:59.969 I Log: server api: https://havoc.synapse-games.com/api.php?message=playCard&user_id=1
-19:27:59.974 I Log: Play card=4 pos=1
-19:27:59.975 I Log: ***FIELD: -4-
-19:27:59.975 I Log: Play card=2 pos=5
-19:27:59.975 I Log: Action card=2 skill=blitz value=1 target=System.Collections.Generic.List`1[System.Int32]
-19:27:59.975 I Log: ***FIELD: -1-2-
-19:27:59.976 I Log: Action card=1 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
-19:27:59.976 I Log: Action card=2 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
-19:27:59.976 I [GAOffline] playCard -> 3353 bytes
-19:28:00.061 W Warning: parsing combat data: {"battle_id":1792697180,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792697180,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":10,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[{"card_uid":4,"field_order":1,"status":[]}],"upkeep":[],"actions":[],"end":[]},"3":{"begin":[],"draws":[],"plays":[{"card_uid":2,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":2,"skill_id":"blitz","targets":[2],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"4":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
-19:28:00.061 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-19:28:00.061 I Log: user data updated
-19:28:00.062 I Log: version retrieved: offline-1
-19:28:00.062 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-19:28:00.062 I Log: user data updated
-19:28:00.062 W Warning: parsing combat data: {"battle_id":1792697180,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792697180,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":10,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[{"card_uid":4,"field_order":1,"status":[]}],"upkeep":[],"actions":[],"end":[]},"3":{"begin":[],"draws":[],"plays":[{"card_uid":2,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":2,"skill_id":"blitz","targets":[2],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"4":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
-19:28:00.063 I Log: user data updated
-19:28:00.063 I Log: on update combat: [ServiceCombatData: BattleID=1792697180, HostID=1, HostIsAttacker=False, AttackCommanderID=0, AttackDeck=System.Collections.Generic.List`1[ServiceCombatCardMapData], DefendCommanderID=0, EnemySize=3, MissionID=1, Turns=System.Collections.Generic.List`1[ServiceCombatTurnData], CardMap=System.Collections.Generic.List`1[ServiceCombatCardMapData], EndTime=, IsWinner=False, IsLoser=False, InLiveBattle=False, MissionExists=True]
-19:28:02.302 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:28:02.433 I [GAOffline] autotest: finger drag begin at (165.6, 179.9) from (165.6, 179.9)
-19:28:03.940 I beat t=106 frame=1596 level=CombatScreen ready=True not started: 
-19:28:06.336 I [GAOffline] autotest: touch Ended at (511.8, 606.8) on 1920x1080
-19:28:06.577 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
-19:28:07.029 I Log: Doing phase=Play turn=4
-19:28:07.029 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:28:07.029 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
-19:28:07.809 I Log: Doing phase=End turn=4
-19:28:07.809 I Log: phase end...turn:4
-19:28:08.588 I Log: Doing phase=Play turn=5
-19:28:08.588 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:28:08.588 W Warning: CombatEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CombatEntity.
-19:28:08.594 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
-19:28:08.774 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:28:08.904 I [GAOffline] autotest: finger drag begin at (177.6, 178.6) from (177.6, 178.6)
-19:28:08.975 I beat t=111 frame=1684 level=CombatScreen ready=True not started: 
-19:28:09.337 I Log: Doing phase=Action turn=5
-19:28:09.338 I Log: handle card skill: [ServiceCombatActionData: CardUID=2, SkillID=blitz, Targets=2, Value=1, Block=, Status=]
-19:28:09.338 W Warning: unknown skill: blitz
-19:28:09.338 I Log: skill blitz with actor: 2 and value: 1
-19:28:09.338 I Log: handle card skill: [ServiceCombatActionData: CardUID=1, SkillID=0, Targets=4, Value=2, Block=, Status=]
-19:28:09.338 I Log: skill  with actor: 1 and value: 2
-19:28:10.124 I Log: Doing phase=Action turn=5
-19:28:10.124 I Log: handle card skill: [ServiceCombatActionData: CardUID=2, SkillID=0, Targets=4, Value=2, Block=, Status=]
-19:28:10.124 I Log: skill  with actor: 2 and value: 2
-19:28:10.902 I Log: Doing phase=Action turn=5
-19:28:10.902 I Log: Doing phase=End turn=5
-19:28:10.902 I Log: phase end...turn:5
-19:28:11.696 I Log: Doing phase=Play turn=6
-19:28:11.699 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=1, Popup=]
-19:28:11.699 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
-19:28:11.699 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:28:11.703 I [GAOffline] unhandled message recordEvent, answering result:true
-19:28:11.703 I [GAOffline] recordEvent -> 55 bytes
-19:28:12.790 I [GAOffline] autotest: touch Ended at (736.5, 452.3) on 1920x1080
-19:28:13.989 I beat t=116 frame=1764 level=CombatScreen ready=True not started: 
-19:28:15.234 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
-19:28:15.385 I [GAOffline] autotest: finger drag begin at (184.8, 900.5) from (184.8, 900.5)
-19:28:19.052 I beat t=121 frame=1827 level=CombatScreen ready=True not started: 
-19:28:19.282 I [GAOffline] autotest: touch Ended at (608.0, 340.0) on 1920x1080
-19:28:19.559 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
-19:28:19.560 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
-19:28:19.561 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:28:19.571 I [GAOffline] unhandled message recordEvent, answering result:true
-19:28:19.571 I [GAOffline] recordEvent -> 55 bytes
-19:28:24.081 I beat t=127 frame=1906 level=CombatScreen ready=True not started: 
-19:28:28.053 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:28:28.124 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:28:29.122 I beat t=132 frame=1979 level=CombatScreen ready=True not started: 
-19:28:32.480 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:28:32.560 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:28:34.168 I beat t=137 frame=2060 level=CombatScreen ready=True not started: 
-19:28:38.984 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:28:39.103 I [GAOffline] autotest: finger drag begin at (172.8, 180.7) from (172.8, 180.7)
-19:28:39.104 I Log: Disabling button Unit 1
-19:28:39.105 I [GAOffline] autotest: unit drag started, unit 2
-19:28:39.224 I beat t=142 frame=2136 level=CombatScreen ready=True not started: 
-19:28:43.072 I [GAOffline] autotest: touch Ended at (738.8, 608.0) on 1920x1080
-19:28:43.545 I Log: Enabling button Unit 1
-19:28:44.221 I beat t=147 frame=2217 level=CombatScreen ready=True not started: 
-19:28:45.446 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:28:45.559 I [GAOffline] autotest: finger drag begin at (165.4, 179.5) from (165.4, 179.5)
-19:28:45.559 I Log: Disabling button Unit 1
-19:28:45.559 I [GAOffline] autotest: unit drag started, unit 2
-19:28:49.281 I beat t=152 frame=2297 level=CombatScreen ready=True not started: 
-19:28:49.523 I [GAOffline] autotest: touch Ended at (516.2, 612.2) on 1920x1080
-19:28:49.526 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:28:49.526 I (previous message repeated 1 more times)
-19:28:49.526 W Warning: CombatEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CombatEntity.
-19:28:49.529 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
-19:28:49.532 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
-19:28:49.532 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:28:49.537 I [GAOffline] unhandled message recordEvent, answering result:true
-19:28:49.537 I [GAOffline] recordEvent -> 55 bytes
-19:28:49.544 I Log: Playing card=5 skipAnimations=False
-19:28:49.544 I Log: play card: 5
-19:28:49.544 I Log: server api: https://havoc.synapse-games.com/api.php?message=playCard&user_id=1
-19:28:49.549 I Log: Play card=5 pos=5
-19:28:49.549 I Log: ***FIELD: -4-5-
-19:28:49.549 I Log: Action card=4 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
-19:28:49.549 I Log: Play card=3 pos=3
-19:28:49.550 I Log: Action card=3 skill=blitz value=1 target=System.Collections.Generic.List`1[System.Int32]
-19:28:49.550 I Log: ***FIELD: -2-3-
-19:28:49.550 I Log: Action card=3 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
-19:28:49.550 I Log: Action card=2 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
-19:28:49.550 I [GAOffline] playCard -> 3942 bytes
-19:28:49.614 W Warning: parsing combat data: {"battle_id":1792697180,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792697180,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":10,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[{"card_uid":4,"field_order":1,"status":[]}],"upkeep":[],"actions":[],"end":[]},"3":{"begin":[],"draws":[],"plays":[{"card_uid":2,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":2,"skill_id":"blitz","targets":[2],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"4":{"begin":[],"draws":[],"plays":[{"card_uid":5,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":4,"skill_id":"0","targets":[1],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"5":{"begin":[],"draws":[],"plays":[{"card_uid":3,"field_order":3,"status":[]}],"upkeep":[],"actions":[{"card_uid":3,"skill_id":"blitz","targets":[3],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":3,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"6":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
-19:28:49.614 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-19:28:49.615 I Log: user data updated
-19:28:49.615 I Log: version retrieved: offline-1
-19:28:49.615 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-19:28:49.615 I Log: user data updated
-19:28:49.615 W Warning: parsing combat data: {"battle_id":1792697180,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792697180,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":10,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[{"card_uid":4,"field_order":1,"status":[]}],"upkeep":[],"actions":[],"end":[]},"3":{"begin":[],"draws":[],"plays":[{"card_uid":2,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":2,"skill_id":"blitz","targets":[2],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"4":{"begin":[],"draws":[],"plays":[{"card_uid":5,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":4,"skill_id":"0","targets":[1],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"5":{"begin":[],"draws":[],"plays":[{"card_uid":3,"field_order":3,"status":[]}],"upkeep":[],"actions":[{"card_uid":3,"skill_id":"blitz","targets":[3],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":3,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"6":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
-19:28:49.615 I Log: user data updated
-19:28:49.616 I Log: on update combat: [ServiceCombatData: BattleID=1792697180, HostID=1, HostIsAttacker=False, AttackCommanderID=0, AttackDeck=System.Collections.Generic.List`1[ServiceCombatCardMapData], DefendCommanderID=0, EnemySize=3, MissionID=1, Turns=System.Collections.Generic.List`1[ServiceCombatTurnData], CardMap=System.Collections.Generic.List`1[ServiceCombatCardMapData], EndTime=, IsWinner=False, IsLoser=False, InLiveBattle=False, MissionExists=True]
-19:28:52.006 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:28:52.170 I [GAOffline] autotest: finger drag begin at (173.9, 176.8) from (173.9, 176.8)
-19:28:54.332 I beat t=157 frame=2370 level=CombatScreen ready=True not started: 
-19:28:56.084 I [GAOffline] autotest: touch Ended at (736.5, 452.3) on 1920x1080
-19:28:56.378 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
-19:28:56.667 I Log: Doing phase=Play turn=6
-19:28:56.667 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:28:56.668 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
-19:28:57.459 I Log: Doing phase=Action turn=6
-19:28:57.459 I Log: handle card skill: [ServiceCombatActionData: CardUID=4, SkillID=0, Targets=1, Value=2, Block=, Status=]
-19:28:57.459 I Log: skill  with actor: 4 and value: 2
-19:28:58.216 I Log: Doing phase=Action turn=6
-19:28:58.217 I Log: Doing phase=End turn=6
-19:28:58.217 I Log: phase end...turn:6
-19:28:58.444 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
-19:28:58.548 I [GAOffline] autotest: finger drag begin at (175.6, 912.6) from (175.6, 912.6)
-19:28:58.992 I Log: Doing phase=Play turn=7
-19:28:58.992 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:28:58.992 W Warning: CombatEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CombatEntity.
-19:28:58.994 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
-19:28:59.368 I beat t=162 frame=2453 level=CombatScreen ready=True not started: 
-19:28:59.783 I Log: Doing phase=Action turn=7
-19:28:59.783 I Log: handle card skill: [ServiceCombatActionData: CardUID=3, SkillID=blitz, Targets=3, Value=1, Block=, Status=]
-19:28:59.783 W Warning: unknown skill: blitz
-19:28:59.783 I Log: skill blitz with actor: 3 and value: 1
-19:28:59.783 I Log: handle card skill: [ServiceCombatActionData: CardUID=3, SkillID=0, Targets=-2, Value=2, Block=, Status=]
-19:28:59.783 I Log: skill  with actor: 3 and value: 2
-19:29:00.548 I Log: Doing phase=Action turn=7
-19:29:00.548 I Log: handle card skill: [ServiceCombatActionData: CardUID=2, SkillID=0, Targets=4, Value=2, Block=, Status=]
-19:29:00.548 I Log: skill  with actor: 2 and value: 2
-19:29:01.316 I Log: Doing phase=Action turn=7
-19:29:01.316 I Log: Doing phase=End turn=7
-19:29:01.316 I Log: phase end...turn:7
-19:29:02.098 I Log: Doing phase=Play turn=8
-19:29:02.099 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=1, Popup=]
-19:29:02.099 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
-19:29:02.100 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:29:02.103 I [GAOffline] unhandled message recordEvent, answering result:true
-19:29:02.103 I [GAOffline] recordEvent -> 55 bytes
-19:29:02.537 I [GAOffline] autotest: touch Ended at (606.1, 342.5) on 1920x1080
-19:29:04.412 I beat t=167 frame=2530 level=CombatScreen ready=True not started: 
-19:29:09.502 I beat t=172 frame=2591 level=CombatScreen ready=True not started: 
-19:29:10.690 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:29:10.751 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:29:11.042 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
-19:29:11.042 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
-19:29:11.042 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:29:11.046 I [GAOffline] unhandled message recordEvent, answering result:true
-19:29:11.046 I [GAOffline] recordEvent -> 55 bytes
-19:29:14.526 I beat t=177 frame=2667 level=CombatScreen ready=True not started: 
-19:29:15.178 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:29:15.233 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:29:19.571 I beat t=182 frame=2747 level=CombatScreen ready=True not started: 
-19:29:21.552 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:29:21.674 I [GAOffline] autotest: finger drag begin at (175.6, 182.8) from (175.6, 182.8)
-19:29:21.675 I Log: Disabling button Unit 1
-19:29:21.675 I [GAOffline] autotest: unit drag started, unit 3
-19:29:24.602 I beat t=187 frame=2820 level=CombatScreen ready=True not started: 
-19:29:25.574 I [GAOffline] autotest: touch Ended at (736.8, 606.6) on 1920x1080
-19:29:26.034 I Log: Enabling button Unit 1
-19:29:27.943 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:29:28.080 I [GAOffline] autotest: finger drag begin at (163.5, 177.2) from (163.5, 177.2)
-19:29:28.080 I Log: Disabling button Unit 1
-19:29:28.080 I [GAOffline] autotest: unit drag started, unit 3
-19:29:29.617 I beat t=192 frame=2904 level=CombatScreen ready=True not started: 
-19:29:32.016 I [GAOffline] autotest: touch Ended at (515.3, 611.1) on 1920x1080
-19:29:32.468 I Log: Enabling button Unit 1
-19:29:34.441 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:29:34.570 I [GAOffline] autotest: finger drag begin at (171.8, 175.7) from (171.8, 175.7)
-19:29:34.572 I Log: Disabling button Unit 1
-19:29:34.572 I [GAOffline] autotest: unit drag started, unit 3
-19:29:34.641 I beat t=197 frame=2988 level=CombatScreen ready=True not started: 
-19:29:38.511 I [GAOffline] autotest: touch Ended at (739.4, 453.8) on 1920x1080
-19:29:38.511 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:29:38.512 I (previous message repeated 1 more times)
-19:29:38.512 W Warning: CombatEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CombatEntity.
-19:29:38.514 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
-19:29:38.514 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
-19:29:38.514 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:29:38.521 I [GAOffline] unhandled message recordEvent, answering result:true
-19:29:38.521 I [GAOffline] recordEvent -> 55 bytes
-19:29:38.528 I Log: Playing card=6 skipAnimations=False
-19:29:38.528 I Log: play card: 6
-19:29:38.528 I Log: server api: https://havoc.synapse-games.com/api.php?message=playCard&user_id=1
-19:29:38.533 I Log: Play card=6 pos=2
-19:29:38.533 I Log: ***FIELD: -5-6-
-19:29:38.533 I Log: Action card=5 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
-19:29:38.533 I Log: Action card=3 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
-19:29:38.533 I Log: Action card=6 skill=0 value=3 target=System.Collections.Generic.List`1[System.Int32]
-19:29:38.534 I Log: Action card=5 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
-19:29:38.537 I [GAOffline] battle 1792697180 campaign 1 mission 1 won at turn 8
-19:29:38.538 I [GAOffline] playCard -> 4551 bytes
-19:29:38.611 W Warning: parsing combat data: {"battle_id":1792697180,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792697180,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":10,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[{"card_uid":4,"field_order":1,"status":[]}],"upkeep":[],"actions":[],"end":[]},"3":{"begin":[],"draws":[],"plays":[{"card_uid":2,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":2,"skill_id":"blitz","targets":[2],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"4":{"begin":[],"draws":[],"plays":[{"card_uid":5,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":4,"skill_id":"0","targets":[1],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"5":{"begin":[],"draws":[],"plays":[{"card_uid":3,"field_order":3,"status":[]}],"upkeep":[],"actions":[{"card_uid":3,"skill_id":"blitz","targets":[3],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":3,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"6":{"begin":[],"draws":[],"plays":[{"card_uid":6,"field_order":2,"status":[]}],"upkeep":[],"actions":[{"card_uid":5,"skill_id":"0","targets":[2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"7":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[{"card_uid":3,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"8":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[{"card_uid":6,"skill_id":"0","targets":[-1],"value":3,"instant":0,"block":[],"status":[]},{"card_uid":5,"skill_id":"0","targets":[-1],"value":2,"instant":0,"block":[],"status":[]}],"end":[]}},"winner":1,"rewards":[{"user_id":"1","gold":10,"sp":0,"xp":0}]}
-19:29:38.612 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-19:29:38.612 I Log: user data updated
-19:29:38.612 I Log: version retrieved: offline-1
-19:29:38.612 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-19:29:38.612 I Log: user data updated
-19:29:38.612 W Warning: parsing combat data: {"battle_id":1792697180,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792697180,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":10,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[{"card_uid":4,"field_order":1,"status":[]}],"upkeep":[],"actions":[],"end":[]},"3":{"begin":[],"draws":[],"plays":[{"card_uid":2,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":2,"skill_id":"blitz","targets":[2],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"4":{"begin":[],"draws":[],"plays":[{"card_uid":5,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":4,"skill_id":"0","targets":[1],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"5":{"begin":[],"draws":[],"plays":[{"card_uid":3,"field_order":3,"status":[]}],"upkeep":[],"actions":[{"card_uid":3,"skill_id":"blitz","targets":[3],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":3,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"6":{"begin":[],"draws":[],"plays":[{"card_uid":6,"field_order":2,"status":[]}],"upkeep":[],"actions":[{"card_uid":5,"skill_id":"0","targets":[2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"7":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[{"card_uid":3,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"8":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[{"card_uid":6,"skill_id":"0","targets":[-1],"value":3,"instant":0,"block":[],"status":[]},{"card_uid":5,"skill_id":"0","targets":[-1],"value":2,"instant":0,"block":[],"status":[]}],"end":[]}},"winner":1,"rewards":[{"user_id":"1","gold":10,"sp":0,"xp":0}]}
-19:29:38.613 I Log: user data updated
-19:29:38.613 I Log: on update combat: [ServiceCombatData: BattleID=1792697180, HostID=1, HostIsAttacker=False, AttackCommanderID=0, AttackDeck=System.Collections.Generic.List`1[ServiceCombatCardMapData], DefendCommanderID=0, EnemySize=3, MissionID=1, Turns=System.Collections.Generic.List`1[ServiceCombatTurnData], CardMap=System.Collections.Generic.List`1[ServiceCombatCardMapData], EndTime=, IsWinner=True, IsLoser=False, InLiveBattle=False, MissionExists=True]
-19:29:39.689 I beat t=202 frame=3064 level=CombatScreen ready=True not started: 
-19:29:40.866 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
-19:29:41.000 I [GAOffline] autotest: finger drag begin at (177.1, 910.6) from (177.1, 910.6)
-19:29:44.712 I beat t=207 frame=3137 level=CombatScreen ready=True not started: 
-19:29:44.916 I [GAOffline] autotest: touch Ended at (604.4, 344.7) on 1920x1080
-19:29:45.177 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
-19:29:45.178 I Log: server api: https://havoc.synapse-games.com/api.php?message=setUserFlag&user_id=1
-19:29:45.183 I [GAOffline] setUserFlag -> 541 bytes
-19:29:45.184 I Log: New tutorial=10 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
-19:29:45.184 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:29:45.190 I [GAOffline] unhandled message recordEvent, answering result:true
-19:29:45.190 I [GAOffline] recordEvent -> 55 bytes
-19:29:45.235 I Log: version retrieved: offline-1
-19:29:45.756 I Log: Doing phase=Play turn=8
-19:29:45.756 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:29:45.756 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
-19:29:46.524 I Log: Doing phase=Action turn=8
-19:29:46.524 I Log: handle card skill: [ServiceCombatActionData: CardUID=5, SkillID=0, Targets=2, Value=2, Block=, Status=]
-19:29:46.524 I Log: skill  with actor: 5 and value: 2
-19:29:47.313 I Log: Doing phase=Action turn=8
-19:29:47.313 I Log: Doing phase=End turn=8
-19:29:47.313 I Log: phase end...turn:8
-19:29:48.114 I Log: Doing phase=Play turn=9
-19:29:48.114 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:29:48.891 I Log: Doing phase=Action turn=9
-19:29:48.891 I Log: handle card skill: [ServiceCombatActionData: CardUID=3, SkillID=0, Targets=-2, Value=2, Block=, Status=]
-19:29:48.891 I Log: skill  with actor: 3 and value: 2
-19:29:49.677 I Log: Doing phase=Action turn=9
-19:29:49.677 I Log: Doing phase=End turn=9
-19:29:49.677 I Log: phase end...turn:9
-19:29:49.744 I beat t=212 frame=3230 level=CombatScreen ready=True not started: 
-19:29:50.470 I Log: Doing phase=Play turn=10
-19:29:50.471 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
-19:29:51.248 I Log: Doing phase=Action turn=10
-19:29:51.249 I Log: handle card skill: [ServiceCombatActionData: CardUID=6, SkillID=0, Targets=-1, Value=3, Block=, Status=]
-19:29:51.251 I Log: skill  with actor: 6 and value: 3
-19:29:52.036 I Log: Doing phase=Action turn=10
-19:29:52.036 I Log: handle card skill: [ServiceCombatActionData: CardUID=5, SkillID=0, Targets=-1, Value=2, Block=, Status=]
-19:29:52.036 I Log: skill  with actor: 5 and value: 2
-19:29:53.646 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:29:53.722 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:29:54.797 I beat t=217 frame=3301 level=CombatScreen ready=True not started: 
-19:29:55.236 I Log: Doing phase=Action turn=10
-19:29:55.237 I Log: Doing phase=End turn=10
-19:29:55.237 I Log: phase end...turn:10
-19:29:55.237 I Log: Checking HandleOutcome.
-19:29:55.238 I Log: Outcome found, battle ending.
-19:29:55.316 I Log: Fading music out
-19:29:55.317 I Log: tutorial event received: [TutorialFlaqReq: ID=completedMission, Key=1, Value=1, Popup=]
-19:29:55.317 I Log: Current turn is the last turn=10 max is 10
-19:29:55.318 E Exception: NullReferenceException: Object reference not set to an instance of an object
+19:49:05.634 I Log: Unity 4.x, set default AllowImmersiveMode to true
+19:49:05.636 I Log: KongregateAPI: DEBUG: initializating from Unity
+19:49:05.636 I Log: Kongregate Initializing from Unity
+19:49:05.650 I Log: KongregateAPI: DEBUG: initialization from Unity complete
+19:49:05.652 I Log: KongregateAPI: DEBUG: Setting common props callback
+19:49:05.653 I Log: KongregateAPI: DEBUG: using CommonPropsCallback
+19:49:05.654 I Log: KongregateAPI: DEBUG: Analytics update common props: { "player_id" : "","client_version" : 30 }
+19:49:05.686 I Log: BuildInfo
+19:49:05.691 I beat t=0 frame=3 level=BootLoader ready=False not started: AppManager=Uninitialized, ScreenManager=Uninitialized, AudioManager=Uninitialized, SpriteManager=Uninitialized, CombatManager=Uninitialized, MissionManager=Uninitialized, RaidManager=Uninitialized, GuildWarManager=Uninitialized, ChatManager=Uninitialized, ExperimentManager=Uninitialized, PlayerManager=Uninitialized, CardManager=Uninitialized, FusionManager=Uninitialized, EquipmentManager=Uninitialized, InventoryManager=Uninitialized, AchievementManager=Uninitialized, StoreManager=Uninitialized, StatsManager=Uninitialized, UpgradeManager=Uninitialized, EntityManager=Uninitialized, AuthenticationManager=Uninitialized, DeckManager=Uninitialized, RewardManager=Uninitialized, LoggingManager=Uninitialized, AnalyticsManager=Uninitialized, InitializationManager=Uninitialized, NewsManager=Uninitialized, EffectsManager=Uninitialized, IAPDroidManager=Uninitialized, TutorialManager=Uninitialized, GuildManager=Uninitialized, CinematicManager=Uninitialized, EventTimelineManager=Uninitialized, LeagueManager=Uninitialized, FactionManager=Uninitialized, EndlessDungeonManager=Uninitialized, AssetBundleManager=Uninitialized, WWWManager=Uninitialized, TimeManager=Uninitialized, DataManager=Uninitialized, PopupManager=Uninitialized
+19:49:06.166 I Log: Kongregate API is ready
+19:49:06.169 I Log: EVENT GAME AUTH: user 0 is a guest
+19:49:06.169 I Log: game auth has changed to:Guest_Game_Auth_Token
+19:49:06.205 I Log: server api: https://havoc.synapse-games.com/api.php?message=getUserAccount&user_id=
+19:49:06.233 I [GAOffline] getUserAccount -> 595 bytes
+19:49:06.266 I Log: version retrieved: offline-1
+19:49:06.277 I Log: user data updated
+19:49:06.285 I Log: user account received result: True
+19:49:06.288 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:49:06.290 I [GAOffline] unhandled message recordEvent, answering result:true
+19:49:06.291 I [GAOffline] recordEvent -> 55 bytes
+19:49:06.291 I Log: KongregateAPI: DEBUG: Adding event to collection: installs
+19:49:06.291 I Log: KongregateAPI: DEBUG: Analytics add event json=installs map={ "stub_field" : 0 }
+19:49:06.291 I Log: KongregateAPI: DEBUG: using CommonPropsCallback
+19:49:06.292 I Log: KongregateAPI: DEBUG: including common props: { "player_id" : "1","client_version" : 30 }
+19:49:06.293 I Log: Sent event installs with 1 params
+19:49:06.359 I Log: server api: https://havoc.synapse-games.com/api.php?message=init&user_id=1
+19:49:06.399 I [GAOffline] init -> 8040 bytes
+19:49:06.401 I [GAOffline] assets/tutorial1.xml served locally
+19:49:06.404 I [GAOffline] assets/cards.xml served locally
+19:49:06.432 I Log: init responsed with: {"result":true,"time":1792698546,"version":"offline-1","user_data":{"user_id":"1","name":"Commander","install_date":"2026-10-22 19:49:06","flags":{"music":1,"sound":1,"tutorial":0,"autopilot":0,"speed":1},"last_update_time":1792698546,"tokens":0,"money":0,"money_cap":999999,"energy":100,"energy_recharge_time":60,"stamina":10,"max_stamina":10,"stamina_recharge_time":300,"last_stam_update_time":1792698546,"salvage":0,"active_deck":1,"level":1,"xp":0,"base_xp":0,"next_xp":100,"caps":{"max_salvage":9999,"max_cards":500},"has_kong_id":0},"user_units":[{"unit_index":1,"unit_id":2,"level":1,"sp":0,"deck_id":1,"slot_id":0},{"unit_index":2,"unit_id":502,"level":1,"sp":0,"deck_id":1,"slot_id":1},{"unit_index":3,"unit_id":10,"level":1,"sp":0,"deck_id":1,"slot_id":2}],"user_decks":[{"deck_id":1,"name":"Squad 1","commander_item_id":0,"power_level":"1","units":[{"unit_index":1,"unit_id":2,"level":1,"sp":0,"deck_id":1,"slot_id":0},{"unit_index":2,"unit_id":502,"level":1,"sp":0,"deck_id":1,"slot_id":1},{"unit_index":3,"unit_id":10,"level":1,"sp":0,"deck_id":1,"slot_id":2}],"squad_damage":0,"max_damage":400,"repair_speed":60,"retreat_damage":0,"repair_start_time":0,"repair_end_time":0}],"user_tasks":{},"user_items":{},"mission_completions":{},"max_energy":100,"max_stamina":10,"base_upgrades":[],"upgrades_data":[],"news":[],"user_achievements":[],"store_items":[{"id":1,"item_type":1,"card":0,"sc_cost":100,"hc_cost":0,"name":"Supply Drop","desc":"One random unit.","model":"prefab_bronze_crate","priority":1},{"id":2,"item_type":1,"card":0,"sc_cost":0,"hc_cost":20,"name":"Silver Supply Drop","desc":"One random unit.","model":"prefab_silver_crate","priority":2},{"id":3,"item_type":1,"card":0,"sc_cost":0,"hc_cost":40,"name":"Gold Supply Drop","desc":"One random unit.","model":"prefab_gold_crate","priority":3},{"id":4,"item_type":1,"card":0,"sc_cost":0,"hc_cost":60,"name":"Platinum Supply Drop","desc":"One random unit.","model":"prefab_platinum_crate","priority":4},{"id":304,"item_type":2,"name":"Flank Crate","hc_cost":90,"wb_cost":90,"card":[{"id":811,"count":2,"label":1},{"id":32,"count":6,"label":0},{"id":48,"count":6,"label":0},{"id":61,"count":6,"label":0},{"id":42,"count":12,"label":0},{"id":33,"count":12,"label":0},{"id":15,"count":12,"label":0},{"id":14,"count":12,"label":0}],"cards_received":{},"start_time":0,"end_time":2108058546,"model":"eventcrate","priority":10},{"id":305,"item_type":2,"name":"Devastator Crate","hc_cost":90,"wb_cost":90,"card":[{"id":800,"count":2,"label":1},{"id":825,"count":6,"label":1},{"id":827,"count":6,"label":1},{"id":51,"count":6,"label":0},{"id":823,"count":12,"label":1},{"id":48,"count":12,"label":0},{"id":45,"count":12,"label":0},{"id":16,"count":12,"label":0}],"cards_received":{},"start_time":0,"end_time":2108058546,"model":"eventcrate","priority":10},{"id":306,"item_type":2,"name":"Laser Crate","hc_cost":60,"wb_cost":60,"card":[{"id":829,"count":2,"label":1},{"id":828,"count":6,"label":1},{"id":46,"count":6,"label":0},{"id":47,"count":6,"label":0},{"id":14,"count":12,"label":0},{"id":43,"count":12,"label":0},{"id":28,"count":12,"label":0},{"id":60,"count":12,"label":0}],"cards_received":{},"start_time":0,"end_time":2108058546,"model":"eventcrate","priority":10},{"id":307,"item_type":2,"name":"EMP Crate","hc_cost":60,"wb_cost":60,"card":[{"id":831,"count":2,"label":1},{"id":830,"count":6,"label":1},{"id":834,"count":6,"label":1},{"id":49,"count":6,"label":0},{"id":36,"count":12,"label":0},{"id":60,"count":12,"label":0},{"id":33,"count":12,"label":0},{"id":15,"count":12,"label":0}],"cards_received":{},"start_time":0,"end_time":2108058546,"model":"eventcrate","priority":10},{"id":308,"item_type":2,"name":"Flank Cache","hc_cost":60,"wb_cost":60,"card":[{"id":811,"count":1,"label":1},{"id":839,"count":1,"label":0},{"id":838,"count":1,"label":1},{"id":837,"count":2,"label":0},{"id":836,"count":2,"label":0},{"id":835,"count":2,"label":1}],"cards_received":{},"start_time":0,"end_time":2108058546,"model":"eventcrate","priority":10},{"id":5005,"item_type":2,"name":"Petrichor Cache","hc_cost":170,"wb_cost":170,"card":[{"id":968,"count":1,"label":0},{"id":58,"count":1,"label":0},{"id":24,"count":1,"label":0},{"id":62,"count":2,"label":0},{"id":53,"count":2,"label":0},{"id":51,"count":2,"label":0},{"id":31,"count":2,"label":0},{"id":22,"count":2,"label":0},{"id":18,"count":2,"label":0},{"id":21,"count":2,"label":0},{"id":17,"count":4,"label":0},{"id":19,"count":4,"label":0},{"id":52,"count":4,"label":0},{"id":54,"count":4,"label":0}],"cards_received":{},"start_time":0,"end_time":2108058546,"model":"eventcrate","priority":10},{"id":5002,"item_type":2,"name":"Corvo Cache","hc_cost":170,"wb_cost":170,"card":[{"id":976,"count":1,"label":0},{"id":27,"count":1,"label":0},{"id":37,"count":1,"label":0},{"id":62,"count":2,"label":0},{"id":53,"count":2,"label":0},{"id":51,"count":2,"label":0},{"id":31,"count":2,"label":0},{"id":22,"count":2,"label":0},{"id":18,"count":2,"label":0},{"id":21,"count":2,"label":0},{"id":17,"count":4,"label":0},{"id":19,"count":4,"label":0},{"id":52,"count":4,"label":0},{"id":54,"count":4,"label":0}],"cards_received":{},"start_time":0,"end_time":2108058546,"model":"eventcrate","priority":10}],"is_vc_on_sale":0,"feature_locks":{"lab":0,"command_room":0,"armory":0,"pvp":0,"pvp_league":0,"auto_research_duals_quads":0,"skip":0},"locations":[{"id":1,"name":"Alaska","map":"snowforest_dawn"},{"id":2,"name":"Northwest Territory","map":"snowforest_dawn"},{"id":3,"name":"Nunavut","map":"snowforest_dawn"},{"id":4,"name":"Greenland","map":"snowforest_dawn"},{"id":5,"name":"Alberta","map":"snowforest_dawn"},{"id":6,"name":"Ontario","map":"snowforest_dawn"},{"id":7,"name":"Eastern Canada","map":"snowforest_dawn"},{"id":8,"name":"Western United States","map":"jungle_sunset"},{"id":9,"name":"Eastern United States","map":"beach_sunny"},{"id":10,"name":"Central America","map":"jungle_fire_2"},{"id":11,"name":"Venezuela","map":"beach_sunny"},{"id":12,"name":"Peru","map":"beach_sunny"},{"id":13,"name":"Brazil","map":"jungle_sunset"},{"id":14,"name":"Argentina","map":"city_sunny"},{"id":15,"name":"Iceland","map":"helicarrier_map"},{"id":16,"name":"Scandinavia","map":"snowforest_dawn"},{"id":17,"name":"Russia","map":"snowforest_dawn"},{"id":18,"name":"Ural","map":"snowforest_dawn"},{"id":19,"name":"Siberia","map":"snowforest_dawn"},{"id":20,"name":"Yakutsk","map":"snowforest_dawn"},{"id":21,"name":"Kamchatka","map":"snowforest_dawn"},{"id":22,"name":"Great Britain","map":"beach_sunny"},{"id":23,"name":"Western Europe","map":"beach_sunny"},{"id":24,"name":"Northern Europe","map":"beach_sunny"},{"id":25,"name":"Southern Europe","map":"beach_sunny"},{"id":26,"name":"Middle East","map":"city_sunny"},{"id":27,"name":"Afghanistan","map":"helicarrier_map"},{"id":28,"name":"China","map":"city_sunny"},{"id":29,"name":"Mongolia","map":"jungle_sunset"},{"id":30,"name":"Irkutsk","map":"snowforest_dawn"},{"id":31,"name":"Japan","map":"beach_sunny"},{"id":32,"name":"North Africa","map":"city_sunny"},{"id":33,"name":"Egypt","map":"city_sunny"},{"id":34,"name":"East Africa","map":"helicarrier_map"},{"id":35,"name":"Congo","map":"jungle_sunset"},{"id":36,"name":"South Africa","map":"beach_sunny"},{"id":37,"name":"Madagascar","map":"beach_sunny"},{"id":38,"name":"India","map":"jungle_sunset"},{"id":39,"name":"Siam","map":"jungle_sunset"},{"id":40,"name":"Indonesia","map":"jungle_sunset"},{"id":41,"name":"New Guinea","map":"beach_sunny"},{"id":42,"name":"New Zealand","map":"jungle_fire_2"},{"id":43,"name":"Western Australia","map":"beach_sunny"},{"id":44,"name":"Eastern Australia","map":"beach_sunny"}],"current_campaigns":[{"id":1,"campaign_name":"It Begins","name":"It Begins 1","desc":"A warlord is attempting to overthrow the local democratic government. Put the rebellion down.","location":14,"level":0,"progress":0,"max_progress":3,"mission_type":0,"speech":{"line":[{"commander":"elia","text":"Commander, we're responding to a rebel threat in Argentina."}]},"speech_map":{"line":[]}}],"client_version":0}
+19:49:06.437 I Log: user data updated
+19:49:06.452 I Log: version retrieved: offline-1
+19:49:06.453 I Log: user data updated
+19:49:06.456 I Log: version retrieved: offline-1
+19:49:06.457 I Log: New Session event
+19:49:06.457 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:49:06.463 I [GAOffline] unhandled message recordEvent, answering result:true
+19:49:06.463 I [GAOffline] recordEvent -> 55 bytes
+19:49:06.464 I Log: Loading XML tutorialdata took 0.07112163 seconds
+19:49:06.465 I Log: Loading XML cardsdata took 0.07112163 seconds
+19:49:06.522 I Log: card data starting to load...
+19:49:06.526 I Log: Kongregate Service Unavailable
+19:49:06.929 I Log: cards loaded
+19:49:07.089 I Log: user data updated
+19:49:07.091 I Log: Google IAB starting...
+19:49:07.093 I Log: Google IAB started
+19:49:07.094 I Log: tutorial data starting to load...
+19:49:07.095 I Log: billingNotSupportedEvent: Billing service unavailable on device. (response: 3:Billing Unavailable)
+19:49:07.158 I Log: tutorials loaded
+19:49:07.192 I Log: server api: https://havoc.synapse-games.com/api.php?message=startCampaign&user_id=1
+19:49:07.202 I Log: Draw card=1
+19:49:07.202 I Log: Draw card=2
+19:49:07.202 I Log: Draw card=3
+19:49:07.203 I Log: Play card=1 pos=1
+19:49:07.204 I Log: Action card=1 skill=blitz value=1 target=System.Collections.Generic.List`1[System.Int32]
+19:49:07.204 I Log: ***FIELD: -1-
+19:49:07.206 I Log: Action card=1 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
+19:49:07.206 I Log: Draw card=4
+19:49:07.206 I Log: Draw card=5
+19:49:07.206 I Log: Draw card=6
+19:49:07.209 I [GAOffline] startCampaign -> 2853 bytes
+19:49:07.211 I Log: current level: BootLoader, loading level: Combat
+19:49:07.211 I Log: waiting for screen load...
+19:49:07.212 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:49:07.219 I [GAOffline] unhandled message recordEvent, answering result:true
+19:49:07.220 I [GAOffline] recordEvent -> 55 bytes
+19:49:07.257 W Warning: parsing combat data: {"battle_id":1792698547,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792698547,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":25,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
+19:49:07.258 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+19:49:07.261 I Log: user data updated
+19:49:07.261 I Log: version retrieved: offline-1
+19:49:07.261 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+19:49:07.262 I Log: user data updated
+19:49:07.262 W Warning: parsing combat data: {"battle_id":1792698547,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792698547,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":25,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
+19:49:07.263 I Log: mission started: True
+19:49:07.263 I Log: user data updated
+19:49:09.281 I Log: current level: BootLoader, loading level: Combat
+19:49:09.448 I Log: Fading music out
+19:49:09.727 I Log: Using location=city_sunny bundle = 2
+19:49:09.753 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:49:09.756 I Log: on start combat...
+19:49:09.759 W Warning: CommanderEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CommanderEntity.
+19:49:09.802 I (previous message repeated 1 more times)
+19:49:09.802 I Log: tutorial event received: [TutorialFlaqReq: ID=inCombat, Key=, Value=1, Popup=]
+19:49:09.802 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:49:09.803 I Log: on update combat: [ServiceCombatData: BattleID=1792698547, HostID=1, HostIsAttacker=False, AttackCommanderID=0, AttackDeck=System.Collections.Generic.List`1[ServiceCombatCardMapData], DefendCommanderID=0, EnemySize=3, MissionID=1, Turns=System.Collections.Generic.List`1[ServiceCombatTurnData], CardMap=System.Collections.Generic.List`1[ServiceCombatCardMapData], EndTime=, IsWinner=False, IsLoser=False, InLiveBattle=False, MissionExists=True]
+19:49:10.002 I Log: tutorial screen loaded. refreshing UI for tutorial 5, step 1
+19:49:10.005 I Log: tutorial event received: [TutorialFlaqReq: ID=screen, Key=, Value=Combat, Popup=]
+19:49:10.005 I Log: Loading screen CombatScreen took 0.1992188 seconds
+19:49:10.705 I beat t=5 frame=94 level=CombatScreen ready=True not started: 
+19:49:15.765 I beat t=10 frame=197 level=CombatScreen ready=True not started: 
+19:49:20.785 I beat t=15 frame=299 level=CombatScreen ready=True not started: 
+19:49:25.808 I beat t=20 frame=394 level=CombatScreen ready=True not started: 
+19:49:30.852 I beat t=25 frame=495 level=CombatScreen ready=True not started: 
+19:49:35.886 I beat t=31 frame=590 level=CombatScreen ready=True not started: 
+19:49:40.929 I beat t=36 frame=690 level=CombatScreen ready=True not started: 
+19:49:45.959 I beat t=41 frame=791 level=CombatScreen ready=True not started: 
+19:49:50.975 I beat t=46 frame=892 level=CombatScreen ready=True not started: 
+19:49:56.018 I beat t=51 frame=996 level=CombatScreen ready=True not started: 
+19:50:01.054 I beat t=56 frame=1102 level=CombatScreen ready=True not started: 
+19:50:06.092 I beat t=61 frame=1201 level=CombatScreen ready=True not started: 
+19:50:11.128 I beat t=66 frame=1307 level=CombatScreen ready=True not started: 
+19:50:16.145 I beat t=71 frame=1413 level=CombatScreen ready=True not started: 
+19:50:21.149 I beat t=76 frame=1519 level=CombatScreen ready=True not started: 
+19:50:26.184 I beat t=81 frame=1627 level=CombatScreen ready=True not started: 
+19:50:30.005 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:50:30.060 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:50:30.277 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
+19:50:30.742 I Log: Doing phase=Play turn=1
+19:50:30.742 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:50:30.743 I Log: Doing phase=End turn=1
+19:50:30.743 I Log: phase end...turn:1
+19:50:30.746 I Log: Doing phase=Play turn=2
+19:50:30.746 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:50:30.746 I Log: Doing phase=End turn=2
+19:50:30.746 I Log: phase end...turn:2
+19:50:31.194 I beat t=86 frame=1738 level=CombatScreen ready=True not started: 
+19:50:31.521 I Log: Doing phase=Draw turn=3
+19:50:31.521 I Log: Doing phase=Play turn=3
+19:50:31.522 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:50:31.522 W Warning: CombatEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CombatEntity.
+19:50:31.549 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
+19:50:31.550 I Log: tutorial event received: [TutorialFlaqReq: ID=playedSkill, Key=, Value=blitz, Popup=]
+19:50:32.291 I Log: Doing phase=Action turn=3
+19:50:32.292 I Log: handle card skill: [ServiceCombatActionData: CardUID=1, SkillID=blitz, Targets=1, Value=1, Block=, Status=]
+19:50:32.293 W Warning: unknown skill: blitz
+19:50:32.294 I Log: skill blitz with actor: 1 and value: 1
+19:50:32.294 I Log: handle card skill: [ServiceCombatActionData: CardUID=1, SkillID=0, Targets=-2, Value=2, Block=, Status=]
+19:50:32.294 I Log: skill  with actor: 1 and value: 2
+19:50:33.059 I Log: Doing phase=Action turn=3
+19:50:33.059 I Log: Doing phase=End turn=3
+19:50:33.059 I Log: phase end...turn:3
+19:50:33.831 I Log: Doing phase=Draw turn=4
+19:50:33.831 I Log: Doing phase=Play turn=4
+19:50:33.859 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=1, Popup=]
+19:50:33.859 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+19:50:33.860 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:50:33.862 I [GAOffline] unhandled message recordEvent, answering result:true
+19:50:33.862 I [GAOffline] recordEvent -> 55 bytes
+19:50:34.365 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:50:34.408 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:50:34.618 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
+19:50:34.618 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+19:50:34.619 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:50:34.624 I [GAOffline] unhandled message recordEvent, answering result:true
+19:50:34.624 I [GAOffline] recordEvent -> 55 bytes
+19:50:36.226 I beat t=91 frame=1855 level=CombatScreen ready=True not started: 
+19:50:39.922 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:50:40.009 I [GAOffline] autotest: finger drag begin at (165.0, 174.8) from (165.0, 174.8)
+19:50:40.010 I Log: Disabling button Unit 1
+19:50:40.010 I [GAOffline] autotest: unit drag started, unit 1
+19:50:41.243 I beat t=96 frame=1956 level=CombatScreen ready=True not started: 
+19:50:44.002 I [GAOffline] autotest: touch Ended at (738.3, 607.7) on 1920x1080
+19:50:44.004 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:50:44.005 I (previous message repeated 1 more times)
+19:50:44.005 W Warning: CombatEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CombatEntity.
+19:50:44.008 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
+19:50:44.008 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+19:50:44.009 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:50:44.011 I [GAOffline] unhandled message recordEvent, answering result:true
+19:50:44.011 I [GAOffline] recordEvent -> 55 bytes
+19:50:44.014 I Log: Playing card=4 skipAnimations=False
+19:50:44.016 I Log: play card: 4
+19:50:44.016 I Log: server api: https://havoc.synapse-games.com/api.php?message=playCard&user_id=1
+19:50:44.019 I Log: Play card=4 pos=1
+19:50:44.019 I Log: ***FIELD: -4-
+19:50:44.019 I Log: Play card=2 pos=5
+19:50:44.019 I Log: Action card=2 skill=blitz value=1 target=System.Collections.Generic.List`1[System.Int32]
+19:50:44.019 I Log: ***FIELD: -1-2-
+19:50:44.019 I Log: Action card=1 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
+19:50:44.019 I Log: Action card=2 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
+19:50:44.019 I [GAOffline] playCard -> 3353 bytes
+19:50:44.063 W Warning: parsing combat data: {"battle_id":1792698547,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792698547,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":25,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[{"card_uid":4,"field_order":1,"status":[]}],"upkeep":[],"actions":[],"end":[]},"3":{"begin":[],"draws":[],"plays":[{"card_uid":2,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":2,"skill_id":"blitz","targets":[2],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"4":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
+19:50:44.063 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+19:50:44.063 I Log: user data updated
+19:50:44.063 I Log: version retrieved: offline-1
+19:50:44.064 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+19:50:44.064 I Log: user data updated
+19:50:44.064 W Warning: parsing combat data: {"battle_id":1792698547,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792698547,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":25,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[{"card_uid":4,"field_order":1,"status":[]}],"upkeep":[],"actions":[],"end":[]},"3":{"begin":[],"draws":[],"plays":[{"card_uid":2,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":2,"skill_id":"blitz","targets":[2],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"4":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
+19:50:44.064 I Log: user data updated
+19:50:44.064 I Log: on update combat: [ServiceCombatData: BattleID=1792698547, HostID=1, HostIsAttacker=False, AttackCommanderID=0, AttackDeck=System.Collections.Generic.List`1[ServiceCombatCardMapData], DefendCommanderID=0, EnemySize=3, MissionID=1, Turns=System.Collections.Generic.List`1[ServiceCombatTurnData], CardMap=System.Collections.Generic.List`1[ServiceCombatCardMapData], EndTime=, IsWinner=False, IsLoser=False, InLiveBattle=False, MissionExists=True]
+19:50:46.244 I beat t=101 frame=2054 level=CombatScreen ready=True not started: 
+19:50:46.333 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:50:46.424 I [GAOffline] autotest: finger drag begin at (166.9, 181.4) from (166.9, 181.4)
+19:50:50.332 I [GAOffline] autotest: touch Ended at (513.6, 609.1) on 1920x1080
+19:50:50.552 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
+19:50:51.054 I Log: Doing phase=Play turn=4
+19:50:51.055 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:50:51.055 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
+19:50:51.255 I beat t=106 frame=2165 level=CombatScreen ready=True not started: 
+19:50:51.807 I Log: Doing phase=End turn=4
+19:50:51.808 I Log: phase end...turn:4
+19:50:52.591 I Log: Doing phase=Play turn=5
+19:50:52.591 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:50:52.591 W Warning: CombatEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CombatEntity.
+19:50:52.592 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
+19:50:52.693 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:50:52.785 I [GAOffline] autotest: finger drag begin at (164.3, 172.1) from (164.3, 172.1)
+19:50:53.354 I Log: Doing phase=Action turn=5
+19:50:53.354 I Log: handle card skill: [ServiceCombatActionData: CardUID=2, SkillID=blitz, Targets=2, Value=1, Block=, Status=]
+19:50:53.354 W Warning: unknown skill: blitz
+19:50:53.354 I Log: skill blitz with actor: 2 and value: 1
+19:50:53.354 I Log: handle card skill: [ServiceCombatActionData: CardUID=1, SkillID=0, Targets=4, Value=2, Block=, Status=]
+19:50:53.354 I Log: skill  with actor: 1 and value: 2
+19:50:54.114 I Log: Doing phase=Action turn=5
+19:50:54.114 I Log: handle card skill: [ServiceCombatActionData: CardUID=2, SkillID=0, Targets=4, Value=2, Block=, Status=]
+19:50:54.114 I Log: skill  with actor: 2 and value: 2
+19:50:54.868 I Log: Doing phase=Action turn=5
+19:50:54.868 I Log: Doing phase=End turn=5
+19:50:54.868 I Log: phase end...turn:5
+19:50:55.637 I Log: Doing phase=Play turn=6
+19:50:55.638 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=1, Popup=]
+19:50:55.638 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+19:50:55.639 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:50:55.641 I [GAOffline] unhandled message recordEvent, answering result:true
+19:50:55.641 I [GAOffline] recordEvent -> 55 bytes
+19:50:56.287 I beat t=111 frame=2293 level=CombatScreen ready=True not started: 
+19:50:56.826 I [GAOffline] autotest: touch Ended at (737.6, 452.9) on 1920x1080
+19:50:59.196 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
+19:50:59.306 I [GAOffline] autotest: finger drag begin at (180.9, 905.6) from (180.9, 905.6)
+19:51:01.312 I beat t=116 frame=2381 level=CombatScreen ready=True not started: 
+19:51:03.236 I [GAOffline] autotest: touch Ended at (610.3, 336.9) on 1920x1080
+19:51:03.451 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
+19:51:03.451 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+19:51:03.452 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:51:03.456 I [GAOffline] unhandled message recordEvent, answering result:true
+19:51:03.456 I [GAOffline] recordEvent -> 55 bytes
+19:51:06.343 I beat t=121 frame=2482 level=CombatScreen ready=True not started: 
+19:51:11.177 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:51:11.218 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:51:11.355 I beat t=126 frame=2587 level=CombatScreen ready=True not started: 
+19:51:15.588 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:51:15.634 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:51:16.369 I beat t=131 frame=2701 level=CombatScreen ready=True not started: 
+19:51:21.164 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:51:21.256 I [GAOffline] autotest: finger drag begin at (170.3, 178.8) from (170.3, 178.8)
+19:51:21.256 I Log: Disabling button Unit 1
+19:51:21.256 I [GAOffline] autotest: unit drag started, unit 2
+19:51:21.406 I beat t=136 frame=2808 level=CombatScreen ready=True not started: 
+19:51:25.200 I [GAOffline] autotest: touch Ended at (740.3, 609.2) on 1920x1080
+19:51:25.681 I Log: Enabling button Unit 1
+19:51:26.418 I beat t=141 frame=2919 level=CombatScreen ready=True not started: 
+19:51:27.515 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:51:27.616 I [GAOffline] autotest: finger drag begin at (163.1, 176.8) from (163.1, 176.8)
+19:51:27.616 I Log: Disabling button Unit 1
+19:51:27.617 I [GAOffline] autotest: unit drag started, unit 2
+19:51:31.431 I beat t=146 frame=3033 level=CombatScreen ready=True not started: 
+19:51:31.557 I [GAOffline] autotest: touch Ended at (515.3, 611.1) on 1920x1080
+19:51:31.558 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:51:31.558 I (previous message repeated 1 more times)
+19:51:31.558 W Warning: CombatEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CombatEntity.
+19:51:31.560 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
+19:51:31.560 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+19:51:31.563 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:51:31.566 I [GAOffline] unhandled message recordEvent, answering result:true
+19:51:31.566 I [GAOffline] recordEvent -> 55 bytes
+19:51:31.572 I Log: Playing card=5 skipAnimations=False
+19:51:31.572 I Log: play card: 5
+19:51:31.572 I Log: server api: https://havoc.synapse-games.com/api.php?message=playCard&user_id=1
+19:51:31.577 I Log: Play card=5 pos=5
+19:51:31.577 I Log: ***FIELD: -4-5-
+19:51:31.577 I Log: Action card=4 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
+19:51:31.577 I Log: Play card=3 pos=3
+19:51:31.577 I Log: Action card=3 skill=blitz value=1 target=System.Collections.Generic.List`1[System.Int32]
+19:51:31.577 I Log: ***FIELD: -2-3-
+19:51:31.577 I Log: Action card=3 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
+19:51:31.577 I Log: Action card=2 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
+19:51:31.578 I [GAOffline] playCard -> 3942 bytes
+19:51:31.622 W Warning: parsing combat data: {"battle_id":1792698547,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792698547,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":25,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[{"card_uid":4,"field_order":1,"status":[]}],"upkeep":[],"actions":[],"end":[]},"3":{"begin":[],"draws":[],"plays":[{"card_uid":2,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":2,"skill_id":"blitz","targets":[2],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"4":{"begin":[],"draws":[],"plays":[{"card_uid":5,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":4,"skill_id":"0","targets":[1],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"5":{"begin":[],"draws":[],"plays":[{"card_uid":3,"field_order":3,"status":[]}],"upkeep":[],"actions":[{"card_uid":3,"skill_id":"blitz","targets":[3],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":3,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"6":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
+19:51:31.623 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+19:51:31.623 I Log: user data updated
+19:51:31.623 I Log: version retrieved: offline-1
+19:51:31.623 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+19:51:31.623 I Log: user data updated
+19:51:31.623 W Warning: parsing combat data: {"battle_id":1792698547,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792698547,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":25,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[{"card_uid":4,"field_order":1,"status":[]}],"upkeep":[],"actions":[],"end":[]},"3":{"begin":[],"draws":[],"plays":[{"card_uid":2,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":2,"skill_id":"blitz","targets":[2],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"4":{"begin":[],"draws":[],"plays":[{"card_uid":5,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":4,"skill_id":"0","targets":[1],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"5":{"begin":[],"draws":[],"plays":[{"card_uid":3,"field_order":3,"status":[]}],"upkeep":[],"actions":[{"card_uid":3,"skill_id":"blitz","targets":[3],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":3,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"6":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]}}}
+19:51:31.623 I Log: user data updated
+19:51:31.624 I Log: on update combat: [ServiceCombatData: BattleID=1792698547, HostID=1, HostIsAttacker=False, AttackCommanderID=0, AttackDeck=System.Collections.Generic.List`1[ServiceCombatCardMapData], DefendCommanderID=0, EnemySize=3, MissionID=1, Turns=System.Collections.Generic.List`1[ServiceCombatTurnData], CardMap=System.Collections.Generic.List`1[ServiceCombatCardMapData], EndTime=, IsWinner=False, IsLoser=False, InLiveBattle=False, MissionExists=True]
+19:51:33.963 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:51:34.064 I [GAOffline] autotest: finger drag begin at (172.6, 176.1) from (172.6, 176.1)
+19:51:36.465 I beat t=151 frame=3135 level=CombatScreen ready=True not started: 
+19:51:37.982 I [GAOffline] autotest: touch Ended at (740.9, 454.5) on 1920x1080
+19:51:38.242 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
+19:51:38.589 I Log: Doing phase=Play turn=6
+19:51:38.593 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:51:38.593 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
+19:51:39.371 I Log: Doing phase=Action turn=6
+19:51:39.371 I Log: handle card skill: [ServiceCombatActionData: CardUID=4, SkillID=0, Targets=1, Value=2, Block=, Status=]
+19:51:39.371 I Log: skill  with actor: 4 and value: 2
+19:51:40.162 I Log: Doing phase=Action turn=6
+19:51:40.162 I Log: Doing phase=End turn=6
+19:51:40.162 I Log: phase end...turn:6
+19:51:40.328 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
+19:51:40.407 I [GAOffline] autotest: finger drag begin at (176.3, 911.7) from (176.3, 911.7)
+19:51:40.923 I Log: Doing phase=Play turn=7
+19:51:40.923 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:51:40.923 W Warning: CombatEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CombatEntity.
+19:51:40.924 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
+19:51:41.513 I beat t=156 frame=3248 level=CombatScreen ready=True not started: 
+19:51:41.705 I Log: Doing phase=Action turn=7
+19:51:41.706 I Log: handle card skill: [ServiceCombatActionData: CardUID=3, SkillID=blitz, Targets=3, Value=1, Block=, Status=]
+19:51:41.706 W Warning: unknown skill: blitz
+19:51:41.706 I Log: skill blitz with actor: 3 and value: 1
+19:51:41.706 I Log: handle card skill: [ServiceCombatActionData: CardUID=3, SkillID=0, Targets=-2, Value=2, Block=, Status=]
+19:51:41.706 I Log: skill  with actor: 3 and value: 2
+19:51:42.463 I Log: Doing phase=Action turn=7
+19:51:42.463 I Log: handle card skill: [ServiceCombatActionData: CardUID=2, SkillID=0, Targets=4, Value=2, Block=, Status=]
+19:51:42.463 I Log: skill  with actor: 2 and value: 2
+19:51:43.215 I Log: Doing phase=Action turn=7
+19:51:43.215 I Log: Doing phase=End turn=7
+19:51:43.215 I Log: phase end...turn:7
+19:51:43.996 I Log: Doing phase=Play turn=8
+19:51:43.997 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=1, Popup=]
+19:51:43.998 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+19:51:43.998 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:51:44.002 I [GAOffline] unhandled message recordEvent, answering result:true
+19:51:44.003 I [GAOffline] recordEvent -> 55 bytes
+19:51:44.379 I [GAOffline] autotest: touch Ended at (607.3, 340.9) on 1920x1080
+19:51:46.535 I beat t=161 frame=3353 level=CombatScreen ready=True not started: 
+19:51:51.585 I beat t=166 frame=3442 level=CombatScreen ready=True not started: 
+19:51:51.941 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:51:52.007 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:51:52.223 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
+19:51:52.224 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+19:51:52.224 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:51:52.228 I [GAOffline] unhandled message recordEvent, answering result:true
+19:51:52.228 I [GAOffline] recordEvent -> 55 bytes
+19:51:56.310 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:51:56.358 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:51:56.603 I beat t=171 frame=3551 level=CombatScreen ready=True not started: 
+19:52:01.655 I beat t=176 frame=3659 level=CombatScreen ready=True not started: 
+19:52:02.017 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:52:02.116 I [GAOffline] autotest: finger drag begin at (173.9, 181.5) from (173.9, 181.5)
+19:52:02.116 I Log: Disabling button Unit 1
+19:52:02.116 I [GAOffline] autotest: unit drag started, unit 3
+19:52:06.062 I [GAOffline] autotest: touch Ended at (743.9, 611.9) on 1920x1080
+19:52:06.543 I Log: Enabling button Unit 1
+19:52:06.683 I beat t=181 frame=3763 level=CombatScreen ready=True not started: 
+19:52:08.399 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:52:08.475 I [GAOffline] autotest: finger drag begin at (164.6, 178.6) from (164.6, 178.6)
+19:52:08.475 I Log: Disabling button Unit 1
+19:52:08.475 I [GAOffline] autotest: unit drag started, unit 3
+19:52:11.714 I beat t=186 frame=3880 level=CombatScreen ready=True not started: 
+19:52:12.430 I [GAOffline] autotest: touch Ended at (515.6, 611.5) on 1920x1080
+19:52:12.917 I Log: Enabling button Unit 1
+19:52:14.791 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:52:14.891 I [GAOffline] autotest: finger drag begin at (168.1, 174.0) from (168.1, 174.0)
+19:52:14.891 I Log: Disabling button Unit 1
+19:52:14.892 I [GAOffline] autotest: unit drag started, unit 3
+19:52:16.721 I beat t=191 frame=4001 level=CombatScreen ready=True not started: 
+19:52:18.839 I [GAOffline] autotest: touch Ended at (739.0, 453.6) on 1920x1080
+19:52:18.840 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:52:18.840 I (previous message repeated 1 more times)
+19:52:18.840 W Warning: CombatEntity must be instantiated using the ScriptableObject.CreateInstance method instead of new CombatEntity.
+19:52:18.842 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
+19:52:18.842 I Log: New step tutorial=5 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+19:52:18.842 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:52:18.844 I [GAOffline] unhandled message recordEvent, answering result:true
+19:52:18.844 I [GAOffline] recordEvent -> 55 bytes
+19:52:18.849 I Log: Playing card=6 skipAnimations=False
+19:52:18.849 I Log: play card: 6
+19:52:18.849 I Log: server api: https://havoc.synapse-games.com/api.php?message=playCard&user_id=1
+19:52:18.852 I Log: Play card=6 pos=2
+19:52:18.852 I Log: ***FIELD: -5-6-
+19:52:18.852 I Log: Action card=5 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
+19:52:18.852 I Log: Action card=3 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
+19:52:18.852 I Log: Action card=6 skill=0 value=3 target=System.Collections.Generic.List`1[System.Int32]
+19:52:18.852 I Log: Action card=5 skill=0 value=2 target=System.Collections.Generic.List`1[System.Int32]
+19:52:18.855 I [GAOffline] battle 1792698547 campaign 1 mission 1 won at turn 8
+19:52:18.855 I [GAOffline] playCard -> 4551 bytes
+19:52:18.924 W Warning: parsing combat data: {"battle_id":1792698547,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792698547,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":25,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[{"card_uid":4,"field_order":1,"status":[]}],"upkeep":[],"actions":[],"end":[]},"3":{"begin":[],"draws":[],"plays":[{"card_uid":2,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":2,"skill_id":"blitz","targets":[2],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"4":{"begin":[],"draws":[],"plays":[{"card_uid":5,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":4,"skill_id":"0","targets":[1],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"5":{"begin":[],"draws":[],"plays":[{"card_uid":3,"field_order":3,"status":[]}],"upkeep":[],"actions":[{"card_uid":3,"skill_id":"blitz","targets":[3],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":3,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"6":{"begin":[],"draws":[],"plays":[{"card_uid":6,"field_order":2,"status":[]}],"upkeep":[],"actions":[{"card_uid":5,"skill_id":"0","targets":[2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"7":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[{"card_uid":3,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"8":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[{"card_uid":6,"skill_id":"0","targets":[-1],"value":3,"instant":0,"block":[],"status":[]},{"card_uid":5,"skill_id":"0","targets":[-1],"value":2,"instant":0,"block":[],"status":[]}],"end":[]}},"winner":1,"rewards":[{"user_id":"1","gold":10,"sp":0,"xp":0}]}
+19:52:18.927 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+19:52:18.927 I Log: user data updated
+19:52:18.927 I Log: version retrieved: offline-1
+19:52:18.927 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+19:52:18.927 I Log: user data updated
+19:52:18.928 W Warning: parsing combat data: {"battle_id":1792698547,"host_id":1,"host_is_attacker":0,"attack_commander":0,"defend_commander":0,"random_seed":1792698547,"max_turns":50,"attack_deck":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3}},"defend_deck":{"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"card_map":{"1":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":1},"2":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":5},"3":{"unit_id":103,"level":1,"health":1,"attack":2,"slot":3},"4":{"unit_id":2,"level":1,"health":5,"attack":2,"slot":-1,"unit_index":1},"5":{"unit_id":502,"level":1,"health":8,"attack":2,"slot":-1,"unit_index":2},"6":{"unit_id":10,"level":1,"health":4,"attack":3,"slot":-1,"unit_index":3}},"enemy_size":3,"enemy_name":"Rebels","enemy_id":0,"player_maxhealth":25,"enemy_maxhealth":5,"mission_id":1,"turn":{"-1":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"0":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[],"end":[]},"1":{"begin":[],"draws":[1,2,3],"plays":[{"card_uid":1,"field_order":1,"status":[]}],"upkeep":[],"actions":[{"card_uid":1,"skill_id":"blitz","targets":[1],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"2":{"begin":[],"draws":[4,5,6],"plays":[{"card_uid":4,"field_order":1,"status":[]}],"upkeep":[],"actions":[],"end":[]},"3":{"begin":[],"draws":[],"plays":[{"card_uid":2,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":2,"skill_id":"blitz","targets":[2],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":1,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"4":{"begin":[],"draws":[],"plays":[{"card_uid":5,"field_order":5,"status":[]}],"upkeep":[],"actions":[{"card_uid":4,"skill_id":"0","targets":[1],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"5":{"begin":[],"draws":[],"plays":[{"card_uid":3,"field_order":3,"status":[]}],"upkeep":[],"actions":[{"card_uid":3,"skill_id":"blitz","targets":[3],"value":1,"instant":1,"block":[],"status":[]},{"card_uid":3,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]},{"card_uid":2,"skill_id":"0","targets":[4],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"6":{"begin":[],"draws":[],"plays":[{"card_uid":6,"field_order":2,"status":[]}],"upkeep":[],"actions":[{"card_uid":5,"skill_id":"0","targets":[2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"7":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[{"card_uid":3,"skill_id":"0","targets":[-2],"value":2,"instant":0,"block":[],"status":[]}],"end":[]},"8":{"begin":[],"draws":[],"plays":[],"upkeep":[],"actions":[{"card_uid":6,"skill_id":"0","targets":[-1],"value":3,"instant":0,"block":[],"status":[]},{"card_uid":5,"skill_id":"0","targets":[-1],"value":2,"instant":0,"block":[],"status":[]}],"end":[]}},"winner":1,"rewards":[{"user_id":"1","gold":10,"sp":0,"xp":0}]}
+19:52:18.928 I Log: user data updated
+19:52:18.928 I Log: on update combat: [ServiceCombatData: BattleID=1792698547, HostID=1, HostIsAttacker=False, AttackCommanderID=0, AttackDeck=System.Collections.Generic.List`1[ServiceCombatCardMapData], DefendCommanderID=0, EnemySize=3, MissionID=1, Turns=System.Collections.Generic.List`1[ServiceCombatTurnData], CardMap=System.Collections.Generic.List`1[ServiceCombatCardMapData], EndTime=, IsWinner=True, IsLoser=False, InLiveBattle=False, MissionExists=True]
+19:52:21.209 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
+19:52:21.301 I [GAOffline] autotest: finger drag begin at (179.0, 908.1) from (179.0, 908.1)
+19:52:21.743 I beat t=196 frame=4104 level=CombatScreen ready=True not started: 
+19:52:25.241 I [GAOffline] autotest: touch Ended at (607.7, 340.4) on 1920x1080
+19:52:25.480 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
+19:52:25.481 I Log: server api: https://havoc.synapse-games.com/api.php?message=setUserFlag&user_id=1
+19:52:25.484 I [GAOffline] setUserFlag -> 541 bytes
+19:52:25.485 I Log: New tutorial=10 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+19:52:25.485 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:52:25.486 I [GAOffline] unhandled message recordEvent, answering result:true
+19:52:25.486 I [GAOffline] recordEvent -> 55 bytes
+19:52:25.525 I Log: version retrieved: offline-1
+19:52:25.920 I Log: Doing phase=Play turn=8
+19:52:25.920 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:52:25.920 I Log: tutorial event received: [TutorialFlaqReq: ID=playedCard, Key=, Value=1, Popup=]
+19:52:26.689 I Log: Doing phase=Action turn=8
+19:52:26.689 I Log: handle card skill: [ServiceCombatActionData: CardUID=5, SkillID=0, Targets=2, Value=2, Block=, Status=]
+19:52:26.689 I Log: skill  with actor: 5 and value: 2
+19:52:26.776 I beat t=201 frame=4209 level=CombatScreen ready=True not started: 
+19:52:27.465 I Log: Doing phase=Action turn=8
+19:52:27.465 I Log: Doing phase=End turn=8
+19:52:27.466 I Log: phase end...turn:8
+19:52:28.223 I Log: Doing phase=Play turn=9
+19:52:28.223 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:52:29.021 I Log: Doing phase=Action turn=9
+19:52:29.021 I Log: handle card skill: [ServiceCombatActionData: CardUID=3, SkillID=0, Targets=-2, Value=2, Block=, Status=]
+19:52:29.021 I Log: skill  with actor: 3 and value: 2
+19:52:29.802 I Log: Doing phase=Action turn=9
+19:52:29.802 I Log: Doing phase=End turn=9
+19:52:29.802 I Log: phase end...turn:9
+19:52:30.595 I Log: Doing phase=Play turn=10
+19:52:30.595 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=combatHand, Value=0, Popup=]
+19:52:31.378 I Log: Doing phase=Action turn=10
+19:52:31.378 I Log: handle card skill: [ServiceCombatActionData: CardUID=6, SkillID=0, Targets=-1, Value=3, Block=, Status=]
+19:52:31.378 I Log: skill  with actor: 6 and value: 3
+19:52:31.807 I beat t=206 frame=4331 level=CombatScreen ready=True not started: 
+19:52:32.142 I Log: Doing phase=Action turn=10
+19:52:32.142 I Log: handle card skill: [ServiceCombatActionData: CardUID=5, SkillID=0, Targets=-1, Value=2, Block=, Status=]
+19:52:32.142 I Log: skill  with actor: 5 and value: 2
+19:52:33.169 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:52:33.216 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:52:35.247 I Log: Doing phase=Action turn=10
+19:52:35.247 I Log: Doing phase=End turn=10
+19:52:35.247 I Log: phase end...turn:10
+19:52:35.249 I Log: Checking HandleOutcome.
+19:52:35.250 I Log: Outcome found, battle ending.
+19:52:35.310 I Log: Fading music out
+19:52:35.311 I Log: tutorial event received: [TutorialFlaqReq: ID=completedMission, Key=1, Value=1, Popup=]
+19:52:35.312 I Log: Current turn is the last turn=10 max is 10
+19:52:35.312 E Exception: NullReferenceException: Object reference not set to an instance of an object
 DataManager.GetJSONData (System.String fieldPath)
 CombatOutcomePopup.Start ()
 
-19:29:58.129 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:29:58.205 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:29:58.211 I Log: current level: CombatScreen, loading level: Base
-19:29:58.212 I Log: Fading music out
-19:29:58.798 I Log: Getting purchase identifiers
-19:29:58.798 I Log: server api: https://havoc.synapse-games.com/api.php?message=getPurchaseIdentifiers&user_id=1
-19:29:58.801 I [GAOffline] unhandled message getPurchaseIdentifiers, answering result:true
-19:29:58.801 I [GAOffline] getPurchaseIdentifiers -> 55 bytes
-19:29:58.802 I Log: server api: https://havoc.synapse-games.com/api.php?message=getStoreData&user_id=1
-19:29:58.804 I [GAOffline] getStoreData -> 1355 bytes
-19:29:58.884 I Log: tutorial event received: [TutorialFlaqReq: ID=inBase, Key=, Value=1, Popup=]
-19:29:58.886 I Log: tutorial event received: [TutorialFlaqReq: ID=nav, Key=, Value=store, Popup=]
-19:29:58.886 I Log: tutorial event received: [TutorialFlaqReq: ID=inCombat, Key=, Value=0, Popup=]
-19:29:59.333 I Log: version retrieved: offline-1
-19:29:59.334 I Log: total purchase identifiers received: 0
-19:29:59.335 I Log: querying google play inventory for identifiers
-19:29:59.340 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-19:29:59.340 I Log: user data updated
-19:29:59.341 I Log: tutorial event received: [TutorialFlaqReq: ID=store_loaded, Key=, Value=1, Popup=]
-19:29:59.341 I Log: version retrieved: offline-1
-19:29:59.342 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-19:29:59.342 I Log: user data updated
-19:29:59.817 I beat t=222 frame=3352 level=BaseScreen ready=True not started: 
-19:29:59.822 I Log: tutorial screen loaded. refreshing UI for tutorial 10, step 1
-19:29:59.822 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
-19:29:59.822 I Log: tutorial event received: [TutorialFlaqReq: ID=screen, Key=, Value=Base, Popup=]
-19:29:59.822 I Log: New step tutorial=10 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
-19:29:59.822 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:29:59.826 I [GAOffline] unhandled message recordEvent, answering result:true
-19:29:59.826 I [GAOffline] recordEvent -> 55 bytes
-19:29:59.834 I Log: Loading screen BaseScreen took 0.6304016 seconds
-19:30:03.713 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:30:04.017 I [GAOffline] autotest: finger drag begin at (200.8, 201.9) from (200.8, 201.9)
-19:30:04.956 I beat t=227 frame=3382 level=BaseScreen ready=True not started: 
-19:30:07.715 I [GAOffline] autotest: touch Ended at (737.7, 607.2) on 1920x1080
-19:30:10.037 I beat t=232 frame=3422 level=BaseScreen ready=True not started: 
-19:30:10.159 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:30:10.416 I [GAOffline] autotest: finger drag begin at (172.6, 188.4) from (172.6, 188.4)
-19:30:14.294 I [GAOffline] autotest: touch Ended at (513.1, 608.4) on 1920x1080
-19:30:15.109 I beat t=238 frame=3464 level=BaseScreen ready=True not started: 
-19:30:16.946 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:30:17.309 I [GAOffline] autotest: finger drag begin at (207.2, 193.1) from (207.2, 193.1)
-19:30:20.158 I beat t=243 frame=3501 level=BaseScreen ready=True not started: 
-19:30:20.968 I [GAOffline] autotest: touch Ended at (736.1, 452.1) on 1920x1080
-19:30:21.304 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
-19:30:21.304 I Log: New step tutorial=10 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
-19:30:21.304 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:30:21.309 I [GAOffline] unhandled message recordEvent, answering result:true
-19:30:21.309 I [GAOffline] recordEvent -> 55 bytes
-19:30:23.471 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
-19:30:23.757 I [GAOffline] autotest: finger drag begin at (192.8, 889.9) from (192.8, 889.9)
-19:30:25.184 I beat t=248 frame=3541 level=BaseScreen ready=True not started: 
-19:30:27.653 I [GAOffline] autotest: touch Ended at (609.3, 338.3) on 1920x1080
-19:30:30.221 I beat t=253 frame=3574 level=BaseScreen ready=True not started: 
-19:30:35.257 I beat t=258 frame=3604 level=BaseScreen ready=True not started: 
-19:30:36.400 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:30:36.558 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:30:40.321 I beat t=263 frame=3635 level=BaseScreen ready=True not started: 
-19:30:41.136 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:30:41.285 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:30:45.342 I beat t=268 frame=3665 level=BaseScreen ready=True not started: 
-19:30:47.302 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:30:47.614 I [GAOffline] autotest: finger drag begin at (186.4, 191.0) from (186.4, 191.0)
-19:30:50.378 I beat t=273 frame=3700 level=BaseScreen ready=True not started: 
-19:30:51.332 I [GAOffline] autotest: touch Ended at (734.7, 605.0) on 1920x1080
-19:30:53.848 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:30:54.111 I [GAOffline] autotest: finger drag begin at (176.2, 192.9) from (176.2, 192.9)
-19:30:55.508 I beat t=278 frame=3742 level=BaseScreen ready=True not started: 
-19:30:57.844 I [GAOffline] autotest: touch Ended at (509.2, 603.6) on 1920x1080
-19:31:00.360 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:31:00.636 I beat t=283 frame=3788 level=BaseScreen ready=True not started: 
-19:31:00.766 I [GAOffline] autotest: finger drag begin at (209.9, 194.4) from (209.9, 194.4)
-19:31:04.375 I [GAOffline] autotest: touch Ended at (734.3, 451.2) on 1920x1080
-19:31:05.677 I beat t=288 frame=3832 level=BaseScreen ready=True not started: 
-19:31:06.745 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
-19:31:07.031 I [GAOffline] autotest: finger drag begin at (186.9, 897.7) from (186.9, 897.7)
-19:31:10.697 I beat t=293 frame=3868 level=BaseScreen ready=True not started: 
-19:31:10.989 I [GAOffline] autotest: touch Ended at (607.9, 340.1) on 1920x1080
-19:31:15.837 I beat t=298 frame=3903 level=BaseScreen ready=True not started: 
-19:31:19.682 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:31:19.854 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:31:24.311 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:31:24.459 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:31:30.657 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:31:30.954 I [GAOffline] autotest: finger drag begin at (190.4, 194.0) from (190.4, 194.0)
-19:31:34.621 I [GAOffline] autotest: touch Ended at (725.2, 597.8) on 1920x1080
-19:31:37.146 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:31:37.505 I [GAOffline] autotest: finger drag begin at (172.4, 188.2) from (172.4, 188.2)
-19:31:41.253 I [GAOffline] autotest: touch Ended at (506.9, 600.8) on 1920x1080
-19:31:43.623 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:31:43.834 I [GAOffline] autotest: finger drag begin at (179.2, 179.4) from (179.2, 179.4)
-19:31:47.704 I [GAOffline] autotest: touch Ended at (735.6, 451.9) on 1920x1080
-19:31:50.253 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
-19:31:50.540 I [GAOffline] autotest: finger drag begin at (196.1, 885.5) from (196.1, 885.5)
-19:31:54.511 I [GAOffline] autotest: touch Ended at (610.5, 336.7) on 1920x1080
-19:32:02.949 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:32:03.126 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:32:07.655 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:32:07.838 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:32:14.198 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:32:14.507 I [GAOffline] autotest: finger drag begin at (195.0, 197.4) from (195.0, 197.4)
-19:32:18.208 I [GAOffline] autotest: touch Ended at (738.9, 608.1) on 1920x1080
-19:32:20.701 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:32:21.025 I [GAOffline] autotest: finger drag begin at (174.5, 190.8) from (174.5, 190.8)
-19:32:24.729 I [GAOffline] autotest: touch Ended at (515.7, 611.6) on 1920x1080
-19:32:27.177 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:32:27.411 I [GAOffline] autotest: finger drag begin at (182.0, 180.7) from (182.0, 180.7)
-19:32:31.242 I [GAOffline] autotest: touch Ended at (733.2, 450.7) on 1920x1080
-19:32:33.942 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
-19:32:34.306 I [GAOffline] autotest: finger drag begin at (208.1, 869.6) from (208.1, 869.6)
-19:32:38.027 I [GAOffline] autotest: touch Ended at (605.3, 343.5) on 1920x1080
-19:32:46.685 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:32:46.854 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:32:51.282 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:32:51.454 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:32:57.691 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:32:58.012 I [GAOffline] autotest: finger drag begin at (207.3, 206.8) from (207.3, 206.8)
-19:33:01.646 I [GAOffline] autotest: touch Ended at (733.6, 604.1) on 1920x1080
-19:33:04.072 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:33:04.313 I [GAOffline] autotest: finger drag begin at (170.9, 186.4) from (170.9, 186.4)
-19:33:08.205 I [GAOffline] autotest: touch Ended at (512.9, 608.2) on 1920x1080
-19:33:10.708 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
-19:33:10.947 I [GAOffline] autotest: finger drag begin at (191.1, 185.2) from (191.1, 185.2)
-19:33:14.738 I [GAOffline] autotest: touch Ended at (739.9, 454.0) on 1920x1080
-19:33:17.239 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
-19:33:17.506 I [GAOffline] autotest: finger drag begin at (191.9, 891.0) from (191.9, 891.0)
-19:33:21.386 I [GAOffline] autotest: touch Ended at (607.2, 341.0) on 1920x1080
-19:33:28.425 I [GAOffline] autotest: touch Began at (1824.0, 120.0) on 1920x1080
-19:33:28.590 I [GAOffline] autotest: touch Ended at (1824.0, 120.0) on 1920x1080
-19:33:28.751 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=store, Value=1, Popup=]
-19:33:28.751 I Log: server api: https://havoc.synapse-games.com/api.php?message=getStoreData&user_id=1
-19:33:28.754 I [GAOffline] getStoreData -> 1355 bytes
-19:33:28.761 E Exception: ArgumentOutOfRangeException: Argument is out of range.
+19:52:36.838 I beat t=211 frame=4425 level=CombatScreen ready=True not started: 
+19:52:37.616 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:52:37.673 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:52:37.676 I Log: current level: CombatScreen, loading level: Base
+19:52:37.677 I Log: Fading music out
+19:52:38.192 I Log: Getting purchase identifiers
+19:52:38.192 I Log: server api: https://havoc.synapse-games.com/api.php?message=getPurchaseIdentifiers&user_id=1
+19:52:38.194 I [GAOffline] unhandled message getPurchaseIdentifiers, answering result:true
+19:52:38.194 I [GAOffline] getPurchaseIdentifiers -> 55 bytes
+19:52:38.194 I Log: server api: https://havoc.synapse-games.com/api.php?message=getStoreData&user_id=1
+19:52:38.196 I [GAOffline] getStoreData -> 5055 bytes
+19:52:38.250 I Log: tutorial event received: [TutorialFlaqReq: ID=inBase, Key=, Value=1, Popup=]
+19:52:38.251 I Log: tutorial event received: [TutorialFlaqReq: ID=nav, Key=, Value=store, Popup=]
+19:52:38.251 I Log: tutorial event received: [TutorialFlaqReq: ID=inCombat, Key=, Value=0, Popup=]
+19:52:38.535 I Log: version retrieved: offline-1
+19:52:38.536 I Log: total purchase identifiers received: 0
+19:52:38.536 I Log: querying google play inventory for identifiers
+19:52:38.539 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+19:52:38.539 I Log: user data updated
+19:52:38.540 I Log: tutorial event received: [TutorialFlaqReq: ID=store_loaded, Key=, Value=1, Popup=]
+19:52:38.540 I Log: version retrieved: offline-1
+19:52:38.540 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+19:52:38.540 I Log: user data updated
+19:52:38.940 I Log: tutorial screen loaded. refreshing UI for tutorial 10, step 1
+19:52:38.940 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
+19:52:38.940 I Log: tutorial event received: [TutorialFlaqReq: ID=screen, Key=, Value=Base, Popup=]
+19:52:38.940 I Log: New step tutorial=10 step=[TutorialStep: ID=0, Confirm=True, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+19:52:38.940 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:52:38.945 I [GAOffline] unhandled message recordEvent, answering result:true
+19:52:38.946 I [GAOffline] recordEvent -> 55 bytes
+19:52:38.951 I Log: Loading screen BaseScreen took 0.546814 seconds
+19:52:41.962 I beat t=217 frame=4473 level=BaseScreen ready=True not started: 
+19:52:42.802 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:52:43.033 I [GAOffline] autotest: finger drag begin at (181.6, 187.3) from (181.6, 187.3)
+19:52:46.811 I [GAOffline] autotest: touch Ended at (731.9, 602.9) on 1920x1080
+19:52:46.981 I beat t=222 frame=4522 level=BaseScreen ready=True not started: 
+19:52:49.299 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:52:49.493 I [GAOffline] autotest: finger drag begin at (172.4, 188.2) from (172.4, 188.2)
+19:52:52.055 I beat t=227 frame=4577 level=BaseScreen ready=True not started: 
+19:52:53.378 I [GAOffline] autotest: touch Ended at (514.5, 610.1) on 1920x1080
+19:52:55.791 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:52:56.043 I [GAOffline] autotest: finger drag begin at (177.6, 178.6) from (177.6, 178.6)
+19:52:57.123 I beat t=232 frame=4627 level=BaseScreen ready=True not started: 
+19:52:59.856 I [GAOffline] autotest: touch Ended at (733.6, 450.9) on 1920x1080
+19:53:00.154 I Log: tutorial event received: [TutorialFlaqReq: ID=confirm, Key=, Value=, Popup=]
+19:53:00.154 I Log: New step tutorial=10 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+19:53:00.154 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:53:00.156 I [GAOffline] unhandled message recordEvent, answering result:true
+19:53:00.156 I [GAOffline] recordEvent -> 55 bytes
+19:53:02.211 I beat t=237 frame=4688 level=BaseScreen ready=True not started: 
+19:53:02.211 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
+19:53:02.514 I [GAOffline] autotest: finger drag begin at (190.5, 892.8) from (190.5, 892.8)
+19:53:06.365 I [GAOffline] autotest: touch Ended at (604.0, 345.3) on 1920x1080
+19:53:07.219 I beat t=242 frame=4733 level=BaseScreen ready=True not started: 
+19:53:12.365 I beat t=247 frame=4777 level=BaseScreen ready=True not started: 
+19:53:14.200 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:53:14.307 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:53:17.381 I beat t=252 frame=4819 level=BaseScreen ready=True not started: 
+19:53:18.827 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:53:18.948 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:53:22.492 I beat t=257 frame=4863 level=BaseScreen ready=True not started: 
+19:53:24.410 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:53:24.640 I [GAOffline] autotest: finger drag begin at (161.6, 172.2) from (161.6, 172.2)
+19:53:27.537 I beat t=262 frame=4911 level=BaseScreen ready=True not started: 
+19:53:28.576 I [GAOffline] autotest: touch Ended at (741.0, 609.7) on 1920x1080
+19:53:31.028 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:53:31.237 I [GAOffline] autotest: finger drag begin at (173.4, 189.4) from (173.4, 189.4)
+19:53:32.557 I beat t=267 frame=4967 level=BaseScreen ready=True not started: 
+19:53:35.029 I [GAOffline] autotest: touch Ended at (511.6, 606.5) on 1920x1080
+19:53:37.327 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:53:37.485 I [GAOffline] autotest: finger drag begin at (166.0, 172.9) from (166.0, 172.9)
+19:53:37.570 I beat t=272 frame=5028 level=BaseScreen ready=True not started: 
+19:53:41.353 I [GAOffline] autotest: touch Ended at (724.6, 446.5) on 1920x1080
+19:53:42.605 I beat t=277 frame=5089 level=BaseScreen ready=True not started: 
+19:53:43.765 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
+19:53:43.969 I [GAOffline] autotest: finger drag begin at (183.5, 902.1) from (183.5, 902.1)
+19:53:47.630 I beat t=282 frame=5137 level=BaseScreen ready=True not started: 
+19:53:47.844 I [GAOffline] autotest: touch Ended at (600.5, 350.0) on 1920x1080
+19:53:52.650 I beat t=287 frame=5185 level=BaseScreen ready=True not started: 
+19:53:55.649 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:53:55.761 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:53:57.746 I beat t=292 frame=5228 level=BaseScreen ready=True not started: 
+19:54:00.134 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:54:00.244 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:54:02.812 I beat t=297 frame=5271 level=BaseScreen ready=True not started: 
+19:54:05.829 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:54:06.048 I [GAOffline] autotest: finger drag begin at (180.1, 186.2) from (180.1, 186.2)
+19:54:09.839 I [GAOffline] autotest: touch Ended at (733.8, 604.3) on 1920x1080
+19:54:12.297 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:54:12.483 I [GAOffline] autotest: finger drag begin at (175.2, 191.7) from (175.2, 191.7)
+19:54:16.329 I [GAOffline] autotest: touch Ended at (515.3, 611.1) on 1920x1080
+19:54:18.784 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:54:18.963 I [GAOffline] autotest: finger drag begin at (183.3, 181.4) from (183.3, 181.4)
+19:54:22.793 I [GAOffline] autotest: touch Ended at (738.9, 453.5) on 1920x1080
+19:54:25.295 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
+19:54:25.644 I [GAOffline] autotest: finger drag begin at (201.3, 878.6) from (201.3, 878.6)
+19:54:29.377 I [GAOffline] autotest: touch Ended at (605.5, 343.4) on 1920x1080
+19:54:37.171 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:54:37.286 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:54:41.838 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:54:41.978 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:54:47.410 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:54:47.641 I [GAOffline] autotest: finger drag begin at (171.1, 179.4) from (171.1, 179.4)
+19:54:51.510 I [GAOffline] autotest: touch Ended at (739.4, 608.6) on 1920x1080
+19:54:54.014 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:54:54.281 I [GAOffline] autotest: finger drag begin at (173.9, 190.1) from (173.9, 190.1)
+19:54:58.021 I [GAOffline] autotest: touch Ended at (509.1, 603.5) on 1920x1080
+19:55:00.324 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:55:00.472 I [GAOffline] autotest: finger drag begin at (167.5, 173.6) from (167.5, 173.6)
+19:55:04.475 I [GAOffline] autotest: touch Ended at (738.9, 453.5) on 1920x1080
+19:55:06.839 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
+19:55:07.044 I [GAOffline] autotest: finger drag begin at (180.2, 906.6) from (180.2, 906.6)
+19:55:10.960 I [GAOffline] autotest: touch Ended at (602.0, 348.0) on 1920x1080
+19:55:18.832 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:55:18.945 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:55:23.314 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:55:23.435 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:55:28.980 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:55:29.279 I [GAOffline] autotest: finger drag begin at (196.3, 198.4) from (196.3, 198.4)
+19:55:32.954 I [GAOffline] autotest: touch Ended at (740.6, 609.4) on 1920x1080
+19:55:35.332 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:55:35.624 I [GAOffline] autotest: finger drag begin at (177.0, 193.9) from (177.0, 193.9)
+19:55:39.355 I [GAOffline] autotest: touch Ended at (509.6, 604.1) on 1920x1080
+19:55:41.693 I [GAOffline] autotest: touch Began at (156.0, 168.0) on 1920x1080
+19:55:41.852 I [GAOffline] autotest: finger drag begin at (172.2, 175.9) from (172.2, 175.9)
+19:55:45.749 I [GAOffline] autotest: touch Ended at (735.8, 452.0) on 1920x1080
+19:55:48.199 I [GAOffline] autotest: touch Began at (167.0, 924.0) on 1920x1080
+19:55:48.576 I [GAOffline] autotest: finger drag begin at (199.7, 880.6) from (199.7, 880.6)
+19:55:52.389 I [GAOffline] autotest: touch Ended at (607.8, 340.3) on 1920x1080
+19:55:59.003 I [GAOffline] autotest: touch Began at (1824.0, 120.0) on 1920x1080
+19:55:59.104 I [GAOffline] autotest: touch Ended at (1824.0, 120.0) on 1920x1080
+19:55:59.230 I Log: tutorial event received: [TutorialFlaqReq: ID=popup, Key=store, Value=1, Popup=]
+19:55:59.230 I Log: server api: https://havoc.synapse-games.com/api.php?message=getStoreData&user_id=1
+19:55:59.233 I [GAOffline] getStoreData -> 5055 bytes
+19:55:59.241 E Exception: ArgumentOutOfRangeException: Argument is out of range.
 Parameter name: index
 System.Collections.Generic.List`1[SynCore.Data.DataObject].get_Item (Int32 index)
 PagedGrid.UpdateElements ()
@@ -581,40 +581,92 @@ HomeBaseController.onTapStore ()
 UnityEngine.GameObject:SendMessage(String, Object)
 <coHandleButtonPress>c__Iterator3C:MoveNext()
 
-19:33:28.762 I Log: Getting purchase identifiers
-19:33:28.762 I Log: server api: https://havoc.synapse-games.com/api.php?message=getPurchaseIdentifiers&user_id=1
-19:33:28.765 I [GAOffline] unhandled message getPurchaseIdentifiers, answering result:true
-19:33:28.765 I [GAOffline] getPurchaseIdentifiers -> 55 bytes
-19:33:28.765 I Log: tutorial event received: [TutorialFlaqReq: ID=loadedStoreItem, Key=, Value=1, Popup=]
-19:33:28.766 I Log: New step tutorial=10 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
-19:33:28.766 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
-19:33:28.768 I [GAOffline] unhandled message recordEvent, answering result:true
-19:33:28.768 I [GAOffline] recordEvent -> 55 bytes
-19:33:28.770 W Warning: unknown tutorial element: storeItem.1
-19:33:28.770 W Warning: arrow not found: storeItem.1
-19:33:28.771 W Warning: elements not found for tutorial 10, step 10
-19:33:28.776 I Log: Getting purchase identifiers
-19:33:28.776 I Log: server api: https://havoc.synapse-games.com/api.php?message=getPurchaseIdentifiers&user_id=1
-19:33:28.778 I [GAOffline] unhandled message getPurchaseIdentifiers, answering result:true
-19:33:28.778 I [GAOffline] getPurchaseIdentifiers -> 55 bytes
-19:33:28.779 I Log: tutorial event received: [TutorialFlaqReq: ID=loadedStoreItem, Key=, Value=1, Popup=]
-19:33:28.966 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-19:33:28.966 I Log: user data updated
-19:33:28.967 I Log: tutorial event received: [TutorialFlaqReq: ID=store_loaded, Key=, Value=1, Popup=]
-19:33:28.967 I Log: version retrieved: offline-1
-19:33:28.967 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
-19:33:28.967 I Log: user data updated
-19:33:28.968 I Log: version retrieved: offline-1
-19:33:28.968 I Log: total purchase identifiers received: 0
-19:33:28.968 I Log: querying google play inventory for identifiers
-19:33:28.968 I Log: version retrieved: offline-1
-19:33:28.968 I Log: total purchase identifiers received: 0
-19:33:28.968 I Log: querying google play inventory for identifiers
-19:33:36.230 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:33:36.399 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:33:42.801 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:33:42.971 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:33:49.442 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:33:49.604 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
-19:33:55.783 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
-19:33:55.976 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:55:59.242 I Log: Getting purchase identifiers
+19:55:59.242 I Log: server api: https://havoc.synapse-games.com/api.php?message=getPurchaseIdentifiers&user_id=1
+19:55:59.244 I [GAOffline] unhandled message getPurchaseIdentifiers, answering result:true
+19:55:59.244 I [GAOffline] getPurchaseIdentifiers -> 55 bytes
+19:55:59.245 I Log: tutorial event received: [TutorialFlaqReq: ID=loadedStoreItem, Key=, Value=1, Popup=]
+19:55:59.245 I Log: New step tutorial=10 step=[TutorialStep: ID=0, Confirm=False, Requirements=System.Collections.Generic.List`1[Tyrant.Data.TutorialFlaqReq], Arrows=System.Collections.Generic.List`1[Tyrant.Data.TutorialArrow], Highlights=System.Collections.Generic.List`1[Tyrant.Data.TutorialHighlight]]
+19:55:59.245 I Log: server api: https://havoc.synapse-games.com/api.php?message=recordEvent&user_id=1
+19:55:59.246 I [GAOffline] unhandled message recordEvent, answering result:true
+19:55:59.247 I [GAOffline] recordEvent -> 55 bytes
+19:55:59.248 W Warning: unknown tutorial element: storeItem.1
+19:55:59.248 W Warning: arrow not found: storeItem.1
+19:55:59.249 W Warning: elements not found for tutorial 10, step 10
+19:55:59.252 I Log: Getting purchase identifiers
+19:55:59.252 I Log: server api: https://havoc.synapse-games.com/api.php?message=getPurchaseIdentifiers&user_id=1
+19:55:59.253 I [GAOffline] unhandled message getPurchaseIdentifiers, answering result:true
+19:55:59.253 I [GAOffline] getPurchaseIdentifiers -> 55 bytes
+19:55:59.254 I Log: tutorial event received: [TutorialFlaqReq: ID=loadedStoreItem, Key=, Value=1, Popup=]
+19:55:59.378 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+19:55:59.378 I Log: user data updated
+19:55:59.379 I Log: tutorial event received: [TutorialFlaqReq: ID=store_loaded, Key=, Value=1, Popup=]
+19:55:59.379 I Log: version retrieved: offline-1
+19:55:59.379 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+19:55:59.379 I Log: user data updated
+19:55:59.379 I Log: version retrieved: offline-1
+19:55:59.379 I Log: total purchase identifiers received: 0
+19:55:59.379 I Log: querying google play inventory for identifiers
+19:55:59.379 I Log: version retrieved: offline-1
+19:55:59.380 I Log: total purchase identifiers received: 0
+19:55:59.380 I Log: querying google play inventory for identifiers
+19:56:06.269 I [GAOffline] autotest: touch Began at (540.0, 732.0) on 1920x1080
+19:56:06.411 I [GAOffline] autotest: touch Ended at (540.0, 732.0) on 1920x1080
+19:56:06.413 I Log: server api: https://havoc.synapse-games.com/api.php?message=buyStoreItem&user_id=1
+19:56:06.418 I [GAOffline] buyStoreItem -> 5248 bytes
+19:56:06.564 I Log: tutorial event received: [TutorialFlaqReq: ID=battleRating, Key=, Value=0, Popup=]
+19:56:06.564 I Log: user data updated
+19:56:06.565 E Exception: ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+System.Collections.Generic.List`1[SynCore.Data.DataObject].get_Item (Int32 index)
+PagedGrid.UpdateElements ()
+SwipeGrid.UpdateElements ()
+PagedGrid.Update ()
+PagedGrid.ForceUpdate ()
+StoreGrid.SetData (System.Collections.Generic.List`1 items)
+QuartermasterPopup.onStoreUpdated ()
+Messenger.Broadcast (System.String eventType, MessengerMode mode)
+Messenger.Broadcast (System.String eventType)
+StoreController.OnItemsUpdated ()
+Messenger.Broadcast (System.String eventType, MessengerMode mode)
+Messenger.Broadcast (System.String eventType)
+StoreManager.OnAPIResponse (SynCore.Data.JSONObject json)
+SynCore.AbstractManagers.DispatchAPIResponse (SynCore.Data.JSONObject json)
+TyrantMobileService+<callAPI>c__IteratorB.MoveNext ()
+
+19:56:12.742 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:56:12.889 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:56:12.890 E Exception: NullReferenceException: Object reference not set to an instance of an object
+StoreGridBox.OnTapped ()
+SwipeGrid.FingerGestures_OnFingerTap (Int32 fingerIndex, Vector2 fingerPos)
+FingerGestures.RaiseOnFingerTap (Int32 fingerIndex, Vector2 fingerPos)
+FingerGestures.PerFinger_OnTap (.TapGestureRecognizer source)
+TapGestureRecognizer.RaiseOnTap ()
+TapGestureRecognizer.OnActive (IFingerList touches)
+GestureRecognizer.OnUpdate (IFingerList touches)
+FGComponent.FingerGestures_OnFingersUpdated ()
+FingerGestures.Update ()
+TouchScreenGestures.Update ()
+
+19:56:19.332 I (previous message repeated 41 more times)
+19:56:19.332 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:56:19.483 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:56:25.828 I [GAOffline] autotest: touch Began at (960.0, 540.0) on 1920x1080
+19:56:25.981 I [GAOffline] autotest: touch Ended at (960.0, 540.0) on 1920x1080
+19:56:25.982 E Exception: NullReferenceException: Object reference not set to an instance of an object
+StoreGridBox.OnTapped ()
+SwipeGrid.FingerGestures_OnFingerTap (Int32 fingerIndex, Vector2 fingerPos)
+FingerGestures.RaiseOnFingerTap (Int32 fingerIndex, Vector2 fingerPos)
+FingerGestures.PerFinger_OnTap (.TapGestureRecognizer source)
+TapGestureRecognizer.RaiseOnTap ()
+TapGestureRecognizer.OnActive (IFingerList touches)
+GestureRecognizer.OnUpdate (IFingerList touches)
+FGComponent.FingerGestures_OnFingersUpdated ()
+FingerGestures.Update ()
+TouchScreenGestures.Update ()
+
+19:56:32.119 I (previous message repeated 39 more times)
+19:56:32.119 I [GAOffline] autotest: touch Began at (1824.0, 120.0) on 1920x1080
+19:56:32.260 I [GAOffline] autotest: touch Ended at (1824.0, 120.0) on 1920x1080
+19:56:38.597 I [GAOffline] autotest: touch Began at (523.0, 317.0) on 1920x1080
+19:56:38.768 I [GAOffline] autotest: touch Ended at (523.0, 317.0) on 1920x1080
