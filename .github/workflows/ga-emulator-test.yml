@@ -24,17 +24,17 @@ jobs:
       - name: Emulator run
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 30
-          arch: x86_64
+          api-level: 23
+          arch: x86
           target: google_apis
-          profile: pixel_4
+          profile: Nexus 5
           cores: 4
-          ram-size: 4096M
+          ram-size: 2048M
           disk-size: 6000M
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -no-snapshot
           disable-animations: true
           emulator-boot-timeout: 900
-          script: OUT=out timeout 1500 bash ga-offline/tests/run.sh || true
+          script: OUT=out ABI= timeout 1500 bash ga-offline/tests/run.sh || true
       - name: Build videos from frames
         if: always()
         run: |

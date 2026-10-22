@@ -1,1 +1,3 @@
 run 3: arm abi
+run 4: API 23 x86 image, native x86 libs. Run 3 (API 30, ARM libs under ndk_translation) crashed with SIGSEGV
+inside libndk_translation for the original APK as well, so that emulator cannot run the game at all.
