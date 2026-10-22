@@ -70,7 +70,7 @@ namespace GAOffline
             string mesh = drop != null ? Json.S(drop, "model") : "eventcrate";
             var r = Api.Squads(s);
             r["store_items"] = Items(s);
-            r["new_units"] = new List<object> { unit };
+            r["new_units"] = new List<object> { Units.Decorated(unit) };
             r["new_units_mesh"] = mesh;
             return r;
         }

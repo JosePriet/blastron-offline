@@ -23,6 +23,13 @@ namespace GAOffline
             return list;
         }
 
+        // a unit some recipe makes (the client's "fused" units, which bulk salvage leaves alone)
+        public static bool IsResult(int cardId)
+        {
+            foreach (Dictionary<string, object> f in Recipes) if (Json.I(f, "card_id") == cardId) return true;
+            return false;
+        }
+
         static Dictionary<string, object> Recipe(int id)
         {
             foreach (Dictionary<string, object> f in Recipes) if (Json.I(f, "id") == id) return f;
@@ -78,7 +85,7 @@ namespace GAOffline
             s.Write();
             var r = Units.Reply(s);
             r["store_items"] = Store.Items(s);
-            if (unit != null) r["new_units"] = new List<object> { unit };
+            if (unit != null) r["new_units"] = new List<object> { Units.Decorated(unit) };
             return r;
         }
 

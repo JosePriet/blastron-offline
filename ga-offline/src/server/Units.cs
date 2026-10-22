@@ -22,7 +22,7 @@ namespace GAOffline
             new[] { 40, 45, 60, 75, 100, 125 }, new[] { 80, 85, 100, 125, 175, 250 }, new[] { 120, 125, 140, 165, 225, 300 } };
         public const int VcPerHour = 6;
 
-        class Info { public int Rarity = 1, MaxLevel = 1, Fusion; }
+        class Info { public int Rarity = 1, MaxLevel = 1; }
         static Dictionary<int, Info> cards;
 
         static Info Card(int id)
@@ -35,7 +35,6 @@ namespace GAOffline
                     string u = m.Groups[1].Value;
                     var i = new Info();
                     i.Rarity = Num(u, "rarity", 1);
-                    i.Fusion = Num(u, "fusion_level", 0);
                     i.MaxLevel = 1 + Regex.Matches(u, "<upgrade>").Count;
                     cards[Num(u, "id", 0)] = i;
                 }
@@ -65,17 +64,19 @@ namespace GAOffline
         public static List<object> Decorated(Save s)
         {
             var list = new List<object>();
-            foreach (Dictionary<string, object> u in s.Units)
-            {
-                var d = new Dictionary<string, object>(u);
-                int id = Json.I(u, "unit_id"), level = Math.Max(1, Json.I(u, "level"));
-                bool max = level >= MaxLevel(id);
-                d["upgrade_cost"] = max ? 0 : Step(StepCost, level);
-                d["upgrade_time"] = max ? 0 : Step(StepTime, level);
-                d["salvage_value"] = SalvageValue(id, level);
-                list.Add(d);
-            }
+            foreach (Dictionary<string, object> u in s.Units) list.Add(Decorated(u));
             return list;
+        }
+
+        public static Dictionary<string, object> Decorated(Dictionary<string, object> u)
+        {
+            var d = new Dictionary<string, object>(u);
+            int id = Json.I(u, "unit_id"), level = Math.Max(1, Json.I(u, "level"));
+            bool max = level >= MaxLevel(id);
+            d["upgrade_cost"] = max ? 0 : Step(StepCost, level);
+            d["upgrade_time"] = max ? 0 : Step(StepTime, level);
+            d["salvage_value"] = SalvageValue(id, level);
+            return d;
         }
 
         public static Dictionary<string, object> Find(Save s, int index)
@@ -143,12 +144,14 @@ namespace GAOffline
             var u = Find(s, index);
             if (u == null) return Refuse(s, "That unit is not in your inventory.");
             if (Json.I(u, "deck_id") > 0) return Refuse(s, "Remove the unit from its squad first.");
+            var up = Json.O(s.D, "upgrade");
+            if (up != null && Json.I(up, "index") == index) return Refuse(s, "That unit is upgrading.");
             Remove(s, u);
             s.Write();
             return Reply(s);
         }
 
-        // tier N: every Level 1 unit of rarity N that is in no squad, has not been fused and is not upgrading
+        // tier N: every Level 1 unit of rarity N that is in no squad, is not a fusion result and is not upgrading
         public static Dictionary<string, object> BulkSalvage(Save s, int tier)
         {
             var up = Json.O(s.D, "upgrade");
@@ -157,7 +160,7 @@ namespace GAOffline
             foreach (Dictionary<string, object> u in all)
             {
                 int id = Json.I(u, "unit_id");
-                if (Json.I(u, "deck_id") <= 0 && Json.I(u, "level", 1) <= 1 && Rarity(id) == tier && Card(id).Fusion == 0
+                if (Json.I(u, "deck_id") <= 0 && Json.I(u, "level", 1) <= 1 && Rarity(id) == tier && !Fusion.IsResult(id)
                     && Json.I(u, "unit_index") != busy)
                     Remove(s, u);
             }
