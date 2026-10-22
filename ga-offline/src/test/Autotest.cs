@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
@@ -10,7 +11,7 @@ namespace GAOffline
     public class Autotest : MonoBehaviour
     {
         static readonly int[] ToBuy = { 1, 1, 2, 3, 4, 304 };
-        int wanted = -1, started, bought;
+        int wanted = -1, started, bought, step;
         bool off;
         float next, onBaseSince = -1, finishedAt = -1;
         Battle seen;
@@ -75,6 +76,25 @@ namespace GAOffline
                 Debug.Log("[GAOffline] autotest: buying " + item.Name + " (" + item.Cost + ", type " + item.ItemType + "), Credits "
                           + Managers.Player.Gold + ", Volt Coins " + Managers.Player.WarBonds);
                 Managers.Store.BuyStoreItem(item);
+                onBaseSince = Time.realtimeSinceStartup;
+                return;
+            }
+            // then the unit systems, through the client's own managers: upgrade and speed it up, fuse the seeded
+            // max-level Cobra (4) and Bazooka Jeep (5) into an RPG Tank (recipe 47) and speed it up, salvage a unit
+            if (step < 6)
+            {
+                var t = Managers.Player.taskData;
+                Debug.Log("[GAOffline] autotest: unit step " + step + ", Scrap " + Managers.Player.SalvagePoints + ", Volt Coins "
+                          + Managers.Player.WarBonds + ", upgrading " + (t != null ? t.UnitUpgradeIndex : -1) + ", fusing " + (t != null ? t.ForgeItem : -1)
+                          + ", units " + Managers.Deck.Inventory.Count);
+                switch (step++)
+                {
+                    case 0: Managers.Store.UpgradeCard(1); break;
+                    case 1: Managers.Card.rushUpgrading(); break;
+                    case 2: Managers.Fusion.startFusion(47, new List<int> { 4, 5 }, 0); break;
+                    case 3: Managers.Store.rushForging(); break;
+                    case 4: Managers.Store.SalvageCard(6); break;
+                }
                 onBaseSince = Time.realtimeSinceStartup;
                 return;
             }

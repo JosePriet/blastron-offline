@@ -15,6 +15,9 @@ Sources (archived Global Assault wiki, units_wiki.json "obtain" lines, and the a
     takes one unit out of the crate. Only crates whose units all exist in the rebuilt cards are offered; test boxes
     are skipped.
   - "Reward for completing <campaign>" / "Reward from <campaign>" gives the unit for finishing that campaign.
+  - Fusion recipes: the wiki's "Fuse X and Y" lines (fusion_from); a single name means two copies of it. Every recipe
+    takes 30 minutes, the time the 2014 videos show for Hyperion Darius. Recipes whose units are missing from the
+    rebuilt cards are skipped.
 """
 import json, re, sys
 
@@ -123,7 +126,18 @@ for name, c in crates.items():
         offered.append(c)
 print(f"event crates offered {len(offered)}: " + ", ".join(c["name"] for c in offered))
 print(f"event crates skipped (units missing from the rebuilt cards) {len(skipped)}")
-out = {"drops": drops, "event_crates": offered, "campaign_rewards": rewards}
+FUSE_TIME = 1800
+fusions, fskipped = [], []
+for name, u in sorted(units.items()):
+    for parts in u.get("fusion_from") or []:
+        parts = parts * 2 if len(parts) == 1 else parts
+        if name not in card or any(x not in card for x in parts):
+            fskipped.append(name)
+            continue
+        fusions.append({"id": len(fusions) + 1, "name": name, "card_id": card[name], "time": FUSE_TIME,
+                        "resource": [{"card_id": card[x], "number": 1} for x in parts]})
+print(f"fusion recipes {len(fusions)}, skipped (unit missing from the rebuilt cards) {len(fskipped)}")
+out = {"drops": drops, "event_crates": offered, "campaign_rewards": rewards, "fusion_recipes": fusions}
 json.dump(out, open(OUT, "w"), indent=1)
 print(f"campaign rewards {sum(map(len, rewards.values()))} units in {len(rewards)} campaigns")
 for n, l in unmatched:

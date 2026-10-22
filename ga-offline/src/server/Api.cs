@@ -31,12 +31,15 @@ namespace GAOffline
 
         public static Dictionary<string, object> Base()
         {
-            return new Dictionary<string, object> { { "result", true }, { "time", Now }, { "version", Version } };
+            // hc_*: the client's speed-up price, ceil(hours left ^ hc_e * hc_ph) Volt Coins (see Units)
+            return new Dictionary<string, object> { { "result", true }, { "time", Now }, { "version", Version },
+                { "hc_f", "0" }, { "hc_ph", Units.VcPerHour.ToString() }, { "hc_e", "1" } };
         }
 
         public static string Handle(string message, Dictionary<string, string> args)
         {
             Save s = Save.Current;
+            Units.Tick(s);
             Dictionary<string, object> r;
             switch (message)
             {
@@ -75,6 +78,27 @@ namespace GAOffline
                 case "buyStoreItem":
                     r = Store.Buy(s, ArgInt(args, "item_id"));
                     break;
+                case "upgradeUnit":
+                    r = Units.Upgrade(s, ArgInt(args, "unit_index"));
+                    break;
+                case "rushUnitUpgrade":
+                    r = Units.Rush(s);
+                    break;
+                case "salvageUnit":
+                    r = Units.SalvageUnit(s, ArgInt(args, "unit_index"));
+                    break;
+                case "bulkSalvage":
+                    r = Units.BulkSalvage(s, ArgInt(args, "tier"));
+                    break;
+                case "startFusion":
+                    r = Fusion.Start(s, ArgInt(args, "fusion_id"), Arg(args, "components"));
+                    break;
+                case "completeStoreItem":
+                    r = Fusion.Complete(s);
+                    break;
+                case "rushFusion":
+                    r = Fusion.Rush(s);
+                    break;
                 case "startCampaign":
                     r = BattleReply(s, Battle.Start(s, ArgInt(args, "campaign_id")));
                     break;
@@ -94,6 +118,9 @@ namespace GAOffline
                     r = Base();
                     break;
             }
+            object ok;
+            if (r.TryGetValue("result", out ok) && false.Equals(ok))
+                Debug.Log("[GAOffline] " + message + " refused: " + Json.S(r, "result_message"));
             return Json.Write(r);
         }
 
@@ -131,7 +158,7 @@ namespace GAOffline
         static Dictionary<string, object> Full(Save s)
         {
             var r = Squads(s);
-            r["user_tasks"] = new Dictionary<string, object>();
+            r["user_tasks"] = Units.Tasks(s);
             r["user_items"] = Json.O(s.D, "items");
             r["mission_completions"] = Json.O(s.D, "missions");
             r["max_energy"] = 100;
@@ -141,6 +168,7 @@ namespace GAOffline
             r["news"] = new List<object>();
             r["user_achievements"] = new List<object>(); // read unconditionally by the base screen and quest list
             r["store_items"] = Store.Items(s);
+            r["fusion_recipes"] = Fusion.Served();
             r["is_vc_on_sale"] = 0;
             r["feature_locks"] = FeatureLocks(s);
             r["locations"] = GameData.Locations;
@@ -153,13 +181,14 @@ namespace GAOffline
         {
             var r = Base();
             r["user_data"] = UserData(s);
-            r["user_units"] = s.Units;
+            var all = Units.Decorated(s);
+            r["user_units"] = all;
             var decks = new List<object>();
             foreach (Dictionary<string, object> d in s.Decks)
             {
                 int id = Json.I(d, "deck_id");
                 var units = new List<object>();
-                foreach (Dictionary<string, object> u in s.Units)
+                foreach (Dictionary<string, object> u in all)
                     if (Json.I(u, "deck_id") == id) units.Add(u);
                 decks.Add(new Dictionary<string, object> {
                     { "deck_id", id }, { "name", Json.S(d, "name") }, { "commander_item_id", Json.I(d, "commander_item_id") },
