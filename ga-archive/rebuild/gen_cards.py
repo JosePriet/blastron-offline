@@ -82,7 +82,15 @@ for mission in root.findall("mission"):
 # --- resolve every mission id ---
 report, cards = {}, {}
 taken_wiki = {}
+# Ids named outright by tutorial1.xml ("deploy the Cobra" -> card.2, "Javelin" -> card.10, "Darius" -> card.502).
+TUTORIAL_IDS = {"2": "Cobra", "10": "Javelin", "502": "Darius"}
+for cid, n in TUTORIAL_IDS.items():
+    cards[cid] = {"wiki": n, "name": n}
+    taken_wiki.setdefault(n, cid)
+    report[cid] = {"source": "wiki", "unit": n, "hints": sorted(set(hints.get(cid, []))), "confidence": "high (tutorial1.xml)"}
 for cid in sorted(uses, key=int):
+    if cid in cards:
+        continue
     names = hints.get(cid, [])
     # "Zeus+" / "Zeus++" mark the dual / quad fusion of a unit, not the base unit, so they never match by name.
     full = [h for h in names if "+" not in h]

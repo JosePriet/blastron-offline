@@ -177,27 +177,25 @@
 	</unit>
 	<unit>
 		<id>10</id>
-		<name>Jav</name>
+		<name>Javelin</name>
 		<picture>longrangetank_256</picture>
 		<mesh>longrangetank</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>1</rarity>
 		<type>1</type>
-		<set>2</set>
-		<attack>2</attack>
+		<set>1</set>
+		<attack>3</attack>
 		<health>4</health>
-		<skill id="poison" x="1"/>
 		<upgrade>
 		<level>2</level>
-		<attack>2</attack>
-		<health>6</health>
-			<skill id="poison" x="1"/>
+		<attack>3</attack>
+		<health>5</health>
 		</upgrade>
 		<upgrade>
 		<level>3</level>
 		<attack>3</attack>
-		<health>6</health>
-			<skill id="poison" x="2"/>
+		<health>5</health>
+			<skill id="pierce" x="2"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -2612,6 +2610,30 @@
 		<health>15</health>
 			<skill id="armored" x="2"/>
 			<skill id="strike" x="3"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>502</id>
+		<name>Darius</name>
+		<picture>darius_256</picture>
+		<mesh>darius</mesh>
+		<asset_bundle>0</asset_bundle>
+		<rarity>1</rarity>
+		<type>1</type>
+		<set>1</set>
+		<attack>2</attack>
+		<health>8</health>
+		<upgrade>
+		<level>2</level>
+		<attack>2</attack>
+		<health>9</health>
+			<skill id="strike" x="1"/>
+		</upgrade>
+		<upgrade>
+		<level>3</level>
+		<attack>3</attack>
+		<health>9</health>
+			<skill id="strike" x="2"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -22655,33 +22677,9 @@
 	</unit>
 	<unit>
 		<id>2039</id>
-		<name>Darius</name>
-		<picture>darius_256</picture>
-		<mesh>darius</mesh>
-		<asset_bundle>0</asset_bundle>
-		<rarity>1</rarity>
-		<type>1</type>
-		<set>1</set>
-		<attack>2</attack>
-		<health>8</health>
-		<upgrade>
-		<level>2</level>
-		<attack>2</attack>
-		<health>9</health>
-			<skill id="strike" x="1"/>
-		</upgrade>
-		<upgrade>
-		<level>3</level>
-		<attack>3</attack>
-		<health>9</health>
-			<skill id="strike" x="2"/>
-		</upgrade>
-	</unit>
-	<unit>
-		<id>2040</id>
 		<name>Dark Ops Marine</name>
-		<picture>flyswatter_256</picture>
-		<mesh>flyswatter</mesh>
+		<picture>rezin_256</picture>
+		<mesh>rezin</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -22734,10 +22732,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2041</id>
+		<id>2040</id>
 		<name>Dark Vulture</name>
-		<picture>devilcast_256</picture>
-		<mesh>devilcast</mesh>
+		<picture>flyswatter_256</picture>
+		<mesh>flyswatter</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -22805,7 +22803,7 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2042</id>
+		<id>2041</id>
 		<name>Deployed Laser</name>
 		<picture>devilcast_256</picture>
 		<mesh>devilcast</mesh>
@@ -22861,10 +22859,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2043</id>
+		<id>2042</id>
 		<name>Depth Inquisitor</name>
-		<picture>mech_256</picture>
-		<mesh>mech</mesh>
+		<picture>devilcast_256</picture>
+		<mesh>devilcast</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -22910,10 +22908,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2044</id>
+		<id>2043</id>
 		<name>Desert Shrew</name>
-		<picture>dariusmech_256</picture>
-		<mesh>dariusmech</mesh>
+		<picture>mech_256</picture>
+		<mesh>mech</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -22959,10 +22957,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2045</id>
+		<id>2044</id>
 		<name>Detonator</name>
-		<picture>forwardscout_256</picture>
-		<mesh>forwardscout</mesh>
+		<picture>dariusmech_256</picture>
+		<mesh>dariusmech</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -23011,10 +23009,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2046</id>
+		<id>2045</id>
 		<name>Dire Anasi</name>
-		<picture>bradley_256</picture>
-		<mesh>bradley</mesh>
+		<picture>forwardscout_256</picture>
+		<mesh>forwardscout</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -23074,7 +23072,7 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2047</id>
+		<id>2046</id>
 		<name>Dozer APC</name>
 		<picture>dozerapc_256</picture>
 		<mesh>dozerapc</mesh>
@@ -23105,10 +23103,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2048</id>
+		<id>2047</id>
 		<name>Drake</name>
-		<picture>jackhammer_256</picture>
-		<mesh>jackhammer</mesh>
+		<picture>phoenix_256</picture>
+		<mesh>phoenix</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -23147,10 +23145,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2049</id>
+		<id>2048</id>
 		<name>Dread Anasi</name>
-		<picture>flyswatter_256</picture>
-		<mesh>flyswatter</mesh>
+		<picture>jackhammer_256</picture>
+		<mesh>jackhammer</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -23218,10 +23216,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2050</id>
+		<id>2049</id>
 		<name>Drop Cerebral</name>
-		<picture>thunderbird_256</picture>
-		<mesh>thunderbird</mesh>
+		<picture>flyswatter_256</picture>
+		<mesh>flyswatter</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>5</rarity>
 		<type>1</type>
@@ -23289,10 +23287,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2051</id>
+		<id>2050</id>
 		<name>Duneshredder</name>
-		<picture>groundtoairlauncher_256</picture>
-		<mesh>groundtoairlauncher</mesh>
+		<picture>thunderbird_256</picture>
+		<mesh>thunderbird</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>2</rarity>
 		<type>1</type>
@@ -23324,10 +23322,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2052</id>
+		<id>2051</id>
 		<name>Enraged Stingray</name>
-		<picture>longrangetank_256</picture>
-		<mesh>longrangetank</mesh>
+		<picture>groundtoairlauncher_256</picture>
+		<mesh>groundtoairlauncher</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -23371,10 +23369,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2053</id>
+		<id>2052</id>
 		<name>Estola</name>
-		<picture>stryker_256</picture>
-		<mesh>stryker</mesh>
+		<picture>longrangetank_256</picture>
+		<mesh>longrangetank</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -23413,10 +23411,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2054</id>
+		<id>2053</id>
 		<name>Ethereal Wraith</name>
-		<picture>rpgtank_256</picture>
-		<mesh>rpgtank</mesh>
+		<picture>stryker_256</picture>
+		<mesh>stryker</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -23476,10 +23474,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2055</id>
+		<id>2054</id>
 		<name>Fanged Jackrabbit</name>
-		<picture>tomahawk_256</picture>
-		<mesh>tomahawk</mesh>
+		<picture>rpgtank_256</picture>
+		<mesh>rpgtank</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -23547,10 +23545,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2056</id>
+		<id>2055</id>
 		<name>Fast Raider</name>
-		<picture>phoenix_256</picture>
-		<mesh>phoenix</mesh>
+		<picture>tomahawk_256</picture>
+		<mesh>tomahawk</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -23610,10 +23608,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2057</id>
+		<id>2056</id>
 		<name>Fierce Hound</name>
-		<picture>longrangetank_256</picture>
-		<mesh>longrangetank</mesh>
+		<picture>phoenix_256</picture>
+		<mesh>phoenix</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -23666,10 +23664,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2058</id>
+		<id>2057</id>
 		<name>Fierce Manticore</name>
-		<picture>cobrajeep_256</picture>
-		<mesh>cobrajeep</mesh>
+		<picture>longrangetank_256</picture>
+		<mesh>longrangetank</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -23737,10 +23735,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2059</id>
+		<id>2058</id>
 		<name>Fireball</name>
-		<picture>lightjeep_256</picture>
-		<mesh>lightjeep</mesh>
+		<picture>cobrajeep_256</picture>
+		<mesh>cobrajeep</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -23779,10 +23777,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2060</id>
+		<id>2059</id>
 		<name>Fireblast</name>
-		<picture>flameburstdrone_256</picture>
-		<mesh>flameburstdrone</mesh>
+		<picture>lightjeep_256</picture>
+		<mesh>lightjeep</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -23835,10 +23833,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2061</id>
+		<id>2060</id>
 		<name>Fireburst</name>
-		<picture>devilcast_256</picture>
-		<mesh>devilcast</mesh>
+		<picture>flameburstdrone_256</picture>
+		<mesh>flameburstdrone</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -23884,10 +23882,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2062</id>
+		<id>2061</id>
 		<name>Firewall</name>
-		<picture>dariustank_256</picture>
-		<mesh>dariustank</mesh>
+		<picture>devilcast_256</picture>
+		<mesh>devilcast</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>2</rarity>
 		<type>1</type>
@@ -23919,10 +23917,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2063</id>
+		<id>2062</id>
 		<name>Flare Saber</name>
-		<picture>halefirehumvee_256</picture>
-		<mesh>halefirehumvee</mesh>
+		<picture>dariustank_256</picture>
+		<mesh>dariustank</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -23975,10 +23973,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2064</id>
+		<id>2063</id>
 		<name>Flaring Comet</name>
-		<picture>guerillafighter_256</picture>
-		<mesh>guerillafighter</mesh>
+		<picture>halefirehumvee_256</picture>
+		<mesh>halefirehumvee</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -24038,7 +24036,7 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2065</id>
+		<id>2064</id>
 		<name>Flash Saber</name>
 		<picture>guerillafighter_256</picture>
 		<mesh>guerillafighter</mesh>
@@ -24087,10 +24085,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2066</id>
+		<id>2065</id>
 		<name>Fog Drake</name>
-		<picture>bradley_256</picture>
-		<mesh>bradley</mesh>
+		<picture>guerillafighter_256</picture>
+		<mesh>guerillafighter</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -24136,7 +24134,7 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2067</id>
+		<id>2066</id>
 		<name>Forward Scout</name>
 		<picture>forwardscout_256</picture>
 		<mesh>forwardscout</mesh>
@@ -24161,10 +24159,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2068</id>
+		<id>2067</id>
 		<name>Gatling Coyote</name>
-		<picture>cobrajeep_256</picture>
-		<mesh>cobrajeep</mesh>
+		<picture>hermes_256</picture>
+		<mesh>hermes</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -24217,10 +24215,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2069</id>
+		<id>2068</id>
 		<name>Golem</name>
-		<picture>stryker_256</picture>
-		<mesh>stryker</mesh>
+		<picture>cobrajeep_256</picture>
+		<mesh>cobrajeep</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -24259,10 +24257,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2070</id>
+		<id>2069</id>
 		<name>Golem Immortal</name>
-		<picture>ranger_256</picture>
-		<mesh>ranger</mesh>
+		<picture>stryker_256</picture>
+		<mesh>stryker</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -24315,10 +24313,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2071</id>
+		<id>2070</id>
 		<name>Golem Prime</name>
-		<picture>thunderbird_256</picture>
-		<mesh>thunderbird</mesh>
+		<picture>ranger_256</picture>
+		<mesh>ranger</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -24364,7 +24362,7 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2072</id>
+		<id>2071</id>
 		<name>H4 Helo</name>
 		<picture>h4helo_256</picture>
 		<mesh>h4helo</mesh>
@@ -24389,10 +24387,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2073</id>
+		<id>2072</id>
 		<name>Haze Humvee</name>
-		<picture>jackhammer_256</picture>
-		<mesh>jackhammer</mesh>
+		<picture>groundtoairlauncher_256</picture>
+		<mesh>groundtoairlauncher</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>2</rarity>
 		<type>1</type>
@@ -24424,10 +24422,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2074</id>
+		<id>2073</id>
 		<name>Honey Badger</name>
-		<picture>groundtoairlauncher_256</picture>
-		<mesh>groundtoairlauncher</mesh>
+		<picture>jackhammer_256</picture>
+		<mesh>jackhammer</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>5</rarity>
 		<type>1</type>
@@ -24503,10 +24501,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2075</id>
+		<id>2074</id>
 		<name>Hound</name>
-		<picture>flameburstdrone_256</picture>
-		<mesh>flameburstdrone</mesh>
+		<picture>groundtoairlauncher_256</picture>
+		<mesh>groundtoairlauncher</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -24545,7 +24543,7 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2076</id>
+		<id>2075</id>
 		<name>Hyperion Darius</name>
 		<picture>darius_256</picture>
 		<mesh>darius</mesh>
@@ -24580,10 +24578,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2077</id>
+		<id>2076</id>
 		<name>Hyperion Prototype</name>
-		<picture>vilecopter_256</picture>
-		<mesh>vilecopter</mesh>
+		<picture>mev_256</picture>
+		<mesh>mev</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>1</rarity>
 		<type>1</type>
@@ -24605,10 +24603,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2078</id>
+		<id>2077</id>
 		<name>Icarus</name>
-		<picture>dozerapc_256</picture>
-		<mesh>dozerapc</mesh>
+		<picture>vilecopter_256</picture>
+		<mesh>vilecopter</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -24652,7 +24650,7 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2079</id>
+		<id>2078</id>
 		<name>Inhibiting AI</name>
 		<picture>dozerapc_256</picture>
 		<mesh>dozerapc</mesh>
@@ -24707,10 +24705,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2080</id>
+		<id>2079</id>
 		<name>Inquisitor</name>
-		<picture>trirotor_256</picture>
-		<mesh>trirotor</mesh>
+		<picture>dozerapc_256</picture>
+		<mesh>dozerapc</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -24749,10 +24747,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2081</id>
+		<id>2080</id>
 		<name>Intrepid</name>
-		<picture>mech_256</picture>
-		<mesh>mech</mesh>
+		<picture>trirotor_256</picture>
+		<mesh>trirotor</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -24791,10 +24789,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2082</id>
+		<id>2081</id>
 		<name>Jade Estola</name>
-		<picture>flameburstdrone_256</picture>
-		<mesh>flameburstdrone</mesh>
+		<picture>mech_256</picture>
+		<mesh>mech</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -24840,33 +24838,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2083</id>
-		<name>Javelin</name>
-		<picture>trirotor_256</picture>
-		<mesh>trirotor</mesh>
-		<asset_bundle>0</asset_bundle>
-		<rarity>1</rarity>
-		<type>1</type>
-		<set>1</set>
-		<attack>3</attack>
-		<health>4</health>
-		<upgrade>
-		<level>2</level>
-		<attack>3</attack>
-		<health>5</health>
-		</upgrade>
-		<upgrade>
-		<level>3</level>
-		<attack>3</attack>
-		<health>5</health>
-			<skill id="pierce" x="2"/>
-		</upgrade>
-	</unit>
-	<unit>
-		<id>2084</id>
+		<id>2082</id>
 		<name>Kara</name>
-		<picture>cobrajeep_256</picture>
-		<mesh>cobrajeep</mesh>
+		<picture>flameburstdrone_256</picture>
+		<mesh>flameburstdrone</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -24905,7 +24880,7 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2085</id>
+		<id>2083</id>
 		<name>Launcher</name>
 		<picture>groundtoairlauncher_256</picture>
 		<mesh>groundtoairlauncher</mesh>
@@ -24936,10 +24911,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2086</id>
+		<id>2084</id>
 		<name>Locked Ballista</name>
-		<picture>trirotor_256</picture>
-		<mesh>trirotor</mesh>
+		<picture>cobrajeep_256</picture>
+		<mesh>cobrajeep</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>5</rarity>
 		<type>1</type>
@@ -25007,7 +24982,7 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2087</id>
+		<id>2085</id>
 		<name>M1133 MEV</name>
 		<picture>mev_256</picture>
 		<mesh>mev</mesh>
@@ -25034,10 +25009,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2088</id>
+		<id>2086</id>
 		<name>Manticore</name>
-		<picture>lightjeep_256</picture>
-		<mesh>lightjeep</mesh>
+		<picture>trirotor_256</picture>
+		<mesh>trirotor</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -25089,10 +25064,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2089</id>
+		<id>2087</id>
 		<name>Mantidae</name>
-		<picture>mech_256</picture>
-		<mesh>mech</mesh>
+		<picture>stealthhumvee_256</picture>
+		<mesh>stealthhumvee</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -25136,10 +25111,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2090</id>
+		<id>2088</id>
 		<name>Mantis</name>
-		<picture>phoenix_256</picture>
-		<mesh>phoenix</mesh>
+		<picture>lightjeep_256</picture>
+		<mesh>lightjeep</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>2</rarity>
 		<type>1</type>
@@ -25171,10 +25146,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2091</id>
+		<id>2089</id>
 		<name>Marine</name>
-		<picture>thunderbird_256</picture>
-		<mesh>thunderbird</mesh>
+		<picture>mech_256</picture>
+		<mesh>mech</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -25213,10 +25188,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2092</id>
+		<id>2090</id>
 		<name>Mauling Cassowary</name>
-		<picture>ranger_256</picture>
-		<mesh>ranger</mesh>
+		<picture>phoenix_256</picture>
+		<mesh>phoenix</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -25276,10 +25251,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2093</id>
+		<id>2091</id>
 		<name>Mercator</name>
-		<picture>vilecopter_256</picture>
-		<mesh>vilecopter</mesh>
+		<picture>thunderbird_256</picture>
+		<mesh>thunderbird</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -25318,10 +25293,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2094</id>
+		<id>2092</id>
 		<name>Metis</name>
-		<picture>guerillafighter_256</picture>
-		<mesh>guerillafighter</mesh>
+		<picture>ranger_256</picture>
+		<mesh>ranger</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -25365,10 +25340,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2095</id>
+		<id>2093</id>
 		<name>Metis Aloft</name>
-		<picture>halefirehumvee_256</picture>
-		<mesh>halefirehumvee</mesh>
+		<picture>vilecopter_256</picture>
+		<mesh>vilecopter</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -25420,10 +25395,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2096</id>
+		<id>2094</id>
 		<name>Metis Superior</name>
-		<picture>mule_256</picture>
-		<mesh>mule</mesh>
+		<picture>guerillafighter_256</picture>
+		<mesh>guerillafighter</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -25483,10 +25458,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2097</id>
+		<id>2095</id>
 		<name>Nighthawk</name>
-		<picture>cobrajeep_256</picture>
-		<mesh>cobrajeep</mesh>
+		<picture>halefirehumvee_256</picture>
+		<mesh>halefirehumvee</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -25530,10 +25505,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2098</id>
+		<id>2096</id>
 		<name>Nighthawk Alpha</name>
-		<picture>dariusmech_256</picture>
-		<mesh>dariusmech</mesh>
+		<picture>mule_256</picture>
+		<mesh>mule</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -25585,10 +25560,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2099</id>
+		<id>2097</id>
 		<name>Nighthawk Delta</name>
-		<picture>abrams_256</picture>
-		<mesh>abrams</mesh>
+		<picture>cobrajeep_256</picture>
+		<mesh>cobrajeep</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -25648,10 +25623,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2100</id>
+		<id>2098</id>
 		<name>Nostromos</name>
-		<picture>heavyguntank_256</picture>
-		<mesh>heavyguntank</mesh>
+		<picture>dariusmech_256</picture>
+		<mesh>dariusmech</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -25703,10 +25678,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2101</id>
+		<id>2099</id>
 		<name>Nostromos Revered</name>
-		<picture>mule_256</picture>
-		<mesh>mule</mesh>
+		<picture>abrams_256</picture>
+		<mesh>abrams</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -25766,10 +25741,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2102</id>
+		<id>2100</id>
 		<name>Ops Vulture</name>
-		<picture>helios_256</picture>
-		<mesh>helios</mesh>
+		<picture>heavyguntank_256</picture>
+		<mesh>heavyguntank</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -25829,10 +25804,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2103</id>
+		<id>2101</id>
 		<name>Phalanx Dux</name>
-		<picture>termite_256</picture>
-		<mesh>termite</mesh>
+		<picture>mule_256</picture>
+		<mesh>mule</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -25892,10 +25867,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2104</id>
+		<id>2102</id>
 		<name>Phalanx Rex</name>
-		<picture>flametank_256</picture>
-		<mesh>flametank</mesh>
+		<picture>helios_256</picture>
+		<mesh>helios</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -25963,10 +25938,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2105</id>
+		<id>2103</id>
 		<name>Plated Scorcher</name>
-		<picture>rhinohumvee_256</picture>
-		<mesh>rhinohumvee</mesh>
+		<picture>termite_256</picture>
+		<mesh>termite</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -26019,10 +25994,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2106</id>
+		<id>2104</id>
 		<name>Prototype Laser</name>
-		<picture>thunderbird_256</picture>
-		<mesh>thunderbird</mesh>
+		<picture>flametank_256</picture>
+		<mesh>flametank</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -26061,10 +26036,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2107</id>
+		<id>2105</id>
 		<name>Quiet Op Tank</name>
-		<picture>ash6ibis_256</picture>
-		<mesh>ash6ibis</mesh>
+		<picture>rhinohumvee_256</picture>
+		<mesh>rhinohumvee</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>2</rarity>
 		<type>1</type>
@@ -26096,10 +26071,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2108</id>
+		<id>2106</id>
 		<name>Rage Phantom</name>
-		<picture>dariustank_256</picture>
-		<mesh>dariustank</mesh>
+		<picture>thunderbird_256</picture>
+		<mesh>thunderbird</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>5</rarity>
 		<type>1</type>
@@ -26167,10 +26142,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2109</id>
+		<id>2107</id>
 		<name>Ravager Demon</name>
-		<picture>landingdrone_256</picture>
-		<mesh>landingdrone</mesh>
+		<picture>ash6ibis_256</picture>
+		<mesh>ash6ibis</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -26214,10 +26189,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2110</id>
+		<id>2108</id>
 		<name>Ray Mercator</name>
-		<picture>darius_256</picture>
-		<mesh>darius</mesh>
+		<picture>dariustank_256</picture>
+		<mesh>dariustank</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -26263,10 +26238,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2111</id>
+		<id>2109</id>
 		<name>Reaver Dragon</name>
-		<picture>darkoptank_256</picture>
-		<mesh>darkoptank</mesh>
+		<picture>landingdrone_256</picture>
+		<mesh>landingdrone</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -26319,10 +26294,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2112</id>
+		<id>2110</id>
 		<name>Relentless Centro</name>
-		<picture>bazookajeep_256</picture>
-		<mesh>bazookajeep</mesh>
+		<picture>darius_256</picture>
+		<mesh>darius</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -26362,10 +26337,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2113</id>
+		<id>2111</id>
 		<name>Rending Demon</name>
-		<picture>trirotor_256</picture>
-		<mesh>trirotor</mesh>
+		<picture>darkoptank_256</picture>
+		<mesh>darkoptank</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -26408,10 +26383,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2114</id>
+		<id>2112</id>
 		<name>Saber</name>
-		<picture>vilecopter_256</picture>
-		<mesh>vilecopter</mesh>
+		<picture>bazookajeep_256</picture>
+		<mesh>bazookajeep</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -26450,10 +26425,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2115</id>
+		<id>2113</id>
 		<name>Scorcher</name>
-		<picture>mev_256</picture>
-		<mesh>mev</mesh>
+		<picture>trirotor_256</picture>
+		<mesh>trirotor</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -26499,10 +26474,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2116</id>
+		<id>2114</id>
 		<name>Shadow</name>
-		<picture>stealthhumvee_256</picture>
-		<mesh>stealthhumvee</mesh>
+		<picture>vilecopter_256</picture>
+		<mesh>vilecopter</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -26546,10 +26521,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2117</id>
+		<id>2115</id>
 		<name>Shrew</name>
-		<picture>devilcast_256</picture>
-		<mesh>devilcast</mesh>
+		<picture>mev_256</picture>
+		<mesh>mev</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -26586,10 +26561,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2118</id>
+		<id>2116</id>
 		<name>Skewer Coyote</name>
-		<picture>needler_256</picture>
-		<mesh>needler</mesh>
+		<picture>stealthhumvee_256</picture>
+		<mesh>stealthhumvee</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -26635,7 +26610,7 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2119</id>
+		<id>2117</id>
 		<name>Slab</name>
 		<picture>devilcast_256</picture>
 		<mesh>devilcast</mesh>
@@ -26682,7 +26657,7 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2120</id>
+		<id>2118</id>
 		<name>Slabrock</name>
 		<picture>needler_256</picture>
 		<mesh>needler</mesh>
@@ -26745,10 +26720,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2121</id>
+		<id>2119</id>
 		<name>Slabstone</name>
-		<picture>dariusmech_256</picture>
-		<mesh>dariusmech</mesh>
+		<picture>devilcast_256</picture>
+		<mesh>devilcast</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -26800,10 +26775,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2122</id>
+		<id>2120</id>
 		<name>Stag Estola</name>
-		<picture>halefirehumvee_256</picture>
-		<mesh>halefirehumvee</mesh>
+		<picture>needler_256</picture>
+		<mesh>needler</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -26856,10 +26831,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2123</id>
+		<id>2121</id>
 		<name>Staunch Scorcher</name>
-		<picture>dariustank_256</picture>
-		<mesh>dariustank</mesh>
+		<picture>dariusmech_256</picture>
+		<mesh>dariusmech</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -26919,10 +26894,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2124</id>
+		<id>2122</id>
 		<name>Stealth Drone</name>
-		<picture>bradley_256</picture>
-		<mesh>bradley</mesh>
+		<picture>halefirehumvee_256</picture>
+		<mesh>halefirehumvee</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>2</rarity>
 		<type>1</type>
@@ -26958,10 +26933,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2125</id>
+		<id>2123</id>
 		<name>Steel Raven</name>
-		<picture>flameburstdrone_256</picture>
-		<mesh>flameburstdrone</mesh>
+		<picture>dariustank_256</picture>
+		<mesh>dariustank</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -27021,10 +26996,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2126</id>
+		<id>2124</id>
 		<name>Stingray</name>
-		<picture>stealthhumvee_256</picture>
-		<mesh>stealthhumvee</mesh>
+		<picture>bradley_256</picture>
+		<mesh>bradley</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -27068,10 +27043,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2127</id>
+		<id>2125</id>
 		<name>Strong Ballista</name>
-		<picture>ash6ibis_256</picture>
-		<mesh>ash6ibis</mesh>
+		<picture>flameburstdrone_256</picture>
+		<mesh>flameburstdrone</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>5</rarity>
 		<type>1</type>
@@ -27147,10 +27122,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2128</id>
+		<id>2126</id>
 		<name>Suppressing AI</name>
-		<picture>ranger_256</picture>
-		<mesh>ranger</mesh>
+		<picture>stealthhumvee_256</picture>
+		<mesh>stealthhumvee</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -27210,10 +27185,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2129</id>
+		<id>2127</id>
 		<name>Suppression Tank</name>
-		<picture>shrike_256</picture>
-		<mesh>shrike</mesh>
+		<picture>ash6ibis_256</picture>
+		<mesh>ash6ibis</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>2</rarity>
 		<type>1</type>
@@ -27245,10 +27220,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2130</id>
+		<id>2128</id>
 		<name>Talon Raptor</name>
-		<picture>lightjeep_256</picture>
-		<mesh>lightjeep</mesh>
+		<picture>ranger_256</picture>
+		<mesh>ranger</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -27307,10 +27282,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2131</id>
+		<id>2129</id>
 		<name>Tenacious Centro</name>
-		<picture>flyswatter_256</picture>
-		<mesh>flyswatter</mesh>
+		<picture>shrike_256</picture>
+		<mesh>shrike</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -27356,10 +27331,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2132</id>
+		<id>2130</id>
 		<name>The Cliff</name>
-		<picture>dozerapc_256</picture>
-		<mesh>dozerapc</mesh>
+		<picture>lightjeep_256</picture>
+		<mesh>lightjeep</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -27419,10 +27394,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2133</id>
+		<id>2131</id>
 		<name>The Mountain</name>
-		<picture>dariusmech_256</picture>
-		<mesh>dariusmech</mesh>
+		<picture>flyswatter_256</picture>
+		<mesh>flyswatter</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -27490,10 +27465,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2134</id>
+		<id>2132</id>
 		<name>The Ridge</name>
-		<picture>helios_256</picture>
-		<mesh>helios</mesh>
+		<picture>dozerapc_256</picture>
+		<mesh>dozerapc</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -27545,10 +27520,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2135</id>
+		<id>2133</id>
 		<name>Torbuck</name>
-		<picture>mev_256</picture>
-		<mesh>mev</mesh>
+		<picture>dariusmech_256</picture>
+		<mesh>dariusmech</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>2</rarity>
 		<type>1</type>
@@ -27576,10 +27551,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2136</id>
+		<id>2134</id>
 		<name>Vanguard Marine</name>
-		<picture>ranger_256</picture>
-		<mesh>ranger</mesh>
+		<picture>helios_256</picture>
+		<mesh>helios</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -27625,10 +27600,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2137</id>
+		<id>2135</id>
 		<name>Vile s Incinerator</name>
-		<picture>vilecopter_256</picture>
-		<mesh>vilecopter</mesh>
+		<picture>mev_256</picture>
+		<mesh>mev</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -27667,10 +27642,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2138</id>
+		<id>2136</id>
 		<name>Voracious Shadow</name>
-		<picture>landingdrone_256</picture>
-		<mesh>landingdrone</mesh>
+		<picture>ranger_256</picture>
+		<mesh>ranger</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -27730,10 +27705,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2139</id>
+		<id>2137</id>
 		<name>Vulture</name>
-		<picture>forwardscout_256</picture>
-		<mesh>forwardscout</mesh>
+		<picture>vilecopter_256</picture>
+		<mesh>vilecopter</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -27785,10 +27760,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2140</id>
+		<id>2138</id>
 		<name>Ward</name>
-		<picture>needler_256</picture>
-		<mesh>needler</mesh>
+		<picture>landingdrone_256</picture>
+		<mesh>landingdrone</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>2</rarity>
 		<type>1</type>
@@ -27816,10 +27791,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2141</id>
+		<id>2139</id>
 		<name>White Comet</name>
-		<picture>darius_256</picture>
-		<mesh>darius</mesh>
+		<picture>forwardscout_256</picture>
+		<mesh>forwardscout</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>3</rarity>
 		<type>1</type>
@@ -27871,10 +27846,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2142</id>
+		<id>2140</id>
 		<name>Wraith</name>
-		<picture>dozerapc_256</picture>
-		<mesh>dozerapc</mesh>
+		<picture>needler_256</picture>
+		<mesh>needler</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -27926,10 +27901,10 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>2143</id>
+		<id>2141</id>
 		<name>XR-99 Earthshaker</name>
-		<picture>hermes_256</picture>
-		<mesh>hermes</mesh>
+		<picture>darius_256</picture>
+		<mesh>darius</mesh>
 		<asset_bundle>0</asset_bundle>
 		<rarity>4</rarity>
 		<type>1</type>
