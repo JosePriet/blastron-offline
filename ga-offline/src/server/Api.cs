@@ -9,6 +9,8 @@ namespace GAOffline
     public static class Api
     {
         public const string Version = "offline-1";
+        // squad health at Squad Bay level 1 (archived wiki, Research_Lab page: 400/550/750/1000/1250 by level)
+        const int SquadHealth = 400;
 
         public static long Now { get { return (long)(DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds; } }
 
@@ -53,7 +55,7 @@ namespace GAOffline
                     break;
                 case "getStoreData":
                     r = Squads(s);
-                    r["store_items"] = Store.Items();
+                    r["store_items"] = Store.Items(s);
                     break;
                 case "buyStoreItem":
                     r = Store.Buy(s, ArgInt(args, "item_id"));
@@ -123,7 +125,7 @@ namespace GAOffline
             r["upgrades_data"] = new List<object>();
             r["news"] = new List<object>();
             r["user_achievements"] = new List<object>(); // read unconditionally by the base screen and quest list
-            r["store_items"] = Store.Items();
+            r["store_items"] = Store.Items(s);
             r["is_vc_on_sale"] = 0;
             r["feature_locks"] = FeatureLocks(s);
             r["locations"] = GameData.Locations;
@@ -148,7 +150,7 @@ namespace GAOffline
                     { "deck_id", id }, { "name", Json.S(d, "name") }, { "commander_item_id", Json.I(d, "commander_item_id") },
                     { "power_level", "1" }, { "units", units },
                     // squad repair: battles leave no damage offline; repair_speed must be non-zero (the client divides by it)
-                    { "squad_damage", 0 }, { "max_damage", 100 }, { "repair_speed", 60 }, { "retreat_damage", 0 },
+                    { "squad_damage", 0 }, { "max_damage", SquadHealth }, { "repair_speed", 60 }, { "retreat_damage", 0 },
                     { "repair_start_time", 0 }, { "repair_end_time", 0 } });
             }
             r["user_decks"] = decks;

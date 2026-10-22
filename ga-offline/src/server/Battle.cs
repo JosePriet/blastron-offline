@@ -12,7 +12,12 @@ namespace GAOffline
     public class Battle
     {
         const int MaxTurns = 50;
-        const int PlayerHealth = 10; // commander health came from the lost Command Center upgrade table
+        // Mobile Command base health by level (archived wiki, Research_Lab page, levels 1-7; user decision 2026-10-22).
+        // Upgrading it is Research Lab work, not built yet, so the save's "mobile_command" level stays 1 (25 health).
+        static readonly int[] BaseHealth = { 25, 35, 50, 65, 80, 100, 125 };
+        // Volt Coins earned offline (user decision 2026-10-22; our amounts): first win of each mission, first clear
+        // of each campaign. Achievements are not served yet.
+        const int VoltFirstWin = 2, VoltCampaignClear = 10;
 
         public static Battle Current;
         public static Battle LastFinished;
@@ -55,7 +60,7 @@ namespace GAOffline
             h.MissionID = (int)missionId;
             h.EnemyName = Json.S(m, "enemy");
             h.EnemyMaxHealth = Json.I(m, "health");
-            h.PlayerMaxHealth = PlayerHealth;
+            h.PlayerMaxHealth = BaseHealth[Math.Max(1, Math.Min(BaseHealth.Length, s.Int("mobile_command"))) - 1];
             h.AttackCommanderID = 0;
             h.DefendCommanderID = 0;
 
@@ -160,6 +165,7 @@ namespace GAOffline
                 s.Set("money", s.Int("money") + gold);
                 var done = Json.O(s.D, "missions");
                 var md = Json.O(done, MissionId.ToString()) ?? new Dictionary<string, object>();
+                if (Json.I(md, "number") == 0) s.Set("tokens", s.Int("tokens") + VoltFirstWin);
                 md["number"] = Json.I(md, "number") + 1;
                 md["complete"] = 1;
                 done[MissionId.ToString()] = md;
@@ -176,6 +182,7 @@ namespace GAOffline
                     if (progress >= count)
                     {
                         st["level"] = 1;
+                        s.Set("tokens", s.Int("tokens") + VoltCampaignClear);
                         reward["card"] = Store.CampaignReward(s, CampaignId);
                     }
                 }

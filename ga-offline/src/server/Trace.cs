@@ -29,6 +29,9 @@ namespace GAOffline
             }
             catch (Exception) { }
             Application.RegisterLogCallback(OnLog);
+            // offline: no Google Play Games sign-in prompt at startup (user decision 2026-10-22). Startup.cs skips its
+            // sign-in attempt when GPGStartup is 1; the base screen's Play Games button still signs in on request.
+            PlayerPrefs.SetInt("GPGStartup", 1);
             var go = new GameObject("GAOfflineTrace");
             UnityEngine.Object.DontDestroyOnLoad(go);
             go.AddComponent<Beat>();

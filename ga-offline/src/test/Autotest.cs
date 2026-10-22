@@ -14,13 +14,6 @@ namespace GAOffline
         float next, onBaseSince = -1, finishedAt = -1;
         Battle seen;
 
-        // runs from Trace.Install (AbstractManagers.Awake), before Startup tries Google Play Games sign-in at
-        // MANAGERS_BECAME_READY: mark that attempt as already made so the emulator's add-account screen stays away
-        void Awake()
-        {
-            if (File.Exists(Path.Combine(LocalServer.Dir, "autotest"))) PlayerPrefs.SetInt("GPGStartup", 1);
-        }
-
         // input diagnostics for the emulator's injected touches (run A's tutorial drags): where Unity sees each touch
         // begin and end, and whether the game's drag controller picked up a hand card
         void Start()

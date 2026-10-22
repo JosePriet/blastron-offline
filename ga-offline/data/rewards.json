@@ -1,256 +1,1087 @@
 {
- "supply_drop": {
-  "name": "Supply Drop",
-  "cost": 100,
-  "pool": [
-   {
-    "id": 1,
-    "unit": "Colt",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 2,
-    "unit": "Cobra",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 7,
-    "unit": "Kodiak",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 9,
-    "unit": "Ibis",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 10,
-    "unit": "Javelin",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 11,
-    "unit": "Ranger",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 12,
-    "unit": "Flametank",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 13,
-    "unit": "Trirotor",
-    "stars": 2,
-    "weight": 250000
-   },
-   {
-    "id": 14,
-    "unit": "Flameburst Drone",
-    "stars": 2,
-    "weight": 250000
-   },
-   {
-    "id": 15,
-    "unit": "Wolverine",
-    "stars": 2,
-    "weight": 250000
-   },
-   {
-    "id": 17,
-    "unit": "Zeus",
-    "stars": 4,
-    "weight": 27273
-   },
-   {
-    "id": 18,
-    "unit": "Whirlwind",
-    "stars": 4,
-    "weight": 27273
-   },
-   {
-    "id": 19,
-    "unit": "Raider",
-    "stars": 4,
-    "weight": 27273
-   },
-   {
-    "id": 21,
-    "unit": "Firefly",
-    "stars": 4,
-    "weight": 27273
-   },
-   {
-    "id": 22,
-    "unit": "Raven",
-    "stars": 4,
-    "weight": 27273
-   },
-   {
-    "id": 23,
-    "unit": "ONI",
-    "stars": 5,
-    "weight": 18750
-   },
-   {
-    "id": 24,
-    "unit": "Phantom",
-    "stars": 5,
-    "weight": 18750
-   },
-   {
-    "id": 25,
-    "unit": "Gray Eagle",
-    "stars": 5,
-    "weight": 18750
-   },
-   {
-    "id": 28,
-    "unit": "Dark Op Tank",
-    "stars": 2,
-    "weight": 250000
-   },
-   {
-    "id": 30,
-    "unit": "Stinger",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 31,
-    "unit": "Hornet",
-    "stars": 4,
-    "weight": 27273
-   },
-   {
-    "id": 33,
-    "unit": "Scorpion",
-    "stars": 2,
-    "weight": 250000
-   },
-   {
-    "id": 34,
-    "unit": "Light Jeep",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 36,
-    "unit": "RPG Tank",
-    "stars": 2,
-    "weight": 250000
-   },
-   {
-    "id": 38,
-    "unit": "Devilcast",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 40,
-    "unit": "S.N.A.R.E",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 42,
-    "unit": "Rhino Humvee",
-    "stars": 2,
-    "weight": 250000
-   },
-   {
-    "id": 43,
-    "unit": "Shrike",
-    "stars": 2,
-    "weight": 250000
-   },
-   {
-    "id": 51,
-    "unit": "S.A.W.",
-    "stars": 4,
-    "weight": 27273
-   },
-   {
-    "id": 52,
-    "unit": "Galvanizer",
-    "stars": 4,
-    "weight": 27273
-   },
-   {
-    "id": 53,
-    "unit": "Trident",
-    "stars": 4,
-    "weight": 27273
-   },
-   {
-    "id": 54,
-    "unit": "Spitfire",
-    "stars": 4,
-    "weight": 27273
-   },
-   {
-    "id": 55,
-    "unit": "Sandstorm",
-    "stars": 5,
-    "weight": 18750
-   },
-   {
-    "id": 59,
-    "unit": "Bazooka Jeep",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 60,
-    "unit": "HADES",
-    "stars": 2,
-    "weight": 250000
-   },
-   {
-    "id": 61,
-    "unit": "Jackhammer",
-    "stars": 3,
-    "weight": 500000
-   },
-   {
-    "id": 62,
-    "unit": "Jackrabbit",
-    "stars": 4,
-    "weight": 27273
-   },
-   {
-    "id": 2046,
-    "unit": "Dozer APC",
-    "stars": 2,
-    "weight": 250000
-   },
-   {
-    "id": 2066,
-    "unit": "Forward Scout",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 2071,
-    "unit": "H4 Helo",
-    "stars": 1,
-    "weight": 441667
-   },
-   {
-    "id": 2085,
-    "unit": "M1133 MEV",
-    "stars": 1,
-    "weight": 441667
-   }
-  ]
- },
+ "drops": [
+  {
+   "id": 1,
+   "key": "standard",
+   "name": "Supply Drop",
+   "currency": "sc",
+   "cost": 100,
+   "model": "prefab_bronze_crate",
+   "pool": [
+    {
+     "id": 1,
+     "unit": "Colt",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 2,
+     "unit": "Cobra",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 7,
+     "unit": "Kodiak",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 9,
+     "unit": "Ibis",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 10,
+     "unit": "Javelin",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 11,
+     "unit": "Ranger",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 12,
+     "unit": "Flametank",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 30,
+     "unit": "Stinger",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 34,
+     "unit": "Light Jeep",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 38,
+     "unit": "Devilcast",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 40,
+     "unit": "S.N.A.R.E",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 59,
+     "unit": "Bazooka Jeep",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 2066,
+     "unit": "Forward Scout",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 2071,
+     "unit": "H4 Helo",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 2085,
+     "unit": "M1133 MEV",
+     "stars": 1,
+     "weight": 461667
+    },
+    {
+     "id": 13,
+     "unit": "Trirotor",
+     "stars": 2,
+     "weight": 250000
+    },
+    {
+     "id": 14,
+     "unit": "Flameburst Drone",
+     "stars": 2,
+     "weight": 250000
+    },
+    {
+     "id": 15,
+     "unit": "Wolverine",
+     "stars": 2,
+     "weight": 250000
+    },
+    {
+     "id": 28,
+     "unit": "Dark Op Tank",
+     "stars": 2,
+     "weight": 250000
+    },
+    {
+     "id": 33,
+     "unit": "Scorpion",
+     "stars": 2,
+     "weight": 250000
+    },
+    {
+     "id": 36,
+     "unit": "RPG Tank",
+     "stars": 2,
+     "weight": 250000
+    },
+    {
+     "id": 42,
+     "unit": "Rhino Humvee",
+     "stars": 2,
+     "weight": 250000
+    },
+    {
+     "id": 43,
+     "unit": "Shrike",
+     "stars": 2,
+     "weight": 250000
+    },
+    {
+     "id": 60,
+     "unit": "HADES",
+     "stars": 2,
+     "weight": 250000
+    },
+    {
+     "id": 2046,
+     "unit": "Dozer APC",
+     "stars": 2,
+     "weight": 250000
+    },
+    {
+     "id": 61,
+     "unit": "Jackhammer",
+     "stars": 3,
+     "weight": 500000
+    },
+    {
+     "id": 23,
+     "unit": "ONI",
+     "stars": 5,
+     "weight": 18750
+    },
+    {
+     "id": 24,
+     "unit": "Phantom",
+     "stars": 5,
+     "weight": 18750
+    },
+    {
+     "id": 25,
+     "unit": "Gray Eagle",
+     "stars": 5,
+     "weight": 18750
+    },
+    {
+     "id": 55,
+     "unit": "Sandstorm",
+     "stars": 5,
+     "weight": 18750
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "key": "silver",
+   "name": "Silver Supply Drop",
+   "currency": "hc",
+   "cost": 20,
+   "model": "prefab_silver_crate",
+   "pool": [
+    {
+     "id": 15,
+     "unit": "Wolverine",
+     "stars": 2,
+     "weight": 1000000
+    },
+    {
+     "id": 33,
+     "unit": "Scorpion",
+     "stars": 2,
+     "weight": 1000000
+    },
+    {
+     "id": 36,
+     "unit": "RPG Tank",
+     "stars": 2,
+     "weight": 1000000
+    },
+    {
+     "id": 42,
+     "unit": "Rhino Humvee",
+     "stars": 2,
+     "weight": 1000000
+    },
+    {
+     "id": 43,
+     "unit": "Shrike",
+     "stars": 2,
+     "weight": 1000000
+    },
+    {
+     "id": 60,
+     "unit": "HADES",
+     "stars": 2,
+     "weight": 1000000
+    },
+    {
+     "id": 2046,
+     "unit": "Dozer APC",
+     "stars": 2,
+     "weight": 1000000
+    },
+    {
+     "id": 16,
+     "unit": "Tomahawk",
+     "stars": 3,
+     "weight": 480000
+    },
+    {
+     "id": 45,
+     "unit": "Halefire Humvee",
+     "stars": 3,
+     "weight": 480000
+    },
+    {
+     "id": 49,
+     "unit": "Thunderbird",
+     "stars": 3,
+     "weight": 480000
+    },
+    {
+     "id": 50,
+     "unit": "Needler",
+     "stars": 3,
+     "weight": 480000
+    },
+    {
+     "id": 2087,
+     "unit": "Mantidae",
+     "stars": 3,
+     "weight": 480000
+    },
+    {
+     "id": 21,
+     "unit": "Firefly",
+     "stars": 4,
+     "weight": 250000
+    },
+    {
+     "id": 62,
+     "unit": "Jackrabbit",
+     "stars": 4,
+     "weight": 250000
+    },
+    {
+     "id": 37,
+     "unit": "Hunter",
+     "stars": 5,
+     "weight": 100000
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "key": "gold",
+   "name": "Gold Supply Drop",
+   "currency": "hc",
+   "cost": 40,
+   "model": "prefab_gold_crate",
+   "pool": [
+    {
+     "id": 13,
+     "unit": "Trirotor",
+     "stars": 2,
+     "weight": 1000000
+    },
+    {
+     "id": 14,
+     "unit": "Flameburst Drone",
+     "stars": 2,
+     "weight": 1000000
+    },
+    {
+     "id": 28,
+     "unit": "Dark Op Tank",
+     "stars": 2,
+     "weight": 1000000
+    },
+    {
+     "id": 4,
+     "unit": "Phoenix",
+     "stars": 3,
+     "weight": 545455
+    },
+    {
+     "id": 16,
+     "unit": "Tomahawk",
+     "stars": 3,
+     "weight": 545455
+    },
+    {
+     "id": 29,
+     "unit": "Guerilla Tank",
+     "stars": 3,
+     "weight": 545455
+    },
+    {
+     "id": 32,
+     "unit": "Mule",
+     "stars": 3,
+     "weight": 545455
+    },
+    {
+     "id": 44,
+     "unit": "Falcon",
+     "stars": 3,
+     "weight": 545455
+    },
+    {
+     "id": 45,
+     "unit": "Halefire Humvee",
+     "stars": 3,
+     "weight": 545455
+    },
+    {
+     "id": 46,
+     "unit": "Auroch",
+     "stars": 3,
+     "weight": 545455
+    },
+    {
+     "id": 47,
+     "unit": "Fury",
+     "stars": 3,
+     "weight": 545455
+    },
+    {
+     "id": 49,
+     "unit": "Thunderbird",
+     "stars": 3,
+     "weight": 545455
+    },
+    {
+     "id": 50,
+     "unit": "Needler",
+     "stars": 3,
+     "weight": 545455
+    },
+    {
+     "id": 2087,
+     "unit": "Mantidae",
+     "stars": 3,
+     "weight": 545455
+    },
+    {
+     "id": 17,
+     "unit": "Zeus",
+     "stars": 4,
+     "weight": 77273
+    },
+    {
+     "id": 18,
+     "unit": "Whirlwind",
+     "stars": 4,
+     "weight": 77273
+    },
+    {
+     "id": 19,
+     "unit": "Raider",
+     "stars": 4,
+     "weight": 77273
+    },
+    {
+     "id": 21,
+     "unit": "Firefly",
+     "stars": 4,
+     "weight": 77273
+    },
+    {
+     "id": 22,
+     "unit": "Raven",
+     "stars": 4,
+     "weight": 77273
+    },
+    {
+     "id": 31,
+     "unit": "Hornet",
+     "stars": 4,
+     "weight": 77273
+    },
+    {
+     "id": 51,
+     "unit": "S.A.W.",
+     "stars": 4,
+     "weight": 77273
+    },
+    {
+     "id": 52,
+     "unit": "Galvanizer",
+     "stars": 4,
+     "weight": 77273
+    },
+    {
+     "id": 53,
+     "unit": "Trident",
+     "stars": 4,
+     "weight": 77273
+    },
+    {
+     "id": 54,
+     "unit": "Spitfire",
+     "stars": 4,
+     "weight": 77273
+    },
+    {
+     "id": 62,
+     "unit": "Jackrabbit",
+     "stars": 4,
+     "weight": 77273
+    },
+    {
+     "id": 23,
+     "unit": "ONI",
+     "stars": 5,
+     "weight": 15000
+    },
+    {
+     "id": 24,
+     "unit": "Phantom",
+     "stars": 5,
+     "weight": 15000
+    },
+    {
+     "id": 25,
+     "unit": "Gray Eagle",
+     "stars": 5,
+     "weight": 15000
+    },
+    {
+     "id": 26,
+     "unit": "Red Hawk",
+     "stars": 5,
+     "weight": 15000
+    },
+    {
+     "id": 27,
+     "unit": "Myrmidon",
+     "stars": 5,
+     "weight": 15000
+    },
+    {
+     "id": 37,
+     "unit": "Hunter",
+     "stars": 5,
+     "weight": 15000
+    },
+    {
+     "id": 55,
+     "unit": "Sandstorm",
+     "stars": 5,
+     "weight": 15000
+    },
+    {
+     "id": 56,
+     "unit": "Crusher",
+     "stars": 5,
+     "weight": 15000
+    },
+    {
+     "id": 57,
+     "unit": "Dirge",
+     "stars": 5,
+     "weight": 15000
+    },
+    {
+     "id": 58,
+     "unit": "Reaper",
+     "stars": 5,
+     "weight": 15000
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "key": "platinum",
+   "name": "Platinum Supply Drop",
+   "currency": "hc",
+   "cost": 60,
+   "model": "prefab_platinum_crate",
+   "pool": [
+    {
+     "id": 4,
+     "unit": "Phoenix",
+     "stars": 3,
+     "weight": 988889
+    },
+    {
+     "id": 29,
+     "unit": "Guerilla Tank",
+     "stars": 3,
+     "weight": 988889
+    },
+    {
+     "id": 32,
+     "unit": "Mule",
+     "stars": 3,
+     "weight": 988889
+    },
+    {
+     "id": 44,
+     "unit": "Falcon",
+     "stars": 3,
+     "weight": 988889
+    },
+    {
+     "id": 45,
+     "unit": "Halefire Humvee",
+     "stars": 3,
+     "weight": 988889
+    },
+    {
+     "id": 46,
+     "unit": "Auroch",
+     "stars": 3,
+     "weight": 988889
+    },
+    {
+     "id": 47,
+     "unit": "Fury",
+     "stars": 3,
+     "weight": 988889
+    },
+    {
+     "id": 50,
+     "unit": "Needler",
+     "stars": 3,
+     "weight": 988889
+    },
+    {
+     "id": 2087,
+     "unit": "Mantidae",
+     "stars": 3,
+     "weight": 988889
+    },
+    {
+     "id": 17,
+     "unit": "Zeus",
+     "stars": 4,
+     "weight": 90909
+    },
+    {
+     "id": 18,
+     "unit": "Whirlwind",
+     "stars": 4,
+     "weight": 90909
+    },
+    {
+     "id": 19,
+     "unit": "Raider",
+     "stars": 4,
+     "weight": 90909
+    },
+    {
+     "id": 21,
+     "unit": "Firefly",
+     "stars": 4,
+     "weight": 90909
+    },
+    {
+     "id": 22,
+     "unit": "Raven",
+     "stars": 4,
+     "weight": 90909
+    },
+    {
+     "id": 31,
+     "unit": "Hornet",
+     "stars": 4,
+     "weight": 90909
+    },
+    {
+     "id": 51,
+     "unit": "S.A.W.",
+     "stars": 4,
+     "weight": 90909
+    },
+    {
+     "id": 52,
+     "unit": "Galvanizer",
+     "stars": 4,
+     "weight": 90909
+    },
+    {
+     "id": 53,
+     "unit": "Trident",
+     "stars": 4,
+     "weight": 90909
+    },
+    {
+     "id": 54,
+     "unit": "Spitfire",
+     "stars": 4,
+     "weight": 90909
+    },
+    {
+     "id": 62,
+     "unit": "Jackrabbit",
+     "stars": 4,
+     "weight": 90909
+    },
+    {
+     "id": 23,
+     "unit": "ONI",
+     "stars": 5,
+     "weight": 10000
+    },
+    {
+     "id": 24,
+     "unit": "Phantom",
+     "stars": 5,
+     "weight": 10000
+    },
+    {
+     "id": 25,
+     "unit": "Gray Eagle",
+     "stars": 5,
+     "weight": 10000
+    },
+    {
+     "id": 26,
+     "unit": "Red Hawk",
+     "stars": 5,
+     "weight": 10000
+    },
+    {
+     "id": 27,
+     "unit": "Myrmidon",
+     "stars": 5,
+     "weight": 10000
+    },
+    {
+     "id": 37,
+     "unit": "Hunter",
+     "stars": 5,
+     "weight": 10000
+    },
+    {
+     "id": 55,
+     "unit": "Sandstorm",
+     "stars": 5,
+     "weight": 10000
+    },
+    {
+     "id": 56,
+     "unit": "Crusher",
+     "stars": 5,
+     "weight": 10000
+    },
+    {
+     "id": 57,
+     "unit": "Dirge",
+     "stars": 5,
+     "weight": 10000
+    },
+    {
+     "id": 58,
+     "unit": "Reaper",
+     "stars": 5,
+     "weight": 10000
+    }
+   ]
+  }
+ ],
+ "event_crates": [
+  {
+   "box_id": 304,
+   "name": "Flank Crate",
+   "cost": 90,
+   "cards": [
+    {
+     "id": 811,
+     "count": 2,
+     "label": 1
+    },
+    {
+     "id": 32,
+     "count": 6,
+     "label": 0
+    },
+    {
+     "id": 48,
+     "count": 6,
+     "label": 0
+    },
+    {
+     "id": 61,
+     "count": 6,
+     "label": 0
+    },
+    {
+     "id": 42,
+     "count": 12,
+     "label": 0
+    },
+    {
+     "id": 33,
+     "count": 12,
+     "label": 0
+    },
+    {
+     "id": 15,
+     "count": 12,
+     "label": 0
+    },
+    {
+     "id": 14,
+     "count": 12,
+     "label": 0
+    }
+   ]
+  },
+  {
+   "box_id": 305,
+   "name": "Devastator Crate",
+   "cost": 90,
+   "cards": [
+    {
+     "id": 800,
+     "count": 2,
+     "label": 1
+    },
+    {
+     "id": 825,
+     "count": 6,
+     "label": 1
+    },
+    {
+     "id": 827,
+     "count": 6,
+     "label": 1
+    },
+    {
+     "id": 51,
+     "count": 6,
+     "label": 0
+    },
+    {
+     "id": 823,
+     "count": 12,
+     "label": 1
+    },
+    {
+     "id": 48,
+     "count": 12,
+     "label": 0
+    },
+    {
+     "id": 45,
+     "count": 12,
+     "label": 0
+    },
+    {
+     "id": 16,
+     "count": 12,
+     "label": 0
+    }
+   ]
+  },
+  {
+   "box_id": 306,
+   "name": "Laser Crate",
+   "cost": 60,
+   "cards": [
+    {
+     "id": 829,
+     "count": 2,
+     "label": 1
+    },
+    {
+     "id": 828,
+     "count": 6,
+     "label": 1
+    },
+    {
+     "id": 46,
+     "count": 6,
+     "label": 0
+    },
+    {
+     "id": 47,
+     "count": 6,
+     "label": 0
+    },
+    {
+     "id": 14,
+     "count": 12,
+     "label": 0
+    },
+    {
+     "id": 43,
+     "count": 12,
+     "label": 0
+    },
+    {
+     "id": 28,
+     "count": 12,
+     "label": 0
+    },
+    {
+     "id": 60,
+     "count": 12,
+     "label": 0
+    }
+   ]
+  },
+  {
+   "box_id": 307,
+   "name": "EMP Crate",
+   "cost": 60,
+   "cards": [
+    {
+     "id": 831,
+     "count": 2,
+     "label": 1
+    },
+    {
+     "id": 830,
+     "count": 6,
+     "label": 1
+    },
+    {
+     "id": 834,
+     "count": 6,
+     "label": 1
+    },
+    {
+     "id": 49,
+     "count": 6,
+     "label": 0
+    },
+    {
+     "id": 36,
+     "count": 12,
+     "label": 0
+    },
+    {
+     "id": 60,
+     "count": 12,
+     "label": 0
+    },
+    {
+     "id": 33,
+     "count": 12,
+     "label": 0
+    },
+    {
+     "id": 15,
+     "count": 12,
+     "label": 0
+    }
+   ]
+  },
+  {
+   "box_id": 308,
+   "name": "Flank Cache",
+   "cost": 60,
+   "cards": [
+    {
+     "id": 811,
+     "count": 1,
+     "label": 1
+    },
+    {
+     "id": 839,
+     "count": 1,
+     "label": 0
+    },
+    {
+     "id": 838,
+     "count": 1,
+     "label": 1
+    },
+    {
+     "id": 837,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 836,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 835,
+     "count": 2,
+     "label": 1
+    }
+   ]
+  },
+  {
+   "box_id": 5005,
+   "name": "Petrichor Cache",
+   "cost": 170,
+   "cards": [
+    {
+     "id": 968,
+     "count": 1,
+     "label": 0
+    },
+    {
+     "id": 58,
+     "count": 1,
+     "label": 0
+    },
+    {
+     "id": 24,
+     "count": 1,
+     "label": 0
+    },
+    {
+     "id": 62,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 53,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 51,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 31,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 22,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 18,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 21,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 17,
+     "count": 4,
+     "label": 0
+    },
+    {
+     "id": 19,
+     "count": 4,
+     "label": 0
+    },
+    {
+     "id": 52,
+     "count": 4,
+     "label": 0
+    },
+    {
+     "id": 54,
+     "count": 4,
+     "label": 0
+    }
+   ]
+  },
+  {
+   "box_id": 5002,
+   "name": "Corvo Cache",
+   "cost": 170,
+   "cards": [
+    {
+     "id": 976,
+     "count": 1,
+     "label": 0
+    },
+    {
+     "id": 27,
+     "count": 1,
+     "label": 0
+    },
+    {
+     "id": 37,
+     "count": 1,
+     "label": 0
+    },
+    {
+     "id": 62,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 53,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 51,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 31,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 22,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 18,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 21,
+     "count": 2,
+     "label": 0
+    },
+    {
+     "id": 17,
+     "count": 4,
+     "label": 0
+    },
+    {
+     "id": 19,
+     "count": 4,
+     "label": 0
+    },
+    {
+     "id": 52,
+     "count": 4,
+     "label": 0
+    },
+    {
+     "id": 54,
+     "count": 4,
+     "label": 0
+    }
+   ]
+  }
+ ],
  "campaign_rewards": {
   "27": [
    46,
