@@ -108,7 +108,20 @@ namespace GAOffline
             }
             if (started >= wanted)
             {
-                if (started == wanted) { Debug.Log("[GAOffline] autotest: done"); started++; }
+                if (started == wanted)
+                {
+                    // collect every finished objective through the client's own call
+                    var list = Managers.Achievement.getAchievements();
+                    if (list != null)
+                        foreach (ServiceAchievementData a in list)
+                        {
+                            Debug.Log("[GAOffline] autotest: objective " + a.achievement_id + " " + a.name + " " + a.progress + "/" + a.max_progress);
+                            if (a.isComplete()) Managers.Achievement.completeAchievement(a.achievement_id);
+                        }
+                    Debug.Log("[GAOffline] autotest: done, Credits " + Managers.Player.Gold + ", Volt Coins " + Managers.Player.WarBonds
+                              + ", units " + Managers.Deck.Inventory.Count);
+                    started++;
+                }
                 return;
             }
             int id = 0, location = 0;

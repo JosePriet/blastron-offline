@@ -78,6 +78,7 @@ namespace GAOffline
             if (fo == null || Json.N(fo, "end") > Api.Now) return Units.Reply(s);
             var f = Recipe(Json.I(fo, "id"));
             s.D.Remove("forge");
+            if (f != null) Objectives.Fused(s, Json.I(f, "id"));
             var unit = f != null ? s.AddUnit(Json.I(f, "card_id"), 1) : null;
             s.Write();
             var r = Units.Reply(s);

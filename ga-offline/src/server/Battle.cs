@@ -13,7 +13,7 @@ namespace GAOffline
     {
         const int MaxTurns = 50;
         // Volt Coins earned offline (user decision 2026-10-22; our amounts): first win of each mission, first clear
-        // of each campaign. Achievements are not served yet.
+        // of each campaign (paid through the campaign's objective, except the tutorial's).
         const int VoltFirstWin = 2, VoltCampaignClear = 10;
         // Win rewards seen in the 2014 videos: 2-3 Scrap per win; 18-34 XP per win (our flat value is 25).
         const int ScrapMin = 2, ScrapMax = 3, XpPerWin = 25;
@@ -186,8 +186,12 @@ namespace GAOffline
                     if (progress >= count)
                     {
                         st["level"] = 1;
-                        s.Set("tokens", s.Int("tokens") + VoltCampaignClear);
-                        reward["card"] = Store.CampaignReward(s, CampaignId);
+                        // other campaigns pay these through their objective (Objectives)
+                        if (CampaignId == Store.TutorialCampaign)
+                        {
+                            s.Set("tokens", s.Int("tokens") + VoltCampaignClear);
+                            reward["card"] = Store.CampaignReward(s, CampaignId);
+                        }
                     }
                 }
                 camps[CampaignId.ToString()] = st;

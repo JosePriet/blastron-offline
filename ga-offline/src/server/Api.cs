@@ -107,6 +107,9 @@ namespace GAOffline
                 case "collectMoney":
                     r = Research.Collect(s);
                     break;
+                case "completeAchievement":
+                    r = Objectives.Collect(s, ArgInt(args, "achievement_id"));
+                    break;
                 case "startCampaign":
                     r = BattleReply(s, Battle.Start(s, ArgInt(args, "campaign_id")));
                     break;
@@ -127,6 +130,7 @@ namespace GAOffline
                     break;
             }
             object ok;
+            if (!r.TryGetValue("result", out ok) || true.Equals(ok)) Objectives.Attach(s, r);
             if (r.TryGetValue("result", out ok) && false.Equals(ok))
                 Debug.Log("[GAOffline] " + message + " refused: " + Json.S(r, "result_message"));
             return Json.Write(r);
@@ -174,7 +178,6 @@ namespace GAOffline
             r["base_upgrades"] = Research.Served(s);
             r["upgrades_data"] = Research.Definitions();
             r["news"] = new List<object>();
-            r["user_achievements"] = new List<object>(); // read unconditionally by the base screen and quest list
             r["store_items"] = Store.Items(s);
             r["fusion_recipes"] = Fusion.Served(s);
             r["is_vc_on_sale"] = 0;

@@ -97,11 +97,11 @@ a shell am force-stop $PKG; sleep 2
 a shell mkdir -p $DATA; a push $T/seed_save.json $DATA/save.json > $OUT/B_push.txt 2>&1
 U=$(a shell ls -ld /data/data/$PKG | tr -d '\r' | awk '{print $2}'); a shell chown $U:$U $DATA $DATA/save.json >> $OUT/B_push.txt 2>&1; a shell chmod 0660 $DATA/save.json; a shell ls -l $DATA >> $OUT/B_push.txt 2>&1; cat $OUT/B_push.txt
 # test builds only: the in-game driver (src/test/Autotest.cs) fights this many battles from the base on autopilot
-echo 3 > $OUT/autotest.txt; a push $OUT/autotest.txt $DATA/autotest >> $OUT/B_push.txt 2>&1; a shell chown $U:$U $DATA/autotest
+echo 4 > $OUT/autotest.txt; a push $OUT/autotest.txt $DATA/autotest >> $OUT/B_push.txt 2>&1; a shell chown $U:$U $DATA/autotest
 frames b; launch
 sleep 15; shot B_boot
 # autopilot plays the cards; the mission briefing and result screens still need taps
-for i in $(seq 1 24); do sleep 11; hintok; tap 540 960 B_dialogue; sleep 2; shot B_$i; done
+for i in $(seq 1 30); do sleep 11; hintok; tap 540 960 B_dialogue; sleep 2; shot B_$i; done
 stopframes; gamelog B
 a shell cat $DATA/save.json > $OUT/B_save.json 2>&1; a shell cat $DATA/log.txt > $OUT/B_trace.txt 2>&1  # log.txt is appended: B continues A
 a logcat -d -b crash > $OUT/crash.txt 2>&1
