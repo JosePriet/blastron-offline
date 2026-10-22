@@ -169,7 +169,11 @@ namespace GAOffline
                 {
                     int progress = Json.I(st, "progress") + 1;
                     st["progress"] = progress;
-                    if (progress >= count) st["level"] = 1;
+                    if (progress >= count)
+                    {
+                        st["level"] = 1;
+                        reward["card"] = Store.CampaignReward(s, CampaignId);
+                    }
                 }
                 camps[CampaignId.ToString()] = st;
             }

@@ -83,6 +83,17 @@ namespace GAOffline
 
         public int Int(string k) { return Json.I(D, k); }
 
+        // A new unit in the inventory (no squad); the entry is what user_units / new_units carry.
+        public Dictionary<string, object> AddUnit(int cardId, int level)
+        {
+            int index = Int("next_unit_index");
+            Set("next_unit_index", index + 1);
+            var u = new Dictionary<string, object> {
+                { "unit_index", index }, { "unit_id", cardId }, { "level", level }, { "sp", 0 }, { "deck_id", 0 }, { "slot_id", -1 } };
+            Units.Add(u);
+            return u;
+        }
+
         public void Set(string k, object v) { D[k] = v; }
 
         public List<object> Units { get { return Json.L(D, "units"); } }

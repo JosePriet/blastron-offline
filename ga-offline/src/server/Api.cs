@@ -51,6 +51,13 @@ namespace GAOffline
                     s.Write();
                     r = Squads(s);
                     break;
+                case "getStoreData":
+                    r = Squads(s);
+                    r["store_items"] = Store.Items();
+                    break;
+                case "buyStoreItem":
+                    r = Store.Buy(s, ArgInt(args, "item_id"));
+                    break;
                 case "startCampaign":
                     r = BattleReply(s, Battle.Start(s, ArgInt(args, "campaign_id")));
                     break;
@@ -116,7 +123,7 @@ namespace GAOffline
             r["upgrades_data"] = new List<object>();
             r["news"] = new List<object>();
             r["user_achievements"] = new List<object>(); // read unconditionally by the base screen and quest list
-            r["store_items"] = new List<object>();       // likewise the store; nothing is for sale offline
+            r["store_items"] = Store.Items();
             r["is_vc_on_sale"] = 0;
             r["feature_locks"] = FeatureLocks(s);
             r["locations"] = GameData.Locations;
@@ -125,7 +132,7 @@ namespace GAOffline
             return r;
         }
 
-        static Dictionary<string, object> Squads(Save s)
+        internal static Dictionary<string, object> Squads(Save s)
         {
             var r = Base();
             r["user_data"] = UserData(s);

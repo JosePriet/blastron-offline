@@ -5,11 +5,11 @@ namespace GAOffline
 {
     // Emulator test driver, compiled only into test builds (GA_TEST=1 ./build.sh). Inert unless ga_offline/autotest
     // exists; its content is the number of battles to fight. With autopilot on, it does what a player does from the
-    // base: picks the first unfinished campaign, starts it as a map tap would, lets autopilot play the cards, and goes
+    // base: buys two Supply Drops, picks the first unfinished campaign, starts it as a map tap would, lets autopilot play the cards, and goes
     // back to the base after the result. Each step is logged with the [GAOffline] tag.
     public class Autotest : MonoBehaviour
     {
-        int wanted = -1, started;
+        int wanted = -1, started, bought;
         float next, onBaseSince = -1, finishedAt = -1;
         Battle seen;
 
@@ -49,6 +49,16 @@ namespace GAOffline
             if (screen != TScreen.Base || Battle.Current != null) { onBaseSince = -1; return; }
             if (onBaseSince < 0) onBaseSince = Time.realtimeSinceStartup;
             if (Time.realtimeSinceStartup - onBaseSince < 8f) return;
+            // two Supply Drops first, through the client's own store call (the seeded save has 300 Credits)
+            var drop = Managers.Store.GetStoreItem(1);
+            if (bought < 2 && drop != null && Managers.Store.canAffordCoins(drop.GoldCost))
+            {
+                bought++;
+                Debug.Log("[GAOffline] autotest: buying " + drop.Name + " " + bought);
+                Managers.Store.BuyStoreItem(drop);
+                onBaseSince = Time.realtimeSinceStartup;
+                return;
+            }
             if (started >= wanted)
             {
                 if (started == wanted) { Debug.Log("[GAOffline] autotest: done"); started++; }

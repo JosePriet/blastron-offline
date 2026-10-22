@@ -17,7 +17,7 @@ dotnet "$CSC" -nologo -nostdlib -noconfig -target:library -langversion:7.3 -opti
   -r:$M/mscorlib.dll -r:$M/System.dll -r:$M/System.Core.dll -r:$M/UnityEngine.dll \
   -r:$M/Assembly-CSharp-firstpass.dll -r:$M/Assembly-CSharp.dll \
   -resource:"$HERE/data/missions.json",missions.json -resource:"$HERE/data/cards.xml",cards.xml \
-  -resource:"$HERE/data/tutorial1.xml",tutorial1.xml "$HERE"/src/server/*.cs ${GA_TEST:+"$HERE"/src/test/*.cs}
+  -resource:"$HERE/data/tutorial1.xml",tutorial1.xml -resource:"$HERE/data/rewards.json",rewards.json "$HERE"/src/server/*.cs ${GA_TEST:+"$HERE"/src/test/*.cs}
 
 # 2. route WWWManager.Begin through the local server
 dotnet build -c Release -o "$W/patcher" "$HERE/src/patcher" >/dev/null

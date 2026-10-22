@@ -9,6 +9,7 @@ namespace GAOffline
     //   missions.json  converted from the archived missions.xml (tools/missions_to_json.py)
     //   cards.xml      rebuilt unit file (ga-archive/rebuild/gen_cards.py)
     //   tutorial1.xml  archived tutorial script
+    //   rewards.json   Supply Drop pool and campaign unit rewards (tools/rewards_to_json.py, from the archived wiki)
     public static class GameData
     {
         static Dictionary<string, object> missions;
@@ -42,6 +43,13 @@ namespace GAOffline
         public static List<object> Campaigns { get { return Json.L(Missions, "campaigns"); } }
 
         public static List<object> FeatureLocks { get { return Json.L(Missions, "feature_locks"); } }
+
+        static Dictionary<string, object> rewards;
+
+        public static Dictionary<string, object> Rewards
+        {
+            get { return rewards ?? (rewards = (Dictionary<string, object>)Json.Parse(Resource("rewards.json"))); }
+        }
 
         public static Dictionary<string, object> Mission(long id)
         {
