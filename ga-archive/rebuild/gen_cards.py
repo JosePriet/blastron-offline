@@ -199,6 +199,14 @@ for cid in sorted(cards, key=int):
         lines.append("\t\t</upgrade>")
     lines.append("\t</unit>")
 
+# Command centers. The client draws each side's base from card 1001 (player) / 1002 (enemy) when a battle names no
+# commander (CombatPlayer.createCommander); both meshes are bundled. Their health comes from the battle, not the card.
+for cid, name, mesh in (("1001", "Command Center", "mobilecommandcenter"), ("1002", "Enemy Command Center", "enemycommandcenter")):
+    lines += ["\t<unit>", f"\t\t<id>{cid}</id>", f"\t\t<name>{name}</name>", f"\t\t<picture>{mesh}_256</picture>",
+              f"\t\t<mesh>{mesh}</mesh>", "\t\t<asset_bundle>0</asset_bundle>", "\t\t<rarity>1</rarity>", "\t\t<type>1</type>",
+              "\t\t<set>2</set>", "\t\t<attack>0</attack>", "\t\t<health>10</health>", "\t</unit>"]
+    report[cid] = {"source": "client default commander", "mesh": mesh, "mesh_source": "own"}
+
 for sid in sorted(used_skills, key=SKILL_ORDER.index):
     name, desc = SKILL_TEXT[sid]
     icon = next(i for s, i in SKILLS.values() if s == sid)

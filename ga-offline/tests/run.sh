@@ -5,11 +5,11 @@
 #  Run A: the offline APK, fresh install: the local server answers boot; a new commander starts in the tutorial mission.
 #  Run B: the offline APK with a save that has campaign 1 finished: boots to the base screen.
 OUT=${OUT:-out}; mkdir -p $OUT/frames; PKG=com.kongregate.mobile.globalassault.google
-T=ga-offline/tests; DATA=/sdcard/Android/data/$PKG/files/ga_offline
+T=ga-offline/tests; DATA=/data/data/$PKG/files/ga_offline  # persistentDataPath on the 4.4 image (internal; read through adb root)
 T0=$(date +%s); log() { echo "[$(( $(date +%s) - T0 ))s] $*" | tee -a $OUT/progress.txt; }
 a() { timeout 25 adb "$@"; }
 # screenshots via a file: adb exec-out needs Android 5.0+
-cap() { local t=/sdcard/cap_$RANDOM.png; timeout 20 adb shell screencap -p $t >/dev/null 2>&1 && timeout 20 adb pull $t "$1" >/dev/null 2>&1; timeout 10 adb shell rm -f $t >/dev/null 2>&1; }
+cap() { local t=/data/local/tmp/cap_$RANDOM.png; timeout 20 adb shell screencap -p $t >/dev/null 2>&1 && timeout 20 adb pull $t "$1" >/dev/null 2>&1; timeout 10 adb shell rm -f $t >/dev/null 2>&1; }
 SDK=$(timeout 10 adb shell getprop ro.build.version.sdk | tr -d '\r'); G=; [ "${SDK:-0}" -ge 23 ] && G=-g
 gpid() { timeout 5 adb shell ps 2>/dev/null | tr -d '\r' | awk -v p=$PKG '$NF==p {print $2}' | head -1; }
 n=0
@@ -51,19 +51,20 @@ for i in 1 2 3 4 5 6 7 8 9; do sleep 10; shot A_boot_$i; done
 for i in 1 2 3 4 5 6; do tap 1140 540 A_center; sleep 5; done; shot A_after_taps
 sleep 20; shot A_final
 a shell debuggerd -b $(gpid) > $OUT/A_stacks.txt 2>&1
-a shell ls -laR /data/data/$PKG > $OUT/A_internal.txt 2>&1; a shell cat /data/data/$PKG/files/ga_offline/log.txt > $OUT/A_trace_internal.txt 2>&1
+a shell cat $DATA/log.txt > $OUT/A_trace.txt 2>&1
 stopframes; gamelog A
-a shell ls -laR /sdcard/Android/data/$PKG > $OUT/A_files.txt 2>&1; a shell cat $DATA/log.txt > $OUT/A_trace.txt 2>&1; a shell cat $DATA/save.json > $OUT/A_save.json 2>&1
+a shell ls -l $DATA > $OUT/A_files.txt 2>&1; a shell cat $DATA/save.json > $OUT/A_save.json 2>&1
 
 log "run B: seeded save (campaign 1 done)"
 a shell am force-stop $PKG; sleep 2
-a shell mkdir -p $DATA; a push $T/seed_save.json $DATA/save.json > $OUT/B_push.txt 2>&1; cat $OUT/B_push.txt
+a shell mkdir -p $DATA; a push $T/seed_save.json $DATA/save.json > $OUT/B_push.txt 2>&1
+U=$(a shell ls -ld /data/data/$PKG | tr -d '\r' | awk '{print $2}'); a shell chown $U:$U $DATA $DATA/save.json >> $OUT/B_push.txt 2>&1; a shell chmod 0660 $DATA/save.json; a shell ls -l $DATA >> $OUT/B_push.txt 2>&1; cat $OUT/B_push.txt
 frames b; launch
 for i in 1 2 3 4 5 6 7 8; do sleep 10; shot B_boot_$i; done
 tap 1140 540 B_center; sleep 8; shot B_after_tap
 sleep 15; shot B_final
 stopframes; gamelog B
-a shell cat $DATA/save.json > $OUT/B_save.json 2>&1; a shell cat $DATA/log.txt > $OUT/B_trace.txt 2>&1
+a shell cat $DATA/save.json > $OUT/B_save.json 2>&1; a shell cat $DATA/log.txt > $OUT/B_trace.txt 2>&1  # log.txt is appended: B continues A
 a logcat -d -b crash > $OUT/crash.txt 2>&1
 log "done"
 exit 0

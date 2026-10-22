@@ -35,8 +35,16 @@ namespace GAOffline
             Write("I", "boot " + Api.Version + ", level " + Application.loadedLevelName + ", data " + Application.persistentDataPath);
         }
 
+        static string last;
+        static int repeats;
+
         static void OnLog(string message, string stack, LogType type)
         {
+            string key = type + message + stack;
+            if (key == last) { repeats++; return; } // per-frame exceptions: one copy, then a count
+            if (repeats > 0) Write("I", "(previous message repeated " + repeats + " more times)");
+            last = key;
+            repeats = 0;
             if (message != null && message.StartsWith("[GAOffline]", StringComparison.Ordinal) && type == LogType.Log) { Write("I", message); return; }
             Write(type == LogType.Log ? "I" : type == LogType.Warning ? "W" : "E",
                   type + ": " + message + (type == LogType.Exception || type == LogType.Error ? "\n" + stack : ""));
