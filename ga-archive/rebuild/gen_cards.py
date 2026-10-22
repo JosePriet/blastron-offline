@@ -111,11 +111,18 @@ for cid in sorted(uses, key=int):
     if cid in cards:
         continue
     star = tier_for(cid)
-    template = pick(cid, by_star[star])
+    need = max(l for _, l in uses[cid])
+    # Template: a wiki unit with enough levels for the deepest deck level this id is used at, preferring the
+    # star tier implied by campaign position and the shortest level table that fits.
+    fits = [n for n in units if len(units[n]["levels"]) >= need] or [max(units, key=lambda n: len(units[n]["levels"]))]
+    best_star = min({units[n]["stars"] for n in fits}, key=lambda st: abs(st - star))
+    pool = [n for n in fits if units[n]["stars"] == best_star]
+    shortest = min(len(units[n]["levels"]) for n in pool)
+    template = pick(cid, sorted(n for n in pool if len(units[n]["levels"]) == shortest))
     names = sorted(set(hints.get(cid, [])))
     name = names[0] if names else f"Shattered Sun Unit {cid}"
     cards[cid] = {"wiki": template, "name": name, "enemy": True}
-    report[cid] = {"source": "derived", "template": template, "stars": star, "hints": names,
+    report[cid] = {"source": "derived", "template": template, "stars": units[template]["stars"], "position_stars": star, "hints": names,
                    "median_position": round(statistics.median(p for p, _ in uses[cid]), 3),
                    "max_deck_level": max(l for _, l in uses[cid])}
 
@@ -165,7 +172,13 @@ for cid in sorted(cards, key=int):
     found = [mesh_for(n, "mesh" + cid) for n in candidates]
     mesh, how = next((f for f in found if f[1] == "own"), found[0])
     report[cid]["mesh"], report[cid]["mesh_source"] = mesh, how
-    lv = u["levels"]
+    lv = list(u["levels"])
+    need = max((l for _, l in uses.get(cid, [])), default=0)
+    while len(lv) < need:  # deck uses a level past the table: extend by the last step (the client has no clamp)
+        a, b = (lv[-2], lv[-1]) if len(lv) > 1 else (lv[-1], lv[-1])
+        lv.append({"attack": b["attack"] + max(0, b["attack"] - a["attack"]),
+                   "health": b["health"] + max(1, b["health"] - a["health"]), "skills": b["skills"]})
+        report[cid]["padded_levels"] = report[cid].get("padded_levels", 0) + 1
     lines += ["\t<unit>", f"\t\t<id>{cid}</id>", f"\t\t<name>{escape(c['name'])}</name>",
               f"\t\t<picture>{mesh}_256</picture>", f"\t\t<mesh>{mesh}</mesh>", "\t\t<asset_bundle>0</asset_bundle>",
               f"\t\t<rarity>{u['stars']}</rarity>", "\t\t<type>1</type>",
