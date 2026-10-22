@@ -34,6 +34,8 @@ launch() { a logcat -c; a shell monkey -p $PKG -c android.intent.category.LAUNCH
 # let the freshly booted system settle (run 4: system_server restarted during run O)
 sleep 60
 adb root >/dev/null 2>&1; sleep 5; adb wait-for-device
+# Android 4.4's "swipe down to exit full screen" hint is a system window over the game that swallows touches
+a shell settings put global policy_control immersive.preconfirms=\*
 log "run O: original APK"
 timeout 300 adb install -r $G ${ABI:+--abi $ABI} $T/apk/original.apk > $OUT/O_install.txt 2>&1; cat $OUT/O_install.txt
 frames o; launch
