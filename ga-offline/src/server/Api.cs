@@ -115,6 +115,9 @@ namespace GAOffline
             r["base_upgrades"] = new List<object>();
             r["upgrades_data"] = new List<object>();
             r["news"] = new List<object>();
+            r["user_achievements"] = new List<object>(); // read unconditionally by the base screen and quest list
+            r["store_items"] = new List<object>();       // likewise the store; nothing is for sale offline
+            r["is_vc_on_sale"] = 0;
             r["feature_locks"] = FeatureLocks(s);
             r["locations"] = GameData.Locations;
             r["current_campaigns"] = Campaigns(s);
@@ -136,7 +139,10 @@ namespace GAOffline
                     if (Json.I(u, "deck_id") == id) units.Add(u);
                 decks.Add(new Dictionary<string, object> {
                     { "deck_id", id }, { "name", Json.S(d, "name") }, { "commander_item_id", Json.I(d, "commander_item_id") },
-                    { "power_level", "1" }, { "units", units } });
+                    { "power_level", "1" }, { "units", units },
+                    // squad repair: battles leave no damage offline; repair_speed must be non-zero (the client divides by it)
+                    { "squad_damage", 0 }, { "max_damage", 100 }, { "repair_speed", 60 }, { "retreat_damage", 0 },
+                    { "repair_start_time", 0 }, { "repair_end_time", 0 } });
             }
             r["user_decks"] = decks;
             return r;

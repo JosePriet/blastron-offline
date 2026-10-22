@@ -48,14 +48,15 @@ grep -q Success $OUT/A_install.txt || { log "install FAILED"; exit 0; }
 a shell dumpsys package $PKG | grep -E "primaryCpuAbi|targetSdk" > $OUT/A_abi.txt
 frames a; launch
 for i in 1 2 3 4 5 6; do sleep 10; shot A_boot_$i; done
-# landscape coordinates (1920x1080): OK of the immersive-mode hint, then the screen centre to step the tutorial
-tap 1250 420 A_hint_ok; sleep 3
-# tutorial turns: the pointer drags the second hand card (Darius) to the highlighted front slot; do that, with a
-# tap-tap fallback, then tap through the dialogue
+# Android 4.4 takes input in the display's natural (portrait 1080x1920) coordinates, the same frame as screencap:
+# positions below are read straight off the screenshots. OK of the immersive-mode hint first.
+tap 660 1250 A_hint_ok; sleep 3
+# tutorial turns: drag hand card 1, then card 2, to the highlighted slot (the tutorial accepts only the card its
+# pointer shows), then tap through the dialogue
 for i in $(seq 1 8); do
-  log "swipe card 2 -> slot (A_tutorial)"; a shell input swipe 420 930 740 475 1500; sleep 3
-  tap 420 930 A_card2; sleep 1; tap 740 475 A_slot; sleep 3; shot A_tut_${i}a
-  tap 960 540 A_tutorial; sleep 4; tap 960 540 A_tutorial; sleep 4; shot A_tut_${i}b
+  log "swipe card 1 -> slot (A_tutorial)"; a shell input swipe 150 150 605 740 1500; sleep 3
+  log "swipe card 2 -> slot (A_tutorial)"; a shell input swipe 150 420 605 740 1500; sleep 4; shot A_tut_${i}a
+  tap 540 960 A_tutorial; sleep 4; tap 540 960 A_tutorial; sleep 4; shot A_tut_${i}b
 done
 a shell debuggerd -b $(gpid) > $OUT/A_stacks.txt 2>&1
 a shell cat $DATA/log.txt > $OUT/A_trace.txt 2>&1
@@ -71,7 +72,7 @@ echo 3 > $OUT/autotest.txt; a push $OUT/autotest.txt $DATA/autotest >> $OUT/B_pu
 frames b; launch
 sleep 15; shot B_boot
 # autopilot plays the cards; the mission briefing and result screens still need taps
-for i in $(seq 1 24); do sleep 13; tap 960 540 B_dialogue; sleep 2; shot B_$i; done
+for i in $(seq 1 24); do sleep 13; tap 540 960 B_dialogue; sleep 2; shot B_$i; done
 stopframes; gamelog B
 a shell cat $DATA/save.json > $OUT/B_save.json 2>&1; a shell cat $DATA/log.txt > $OUT/B_trace.txt 2>&1  # log.txt is appended: B continues A
 a logcat -d -b crash > $OUT/crash.txt 2>&1
