@@ -79,21 +79,29 @@ namespace GAOffline
                 onBaseSince = Time.realtimeSinceStartup;
                 return;
             }
-            // then the unit systems, through the client's own managers: upgrade and speed it up, fuse the seeded
-            // max-level Cobra (4) and Bazooka Jeep (5) into an RPG Tank (recipe 47) and speed it up, salvage a unit
-            if (step < 6)
+            // then the unit systems and the lab, through the client's own managers: upgrade a unit and speed it up, collect
+            // the Generator, research Generator 2 and recipe 47, fuse the seeded max-level Cobra (4) and Bazooka Jeep (5)
+            // into an RPG Tank and speed it up, salvage a unit
+            if (step < 11)
             {
                 var t = Managers.Player.taskData;
-                Debug.Log("[GAOffline] autotest: unit step " + step + ", Scrap " + Managers.Player.SalvagePoints + ", Volt Coins "
+                Debug.Log("[GAOffline] autotest: unit step " + step + ", Credits " + Managers.Player.Gold + "/" + Managers.Player.MaxGold
+                          + ", Generator " + Managers.Upgrade.getUpgradeLevel(2) + ", recipe 47 research " + Managers.Upgrade.getUpgradeLevel(547)
+                          + ", Scrap " + Managers.Player.SalvagePoints + ", Volt Coins "
                           + Managers.Player.WarBonds + ", upgrading " + (t != null ? t.UnitUpgradeIndex : -1) + ", fusing " + (t != null ? t.ForgeItem : -1)
                           + ", units " + Managers.Deck.Inventory.Count);
                 switch (step++)
                 {
                     case 0: Managers.Store.UpgradeCard(1); break;
                     case 1: Managers.Card.rushUpgrading(); break;
-                    case 2: Managers.Fusion.startFusion(47, new List<int> { 4, 5 }, 0); break;
-                    case 3: Managers.Store.rushForging(); break;
-                    case 4: Managers.Store.SalvageCard(6); break;
+                    case 2: Managers.Upgrade.collectMoney(); break;
+                    case 3: Managers.Upgrade.startUpgrade(2); break;     // Generator level 2
+                    case 4: Managers.Upgrade.rushUpgrade(); break;
+                    case 5: Managers.Upgrade.startUpgrade(547); break;   // Armory research for recipe 47
+                    case 6: Managers.Upgrade.rushUpgrade(); break;
+                    case 7: Managers.Fusion.startFusion(47, new List<int> { 4, 5 }, 0); break;
+                    case 8: Managers.Store.rushForging(); break;
+                    case 9: Managers.Store.SalvageCard(6); break;
                 }
                 onBaseSince = Time.realtimeSinceStartup;
                 return;

@@ -108,6 +108,7 @@ namespace GAOffline
                 t["unit_upgrade_end_time"] = Json.N(up, "end");
             }
             Fusion.Tasks(s, t);
+            Research.Tasks(s, t);
             return t;
         }
 

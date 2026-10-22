@@ -156,10 +156,7 @@ namespace GAOffline
             if (s.Int("money") < cost) s.Set("money", cost);
         }
 
-        // Credits cap: the Generator's Max Credits (archived wiki, Research_Lab page: 250/500/750/1000/1500/2500 by
-        // level), tripled for offline play (user decision 2026-10-22). The Generator stays level 1 until buildings exist.
-        static readonly int[] MaxCredits = { 750, 1500, 2250, 3000, 4500, 7500 };
-        public static int MoneyCap(Save s) { return MaxCredits[Math.Max(1, Math.Min(MaxCredits.Length, s.Int("generator"))) - 1]; }
-        public static void AddMoney(Save s, int n) { int m = s.Int("money"); s.Set("money", Math.Max(m, Math.Min(MoneyCap(s), m + n))); }
+        // Credits never pass the cap (the Generator's Max Credits, see Research) and a balance above it is kept
+        public static void AddMoney(Save s, int n) { int m = s.Int("money"); s.Set("money", Math.Max(m, Math.Min(Research.MoneyCap(s), m + n))); }
     }
 }

@@ -12,9 +12,6 @@ namespace GAOffline
     public class Battle
     {
         const int MaxTurns = 50;
-        // Mobile Command base health by level (archived wiki, Research_Lab page, levels 1-7; user decision 2026-10-22).
-        // Upgrading it is Research Lab work, not built yet, so the save's "mobile_command" level stays 1 (25 health).
-        static readonly int[] BaseHealth = { 25, 35, 50, 65, 80, 100, 125 };
         // Volt Coins earned offline (user decision 2026-10-22; our amounts): first win of each mission, first clear
         // of each campaign. Achievements are not served yet.
         const int VoltFirstWin = 2, VoltCampaignClear = 10;
@@ -63,7 +60,7 @@ namespace GAOffline
             h.MissionID = (int)missionId;
             h.EnemyName = Json.S(m, "enemy");
             h.EnemyMaxHealth = Json.I(m, "health");
-            h.PlayerMaxHealth = BaseHealth[Math.Max(1, Math.Min(BaseHealth.Length, s.Int("mobile_command"))) - 1];
+            h.PlayerMaxHealth = Research.BaseHealth(s);  // Mobile Command level (user decision 2026-10-22)
             h.AttackCommanderID = 0;
             h.DefendCommanderID = 0;
 

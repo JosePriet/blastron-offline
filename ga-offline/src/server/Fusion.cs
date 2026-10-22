@@ -6,18 +6,21 @@ namespace GAOffline
     // Unit fusion (startFusion, completeStoreItem, rushFusion). Recipes: rewards.json "fusion_recipes", from the
     // archived wiki's "Fuse X and Y" lines (tools/rewards_to_json.py). As in the 2014 videos, the parts must be at
     // their maximum level, they are used up when the fusion starts, and the new unit (level 1) arrives when the timer
-    // ends. One fusion runs at a time. Every recipe is served as researched: the Research Lab is not built yet.
+    // ends. One fusion runs at a time. A recipe must be researched first (Research, user decision 2026-10-22).
     public static class Fusion
     {
         static List<object> Recipes { get { return Json.L(GameData.Rewards, "fusion_recipes"); } }
 
-        public static List<object> Served()
+        // each recipe is researched in the lab's Armory tab first (Research, id 500 + recipe id)
+        public static List<object> Served(Save s)
         {
             var list = new List<object>();
             foreach (Dictionary<string, object> f in Recipes)
             {
                 var d = new Dictionary<string, object>(f);
-                d["researched"] = 1;
+                int research = Research.FusionBase + Json.I(f, "id");
+                d["upgrade_id"] = research;
+                d["researched"] = Research.Level(s, research) > 0 ? 1 : 0;
                 list.Add(d);
             }
             return list;
@@ -45,6 +48,7 @@ namespace GAOffline
             var f = Recipe(fusionId);
             if (f == null) return Units.Refuse(s, "That fusion is not available.");
             if (Json.O(s.D, "forge") != null) return Units.Refuse(s, "Another fusion is already running.");
+            if (Research.Level(s, Research.FusionBase + fusionId) <= 0) return Units.Refuse(s, "Research this fusion first.");
             var need = new List<int>();
             foreach (Dictionary<string, object> r in Json.L(f, "resource"))
                 for (int i = 0; i < Math.Max(1, Json.I(r, "number")); i++) need.Add(Json.I(r, "card_id"));

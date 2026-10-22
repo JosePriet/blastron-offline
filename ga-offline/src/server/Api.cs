@@ -9,8 +9,6 @@ namespace GAOffline
     public static class Api
     {
         public const string Version = "offline-1";
-        // squad health at Squad Bay level 1 (archived wiki, Research_Lab page: 400/550/750/1000/1250 by level)
-        const int SquadHealth = 400;
         public const int MaxSalvage = 9999;
         // XP from one level to the next, levels 1-7, read off the 2014 videos (40/40/40/80/100/150/150). Past level 7
         // nothing was seen; our extension adds 50 per level.
@@ -40,6 +38,7 @@ namespace GAOffline
         {
             Save s = Save.Current;
             Units.Tick(s);
+            Research.Tick(s);
             Dictionary<string, object> r;
             switch (message)
             {
@@ -98,6 +97,15 @@ namespace GAOffline
                     break;
                 case "rushFusion":
                     r = Fusion.Rush(s);
+                    break;
+                case "buildBaseUpgrade":
+                    r = Research.Start(s, ArgInt(args, "upgrade_id"));
+                    break;
+                case "rushUpgrade":
+                    r = Research.Rush(s);
+                    break;
+                case "collectMoney":
+                    r = Research.Collect(s);
                     break;
                 case "startCampaign":
                     r = BattleReply(s, Battle.Start(s, ArgInt(args, "campaign_id")));
@@ -163,12 +171,12 @@ namespace GAOffline
             r["mission_completions"] = Json.O(s.D, "missions");
             r["max_energy"] = 100;
             r["max_stamina"] = 10;
-            r["base_upgrades"] = new List<object>();
-            r["upgrades_data"] = new List<object>();
+            r["base_upgrades"] = Research.Served(s);
+            r["upgrades_data"] = Research.Definitions();
             r["news"] = new List<object>();
             r["user_achievements"] = new List<object>(); // read unconditionally by the base screen and quest list
             r["store_items"] = Store.Items(s);
-            r["fusion_recipes"] = Fusion.Served();
+            r["fusion_recipes"] = Fusion.Served(s);
             r["is_vc_on_sale"] = 0;
             r["feature_locks"] = FeatureLocks(s);
             r["locations"] = GameData.Locations;
@@ -194,7 +202,7 @@ namespace GAOffline
                     { "deck_id", id }, { "name", Json.S(d, "name") }, { "commander_item_id", Json.I(d, "commander_item_id") },
                     { "power_level", "1" }, { "units", units },
                     // squad repair: battles leave no damage offline; repair_speed must be non-zero (the client divides by it)
-                    { "squad_damage", 0 }, { "max_damage", SquadHealth }, { "repair_speed", 60 }, { "retreat_damage", 0 },
+                    { "squad_damage", 0 }, { "max_damage", Research.SquadHealth(s) }, { "repair_speed", 60 }, { "retreat_damage", 0 },
                     { "repair_start_time", 0 }, { "repair_end_time", 0 } });
             }
             r["user_decks"] = decks;
@@ -211,7 +219,7 @@ namespace GAOffline
                 { "last_update_time", Now },
                 { "tokens", s.Int("tokens") },
                 { "money", s.Int("money") },
-                { "money_cap", Store.MoneyCap(s) },
+                { "money_cap", Research.MoneyCap(s) },
                 { "energy", s.Int("energy") },
                 { "energy_recharge_time", 60 },
                 { "stamina", s.Int("stamina") },
@@ -230,7 +238,7 @@ namespace GAOffline
         }
 
         // feature_lock entries from missions.xml; 1 means unlocked. PvP stays locked: there is no one to fight offline.
-        static Dictionary<string, object> FeatureLocks(Save s)
+        internal static Dictionary<string, object> FeatureLocks(Save s)
         {
             var r = new Dictionary<string, object>();
             foreach (Dictionary<string, object> f in GameData.FeatureLocks)
@@ -238,6 +246,7 @@ namespace GAOffline
                 string id = Json.S(f, "id");
                 bool open;
                 if (id == "pvp" || id == "pvp_league") open = false;
+                else if (id == "armory") open = Research.ArmoryOpen(s);  // research_req 503: any Armory research (user decision)
                 else if (f.ContainsKey("mission_req")) open = s.MissionComplete(Json.N(f, "mission_req"));
                 else if (f.ContainsKey("level_req")) open = s.Int("level") >= Json.I(f, "level_req");
                 else open = false;
