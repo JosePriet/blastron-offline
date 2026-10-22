@@ -40,7 +40,7 @@ jobs:
         run: |
           mkdir -p out/frames
           sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || true
-          for p in a b; do
+          for p in o a b; do
             if ls out/frames/$p*.png >/dev/null 2>&1; then
               ffmpeg -loglevel error -framerate 2 -pattern_type glob -i "out/frames/$p*.png" -vf "scale=1140:-2,format=yuv420p" -c:v libx264 -crf 30 out/video_$p.mp4 || true
             fi

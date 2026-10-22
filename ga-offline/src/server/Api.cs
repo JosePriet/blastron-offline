@@ -51,12 +51,44 @@ namespace GAOffline
                     s.Write();
                     r = Squads(s);
                     break;
+                case "startCampaign":
+                    r = BattleReply(s, Battle.Start(s, ArgInt(args, "campaign_id")));
+                    break;
+                case "playCard":
+                    if (Battle.Current != null) Battle.Current.Play(s, ArgInt(args, "card_uid"), ArgInt(args, "field_order"));
+                    r = BattleReply(s, lastBattle);
+                    break;
+                case "getBattleResults":
+                    r = BattleReply(s, lastBattle);
+                    break;
+                case "forfeitBattle":
+                    if (Battle.Current != null) Battle.Current.Forfeit(s);
+                    r = BattleReply(s, lastBattle);
+                    break;
                 default:
                     Debug.Log("[GAOffline] unhandled message " + message + ", answering result:true");
                     r = Base();
                     break;
             }
             return Json.Write(r);
+        }
+
+        static Battle lastBattle;
+
+        // battle_data is the whole log so far; the client replays it from the turn it has reached.
+        static Dictionary<string, object> BattleReply(Save s, Battle b)
+        {
+            lastBattle = b;
+            if (b == null)
+            {
+                var e = Base();
+                e["result"] = false;
+                e["result_message"] = "This battle has ended.";
+                return e;
+            }
+            var r = Squads(s);
+            r["battle_data"] = b.ToJson();
+            return r;
         }
 
         static string Arg(Dictionary<string, string> args, string k)
