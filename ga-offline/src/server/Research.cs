@@ -204,13 +204,6 @@ namespace GAOffline
             return Reply(s);
         }
 
-        static Dictionary<string, object> Reply(Save s)
-        {
-            var r = Units.Reply(s);
-            r["base_upgrades"] = Served(s);
-            r["fusion_recipes"] = Fusion.Served(s);   // a finished Armory project marks its recipe researched
-            r["feature_locks"] = Api.FeatureLocks(s); // and opens the Armory
-            return r;
-        }
+        static Dictionary<string, object> Reply(Save s) { return Units.Reply(s); }
     }
 }

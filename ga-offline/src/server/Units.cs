@@ -182,6 +182,10 @@ namespace GAOffline
         {
             var r = Api.Squads(s);
             r["user_tasks"] = Tasks(s);
+            // a lab project can finish during any of these messages (Research.Tick), so its results go out with them
+            r["base_upgrades"] = Research.Served(s);
+            r["fusion_recipes"] = Fusion.Served(s);
+            r["feature_locks"] = Api.FeatureLocks(s);
             return r;
         }
 
