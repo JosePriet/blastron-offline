@@ -9,6 +9,7 @@ namespace GAOffline
     // back to the base after the result. Each step is logged with the [GAOffline] tag.
     public class Autotest : MonoBehaviour
     {
+        static readonly int[] ToBuy = { 1, 1, 2, 3, 4, 304 };
         int wanted = -1, started, bought;
         bool off;
         float next, onBaseSince = -1, finishedAt = -1;
@@ -64,13 +65,16 @@ namespace GAOffline
             if (screen != TScreen.Base || Battle.Current != null) { onBaseSince = -1; return; }
             if (onBaseSince < 0) onBaseSince = Time.realtimeSinceStartup;
             if (Time.realtimeSinceStartup - onBaseSince < 8f) return;
-            // two Supply Drops first, through the client's own store call (the seeded save has 300 Credits)
-            var drop = Managers.Store.GetStoreItem(1);
-            if (bought < 2 && drop != null && Managers.Store.canAffordCoins(drop.GoldCost))
+            // store first, through the client's own store call: two standard drops (Credits), then one of each Volt
+            // Coin tier and one event crate (the seeded save has 300 Credits and 300 Volt Coins)
+            if (bought < ToBuy.Length)
             {
+                var item = Managers.Store.GetStoreItem(ToBuy[bought]);
                 bought++;
-                Debug.Log("[GAOffline] autotest: buying " + drop.Name + " " + bought);
-                Managers.Store.BuyStoreItem(drop);
+                if (item == null) { Debug.Log("[GAOffline] autotest: store item " + ToBuy[bought - 1] + " missing"); return; }
+                Debug.Log("[GAOffline] autotest: buying " + item.Name + " (" + item.Cost + ", type " + item.ItemType + "), Credits "
+                          + Managers.Player.Gold + ", Volt Coins " + Managers.Player.WarBonds);
+                Managers.Store.BuyStoreItem(item);
                 onBaseSince = Time.realtimeSinceStartup;
                 return;
             }

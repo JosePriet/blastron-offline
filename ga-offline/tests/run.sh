@@ -82,7 +82,11 @@ for i in $(seq 1 8); do
 done
 # after the tutorial battle the base points at STORE (the tutorial's Supply Drop step): open it and look around
 tap 1824 960 A_store; sleep 6; shot A_store_1
-for i in 1 2 3 4; do tap 960 540 A_store; sleep 5; shot A_store_$((i+1)); done
+# run 20: the store opens with the Supply Drop tile at top left (landscape 540,348); buy it, then tap through
+tap 540 348 A_store_drop; sleep 5; shot A_store_2
+for i in 3 4 5; do tap 960 540 A_store; sleep 5; shot A_store_$i; done
+# "Supply Drops" category (all drop tiers and event crates)
+tap 1824 960 A_store; sleep 6; tap 523 763 A_store_tiers; sleep 5; shot A_store_tiers
 a shell debuggerd -b $(gpid) > $OUT/A_stacks.txt 2>&1
 a shell cat $DATA/log.txt > $OUT/A_trace.txt 2>&1
 stopframes; gamelog A
