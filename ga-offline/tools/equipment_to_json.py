@@ -83,7 +83,10 @@ for stars_word, table in re.findall(r"==(\w+) Stars? Equipment==(.*?)\|\}", wiki
                 health = int(x)
             else:
                 skills.append({"id": SKILLS[stat], "x": int(x)})
-        e.update({"attack": attack, "health": health, "skill": skills, "picture": SPRITE.get(name, re.sub(r"\W+", "_", name.lower()))})
+        # no "skill" key without skills: the client offers an item with an empty skill list for any unit
+        if skills:
+            e["skill"] = skills
+        e.update({"attack": attack, "health": health, "picture": SPRITE.get(name, re.sub(r"\W+", "_", name.lower()))})
         items.append(e)
         recipes[name] = {"number": 1, "resource": parts}
 
@@ -93,7 +96,7 @@ for name, like in OURS.items():
 
 for name, (stars, picture) in COMPONENTS.items():
     items.append({"id": ids[name], "name": name, "rarity": stars, "level_req": 5 if name == "Havoc Tech" else 0,
-                  "attack": 0, "health": 0, "skill": [], "picture": picture, "component": 1})
+                  "attack": 0, "health": 0, "picture": picture, "component": 1})
 
 by_name = {e["name"]: e for e in items}
 fusions = []

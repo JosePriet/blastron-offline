@@ -82,8 +82,9 @@ namespace GAOffline
             // then the unit systems and the lab, through the client's own managers: upgrade a unit and speed it up, collect
             // the Generator, research Generator 2 and recipe 47, fuse the seeded max-level Cobra (4) and Bazooka Jeep (5)
             // into an RPG Tank and speed it up, salvage a unit; then equip the seeded Steelpoint Ammo on squad unit 1 and
-            // build a second one from the seeded Havoc Tech (its research is seeded) and speed it up
-            if (step < 14)
+            // build a second one from the seeded Havoc Tech (its research is seeded) and speed it up; equipping the seeded
+            // Light AP Rounds on the Cobra is refused (no Pierce)
+            if (step < 15)
             {
                 var t = Managers.Player.taskData;
                 Debug.Log("[GAOffline] autotest: unit step " + step + ", Credits " + Managers.Player.Gold + "/" + Managers.Player.MaxGold
@@ -104,9 +105,10 @@ namespace GAOffline
                     case 7: Managers.Fusion.startFusion(47, new List<int> { 4, 5 }, 0); break;
                     case 8: Managers.Store.rushForging(); break;
                     case 9: Managers.Store.SalvageCard(6); break;
-                    case 10: Managers.Equipment.equipItem(1, 11); break;
+                    case 10: Managers.Equipment.equipItem(1, 21); break;  // Light AP Rounds: Cobra has no Pierce, refused
                     case 11: Managers.Fusion.startFusion(1011, new List<int>(), 0); break;
                     case 12: Managers.Store.rushForging(); break;
+                    case 13: Managers.Equipment.equipItem(1, 11); break;
                 }
                 onBaseSince = Time.realtimeSinceStartup;
                 return;

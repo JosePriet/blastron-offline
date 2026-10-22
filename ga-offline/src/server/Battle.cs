@@ -130,7 +130,7 @@ namespace GAOffline
                 angle = card.angle, scale = card.scale, stats = new List<CardLevelStats>() };
             foreach (CardLevelStats l in card.stats)
             {
-                var c = new CardLevelStats { Level = l.Level, Attack = l.Attack + Json.I(e, "attack"), Health = l.Health + Json.I(e, "health"), Cost = l.Cost };
+                var c = new CardLevelStats { Level = l.Level, Attack = l.Attack > 0 ? l.Attack + Json.I(e, "attack") : 0, Health = l.Health + Json.I(e, "health"), Cost = l.Cost };
                 foreach (CardSkill k in l.Skills)
                 {
                     int bonus = 0;

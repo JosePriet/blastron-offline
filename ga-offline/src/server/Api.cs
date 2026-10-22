@@ -157,6 +157,7 @@ namespace GAOffline
             }
             var r = Squads(s);
             r["battle_data"] = b.ToJson();
+            r["user_inventory"] = Equipment.Inventory(s);  // components a win dropped
             return r;
         }
 

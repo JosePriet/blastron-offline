@@ -141,6 +141,27 @@ def self_fusions(name, seen=()):
     return 0
 
 
+def line(name):
+    """the unit and the units it was fused from with itself (Fast Raider: Fast Raider, Raider)"""
+    out = [name]
+    while True:
+        parts = next((p for p in (units.get(out[-1]) or {}).get("fusion_from") or [] if len(p) == 1 or p[0] == p[1]), None)
+        if not parts or parts[0] in out:
+            return out
+        out.append(parts[0])
+
+
+def rank_of(name, parts):
+    # a fusion of a dual or quad with a unit of its own line (Angry Hornet = Buzzing Hornet + Hornet) ranks one above
+    # that dual or quad; the wiki's rule (stars plus self-fusions) does not cover it
+    r = int(units[name].get("stars") or 1) + self_fusions(name)
+    for p in parts:
+        others = [q for q in parts if q != p]
+        if any(q in line(p)[1:] for q in others):
+            r = max(r, int(units[p].get("stars") or 1) + self_fusions(p) + 1)
+    return min(7, max(2, r))
+
+
 fusions, fskipped = [], []
 for name, u in sorted(units.items()):
     for parts in u.get("fusion_from") or []:
@@ -148,7 +169,7 @@ for name, u in sorted(units.items()):
         if name not in card or any(x not in card for x in parts):
             fskipped.append(name)
             continue
-        rank = min(7, max(2, int(u.get("stars") or 1) + self_fusions(name)))
+        rank = rank_of(name, parts)
         fuse, cost, research = RANKS[rank]
         fusions.append({"id": len(fusions) + 1, "name": name, "card_id": card[name], "rank": rank, "time": fuse,
                         "research_cost": cost, "research_time": research,
