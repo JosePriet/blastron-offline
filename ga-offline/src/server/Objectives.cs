@@ -6,8 +6,9 @@ namespace GAOffline
     // Objectives (the client's achievements: user_achievements, completed_achievements, completeAchievement). The
     // definitions were server-side and are not archived; these are the ones the 2014 videos show:
     //  - one story objective (type 10) per unlocked campaign, "Campaign completed.", progress in missions; its reward
-    //    is the campaign's unit reward (the video's Hard Shell objective) plus our 10 Volt Coins per campaign, which
-    //    move here from the campaign clear itself;
+    //    is the campaign's archived unit reward, if any (the video's Hard Shell objective showed a unit, but the
+    //    archive has none for Hard Shell), plus our 10 Volt Coins per campaign, which move here from the campaign
+    //    clear itself; the client shows one reward unit, so a campaign with two lists only the first;
     //  - "Helicarrier Unleashed" (type 3): Generator to level 2 for 100 Credits, Sensors to level 2 for 5 Volt Coins;
     //  - "Fuse Hyperion Darius" (type 8): the Hyperion Darius fusion for 5 Volt Coins.
     // Left out: "Kongregate to Victory" (needs a Kongregate account) and the timed "Arclight" event chain (its
@@ -63,7 +64,12 @@ namespace GAOffline
         static Dictionary<string, object> State(Save s)
         {
             var o = Json.O(s.D, "objectives");
-            if (o == null) { o = new Dictionary<string, object>(); s.D["objectives"] = o; }
+            if (o != null) return o;
+            // a save from before objectives was paid each campaign's reward at its clear: those count as collected
+            o = new Dictionary<string, object>();
+            foreach (Dictionary<string, object> c in GameData.Campaigns)
+                if (s.CampaignLevel(Json.I(c, "id")) > 0) o[(CampaignBase + Json.I(c, "id")).ToString()] = 2;
+            s.D["objectives"] = o;
             return o;
         }
 
