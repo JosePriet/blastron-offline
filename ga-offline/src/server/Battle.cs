@@ -76,7 +76,10 @@ namespace GAOffline
             foreach (var u in squad)
             {
                 var card = Map(uid++, Json.I(u, "unit_id"), Json.I(u, "level", 1));
-                if (card != null) h.DefendDeck.Add(card);
+                if (card == null) continue;
+                // the hand only lets a card be dragged when it carries the player's unit_index (UnitDragController)
+                card.UnitIndex = Json.I(u, "unit_index");
+                h.DefendDeck.Add(card);
             }
             h.CardMap.AddRange(h.AttackDeck);
             h.CardMap.AddRange(h.DefendDeck);
@@ -209,8 +212,12 @@ namespace GAOffline
         {
             var d = new Dictionary<string, object>();
             foreach (var c in cards)
-                d[c.CardUID.ToString()] = new Dictionary<string, object> {
+            {
+                var e = new Dictionary<string, object> {
                     { "unit_id", c.CardID }, { "level", c.Level }, { "health", c.Health }, { "attack", c.Attack }, { "slot", c.ForcedLocation } };
+                if (c.UnitIndex > 0) e["unit_index"] = c.UnitIndex;
+                d[c.CardUID.ToString()] = e;
+            }
             return d;
         }
 
