@@ -32,15 +32,17 @@ card = {n: min(v) for n, v in ids.items()}
 
 campaigns = {c["name"].lower(): c["id"] for c in missions["campaigns"] if c.get("name")}
 ALIASES = {"evasion maneuvers": "evasive maneuvers", "buring tide": "burning tide", "grinder": "the grinder"}
+# Rare and Elite are the 2014 store's names and prices (silver/gold keys and crate models). Platinum is a higher tier
+# shown from player level 10 (our level and price; later tiers were not seen in the footage).
 # share of a tier's drops per star rating, in hundredths of a percent; currency "sc" = Credits, "hc" = Volt Coins
 TIERS = [
     {"id": 1, "key": "standard", "name": "Supply Drop", "currency": "sc", "cost": 100, "model": "prefab_bronze_crate",
      "share": {1: 6925, 2: 2500, 3: 500, 5: 75}},
-    {"id": 2, "key": "silver", "name": "Silver Supply Drop", "currency": "hc", "cost": 20, "model": "prefab_silver_crate",
+    {"id": 2, "key": "silver", "name": "Rare Supply Drop", "currency": "hc", "cost": 45, "model": "prefab_silver_crate",
      "share": {2: 7000, 3: 2400, 4: 500, 5: 100}},
-    {"id": 3, "key": "gold", "name": "Gold Supply Drop", "currency": "hc", "cost": 40, "model": "prefab_gold_crate",
+    {"id": 3, "key": "gold", "name": "Elite Supply Drop", "currency": "hc", "cost": 100, "model": "prefab_gold_crate",
      "share": {2: 3000, 3: 6000, 4: 850, 5: 150}},
-    {"id": 4, "key": "platinum", "name": "Platinum Supply Drop", "currency": "hc", "cost": 60, "model": "prefab_platinum_crate",
+    {"id": 4, "key": "platinum", "name": "Platinum Supply Drop", "currency": "hc", "cost": 150, "model": "prefab_platinum_crate", "unlock_level": 10,
      "share": {3: 8900, 4: 1000, 5: 100}},
 ]
 FLOOR = 0.0075
@@ -98,7 +100,7 @@ for t in TIERS:
     assert five >= FLOOR - 1e-6, f"{t['key']}: 5* at {five:.3%}"
     print(f"{t['name']}: {len(pool)} units, " + ", ".join(
         f"{st}* {sum(p['weight'] for p in pool if p['stars'] == st) / total:.2%}" for st in sorted(t["share"])))
-    drops.append({k: t[k] for k in ("id", "key", "name", "currency", "cost", "model")} | {"pool": pool})
+    drops.append({k: t[k] for k in ("id", "key", "name", "currency", "cost", "model")} | {"unlock_level": t.get("unlock_level", 0), "pool": pool})
 
 # event crates: newest definition of each name, kept only when every unit in it exists in the rebuilt cards
 xml = re.sub(r"(?s)<!--.*?-->", "", open(BOXES, errors="ignore").read())

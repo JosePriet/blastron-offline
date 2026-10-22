@@ -67,7 +67,7 @@ namespace GAOffline
                 { "password", "offline" },
                 { "name", "Commander" },
                 { "install_date", DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss") },
-                { "money", 0 }, { "tokens", 0 }, { "salvage", 0 },
+                { "money", 0 }, { "tokens", 40 }, { "salvage", 0 },  // 40 Volt Coins at the start, as in the 2014 videos
                 { "level", 1 }, { "xp", 0 },
                 { "energy", 100 }, { "stamina", 10 },
                 { "flags", new Dictionary<string, object> { { "music", 1 }, { "sound", 1 }, { "tutorial", 0 }, { "autopilot", 0 }, { "speed", 1 } } },

@@ -18,6 +18,9 @@ namespace GAOffline
         // Volt Coins earned offline (user decision 2026-10-22; our amounts): first win of each mission, first clear
         // of each campaign. Achievements are not served yet.
         const int VoltFirstWin = 2, VoltCampaignClear = 10;
+        // Win rewards seen in the 2014 videos: 2-3 Scrap per win; 18-34 XP per win (our flat value is 25).
+        const int ScrapMin = 2, ScrapMax = 3, XpPerWin = 25;
+        static readonly System.Random Rng = new System.Random();
 
         public static Battle Current;
         public static Battle LastFinished;
@@ -161,8 +164,12 @@ namespace GAOffline
             {
                 int gold = Json.I(m, "gold");
                 reward["gold"] = gold;
-                reward["sp"] = Json.I(m, "sp");
-                s.Set("money", s.Int("money") + gold);
+                int sp = Json.I(m, "sp") > 0 ? Json.I(m, "sp") : Rng.Next(ScrapMin, ScrapMax + 1);
+                reward["sp"] = sp;
+                reward["xp"] = XpPerWin;
+                Store.AddMoney(s, gold);
+                s.Set("salvage", Math.Min(Api.MaxSalvage, s.Int("salvage") + sp));
+                Api.AddXp(s, XpPerWin);
                 var done = Json.O(s.D, "missions");
                 var md = Json.O(done, MissionId.ToString()) ?? new Dictionary<string, object>();
                 if (Json.I(md, "number") == 0) s.Set("tokens", s.Int("tokens") + VoltFirstWin);

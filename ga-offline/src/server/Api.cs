@@ -11,6 +11,21 @@ namespace GAOffline
         public const string Version = "offline-1";
         // squad health at Squad Bay level 1 (archived wiki, Research_Lab page: 400/550/750/1000/1250 by level)
         const int SquadHealth = 400;
+        public const int MaxSalvage = 9999;
+        // XP from one level to the next, levels 1-7, read off the 2014 videos (40/40/40/80/100/150/150). Past level 7
+        // nothing was seen; our extension adds 50 per level.
+        static readonly int[] LevelXp = { 40, 40, 40, 80, 100, 150, 150 };
+        static int LevelSpan(int level) { return level <= LevelXp.Length ? LevelXp[level - 1] : 150 + 50 * (level - LevelXp.Length); }
+        // save "xp" is the running total; the client shows (xp - base_xp) / (next_xp - base_xp)
+        static int BaseXp(int level) { int t = 0; for (int l = 1; l < level; l++) t += LevelSpan(l); return t; }
+
+        public static void AddXp(Save s, int n)
+        {
+            int xp = s.Int("xp") + n, level = Math.Max(1, s.Int("level"));
+            while (xp >= BaseXp(level + 1)) level++;
+            s.Set("xp", xp);
+            s.Set("level", level);
+        }
 
         public static long Now { get { return (long)(DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds; } }
 
@@ -167,7 +182,7 @@ namespace GAOffline
                 { "last_update_time", Now },
                 { "tokens", s.Int("tokens") },
                 { "money", s.Int("money") },
-                { "money_cap", 999999 },
+                { "money_cap", Store.MoneyCap(s) },
                 { "energy", s.Int("energy") },
                 { "energy_recharge_time", 60 },
                 { "stamina", s.Int("stamina") },
@@ -178,9 +193,9 @@ namespace GAOffline
                 { "active_deck", s.Int("active_deck") },
                 { "level", s.Int("level") },
                 { "xp", s.Int("xp") },
-                { "base_xp", 0 },
-                { "next_xp", 100 },
-                { "caps", new Dictionary<string, object> { { "max_salvage", 9999 }, { "max_cards", 500 } } },
+                { "base_xp", BaseXp(Math.Max(1, s.Int("level"))) },
+                { "next_xp", BaseXp(Math.Max(1, s.Int("level")) + 1) },
+                { "caps", new Dictionary<string, object> { { "max_salvage", MaxSalvage }, { "max_cards", 500 } } },
                 { "has_kong_id", 0 },
             };
         }
