@@ -65,16 +65,20 @@ grep -q Success $OUT/A_install.txt || { log "install FAILED"; exit 0; }
 a shell dumpsys package $PKG | grep -E "primaryCpuAbi|targetSdk" > $OUT/A_abi.txt
 frames a; launch
 for i in 1 2 3 4 5 6; do sleep 10; shot A_boot_$i; done
-# Android 4.4 takes input in the display's natural (portrait 1080x1920) coordinates, the same frame as screencap:
-# positions below are read straight off the screenshots.
 hintok
-# tutorial turns: drag hand card 1, then card 2, to the highlighted slot (the tutorial accepts only the card its
-# pointer shows), then tap through the dialogue
+# Tutorial turns: drag hand card 1 to the slot the tutorial points at (it accepts only that card and slot:
+# battlefield2.front, battlefield2.back, battlefield3.front), after tapping through the dialogue.
+# Run 16: drags in natural portrait coordinates did nothing while centre taps worked, so the game probably sees
+# touches in the rotated landscape frame (1920x1080). Both frames are tried; wrong drags are ignored by the tutorial.
+# Landscape positions read off the run 16 screenshot: card 1 (156,912); front/back of lane 2 (744,468)/(516,468);
+# front of lane 3 (744,624).
+drag() { log "drag $1,$2 -> $3,$4 ($5)"; a shell input swipe $1 $2 $3 $4 1500; sleep 3; }
 for i in $(seq 1 8); do
   hintok
-  log "swipe card 1 -> slot (A_tutorial)"; a shell input swipe 150 150 605 740 1500; sleep 3
-  log "swipe card 2 -> slot (A_tutorial)"; a shell input swipe 150 420 605 740 1500; sleep 4; shot A_tut_${i}a
-  tap 540 960 A_tutorial; sleep 4; tap 540 960 A_tutorial; sleep 4; shot A_tut_${i}b
+  tap 960 540 A_tutorial; sleep 4; tap 960 540 A_tutorial; sleep 4; shot A_tut_${i}a
+  drag 156 912 744 468 lane2_front; drag 156 912 516 468 lane2_back; drag 156 912 744 624 lane3_front
+  drag 167 156 611 744 portrait_lane2_front
+  sleep 3; shot A_tut_${i}b
 done
 a shell debuggerd -b $(gpid) > $OUT/A_stacks.txt 2>&1
 a shell cat $DATA/log.txt > $OUT/A_trace.txt 2>&1
