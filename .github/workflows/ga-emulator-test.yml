@@ -24,12 +24,12 @@ jobs:
       - name: Emulator run
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 23
+          api-level: 19
           arch: x86
           target: google_apis
           profile: Nexus 5
           cores: 4
-          ram-size: 2048M
+          ram-size: 1536M
           disk-size: 6000M
           emulator-options: -no-window -gpu swiftshader_indirect -feature -GLESDynamicVersion -noaudio -no-boot-anim -no-snapshot
           disable-animations: true
