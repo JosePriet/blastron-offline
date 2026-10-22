@@ -72,7 +72,7 @@ hintok
 # touches in the rotated landscape frame (1920x1080). Both frames are tried; wrong drags are ignored by the tutorial.
 # Landscape positions read off the run 16 screenshot: card 1 (156,912); front/back of lane 2 (744,468)/(516,468);
 # front of lane 3 (744,624).
-drag() { log "drag $1,$2 -> $3,$4 ($5)"; a shell input swipe $1 $2 $3 $4 1500; sleep 3; }
+drag() { log "drag $1,$2 -> $3,$4 ($5)"; a shell input swipe $1 $2 $3 $4 4000; sleep 2; }
 for i in $(seq 1 8); do
   hintok
   tap 960 540 A_tutorial; sleep 4; tap 960 540 A_tutorial; sleep 4; shot A_tut_${i}a

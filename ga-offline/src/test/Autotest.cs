@@ -10,6 +10,7 @@ namespace GAOffline
     public class Autotest : MonoBehaviour
     {
         int wanted = -1, started, bought;
+        bool off;
         float next, onBaseSince = -1, finishedAt = -1;
         Battle seen;
 
@@ -20,14 +21,35 @@ namespace GAOffline
             if (File.Exists(Path.Combine(LocalServer.Dir, "autotest"))) PlayerPrefs.SetInt("GPGStartup", 1);
         }
 
+        // input diagnostics for the emulator's injected touches (run A's tutorial drags): where Unity sees each touch
+        // begin and end, and whether the game's drag controller picked up a hand card
+        void Start()
+        {
+            FingerGestures.OnFingerDragBegin += (finger, pos, start) =>
+                Debug.Log("[GAOffline] autotest: finger drag begin at " + pos + " from " + start);
+            Messenger<UnitInfoThumbnail>.AddListener("UNIT_DRAG_STARTED",
+                t => Debug.Log("[GAOffline] autotest: unit drag started, unit " + t.getUnitIndex()));
+        }
+
+        void LogTouches()
+        {
+            for (int i = 0; i < Input.touchCount; i++)
+            {
+                var t = Input.GetTouch(i);
+                if (t.phase == TouchPhase.Began || t.phase == TouchPhase.Ended)
+                    Debug.Log("[GAOffline] autotest: touch " + t.phase + " at " + t.position + " on " + Screen.width + "x" + Screen.height);
+            }
+        }
+
         void Update()
         {
-            if (Time.realtimeSinceStartup < next) return;
+            LogTouches();
+            if (off || Time.realtimeSinceStartup < next) return;
             next = Time.realtimeSinceStartup + 2f;
             if (wanted < 0)
             {
                 string f = Path.Combine(LocalServer.Dir, "autotest");
-                if (!File.Exists(f)) { enabled = false; return; }
+                if (!File.Exists(f)) { off = true; return; }  // driver off; touch logging stays on
                 int.TryParse(File.ReadAllText(f).Trim(), out wanted);
                 Debug.Log("[GAOffline] autotest: " + wanted + " battles");
             }
