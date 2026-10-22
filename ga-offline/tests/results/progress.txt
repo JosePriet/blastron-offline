@@ -1,11 +1,11 @@
 [65s] run O: original APK
 [86s] no sdk warning found
-[101s] shot O_1 pid=3069
-[117s] shot O_2 pid=3069
-[132s] shot O_3 pid=3069
-[141s] O: 622 game log lines
+[102s] shot O_1 pid=3066
+[117s] shot O_2 pid=3066
+[133s] shot O_3 pid=3066
+[141s] O: 624 game log lines
 [141s] run A: offline APK, fresh
-[163s] no sdk warning found
+[162s] no sdk warning found
 [174s] shot A_boot_1 pid=3554
 [185s] shot A_boot_2 pid=3554
 [196s] shot A_boot_3 pid=3554
@@ -13,58 +13,73 @@
 [218s] shot A_boot_5 pid=3554
 [229s] shot A_boot_6 pid=3554
 [229s] tap 1250 420 (A_hint_ok)
-[232s] tap 960 540 (A_tutorial)
-[240s] shot A_tut_1 pid=3554
+[232s] swipe card 1 -> slot (A_tutorial)
+[240s] shot A_tut_1a pid=3554
 [240s] tap 960 540 (A_tutorial)
-[248s] shot A_tut_2 pid=3554
-[248s] tap 960 540 (A_tutorial)
-[257s] shot A_tut_3 pid=3554
-[257s] tap 960 540 (A_tutorial)
-[265s] shot A_tut_4 pid=3554
-[265s] tap 960 540 (A_tutorial)
-[273s] shot A_tut_5 pid=3554
-[273s] tap 960 540 (A_tutorial)
-[282s] shot A_tut_6 pid=3554
-[282s] tap 960 540 (A_tutorial)
-[290s] shot A_tut_7 pid=3554
-[290s] tap 960 540 (A_tutorial)
-[298s] shot A_tut_8 pid=3554
+[244s] tap 960 540 (A_tutorial)
+[250s] shot A_tut_1b pid=3554
+[250s] swipe card 1 -> slot (A_tutorial)
+[258s] shot A_tut_2a pid=3554
+[258s] tap 960 540 (A_tutorial)
+[262s] tap 960 540 (A_tutorial)
+[269s] shot A_tut_2b pid=3554
+[269s] swipe card 1 -> slot (A_tutorial)
+[276s] shot A_tut_3a pid=3554
+[276s] tap 960 540 (A_tutorial)
+[280s] tap 960 540 (A_tutorial)
+[287s] shot A_tut_3b pid=3554
+[287s] swipe card 1 -> slot (A_tutorial)
+[294s] shot A_tut_4a pid=3554
+[294s] tap 960 540 (A_tutorial)
 [298s] tap 960 540 (A_tutorial)
-[306s] shot A_tut_9 pid=3554
-[306s] tap 960 540 (A_tutorial)
-[315s] shot A_tut_10 pid=3554
-[315s] tap 960 540 (A_tutorial)
-[323s] shot A_tut_11 pid=3554
-[323s] tap 960 540 (A_tutorial)
-[331s] shot A_tut_12 pid=3554
-[339s] A: 2123 game log lines
-[339s] run B: seeded save (campaign 1 done)
-[360s] no sdk warning found
-[375s] shot B_boot pid=4436
-[375s] back key (Google Play Games sign-in screen)
-[391s] shot B_1 pid=4436
-[406s] shot B_2 pid=4436
-[421s] shot B_3 pid=4436
-[436s] shot B_4 pid=4436
-[451s] shot B_5 pid=4436
-[467s] shot B_6 pid=4436
-[482s] shot B_7 pid=4436
-[497s] shot B_8 pid=4436
-[512s] shot B_9 pid=4436
-[527s] shot B_10 pid=4436
-[543s] shot B_11 pid=4436
-[558s] shot B_12 pid=4436
-[573s] shot B_13 pid=4436
-[588s] shot B_14 pid=4436
-[603s] shot B_15 pid=4436
-[619s] shot B_16 pid=4436
-[634s] shot B_17 pid=4436
-[649s] shot B_18 pid=4436
-[664s] shot B_19 pid=4436
-[680s] shot B_20 pid=4436
-[695s] shot B_21 pid=4436
-[710s] shot B_22 pid=4436
-[725s] shot B_23 pid=4436
-[740s] shot B_24 pid=4436
-[745s] B: 1716 game log lines
-[745s] done
+[305s] shot A_tut_4b pid=3554
+[305s] swipe card 1 -> slot (A_tutorial)
+[312s] shot A_tut_5a pid=3554
+[312s] tap 960 540 (A_tutorial)
+[316s] tap 960 540 (A_tutorial)
+[323s] shot A_tut_5b pid=3554
+[323s] swipe card 1 -> slot (A_tutorial)
+[330s] shot A_tut_6a pid=3554
+[330s] tap 960 540 (A_tutorial)
+[334s] tap 960 540 (A_tutorial)
+[340s] shot A_tut_6b pid=3554
+[340s] swipe card 1 -> slot (A_tutorial)
+[348s] shot A_tut_7a pid=3554
+[348s] tap 960 540 (A_tutorial)
+[352s] tap 960 540 (A_tutorial)
+[358s] shot A_tut_7b pid=3554
+[358s] swipe card 1 -> slot (A_tutorial)
+[366s] shot A_tut_8a pid=3554
+[366s] tap 960 540 (A_tutorial)
+[370s] tap 960 540 (A_tutorial)
+[376s] shot A_tut_8b pid=3554
+[384s] A: 2129 game log lines
+[384s] run B: seeded save (campaign 1 done)
+[405s] no sdk warning found
+[422s] shot B_boot pid=4676
+[438s] shot B_1 pid=4676
+[454s] shot B_2 pid=4676
+[470s] shot B_3 pid=4676
+[487s] shot B_4 pid=4676
+[503s] shot B_5 pid=4676
+[519s] shot B_6 pid=4676
+[536s] shot B_7 pid=4676
+[552s] shot B_8 pid=4676
+[569s] shot B_9 pid=4676
+[585s] shot B_10 pid=4676
+[601s] shot B_11 pid=4676
+[618s] shot B_12 pid=4676
+[634s] shot B_13 pid=4676
+[650s] shot B_14 pid=4676
+[667s] shot B_15 pid=4676
+[683s] shot B_16 pid=4676
+[700s] shot B_17 pid=4676
+[716s] shot B_18 pid=4676
+[732s] shot B_19 pid=4676
+[749s] shot B_20 pid=4676
+[765s] shot B_21 pid=4676
+[781s] shot B_22 pid=4676
+[798s] shot B_23 pid=4676
+[814s] shot B_24 pid=4676
+[818s] B: 3000 game log lines
+[818s] done
