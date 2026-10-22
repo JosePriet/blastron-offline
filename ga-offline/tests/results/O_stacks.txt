@@ -1,67 +1,66 @@
-Sending request to dump task 3056.
+Sending request to dump task 3072.
 
 
------ pid 3056 at 2026-10-22 14:52:33 -----
+----- pid 3072 at 2026-10-22 16:22:50 -----
 Cmd line: com.kongregate.mobile.globalassault.google
 
-"lassault.google" sysTid=3056
+"lassault.google" sysTid=3072
   #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
   #01  pc fffffffe  <unknown>
-  #02  pc 0004dacf  [heap]
+  #02  pc 00048e3f  [heap]
   #03  pc 0001e0ff  /system/lib/libutils.so
   #04  pc 00012e8f  /system/lib/libutils.so
   #05  pc 00012e9f  /system/lib/libutils.so
   #06  pc 00012eaf  /system/lib/libutils.so
   #07  pc 00012ebf  /system/lib/libutils.so
   #08  pc ffffffff  <unknown>
-  #09  pc 007a608f  /system/usr/icu/icudt51l.dat
-  #10  pc 000a06ae  [stack:3059]
+  #09  pc 007d608f  /system/usr/icu/icudt51l.dat
 
-"GC" sysTid=3058
+"GC" sysTid=3076
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
   #01  pc 0000843f  [heap]
 
-"Signal Catcher" sysTid=3059
+"Signal Catcher" sysTid=3077
   #00  pc 0003d66b  /system/lib/libc.so (__rt_sigtimedwait+27)
-  #01  pc 000fcc97  [stack:3059]
+  #01  pc 000fcc97  [stack:3077]
 
-"JDWP" sysTid=3060
+"JDWP" sysTid=3078
   #00  pc 0003d9b3  /system/lib/libc.so (recvmsg+19)
-  #01  pc 005650c5  /dev/ashmem/dalvik-LinearAlloc (deleted)
+  #01  pc 61d47de5  <unknown>
 
-"Compiler" sysTid=3061
+"Compiler" sysTid=3079
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
   #01  pc 00072193  /system/lib/libdvm.so
 
-"ReferenceQueueD" sysTid=3062
+"ReferenceQueueD" sysTid=3080
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 000260af  [heap]
+  #01  pc 0004cccf  [heap]
 
-"FinalizerDaemon" sysTid=3063
+"FinalizerDaemon" sysTid=3081
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 0002697f  [heap]
+  #01  pc 0004d59f  [heap]
 
-"FinalizerWatchd" sysTid=3066
+"FinalizerWatchd" sysTid=3082
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 0004c01f  [heap]
+  #01  pc 000473df  [heap]
 
-"Binder_1" sysTid=3067
+"Binder_1" sysTid=3083
   #00  pc 0003c426  /system/lib/libc.so (__ioctl+22)
-  #01  pc 00046acf  [heap]
+  #01  pc 00049c6f  [heap]
 
-"Binder_2" sysTid=3068
+"Binder_2" sysTid=3084
   #00  pc 0003c426  /system/lib/libc.so (__ioctl+22)
-  #01  pc 0004d75f  [heap]
+  #01  pc 00048b1f  [heap]
 
-"watchdog" sysTid=3070
+"watchdog" sysTid=3090
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 00019d27  [heap]
+  #01  pc 00019cf7  [heap]
 
-"asyncProcessor" sysTid=3071
+"asyncProcessor" sysTid=3091
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
   #01  pc 00119b73  <unknown>
 
-"UnityMain" sysTid=3074
+"UnityMain" sysTid=3093
   #00  pc 0003bfe6  /system/lib/libc.so (read+22)
   #01  pc 00000007  <unknown>
   #02  pc ffffffff  <unknown>
@@ -69,66 +68,65 @@ Cmd line: com.kongregate.mobile.globalassault.google
   #04  pc 0000528f  /system/lib/libOpenglSystemCommon.so
   #05  pc 0000549f  /system/lib/libOpenglSystemCommon.so
 
-"FMODAudioDevice" sysTid=3078
+"FMODAudioDevice" sysTid=3094
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
   #01  pc ffffffff  <unknown>
-  #02  pc 0021897f  [heap]
+  #02  pc 001b9b9f  [heap]
   #03  pc 0005f3cf  /system/lib/libmedia.so
   #04  pc 00012e8f  /system/lib/libutils.so
   #05  pc 0005eb1f  /system/lib/libmedia.so
   #06  pc 0005ebcf  /system/lib/libmedia.so
   #07  pc 0005eb2f  /system/lib/libmedia.so
   #08  pc ffffffff  <unknown>
-  #09  pc 007a608f  /system/usr/icu/icudt51l.dat
-  #10  pc 000a06ae  [stack:3059]
+  #09  pc 007d608f  /system/usr/icu/icudt51l.dat
 
-"UnityMain" sysTid=3079
+"UnityMain" sysTid=3095
   #00  pc 0003d1e1  /system/lib/libc.so (nanosleep+17)
   #01  pc 00003bc3  <unknown>
   #02  pc 0000bc0c  /system/lib/libc.so (__thread_entry+236)
   #03  pc 0003e075  /system/lib/libc.so (__pthread_clone+69)
   #04  pc 00230fa9  /data/app-lib/com.kongregate.mobile.globalassault.google-1/libmono.so
   #05  pc ffffffff  <unknown>
-  #06  pc 00067aef  [heap]
-  #07  pc 0005460f  [heap]
-  #08  pc 00027c9f  [heap]
-  #09  pc 0002016f  [heap]
-  #10  pc 0001d8ff  [heap]
-  #11  pc 00019d4f  [heap]
-  #12  pc 0004ce2f  [heap]
-  #13  pc 0004c55f  [heap]
-  #14  pc 0004c0ff  [heap]
-  #15  pc 00026a5f  [heap]
-  #16  pc 0002618f  [heap]
-  #17  pc 0002544f  [heap]
-  #18  pc 000482bf  [heap]
-  #19  pc 000479ef  [heap]
+  #06  pc 00067ddf  [heap]
+  #07  pc 000548ff  [heap]
+  #08  pc 000259df  [heap]
+  #09  pc 0002013f  [heap]
+  #10  pc 0001d8cf  [heap]
+  #11  pc 00019d1f  [heap]
+  #12  pc 000481ef  [heap]
+  #13  pc 0004791f  [heap]
+  #14  pc 000474bf  [heap]
+  #15  pc 0004d67f  [heap]
+  #16  pc 0004cdaf  [heap]
+  #17  pc 000265ef  [heap]
+  #18  pc 00025d1f  [heap]
+  #19  pc 0002544f  [heap]
 
-"__MONO__" sysTid=3080
+"__MONO__" sysTid=3096
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"UnityWorker" sysTid=3081
+"UnityWorker" sysTid=3098
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"UnityWorker" sysTid=3082
+"UnityWorker" sysTid=3099
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"UnityWorker" sysTid=3083
+"UnityWorker" sysTid=3100
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"UnityMain" sysTid=3084
+"UnityMain" sysTid=3101
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"UnityMain" sysTid=3085
+"UnityMain" sysTid=3102
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"UnityMain" sysTid=3086
+"UnityMain" sysTid=3103
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"UnitySubstanceT" sysTid=3087
+"UnitySubstanceT" sysTid=3104
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"FMOD stream thr" sysTid=3089
+"FMOD stream thr" sysTid=3106
   #00  pc 0003d1e1  /system/lib/libc.so (nanosleep+17)
   #01  pc 0098967f  <unknown>
   #02  pc 00692536  /data/app-lib/com.kongregate.mobile.globalassault.google-1/libunity.so
@@ -136,212 +134,160 @@ Cmd line: com.kongregate.mobile.globalassault.google
   #04  pc 0000bc0c  /system/lib/libc.so (__thread_entry+236)
   #05  pc 0003e075  /system/lib/libc.so (__pthread_clone+69)
   #06  pc 00695f7f  /data/app-lib/com.kongregate.mobile.globalassault.google-1/libunity.so
-  #07  pc 0020f95f  [heap]
-  #08  pc 001be3cf  [heap]
+  #07  pc 0020f63f  [heap]
+  #08  pc 001eda3f  [heap]
   #09  pc 0019a66f  [heap]
   #10  pc 0019a41f  [heap]
   #11  pc 0019a1cf  [heap]
   #12  pc 00199f7f  [heap]
-  #13  pc 00194eef  [heap]
-  #14  pc 00194c9f  [heap]
-  #15  pc 00194a4f  [heap]
-  #16  pc 00067aef  [heap]
-  #17  pc 0005460f  [heap]
-  #18  pc 00027c9f  [heap]
-  #19  pc 0002016f  [heap]
-  #20  pc 0001d8ff  [heap]
-  #21  pc 00019d4f  [heap]
-  #22  pc 0004ce2f  [heap]
-  #23  pc 0004c55f  [heap]
-  #24  pc 0004c0ff  [heap]
-  #25  pc 00026a5f  [heap]
-  #26  pc 0002618f  [heap]
-  #27  pc 0002544f  [heap]
-  #28  pc 000482bf  [heap]
-  #29  pc 000479ef  [heap]
+  #13  pc 00194d9f  [heap]
+  #14  pc 00194b4f  [heap]
+  #15  pc 001948ff  [heap]
+  #16  pc 00067ddf  [heap]
+  #17  pc 000548ff  [heap]
+  #18  pc 000259df  [heap]
+  #19  pc 0002013f  [heap]
+  #20  pc 0001d8cf  [heap]
+  #21  pc 00019d1f  [heap]
+  #22  pc 000481ef  [heap]
+  #23  pc 0004791f  [heap]
+  #24  pc 000474bf  [heap]
+  #25  pc 0004d67f  [heap]
+  #26  pc 0004cdaf  [heap]
+  #27  pc 000265ef  [heap]
+  #28  pc 00025d1f  [heap]
+  #29  pc 0002544f  [heap]
 
-"AudioTrack" sysTid=3090
+"AudioTrack" sysTid=3107
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 0020f2e7  [heap]
+  #01  pc 0020c747  [heap]
 
-"OkHttp Connecti" sysTid=3091
+"OkHttp Connecti" sysTid=3108
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 0021cc8f  [heap]
+  #01  pc 0001932f  [heap]
 
-"UnityPreload" sysTid=3093
+"UnityPreload" sysTid=3110
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"pool-3-thread-1" sysTid=3096
+"pool-3-thread-1" sysTid=3112
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 0157568f  [heap]
+  #01  pc 015731ff  [heap]
 
-"AsyncTask #1" sysTid=3097
+"AsyncTask #1" sysTid=3113
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 015a48ef  [heap]
+  #01  pc 00ef84cf  [heap]
 
-"KongregateAPI-W" sysTid=3098
+"KongregateAPI-W" sysTid=3114
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 015a4d5f  [heap]
+  #01  pc 015abeaf  [heap]
 
-"Binder_3" sysTid=3102
-  #00  pc 0003c426  /system/lib/libc.so (__ioctl+22)
-  #01  pc 00f21e1f  [heap]
-
-"CookieSyncManag" sysTid=3103
+"CookieSyncManag" sysTid=3118
   #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
-  #01  pc 000413df  <unknown>
-  #02  pc 0160a20f  [heap]
+  #01  pc 000413de  <unknown>
+  #02  pc 015fd41f  [heap]
   #03  pc 0001e0ff  /system/lib/libutils.so
   #04  pc 00012e8f  /system/lib/libutils.so
   #05  pc 00012e9f  /system/lib/libutils.so
   #06  pc 00012eaf  /system/lib/libutils.so
   #07  pc 00012ebf  /system/lib/libutils.so
   #08  pc ffffffff  <unknown>
-  #09  pc 007a608f  /system/usr/icu/icudt51l.dat
-  #10  pc 000a06ae  [stack:3059]
+  #09  pc 007d608f  /system/usr/icu/icudt51l.dat
 
-"RefQueueWorker@" sysTid=3104
+"RefQueueWorker@" sysTid=3119
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 015e1b5f  [heap]
+  #01  pc 015fad9f  [heap]
 
-".ProcessManager" sysTid=3110
+".ProcessManager" sysTid=3125
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 0163898f  [heap]
+  #01  pc 0163f8ef  [heap]
 
-"pool-6-thread-1" sysTid=3116
+"pool-6-thread-1" sysTid=3128
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 01661e1f  [heap]
+  #01  pc 016603ff  [heap]
 
-"pool-7-thread-1" sysTid=3118
+"pool-7-thread-1" sysTid=3129
   #00  pc 0003dfe6  /system/lib/libc.so (poll+22)
 
-"pool-8-thread-1" sysTid=3119
+"pool-8-thread-1" sysTid=3130
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 0166898f  [heap]
+  #01  pc 0166572f  [heap]
 
-"pool-9-thread-1" sysTid=3120
+"pool-9-thread-1" sysTid=3131
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 0166936f  [heap]
+  #01  pc 0166618f  [heap]
 
-"pool-11-thread-" sysTid=3121
+"pool-11-thread-" sysTid=3132
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 01679d9f  [heap]
+  #01  pc 016674ff  [heap]
 
-"Adjust" sysTid=3122
+"Adjust" sysTid=3134
   #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
   #01  pc fffffffe  <unknown>
-  #02  pc 0166dc1f  [heap]
+  #02  pc 016684df  [heap]
   #03  pc 0001e0ff  /system/lib/libutils.so
   #04  pc 00012e8f  /system/lib/libutils.so
   #05  pc 00012e9f  /system/lib/libutils.so
   #06  pc 00012eaf  /system/lib/libutils.so
   #07  pc 00012ebf  /system/lib/libutils.so
   #08  pc ffffffff  <unknown>
-  #09  pc 007a608f  /system/usr/icu/icudt51l.dat
-  #10  pc 000a06ae  [stack:3059]
+  #09  pc 007d608f  /system/usr/icu/icudt51l.dat
 
-"Adjust" sysTid=3124
+"Adjust" sysTid=3135
   #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
   #01  pc fffffffe  <unknown>
-  #02  pc 01677c1f  [heap]
+  #02  pc 01684d6f  [heap]
   #03  pc 0001e0ff  /system/lib/libutils.so
   #04  pc 00012e8f  /system/lib/libutils.so
   #05  pc 00012e9f  /system/lib/libutils.so
   #06  pc 00012eaf  /system/lib/libutils.so
   #07  pc 00012ebf  /system/lib/libutils.so
   #08  pc ffffffff  <unknown>
-  #09  pc 007a608f  /system/usr/icu/icudt51l.dat
-  #10  pc 000a06ae  [stack:3059]
+  #09  pc 007d608f  /system/usr/icu/icudt51l.dat
 
-"Adjust" sysTid=3125
+"Adjust" sysTid=3136
   #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
   #01  pc fffffffe  <unknown>
-  #02  pc 0167810f  [heap]
+  #02  pc 0168532f  [heap]
   #03  pc 0001e0ff  /system/lib/libutils.so
   #04  pc 00012e8f  /system/lib/libutils.so
   #05  pc 00012e9f  /system/lib/libutils.so
   #06  pc 00012eaf  /system/lib/libutils.so
   #07  pc 00012ebf  /system/lib/libutils.so
   #08  pc ffffffff  <unknown>
-  #09  pc 007a608f  /system/usr/icu/icudt51l.dat
-  #10  pc 000a06ae  [stack:3059]
+  #09  pc 007d608f  /system/usr/icu/icudt51l.dat
 
-"pool-12-thread-" sysTid=3127
+"pool-12-thread-" sysTid=3138
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 0167277f  [heap]
+  #01  pc 016711cf  [heap]
 
-"pool-14-thread-" sysTid=3129
+"pool-14-thread-" sysTid=3140
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 016722bf  [heap]
+  #01  pc 01669f6f  [heap]
 
-"KongregateAPI-h" sysTid=3130
+"KongregateAPI-h" sysTid=3141
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 0167d1af  [heap]
-
-"lassault.google" sysTid=3210
-  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-
-"lassault.google" sysTid=3211
-  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-
-"lassault.google" sysTid=3212
-  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
-
-"lassault.google" sysTid=3213
-  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-
-"lassault.google" sysTid=3214
-  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-
-"lassault.google" sysTid=3215
-  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
-
-"lassault.google" sysTid=3216
-  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
-
-"lassault.google" sysTid=3217
-  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-
-"lassault.google" sysTid=3218
-  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-
-"lassault.google" sysTid=3219
-  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-
-"lassault.google" sysTid=3220
-  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-
-"lassault.google" sysTid=3221
-  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
-
-"CleanupReferenc" sysTid=3223
-  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 0173d8ef  [heap]
-
-"lassault.google" sysTid=3224
-  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 000fcb03  [stack:3224]
+  #01  pc 0167253f  [heap]
 
 "lassault.google" sysTid=3225
-  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
 "lassault.google" sysTid=3226
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"OptimizingCompi" sysTid=3227
+"lassault.google" sysTid=3227
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
+
+"lassault.google" sysTid=3228
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"v8:SweeperThrea" sysTid=3228
+"lassault.google" sysTid=3229
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"v8:SweeperThrea" sysTid=3229
-  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+"lassault.google" sysTid=3230
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
 
-"v8:SweeperThrea" sysTid=3230
-  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-
-"v8:SweeperThrea" sysTid=3231
-  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+"lassault.google" sysTid=3231
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
 
 "lassault.google" sysTid=3232
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
@@ -354,27 +300,74 @@ Cmd line: com.kongregate.mobile.globalassault.google
 
 "lassault.google" sysTid=3235
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 017e8edf  [heap]
 
-"lassault.google" sysTid=3238
+"lassault.google" sysTid=3236
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
+
+"CleanupReferenc" sysTid=3238
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 017bc14f  [heap]
 
 "lassault.google" sysTid=3239
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 000fcb03  [stack:3239]
+
+"lassault.google" sysTid=3240
+  #00  pc 0003df1b  /system/lib/libc.so (epoll_wait+27)
 
 "lassault.google" sysTid=3241
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
 
-"lassault.google" sysTid=3243
+"OptimizingCompi" sysTid=3242
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 017e8edf  [heap]
 
-"pool-20-thread-" sysTid=3361
+"v8:SweeperThrea" sysTid=3243
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 018da41f  [heap]
 
-"AsyncTask #2" sysTid=3364
+"v8:SweeperThrea" sysTid=3244
   #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
-  #01  pc 01803e5f  [heap]
 
------ end 3056 -----
+"v8:SweeperThrea" sysTid=3245
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"v8:SweeperThrea" sysTid=3246
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3247
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3248
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3249
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3250
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 017ecfbf  [heap]
+
+"lassault.google" sysTid=3252
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3254
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3255
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3257
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+
+"lassault.google" sysTid=3259
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 017ecfbf  [heap]
+
+"pool-20-thread-" sysTid=3392
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 01a0f01f  [heap]
+
+"AsyncTask #2" sysTid=3395
+  #00  pc 0003e179  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 019abd8f  [heap]
+
+----- end 3072 -----
