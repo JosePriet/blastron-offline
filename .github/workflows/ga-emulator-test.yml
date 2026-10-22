@@ -37,12 +37,13 @@ jobs:
           script: OUT=out ABI= timeout 1500 bash ga-offline/tests/run.sh || true
       - name: Build videos from frames
         if: always()
+        timeout-minutes: 8
         run: |
           mkdir -p out/frames
-          sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || true
+          timeout 240 sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || true
           for p in o a b; do
             if ls out/frames/$p*.png >/dev/null 2>&1; then
-              ffmpeg -loglevel error -framerate 2 -pattern_type glob -i "out/frames/$p*.png" -vf "scale=1140:-2,format=yuv420p" -c:v libx264 -crf 30 out/video_$p.mp4 || true
+              timeout 180 ffmpeg -nostdin -loglevel error -framerate 2 -pattern_type glob -i "out/frames/$p*.png" -vf "scale=1140:-2,format=yuv420p" -c:v libx264 -crf 30 out/video_$p.mp4 || true
             fi
           done
           rm -rf out/frames out/.stop

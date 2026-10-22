@@ -32,6 +32,7 @@ hintok() {
   xy=$(python3 $T/tap.py $OUT/ui.xml '^OK\b|^Got it' 2>/dev/null)
   if [ -n "$xy" ]; then tap $xy hint_ok; sleep 2; else log "hint showing, no OK found"; cp $OUT/ui.xml $OUT/ui_hint.xml; fi
 }
+trap 'touch $OUT/.stop; [ -n "$FR" ] && kill $FR 2>/dev/null' EXIT  # never leave the frame grabber running
 frames() { ( i=0; while [ ! -f $OUT/.stop ]; do cap $OUT/frames/$1$(printf %04d $i).png || true; i=$((i+1)); sleep 3; done ) & FR=$!; }
 stopframes() { touch $OUT/.stop; sleep 4; kill $FR 2>/dev/null; rm -f $OUT/.stop; }
 gamelog() { pid=$(gpid); a logcat -d -v time > $OUT/$1_logcat.txt 2>&1; grep -E "\( *$pid\)|Unity|GAOffline" $OUT/$1_logcat.txt | grep -v RcsClient | head -3000 > $OUT/$1_game.txt; log "$1: $(wc -l < $OUT/$1_game.txt) game log lines"; }
