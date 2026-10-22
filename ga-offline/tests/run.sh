@@ -27,15 +27,16 @@ launch() { a logcat -c; a shell monkey -p $PKG -c android.intent.category.LAUNCH
 { a shell getprop ro.build.version.release; a shell getprop ro.product.cpu.abilist; a shell wm size; } > $OUT/device.txt 2>&1
 
 log "run O: original APK"
-timeout 300 adb install -r -g $T/apk/original.apk > $OUT/O_install.txt 2>&1; cat $OUT/O_install.txt
+timeout 300 adb install -r -g --abi armeabi-v7a $T/apk/original.apk > $OUT/O_install.txt 2>&1; cat $OUT/O_install.txt
 frames o; launch
 for i in 1 2 3 4 5 6; do sleep 10; shot O_$i; done
 stopframes; gamelog O
 a uninstall $PKG >/dev/null 2>&1
 
 log "run A: offline APK, fresh"
-timeout 300 adb install -r -g $T/apk/ga.apk > $OUT/A_install.txt 2>&1; cat $OUT/A_install.txt
+timeout 300 adb install -r -g --abi armeabi-v7a $T/apk/ga.apk > $OUT/A_install.txt 2>&1; cat $OUT/A_install.txt
 grep -q Success $OUT/A_install.txt || { log "install FAILED"; exit 0; }
+a shell dumpsys package $PKG | grep -E "primaryCpuAbi|targetSdk" > $OUT/A_abi.txt
 frames a; launch
 for i in 1 2 3 4 5 6 7 8 9; do sleep 10; shot A_boot_$i; done
 for i in 1 2 3 4 5 6; do tap 1140 540 A_center; sleep 5; done; shot A_after_taps
