@@ -1,686 +1,449 @@
---------- beginning of kernel
-10-22 08:33:39.862 D/logd    (    0): logdr: UID=2000 GID=2000 PID=7386 n tail=0 logMask=99 pid=0 start=0ns timeout=0ns
---------- beginning of system
-10-22 08:33:39.685 I/ActivityManager(  523): Force stopping com.kongregate.mobile.globalassault.google appid=10168 user=0: from pid 7395
 --------- beginning of main
-10-22 08:33:39.686 I/cmd     ( 7395): oneway function results will be dropped but finished with status OK and parcel size 4
-10-22 08:33:39.691 D/CarrierSvcBindHelper( 1110): No carrier app for: 0
-10-22 08:33:41.766 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:33:41.767 I/Gralloc4( 7405): mapper 4.x is not supported
-10-22 08:33:41.773 D/HostConnection( 7405): createUnique: call
-10-22 08:33:41.775 D/HostConnection( 7405): HostConnection::get() New Host Connection established 0x7d9d8d7dfc90, tid 7405
-10-22 08:33:41.789 D/HostConnection( 7405): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:33:41.791 D/AndroidRuntime( 7406): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-10-22 08:33:41.793 E/libc    ( 7406): Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
-10-22 08:33:41.793 E/libc    ( 7406): Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
-10-22 08:33:41.793 I/AndroidRuntime( 7406): Using default boot image
-10-22 08:33:41.793 E/libc    ( 7406): Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
-10-22 08:33:41.793 I/AndroidRuntime( 7406): Leaving lock profiling enabled
-10-22 08:33:41.793 E/libc    ( 7406): Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
-10-22 08:33:41.795 I/app_process( 7406): Core platform API reporting enabled, enforcing=false
-10-22 08:33:41.788 W/app_process( 7406): type=1400 audit(0.0:116): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7135 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-10-22 08:33:41.788 I/chatty  ( 7406): uid=2000(shell) app_process identical 2 lines
-10-22 08:33:41.788 W/app_process( 7406): type=1400 audit(0.0:119): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7135 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-10-22 08:33:41.857 D/app_process( 7406): Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
-10-22 08:33:41.857 D/app_process( 7406): I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
-10-22 08:33:41.860 W/app_process( 7406): Unexpected CPU variant for X86 using defaults: x86_64
-10-22 08:33:41.861 I/app_process( 7406): The ClassLoaderContext is a special shared library.
-10-22 08:33:41.868 W/app_process( 7406): JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-10-22 08:33:41.870 D/AndroidRuntime( 7406): Calling main entry com.android.commands.monkey.Monkey
-10-22 08:33:41.871 W/Monkey  ( 7406): args: [-p, com.kongregate.mobile.globalassault.google, -c, android.intent.category.LAUNCHER, 1]
-10-22 08:33:41.871 W/Monkey  ( 7406):  arg: "-p"
-10-22 08:33:41.871 W/Monkey  ( 7406):  arg: "com.kongregate.mobile.globalassault.google"
-10-22 08:33:41.871 W/Monkey  ( 7406):  arg: "-c"
-10-22 08:33:41.871 W/Monkey  ( 7406):  arg: "android.intent.category.LAUNCHER"
-10-22 08:33:41.871 W/Monkey  ( 7406):  arg: "1"
-10-22 08:33:41.872 W/Monkey  ( 7406): data="com.kongregate.mobile.globalassault.google"
-10-22 08:33:41.872 W/Monkey  ( 7406): data="android.intent.category.LAUNCHER"
-10-22 08:33:41.883 W/BroadcastQueue(  523): Skipping deliver [background] BroadcastRecord{3186c4b u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{f672628 7406 (unknown name)/2000/u-1 remote:6910bc5}: process gone or crashing
-10-22 08:33:41.888 I/ActivityTaskManager(  523): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity} from uid 2000
-10-22 08:33:41.888 D/EventSequenceValidator(  523): inc AccIntentStartedEvents to 2
-10-22 08:33:41.889 I/perfetto(  440): ing_service_impl.cc:758 Configured tracing session 5, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
-10-22 08:33:41.889 I/perfetto(  428): probes_producer.cc:230  Ftrace setup (target_buf=5)
-10-22 08:33:41.893 I/Monkey  ( 7406): Events injected: 1
-10-22 08:33:41.901 D/CompatibilityChangeReporter(  523): Compat change id reported: 135634846; UID 10168; state: DISABLED
-10-22 08:33:41.903 D/CompatibilityChangeReporter(  523): Compat change id reported: 143937733; UID 10168; state: DISABLED
-10-22 08:33:41.938 D/Zygote  (  312): Forked child process 7427
-10-22 08:33:41.939 I/ActivityManager(  523): Start proc 7427:com.kongregate.mobile.globalassault.google/u0a168 for pre-top-activity {com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity}
-10-22 08:33:41.945 I/perfetto(  428): ftrace_procfs.cc:176    enabled ftrace
-10-22 08:33:42.180 W/perfetto(    0): enabled ftrace
-10-22 08:33:41.954 I/Monkey  ( 7406): ## Network stats: elapsed time=16ms (0ms mobile, 0ms wifi, 16ms not connected)
-10-22 08:33:41.957 I/app_process( 7406): System.exit called, status: 0
-10-22 08:33:41.958 I/AndroidRuntime( 7406): VM exiting with result code 0.
-10-22 08:33:41.961 W/lassault.googl( 7427): Unexpected CPU variant for X86 using defaults: x86_64
-10-22 08:33:41.964 I/ndk_translation( 7427): Initialized NDK translation (armv7l), version 0.2.2
-10-22 08:33:42.280 I/adbd    (  422): jdwp connection from 7427
-10-22 08:33:42.312 D/ApplicationLoaders( 7427): Returning zygote-cached class loader: /system/framework/android.test.base.jar
-10-22 08:33:42.313 I/lassault.googl( 7427): The ClassLoaderContext is a special shared library.
-10-22 08:33:42.374 D/NetworkSecurityConfig( 7427): No Network Security Config specified, using platform default
-10-22 08:33:42.384 W/ActivityTaskManager(  523): Current config: {1.0 310mcc260mnc [en_US] ldltr sw392dp w392dp h750dp 440dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2280) mAppBounds=Rect(0, 0 - 1080, 2148) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.209} unchanged for IME proc com.google.android.inputmethod.latin
-10-22 08:33:42.385 I/ActivityTaskManager(  523): Config changes=20000480 {1.0 310mcc260mnc [en_US] ldltr sw392dp w781dp h362dp 440dpi nrml long land finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 2280, 1080) mAppBounds=Rect(0, 0 - 2148, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.251}
-10-22 08:33:42.390 W/ActivityTaskManager(  523): Current config: {1.0 310mcc260mnc [en_US] ldltr sw392dp w392dp h750dp 440dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2280) mAppBounds=Rect(0, 0 - 1080, 2148) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.209} unchanged for IME proc com.google.android.inputmethod.latin
-10-22 08:33:42.391 I/WindowManager(  523): Override config changes=20000480 {1.0 310mcc260mnc [en_US] ldltr sw392dp w781dp h362dp 440dpi nrml long land finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 2280, 1080) mAppBounds=Rect(0, 0 - 2148, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.251} for displayId=0
-10-22 08:33:42.391 V/ActivityTaskManager(  523): Sending to IME proc com.google.android.inputmethod.latin new config {1.0 310mcc260mnc [en_US] ldltr sw392dp w781dp h362dp 440dpi nrml long land finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 2280, 1080) mAppBounds=Rect(0, 0 - 2148, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.251}
-10-22 08:33:42.391 W/ActivityTaskManager(  523): Current config: {1.0 310mcc260mnc [en_US] ldltr sw392dp w781dp h362dp 440dpi nrml long land finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 2280, 1080) mAppBounds=Rect(0, 0 - 2148, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.251} unchanged for IME proc com.google.android.inputmethod.latin
-10-22 08:33:42.396 V/WindowManager(  523): Orientation start waiting for draw, mDrawState=DRAW_PENDING in Window{eb30b36 u0 com.android.systemui.ImageWallpaper}, surfaceController Surface(name=com.android.systemui.ImageWallpaper)/@0xd5ad82d
-10-22 08:33:42.374 D/NetworkSecurityConfig( 7427): No Network Security Config specified, using platform default
-10-22 08:33:42.403 W/GoogleInputMethodService( 1551): GoogleInputMethodService.onConfigurationChanged():1401 onConfigurationChanged() : NewConfig = {1.0 310mcc260mnc [en_US] ldltr sw392dp w781dp h362dp 440dpi nrml long land finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 2280, 1080) mAppBounds=Rect(0, 0 - 2148, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} as.1 s.268}
-10-22 08:33:42.404 W/KeyboardModeManager( 1551): KeyboardModeManager.reloadOrientationAwareData():457 reloadOrientationAwareData() : orientation = 2
-10-22 08:33:42.406 W/KeyboardModeManager( 1551): KeyboardModeManager.setInputView():302 setInputView() : inputView = null
-10-22 08:33:42.407 I/GoogleInputMethodService( 1551): GoogleInputMethodService.initializeKeyboardTheme():1171 Apply keyboard theme: theme_border_stylesheet_googleblue_materiallight_assets:theme_package_metadata_google_blue_light.binarypb_land
-10-22 08:33:42.408 I/Environment( 1551): Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:392
-10-22 08:33:42.408 I/chatty  ( 1551): uid=10132(com.google.android.inputmethod.latin) identical 4 lines
-10-22 08:33:42.408 I/Environment( 1551): Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:392
-10-22 08:33:42.410 I/KeyboardViewUtil( 1551): KeyboardViewUtil.getKeyboardHeightRatio():128 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
-10-22 08:33:42.418 W/SessionManager( 1551): SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
-10-22 08:33:42.427 I/InputManager-JNI(  523): Viewport [0] to add: local:8141241408256768, isActive: true
-10-22 08:33:42.428 I/InputReader(  523): Reconfiguring input devices, changes=DISPLAY_INFO | 
-10-22 08:33:42.428 I/InputReader(  523): Touch device 'virtio_input_multi_touch_8' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:42.428 I/InputReader(  523): Touch device 'virtio_input_multi_touch_9' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:42.428 I/InputReader(  523): Touch device 'virtio_input_multi_touch_4' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:42.428 I/InputReader(  523): Touch device 'virtio_input_multi_touch_11' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:42.428 I/InputReader(  523): Device reconfigured: id=8, name='virtio_input_multi_touch_1', size 1080x2280, orientation 1, mode 1, display id 0
-10-22 08:33:42.428 I/InputReader(  523): Touch device 'virtio_input_multi_touch_10' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:42.428 I/InputReader(  523): Touch device 'virtio_input_multi_touch_5' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:42.428 I/InputReader(  523): Touch device 'virtio_input_multi_touch_6' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:42.428 I/InputReader(  523): Touch device 'virtio_input_multi_touch_3' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:42.428 I/InputReader(  523): Touch device 'virtio_input_multi_touch_2' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:42.428 I/InputReader(  523): Touch device 'virtio_input_multi_touch_7' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:42.442 D/EglHelper(  760): createEglContext start
-10-22 08:33:42.470 D/EGL_emulation(  760): eglCreateContext: 0x7ba801b49c90: maj 3 min 0 rcv 3
-10-22 08:33:42.470 D/EglHelper(  760): createEglContext done
-10-22 08:33:42.470 D/EglHelper(  760): createEglSurface start
-10-22 08:33:42.504 I/Environment( 1551): Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:392
-10-22 08:33:42.505 I/Environment( 1551): Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:392
-10-22 08:33:42.539 D/EglHelper(  760): createEglSurface done
-10-22 08:33:42.787 D/HostConnection(  760): HostConnection::get() New Host Connection established 0x7ba811adc3d0, tid 1610
-10-22 08:33:42.793 D/HostConnection(  760): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:33:42.805 D/EGL_emulation(  760): eglCreateContext: 0x7ba801b53d70: maj 3 min 0 rcv 3
-10-22 08:33:42.813 D/EGL_emulation(  760): eglMakeCurrent: 0x7ba801b53d70: ver 3 0 (tinfo 0x7ba7a1b062e0) (first time)
-10-22 08:33:42.838 D/StatusBar(  760): disable<e i a s b h r c s > disable2<q i n >
-10-22 08:33:42.859 I/OpaEnabledReceiver(  760): Dispatching OPA eligble = false; AGSA = true; OPA enabled = false
-10-22 08:33:42.859 I/OpaLayout(  760): Setting opa enabled to false
-10-22 08:33:42.859 I/OpaLayout(  760): Setting opa enabled to false
-10-22 08:33:42.945 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:33:42.945 I/Gralloc4( 7427): mapper 4.x is not supported
-10-22 08:33:42.946 D/HostConnection( 7427): createUnique: call
-10-22 08:33:42.946 D/HostConnection( 7427): HostConnection::get() New Host Connection established 0xf31603e0, tid 7427
-10-22 08:33:42.978 D/HostConnection( 7427): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:33:42.996 D/StatusBar(  760): disable<e i a s b h r c s > disable2<q i n >
-10-22 08:33:43.201 D/EventSequenceValidator(  523): dec AccIntentStartedEvents to 1
-10-22 08:33:43.202 W/system_server(  523): Failed to determine oat file name for dex location /data/app/~~ZWHV_ofr5AUaSgLGcZYTTw==/com.kongregate.mobile.globalassault.google-SPtTrsHu-o286gdrvnlabw==/base.apk: Dalvik cache directory does not exist
-10-22 08:33:43.202 D/ArtManagerInternalImpl(  523): /data/misc/iorapd/com.kongregate.mobile.globalassault.google/101/com.unity3d.player.UnityPlayerNativeActivity/compiled_traces/compiled_trace.pb doesn't exist
-10-22 08:33:43.204 I/ActivityTaskManager(  523): Displayed com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity: +1s312ms
-10-22 08:33:43.484 W/UnityMain( 7427): type=1400 audit(0.0:120): avc: denied { getattr } for path="/proc/stat" dev="proc" ino=4026532033 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0 app=com.kongregate.mobile.globalassault.google
-10-22 08:33:43.529 I/ActivityManager(  523): Killing 6497:com.google.android.gms.ui/u0a120 (adj 985): empty #17
-10-22 08:33:43.548 I/PBSessionCacheImpl( 2192): Deleted sessionId[9642310610108983] from persistence.
-10-22 08:33:43.780 I/binder  (    0): undelivered TRANSACTION_COMPLETE
-10-22 08:33:43.783 I/binder  (    0): undelivered transaction 450875, process died.
-10-22 08:33:43.552 I/Zygote  (  311): Process 6497 exited due to signal 9 (Killed)
-10-22 08:33:43.573 W/SearchServiceCore( 2192): Abort, client detached.
-10-22 08:33:43.587 I/libprocessgroup(  523): Successfully killed process cgroup uid 10120 pid 6497 in 45ms
-10-22 08:33:44.175 D/libEGL  ( 7427): loaded /vendor/lib/egl/libEGL_emulation.so
-10-22 08:33:44.176 D/libEGL  ( 7427): loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
-10-22 08:33:44.177 D/libEGL  ( 7427): loaded /vendor/lib/egl/libGLESv2_emulation.so
-10-22 08:33:44.191 D/HostConnection( 7427): HostConnection::get() New Host Connection established 0xf31651c0, tid 7458
-10-22 08:33:44.193 D/HostConnection( 7427): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:33:44.194 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
-10-22 08:33:44.199 D/EGL_emulation( 7427): eglCreateContext: 0xf31650e0: maj 3 min 0 rcv 3
-10-22 08:33:44.199 D/EGL_emulation( 7427): eglMakeCurrent: 0xf31650e0: ver 3 0 (tinfo 0xbe426f10) (first time)
-10-22 08:33:44.205 D/Unity   ( 7427): GL_EXT_debug_marker GL_EXT_robustness GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID
-10-22 08:33:44.206 D/Unity   ( 7427): _EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:33:44.347 I/system_server(  523): oneway function results will be dropped but finished with status OK and parcel size 4
-10-22 08:33:44.347 I/chatty  (  523): uid=1000(system) Binder:523_15 identical 1 line
-10-22 08:33:44.347 I/system_server(  523): oneway function results will be dropped but finished with status OK and parcel size 4
-10-22 08:33:44.347 I/system_server(  523): oneway function results will be dropped but finished with status OK and parcel size 4
-10-22 08:33:44.349 D/AudioFlinger(  402): Client defaulted notificationFrames to 682 for frameCount 2048
-10-22 08:33:44.350 D/AF::TrackHandle(  402): OpPlayAudio: track:58 usage:1 not muted
-10-22 08:33:44.352 W/AudioTrack( 7427): Use of stream types is deprecated for operations other than volume control
-10-22 08:33:44.352 W/AudioTrack( 7427): See the documentation of AudioTrack() for what to use instead with android.media.AudioAttributes to qualify your playback use case
-10-22 08:33:44.352 W/APM::AudioPolicyEngine(  402): getDevicesForStrategy() unknown strategy: -1
-10-22 08:33:44.352 W/APM::AudioPolicyEngine(  402): getDevicesForStrategy() unknown strategy: -1
-10-22 08:33:44.353 I/system_server(  523): oneway function results will be dropped but finished with status OK and parcel size 4
-10-22 08:33:44.361 W/libc    ( 7427): pthread_create sched_setscheduler(1, {94}) call failed: Operation not permitted
-10-22 08:33:44.442 D/AudioFlinger(  402): mixer(0x7041c7649040) throttle end: throttle time(34)
-10-22 08:33:44.876 I/Vision  ( 1440): Requesting optional module download of ocr.
-10-22 08:33:44.877 I/Vision  ( 1440): Checking for download completion for 298478 -- ocr
---------- beginning of crash
-10-22 08:33:45.098 F/libc    ( 7427): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0xd422a05 in tid 7458 (UnityMain), pid 7427 (lassault.google)
-10-22 08:33:45.119 I/crash_dump32( 7478): obtaining output fd from tombstoned, type: kDebuggerdTombstone
-10-22 08:33:45.119 I/tombstoned(  301): received crash request for pid 7458
-10-22 08:33:45.120 I/crash_dump32( 7478): performing dump of process 7427 (target tid = 7458)
-10-22 08:33:45.124 F/DEBUG   ( 7478): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
-10-22 08:33:45.124 F/DEBUG   ( 7478): Build fingerprint: 'google/sdk_gphone_x86_64/generic_x86_64_arm64:11/RSR1.240422.006/12134477:userdebug/dev-keys'
-10-22 08:33:45.124 F/DEBUG   ( 7478): Revision: '0'
-10-22 08:33:45.124 F/DEBUG   ( 7478): ABI: 'x86'
-10-22 08:33:45.124 F/DEBUG   ( 7478): Timestamp: 2026-10-22 08:33:45+0000
-10-22 08:33:45.124 F/DEBUG   ( 7478): pid: 7427, tid: 7458, name: UnityMain  >>> com.kongregate.mobile.globalassault.google <<<
-10-22 08:33:45.124 F/DEBUG   ( 7478): uid: 10168
-10-22 08:33:45.124 F/DEBUG   ( 7478): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0xd422a05
-10-22 08:33:45.124 F/DEBUG   ( 7478):     eax 0d422a05  ebx e49b6674  ecx 000009e0  edx e47fc334
-10-22 08:33:45.124 F/DEBUG   ( 7478):     edi e4490030  esi c0f209e0
-10-22 08:33:45.124 F/DEBUG   ( 7478):     ebp bfdc36d8  esp bfdc3670  eip e4856f70
-10-22 08:33:45.158 F/DEBUG   ( 7478): backtrace:
-10-22 08:33:45.158 F/DEBUG   ( 7478):       #00 pc 000caf70  /system/lib/libndk_translation.so (ndk_translation::ExecuteGuest(ndk_translation::ProcessState*)+288) (BuildId: f4a12f5fb73388e407c9dd736c9a4224)
-10-22 08:33:45.158 F/DEBUG   ( 7478):       #01 pc 000cb19e  /system/lib/libndk_translation.so (ndk_translation::(anonymous namespace)::RunGuestCall(unsigned int, int, int, unsigned int*)+254) (BuildId: f4a12f5fb73388e407c9dd736c9a4224)
-10-22 08:33:45.158 F/DEBUG   ( 7478):       #02 pc 000cb2fa  /system/lib/libndk_translation.so (ndk_translation::RunGuestCall(unsigned int, ndk_translation::GuestArgumentBuffer*)+42) (BuildId: f4a12f5fb73388e407c9dd736c9a4224)
-10-22 08:33:45.158 F/DEBUG   ( 7478):       #03 pc 000ce0ca  /system/lib/libndk_translation.so (ndk_translation::(anonymous namespace)::RunGuestJNIFunction(unsigned int, ndk_translation::GuestArgumentBuffer*)+74) (BuildId: f4a12f5fb73388e407c9dd736c9a4224)
-10-22 08:33:45.158 F/DEBUG   ( 7478):       #04 pc 000aab04  <anonymous:c4c01000>
-10-22 08:33:45.447 D/logd    (    0): logdr: UID=10168 GID=10168 PID=7478 n tail=50 logMask=8 pid=7427 start=0ns timeout=0ns
-10-22 08:33:45.448 D/logd    (    0): logdr: UID=10168 GID=10168 PID=7478 n tail=50 logMask=1 pid=7427 start=0ns timeout=0ns
-10-22 08:33:45.301 E/tombstoned(  301): Tombstone written to: /data/tombstones/tombstone_02
-10-22 08:33:45.302 W/ActivityTaskManager(  523):   Force finishing activity com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity
-10-22 08:33:45.536 D/logd    (    0): logdr: UID=10168 GID=10168 PID=7478 n tail=0 logMask=8 pid=7427 start=0ns timeout=0ns
-10-22 08:33:45.537 D/logd    (    0): logdr: UID=10168 GID=10168 PID=7478 n tail=0 logMask=1 pid=7427 start=0ns timeout=0ns
-10-22 08:33:45.303 I/DropBoxManagerService(  523): add tag=data_app_native_crash isTagEnabled=true flags=0x2
-10-22 08:33:45.303 I/BootReceiver(  523): Copying /data/tombstones/tombstone_02 to DropBox (SYSTEM_TOMBSTONE)
-10-22 08:33:45.304 I/DropBoxManagerService(  523): add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x2
-10-22 08:33:45.317 W/BroadcastQueue(  523): Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
-10-22 08:33:45.318 W/BroadcastQueue(  523): Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
-10-22 08:33:45.322 D/HostConnection(  523): HostConnection::get() New Host Connection established 0x7ba811aa21d0, tid 3860
-10-22 08:33:45.323 W/BroadcastQueue(  523): Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
-10-22 08:33:45.323 W/BroadcastQueue(  523): Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
-10-22 08:33:45.334 D/HostConnection(  523): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:33:45.339 D/EGL_emulation(  523): eglCreateContext: 0x7ba801b91cd0: maj 3 min 0 rcv 3
-10-22 08:33:45.340 D/EGL_emulation(  523): eglMakeCurrent: 0x7ba801b91cd0: ver 3 0 (tinfo 0x7ba7a1b61540) (first time)
-10-22 08:33:45.375 I/WindowManager(  523): WIN DEATH: Window{4ce8b2c u0 com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity}
-10-22 08:33:45.375 W/InputDispatcher(  523): Attempted to unregister already unregistered input channel '4ce8b2c com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity (server)'
-10-22 08:33:45.377 I/Zygote  (  312): Process 7427 exited due to signal 11 (Segmentation fault)
-10-22 08:33:45.389 I/ActivityManager(  523): Process com.kongregate.mobile.globalassault.google (pid 7427) has died: prcp TOP 
-10-22 08:33:45.389 E/libprocessgroup(  523): getpgid(7478) failed: Permission denied
-10-22 08:33:45.403 W/ActivityManager(  523): setHasOverlayUi called on unknown pid: 7427
-10-22 08:33:45.427 W/ActivityManager(  523): Unable to start service Intent { act=android.service.appprediction.AppPredictionService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService } U=0: not found
-10-22 08:33:45.427 W/RemoteAppPredictionService(  523): could not bind to Intent { act=android.service.appprediction.AppPredictionService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService } using flags 67108865
-10-22 08:33:45.384 W/ActivityManager(  523): type=1400 audit(0.0:121): avc: denied { getpgid } for scontext=u:r:system_server:s0 tcontext=u:r:crash_dump:s0:c512,c768 tclass=process permissive=0 b/73128755
-10-22 08:33:45.682 I/init    (    0): Untracked pid 7478 exited with status 0
-10-22 08:33:45.384 W/ActivityManager(  523): type=1400 audit(0.0:122): avc: denied { getpgid } for scontext=u:r:system_server:s0 tcontext=u:r:crash_dump:s0:c512,c768 tclass=process permissive=0 b/73128755
-10-22 08:33:45.450 I/libprocessgroup(  523): Successfully killed process cgroup uid 10168 pid 7427 in 60ms
-10-22 08:33:45.709 I/init    (    0): Untracked pid 7480 received signal 9
-10-22 08:33:45.543 V/WindowManager(  523): Orientation start waiting for draw, mDrawState=DRAW_PENDING in Window{eb30b36 u0 com.android.systemui.ImageWallpaper}, surfaceController Surface(name=com.android.systemui.ImageWallpaper)/@0xd5ad82d
-10-22 08:33:45.560 D/EglHelper(  760): createEglContext start
-10-22 08:33:45.565 D/EGL_emulation(  760): eglCreateContext: 0x7ba801b5a540: maj 3 min 0 rcv 3
-10-22 08:33:45.565 D/EglHelper(  760): createEglContext done
-10-22 08:33:45.565 D/EglHelper(  760): createEglSurface start
-10-22 08:33:45.586 W/ThreadPoolDumper( 2192): Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
-10-22 08:33:45.596 W/ActivityTaskManager(  523): Current config: {1.0 310mcc260mnc [en_US] ldltr sw392dp w781dp h362dp 440dpi nrml long land finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 2280, 1080) mAppBounds=Rect(0, 0 - 2148, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.251} unchanged for IME proc com.google.android.inputmethod.latin
-10-22 08:33:45.597 I/ActivityTaskManager(  523): Config changes=20000480 {1.0 310mcc260mnc [en_US] ldltr sw392dp w392dp h750dp 440dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2280) mAppBounds=Rect(0, 0 - 1080, 2148) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.287}
-10-22 08:33:45.646 W/ActivityTaskManager(  523): Current config: {1.0 310mcc260mnc [en_US] ldltr sw392dp w781dp h362dp 440dpi nrml long land finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 2280, 1080) mAppBounds=Rect(0, 0 - 2148, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.251} unchanged for IME proc com.google.android.inputmethod.latin
-10-22 08:33:45.647 I/WindowManager(  523): Override config changes=20000480 {1.0 310mcc260mnc [en_US] ldltr sw392dp w392dp h750dp 440dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2280) mAppBounds=Rect(0, 0 - 1080, 2148) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.287} for displayId=0
-10-22 08:33:45.648 V/ActivityTaskManager(  523): Sending to IME proc com.google.android.inputmethod.latin new config {1.0 310mcc260mnc [en_US] ldltr sw392dp w392dp h750dp 440dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2280) mAppBounds=Rect(0, 0 - 1080, 2148) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.287}
-10-22 08:33:45.648 W/ActivityTaskManager(  523): Current config: {1.0 310mcc260mnc [en_US] ldltr sw392dp w392dp h750dp 440dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2280) mAppBounds=Rect(0, 0 - 1080, 2148) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.287} unchanged for IME proc com.google.android.inputmethod.latin
-10-22 08:33:45.650 W/GoogleInputMethodService( 1551): GoogleInputMethodService.onConfigurationChanged():1401 onConfigurationChanged() : NewConfig = {1.0 310mcc260mnc [en_US] ldltr sw392dp w392dp h750dp 440dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2280) mAppBounds=Rect(0, 0 - 1080, 2148) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.1 s.304}
-10-22 08:33:45.650 W/KeyboardModeManager( 1551): KeyboardModeManager.reloadOrientationAwareData():457 reloadOrientationAwareData() : orientation = 1
-10-22 08:33:45.653 W/KeyboardModeManager( 1551): KeyboardModeManager.setInputView():302 setInputView() : inputView = null
-10-22 08:33:45.654 I/GoogleInputMethodService( 1551): GoogleInputMethodService.initializeKeyboardTheme():1171 Apply keyboard theme: theme_border_stylesheet_googleblue_materiallight_assets:theme_package_metadata_google_blue_light.binarypb_port
-10-22 08:33:45.655 I/Environment( 1551): Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:392
-10-22 08:33:45.655 I/Environment( 1551): Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:392
-10-22 08:33:45.665 I/InputManager-JNI(  523): Viewport [0] to add: local:8141241408256768, isActive: true
-10-22 08:33:45.678 I/InputReader(  523): Reconfiguring input devices, changes=DISPLAY_INFO | 
-10-22 08:33:45.678 I/InputReader(  523): Touch device 'virtio_input_multi_touch_8' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:45.678 I/InputReader(  523): Touch device 'virtio_input_multi_touch_9' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:45.678 I/InputReader(  523): Touch device 'virtio_input_multi_touch_4' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:45.678 I/InputReader(  523): Touch device 'virtio_input_multi_touch_11' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:45.678 I/InputReader(  523): Device reconfigured: id=8, name='virtio_input_multi_touch_1', size 1080x2280, orientation 0, mode 1, display id 0
-10-22 08:33:45.678 I/InputReader(  523): Touch device 'virtio_input_multi_touch_10' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:45.678 I/InputReader(  523): Touch device 'virtio_input_multi_touch_5' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:45.678 I/InputReader(  523): Touch device 'virtio_input_multi_touch_6' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:45.678 I/InputReader(  523): Touch device 'virtio_input_multi_touch_3' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:45.678 I/InputReader(  523): Touch device 'virtio_input_multi_touch_2' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:45.678 I/InputReader(  523): Touch device 'virtio_input_multi_touch_7' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
-10-22 08:33:45.683 W/APM::AudioPolicyEngine(  402): getDevicesForStrategy() unknown strategy: -1
-10-22 08:33:45.683 W/APM::AudioPolicyEngine(  402): getDevicesForStrategy() unknown strategy: -1
-10-22 08:33:45.683 I/system_server(  523): oneway function results will be dropped but finished with status OK and parcel size 4
-10-22 08:33:45.688 I/Environment( 1551): Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:392
-10-22 08:33:45.689 I/chatty  ( 1551): uid=10132(com.google.android.inputmethod.latin) identical 2 lines
-10-22 08:33:45.689 I/Environment( 1551): Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:392
-10-22 08:33:45.699 I/KeyboardViewUtil( 1551): KeyboardViewUtil.getKeyboardHeightRatio():128 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
-10-22 08:33:45.700 D/EglHelper(  760): createEglSurface done
-10-22 08:33:45.720 E/MDD     ( 2192): DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/sharedminusonemodule/shared/SharedMinusOneData.pb.tmp
-10-22 08:33:45.721 W/SessionManager( 1551): SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
-10-22 08:33:45.724 I/Environment( 1551): Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:392
-10-22 08:33:45.724 I/Environment( 1551): Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:392
-10-22 08:33:46.235 I/BgTaskExecutorImpl( 2192): Starting EXCLUSIVE background task TNG_MINUS_ONE_SYNC.
-10-22 08:33:46.251 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:33:46.252 I/Gralloc4( 7497): mapper 4.x is not supported
-10-22 08:33:46.261 D/HostConnection( 7497): createUnique: call
-10-22 08:33:46.268 D/HostConnection( 7497): HostConnection::get() New Host Connection established 0x7a42b6076450, tid 7497
-10-22 08:33:46.323 I/TngMinusOneSync( 2192): Syncing TNG:-1
-10-22 08:33:46.338 D/HostConnection( 7497): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:33:46.380 D/AndroidRuntime( 7499): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-10-22 08:33:46.386 E/libc    ( 7499): Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
-10-22 08:33:46.386 E/libc    ( 7499): Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
-10-22 08:33:46.386 I/AndroidRuntime( 7499): Using default boot image
-10-22 08:33:46.386 E/libc    ( 7499): Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
-10-22 08:33:46.386 I/AndroidRuntime( 7499): Leaving lock profiling enabled
-10-22 08:33:46.386 E/libc    ( 7499): Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
-10-22 08:33:46.391 I/app_process( 7499): Core platform API reporting enabled, enforcing=false
-10-22 08:33:46.423 D/StatusBar(  760): disable<e i a s b h r c s > disable2<q i n >
-10-22 08:33:46.384 W/app_process( 7499): type=1400 audit(0.0:123): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7135 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-10-22 08:33:46.438 I/OpenGLRenderer(  760): Davey! duration=816ms; Flags=1, IntendedVsync=289213731580, Vsync=289263731578, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=289276463128, AnimationStart=289276464470, PerformTraversalsStart=289276464691, DrawStart=289378047176, SyncQueued=289984654922, SyncStart=289993455652, IssueDrawCommandsStart=289993648402, SwapBuffers=290024309715, FrameCompleted=290039258449, DequeueBufferDuration=11666706, QueueBufferDuration=1693723, GpuCompleted=0, 
-10-22 08:33:46.384 W/app_process( 7499): type=1400 audit(0.0:124): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7135 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-10-22 08:33:46.384 W/app_process( 7499): type=1400 audit(0.0:125): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7135 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-10-22 08:33:46.472 I/OpaEnabledReceiver(  760): Dispatching OPA eligble = false; AGSA = true; OPA enabled = false
-10-22 08:33:46.472 I/OpaLayout(  760): Setting opa enabled to false
-10-22 08:33:46.472 I/OpaLayout(  760): Setting opa enabled to false
-10-22 08:33:46.473 I/Choreographer(  760): Skipped 41 frames!  The application may be doing too much work on its main thread.
-10-22 08:33:46.384 W/app_process( 7499): type=1400 audit(0.0:126): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7135 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-10-22 08:33:46.483 D/app_process( 7499): Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
-10-22 08:33:46.484 D/app_process( 7499): I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
-10-22 08:33:46.494 W/app_process( 7499): Unexpected CPU variant for X86 using defaults: x86_64
-10-22 08:33:46.495 I/app_process( 7499): The ClassLoaderContext is a special shared library.
-10-22 08:33:46.498 I/app_process( 7499): The ClassLoaderContext is a special shared library.
-10-22 08:33:46.514 I/OpenGLRenderer(  760): Davey! duration=706ms; Flags=1, IntendedVsync=289380384788, Vsync=290063718094, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=290074246247, AnimationStart=290074247159, PerformTraversalsStart=290074632478, DrawStart=290077160829, SyncQueued=290077337137, SyncStart=290105849879, IssueDrawCommandsStart=290105896146, SwapBuffers=290112219240, FrameCompleted=290115476732, DequeueBufferDuration=2309701, QueueBufferDuration=160440, GpuCompleted=0, 
-10-22 08:33:46.534 D/StatusBar(  760): disable<e i a s b h r c s > disable2<q i n >
-10-22 08:33:46.537 W/app_process( 7499): JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-10-22 08:33:46.548 D/AndroidRuntime( 7499): Calling main entry com.android.commands.uiautomator.Launcher
-10-22 08:33:46.600 V/UiAutomation( 7499): Init UiAutomation@83d4a91[id=3, flags=0]
-10-22 08:33:46.604 I/OpenGLRenderer(  760): Davey! duration=781ms; Flags=1, IntendedVsync=289380384788, Vsync=290063718094, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=290074246247, AnimationStart=290074247159, PerformTraversalsStart=290074632478, DrawStart=290147932221, SyncQueued=290148419761, SyncStart=290192439487, IssueDrawCommandsStart=290192544893, SwapBuffers=290194033903, FrameCompleted=290205684615, DequeueBufferDuration=6462645, QueueBufferDuration=110245, GpuCompleted=0, 
-10-22 08:33:47.004 I/perfetto(  428): probes_producer.cc:329  Producer stop (id=5)
-10-22 08:33:47.004 E/libc    (  440): The property "ro.build.fingerprint" has a value with length 92 that is too large for __system_property_get()/__system_property_read(); use __system_property_read_callback() instead.
-10-22 08:33:47.022 I/perfetto(  428): ftrace_procfs.cc:183    disabled ftrace
-10-22 08:33:47.257 W/perfetto(    0): disabled ftrace
-10-22 08:33:47.035 I/perfetto(  440): ng_service_impl.cc:1948 Tracing session 5 ended, total sessions:0
-10-22 08:33:47.071 E/FrameEvents(  973): updateAcquireFence: Did not find frame.
-10-22 08:33:47.075 I/iorapd  (  451): Perfetto TraceBuffer saved to file: /data/misc/iorapd/com.kongregate.mobile.globalassault.google/101/com.unity3d.player.UnityPlayerNativeActivity/raw_traces/1792658027059235195.perfetto_trace.pb
-10-22 08:33:47.355 I/system_server(  523): oneway function results will be dropped but finished with status OK and parcel size 4
-10-22 08:33:47.606 I/AccessibilityNodeInfoDumper( 7499): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@1e076; boundsInParent: Rect(0, 0 - 0, 42); boundsInScreen: Rect(540, 2002 - 540, 2044); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: ; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/qsb_hint; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-22 08:33:47.606 I/AccessibilityNodeInfoDumper( 7499): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@1e437; boundsInParent: Rect(0, 0 - 206, 171); boundsInScreen: Rect(822, 2017 - 1028, 2188); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/fast_scroller_popup; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-22 08:33:47.606 W/AccessibilityNodeInfoDumper( 7499): Fetch time: 2ms
-10-22 08:33:47.607 W/WindowManager(  523): removeWindowToken: Attempted to remove non-existing token: android.os.Binder@a54e081
-10-22 08:33:47.607 V/UiAutomation( 7499): Init UiAutomation@83d4a91[id=-1, flags=0]
-10-22 08:33:47.611 D/AndroidRuntime( 7499): Shutting down VM
-10-22 08:33:48.363 I/PeriodicStatsRunner( 1551): PeriodicStatsRunner.call():180 call()
-10-22 08:33:48.363 I/PeriodicStatsRunner( 1551): PeriodicStatsRunner.call():184 No submit PeriodicStats since input started.
-10-22 08:33:48.382 I/system_server(  523): oneway function results will be dropped but finished with status OK and parcel size 4
-10-22 08:33:48.613 I/Dialer  ( 1655): OmtpVvmCarrierCfgHlpr - OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT
-10-22 08:33:48.613 I/Dialer  ( 1655): RetryPolicy - discarding deferred status: configuration_state=4
-10-22 08:33:48.613 I/Dialer  ( 1655): VvmTaskExecutor - no more tasks, stopping service if no task are added in 5000 millis
-10-22 08:33:48.614 I/Dialer  ( 1655): VvmTaskReceiver - task received
-10-22 08:33:48.614 I/Dialer  ( 1655): VvmTaskReceiver - TaskExecutor already running
-10-22 08:33:48.614 I/Dialer  ( 1655): Task.createTask - create task:com.android.voicemail.impl.ActivationTask
-10-22 08:33:48.614 I/Dialer  ( 1655): RetryPolicy - retry #4 for com.android.voicemail.impl.ActivationTask@3bbed20 queued, executing in 5000
-10-22 08:33:48.614 I/Dialer  ( 1655): VvmTaskExecutor - com.android.voicemail.impl.ActivationTask@3bbed20 added
-10-22 08:33:48.614 I/Dialer  ( 1655): VvmTaskExecutor - minimal wait time:5000
-10-22 08:33:48.614 I/Dialer  ( 1655): VvmTaskExecutor - sleep for 5000 millis
-10-22 08:33:50.313 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:33:50.313 I/Gralloc4( 7522): mapper 4.x is not supported
-10-22 08:33:50.319 D/HostConnection( 7522): createUnique: call
-10-22 08:33:50.321 D/HostConnection( 7522): HostConnection::get() New Host Connection established 0x7627610ac310, tid 7522
-10-22 08:33:50.334 D/HostConnection( 7522): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:33:50.746 I/PeriodicStatsRunner( 1551): PeriodicStatsRunner.call():180 call()
-10-22 08:33:50.746 I/PeriodicStatsRunner( 1551): PeriodicStatsRunner.call():184 No submit PeriodicStats since input started.
-10-22 08:33:51.158 D/AndroidRuntime( 7524): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-10-22 08:33:51.159 E/libc    ( 7524): Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
-10-22 08:33:51.159 E/libc    ( 7524): Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
-10-22 08:33:51.159 I/AndroidRuntime( 7524): Using default boot image
-10-22 08:33:51.159 E/libc    ( 7524): Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
-10-22 08:33:51.159 I/AndroidRuntime( 7524): Leaving lock profiling enabled
-10-22 08:33:51.159 E/libc    ( 7524): Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
-10-22 08:33:51.161 I/app_process( 7524): Core platform API reporting enabled, enforcing=false
-10-22 08:33:51.156 W/app_process( 7524): type=1400 audit(0.0:127): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7135 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-10-22 08:33:51.156 I/chatty  ( 7524): uid=2000(shell) app_process identical 2 lines
-10-22 08:33:51.156 W/app_process( 7524): type=1400 audit(0.0:130): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7135 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-10-22 08:33:51.201 D/app_process( 7524): Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
-10-22 08:33:51.201 D/app_process( 7524): I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
-10-22 08:33:51.205 W/app_process( 7524): Unexpected CPU variant for X86 using defaults: x86_64
-10-22 08:33:51.205 I/app_process( 7524): The ClassLoaderContext is a special shared library.
-10-22 08:33:51.206 I/app_process( 7524): The ClassLoaderContext is a special shared library.
-10-22 08:33:51.213 W/app_process( 7524): JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-10-22 08:33:51.216 D/AndroidRuntime( 7524): Calling main entry com.android.commands.uiautomator.Launcher
-10-22 08:33:51.221 V/UiAutomation( 7524): Init UiAutomation@56a4e9e[id=4, flags=0]
-10-22 08:33:52.229 I/AccessibilityNodeInfoDumper( 7524): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@1e080; boundsInParent: Rect(0, 0 - 0, 42); boundsInScreen: Rect(540, 2002 - 540, 2044); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: ; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/qsb_hint; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-22 08:33:52.230 I/AccessibilityNodeInfoDumper( 7524): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@1e441; boundsInParent: Rect(0, 0 - 206, 171); boundsInScreen: Rect(822, 2017 - 1028, 2188); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/fast_scroller_popup; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-22 08:33:52.230 W/AccessibilityNodeInfoDumper( 7524): Fetch time: 2ms
-10-22 08:33:52.231 W/WindowManager(  523): removeWindowToken: Attempted to remove non-existing token: android.os.Binder@e852829
-10-22 08:33:52.231 V/UiAutomation( 7524): Init UiAutomation@56a4e9e[id=-1, flags=0]
-10-22 08:33:52.233 D/AndroidRuntime( 7524): Shutting down VM
-10-22 08:33:53.655 I/Dialer  ( 1655): VvmTaskExecutor - executing task com.android.voicemail.impl.ActivationTask@3bbed20
-10-22 08:33:53.655 I/Dialer  ( 1655): PreOMigrationHandler - ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, ***, UserHandle{0} already migrated
-10-22 08:33:53.665 I/VoicemailNotifier( 6346): receivers for android.intent.action.PROVIDER_CHANGED :[]
-10-22 08:33:53.666 I/Dialer  ( 1655): VvmActivationTask - VVM content provider configured - vvm_type_cvvm
-10-22 08:33:53.666 I/Dialer  ( 1655): OmtpVvmCarrierCfgHlpr - OmtpEvent:CONFIG_ACTIVATING
-10-22 08:33:53.669 I/VoicemailNotifier( 6346): receivers for android.intent.action.PROVIDER_CHANGED :[]
-10-22 08:33:53.675 D/SmsNumberUtils( 1110): enter filterDestAddr. destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
-10-22 08:33:53.676 D/SmsNumberUtils( 1110): destAddr is not formatted.
-10-22 08:33:53.676 D/SmsNumberUtils( 1110): leave filterDestAddr, new destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
-10-22 08:33:53.760 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:33:53.761 I/Gralloc4( 7545): mapper 4.x is not supported
-10-22 08:33:53.766 D/HostConnection( 7545): createUnique: call
-10-22 08:33:53.767 D/HostConnection( 7545): HostConnection::get() New Host Connection established 0x7178c7b50d90, tid 7545
-10-22 08:33:53.780 D/HostConnection( 7545): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:33:54.883 I/Vision  ( 1440): Requesting optional module download of ocr.
-10-22 08:33:54.883 I/Vision  ( 1440): Checking for download completion for 308484 -- ocr
-10-22 08:33:55.761 D/AndroidRuntime( 7549): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-10-22 08:33:55.763 E/libc    ( 7549): Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
-10-22 08:33:55.763 E/libc    ( 7549): Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
-10-22 08:33:55.763 I/AndroidRuntime( 7549): Using default boot image
-10-22 08:33:55.763 E/libc    ( 7549): Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
-10-22 08:33:55.763 I/AndroidRuntime( 7549): Leaving lock profiling enabled
-10-22 08:33:55.763 E/libc    ( 7549): Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
-10-22 08:33:55.764 I/app_process( 7549): Core platform API reporting enabled, enforcing=false
-10-22 08:33:55.756 W/app_process( 7549): type=1400 audit(0.0:131): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7135 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-10-22 08:33:55.756 I/chatty  ( 7549): uid=2000(shell) app_process identical 2 lines
-10-22 08:33:55.760 W/app_process( 7549): type=1400 audit(0.0:134): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7135 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-10-22 08:33:55.802 D/app_process( 7549): Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
-10-22 08:33:55.802 D/app_process( 7549): I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
-10-22 08:33:55.806 W/app_process( 7549): Unexpected CPU variant for X86 using defaults: x86_64
-10-22 08:33:55.806 I/app_process( 7549): The ClassLoaderContext is a special shared library.
-10-22 08:33:55.807 I/app_process( 7549): The ClassLoaderContext is a special shared library.
-10-22 08:33:55.813 W/app_process( 7549): JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-10-22 08:33:55.816 D/AndroidRuntime( 7549): Calling main entry com.android.commands.uiautomator.Launcher
-10-22 08:33:55.821 V/UiAutomation( 7549): Init UiAutomation@ff4b842[id=5, flags=0]
-10-22 08:33:56.828 I/AccessibilityNodeInfoDumper( 7549): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@1e085; boundsInParent: Rect(0, 0 - 0, 42); boundsInScreen: Rect(540, 2002 - 540, 2044); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: ; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/qsb_hint; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-22 08:33:56.828 I/AccessibilityNodeInfoDumper( 7549): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@1e446; boundsInParent: Rect(0, 0 - 206, 171); boundsInScreen: Rect(822, 2017 - 1028, 2188); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/fast_scroller_popup; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
-10-22 08:33:56.828 W/AccessibilityNodeInfoDumper( 7549): Fetch time: 2ms
-10-22 08:33:56.829 W/WindowManager(  523): removeWindowToken: Attempted to remove non-existing token: android.os.Binder@4b76ec2
-10-22 08:33:56.829 V/UiAutomation( 7549): Init UiAutomation@ff4b842[id=-1, flags=0]
-10-22 08:33:56.831 D/AndroidRuntime( 7549): Shutting down VM
-10-22 08:33:57.184 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:33:57.184 I/Gralloc4( 7569): mapper 4.x is not supported
-10-22 08:33:57.189 D/HostConnection( 7569): createUnique: call
-10-22 08:33:57.190 D/HostConnection( 7569): HostConnection::get() New Host Connection established 0x7f01a543cc10, tid 7569
-10-22 08:33:57.205 D/HostConnection( 7569): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:00.002 D/KeyguardClockSwitch(  760): Updating clock: 834
-10-22 08:34:00.603 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:00.603 I/Gralloc4( 7574): mapper 4.x is not supported
-10-22 08:34:00.609 D/HostConnection( 7574): createUnique: call
-10-22 08:34:00.611 D/HostConnection( 7574): HostConnection::get() New Host Connection established 0x738eb2f318d0, tid 7574
-10-22 08:34:00.628 D/HostConnection( 7574): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:04.022 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:04.023 I/Gralloc4( 7578): mapper 4.x is not supported
-10-22 08:34:04.028 D/HostConnection( 7578): createUnique: call
-10-22 08:34:04.030 D/HostConnection( 7578): HostConnection::get() New Host Connection established 0x7846403fd890, tid 7578
-10-22 08:34:04.047 D/HostConnection( 7578): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:04.888 I/Vision  ( 1440): Requesting optional module download of ocr.
-10-22 08:34:04.889 I/Vision  ( 1440): Checking for download completion for 318489 -- ocr
-10-22 08:34:07.440 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:07.441 I/Gralloc4( 7584): mapper 4.x is not supported
-10-22 08:34:07.449 D/HostConnection( 7584): createUnique: call
-10-22 08:34:07.451 D/HostConnection( 7584): HostConnection::get() New Host Connection established 0x7d866bd0ae10, tid 7584
-10-22 08:34:07.464 D/HostConnection( 7584): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:10.449 W/healthd (    0): battery l=100 v=5000 t=25.0 h=2 st=2 c=900000 fc=300000 cc=10 chg=a
-10-22 08:34:10.382 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:10.382 I/Gralloc4( 7588): mapper 4.x is not supported
-10-22 08:34:10.390 D/HostConnection( 7588): createUnique: call
-10-22 08:34:10.391 D/HostConnection( 7588): HostConnection::get() New Host Connection established 0x7729cfb5d550, tid 7588
-10-22 08:34:10.403 D/HostConnection( 7588): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:10.860 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:10.861 I/Gralloc4( 7594): mapper 4.x is not supported
-10-22 08:34:10.869 D/HostConnection( 7594): createUnique: call
-10-22 08:34:10.870 D/HostConnection( 7594): HostConnection::get() New Host Connection established 0x7f9d79627310, tid 7594
-10-22 08:34:10.885 D/HostConnection( 7594): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:14.277 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:14.277 I/Gralloc4( 7598): mapper 4.x is not supported
-10-22 08:34:14.282 D/HostConnection( 7598): createUnique: call
-10-22 08:34:14.282 D/HostConnection( 7598): HostConnection::get() New Host Connection established 0x7776f94ac610, tid 7598
-10-22 08:34:14.302 D/HostConnection( 7598): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:14.894 I/Vision  ( 1440): Requesting optional module download of ocr.
-10-22 08:34:14.894 I/Vision  ( 1440): Checking for download completion for 328495 -- ocr
-10-22 08:34:17.692 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:17.692 I/Gralloc4( 7604): mapper 4.x is not supported
-10-22 08:34:17.697 D/HostConnection( 7604): createUnique: call
-10-22 08:34:17.700 D/HostConnection( 7604): HostConnection::get() New Host Connection established 0x732416bd3c90, tid 7604
-10-22 08:34:17.720 D/HostConnection( 7604): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:18.947 I/DropBoxManagerService(  523): add tag=system_server_strictmode isTagEnabled=true flags=0x2
-10-22 08:34:20.811 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:20.811 I/Gralloc4( 7608): mapper 4.x is not supported
-10-22 08:34:20.819 D/HostConnection( 7608): createUnique: call
-10-22 08:34:20.821 D/HostConnection( 7608): HostConnection::get() New Host Connection established 0x7e3e9f36d550, tid 7608
-10-22 08:34:20.839 D/HostConnection( 7608): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:18.949 I/chatty  (  523): uid=1000(system) android.io identical 2 lines
-10-22 08:34:18.950 I/DropBoxManagerService(  523): add tag=system_server_strictmode isTagEnabled=true flags=0x2
-10-22 08:34:20.952 W/BroadcastQueue(  523): Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
-10-22 08:34:20.953 W/BroadcastQueue(  523): Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
-10-22 08:34:21.119 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:21.120 I/Gralloc4( 7615): mapper 4.x is not supported
-10-22 08:34:21.126 D/HostConnection( 7615): createUnique: call
-10-22 08:34:21.127 D/HostConnection( 7615): HostConnection::get() New Host Connection established 0x722ed18295d0, tid 7615
-10-22 08:34:21.147 D/HostConnection( 7615): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:24.548 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:24.548 I/Gralloc4( 7621): mapper 4.x is not supported
-10-22 08:34:24.554 D/HostConnection( 7621): createUnique: call
-10-22 08:34:24.559 D/HostConnection( 7621): HostConnection::get() New Host Connection established 0x74649a0901d0, tid 7621
-10-22 08:34:24.573 D/HostConnection( 7621): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:24.900 I/Vision  ( 1440): Requesting optional module download of ocr.
-10-22 08:34:24.900 I/Vision  ( 1440): Checking for download completion for 338501 -- ocr
-10-22 08:34:27.958 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:27.958 I/Gralloc4( 7625): mapper 4.x is not supported
-10-22 08:34:27.963 D/HostConnection( 7625): createUnique: call
-10-22 08:34:27.966 D/HostConnection( 7625): HostConnection::get() New Host Connection established 0x756d79834350, tid 7625
-10-22 08:34:27.985 D/HostConnection( 7625): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:31.294 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:31.295 I/Gralloc4( 7629): mapper 4.x is not supported
-10-22 08:34:31.302 D/HostConnection( 7629): createUnique: call
-10-22 08:34:31.302 D/HostConnection( 7629): HostConnection::get() New Host Connection established 0x7aa14f80c790, tid 7629
-10-22 08:34:31.317 D/HostConnection( 7629): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:31.385 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:31.387 I/Gralloc4( 7633): mapper 4.x is not supported
-10-22 08:34:31.393 D/HostConnection( 7633): createUnique: call
-10-22 08:34:31.393 D/HostConnection( 7633): HostConnection::get() New Host Connection established 0x770201b24950, tid 7633
-10-22 08:34:31.415 D/HostConnection( 7633): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:34.824 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:34.824 I/Gralloc4( 7639): mapper 4.x is not supported
-10-22 08:34:34.835 D/HostConnection( 7639): createUnique: call
-10-22 08:34:34.837 D/HostConnection( 7639): HostConnection::get() New Host Connection established 0x7a6a86e8e5d0, tid 7639
-10-22 08:34:34.855 D/HostConnection( 7639): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:34.908 I/Vision  ( 1440): Requesting optional module download of ocr.
-10-22 08:34:34.908 I/Vision  ( 1440): Checking for download completion for 348509 -- ocr
-10-22 08:34:38.256 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:38.257 I/Gralloc4( 7645): mapper 4.x is not supported
-10-22 08:34:38.261 D/HostConnection( 7645): createUnique: call
-10-22 08:34:38.263 D/HostConnection( 7645): HostConnection::get() New Host Connection established 0x71a3eaa34d50, tid 7645
-10-22 08:34:38.278 D/HostConnection( 7645): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:40.314 I/CarrierServices( 3057): [85] drv.a: (PEv2-SM): DisabledState: event Timeout
-10-22 08:34:41.677 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:41.678 I/Gralloc4( 7649): mapper 4.x is not supported
-10-22 08:34:41.687 D/HostConnection( 7649): createUnique: call
-10-22 08:34:41.688 D/HostConnection( 7649): HostConnection::get() New Host Connection established 0x7707e6992490, tid 7649
-10-22 08:34:41.702 D/HostConnection( 7649): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:41.793 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:41.794 I/Gralloc4( 7653): mapper 4.x is not supported
-10-22 08:34:41.798 D/HostConnection( 7653): createUnique: call
-10-22 08:34:41.799 D/HostConnection( 7653): HostConnection::get() New Host Connection established 0x73205ea42a90, tid 7653
-10-22 08:34:41.821 D/HostConnection( 7653): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:44.912 I/Vision  ( 1440): Requesting optional module download of ocr.
-10-22 08:34:44.912 I/Vision  ( 1440): Checking for download completion for 358513 -- ocr
-10-22 08:34:45.153 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:45.154 I/Gralloc4( 7661): mapper 4.x is not supported
-10-22 08:34:45.159 D/HostConnection( 7661): createUnique: call
-10-22 08:34:45.160 D/HostConnection( 7661): HostConnection::get() New Host Connection established 0x7eac333ee950, tid 7661
-10-22 08:34:45.176 D/HostConnection( 7661): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:48.576 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:48.576 I/Gralloc4( 7665): mapper 4.x is not supported
-10-22 08:34:48.586 D/HostConnection( 7665): createUnique: call
-10-22 08:34:48.589 D/HostConnection( 7665): HostConnection::get() New Host Connection established 0x7db1705f9850, tid 7665
-10-22 08:34:48.602 D/HostConnection( 7665): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:52.004 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:52.004 I/Gralloc4( 7669): mapper 4.x is not supported
-10-22 08:34:52.009 D/HostConnection( 7669): createUnique: call
-10-22 08:34:52.010 D/HostConnection( 7669): HostConnection::get() New Host Connection established 0x72912af0e510, tid 7669
-10-22 08:34:52.022 D/HostConnection( 7669): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:52.263 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:52.264 I/Gralloc4( 7673): mapper 4.x is not supported
-10-22 08:34:52.271 D/HostConnection( 7673): createUnique: call
-10-22 08:34:52.271 D/HostConnection( 7673): HostConnection::get() New Host Connection established 0x7adee585b710, tid 7673
-10-22 08:34:52.288 D/HostConnection( 7673): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:53.721 I/Dialer  ( 1655): OmtpVvmCarrierCfgHlpr - OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT
-10-22 08:34:53.721 I/Dialer  ( 1655): RetryPolicy - Retry limit for com.android.voicemail.impl.ActivationTask@3bbed20 reached
-10-22 08:34:53.721 I/Dialer  ( 1655): RetryPolicy - committing deferred status: configuration_state=4
-10-22 08:34:53.729 I/VoicemailNotifier( 6346): receivers for android.intent.action.PROVIDER_CHANGED :[]
-10-22 08:34:53.730 I/Dialer  ( 1655): VvmTaskExecutor - no more tasks, stopping service if no task are added in 5000 millis
-10-22 08:34:54.916 I/Vision  ( 1440): Requesting optional module download of ocr.
-10-22 08:34:54.916 I/Vision  ( 1440): Checking for download completion for 368517 -- ocr
-10-22 08:34:55.453 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:55.454 I/Gralloc4( 7681): mapper 4.x is not supported
-10-22 08:34:55.462 D/HostConnection( 7681): createUnique: call
-10-22 08:34:55.463 D/HostConnection( 7681): HostConnection::get() New Host Connection established 0x700f51ea6e50, tid 7681
-10-22 08:34:55.479 D/HostConnection( 7681): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:34:58.746 I/Dialer  ( 1655): VvmTaskExecutor - Stopping service
-10-22 08:34:58.746 I/Dialer  ( 1655): VvmTaskExecutor - finishing Job
-10-22 08:34:58.746 I/Dialer  ( 1655): TaskSchedulerJobService - finishing job
-10-22 08:34:58.751 I/Dialer  ( 1655): JobFinishedPoller.run - Job finished
-10-22 08:34:58.751 I/Dialer  ( 1655): VvmTaskExecutor - terminated
-10-22 08:34:58.877 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:34:58.877 I/Gralloc4( 7685): mapper 4.x is not supported
-10-22 08:34:58.885 D/HostConnection( 7685): createUnique: call
-10-22 08:34:58.886 D/HostConnection( 7685): HostConnection::get() New Host Connection established 0x72d60aa90110, tid 7685
-10-22 08:34:58.903 D/HostConnection( 7685): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:00.002 D/KeyguardClockSwitch(  760): Updating clock: 835
-10-22 08:35:02.299 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:02.300 I/Gralloc4( 7689): mapper 4.x is not supported
-10-22 08:35:02.308 D/HostConnection( 7689): createUnique: call
-10-22 08:35:02.309 D/HostConnection( 7689): HostConnection::get() New Host Connection established 0x700f1b84f1d0, tid 7689
-10-22 08:35:02.324 D/HostConnection( 7689): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:02.716 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:02.717 I/Gralloc4( 7693): mapper 4.x is not supported
-10-22 08:35:02.724 D/HostConnection( 7693): createUnique: call
-10-22 08:35:02.725 D/HostConnection( 7693): HostConnection::get() New Host Connection established 0x7a78d7ced990, tid 7693
-10-22 08:35:02.739 D/HostConnection( 7693): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:04.921 I/Vision  ( 1440): Requesting optional module download of ocr.
-10-22 08:35:04.921 I/Vision  ( 1440): Checking for download completion for 378522 -- ocr
-10-22 08:35:05.713 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:05.713 I/Gralloc4( 7701): mapper 4.x is not supported
-10-22 08:35:05.719 D/HostConnection( 7701): createUnique: call
-10-22 08:35:05.723 D/HostConnection( 7701): HostConnection::get() New Host Connection established 0x7af834366690, tid 7701
-10-22 08:35:05.741 D/HostConnection( 7701): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:09.133 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:09.134 I/Gralloc4( 7705): mapper 4.x is not supported
-10-22 08:35:09.144 D/HostConnection( 7705): createUnique: call
-10-22 08:35:09.145 D/HostConnection( 7705): HostConnection::get() New Host Connection established 0x76051f6f5590, tid 7705
-10-22 08:35:09.160 D/HostConnection( 7705): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:12.551 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:12.552 I/Gralloc4( 7709): mapper 4.x is not supported
-10-22 08:35:12.558 D/HostConnection( 7709): createUnique: call
-10-22 08:35:12.559 D/HostConnection( 7709): HostConnection::get() New Host Connection established 0x79e7bf060d90, tid 7709
-10-22 08:35:12.577 D/HostConnection( 7709): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:13.154 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:13.155 I/Gralloc4( 7713): mapper 4.x is not supported
-10-22 08:35:13.165 D/HostConnection( 7713): createUnique: call
-10-22 08:35:13.166 D/HostConnection( 7713): HostConnection::get() New Host Connection established 0x7f9f94dff110, tid 7713
-10-22 08:35:13.181 D/HostConnection( 7713): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:14.926 I/Vision  ( 1440): Requesting optional module download of ocr.
-10-22 08:35:15.967 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:15.967 I/Gralloc4( 7721): mapper 4.x is not supported
-10-22 08:35:15.972 D/HostConnection( 7721): createUnique: call
-10-22 08:35:15.973 D/HostConnection( 7721): HostConnection::get() New Host Connection established 0x79393eb0c810, tid 7721
-10-22 08:35:15.990 D/HostConnection( 7721): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:19.380 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:19.380 I/Gralloc4( 7725): mapper 4.x is not supported
-10-22 08:35:19.389 D/HostConnection( 7725): createUnique: call
-10-22 08:35:19.391 D/HostConnection( 7725): HostConnection::get() New Host Connection established 0x7f427fbd1110, tid 7725
-10-22 08:35:19.410 D/HostConnection( 7725): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:22.802 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:22.803 I/Gralloc4( 7729): mapper 4.x is not supported
-10-22 08:35:22.809 D/HostConnection( 7729): createUnique: call
-10-22 08:35:22.809 D/HostConnection( 7729): HostConnection::get() New Host Connection established 0x7e1d0f82b410, tid 7729
-10-22 08:35:22.826 D/HostConnection( 7729): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:23.599 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:23.599 I/Gralloc4( 7733): mapper 4.x is not supported
-10-22 08:35:23.608 D/HostConnection( 7733): createUnique: call
-10-22 08:35:23.609 D/HostConnection( 7733): HostConnection::get() New Host Connection established 0x7fc99d35f850, tid 7733
-10-22 08:35:23.626 D/HostConnection( 7733): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:24.033 D/AndroidRuntime( 7737): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-10-22 08:35:24.034 E/libc    ( 7737): Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
-10-22 08:35:24.034 E/libc    ( 7737): Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
-10-22 08:35:24.034 I/AndroidRuntime( 7737): Using default boot image
-10-22 08:35:24.034 E/libc    ( 7737): Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
-10-22 08:35:24.034 I/AndroidRuntime( 7737): Leaving lock profiling enabled
-10-22 08:35:24.035 E/libc    ( 7737): Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
-10-22 08:35:24.036 I/app_process( 7737): Core platform API reporting enabled, enforcing=false
-10-22 08:35:24.028 W/app_process( 7737): type=1400 audit(0.0:135): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7135 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-10-22 08:35:24.028 I/chatty  ( 7737): uid=2000(shell) app_process identical 2 lines
-10-22 08:35:24.028 W/app_process( 7737): type=1400 audit(0.0:138): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7135 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-10-22 08:35:24.079 D/app_process( 7737): Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
-10-22 08:35:24.080 D/app_process( 7737): I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
-10-22 08:35:24.082 W/app_process( 7737): Unexpected CPU variant for X86 using defaults: x86_64
-10-22 08:35:24.083 I/app_process( 7737): The ClassLoaderContext is a special shared library.
-10-22 08:35:24.089 W/app_process( 7737): JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-10-22 08:35:24.092 D/AndroidRuntime( 7737): Calling main entry com.android.commands.input.Input
-10-22 08:35:24.094 I/InputDispatcher(  523): Dropping event because there is no touchable window or gesture monitor at (1140, 540) in display 0.
-10-22 08:35:24.094 W/InputManager(  523): Input event injection from pid 7737 failed.
-10-22 08:35:24.095 I/InputDispatcher(  523): Dropping event because there is no touched foreground window in display 0 or gesture monitor to receive it.
-10-22 08:35:24.095 D/AndroidRuntime( 7737): Shutting down VM
-10-22 08:35:26.228 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:26.228 I/Gralloc4( 7754): mapper 4.x is not supported
-10-22 08:35:26.233 D/HostConnection( 7754): createUnique: call
-10-22 08:35:26.234 D/HostConnection( 7754): HostConnection::get() New Host Connection established 0x79d264c5a150, tid 7754
-10-22 08:35:26.251 D/HostConnection( 7754): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:29.647 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:29.648 I/Gralloc4( 7758): mapper 4.x is not supported
-10-22 08:35:29.656 D/HostConnection( 7758): createUnique: call
-10-22 08:35:29.657 D/HostConnection( 7758): HostConnection::get() New Host Connection established 0x722e4e020010, tid 7758
-10-22 08:35:29.675 D/HostConnection( 7758): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:32.562 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:32.563 I/Gralloc4( 7762): mapper 4.x is not supported
-10-22 08:35:32.569 D/HostConnection( 7762): createUnique: call
-10-22 08:35:32.572 D/HostConnection( 7762): HostConnection::get() New Host Connection established 0x7c6f66784050, tid 7762
-10-22 08:35:32.585 D/HostConnection( 7762): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:33.073 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:33.073 I/Gralloc4( 7768): mapper 4.x is not supported
-10-22 08:35:33.078 D/HostConnection( 7768): createUnique: call
-10-22 08:35:33.080 D/HostConnection( 7768): HostConnection::get() New Host Connection established 0x727dd2f74f10, tid 7768
-10-22 08:35:33.096 D/HostConnection( 7768): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:36.500 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:36.501 I/Gralloc4( 7772): mapper 4.x is not supported
-10-22 08:35:36.509 D/HostConnection( 7772): createUnique: call
-10-22 08:35:36.510 D/HostConnection( 7772): HostConnection::get() New Host Connection established 0x7b22a7f2f310, tid 7772
-10-22 08:35:36.523 D/HostConnection( 7772): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:39.911 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:39.911 I/Gralloc4( 7776): mapper 4.x is not supported
-10-22 08:35:39.922 D/HostConnection( 7776): createUnique: call
-10-22 08:35:39.924 D/HostConnection( 7776): HostConnection::get() New Host Connection established 0x7018bbf3e7d0, tid 7776
-10-22 08:35:39.938 D/HostConnection( 7776): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:43.329 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:43.330 I/Gralloc4( 7780): mapper 4.x is not supported
-10-22 08:35:43.336 D/HostConnection( 7780): createUnique: call
-10-22 08:35:43.338 D/HostConnection( 7780): HostConnection::get() New Host Connection established 0x74f54791b090, tid 7780
-10-22 08:35:43.356 D/HostConnection( 7780): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:43.575 D/WifiNl80211Manager(  523): Scan result ready event
-10-22 08:35:43.576 D/WifiNative(  523): Scan result ready event
-10-22 08:35:46.751 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:46.752 I/Gralloc4( 7784): mapper 4.x is not supported
-10-22 08:35:46.757 D/HostConnection( 7784): createUnique: call
-10-22 08:35:46.761 D/HostConnection( 7784): HostConnection::get() New Host Connection established 0x75132348da90, tid 7784
-10-22 08:35:46.776 D/HostConnection( 7784): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:47.994 I/hwservicemanager(  189): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-10-22 08:35:47.994 I/Gralloc4( 7788): mapper 4.x is not supported
-10-22 08:35:48.003 D/HostConnection( 7788): createUnique: call
-10-22 08:35:48.005 D/HostConnection( 7788): HostConnection::get() New Host Connection established 0x7e124ef4dcd0, tid 7788
-10-22 08:35:48.019 D/HostConnection( 7788): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
-10-22 08:35:51.641 E/libc    ( 7077): Access denied finding property "persist.adb.tls_server.enable"
-10-22 08:35:51.641 E/libc    ( 7077): Access denied finding property "service.adb.tls.port"
-10-22 08:35:51.636 W/Binder:7077_5( 7077): type=1400 audit(0.0:139): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=10298 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
-10-22 08:35:51.636 W/Binder:7077_5( 7077): type=1400 audit(0.0:140): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=7086 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
-10-22 08:35:51.725 W/GLSUser ( 1222): [AppCertManager] Failed to get security token.
-10-22 08:35:51.725 W/GLSUser ( 1222): java.io.IOException: Invalid scope
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at adac.b(:com.google.android.gms@201817023@20.18.17 (040800-311416286):23)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at adac.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):18)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at adac.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):11)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at huk.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):16)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at hui.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):41)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at hud.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at hug.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):10)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at fzn.call(:com.google.android.gms@201817023@20.18.17 (040800-311416286):5)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at sji.b(:com.google.android.gms@201817023@20.18.17 (040800-311416286):12)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at sji.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):7)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at spj.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
-10-22 08:35:51.725 W/GLSUser ( 1222): 	at java.lang.Thread.run(Thread.java:923)
-10-22 08:35:51.753 W/GLSUser ( 1222): [AppCertManager] IOException while requesting key: 
-10-22 08:35:51.753 W/GLSUser ( 1222): java.io.IOException: Invalid device key response.
-10-22 08:35:51.753 W/GLSUser ( 1222): 	at huk.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):46)
-10-22 08:35:51.753 W/GLSUser ( 1222): 	at hui.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):41)
-10-22 08:35:51.753 W/GLSUser ( 1222): 	at hud.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
-10-22 08:35:51.753 W/GLSUser ( 1222): 	at hug.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):10)
-10-22 08:35:51.753 W/GLSUser ( 1222): 	at fzn.call(:com.google.android.gms@201817023@20.18.17 (040800-311416286):5)
-10-22 08:35:51.753 W/GLSUser ( 1222): 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-10-22 08:35:51.753 W/GLSUser ( 1222): 	at sji.b(:com.google.android.gms@201817023@20.18.17 (040800-311416286):12)
-10-22 08:35:51.753 W/GLSUser ( 1222): 	at sji.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):7)
-10-22 08:35:51.753 W/GLSUser ( 1222): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-10-22 08:35:51.753 W/GLSUser ( 1222): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-10-22 08:35:51.753 W/GLSUser ( 1222): 	at spj.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
-10-22 08:35:51.753 W/GLSUser ( 1222): 	at java.lang.Thread.run(Thread.java:923)
-10-22 08:35:10.449 W/healthd (    0): battery l=100 v=5000 t=25.0 h=2 st=2 c=900000 fc=300000 cc=10 chg=a
-10-22 08:35:52.639 D/logd    (    0): logdr: UID=2000 GID=2000 PID=7800 n tail=0 logMask=99 pid=0 start=0ns timeout=0ns
+10-22 08:44:27.148 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:27.320 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:44:27.321 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:27.324 D/        ( 5388): HostConnection::get() New Host Connection established 0xb65cd300, tid 5388
+10-22 08:44:27.398 D/AndroidRuntime( 5389): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 08:44:27.399 D/AndroidRuntime( 5389): CheckJNI is OFF
+10-22 08:44:27.407 D/ICU     ( 5389): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 08:44:27.417 I/art     ( 2556): Starting a blocking GC Explicit
+10-22 08:44:27.418 E/memtrack( 5389): Couldn't load memtrack module (No such file or directory)
+10-22 08:44:27.418 E/android.os.Debug( 5389): failed to load memtrack module: -2
+10-22 08:44:27.418 I/Radio-JNI( 5389): register_android_hardware_Radio DONE
+10-22 08:44:27.424 D/AndroidRuntime( 5389): Calling main entry com.android.commands.monkey.Monkey
+10-22 08:44:27.427 I/art     ( 2556): Explicit concurrent mark sweep GC freed 6032(406KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 7MB/11MB, paused 490us total 9.799ms
+--------- beginning of system
+10-22 08:44:27.432 W/BroadcastQueue( 2556): Skipping deliver [background] BroadcastRecord{795b159 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{a9bd11e 5389 (unknown name)/0/u-1 remote:7d9baa3}: process crashing
+10-22 08:44:27.437 I/ActivityManager( 2556): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity} from uid 0 on display 0
+10-22 08:44:27.455 I/ActivityManager( 2556): Start proc 5400:com.kongregate.mobile.globalassault.google/u0a61 for activity com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity
+10-22 08:44:27.472 I/art     ( 5389): System.exit called, status: 0
+10-22 08:44:27.472 I/AndroidRuntime( 5389): VM exiting with result code 0.
+10-22 08:44:27.527 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:27.580 I/ActivityManager( 2556): Config changes=480 {1.0 310mcc260mnc en_US ldltr sw360dp w598dp h336dp 480dpi nrml land finger -keyb/v/h -nav/h s.10}
+10-22 08:44:27.585 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:27.631 I/InputReader( 2556): Reconfiguring input devices.  changes=0x00000004
+10-22 08:44:27.631 I/InputReader( 2556): Device reconfigured: id=0, name='qwerty2', size 1080x1920, orientation 1, mode 1, display id 0
+10-22 08:44:27.681 D/EGL_emulation( 4069): eglMakeCurrent: 0xaa182a80: ver 3 0 (tinfo 0xaa2d4350)
+10-22 08:44:27.685 E/Surface ( 4069): getSlotFromBufferLocked: unknown buffer: 0xb40bdd40
+10-22 08:44:27.803 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:27.873 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:27.874 E/Surface ( 2839): getSlotFromBufferLocked: unknown buffer: 0xa950d0e0
+10-22 08:44:27.877 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:27.881 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:27.885 D/        ( 5400): HostConnection::get() New Host Connection established 0xaa29d700, tid 5400
+10-22 08:44:27.911 E/Surface ( 2839): getSlotFromBufferLocked: unknown buffer: 0xa950c640
+10-22 08:44:27.932 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:27.943 V/WindowManager( 2556): Layouts looping: On entry to LockedInner, mPendingLayoutChanges = 0x1
+10-22 08:44:27.943 V/WindowManager( 2556): Layouts looping: after finishPostLayoutPolicyLw, mPendingLayoutChanges = 0x0
+10-22 08:44:27.943 V/WindowManager( 2556): Layouts looping: mLayoutNeeded, mPendingLayoutChanges = 0x1
+10-22 08:44:27.943 V/WindowManager( 2556): Layouts looping: On entry to LockedInner, mPendingLayoutChanges = 0x1
+10-22 08:44:27.943 V/WindowManager( 2556): Layouts looping: after finishPostLayoutPolicyLw, mPendingLayoutChanges = 0x0
+10-22 08:44:27.943 V/WindowManager( 2556): Layouts looping: mLayoutNeeded, mPendingLayoutChanges = 0x1
+10-22 08:44:27.943 E/WindowManager( 2556): Performed 6 layouts in a row. Skipping
+10-22 08:44:27.952 I/ActivityManager( 2556): Displayed com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity: +508ms
+10-22 08:44:27.989 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:27.998 W/audio_hw_generic( 2290): Not supplying enough data to HAL, expected position 15659500 , only wrote 7830867
+10-22 08:44:28.022 D/        ( 5400): HostConnection::get() New Host Connection established 0xadd8e6c0, tid 5418
+10-22 08:44:28.039 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:28.058 D/EGL_emulation( 5400): eglCreateContext: 0xadd952a0: maj 3 min 0 rcv 3
+10-22 08:44:28.076 D/EGL_emulation( 5400): eglMakeCurrent: 0xadd952a0: ver 3 0 (tinfo 0xadc2fe00)
+10-22 08:44:28.079 E/eglCodecCommon( 5400): glUtilsParamSize: unknow param 0x00008cdf
+10-22 08:44:28.079 E/eglCodecCommon( 5400): glUtilsParamSize: unknow param 0x00008824
+10-22 08:44:28.087 I/WindowManager( 2556): Screen frozen for +575ms due to Window{b4eb8a6 u0 com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity}
+10-22 08:44:28.104 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:28.105 D/Unity   ( 5400): GL_EXT_debug_marker GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_sync_buffer_data ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-22 08:44:28.167 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:28.191 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:28.346 W/libc    ( 5400): pthread_create sched_setscheduler call failed: Operation not permitted
+10-22 08:44:28.432 D/AudioFlinger( 2290): mixer(0xb4380000) throttle end: throttle time(11)
+10-22 08:44:28.527 E/Surface ( 5400): getSlotFromBufferLocked: unknown buffer: 0xb40be060
+10-22 08:44:28.538 D/EGL_emulation( 5400): eglMakeCurrent: 0xadd952a0: ver 3 0 (tinfo 0xadc2fe00)
+10-22 08:44:28.969 W/SensorService( 2556): sensor 00000000 already enabled in connection 0xadd16ca0 (ignoring)
+10-22 08:44:29.018 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.041 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.052 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.060 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.068 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.083 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.086 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.100 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.106 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.109 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.126 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.155 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.167 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.186 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.194 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.214 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.218 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.228 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.250 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.262 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.270 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.284 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.295 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.325 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.328 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.336 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.349 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.356 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.361 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.373 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.384 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.391 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.415 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.428 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.437 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.446 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.456 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.467 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.482 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.486 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.498 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.512 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.517 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.530 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.539 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.558 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.575 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.588 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.598 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.610 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.632 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.647 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.653 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.660 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.664 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.679 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.691 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.700 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.704 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.739 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.741 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.747 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.761 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.767 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.780 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.790 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:29.805 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:30.152 I/art     ( 2556): Starting a blocking GC Explicit
+10-22 08:44:30.153 D/EGL_emulation( 2839): eglMakeCurrent: 0xadd14d80: ver 3 0 (tinfo 0xadd125b0)
+10-22 08:44:30.161 I/art     ( 2556): Explicit concurrent mark sweep GC freed 3895(250KB) AllocSpace objects, 1(20KB) LOS objects, 33% free, 7MB/11MB, paused 318us total 9.480ms
+10-22 08:44:30.352 I/Vision  ( 3390): Requesting optional module download of ocr.
+10-22 08:44:30.352 I/Vision  ( 3390): Checking for download completion for 301220 -- ocr
+10-22 08:44:30.393 I/AccountManagerService( 2556): getTypesVisibleToCaller: isPermitted? true
+10-22 08:44:30.595 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:44:30.596 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:30.598 D/        ( 5439): HostConnection::get() New Host Connection established 0xb660d300, tid 5439
+10-22 08:44:31.561 D/AndroidRuntime( 5442): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 08:44:31.562 D/AndroidRuntime( 5442): CheckJNI is OFF
+10-22 08:44:31.569 D/ICU     ( 5442): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 08:44:31.580 E/memtrack( 5442): Couldn't load memtrack module (No such file or directory)
+10-22 08:44:31.580 E/android.os.Debug( 5442): failed to load memtrack module: -2
+10-22 08:44:31.581 I/Radio-JNI( 5442): register_android_hardware_Radio DONE
+10-22 08:44:31.586 D/AndroidRuntime( 5442): Calling main entry com.android.commands.uiautomator.Launcher
+10-22 08:44:32.604 W/AccessibilityNodeInfoDumper( 5442): Fetch time: 1ms
+10-22 08:44:32.605 W/WindowManager( 2556): Attempted to remove non-existing token: android.os.Binder@63aef18
+10-22 08:44:32.614 D/AndroidRuntime( 5442): Shutting down VM
+10-22 08:44:33.731 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:44:33.732 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:33.734 D/        ( 5455): HostConnection::get() New Host Connection established 0xb658d300, tid 5455
+10-22 08:44:35.991 D/AndroidRuntime( 5458): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 08:44:35.992 D/AndroidRuntime( 5458): CheckJNI is OFF
+10-22 08:44:35.998 D/ICU     ( 5458): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 08:44:36.008 E/memtrack( 5458): Couldn't load memtrack module (No such file or directory)
+10-22 08:44:36.008 E/android.os.Debug( 5458): failed to load memtrack module: -2
+10-22 08:44:36.009 I/Radio-JNI( 5458): register_android_hardware_Radio DONE
+10-22 08:44:36.013 D/AndroidRuntime( 5458): Calling main entry com.android.commands.uiautomator.Launcher
+10-22 08:44:36.864 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:44:36.865 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:36.867 D/        ( 5470): HostConnection::get() New Host Connection established 0xb654d300, tid 5470
+10-22 08:44:37.036 W/AccessibilityNodeInfoDumper( 5458): Fetch time: 1ms
+10-22 08:44:37.036 W/WindowManager( 2556): Attempted to remove non-existing token: android.os.Binder@30c9756
+10-22 08:44:37.045 D/AndroidRuntime( 5458): Shutting down VM
+10-22 08:44:40.001 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:44:40.002 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:40.004 D/        ( 5476): HostConnection::get() New Host Connection established 0xb658d300, tid 5476
+10-22 08:44:40.355 I/Vision  ( 3390): Requesting optional module download of ocr.
+10-22 08:44:40.355 I/Vision  ( 3390): Checking for download completion for 311223 -- ocr
+10-22 08:44:40.406 D/AndroidRuntime( 5479): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 08:44:40.407 D/AndroidRuntime( 5479): CheckJNI is OFF
+10-22 08:44:40.414 D/ICU     ( 5479): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 08:44:40.424 E/memtrack( 5479): Couldn't load memtrack module (No such file or directory)
+10-22 08:44:40.424 E/android.os.Debug( 5479): failed to load memtrack module: -2
+10-22 08:44:40.425 I/Radio-JNI( 5479): register_android_hardware_Radio DONE
+10-22 08:44:40.429 D/AndroidRuntime( 5479): Calling main entry com.android.commands.uiautomator.Launcher
+10-22 08:44:40.662 W/ChimeraConfigurator( 3390): Error syncing flags: qoq: COMMIT_TIMEOUT
+10-22 08:44:40.662 I/ChmraDebugLogger( 3390): [79] COMMIT_TIMEOUT
+10-22 08:44:40.663 I/ChmraDebugLogger( 3390): [52] null
+10-22 08:44:40.665 W/ChimeraConfigService( 3390): Retry attempt was throttled.
+10-22 08:44:41.464 W/AccessibilityNodeInfoDumper( 5479): Fetch time: 1ms
+10-22 08:44:41.465 W/WindowManager( 2556): Attempted to remove non-existing token: android.os.Binder@30c4fad
+10-22 08:44:41.474 D/AndroidRuntime( 5479): Shutting down VM
+10-22 08:44:43.135 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:44:43.136 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:43.138 D/        ( 5493): HostConnection::get() New Host Connection established 0xb660d300, tid 5493
+10-22 08:44:46.275 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:44:46.276 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:46.278 D/        ( 5498): HostConnection::get() New Host Connection established 0xb658d300, tid 5498
+10-22 08:44:49.403 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:44:49.404 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:49.406 D/        ( 5503): HostConnection::get() New Host Connection established 0xb654d300, tid 5503
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): Error inserting service_kind=0 source=16 tag=PhenotypeSyncImmediately requires_charging=0 target_package=com.google.android.gms source_version=202414000 required_network_type=0 extras={"fetchReason":{"6":0},"fetchPackage":{"com.google.android.gms.settings.platform.boot":4}} flex_time=1000 persistence_level=1 target_class=com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator runtime=1792658423741 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} required_idleness_state=0 last_runtime=0 period=2000 task_type=0 job_id=-1 user_id=0
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:780)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1471)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1341)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at aqui.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):175)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at aqtk.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):182)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at aqtk.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):23)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at aqtk.c(:com.google.android.gms@202414022@20.24.14 (040700-319035315):9)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at aqtk.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):94)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at aqtg.handleMessage(:com.google.android.gms@202414022@20.24.14 (040700-319035315):16)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at aekz.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at aekz.dispatchMessage(:com.google.android.gms@202414022@20.24.14 (040700-319035315):14)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at android.os.Looper.loop(Looper.java:148)
+10-22 08:44:50.359 E/SQLiteDatabase( 3370): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+10-22 08:44:50.361 I/Vision  ( 3390): Requesting optional module download of ocr.
+10-22 08:44:50.361 I/Vision  ( 3390): Exceeded maximum feature download tries for ocr
+10-22 08:44:50.361 W/Vision  ( 3390): Request of optional module download of ocr failed.
+10-22 08:44:50.362 I/Vision  ( 3390): Checking for download completion for 321229 -- ocr
+10-22 08:44:50.412 I/AccountManagerService( 2556): getTypesVisibleToCaller: isPermitted? true
+10-22 08:44:50.457 I/AccountManagerService( 2556): getTypesVisibleToCaller: isPermitted? true
+10-22 08:44:50.483 W/Conscrypt( 3370): Could not set socket write timeout: java.net.SocketException: Socket closed
+10-22 08:44:50.483 E/art     ( 3370): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
+10-22 08:44:50.483 W/Conscrypt( 3370): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 08:44:50.483 W/Conscrypt( 3370): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 08:44:50.510 W/Conscrypt( 3370): Could not set socket write timeout: java.net.SocketException: Socket closed
+10-22 08:44:50.511 E/art     ( 3370): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk:classes3.dex for method void com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(int)
+10-22 08:44:50.511 W/Conscrypt( 3370): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-22 08:44:50.511 W/Conscrypt( 3370): 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 08:44:50.537 D/EGL_emulation( 3961): eglCreateContext: 0xaa183260: maj 3 min 0 rcv 3
+10-22 08:44:50.538 D/EGL_emulation( 3961): eglMakeCurrent: 0xaa183260: ver 3 0 (tinfo 0xb4008360)
+10-22 08:44:50.538 E/eglCodecCommon( 3961): glUtilsParamSize: unknow param 0x00008cdf
+10-22 08:44:50.538 E/eglCodecCommon( 3961): glUtilsParamSize: unknow param 0x00008824
+10-22 08:44:50.648 I/aopq    ( 3370): Scheduling adaptive one off task with window [14400, 604800] in seconds [CONTEXT service_id=51 ]
+10-22 08:44:50.663 I/PGAPhenotypeBroadcastRe( 4521): Received Phenotype update.
+10-22 08:44:50.686 I/AccountManagerService( 2556): getTypesVisibleToCaller: isPermitted? true
+10-22 08:44:50.687 I/Auth    ( 3370): [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-22 08:44:50.687 I/Auth    ( 3370): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-22 08:44:50.689 I/PTCommittedOperation( 3370): Receive new configuration for com.google.android.gms.clearcut.public
+10-22 08:44:50.689 I/Auth    ( 3370): [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-22 08:44:50.690 I/ChromeSync( 3390): [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-22 08:44:50.693 I/MdiSyncModule( 3390): flag handling is skipping irrelevant intent.
+10-22 08:44:50.696 W/ActivityManager( 2556): Unable to start service Intent { act=com.google.android.gms.auth.key.retrieval.service.START pkg=com.google.android.gms } U=0: not found
+10-22 08:44:50.697 W/ModuleInitIntentOp( 3390): Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-22 08:44:50.699 W/ActivityManager( 2556): Unbind failed: could not find connection for android.os.BinderProxy@7c5f90
+10-22 08:44:50.699 E/GmsClient( 3390): unable to connect to service: com.google.android.gms.auth.key.retrieval.service.START on com.google.android.gms
+10-22 08:44:50.744 E/art     ( 3370): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
+10-22 08:44:50.744 W/GLSUser ( 3370): [AppCertManager] Failed to get security token.
+10-22 08:44:50.744 W/GLSUser ( 3370): java.io.IOException: Invalid scope
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at adiw.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):23)
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at adiw.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):18)
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at adiw.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):11)
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at hwy.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):17)
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at hww.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):45)
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at hwr.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at hwu.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):10)
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at gbi.call(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at soy.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):12)
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at soy.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):7)
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at sux.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-22 08:44:50.744 W/GLSUser ( 3370): 	at java.lang.Thread.run(Thread.java:818)
+10-22 08:44:50.809 E/art     ( 3370): invalid stream - problem with parameter iterator in /system/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk for method java.lang.Object hwr.a(hwx)
+10-22 08:44:50.809 W/GLSUser ( 3370): [AppCertManager] IOException while requesting key: 
+10-22 08:44:50.809 W/GLSUser ( 3370): java.io.IOException: Invalid device key response.
+10-22 08:44:50.809 W/GLSUser ( 3370): 	at hwy.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):49)
+10-22 08:44:50.809 W/GLSUser ( 3370): 	at hww.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):45)
+10-22 08:44:50.809 W/GLSUser ( 3370): 	at hwr.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315))
+10-22 08:44:50.809 W/GLSUser ( 3370): 	at hwu.a(:com.google.android.gms@202414022@20.24.14 (040700-319035315):10)
+10-22 08:44:50.809 W/GLSUser ( 3370): 	at gbi.call(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-22 08:44:50.809 W/GLSUser ( 3370): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+10-22 08:44:50.809 W/GLSUser ( 3370): 	at soy.b(:com.google.android.gms@202414022@20.24.14 (040700-319035315):12)
+10-22 08:44:50.809 W/GLSUser ( 3370): 	at soy.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):7)
+10-22 08:44:50.809 W/GLSUser ( 3370): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+10-22 08:44:50.809 W/GLSUser ( 3370): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+10-22 08:44:50.809 W/GLSUser ( 3370): 	at sux.run(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-22 08:44:50.809 W/GLSUser ( 3370): 	at java.lang.Thread.run(Thread.java:818)
+10-22 08:44:52.532 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:44:52.533 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:52.534 D/        ( 5533): HostConnection::get() New Host Connection established 0xb654d300, tid 5533
+10-22 08:44:53.173 V/NativeCrypto( 3370): Read error: ssl=0x9638c548: I/O error during system call, Connection reset by peer
+10-22 08:44:53.174 V/NativeCrypto( 3370): SSL shutdown failed: ssl=0x9638c548: I/O error during system call, Broken pipe
+10-22 08:44:53.174 E/WakeLock( 3370): GCM_HB_ALARM release without a matched acquire!
+10-22 08:44:53.174 W/WakeLock( 3370): GCM_HB_ALARM counter does not exist
+10-22 08:44:53.177 D/ConnectivityService( 2556): reportNetworkConnectivity(100, false) by 10008
+10-22 08:44:53.177 D/NetworkMonitor/NetworkAgentInfo [MOBILE (LTE) - 100]( 2556): Forcing reevaluation for UID 10008
+10-22 08:44:53.180 D/NetworkMonitor/NetworkAgentInfo [MOBILE (LTE) - 100]( 2556): Checking http://connectivitycheck.gstatic.com/generate_204 on epc.tmobile.com, connectivitycheck.gstatic.com=142.251.150.120
+10-22 08:44:53.183 W/WakeLock( 3370): GCM_CONN_ALARM counter does not exist
+10-22 08:44:53.204 D/NetworkMonitor/NetworkAgentInfo [MOBILE (LTE) - 100]( 2556): isCaptivePortal: ret=204 headers={null=[HTTP/1.1 204 No Content], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Thu, 22 Oct 2026 08:44:54 GMT], X-Android-Received-Millis=[1792658693204], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792658693193]}
+10-22 08:44:53.204 D/ConnectivityService( 2556): setProvNotificationVisibleIntent null visible=false networkType=MOBILE extraInfo=null highPriority=false
+10-22 08:44:53.204 D/ConnectivityService( 2556): NetworkAgentInfo [MOBILE (LTE) - 100] validation  passed
+10-22 08:44:54.772 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:44:54.773 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:54.776 D/        ( 5539): HostConnection::get() New Host Connection established 0xb658d300, tid 5539
+10-22 08:44:55.667 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:44:55.668 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:55.670 D/        ( 5546): HostConnection::get() New Host Connection established 0xb654d300, tid 5546
+10-22 08:44:57.698 W/art     ( 3743): No such thread id for suspend: 13
+10-22 08:44:58.801 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:44:58.803 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:44:58.804 D/        ( 5551): HostConnection::get() New Host Connection established 0xb658d300, tid 5551
+10-22 08:45:00.059 D/hwcomposer( 1268): hw_composer sent 198 syncs in 60s
+10-22 08:45:00.194 I/qtaguid ( 3370): Failed write_ctrl(t -1 3458768941931823104 -1) res=-1 errno=9
+10-22 08:45:00.195 I/qtaguid ( 3370): Tagging socket -1 with tag 3000040700000000(805307399) for uid -1 failed errno=-9
+10-22 08:45:00.195 I/NetworkManagementSocketTagger( 3370): tagSocketFd(-1, 805307399, -1) failed with errno-9
+10-22 08:45:00.365 I/Vision  ( 3390): Requesting optional module download of ocr.
+10-22 08:45:00.368 I/Vision  ( 3390): Checking for download completion for 331236 -- ocr
+10-22 08:45:00.372 I/ChimeraConfigurator( 3390): Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+10-22 08:45:01.936 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:01.937 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:01.939 D/        ( 5562): HostConnection::get() New Host Connection established 0xb654d300, tid 5562
+10-22 08:45:04.919 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:04.920 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:04.921 D/        ( 5567): HostConnection::get() New Host Connection established 0xb660d300, tid 5567
+10-22 08:45:05.070 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:05.071 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:05.073 D/        ( 5574): HostConnection::get() New Host Connection established 0xb65cd300, tid 5574
+10-22 08:45:08.208 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:08.209 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:08.210 D/        ( 5579): HostConnection::get() New Host Connection established 0xb654d300, tid 5579
+10-22 08:45:09.458 W/audio_hw_generic( 2290): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 08:45:10.371 I/Vision  ( 3390): Requesting optional module download of ocr.
+10-22 08:45:10.371 I/Vision  ( 3390): Checking for download completion for 341239 -- ocr
+10-22 08:45:11.349 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:11.350 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:11.351 D/        ( 5586): HostConnection::get() New Host Connection established 0xb654d300, tid 5586
+10-22 08:45:14.482 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:14.483 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:14.484 D/        ( 5591): HostConnection::get() New Host Connection established 0xb658d300, tid 5591
+10-22 08:45:15.072 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:15.074 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:15.075 D/        ( 5596): HostConnection::get() New Host Connection established 0xb660d300, tid 5596
+10-22 08:45:15.819 W/art     ( 3191): No such thread id for suspend: 33
+10-22 08:45:17.615 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:17.616 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:17.617 D/        ( 5603): HostConnection::get() New Host Connection established 0xb660d300, tid 5603
+10-22 08:45:20.375 I/Vision  ( 3390): Requesting optional module download of ocr.
+10-22 08:45:20.375 I/Vision  ( 3390): Checking for download completion for 351243 -- ocr
+10-22 08:45:20.748 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:20.749 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:20.752 D/        ( 5610): HostConnection::get() New Host Connection established 0xb658d300, tid 5610
+10-22 08:45:23.883 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:23.884 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:23.886 D/        ( 5615): HostConnection::get() New Host Connection established 0xb658d300, tid 5615
+10-22 08:45:25.215 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:25.217 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:25.218 D/        ( 5620): HostConnection::get() New Host Connection established 0xb65cd300, tid 5620
+10-22 08:45:27.017 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:27.018 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:27.020 D/        ( 5627): HostConnection::get() New Host Connection established 0xb658d300, tid 5627
+10-22 08:45:28.268 W/audio_hw_generic( 2290): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 08:45:30.153 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:30.154 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:30.156 D/        ( 5632): HostConnection::get() New Host Connection established 0xb65cd300, tid 5632
+10-22 08:45:30.378 I/Vision  ( 3390): Requesting optional module download of ocr.
+10-22 08:45:30.378 I/Vision  ( 3390): Checking for download completion for 361246 -- ocr
+10-22 08:45:33.291 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:33.292 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:33.293 D/        ( 5638): HostConnection::get() New Host Connection established 0xb660d300, tid 5638
+10-22 08:45:35.368 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:35.369 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:35.370 D/        ( 5643): HostConnection::get() New Host Connection established 0xb654d300, tid 5643
+10-22 08:45:36.437 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:36.438 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:36.439 D/        ( 5650): HostConnection::get() New Host Connection established 0xb658d300, tid 5650
+10-22 08:45:39.566 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:39.567 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:39.569 D/        ( 5655): HostConnection::get() New Host Connection established 0xb658d300, tid 5655
+10-22 08:45:39.614 W/audio_hw_generic( 2290): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 08:45:40.381 I/Vision  ( 3390): Requesting optional module download of ocr.
+10-22 08:45:40.570 W/ChimeraConfigurator( 3390): Error syncing flags: qoq: COMMIT_TIMEOUT
+10-22 08:45:40.570 I/ChmraDebugLogger( 3390): [79] COMMIT_TIMEOUT
+10-22 08:45:40.571 I/ChmraDebugLogger( 3390): [52] null
+10-22 08:45:40.572 W/ChimeraConfigService( 3390): Retry attempt was throttled.
+10-22 08:45:42.703 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:42.704 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:42.706 D/        ( 5665): HostConnection::get() New Host Connection established 0xb65cd300, tid 5665
+10-22 08:45:45.525 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:45.526 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:45.528 D/        ( 5670): HostConnection::get() New Host Connection established 0xb654d300, tid 5670
+10-22 08:45:45.836 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:45.837 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:45.839 D/        ( 5677): HostConnection::get() New Host Connection established 0xb65cd300, tid 5677
+10-22 08:45:48.972 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:48.973 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:48.975 D/        ( 5682): HostConnection::get() New Host Connection established 0xb660d300, tid 5682
+10-22 08:45:52.107 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:52.108 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:52.110 D/        ( 5688): HostConnection::get() New Host Connection established 0xb654d300, tid 5688
+10-22 08:45:55.237 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:55.238 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:55.240 D/        ( 5693): HostConnection::get() New Host Connection established 0xb658d300, tid 5693
+10-22 08:45:55.687 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:55.689 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:55.690 D/        ( 5698): HostConnection::get() New Host Connection established 0xb65cd300, tid 5698
+10-22 08:45:58.367 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:45:58.368 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:45:58.369 D/        ( 5705): HostConnection::get() New Host Connection established 0xb660d300, tid 5705
+10-22 08:45:58.409 W/audio_hw_generic( 2290): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 08:46:00.044 D/hwcomposer( 1268): hw_composer sent 21 syncs in 60s
+10-22 08:46:01.499 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:46:01.500 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:46:01.501 D/        ( 5711): HostConnection::get() New Host Connection established 0xb654d300, tid 5711
+10-22 08:46:01.766 W/audio_hw_generic( 2290): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 08:46:04.635 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:46:04.636 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:46:04.638 D/        ( 5720): HostConnection::get() New Host Connection established 0xb660d300, tid 5720
+10-22 08:46:05.842 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:46:05.843 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:46:05.845 D/        ( 5725): HostConnection::get() New Host Connection established 0xb660d300, tid 5725
+10-22 08:46:06.047 D/AndroidRuntime( 5730): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-22 08:46:06.047 D/AndroidRuntime( 5730): CheckJNI is OFF
+10-22 08:46:06.054 D/ICU     ( 5730): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-22 08:46:06.063 E/memtrack( 5730): Couldn't load memtrack module (No such file or directory)
+10-22 08:46:06.063 E/android.os.Debug( 5730): failed to load memtrack module: -2
+10-22 08:46:06.064 I/Radio-JNI( 5730): register_android_hardware_Radio DONE
+10-22 08:46:06.068 D/AndroidRuntime( 5730): Calling main entry com.android.commands.input.Input
+10-22 08:46:06.070 I/Input   ( 5730): injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=386936, downTime=386936, deviceId=0, source=0x1002 }
+10-22 08:46:06.988 I/Input   ( 5730): injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1140.0, y[0]=540.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=386936, downTime=386936, deviceId=0, source=0x1002 }
+10-22 08:46:07.769 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:46:07.770 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:46:07.771 D/        ( 5741): HostConnection::get() New Host Connection established 0xb65cd300, tid 5741
+10-22 08:46:07.988 D/AndroidRuntime( 5730): Shutting down VM
+10-22 08:46:10.909 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:46:10.910 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:46:10.911 D/        ( 5746): HostConnection::get() New Host Connection established 0xb65cd300, tid 5746
+10-22 08:46:14.041 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:46:14.043 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:46:14.045 D/        ( 5752): HostConnection::get() New Host Connection established 0xb654d300, tid 5752
+10-22 08:46:14.970 W/audio_hw_generic( 2290): Hardware backing HAL too slow, could only write 0 of 661 frames
+10-22 08:46:16.216 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:46:16.217 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:46:16.219 D/        ( 5757): HostConnection::get() New Host Connection established 0xb660d300, tid 5757
+10-22 08:46:17.177 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:46:17.178 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:46:17.179 D/        ( 5764): HostConnection::get() New Host Connection established 0xb65cd300, tid 5764
+10-22 08:46:20.305 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:46:20.306 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:46:20.308 D/        ( 5769): HostConnection::get() New Host Connection established 0xb660d300, tid 5769
+10-22 08:46:23.442 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:46:23.443 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:46:23.444 D/        ( 5775): HostConnection::get() New Host Connection established 0xb65cd300, tid 5775
+10-22 08:46:26.577 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:46:26.579 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:46:26.580 D/        ( 5780): HostConnection::get() New Host Connection established 0xb65cd300, tid 5780
+10-22 08:46:29.710 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:46:29.711 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:46:29.713 D/        ( 5785): HostConnection::get() New Host Connection established 0xb660d300, tid 5785
+10-22 08:46:31.375 E/SurfaceFlinger( 1268): ro.sf.lcd_density must be defined as a build property
+10-22 08:46:31.376 D/gralloc_ranchu( 1268): gralloc_alloc: Creating ashmem region of size 8294400
+10-22 08:46:31.377 D/        ( 5790): HostConnection::get() New Host Connection established 0xb654d300, tid 5790
+10-22 08:46:31.427 W/audio_hw_generic( 2290): Hardware backing HAL too slow, could only write 0 of 661 frames
