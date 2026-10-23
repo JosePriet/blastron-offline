@@ -1,0 +1,190 @@
+--------- beginning of main
+10-23 01:59:57.418  1812  4500 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.kongregate.mobile.globalassault.google flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-23 01:59:57.419  1812  4503 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.kongregate.mobile.globalassault.google flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-23 01:59:57.421  2104  4492 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
+10-23 01:59:57.421  2104  4492 I Auth    : [SupervisedAccountIntentOperation] This operation is disabled
+10-23 01:59:57.422  2104  4496 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.kongregate.mobile.globalassault.google flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+--------- beginning of system
+10-23 01:59:57.423  1665  2529 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.auth.key.retrieval.service.START pkg=com.google.android.gms } U=0: not found
+10-23 01:59:57.426  1665  1957 W ActivityManager: Unbind failed: could not find connection for android.os.BinderProxy@75de231
+10-23 01:59:57.426  2104  2552 E GmsClient: unable to connect to service: com.google.android.gms.auth.key.retrieval.service.START on com.google.android.gms
+10-23 01:59:57.434  2104  4496 I ChromeSync: [Persistence,AffiliationManager] One of affiliation or grouping data for android://XNzGIg0Ss5dIg3Nok1a9HAvWvb-6dhBIWEwPdUyOXcUfYK5MS34FoyhDvZ5IwraPH7WkydP-A1abEOkILkmm0A==@com.kongregate.mobile.globalassault.google/ was not found. Marking affiliation data as stale...
+10-23 01:59:57.444  4625  4625 W art     : Unexpected CPU variant for X86 using defaults: x86
+10-23 01:59:57.447  1665  1957 I ActivityManager: Start proc 4625:com.google.android.partnersetup/u0a19 for broadcast com.google.android.partnersetup/.RlzPingBroadcastReceiver
+10-23 01:59:57.447  2300  4623 I UpdateIcingCorporaServi: Updating corpora: APPS=com.kongregate.mobile.globalassault.google, CONTACTS=MAYBE
+10-23 01:59:57.467  4625  4625 W System  : ClassLoader referenced unknown path: /system/priv-app/GooglePartnerSetup/lib/x86
+10-23 01:59:57.490  2104  2740 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=null serviceId=36
+10-23 01:59:57.495  2104  2581 W Icing   : No valid account for uploading user actions
+10-23 01:59:57.500  2104  2581 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-23 01:59:57.504  2300  4623 I UpdateIcingCorporaServi: UpdateCorporaTask done [took 56 ms] updated apps [took 56 ms] 
+10-23 01:59:57.568  4621  4621 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-23 01:59:57.569  4621  4621 D AndroidRuntime: CheckJNI is OFF
+10-23 01:59:57.580  4621  4621 W art     : Unexpected CPU variant for X86 using defaults: x86
+10-23 01:59:57.582  4621  4621 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-23 01:59:57.591  4621  4621 E memtrack: Couldn't load memtrack module (No such file or directory)
+10-23 01:59:57.591  4621  4621 E android.os.Debug: failed to load memtrack module: -2
+10-23 01:59:57.591  4621  4621 I Radio-JNI: register_android_hardware_Radio DONE
+10-23 01:59:57.594  4621  4621 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+10-23 01:59:57.607  1665  1679 W BroadcastQueue: Skipping deliver [background] BroadcastRecord{2fdb0f0 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{b8da669 4621 (unknown name)/0/u-1 remote:27844a2}: process crashing
+10-23 01:59:57.612  1665  3574 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity} from uid 0 on display 0
+10-23 01:59:57.619  4652  4652 W art     : Unexpected CPU variant for X86 using defaults: x86
+10-23 01:59:57.626  1665  3575 I ActivityManager: Start proc 4652:com.kongregate.mobile.globalassault.google/u0a81 for activity com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity
+10-23 01:59:57.684  1338  1352 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-23 01:59:57.724  1665  2180 I ActivityManager: Config changes=480 {1.0 310mcc260mnc [en_US] ldltr sw411dp w866dp h387dp 420dpi nrml long land finger -keyb/v/h -nav/h s.10}
+10-23 01:59:57.771  4621  4621 I art     : System.exit called, status: 0
+10-23 01:59:57.771  4621  4621 I AndroidRuntime: VM exiting with result code 0.
+10-23 01:59:57.773  1665  1680 W art     : Long monitor contention with owner main (1665) at java.lang.String com.android.server.am.ActivityManagerService.checkContentProviderAccess(java.lang.String, int)(ActivityManagerService.java:10405) waiters=4 in void com.android.server.am.ActivityManagerService.dispatchUidsChanged() for 145ms
+10-23 01:59:57.780  1665  1709 I InputReader: Reconfiguring input devices.  changes=0x00000004
+10-23 01:59:57.780  1665  1709 I InputReader: Device reconfigured: id=0, name='qwerty2', size 1080x2400, orientation 1, mode 1, display id 0
+10-23 01:59:57.780  1665  1709 I InputReader: Reconfiguring input devices.  changes=0x00000004
+10-23 01:59:57.797  2512  2557 D EGL_emulation: eglMakeCurrent: 0x9e9052a0: ver 3 0 (tinfo 0x9e903250)
+10-23 01:59:57.808  1665  2510 I WindowManager: Destroying surface Surface(name=com.android.launcher3/com.android.launcher3.Launcher) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.WindowManagerService.tryStartExitingAnimation:3024 com.android.server.wm.WindowManagerService.relayoutWindow:2904 com.android.server.wm.Session.relayout:224 android.view.IWindowSession$Stub.onTransact:286 com.android.server.wm.Session.onTransact:145 
+10-23 01:59:57.943  1338  1710 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-23 01:59:57.954  4652  4652 D         : HostConnection::get() New Host Connection established 0x9a2231c0, tid 4652
+10-23 01:59:58.009  1846  2032 D EGL_emulation: eglMakeCurrent: 0x9e9058a0: ver 3 0 (tinfo 0x9e903960)
+10-23 01:59:58.010  1665  1686 E WindowManager: Performed 6 layouts in a row. Skipping
+10-23 01:59:58.015  1665  1686 I ActivityManager: Displayed com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity: +400ms
+10-23 01:59:58.036  1338  1353 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-23 01:59:58.060  4652  4671 D         : HostConnection::get() New Host Connection established 0x9ea5b140, tid 4671
+10-23 01:59:58.104  1665  1686 I WindowManager: Destroying surface Surface(name=Starting com.kongregate.mobile.globalassault.google) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.removeLocked:1456 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2484 com.android.server.wm.WindowManagerService.removeWindowLocked:2442 com.android.server.wm.WindowManagerService.removeWindowLocked:2311 com.android.server.wm.WindowManagerService.removeWindow:2306 com.android.server.wm.Session.remove:202 
+10-23 01:59:58.107  4652  4671 D EGL_emulation: eglCreateContext: 0x8aea59c0: maj 3 min 0 rcv 3
+10-23 01:59:58.112  4652  4671 D EGL_emulation: eglMakeCurrent: 0x8aea59c0: ver 3 0 (tinfo 0x9ea52810)
+10-23 01:59:58.113  4652  4671 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+10-23 01:59:58.113  4652  4671 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+10-23 01:59:58.120  4652  4671 D Unity   : GL_EXT_debug_marker GL_EXT_robustness GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_sync_buffer_data ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-23 01:59:58.177  4570  4594 W System  : ClassLoader referenced unknown path: /system/priv-app/PrebuiltGmsCore/lib/x86
+10-23 01:59:58.183  4570  4594 W System  : ClassLoader referenced unknown path: /system/priv-app/PrebuiltGmsCore/lib/x86
+10-23 01:59:58.183  4570  4594 W System  : ClassLoader referenced unknown path: /system/priv-app/PrebuiltGmsCore/lib/x86
+10-23 01:59:58.184  4570  4594 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 286 native methods...
+10-23 01:59:58.193  1846  2032 D EGL_emulation: eglMakeCurrent: 0x9e9058a0: ver 3 0 (tinfo 0x9e903960)
+10-23 01:59:58.201  4570  4594 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-23 01:59:58.206  4570  4594 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+10-23 01:59:58.244  4652  4671 W libc    : pthread_create sched_setscheduler call failed: Operation not permitted
+10-23 01:59:58.244  1665  1686 I WindowManager: Screen frozen for +616ms due to Window{6c3ee75 u0 NavigationBar}
+10-23 01:59:58.250  4652  4688 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-23 01:59:58.261  4652  4674 D AudioTrack: Client defaulted notificationFrames to 682 for frameCount 2048
+10-23 01:59:58.281  1422  1452 W audio_hw_generic: Not supplying enough data to HAL, expected position 5114214 , only wrote 5114160
+10-23 01:59:58.377  1665  3575 W art     : Long monitor contention with owner android.display (1686) at void com.android.server.wm.WindowManagerService$H.handleMessage(android.os.Message)(WindowManagerService.java:8085) waiters=0 in void com.android.server.wm.WindowManagerService.finishDrawingWindow(com.android.server.wm.Session, android.view.IWindow) for 132ms
+10-23 01:59:58.418  1846  2032 D EGL_emulation: eglMakeCurrent: 0x9e9058a0: ver 3 0 (tinfo 0x9e903960)
+10-23 01:59:58.428  1846  2032 D EGL_emulation: eglMakeCurrent: 0x9e9058a0: ver 3 0 (tinfo 0x9e903960)
+10-23 01:59:58.491  4652  4671 D EGL_emulation: eglMakeCurrent: 0x8aea59c0: ver 3 0 (tinfo 0x9ea52810)
+10-23 01:59:58.501  2104  2581 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-23 01:59:58.511  2104  2581 I Icing   : Indexing done com.google.android.gms-apps
+10-23 01:59:58.512  2104  2581 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-23 01:59:58.515  2104  2581 I Icing   : Indexing com.google.android.googlequicksearchbox-applications_uri from com.google.android.googlequicksearchbox
+10-23 01:59:58.538  2104  2581 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-23 01:59:58.544  2104  2581 I Icing   : Indexing done com.google.android.googlequicksearchbox-applications_uri
+10-23 01:59:58.962  1665  3575 W SensorService: sensor 00000000 already enabled in connection 0x8da43b40 (ignoring)
+10-23 01:59:59.010  1846  2032 D EGL_emulation: eglMakeCurrent: 0x9e9058a0: ver 3 0 (tinfo 0x9e903960)
+10-23 01:59:59.019  1846  2032 D EGL_emulation: eglMakeCurrent: 0x9e9058a0: ver 3 0 (tinfo 0x9e903960)
+10-23 02:00:00.010  1846  2032 D EGL_emulation: eglMakeCurrent: 0x9e9058a0: ver 3 0 (tinfo 0x9e903960)
+10-23 02:00:00.377  1665  1686 I art     : Starting a blocking GC Explicit
+10-23 02:00:00.397  1665  1686 I art     : Explicit concurrent mark sweep GC freed 37004(2MB) AllocSpace objects, 9(336KB) LOS objects, 24% free, 12MB/16MB, paused 786us total 20.068ms
+10-23 02:00:00.457  2104  4494 I Vision  : Requesting optional module download of ocr.
+10-23 02:00:00.457  2104  4494 I Vision  : Checking for download completion for 174579 -- ocr
+10-23 02:00:00.582  1812  2825 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-23 02:00:00.582  1812  2825 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-23 02:00:00.582  1812  2825 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-23 02:00:00.617  1665  1789 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+10-23 02:00:00.625  1812  2825 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-23 02:00:00.625  1812  2825 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):2)
+10-23 02:00:00.625  1812  2825 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414022@20.24.14 (040700-319035315):0)
+10-23 02:00:00.865  1812  2825 I aopq    : Scheduling adaptive one off task with window [14400, 604800] in seconds [CONTEXT service_id=51 ]
+10-23 02:00:05.824  1338  1353 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+10-23 02:00:05.826  1338  2011 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-23 02:00:05.827  4702  4702 D         : HostConnection::get() New Host Connection established 0xaa99b2c0, tid 4702
+10-23 02:00:05.943  1665  2510 I ActivityManager: Killing 3418:com.google.android.apps.photos/u0a63 (adj 906): empty #17
+10-23 02:00:05.978  1665  4243 D ActivityManager: cleanUpApplicationRecord -- 3418
+10-23 02:00:06.194  4705  4705 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-23 02:00:06.196  4705  4705 D AndroidRuntime: CheckJNI is OFF
+10-23 02:00:06.210  4705  4705 W art     : Unexpected CPU variant for X86 using defaults: x86
+10-23 02:00:06.212  4705  4705 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-23 02:00:06.223  4705  4705 E memtrack: Couldn't load memtrack module (No such file or directory)
+10-23 02:00:06.223  4705  4705 E android.os.Debug: failed to load memtrack module: -2
+10-23 02:00:06.224  4705  4705 I Radio-JNI: register_android_hardware_Radio DONE
+10-23 02:00:06.228  4705  4705 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 02:00:06.231  4705  4705 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=976.0, y[0]=2203.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=170351, downTime=170351, deviceId=0, source=0x1002 }
+10-23 02:00:06.231  1665  1708 I InputDispatcher: Dropping event because there is no touchable window at (976, 2203).
+10-23 02:00:06.231  1665  2511 W InputManager: Input event injection from pid 4705 failed.
+10-23 02:00:06.231  4705  4705 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=976.0, y[0]=2203.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=170351, downTime=170351, deviceId=0, source=0x1002 }
+10-23 02:00:06.232  1665  2263 W InputManager: Input event injection from pid 4705 failed.
+10-23 02:00:06.232  4705  4705 D AndroidRuntime: Shutting down VM
+10-23 02:00:10.413  4717  4717 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-23 02:00:10.415  4717  4717 D AndroidRuntime: CheckJNI is OFF
+10-23 02:00:10.431  4717  4717 W art     : Unexpected CPU variant for X86 using defaults: x86
+10-23 02:00:10.434  4717  4717 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-23 02:00:10.445  4717  4717 E memtrack: Couldn't load memtrack module (No such file or directory)
+10-23 02:00:10.445  4717  4717 E android.os.Debug: failed to load memtrack module: -2
+10-23 02:00:10.445  4717  4717 I Radio-JNI: register_android_hardware_Radio DONE
+10-23 02:00:10.450  4717  4717 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 02:00:10.451  4717  4717 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_ENTER, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=174574, downTime=174574, deviceId=-1, source=0x101 }
+10-23 02:00:10.462  2104  4708 I Vision  : Requesting optional module download of ocr.
+10-23 02:00:10.462  2104  4708 I Vision  : Checking for download completion for 184585 -- ocr
+10-23 02:00:11.965  4717  4717 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_ENTER, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=174574, downTime=174574, deviceId=-1, source=0x101 }
+10-23 02:00:13.966  4717  4717 D AndroidRuntime: Shutting down VM
+10-23 02:00:17.616  2104  4355 W ChimeraConfigurator: Error syncing flags: qoq: COMMIT_TIMEOUT
+10-23 02:00:17.616  2104  4355 I ChmraDebugLogger: [79] COMMIT_TIMEOUT
+10-23 02:00:17.618  2104  4355 I ChmraDebugLogger: [52] null
+10-23 02:00:17.618  2104  4355 W ChimeraConfigService: Retry attempt was throttled.
+10-23 02:00:20.463  1665  1679 I ActivityManager: Killing 2785:com.android.providers.calendar/u0a2 (adj 906): empty #17
+10-23 02:00:20.465  2104  4355 I Vision  : Requesting optional module download of ocr.
+10-23 02:00:20.465  2104  4355 I Vision  : Checking for download completion for 194588 -- ocr
+10-23 02:00:20.497  1665  3573 D ActivityManager: cleanUpApplicationRecord -- 2785
+10-23 02:00:25.568  2104  2581 I ContentMaintenance: Internal cache bytes used: 0; limit: 100000000; download size: 0
+10-23 02:00:25.574  2104  2581 I RealtimeCacheCleanup: Beginning Realtime garbage collection.
+10-23 02:00:25.574  2104  2581 I RealtimeCacheCleanup: Finished Realtime garbage collection.
+10-23 02:00:27.508  1665  2528 I ActivityManager: Killing 4092:com.google.android.play.games.ui/u0a64 (adj 906): empty #17
+10-23 02:00:27.508  1665  2528 I ActivityManager: Killing 2883:com.google.android.music:main/u0a58 (adj 906): empty #18
+10-23 02:00:27.561  1665  1829 D ActivityManager: cleanUpApplicationRecord -- 4092
+10-23 02:00:27.562  1665  2266 D ActivityManager: cleanUpApplicationRecord -- 2883
+10-23 02:00:30.473  2104  4729 I Vision  : Requesting optional module download of ocr.
+10-23 02:00:30.473  2104  4729 I Vision  : Exceeded maximum feature download tries for ocr
+10-23 02:00:30.473  2104  4729 W Vision  : Request of optional module download of ocr failed.
+10-23 02:00:30.473  2104  4729 I Vision  : Checking for download completion for 204596 -- ocr
+10-23 02:00:39.009  1338  2010 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+10-23 02:00:39.010  1338  1353 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-23 02:00:39.012  4734  4734 D         : HostConnection::get() New Host Connection established 0xa741b2c0, tid 4734
+10-23 02:00:40.478  2104  4738 I Vision  : Requesting optional module download of ocr.
+10-23 02:00:40.480  2104  4738 I Vision  : Checking for download completion for 214603 -- ocr
+10-23 02:00:40.481  2104  4738 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+10-23 02:00:50.484  2104  4739 I Vision  : Requesting optional module download of ocr.
+10-23 02:00:50.484  2104  4739 I Vision  : Checking for download completion for 224607 -- ocr
+10-23 02:00:54.471  1422  1452 W audio_hw_generic: Hardware backing HAL too slow, could only write 0 of 720 frames
+10-23 02:00:59.676  1422  1452 W audio_hw_generic: Hardware backing HAL too slow, could only write 0 of 720 frames
+10-23 02:01:00.495  2104  4740 I Vision  : Requesting optional module download of ocr.
+10-23 02:01:00.495  2104  4740 I Vision  : Checking for download completion for 234617 -- ocr
+10-23 02:01:04.216  1338  1710 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+10-23 02:01:04.217  1338  2011 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-23 02:01:04.219  4745  4745 D         : HostConnection::get() New Host Connection established 0xabb9b2c0, tid 4745
+10-23 02:01:10.497  2104  4748 I Vision  : Requesting optional module download of ocr.
+10-23 02:01:10.497  2104  4748 I Vision  : Checking for download completion for 244620 -- ocr
+10-23 02:01:16.341  1422  1452 W audio_hw_generic: Hardware backing HAL too slow, could only write 0 of 720 frames
+10-23 02:01:20.500  2104  4749 I Vision  : Requesting optional module download of ocr.
+10-23 02:01:20.500  2104  4749 I Vision  : Checking for download completion for 254623 -- ocr
+10-23 02:01:20.736  2104  4738 W ChimeraConfigurator: Error syncing flags: qoq: COMMIT_TIMEOUT
+10-23 02:01:20.736  2104  4738 I ChmraDebugLogger: [79] COMMIT_TIMEOUT
+10-23 02:01:20.738  2104  4738 I ChmraDebugLogger: [52] null
+10-23 02:01:20.738  2104  4738 W ChimeraConfigService: Retry attempt was throttled.
+10-23 02:01:29.410  1338  1710 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+10-23 02:01:29.411  1338  2011 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-23 02:01:29.412  4754  4754 D         : HostConnection::get() New Host Connection established 0xb449b2c0, tid 4754
+10-23 02:01:29.496  1422  1452 W audio_hw_generic: Hardware backing HAL too slow, could only write 0 of 720 frames
+10-23 02:01:37.094  2104  4758 I Vision  : Requesting optional module download of ocr.
+10-23 02:01:37.094  2104  4758 I Vision  : Exceeded maximum feature download tries for ocr
+10-23 02:01:37.094  2104  4758 W Vision  : Request of optional module download of ocr failed.
+10-23 02:01:37.095  2104  4758 I Vision  : Checking for download completion for 271217 -- ocr
+10-23 02:01:47.099  2104  4760 I Vision  : Requesting optional module download of ocr.
+10-23 02:01:47.102  2104  4760 I Vision  : Checking for download completion for 281225 -- ocr
+10-23 02:01:47.103  2104  4761 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+10-23 02:01:47.196  1422  1452 W audio_hw_generic: Hardware backing HAL too slow, could only write 0 of 720 frames
+10-23 02:01:54.605  1338  1710 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+10-23 02:01:54.606  1338  1353 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-23 02:01:54.607  4767  4767 D         : HostConnection::get() New Host Connection established 0xb2a9b2c0, tid 4767
+10-23 02:01:54.877  1296  1296 W         : debuggerd: handling request: pid=4652 uid=10081 gid=10081 tid=4652
+10-23 02:01:55.074  1296  1296 W         : debuggerd: resuming target 4652
+10-23 02:01:55.083  4652  4657 I art     : Thread[3,tid=4657,WaitingInMainSignalCatcherLoop,Thread*=0x9aca4e00,peer=0x12c510d0,"Signal Catcher"]: reacting to signal 3
+10-23 02:01:55.083  4652  4657 I art     : 
+10-23 02:01:55.094  4652  4657 E art     : Unable to open stack trace file '/data/anr/traces.txt': Permission denied
+10-23 02:01:56.121  1422  1452 W audio_hw_generic: Hardware backing HAL too slow, could only write 0 of 720 frames
+10-23 02:01:57.105  2104  4777 I Vision  : Requesting optional module download of ocr.
+10-23 02:01:57.105  2104  4777 I Vision  : Checking for download completion for 291228 -- ocr

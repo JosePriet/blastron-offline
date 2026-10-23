@@ -1,0 +1,349 @@
+Sending request to dump task 4652.
+
+
+----- pid 4652 at 2026-10-23 02:01:54 -----
+Cmd line: com.kongregate.mobile.globalassault.google
+ABI: 'x86'
+
+"lassault.google" sysTid=4652
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 000778db  /system/lib/libc.so (__epoll_pwait+43)
+  #02 pc 00020c80  /system/lib/libc.so (epoll_pwait+112)
+  #03 pc 00020cde  /system/lib/libc.so (epoll_wait+62)
+  #04 pc 00018f0b  /system/lib/libutils.so (_ZN7android6Looper9pollInnerEi+203)
+  #05 pc 00018d74  /system/lib/libutils.so (_ZN7android6Looper8pollOnceEiPiS1_PPv+68)
+  #06 pc 000d0163  /system/lib/libandroid_runtime.so (_ZN7android18NativeMessageQueue8pollOnceEP7_JNIEnvP8_jobjecti+77)
+  #07 pc 000d01d4  /system/lib/libandroid_runtime.so
+  #08 pc 01ccbd6c  /system/framework/x86/boot-framework.oat (offset 0x1538000) (android.os.MessageQueue.nativePollOnce+136)
+  #09 pc 01ccd923  /system/framework/x86/boot-framework.oat (offset 0x1538000) (android.os.MessageQueue.next+223)
+  #10 pc 01cc7d4a  /system/framework/x86/boot-framework.oat (offset 0x1538000) (android.os.Looper.loop+342)
+  #11 pc 015dc1f5  /system/framework/x86/boot-framework.oat (offset 0x1538000) (android.app.ActivityThread.main+401)
+  #12 pc 001085b2  /system/lib/libart.so (art_quick_invoke_static_stub+418)
+  #13 pc 00111f69  /system/lib/libart.so (_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+313)
+  #14 pc 0050b6a5  /system/lib/libart.so (_ZN3artL18InvokeWithArgArrayERKNS_33ScopedObjectAccessAlreadyRunnableEPNS_9ArtMethodEPNS_8ArgArrayEPNS_6JValueEPKc+101)
+  #15 pc 0050d5e4  /system/lib/libart.so (_ZN3art12InvokeMethodERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectS4_S4_j+1540)
+  #16 pc 00465190  /system/lib/libart.so (_ZN3artL13Method_invokeEP7_JNIEnvP8_jobjectS3_S3_+96)
+  #17 pc 00635cbc  /system/framework/x86/boot.oat (offset 0x573000) (java.lang.reflect.Method.invoke+168)
+  #18 pc 02304620  /system/framework/x86/boot-framework.oat (offset 0x1538000) (com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run+124)
+  #19 pc 0230566e  /system/framework/x86/boot-framework.oat (offset 0x1538000) (com.android.internal.os.ZygoteInit.main+1274)
+  #20 pc 001085b2  /system/lib/libart.so (art_quick_invoke_static_stub+418)
+  #21 pc 00111f69  /system/lib/libart.so (_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+313)
+  #22 pc 0050b6a5  /system/lib/libart.so (_ZN3artL18InvokeWithArgArrayERKNS_33ScopedObjectAccessAlreadyRunnableEPNS_9ArtMethodEPNS_8ArgArrayEPNS_6JValueEPKc+101)
+  #23 pc 0050b369  /system/lib/libart.so (_ZN3art17InvokeWithVarArgsERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectP10_jmethodIDPc+393)
+  #24 pc 003f415e  /system/lib/libart.so (_ZN3art3JNI21CallStaticVoidMethodVEP7_JNIEnvP7_jclassP10_jmethodIDPc+958)
+  #25 pc 0006f751  /system/lib/libandroid_runtime.so (_ZN7_JNIEnv20CallStaticVoidMethodEP7_jclassP10_jmethodIDz+41)
+  #26 pc 0007300e  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime5startEPKcRKNS_6VectorINS_7String8EEEb+782)
+  #27 pc 00001b55  /system/bin/app_process32
+  #28 pc 000152fc  /system/lib/libc.so (__libc_init+108)
+  #29 pc 0000144c  /system/bin/app_process32
+  #30 pc 00000004  <unknown>
+
+"Jit thread pool" sysTid=4655
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 0011c19e  /system/lib/libart.so (_ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+142)
+  #03 pc 0011c107  /system/lib/libart.so (_ZN3art17ConditionVariable4WaitEPNS_6ThreadE+39)
+  #04 pc 00558bc2  /system/lib/libart.so (_ZN3art10ThreadPool7GetTaskEPNS_6ThreadE+258)
+  #05 pc 00557ec5  /system/lib/libart.so (_ZN3art16ThreadPoolWorker3RunEv+117)
+  #06 pc 0055769a  /system/lib/libart.so (_ZN3art16ThreadPoolWorker8CallbackEPv+106)
+  #07 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #08 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #09 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"Signal Catcher" sysTid=4657
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 00077f21  /system/lib/libc.so (__rt_sigtimedwait+33)
+  #02 pc 000289af  /system/lib/libc.so (sigwait+95)
+  #03 pc 0052974b  /system/lib/libart.so (_ZN3art9SignalSet4WaitEv+59)
+  #04 pc 00529117  /system/lib/libart.so (_ZN3art13SignalCatcher13WaitForSignalEPNS_6ThreadERNS_9SignalSetE+215)
+  #05 pc 0052727a  /system/lib/libart.so (_ZN3art13SignalCatcher3RunEPv+314)
+  #06 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #07 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #08 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"JDWP" sysTid=4658
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 00079609  /system/lib/libc.so (recvmsg+25)
+  #02 pc 00672aa9  /system/lib/libart.so (_ZN3art4JDWP12JdwpAdbState15ReceiveClientFdEv+169)
+  #03 pc 00672e13  /system/lib/libart.so (_ZN3art4JDWP12JdwpAdbState6AcceptEv+611)
+  #04 pc 003a7f0e  /system/lib/libart.so (_ZN3art4JDWP9JdwpState3RunEv+366)
+  #05 pc 003a7470  /system/lib/libart.so (_ZN3art4JDWPL15StartJdwpThreadEPv+48)
+  #06 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #07 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #08 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"ReferenceQueueD" sysTid=4659
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 0011c19e  /system/lib/libart.so (_ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+142)
+  #03 pc 0011c107  /system/lib/libart.so (_ZN3art17ConditionVariable4WaitEPNS_6ThreadE+39)
+  #04 pc 00433199  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadExibNS_11ThreadStateE+537)
+  #05 pc 00435773  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadEPNS_6mirror6ObjectExibNS_11ThreadStateE+339)
+  #06 pc 0044d88f  /system/lib/libart.so (_ZN3artL11Object_waitEP7_JNIEnvP8_jobject+95)
+  #07 pc 005736dc  /system/framework/x86/boot.oat (offset 0x573000) (java.lang.Object.wait+104)
+  #08 pc 00650c0a  /system/framework/x86/boot-core-libart.oat (offset 0x480000) (java.lang.Daemons$ReferenceQueueDaemon.run+118)
+  #09 pc 00624324  /system/framework/x86/boot.oat (offset 0x573000) (java.lang.Thread.run+64)
+  #10 pc 001083e2  /system/lib/libart.so (art_quick_invoke_stub+338)
+  #11 pc 00111f1d  /system/lib/libart.so (_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+237)
+  #12 pc 0050b6a5  /system/lib/libart.so (_ZN3artL18InvokeWithArgArrayERKNS_33ScopedObjectAccessAlreadyRunnableEPNS_9ArtMethodEPNS_8ArgArrayEPNS_6JValueEPKc+101)
+  #13 pc 0050cb9c  /system/lib/libart.so (_ZN3art35InvokeVirtualOrInterfaceWithJValuesERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectP10_jmethodIDP6jvalue+380)
+  #14 pc 00534ec9  /system/lib/libart.so (_ZN3art6Thread14CreateCallbackEPv+1657)
+  #15 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #16 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #17 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"FinalizerDaemon" sysTid=4660
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 0011c19e  /system/lib/libart.so (_ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+142)
+  #03 pc 0011c107  /system/lib/libart.so (_ZN3art17ConditionVariable4WaitEPNS_6ThreadE+39)
+  #04 pc 00433199  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadExibNS_11ThreadStateE+537)
+  #05 pc 00435773  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadEPNS_6mirror6ObjectExibNS_11ThreadStateE+339)
+  #06 pc 0044d8fd  /system/lib/libart.so (_ZN3artL13Object_waitJIEP7_JNIEnvP8_jobjectxi+93)
+  #07 pc 0057383c  /system/framework/x86/boot.oat (offset 0x573000) (java.lang.Object.wait+136)
+  #08 pc 0057376b  /system/framework/x86/boot.oat (offset 0x573000) (java.lang.Object.wait+55)
+  #09 pc 0062d15d  /system/framework/x86/boot.oat (offset 0x573000) (java.lang.ref.ReferenceQueue.remove+329)
+  #10 pc 0062cfe7  /system/framework/x86/boot.oat (offset 0x573000) (java.lang.ref.ReferenceQueue.remove+51)
+  #11 pc 0064fa3d  /system/framework/x86/boot-core-libart.oat (offset 0x480000) (java.lang.Daemons$FinalizerDaemon.run+329)
+  #12 pc 00624324  /system/framework/x86/boot.oat (offset 0x573000) (java.lang.Thread.run+64)
+  #13 pc 001083e2  /system/lib/libart.so (art_quick_invoke_stub+338)
+  #14 pc 00111f1d  /system/lib/libart.so (_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+237)
+  #15 pc 0050b6a5  /system/lib/libart.so (_ZN3artL18InvokeWithArgArrayERKNS_33ScopedObjectAccessAlreadyRunnableEPNS_9ArtMethodEPNS_8ArgArrayEPNS_6JValueEPKc+101)
+  #16 pc 0050cb9c  /system/lib/libart.so (_ZN3art35InvokeVirtualOrInterfaceWithJValuesERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectP10_jmethodIDP6jvalue+380)
+  #17 pc 00534ec9  /system/lib/libart.so (_ZN3art6Thread14CreateCallbackEPv+1657)
+  #18 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #19 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #20 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"FinalizerWatchd" sysTid=4662
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 0011c19e  /system/lib/libart.so (_ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+142)
+  #03 pc 0011c107  /system/lib/libart.so (_ZN3art17ConditionVariable4WaitEPNS_6ThreadE+39)
+  #04 pc 00433199  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadExibNS_11ThreadStateE+537)
+  #05 pc 00435773  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadEPNS_6mirror6ObjectExibNS_11ThreadStateE+339)
+  #06 pc 0044d88f  /system/lib/libart.so (_ZN3artL11Object_waitEP7_JNIEnvP8_jobject+95)
+  #07 pc 005736dc  /system/framework/x86/boot.oat (offset 0x573000) (java.lang.Object.wait+104)
+  #08 pc 0065040d  /system/framework/x86/boot-core-libart.oat (offset 0x480000) (java.lang.Daemons$FinalizerWatchdogDaemon.sleepUntilNeeded+73)
+  #09 pc 0065079a  /system/framework/x86/boot-core-libart.oat (offset 0x480000) (java.lang.Daemons$FinalizerWatchdogDaemon.run+70)
+  #10 pc 00624324  /system/framework/x86/boot.oat (offset 0x573000) (java.lang.Thread.run+64)
+  #11 pc 001083e2  /system/lib/libart.so (art_quick_invoke_stub+338)
+  #12 pc 00111f1d  /system/lib/libart.so (_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+237)
+  #13 pc 0050b6a5  /system/lib/libart.so (_ZN3artL18InvokeWithArgArrayERKNS_33ScopedObjectAccessAlreadyRunnableEPNS_9ArtMethodEPNS_8ArgArrayEPNS_6JValueEPKc+101)
+  #14 pc 0050cb9c  /system/lib/libart.so (_ZN3art35InvokeVirtualOrInterfaceWithJValuesERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectP10_jmethodIDP6jvalue+380)
+  #15 pc 00534ec9  /system/lib/libart.so (_ZN3art6Thread14CreateCallbackEPv+1657)
+  #16 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #17 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #18 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"HeapTaskDaemon" sysTid=4663
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 0011c19e  /system/lib/libart.so (_ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+142)
+  #03 pc 0011c107  /system/lib/libart.so (_ZN3art17ConditionVariable4WaitEPNS_6ThreadE+39)
+  #04 pc 002bdf7e  /system/lib/libart.so (_ZN3art2gc13TaskProcessor7GetTaskEPNS_6ThreadE+430)
+  #05 pc 002be992  /system/lib/libart.so (_ZN3art2gc13TaskProcessor11RunAllTasksEPNS_6ThreadE+82)
+  #06 pc 0044239b  /system/lib/libart.so (_ZN3artL22VMRuntime_runHeapTasksEP7_JNIEnvP8_jobject+59)
+  #07 pc 0064b89c  /system/framework/x86/boot-core-libart.oat (offset 0x480000) (dalvik.system.VMRuntime.runHeapTasks+104)
+  #08 pc 00650aac  /system/framework/x86/boot-core-libart.oat (offset 0x480000) (java.lang.Daemons$HeapTaskDaemon.run+184)
+  #09 pc 00624324  /system/framework/x86/boot.oat (offset 0x573000) (java.lang.Thread.run+64)
+  #10 pc 001083e2  /system/lib/libart.so (art_quick_invoke_stub+338)
+  #11 pc 00111f1d  /system/lib/libart.so (_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+237)
+  #12 pc 0050b6a5  /system/lib/libart.so (_ZN3artL18InvokeWithArgArrayERKNS_33ScopedObjectAccessAlreadyRunnableEPNS_9ArtMethodEPNS_8ArgArrayEPNS_6JValueEPKc+101)
+  #13 pc 0050cb9c  /system/lib/libart.so (_ZN3art35InvokeVirtualOrInterfaceWithJValuesERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectP10_jmethodIDP6jvalue+380)
+  #14 pc 00534ec9  /system/lib/libart.so (_ZN3art6Thread14CreateCallbackEPv+1657)
+  #15 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #16 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #17 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"Binder:4652_1" sysTid=4664
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 00077b5c  /system/lib/libc.so (__ioctl+28)
+  #02 pc 000226a7  /system/lib/libc.so (ioctl+71)
+  #03 pc 00047797  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+279)
+  #04 pc 0004793a  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+42)
+  #05 pc 000481ff  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+95)
+  #06 pc 0006effe  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+46)
+  #07 pc 00012085  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+309)
+  #08 pc 0006f60b  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime15javaThreadShellEPv+111)
+  #09 pc 00011873  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_+259)
+  #10 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #11 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #12 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"Binder:4652_2" sysTid=4665
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 00077b5c  /system/lib/libc.so (__ioctl+28)
+  #02 pc 000226a7  /system/lib/libc.so (ioctl+71)
+  #03 pc 00047797  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+279)
+  #04 pc 0004793a  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+42)
+  #05 pc 000481ff  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+95)
+  #06 pc 0006effe  /system/lib/libbinder.so (_ZN7android10PoolThread10threadLoopEv+46)
+  #07 pc 00012085  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+309)
+  #08 pc 0006f60b  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime15javaThreadShellEPv+111)
+  #09 pc 00011873  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_+259)
+  #10 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #11 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #12 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"Profile Saver" sysTid=4667
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 0011c19e  /system/lib/libart.so (_ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+142)
+  #03 pc 0011c107  /system/lib/libart.so (_ZN3art17ConditionVariable4WaitEPNS_6ThreadE+39)
+  #04 pc 003c563c  /system/lib/libart.so (_ZN3art12ProfileSaver3RunEv+396)
+  #05 pc 003c774a  /system/lib/libart.so (_ZN3art12ProfileSaver21RunProfileSaverThreadEPv+106)
+  #06 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #07 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #08 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"Thread-2" sysTid=4668
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 0007460b  /system/lib/libc.so (_ZL24__pthread_cond_timedwaitP23pthread_cond_internal_tP15pthread_mutex_tbPK8timespec+171)
+  #03 pc 000746fe  /system/lib/libc.so (pthread_cond_timedwait_monotonic_np+46)
+  #04 pc 00002e57  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmain.so
+  #05 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #06 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #07 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"asyncProcessor" sysTid=4669
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 0007451d  /system/lib/libc.so (pthread_cond_wait+125)
+  #03 pc 0042c361  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #04 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #05 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #06 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"UnityMain" sysTid=4671
+  #00 pc 00009afe  <anonymous:a4bca000>
+
+"FMODAudioDevice" sysTid=4674
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 0009889b  /system/lib/libmedia.so (_ZN7android11ClientProxy12obtainBufferEPNS_5Proxy6BufferEPK8timespecPS4_+731)
+  #03 pc 00094d3d  /system/lib/libmedia.so (_ZN7android10AudioTrack12obtainBufferEPNS0_6BufferEPK8timespecPS3_Pj+573)
+  #04 pc 00095111  /system/lib/libmedia.so (_ZN7android10AudioTrack5writeEPKvjb+369)
+  #05 pc 00112264  /system/lib/libandroid_runtime.so
+  #06 pc 01a6cc70  /system/framework/x86/boot-framework.oat (offset 0x1538000) (android.media.AudioTrack.native_write_byte+172)
+  #07 pc 01a6fd11  /system/framework/x86/boot-framework.oat (offset 0x1538000) (android.media.AudioTrack.write+285)
+  #08 pc 01a6fbb3  /system/framework/x86/boot-framework.oat (offset 0x1538000) (android.media.AudioTrack.write+63)
+  #09 pc 00000d21  /dev/ashmem/dalvik-jit-code-cache (deleted)
+
+"UnityMain" sysTid=4675
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 00079227  /system/lib/libc.so (nanosleep+23)
+  #02 pc 00230fdf  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so
+  #03 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #04 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #05 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"__MONO__" sysTid=4676
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 00027e36  /system/lib/libc.so (sem_wait+134)
+  #03 pc 0025c1b0  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so (mono_sem_wait+44)
+  #04 pc 00169f49  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so
+  #05 pc 00209faa  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so
+  #06 pc 0024d53a  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so
+  #07 pc 00280ee1  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libmono.so
+  #08 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #09 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #10 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"UnityWorker" sysTid=4681
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 00027e36  /system/lib/libc.so (sem_wait+134)
+  #03 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #04 pc 0035cc18  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #05 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #06 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #07 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #08 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"UnityWorker" sysTid=4682
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 00027e36  /system/lib/libc.so (sem_wait+134)
+  #03 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #04 pc 0035cc18  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #05 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #06 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #07 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #08 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"UnityWorker" sysTid=4683
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 00027e36  /system/lib/libc.so (sem_wait+134)
+  #03 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #04 pc 0035cc18  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #05 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #06 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #07 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #08 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"UnityMain" sysTid=4684
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 00027e36  /system/lib/libc.so (sem_wait+134)
+  #03 pc 009cd188  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+
+"UnityMain" sysTid=4685
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 00027e36  /system/lib/libc.so (sem_wait+134)
+  #03 pc 009cd188  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+
+"UnityMain" sysTid=4686
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 00027e36  /system/lib/libc.so (sem_wait+134)
+  #03 pc 009cd188  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+
+"UnitySubstanceT" sysTid=4687
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 00027e36  /system/lib/libc.so (sem_wait+134)
+  #03 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #04 pc 00278d5b  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #05 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #06 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #07 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #08 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"FMOD stream thr" sysTid=4689
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 00079227  /system/lib/libc.so (nanosleep+23)
+  #02 pc 00045eb8  /system/lib/libc.so (usleep+88)
+  #03 pc 00696071  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+
+"AudioTrack" sysTid=4690
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 00077857  /system/lib/libc.so (__clock_gettime+23)
+  #02 pc 0001e6fe  /system/lib/libc.so (clock_gettime+46)
+  #03 pc 00012510  /system/lib/libutils.so (systemTime+80)
+  #04 pc 000958a3  /system/lib/libmedia.so (_ZN7android10AudioTrack18processAudioBufferEv+1635)
+  #05 pc 00097d45  /system/lib/libmedia.so (_ZN7android10AudioTrack16AudioTrackThread10threadLoopEv+197)
+  #06 pc 0001201f  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+207)
+  #07 pc 0006f60b  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime15javaThreadShellEPv+111)
+  #08 pc 00011873  /system/lib/libutils.so (_ZN13thread_data_t10trampolineEPKS_+259)
+  #09 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #10 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #11 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+"UnityPreload" sysTid=4692
+  #00 pc ffffe424  [vdso:aa96d000] (__kernel_vsyscall+16)
+  #01 pc 0001e228  /system/lib/libc.so (syscall+40)
+  #02 pc 00027e36  /system/lib/libc.so (sem_wait+134)
+  #03 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #04 pc 002e03e6  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #05 pc 002e0153  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #06 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-1/lib/x86/libunity.so
+  #07 pc 00074fb2  /system/lib/libc.so (_ZL15__pthread_startPv+210)
+  #08 pc 0002026e  /system/lib/libc.so (__start_thread+30)
+  #09 pc 0001e046  /system/lib/libc.so (__bionic_clone+70)
+
+----- end 4652 -----
