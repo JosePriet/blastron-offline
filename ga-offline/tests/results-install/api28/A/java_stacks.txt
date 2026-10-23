@@ -1,0 +1,638 @@
+
+----- pid 4239 at 2026-10-23 01:49:44 -----
+Cmd line: com.kongregate.mobile.globalassault.google
+Build fingerprint: 'google/sdk_gphone_x86_arm/generic_x86_arm:9/PSR1.180720.122/6736742:userdebug/dev-keys'
+ABI: 'x86'
+Build type: optimized
+Zygote loaded classes=10642 post zygote classes=61
+Intern table: 73651 strong; 383 weak
+JNI: CheckJNI is off; globals=649 (plus 24 weak)
+Libraries: /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libmain.so /system/lib/libandroid.so /system/lib/libcompiler_rt.so /system/lib/libjavacrypto.so /system/lib/libjnigraphics.so /system/lib/libmedia_jni.so /system/lib/libsoundpool.so /system/lib/libwebviewchromium_loader.so libjavacore.so libopenjdk.so (10)
+Heap: 55% free, 3MB/8MB; 37981 objects
+Dumping cumulative Gc timings
+Cumulative bytes moved 5514968
+Cumulative objects moved 131433
+Peak regions allocated 17 (4MB) / 2304 (576MB)
+Total number of allocations 37981
+Total bytes allocated 3MB
+Total bytes freed 0B
+Free memory 4MB
+Free memory until GC 4MB
+Free memory until OOME 572MB
+Total memory 8MB
+Max memory 576MB
+Zygote space size 1308KB
+Total mutator paused time: 0
+Total time waiting for GC to complete: 181.740us
+Total GC count: 0
+Total GC time: 0
+Total blocking GC count: 0
+Total blocking GC time: 0
+Registered native bytes allocated: 143210
+/data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/oat/x86/base.odex: speed-profile
+/system/framework/oat/x86/org.apache.http.legacy.boot.odex: speed-profile
+Current JIT code cache size: 3KB
+Current JIT data cache size: 1696B
+Current JIT mini-debug-info size: 0B
+Current JIT capacity: 64KB
+Current number of JIT JNI stub entries: 0
+Current number of JIT code cache entries: 3
+Total number of JIT compilations: 3
+Total number of JIT compilations for on stack replacement: 1
+Total number of JIT code cache collections: 0
+Memory used for stack maps: Avg: 432B Max: 636B Min: 40B
+Memory used for compiled code: Avg: 1151B Max: 1700B Min: 93B
+Memory used for profiling info: Avg: 128B Max: 352B Min: 16B
+Start Dumping histograms for 3 iterations for JIT timings
+Compiling:	Sum: 4.835ms 99% C.I. 1.106ms-1.986ms Avg: 1.611ms Max: 1.986ms
+TrimMaps:	Sum: 163us 99% C.I. 7us-138us Avg: 54.333us Max: 138us
+Done Dumping histograms
+Memory used for compilation: Avg: 88KB Max: 128KB Min: 10KB
+ProfileSaver total_bytes_written=0
+ProfileSaver total_number_of_writes=0
+ProfileSaver total_number_of_code_cache_queries=0
+ProfileSaver total_number_of_skipped_writes=0
+ProfileSaver total_number_of_failed_writes=0
+ProfileSaver total_ms_of_sleep=5000
+ProfileSaver total_ms_of_work=0
+ProfileSaver max_number_profile_entries_cached=0
+ProfileSaver total_number_of_hot_spikes=0
+ProfileSaver total_number_of_wake_ups=0
+
+suspend all histogram:	Sum: 926us 99% C.I. 24us-568.960us Avg: 102.888us Max: 576us
+DALVIK THREADS (17):
+"Signal Catcher" daemon prio=5 tid=3 Runnable
+  | group="system" sCount=0 dsCount=0 flags=0 obj=0x14c40020 self=0xe7dddc00
+  | sysTid=4245 nice=0 cgrp=default sched=0/0 handle=0xe13fe970
+  | state=R schedstat=( 5904925 5408759 6 ) utm=0 stm=0 core=2 HZ=100
+  | stack=0xe1303000-0xe1305000 stackSize=1010KB
+  | held mutexes= "mutator lock"(shared held)
+  native: #00 pc 004151b6  /system/lib/libart.so (art::DumpNativeStack(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, int, BacktraceMap*, char const*, art::ArtMethod*, void*, bool)+198)
+  native: #01 pc 0051034e  /system/lib/libart.so (art::Thread::DumpStack(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, bool, BacktraceMap*, bool) const+382)
+  native: #02 pc 0050b603  /system/lib/libart.so (art::Thread::Dump(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, bool, BacktraceMap*, bool) const+83)
+  native: #03 pc 0052e424  /system/lib/libart.so (art::DumpCheckpoint::Run(art::Thread*)+916)
+  native: #04 pc 00526146  /system/lib/libart.so (art::ThreadList::RunCheckpoint(art::Closure*, art::Closure*)+534)
+  native: #05 pc 00525394  /system/lib/libart.so (art::ThreadList::Dump(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, bool)+1316)
+  native: #06 pc 00524d8d  /system/lib/libart.so (art::ThreadList::DumpForSigQuit(std::__1::basic_ostream<char, std::__1::char_traits<char>>&)+941)
+  native: #07 pc 004ec186  /system/lib/libart.so (art::Runtime::DumpForSigQuit(std::__1::basic_ostream<char, std::__1::char_traits<char>>&)+214)
+  native: #08 pc 004fafde  /system/lib/libart.so (art::SignalCatcher::HandleSigQuit()+1806)
+  native: #09 pc 004f9a4f  /system/lib/libart.so (art::SignalCatcher::Run(void*)+431)
+  native: #10 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #11 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+  (no managed stack frames)
+
+"main" prio=5 tid=1 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x745fff60 self=0xe7ddd000
+  | sysTid=4239 nice=-10 cgrp=default sched=0/0 handle=0xec9ef494
+  | state=S schedstat=( 166063207 327289626 171 ) utm=4 stm=12 core=1 HZ=100
+  | stack=0xff22c000-0xff22e000 stackSize=8MB
+  | held mutexes=
+  kernel: ep_poll+0x28e/0x33f
+  kernel: SyS_epoll_wait+0x96/0xb4
+  kernel: SyS_epoll_pwait+0x93/0x114
+  kernel: do_fast_syscall_32+0xd5/0x148
+  kernel: entry_SYSCALL_compat+0x61/0x69
+  native: #00 pc 00000b39  [vdso] (__kernel_vsyscall+9)
+  native: #01 pc 0007621b  /system/lib/libc.so (__epoll_pwait+43)
+  native: #02 pc 00031e8d  /system/lib/libc.so (epoll_wait+45)
+  native: #03 pc 00013567  /system/lib/libutils.so (android::Looper::pollInner(int)+183)
+  native: #04 pc 0001340b  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+43)
+  native: #05 pc 000e415b  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+59)
+  at android.os.MessageQueue.nativePollOnce(Native method)
+  at android.os.MessageQueue.next(MessageQueue.java:326)
+  at android.os.Looper.loop(Looper.java:160)
+  at android.app.ActivityThread.main(ActivityThread.java:6669)
+  at java.lang.reflect.Method.invoke(Native method)
+  at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+"Jit thread pool worker thread 0" daemon prio=5 tid=2 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x14c00030 self=0xe1508000
+  | sysTid=4244 nice=9 cgrp=default sched=0/0 handle=0xe14ff970
+  | state=S schedstat=( 11069242 969376 13 ) utm=1 stm=0 core=2 HZ=100
+  | stack=0xe1401000-0xe1403000 stackSize=1022KB
+  | held mutexes=
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_fast_syscall_32+0xd5/0x148
+  kernel: entry_SYSCALL_compat+0x61/0x69
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 000aba5e  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+110)
+  native: #03 pc 000ab9e3  /system/lib/libart.so (art::ConditionVariable::Wait(art::Thread*)+35)
+  native: #04 pc 0052ff85  /system/lib/libart.so (art::ThreadPool::GetTask(art::Thread*)+261)
+  native: #05 pc 0052f355  /system/lib/libart.so (art::ThreadPoolWorker::Run()+117)
+  native: #06 pc 0052ed7b  /system/lib/libart.so (art::ThreadPoolWorker::Callback(void*)+139)
+  native: #07 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #08 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+  (no managed stack frames)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=4 Waiting
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x12c2c200 self=0xe7dde800
+  | sysTid=4248 nice=4 cgrp=default sched=0/0 handle=0xcf919970
+  | state=S schedstat=( 245012 2278692 6 ) utm=0 stm=0 core=0 HZ=100
+  | stack=0xcf816000-0xcf818000 stackSize=1042KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0fe049d0> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  at java.lang.Daemons$ReferenceQueueDaemon.runInternal(Daemons.java:178)
+  - locked <0x0fe049d0> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  at java.lang.Daemons$Daemon.run(Daemons.java:103)
+  at java.lang.Thread.run(Thread.java:764)
+
+"HeapTaskDaemon" daemon prio=5 tid=5 WaitingForTaskProcessor
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x12c2c3e0 self=0xe7de1800
+  | sysTid=4251 nice=4 cgrp=default sched=0/0 handle=0xcf607970
+  | state=S schedstat=( 348650 1827059 5 ) utm=0 stm=0 core=0 HZ=100
+  | stack=0xcf504000-0xcf506000 stackSize=1042KB
+  | held mutexes=
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 000aba5e  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+110)
+  native: #03 pc 000ab9e3  /system/lib/libart.so (art::ConditionVariable::Wait(art::Thread*)+35)
+  native: #04 pc 0023a632  /system/lib/libart.so (art::gc::TaskProcessor::GetTask(art::Thread*)+402)
+  native: #05 pc 0023b012  /system/lib/libart.so (art::gc::TaskProcessor::RunAllTasks(art::Thread*)+98)
+  native: #06 pc 00424587  /system/lib/libart.so (art::VMRuntime_runHeapTasks(_JNIEnv*, _jobject*)+55)
+  at dalvik.system.VMRuntime.runHeapTasks(Native method)
+  at java.lang.Daemons$HeapTaskDaemon.runInternal(Daemons.java:475)
+  at java.lang.Daemons$Daemon.run(Daemons.java:103)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Binder:4239_1" prio=5 tid=6 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x14c80020 self=0xe150bc00
+  | sysTid=4252 nice=0 cgrp=default sched=0/0 handle=0xcf403970
+  | state=S schedstat=( 662236 3746062 6 ) utm=0 stm=0 core=0 HZ=100
+  | stack=0xcf308000-0xcf30a000 stackSize=1010KB
+  | held mutexes=
+  kernel: binder_thread_read+0x36c/0xda1
+  kernel: binder_ioctl_write_read.constprop.43+0x15e/0x250
+  kernel: binder_ioctl+0x195/0x4e5
+  kernel: compat_SyS_ioctl+0x1cb/0xced
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0007649c  /system/lib/libc.so (__ioctl+28)
+  native: #02 pc 0002a89c  /system/lib/libc.so (ioctl+60)
+  native: #03 pc 00045247  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+391)
+  native: #04 pc 0004545a  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+42)
+  native: #05 pc 00045d58  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+72)
+  native: #06 pc 00070f59  /system/lib/libbinder.so (android::PoolThread::threadLoop()+41)
+  native: #07 pc 0000e616  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+326)
+  native: #08 pc 0007420b  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+171)
+  native: #09 pc 0000df76  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+246)
+  native: #10 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #11 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+  (no managed stack frames)
+
+"ADB-JDWP Connection Control Thread" daemon prio=0 tid=7 WaitingInMainDebuggerLoop
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x12c2c160 self=0xe122a600
+  | sysTid=4247 nice=0 cgrp=default sched=0/0 handle=0xcfa17970
+  | state=S schedstat=( 345500 4598177 3 ) utm=0 stm=0 core=2 HZ=100
+  | stack=0xcf91c000-0xcf91e000 stackSize=1010KB
+  | held mutexes=
+  kernel: poll_schedule_timeout+0x41/0x5a
+  kernel: do_sys_poll+0x41d/0x4d6
+  kernel: compat_SyS_ppoll+0xd5/0x172
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b39  [vdso] (__kernel_vsyscall+9)
+  native: #01 pc 000765c6  /system/lib/libc.so (__ppoll+38)
+  native: #02 pc 0002d1da  /system/lib/libc.so (poll+90)
+  native: #03 pc 0004c19f  /system/lib/libc.so (__poll_chk+47)
+  native: #04 pc 0000670b  /system/lib/libadbconnection.so (adbconnection::AdbConnectionState::RunPollLoop(art::Thread*)+955)
+  native: #05 pc 00004a16  /system/lib/libadbconnection.so (adbconnection::CallbackFunction(void*)+1110)
+  native: #06 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #07 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+  (no managed stack frames)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=8 Waiting
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x12c2c340 self=0xe7de1200
+  | sysTid=4250 nice=4 cgrp=default sched=0/0 handle=0xcf70d970
+  | state=S schedstat=( 309202 4462895 3 ) utm=0 stm=0 core=2 HZ=100
+  | stack=0xcf60a000-0xcf60c000 stackSize=1042KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0fdcfdc9> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.sleepUntilNeeded(Daemons.java:297)
+  - locked <0x0fdcfdc9> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.runInternal(Daemons.java:277)
+  at java.lang.Daemons$Daemon.run(Daemons.java:103)
+  at java.lang.Thread.run(Thread.java:764)
+
+"FinalizerDaemon" daemon prio=5 tid=9 Waiting
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x12c2c2a0 self=0xe7ddee00
+  | sysTid=4249 nice=4 cgrp=default sched=0/0 handle=0xcf813970
+  | state=S schedstat=( 236164 4535180 3 ) utm=0 stm=0 core=2 HZ=100
+  | stack=0xcf710000-0xcf712000 stackSize=1042KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x08e17cce> (a java.lang.Object)
+  at java.lang.Object.wait(Object.java:422)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:188)
+  - locked <0x08e17cce> (a java.lang.Object)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:209)
+  at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:232)
+  at java.lang.Daemons$Daemon.run(Daemons.java:103)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Binder:4239_2" prio=5 tid=10 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x14cc0020 self=0xe1513800
+  | sysTid=4253 nice=0 cgrp=default sched=0/0 handle=0xcf305970
+  | state=S schedstat=( 8095554 77826275 22 ) utm=0 stm=0 core=0 HZ=100
+  | stack=0xcf20a000-0xcf20c000 stackSize=1010KB
+  | held mutexes=
+  kernel: binder_thread_read+0x36c/0xda1
+  kernel: binder_ioctl_write_read.constprop.43+0x15e/0x250
+  kernel: binder_ioctl+0x195/0x4e5
+  kernel: compat_SyS_ioctl+0x1cb/0xced
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0007649c  /system/lib/libc.so (__ioctl+28)
+  native: #02 pc 0002a89c  /system/lib/libc.so (ioctl+60)
+  native: #03 pc 00045247  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+391)
+  native: #04 pc 0004545a  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+42)
+  native: #05 pc 00045d58  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+72)
+  native: #06 pc 00070f59  /system/lib/libbinder.so (android::PoolThread::threadLoop()+41)
+  native: #07 pc 0000e616  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+326)
+  native: #08 pc 0007420b  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+171)
+  native: #09 pc 0000df76  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+246)
+  native: #10 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #11 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+  (no managed stack frames)
+
+"Profile Saver" daemon prio=5 tid=11 Native
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x14d00020 self=0xdf605a00
+  | sysTid=4263 nice=9 cgrp=default sched=0/0 handle=0xce885970
+  | state=S schedstat=( 1854915 1005916 9 ) utm=0 stm=0 core=2 HZ=100
+  | stack=0xce78a000-0xce78c000 stackSize=1010KB
+  | held mutexes=
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 000aba5e  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+110)
+  native: #03 pc 000ab9e3  /system/lib/libart.so (art::ConditionVariable::Wait(art::Thread*)+35)
+  native: #04 pc 003608ac  /system/lib/libart.so (art::ProfileSaver::Run()+508)
+  native: #05 pc 00364b1f  /system/lib/libart.so (art::ProfileSaver::RunProfileSaverThread(void*)+95)
+  native: #06 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #07 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+  (no managed stack frames)
+
+"Binder:4239_3" prio=5 tid=12 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x14d80020 self=0xe151f400
+  | sysTid=4273 nice=0 cgrp=default sched=0/0 handle=0xce681970
+  | state=S schedstat=( 837313 20991955 10 ) utm=0 stm=0 core=0 HZ=100
+  | stack=0xce586000-0xce588000 stackSize=1010KB
+  | held mutexes=
+  kernel: binder_thread_read+0x36c/0xda1
+  kernel: binder_ioctl_write_read.constprop.43+0x15e/0x250
+  kernel: binder_ioctl+0x195/0x4e5
+  kernel: compat_SyS_ioctl+0x1cb/0xced
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0007649c  /system/lib/libc.so (__ioctl+28)
+  native: #02 pc 0002a89c  /system/lib/libc.so (ioctl+60)
+  native: #03 pc 00045247  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+391)
+  native: #04 pc 0004545a  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+42)
+  native: #05 pc 00045d58  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+72)
+  native: #06 pc 00070f59  /system/lib/libbinder.so (android::PoolThread::threadLoop()+41)
+  native: #07 pc 0000e616  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+326)
+  native: #08 pc 0007420b  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+171)
+  native: #09 pc 0000df76  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+246)
+  native: #10 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #11 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+  (no managed stack frames)
+
+"Thread-2" prio=10 tid=13 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x14e00000 self=0xe7d3f600
+  | sysTid=4287 nice=-10 cgrp=default sched=0/0 handle=0xce583970
+  | state=S schedstat=( 13484792 3807746 113 ) utm=1 stm=0 core=0 HZ=100
+  | stack=0xce488000-0xce48a000 stackSize=1010KB
+  | held mutexes=
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_fast_syscall_32+0xd5/0x148
+  kernel: entry_SYSCALL_compat+0x61/0x69
+  native: #00 pc 00000b39  [vdso] (__kernel_vsyscall+9)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 00023555  /system/lib/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+133)
+  native: #03 pc 0008e4ef  /system/lib/libc.so (pthread_cond_timedwait_monotonic_np+95)
+  native: #04 pc 00002e57  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libmain.so (???)
+  native: #05 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #06 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+  (no managed stack frames)
+
+"UnityMain" prio=5 tid=14 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x14d5b710 self=0xdf64bc00
+  | sysTid=4290 nice=0 cgrp=default sched=0/0 handle=0xcd1cd970
+  | state=R schedstat=( 105030655745 4579582418 21060 ) utm=4414 stm=6089 core=0 HZ=100
+  | stack=0xcd0ca000-0xcd0cc000 stackSize=1042KB
+  | held mutexes=
+  native: #00 pc 00000b39  [vdso] (__kernel_vsyscall+9)
+  native: #01 pc 000767f1  /system/lib/libc.so (__rt_sigprocmask+33)
+  native: #02 pc 00030001  /system/lib/libc.so (sigprocmask64+145)
+  native: #03 pc 00003161  /system/bin/app_process32 (int art::__sigprocmask<sigset64_t>(int, sigset64_t const*, art::__sigprocmask<sigset64_t>*, int (*)(int, sigset64_t const*, art::__sigprocmask<sigset64_t>*))+289)
+  native: #04 pc 00003027  /system/bin/app_process32 (sigprocmask64+119)
+  native: #05 pc 0002ff3b  /system/lib/libc.so (sigprocmask+91)
+  native: #06 pc 000025ee  /system/bin/app_process32 (art::SignalChain::Handler(int, siginfo*, void*)+430)
+  native: #07 pc 0001fc4f  /system/lib/libc.so (???)
+  native: #08 pc 00009afd  <anonymous:e8134000> (???)
+  at com.unity3d.player.UnityPlayer.nativeRender(Native method)
+  at com.unity3d.player.UnityPlayer.a(unavailable:-1)
+  at com.unity3d.player.UnityPlayer$b.run(unavailable:-1)
+
+"FMODAudioDevice" prio=10 tid=15 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x14d6be50 self=0xdf64c200
+  | sysTid=4300 nice=-8 cgrp=default sched=0/0 handle=0xcb5f1970
+  | state=S schedstat=( 685655023 190132218 2326 ) utm=58 stm=10 core=2 HZ=100
+  | stack=0xcb4ee000-0xcb4f0000 stackSize=1042KB
+  | held mutexes=
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_fast_syscall_32+0xd5/0x148
+  kernel: entry_SYSCALL_compat+0x61/0x69
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 000aba5e  /system/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+110)
+  native: #03 pc 000ab9e3  /system/lib/libart.so (art::ConditionVariable::Wait(art::Thread*)+35)
+  native: #04 pc 003bc38c  /system/lib/libart.so (art::JNI::ReleaseByteArrayElements(_JNIEnv*, _jbyteArray*, signed char*, int)+748)
+  native: #05 pc 0012c304  /system/lib/libandroid_runtime.so (int android_media_AudioTrack_writeArray<_jbyteArray*>(_JNIEnv*, _jobject*, _jbyteArray*, int, int, int, unsigned char)+212)
+  at android.media.AudioTrack.native_write_byte(Native method)
+  at android.media.AudioTrack.write(AudioTrack.java:2279)
+  at android.media.AudioTrack.write(AudioTrack.java:2216)
+  at org.fmod.FMODAudioDevice.run(unavailable:-1)
+  at java.lang.Thread.run(Thread.java:764)
+
+"AudioTrack" prio=10 tid=16 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x14f00020 self=0xdf653200
+  | sysTid=4323 nice=-16 cgrp=default sched=0/0 handle=0xc89fb970
+  | state=S schedstat=( 394186 6585622 4 ) utm=0 stm=0 core=2 HZ=100
+  | stack=0xc8900000-0xc8902000 stackSize=1010KB
+  | held mutexes=
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: futex_wait_restart+0x46/0x5e
+  kernel: sys_restart_syscall+0x1a/0x1c
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b39  [vdso] (__kernel_vsyscall+9)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 00023555  /system/lib/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+133)
+  native: #03 pc 0008e463  /system/lib/libc.so (pthread_cond_timedwait+115)
+  native: #04 pc 00042950  /system/lib/libaudioclient.so (android::AudioTrack::AudioTrackThread::threadLoop()+512)
+  native: #05 pc 0000e5ae  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+222)
+  native: #06 pc 0007420b  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+171)
+  native: #07 pc 0000df76  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+246)
+  native: #08 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #09 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+  (no managed stack frames)
+
+"Binder:4239_4" prio=5 tid=17 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x14f40020 self=0xcb3a5a00
+  | sysTid=4322 nice=0 cgrp=default sched=0/0 handle=0xc8af9970
+  | state=S schedstat=( 669332 12793921 5 ) utm=0 stm=0 core=3 HZ=100
+  | stack=0xc89fe000-0xc8a00000 stackSize=1010KB
+  | held mutexes=
+  kernel: binder_thread_read+0x36c/0xda1
+  kernel: binder_ioctl_write_read.constprop.43+0x15e/0x250
+  kernel: binder_ioctl+0x195/0x4e5
+  kernel: compat_SyS_ioctl+0x1cb/0xced
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0007649c  /system/lib/libc.so (__ioctl+28)
+  native: #02 pc 0002a89c  /system/lib/libc.so (ioctl+60)
+  native: #03 pc 00045247  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+391)
+  native: #04 pc 0004545a  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+42)
+  native: #05 pc 00045d58  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+72)
+  native: #06 pc 00070f59  /system/lib/libbinder.so (android::PoolThread::threadLoop()+41)
+  native: #07 pc 0000e616  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+326)
+  native: #08 pc 0007420b  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+171)
+  native: #09 pc 0000df76  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+246)
+  native: #10 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #11 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+  (no managed stack frames)
+
+"asyncProcessor" prio=5 (not attached)
+  | sysTid=4288 nice=-10 cgrp=default
+  | state=S schedstat=( 18925101 19803872 679 ) utm=0 stm=1 core=0 HZ=100
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 00023555  /system/lib/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+133)
+  native: #03 pc 0008e3be  /system/lib/libc.so (pthread_cond_wait+62)
+  native: #04 pc 0042c361  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #05 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #06 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+
+"UnityMain" prio=5 (not attached)
+  | sysTid=4301 nice=0 cgrp=default
+  | state=S schedstat=( 1786773 4242607 14 ) utm=0 stm=0 core=3 HZ=100
+  kernel: hrtimer_nanosleep+0xa0/0x140
+  kernel: compat_SyS_nanosleep+0xa0/0x110
+  kernel: do_fast_syscall_32+0xd5/0x148
+  kernel: entry_SYSCALL_compat+0x61/0x69
+  native: #00 pc 00000b39  [vdso] (__kernel_vsyscall+9)
+  native: #01 pc 00077bc7  /system/lib/libc.so (nanosleep+23)
+  native: #02 pc 00230fdf  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libmono.so (???)
+  native: #03 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #04 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+
+"__MONO__" prio=5 (not attached)
+  | sysTid=4302 nice=0 cgrp=default
+  | state=S schedstat=( 939472 19826188 7 ) utm=0 stm=0 core=0 HZ=100
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 00023555  /system/lib/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+133)
+  native: #03 pc 0002e9ef  /system/lib/libc.so (sem_wait+111)
+  native: #04 pc 0025c1b0  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libmono.so (mono_sem_wait+44)
+  native: #05 pc 00169f49  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libmono.so (???)
+  native: #06 pc 00209faa  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libmono.so (???)
+  native: #07 pc 0024d53a  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libmono.so (???)
+  native: #08 pc 00280ee1  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libmono.so (???)
+  native: #09 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #10 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+
+"UnityWorker" prio=5 (not attached)
+  | sysTid=4308 nice=0 cgrp=default
+  | state=S schedstat=( 157279 42893953 3 ) utm=0 stm=0 core=2 HZ=100
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 00023555  /system/lib/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+133)
+  native: #03 pc 0002e9ef  /system/lib/libc.so (sem_wait+111)
+  native: #04 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #05 pc 0035cc18  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #06 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #07 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #08 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+
+"UnityWorker" prio=5 (not attached)
+  | sysTid=4309 nice=0 cgrp=default
+  | state=S schedstat=( 159244 7468281 3 ) utm=0 stm=0 core=3 HZ=100
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 00023555  /system/lib/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+133)
+  native: #03 pc 0002e9ef  /system/lib/libc.so (sem_wait+111)
+  native: #04 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #05 pc 0035cc18  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #06 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #07 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #08 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+
+"UnityWorker" prio=5 (not attached)
+  | sysTid=4310 nice=0 cgrp=default
+  | state=S schedstat=( 168967 23199960 4 ) utm=0 stm=0 core=3 HZ=100
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 00023555  /system/lib/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+133)
+  native: #03 pc 0002e9ef  /system/lib/libc.so (sem_wait+111)
+  native: #04 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #05 pc 0035cc18  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #06 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #07 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #08 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+
+"UnityMain" prio=5 (not attached)
+  | sysTid=4316 nice=0 cgrp=default
+  | state=S schedstat=( 148947 197621 4 ) utm=0 stm=0 core=3 HZ=100
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 00023555  /system/lib/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+133)
+  native: #03 pc 0002e9ef  /system/lib/libc.so (sem_wait+111)
+  native: #04 pc 009cd188  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+
+"UnityMain" prio=5 (not attached)
+  | sysTid=4317 nice=0 cgrp=default
+  | state=S schedstat=( 149376 8804060 6 ) utm=0 stm=0 core=2 HZ=100
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 00023555  /system/lib/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+133)
+  native: #03 pc 0002e9ef  /system/lib/libc.so (sem_wait+111)
+  native: #04 pc 009cd188  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+
+"UnityMain" prio=5 (not attached)
+  | sysTid=4318 nice=0 cgrp=default
+  | state=S schedstat=( 199702 273464 4 ) utm=0 stm=0 core=3 HZ=100
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 00023555  /system/lib/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+133)
+  native: #03 pc 0002e9ef  /system/lib/libc.so (sem_wait+111)
+  native: #04 pc 009cd188  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+
+"UnitySubstanceT" prio=5 (not attached)
+  | sysTid=4319 nice=0 cgrp=default
+  | state=S schedstat=( 267350 227665 4 ) utm=0 stm=0 core=3 HZ=100
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 00023555  /system/lib/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+133)
+  native: #03 pc 0002e9ef  /system/lib/libc.so (sem_wait+111)
+  native: #04 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #05 pc 00278d5b  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #06 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #07 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #08 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+
+"FMOD stream thr" prio=5 (not attached)
+  | sysTid=4324 nice=0 cgrp=default
+  | state=S schedstat=( 1283780101 693757105 10582 ) utm=62 stm=66 core=3 HZ=100
+  kernel: hrtimer_nanosleep+0xa0/0x140
+  kernel: compat_SyS_nanosleep+0xa0/0x110
+  kernel: do_fast_syscall_32+0xd5/0x148
+  kernel: entry_SYSCALL_compat+0x61/0x69
+  native: #00 pc 00000b39  [vdso] (__kernel_vsyscall+9)
+  native: #01 pc 00077bc7  /system/lib/libc.so (nanosleep+23)
+  native: #02 pc 0004d2a5  /system/lib/libc.so (usleep+85)
+  native: #03 pc 00696071  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+
+"UnityPreload" prio=5 (not attached)
+  | sysTid=4339 nice=0 cgrp=default
+  | state=S schedstat=( 167452784 86239167 165 ) utm=16 stm=0 core=0 HZ=100
+  kernel: futex_wait_queue_me+0xcb/0x11b
+  kernel: futex_wait+0x120/0x25e
+  kernel: do_futex+0xbe/0x468
+  kernel: compat_SyS_futex+0xb9/0x13b
+  kernel: do_syscall_32_irqs_off+0x66/0xa8
+  kernel: entry_INT80_compat+0x59/0x80
+  native: #00 pc 00000b37  [vdso] (__kernel_vsyscall+7)
+  native: #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+  native: #02 pc 00023555  /system/lib/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+133)
+  native: #03 pc 0002e9ef  /system/lib/libc.so (sem_wait+111)
+  native: #04 pc 0018ca16  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #05 pc 002e03e6  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #06 pc 002e0153  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #07 pc 0035d99d  /data/app/com.kongregate.mobile.globalassault.google-PzypXmsj0HuDL0i56LVYcg==/lib/x86/libunity.so (???)
+  native: #08 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+  native: #09 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+
+----- end 4239 -----
