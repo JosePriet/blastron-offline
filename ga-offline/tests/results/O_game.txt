@@ -1,623 +1,622 @@
-10-23 01:53:19.014 I/ActivityManager( 3030): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity} from pid 4005
-10-23 01:53:19.144 I/ActivityManager( 3030): Start proc com.kongregate.mobile.globalassault.google for activity com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity: pid=4018 uid=10057 gids={50057, 3003, 1028, 1015}
-10-23 01:53:19.344 W/ContextImpl( 4018): Failed to ensure directory: /storage/sdcard/Android/obb/com.kongregate.mobile.globalassault.google
-10-23 01:53:19.344 W/ContextImpl( 4018): Failed to ensure directory: /storage/sdcard/Android/data/com.kongregate.mobile.globalassault.google/files
-10-23 01:53:19.364 D/dalvikvm( 4018): Trying to load lib /data/app-lib/com.kongregate.mobile.globalassault.google-1/libmain.so 0x9cffe630
-10-23 01:53:19.364 D/dalvikvm( 4018): Added shared lib /data/app-lib/com.kongregate.mobile.globalassault.google-1/libmain.so 0x9cffe630
-10-23 01:53:19.534 D/        ( 4018): HostConnection::get() New Host Connection established 0xb91ed140, tid 4018
-10-23 01:53:19.594 I/ActivityManager( 3030): Displayed com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity: +476ms
-10-23 01:53:19.784 D/        ( 4018): HostConnection::get() New Host Connection established 0xb934eab0, tid 4036
-10-23 01:53:19.814 D/EGL_emulation( 4018): eglCreateContext: 0xb934f870: maj 2 min 0 rcv 2
-10-23 01:53:19.814 D/EGL_emulation( 4018): eglMakeCurrent: 0xb934f870: ver 2 0
-10-23 01:53:19.824 D/Unity   ( 4018): GL_EXT_debug_marker GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_sync_buffer_data ANDROID_EMU_hwc_color_transform GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
-10-23 01:53:19.874 W/libc    ( 4018): pthread_create sched_setscheduler call failed: Operation not permitted
-10-23 01:53:19.894 D/dalvikvm( 4018): GC_CONCURRENT freed 229K, 11% free 3298K/3684K, paused 0ms+2ms, total 6ms
-10-23 01:53:19.964 D/EGL_emulation( 4018): eglMakeCurrent: 0xb934f870: ver 2 0
-10-23 01:53:20.614 I/Unity   ( 4018): NullReferenceException: Object reference not set to an instance of an object
-10-23 01:53:20.614 I/Unity   ( 4018):   at CameraAnchorBinder.Awake () [0x00000] in <filename unknown>:0 
-10-23 01:53:20.614 I/Unity   ( 4018):  
-10-23 01:53:20.614 I/Unity   ( 4018): (Filename:  Line: -1)
-10-23 01:53:20.614 I/Unity   ( 4018): 
-10-23 01:53:20.664 I/Unity   ( 4018): NullReferenceException: Object reference not set to an instance of an object
-10-23 01:53:20.664 I/Unity   ( 4018):   at Background.Start () [0x00000] in <filename unknown>:0 
-10-23 01:53:20.664 I/Unity   ( 4018):  
-10-23 01:53:20.664 I/Unity   ( 4018): (Filename:  Line: -1)
-10-23 01:53:20.664 I/Unity   ( 4018): 
-10-23 01:53:21.374 I/Unity   ( 4018): IAPAmazon OnEnable
-10-23 01:53:21.374 I/Unity   ( 4018):  
-10-23 01:53:21.374 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:21.374 I/Unity   ( 4018): 
-10-23 01:53:21.384 D/dalvikvm( 4018): Trying to load lib /data/app-lib/com.kongregate.mobile.globalassault.google-1/libAmazonIapV2Bridge.so 0x9cffe630
-10-23 01:53:21.384 D/dalvikvm( 4018): Added shared lib /data/app-lib/com.kongregate.mobile.globalassault.google-1/libAmazonIapV2Bridge.so 0x9cffe630
-10-23 01:53:21.384 D/AmazonIapV2 Bridge( 4018): JNI_OnLoad: library ( jni/AmazonIapV2Bridge.cpp May  8 2015 14:41:11) loading 
-10-23 01:53:21.384 I/AmazonIapV2( 4018): Start Amazon IAP V2 - Version 1.0.0, Build 9999.9.9.9
-10-23 01:53:21.384 D/d       ( 4018): In App Purchasing SDK - Sandbox Mode: PurchasingListener registered: com.amazon.device.iap.cpt.AmazonIapV2Impl@9d03f0f8
-10-23 01:53:21.384 D/d       ( 4018): In App Purchasing SDK - Sandbox Mode: PurchasingListener Context: android.app.Application@9cfff540
-10-23 01:53:21.384 I/AmazonIapV2( 4018): cpt iap plugin initialized
-10-23 01:53:21.384 D/dalvikvm( 4018): Trying to load lib /data/app-lib/com.kongregate.mobile.globalassault.google-1/libAmazonIapV2Bridge.so 0x9cffe630
-10-23 01:53:21.384 D/dalvikvm( 4018): Shared lib '/data/app-lib/com.kongregate.mobile.globalassault.google-1/libAmazonIapV2Bridge.so' already loaded in same CL 0x9cffe630
-10-23 01:53:21.384 D/AmazonIapV2 Bridge( 4018): Plugin running in UNITY messaging mode
-10-23 01:53:21.384 D/AmazonIapV2 Bridge( 4018): gameObject registered
-10-23 01:53:21.384 D/AmazonIapV2 Bridge( 4018): Plugin running in UNITY messaging mode
-10-23 01:53:21.384 D/AmazonIapV2 Bridge( 4018): gameObject registered
-10-23 01:53:21.404 I/Unity   ( 4018): Creating FingerGestures using TouchScreen Gestures
-10-23 01:53:21.404 I/Unity   ( 4018):  
-10-23 01:53:21.404 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:21.404 I/Unity   ( 4018): 
-10-23 01:53:21.414 E/Unity   ( 4018): Cannot change GameObject hierarchy while activating or deactivating the parent.
-10-23 01:53:21.414 E/Unity   ( 4018):  
-10-23 01:53:21.414 E/Unity   ( 4018): (Filename:  Line: 583)
-10-23 01:53:21.414 E/Unity   ( 4018): 
-10-23 01:53:21.414 I/Unity   ( 4018): Unity 4.x, set default AllowImmersiveMode to true
-10-23 01:53:21.414 I/Unity   ( 4018):  
-10-23 01:53:21.414 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:21.414 I/Unity   ( 4018): 
-10-23 01:53:21.414 I/Unity   ( 4018): KongregateAPI: DEBUG: initializating from Unity
-10-23 01:53:21.414 I/Unity   ( 4018):  
-10-23 01:53:21.414 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:21.414 I/Unity   ( 4018): 
-10-23 01:53:21.424 I/Unity   ( 4018): Kongregate Initializing from Unity
-10-23 01:53:21.424 I/Unity   ( 4018):  
-10-23 01:53:21.424 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:21.424 I/Unity   ( 4018): 
-10-23 01:53:21.434 D/KONG    ( 4018): UnityWrapper : initializing unity wrapper
-10-23 01:53:21.434 D/KONG    ( 4018): parse adjust event token map: { "sale" : "uzm2g6" }
-10-23 01:53:21.434 D/KONG    ( 4018): API bootstrap - initialize native
-10-23 01:53:21.434 D/dalvikvm( 4018): GC_CONCURRENT freed 322K, 13% free 3407K/3884K, paused 0ms+1ms, total 4ms
-10-23 01:53:21.434 I/KONG    ( 4018): Kongregate NativeAPI initialized, domain: m.kongregate.com
-10-23 01:53:21.434 I/KONG    ( 4018): Registering lifecycle callbacks
-10-23 01:53:21.434 D/KONG    ( 4018): enter immersive mode
-10-23 01:53:21.434 D/KONG    ( 4018): UnityWrapper : initializing API with com.unity3d.player.UnityPlayerNativeActivity@9d003378 198212 on m.kongregate.com
-10-23 01:53:21.434 I/Unity   ( 4018): KongregateAPI: DEBUG: initialization from Unity complete
-10-23 01:53:21.434 I/Unity   ( 4018):  
-10-23 01:53:21.434 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:21.434 I/Unity   ( 4018): 
-10-23 01:53:21.434 I/KONG    ( 4018): SourceDir: /data/app/com.kongregate.mobile.globalassault.google-1.apk
-10-23 01:53:21.434 I/KONG    ( 4018): GlobalConfiguration initialized!
-10-23 01:53:21.444 D/KONG    ( 4018): UnityWrapper : set event listener Kongregate HandleKongregateEvent
-10-23 01:53:21.444 I/Unity   ( 4018): KongregateAPI: DEBUG: Setting common props callback
-10-23 01:53:21.444 I/Unity   ( 4018):  
-10-23 01:53:21.444 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:21.444 I/Unity   ( 4018): 
-10-23 01:53:21.444 I/Unity   ( 4018): KongregateAPI: DEBUG: using CommonPropsCallback
-10-23 01:53:21.444 I/Unity   ( 4018):  
-10-23 01:53:21.444 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:21.444 I/Unity   ( 4018): 
-10-23 01:53:21.444 D/KONG    ( 4018): Updating remote properties
-10-23 01:53:21.444 I/Unity   ( 4018): KongregateAPI: DEBUG: Analytics update common props: { "player_id" : "","client_version" : 30 }
-10-23 01:53:21.444 I/Unity   ( 4018):  
-10-23 01:53:21.444 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:21.444 I/Unity   ( 4018): 
-10-23 01:53:21.444 D/KONG    ( 4018): updating common props from json: { "player_id" : "","client_version" : 30 }
-10-23 01:53:21.444 D/KONG    ( 4018): parsing JSON to analytics map: { "player_id" : "","client_version" : 30 }
-10-23 01:53:21.444 D/KONG    ( 4018): UnityWrapper : set native rendering to false
-10-23 01:53:21.454 I/KONG    ( 4018): Creating database (m.kongregate.com.kongregate_api.db)
-10-23 01:53:21.454 I/KONG    ( 4018): Building DB Version 1
-10-23 01:53:21.454 I/KONG    ( 4018): Upgrading database from version 1 to 4
-10-23 01:53:21.454 I/KONG    ( 4018): Found column _id in table purchase_records
-10-23 01:53:21.454 I/KONG    ( 4018): Disabling foreign keys
-10-23 01:53:21.464 D/KONG    ( 4018): Database opened, version=4
-10-23 01:53:21.464 I/KONG    ( 4018): Disabling foreign keys
-10-23 01:53:21.474 I/Unity   ( 4018): BuildInfo
-10-23 01:53:21.474 I/Unity   ( 4018):  
-10-23 01:53:21.474 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:21.474 I/Unity   ( 4018): 
-10-23 01:53:21.504 I/KONG    ( 4018): Enabling foreign keys
-10-23 01:53:21.504 I/KONG    ( 4018): Disabling foreign keys
-10-23 01:53:21.544 D/KONG    ( 4018): FacebookSDKHelper loaded classes for FB SDK Version: 3.20.0/Unity.6.2.2 supported: true
-10-23 01:53:21.554 D/KONG    ( 4018): User agent set to: HttpClient/4.0
-10-23 01:53:21.564 D/KONG    ( 4018): Reloading cookies from webview: m.kongregate.com
-10-23 01:53:21.584 D/KONG    ( 4018): User agent set to: HttpClient/4.0 KongregateMobileApi/1.2.1.1
-10-23 01:53:21.584 I/KONG    ( 4018): API cookie set to: api:1.2.1.1:198212:android:4.4.2:pw
-10-23 01:53:21.594 I/KONG    ( 4018): check providers for secret
-10-23 01:53:21.604 D/dalvikvm( 4018): GC_CONCURRENT freed 252K, 10% free 3669K/4076K, paused 1ms+0ms, total 3ms
-10-23 01:53:21.604 D/dalvikvm( 4018): WAIT_FOR_CONCURRENT_GC blocked 4ms
-10-23 01:53:21.604 I/KONG    ( 4018): checking authority: com.kongregate.android.api.providers.GlobalAssaultSharedSecretProvider
-10-23 01:53:21.604 I/KONG    ( 4018): query shared secret provider
-10-23 01:53:21.604 I/KONG    ( 4018): provider does not have shared secret
-10-23 01:53:21.604 I/KONG    ( 4018): generated a secret
-10-23 01:53:21.604 I/KONG    ( 4018): shared filename is: m.kongregate.com.api.1630270087.shared
-10-23 01:53:21.614 I/KONG    ( 4018): no data store found
-10-23 01:53:21.614 D/KONG    ( 4018): setting shared cookies from shared storage: 
-10-23 01:53:21.614 D/KONG    ( 4018): Reloading cookies from webview: m.kongregate.com
-10-23 01:53:21.624 I/KONG    ( 4018): Set active user: Guest=0
-10-23 01:53:21.624 D/dalvikvm( 4018): GC_CONCURRENT freed 308K, 12% free 3762K/4228K, paused 0ms+0ms, total 3ms
-10-23 01:53:21.624 D/KONG    ( 4018): active_user updated, rows=1
-10-23 01:53:21.624 D/KONG    ( 4018): getSharedKongregateCookies from webview cookie store
-10-23 01:53:21.624 D/KONG    ( 4018): Reloading cookies from webview: m.kongregate.com
-10-23 01:53:21.634 I/KONG    ( 4018): commiting to: /data/data/com.kongregate.mobile.globalassault.google/kongregate_shared_datastore
-10-23 01:53:21.644 I/KONG    ( 4018): Queueing pre-ready event: KONG_API_EVENT_GAME_AUTH_TOKEN_CHANGED
-10-23 01:53:21.644 I/KONG    ( 4018): Game has a server. Will only track subset of automatic analytics
-10-23 01:53:21.644 I/KONG    ( 4018): filtering props: 
-10-23 01:53:21.654 D/dalvikvm( 4018): GC_CONCURRENT freed 631K, 19% free 3567K/4356K, paused 2ms+0ms, total 5ms
-10-23 01:53:21.684 I/KONG    ( 4018): AnalyticsServices initialized, deferred: false
-10-23 01:53:21.684 I/KONG    ( 4018): Starting Analytics subsystem
-10-23 01:53:21.684 W/KONG    ( 4018): unrecognized field: PLAYER_ID
-10-23 01:53:21.684 W/KONG    ( 4018): Common props is not a string: player_id : null
-10-23 01:53:21.684 D/KONG    ( 4018): initialize Swrve
-10-23 01:53:21.684 I/SwrveSDK( 4018): Your user id is: 1b37ca0e-48e8-4cb1-83c5-556f9e1e6fc8
-10-23 01:53:21.704 I/SwrveSDK( 4018): Init finished
-10-23 01:53:21.704 D/KONG    ( 4018): Adjust initialize
-10-23 01:53:21.704 W/KONG    ( 4018): KONGREGATE CONFIGURATION WARNING: missing Adjust event token for event: install
-10-23 01:53:21.704 W/KONG    ( 4018): KONGREGATE CONFIGURATION WARNING: missing Adjust event token for event: session
-10-23 01:53:21.704 D/KONG    ( 4018): Adjust initializing: a4xhb473e7tl : production
-10-23 01:53:21.714 F/Adjust  ( 4018): PRODUCTION: Adjust is running in Production mode. Use this setting only for the build that you want to publish. Set the environment to `sandbox` if you want to test your app!
-10-23 01:53:21.744 D/KONG    ( 4018): keen logging enalbed
-10-23 01:53:21.744 I/SwrveSDK( 4018): session_start event queued
-10-23 01:53:21.774 I/SwrveSDK( 4018): event event queued
-10-23 01:53:21.784 I/SwrveSDK( 4018): Not showing message for Swrve.user_properties_changed: No campaigns available
-10-23 01:53:21.794 E/ActivityThread( 4018): Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
-10-23 01:53:21.804 I/SwrveSDK( 4018): user event queued
-10-23 01:53:21.804 I/SwrveSDK( 4018): Sending device info
-10-23 01:53:21.824 D/dalvikvm( 4018): GC_CONCURRENT freed 308K, 16% free 3689K/4356K, paused 1ms+1ms, total 5ms
-10-23 01:53:21.874 D/KEEN_CLIENT( 4018): Keen using cache /data/data/com.kongregate.mobile.globalassault.google/cache/keen
-10-23 01:53:21.874 D/KONG    ( 4018): Keen initialized
-10-23 01:53:21.874 D/KONG    ( 4018): Analytics services initialized
-10-23 01:53:21.874 I/KONG    ( 4018): adding filter type: jailbroken
-10-23 01:53:21.874 D/KONG    ( 4018): adding event to collection: invalid_states
-10-23 01:53:21.894 D/EGL_emulation( 4018): eglMakeCurrent: 0xb934f870: ver 2 0
-10-23 01:53:21.894 I/SwrveSDK( 4018): Not showing message for Kongregate.RawData.invalid_states: No campaigns available
-10-23 01:53:21.894 D/KEEN_CLIENT( 4018): Cache directory for event collection 'invalid_states' doesn't exist. Creating it.
-10-23 01:53:21.894 D/KEEN_CLIENT( 4018): Adding event to collection: invalid_states
-10-23 01:53:21.904 I/SwrveSDK( 4018): event event queued
-10-23 01:53:21.904 D/dalvikvm( 4018): GC_CONCURRENT freed 315K, 14% free 3778K/4356K, paused 1ms+2ms, total 6ms
-10-23 01:53:21.974 D/dalvikvm( 4018): GC_CONCURRENT freed 361K, 11% free 3891K/4364K, paused 0ms+2ms, total 23ms
-10-23 01:53:21.984 I/SwrveSDK( 4018): Sending queued events
-10-23 01:53:22.024 I/SwrveSDK( 4018): Sending 4 events to Swrve
-10-23 01:53:22.044 D/dalvikvm( 4018): GC_CONCURRENT freed 417K, 13% free 3941K/4516K, paused 1ms+4ms, total 24ms
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018): Wrote event: {
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "kong_username" : "Guest",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "idfv" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "client_os_version" : "4.4.2",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "reason" : "jailbroken",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "first_server_version" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "num_sessions" : 0,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "filter_type" : "jailbroken",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "google_play_services_id" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "first_play_time" : "2026-10-23T01:53:21.651+0000",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "android_id" : "d8d98a7e57bd9728",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "carrier" : "Android",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "first_sdk_version" : "1.2.1.1",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "usd_spent_on_kreds" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "pkg_src" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "data_connection_type" : "mobile LTE",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "site_visitor_id" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "first_play_time_offset" : 0.0,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "imei" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "sdk_version" : "1.2.1.1",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "ad_tracking" : true,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "google_ad_id" : "fdeee302-bba7-4381-b251-8f571a107b09",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "gamecenter_id" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "ip_address" : "10.0.2.15",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "time_skew" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "external_ip_address" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "kong_user_id" : 0,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "event_time" : "2026-10-23T01:53:21.897+0000",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "client_os_type" : "android",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "player_id" : "",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "lang_code" : "en",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "idfa" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "session_id" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "device_type" : "Android SDK built for x86",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "kong_plus" : false,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "bundle_id" : "com.kongregate.mobile.globalassault.google",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "device_event_id" : "dad2e474-54d1-4d4d-a0b2-2f1e50e23297",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "dev_client_version" : "101",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "google_play_services_alias" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "country_code" : "US",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "gamecenter_alias" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "days_retained" : 0,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "mac_address" : "52:54:00:12:34:56",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "event_time_offset" : 0.0,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "first_client_version" : "1.30.1",
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "num_purchases" : 0,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "pur_tier" : null,
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "keen" : {
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):     "timestamp" : "2026-10-23T01:53:21.904+0000"
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   },
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018):   "client_version" : "1.30.1"
-10-23 01:53:22.064 D/KEEN_CLIENT( 4018): }
-10-23 01:53:22.064 D/KONG    ( 4018): added event to collection: invalid_states
-10-23 01:53:22.064 D/KONG    ( 4018): Adjust - onResume
-10-23 01:53:22.064 D/KONG    ( 4018): adding event to collection: session_starts
-10-23 01:53:22.074 W/KONG    ( 4018): Adjust - no event token for event: session
-10-23 01:53:22.074 I/SwrveSDK( 4018): Not showing message for Kongregate.RawData.session_starts: No campaigns available
-10-23 01:53:22.074 D/KEEN_CLIENT( 4018): Cache directory for event collection 'session_starts' doesn't exist. Creating it.
-10-23 01:53:22.074 D/KEEN_CLIENT( 4018): Adding event to collection: session_starts
-10-23 01:53:22.094 I/SwrveSDK( 4018): event event queued
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018): Wrote event: {
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "kong_username" : "Guest",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "idfv" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "client_os_version" : "4.4.2",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "first_server_version" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "num_sessions" : 1,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "filter_type" : "jailbroken",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "google_play_services_id" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "first_play_time" : "2026-10-23T01:53:21.651+0000",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "android_id" : "d8d98a7e57bd9728",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "carrier" : "Android",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "first_sdk_version" : "1.2.1.1",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "usd_spent_on_kreds" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "pkg_src" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "data_connection_type" : "mobile LTE",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "site_visitor_id" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "first_play_time_offset" : 0.0,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "imei" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "sdk_version" : "1.2.1.1",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "ad_tracking" : true,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "google_ad_id" : "fdeee302-bba7-4381-b251-8f571a107b09",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "gamecenter_id" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "ip_address" : "10.0.2.15",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "time_skew" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "external_ip_address" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "kong_user_id" : 0,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "event_time" : "2026-10-23T01:53:22.078+0000",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "client_os_type" : "android",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "player_id" : "",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "lang_code" : "en",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "idfa" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "session_id" : "4bb06062-2627-4382-8150-d05b80aa3e60",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "device_type" : "Android SDK built for x86",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "kong_plus" : false,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "bundle_id" : "com.kongregate.mobile.globalassault.google",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "device_event_id" : "18234388-9b07-4089-914f-f0ad28c719f2",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "is_from_background" : true,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "dev_client_version" : "101",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "google_play_services_alias" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "country_code" : "US",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "gamecenter_alias" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "days_retained" : 0,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "mac_address" : "52:54:00:12:34:56",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "event_time_offset" : 0.0,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "first_client_version" : "1.30.1",
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "num_purchases" : 0,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "pur_tier" : null,
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "keen" : {
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):     "timestamp" : "2026-10-23T01:53:22.083+0000"
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   },
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018):   "client_version" : "1.30.1"
-10-23 01:53:22.114 D/KEEN_CLIENT( 4018): }
-10-23 01:53:22.114 D/KONG    ( 4018): added event to collection: session_starts
-10-23 01:53:22.114 D/KONG    ( 4018): updating swrve user props: {kong.idfv=null, kong.client_os_version=4.4.2, kong.first_play_time=2026-10-23T01:53:21.651+0000, kong.days_retained=0, kong.client_os_type=android, kong.kong_username=Guest, kong.event_time=2026-10-23T01:53:22.121+0000, kong.country_code=US, kong.num_sessions=1, kong.idfa=null, kong.device_type=Android SDK built for x86, kong.client_version=1.30.1, kong.session_id=4bb06062-2627-4382-8150-d05b80aa3e60}
-10-23 01:53:22.114 I/SwrveSDK( 4018): Not showing message for Swrve.user_properties_changed: No campaigns available
-10-23 01:53:22.114 D/KONG    ( 4018): Setting WebView reload delay to 120 minutes
-10-23 01:53:22.114 D/KONG    ( 4018): Native API - download user and game info: Guest
-10-23 01:53:22.124 I/KONG    ( 4018): READY: true
-10-23 01:53:22.124 D/KONG    ( 4018): UnityWrapper : Sending event to Unity: KONG_API_EVENT_READY
-10-23 01:53:22.124 I/SwrveSDK( 4018): user event queued
-10-23 01:53:22.124 D/KONG    ( 4018): UnityWrapper : Sending event to Unity: KONG_API_EVENT_GAME_AUTH_TOKEN_CHANGED
-10-23 01:53:22.124 D/KONG    ( 4018): UnityWrapper : Sending event to Unity: KONG_API_EVENT_SWRVE_RESOURCES_UPDATED
-10-23 01:53:22.144 D/KONG    ( 4018): UnityWrapper : checking for guest
-10-23 01:53:22.144 I/Unity   ( 4018): server api: https://havoc.synapse-games.com/api.php?message=getUserAccount&user_id=
-10-23 01:53:22.144 I/Unity   ( 4018):  
-10-23 01:53:22.144 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:22.144 I/Unity   ( 4018): 
-10-23 01:53:22.174 D/KONG    ( 4018): UnityWrapper : checking for guest
-10-23 01:53:22.174 D/dalvikvm( 4018): GC_CONCURRENT freed 461K, 14% free 3918K/4540K, paused 0ms+0ms, total 4ms
-10-23 01:53:22.184 I/Unity   ( 4018): Kongregate API is ready
-10-23 01:53:22.184 I/Unity   ( 4018):  
-10-23 01:53:22.184 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:22.184 I/Unity   ( 4018): 
-10-23 01:53:22.184 D/KONG    ( 4018): UnityWrapper : checking for guest
-10-23 01:53:22.184 D/KONG    ( 4018): UnityWrapper : message received KONG_API_EVENT_READY
-10-23 01:53:22.184 D/KONG    ( 4018): UnityWrapper : getting user id
-10-23 01:53:22.184 D/KONG    ( 4018): UnityWrapper : getting game auth token
-10-23 01:53:22.184 D/KONG    ( 4018): UnityWrapper : checking for guest
-10-23 01:53:22.184 I/Unity   ( 4018): EVENT GAME AUTH: user 0 is a guest
-10-23 01:53:22.184 I/Unity   ( 4018):  
-10-23 01:53:22.184 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:22.184 I/Unity   ( 4018): 
-10-23 01:53:22.184 I/Unity   ( 4018): game auth has changed to:Guest_Game_Auth_Token
-10-23 01:53:22.184 I/Unity   ( 4018):  
-10-23 01:53:22.184 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:22.184 I/Unity   ( 4018): 
-10-23 01:53:22.184 D/KONG    ( 4018): UnityWrapper : message received KONG_API_EVENT_GAME_AUTH_TOKEN_CHANGED
-10-23 01:53:22.184 D/KONG    ( 4018): UnityWrapper : message received KONG_API_EVENT_SWRVE_RESOURCES_UPDATED
-10-23 01:53:22.304 E/Unity   ( 4018): You are trying to load data from a www stream which had the following error when downloading.
-10-23 01:53:22.304 E/Unity   ( 4018): java.net.UnknownHostException: Unable to resolve host "havoc.synapse-games.com": No address associated with hostname
-10-23 01:53:22.304 E/Unity   ( 4018):  
-10-23 01:53:22.304 E/Unity   ( 4018): (Filename:  Line: 253)
-10-23 01:53:22.304 E/Unity   ( 4018): 
-10-23 01:53:22.314 E/Unity   ( 4018): connection www error: java.net.UnknownHostException: Unable to resolve host "havoc.synapse-games.com": No address associated with hostname
-10-23 01:53:22.314 E/Unity   ( 4018):  
-10-23 01:53:22.314 E/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:22.314 E/Unity   ( 4018): 
-10-23 01:53:22.484 E/KONG    ( 4018): IOException in excuteUrlRequest
-10-23 01:53:22.484 E/KONG    ( 4018): javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb92b6580: Failure in SSL library, usually a protocol error
-10-23 01:53:22.484 E/KONG    ( 4018): error:14077102:SSL routines:SSL23_GET_SERVER_HELLO:unsupported protocol (external/openssl/ssl/s23_clnt.c:714 0x8d93e990:0x00000000)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:448)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.android.okhttp.Connection.upgradeToTls(Connection.java:146)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.android.okhttp.Connection.connect(Connection.java:107)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:296)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:179)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.android.okhttp.internal.http.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:246)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.kongregate.o.g.a.a(SourceFile:635)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.kongregate.o.g.a.f(SourceFile:394)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.kongregate.o.g.b$1.call(SourceFile:73)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:152)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:265)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at java.lang.Thread.run(Thread.java:841)
-10-23 01:53:22.484 E/KONG    ( 4018): Caused by: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb92b6580: Failure in SSL library, usually a protocol error
-10-23 01:53:22.484 E/KONG    ( 4018): error:14077102:SSL routines:SSL23_GET_SERVER_HELLO:unsupported protocol (external/openssl/ssl/s23_clnt.c:714 0x8d93e990:0x00000000)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
-10-23 01:53:22.484 E/KONG    ( 4018): 	at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:405)
-10-23 01:53:22.484 E/KONG    ( 4018): 	... 18 more
-10-23 01:53:22.484 W/KONG    ( 4018): HTTP request error: 0
-10-23 01:53:22.484 E/KONG    ( 4018): HTTP error: 0
-10-23 01:53:22.484 D/KONG    ( 4018): UnityWrapper : Sending event to Unity: KONG_API_EVENT_SERVICE_UNAVAILABLE
-10-23 01:53:22.494 W/System.err( 4018): java.net.ConnectException: failed to connect to 1567.api.swrve.com/2600:9000:2356:2400:11:1825:d7c0:93a1 (port 443) after 15000ms: isConnected failed: ENETUNREACH (Network is unreachable)
-10-23 01:53:22.494 W/System.err( 4018): 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
-10-23 01:53:22.494 W/System.err( 4018): 	at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
-10-23 01:53:22.494 W/System.err( 4018): 	at libcore.io.IoBridge.connect(IoBridge.java:112)
-10-23 01:53:22.494 W/System.err( 4018): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
-10-23 01:53:22.494 W/System.err( 4018): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
-10-23 01:53:22.494 W/System.err( 4018): 	at java.net.Socket.connect(Socket.java:843)
-10-23 01:53:22.494 W/System.err( 4018): 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:131)
-10-23 01:53:22.494 W/System.err( 4018): 	at com.android.okhttp.Connection.connect(Connection.java:101)
-10-23 01:53:22.494 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
-10-23 01:53:22.494 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
-10-23 01:53:22.494 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
-10-23 01:53:22.494 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
-10-23 01:53:22.494 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:89)
-10-23 01:53:22.494 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:161)
-10-23 01:53:22.494 W/System.err( 4018): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:147)
-10-23 01:53:22.494 W/System.err( 4018): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:119)
-10-23 01:53:22.494 W/System.err( 4018): 	at com.swrve.sdk.SwrveImp.postBatchRequest(SwrveImp.java:443)
-10-23 01:53:22.494 W/System.err( 4018): 	at com.swrve.sdk.SwrveBase$5.run(SwrveBase.java:438)
-10-23 01:53:22.494 W/System.err( 4018): 	at com.swrve.sdk.SwrveRunnables$1.run(SwrveRunnables.java:18)
-10-23 01:53:22.494 W/System.err( 4018): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
-10-23 01:53:22.494 W/System.err( 4018): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
-10-23 01:53:22.494 W/System.err( 4018): 	at java.lang.Thread.run(Thread.java:841)
-10-23 01:53:22.494 W/System.err( 4018): Caused by: libcore.io.ErrnoException: isConnected failed: ENETUNREACH (Network is unreachable)
-10-23 01:53:22.494 W/System.err( 4018): 	at libcore.io.IoBridge.isConnected(IoBridge.java:208)
-10-23 01:53:22.494 W/System.err( 4018): 	... 21 more
-10-23 01:53:22.494 E/SwrveSDK( 4018): Batch of events could not be sent, retrying
-10-23 01:53:22.504 I/SwrveSDK( 4018): Sending queued events
-10-23 01:53:22.504 D/dalvikvm( 4018): GC_CONCURRENT freed 412K, 13% free 3958K/4540K, paused 2ms+0ms, total 6ms
-10-23 01:53:22.504 I/SwrveSDK( 4018): Sending 6 events to Swrve
-10-23 01:53:22.544 I/Unity   ( 4018): Kongregate Service Unavailable
-10-23 01:53:22.544 I/Unity   ( 4018):  
-10-23 01:53:22.544 I/Unity   ( 4018): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
-10-23 01:53:22.544 I/Unity   ( 4018): 
-10-23 01:53:22.544 D/KONG    ( 4018): UnityWrapper : message received KONG_API_EVENT_SERVICE_UNAVAILABLE
-10-23 01:53:22.804 W/System.err( 4018): java.net.ConnectException: failed to connect to 1567.api.swrve.com/2600:9000:2356:2400:11:1825:d7c0:93a1 (port 443) after 15000ms: isConnected failed: ENETUNREACH (Network is unreachable)
-10-23 01:53:22.804 W/System.err( 4018): 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
-10-23 01:53:22.804 W/System.err( 4018): 	at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
-10-23 01:53:22.804 W/System.err( 4018): 	at libcore.io.IoBridge.connect(IoBridge.java:112)
-10-23 01:53:22.804 W/System.err( 4018): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
-10-23 01:53:22.804 W/System.err( 4018): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
-10-23 01:53:22.804 W/System.err( 4018): 	at java.net.Socket.connect(Socket.java:843)
-10-23 01:53:22.804 W/System.err( 4018): 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:131)
-10-23 01:53:22.804 W/System.err( 4018): 	at com.android.okhttp.Connection.connect(Connection.java:101)
-10-23 01:53:22.804 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
-10-23 01:53:22.804 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
-10-23 01:53:22.804 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
-10-23 01:53:22.804 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
-10-23 01:53:22.804 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:89)
-10-23 01:53:22.804 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:161)
-10-23 01:53:22.804 W/System.err( 4018): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:147)
-10-23 01:53:22.804 W/System.err( 4018): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:119)
-10-23 01:53:22.804 W/System.err( 4018): 	at com.swrve.sdk.SwrveImp.postBatchRequest(SwrveImp.java:443)
-10-23 01:53:22.804 W/System.err( 4018): 	at com.swrve.sdk.SwrveBase$5.run(SwrveBase.java:438)
-10-23 01:53:22.804 W/System.err( 4018): 	at com.swrve.sdk.SwrveRunnables$1.run(SwrveRunnables.java:18)
-10-23 01:53:22.804 W/System.err( 4018): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
-10-23 01:53:22.804 W/System.err( 4018): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
-10-23 01:53:22.804 W/System.err( 4018): 	at java.lang.Thread.run(Thread.java:841)
-10-23 01:53:22.804 W/System.err( 4018): Caused by: libcore.io.ErrnoException: isConnected failed: ENETUNREACH (Network is unreachable)
-10-23 01:53:22.804 W/System.err( 4018): 	at libcore.io.IoBridge.isConnected(IoBridge.java:208)
-10-23 01:53:22.804 W/System.err( 4018): 	... 21 more
-10-23 01:53:22.804 E/SwrveSDK( 4018): Batch of events could not be sent, retrying
-10-23 01:53:26.884 D/dalvikvm( 4018): GC_CONCURRENT freed 429K, 15% free 3926K/4616K, paused 0ms+3ms, total 12ms
-10-23 01:53:37.124 V/WebViewChromium( 4018): Binding Chromium to the background looper Looper (main, tid 1) {9cff9240}
-10-23 01:53:37.124 I/chromium( 4018): [INFO:library_loader_hooks.cc(112)] Chromium logging enabled: level = 0, default verbosity = 0
-10-23 01:53:37.124 I/BrowserProcessMain( 4018): Initializing chromium process, renderers=0
-10-23 01:53:37.174 W/chromium( 4018): [WARNING:proxy_service.cc(888)] PAC support disabled because there is no system implementation
-10-23 01:53:37.204 D/EGL_emulation( 4018): eglCreateContext: 0xba7e0f00: maj 2 min 0 rcv 2
-10-23 01:53:37.244 D/EGL_emulation( 4018): eglMakeCurrent: 0xba7e0f00: ver 2 0
-10-23 01:53:37.324 D/dalvikvm( 4018): GC_FOR_ALLOC freed 62K, 13% free 3946K/4536K, paused 8ms, total 8ms
-10-23 01:53:37.334 I/dalvikvm-heap( 4018): Grow heap (frag case) to 4.218MB for 225516-byte allocation
-10-23 01:53:37.344 D/dalvikvm( 4018): GC_FOR_ALLOC freed <1K, 13% free 4166K/4760K, paused 9ms, total 9ms
-10-23 01:53:37.354 D/dalvikvm( 4018): GC_FOR_ALLOC freed <1K, 13% free 4167K/4760K, paused 2ms, total 2ms
-10-23 01:53:37.354 I/dalvikvm-heap( 4018): Grow heap (frag case) to 6.638MB for 2536932-byte allocation
-10-23 01:53:37.364 D/dalvikvm( 4018): GC_FOR_ALLOC freed <1K, 9% free 6644K/7240K, paused 6ms, total 6ms
-10-23 01:53:37.374 D/dalvikvm( 4018): GC_CONCURRENT freed <1K, 9% free 6646K/7240K, paused 1ms+0ms, total 9ms
-10-23 01:53:37.384 D/KONG    ( 4018): FacebookSDKHelper loaded classes for FB SDK Version: 3.20.0/Unity.6.2.2 supported: true
-10-23 01:53:37.384 D/KONG    ( 4018): WebView user-agent: Mozilla/5.0 (Linux; Android 4.4.2; Android SDK built for x86 Build/KK) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 KongregateMobileApi/1.2.1.1
-10-23 01:53:37.384 D/KONG    ( 4018): Pausing WebView
-10-23 01:53:37.384 D/KONG    ( 4018): Panel has not loaded, attempting a reload, reloadAttempt=1
-10-23 01:53:37.384 I/KONG    ( 4018): WebView reloading panel, allowCache=false
-10-23 01:53:37.384 D/KONG    ( 4018): Loading blank html
-10-23 01:53:37.474 I/KONG    ( 4018): WebView Page started: file:///android_res/raw/blank
-10-23 01:53:37.734 I/KONG    ( 4018): WebView Page finished: file:///android_res/raw/blank
-10-23 01:53:37.734 I/KONG    ( 4018): WebView Blank page finished loading, reloading panel
-10-23 01:53:37.744 I/KONG    ( 4018): WebView Page started: https://m.kongregate.com/mobile_api?api=1.2.1.1#/sleep
-10-23 01:53:37.744 I/chromium( 4018): [INFO:simple_index_file.cc(397)] Simple Cache Index is being restored from disk.
-10-23 01:53:37.994 E/KONG    ( 4018): [WebView]: Viewport argument key "viewport-fit" not recognized and ignored., https://m.kongregate.com/mobile_api?api=1.2.1.1#/sleep:8
-10-23 01:53:38.634 I/KONG    ( 4018): [WebView]: Loaded: Preloading application.json, time: 256, https://m.kongregate.com/mobile_api?api=1.2.1.1#/sleep:35
-10-23 01:53:38.704 I/KONG    ( 4018): [WebView]: Loaded: Framework javascripts, time: 297, https://m.kongregate.com/mobile_api?api=1.2.1.1#/sleep:35
-10-23 01:53:38.834 I/KONG    ( 4018): [WebView]: Device.isCacheWarmer: false, osVersion: pw, androidLegacy: false, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:5
-10-23 01:53:38.954 I/KONG    ( 4018): [WebView]: Loaded: ApplicationRoute.beforeModel, time: 558, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:38.954 I/KONG    ( 4018): [WebView]: Using existing application JSON promise: pending, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:38.954 I/KONG    ( 4018): [WebView]: Using existing game info JSON promise: pending, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.064 I/KONG    ( 4018): [WebView]: Current fingerprint: mobile-panel:20c2815, latest: mobile-panel:20c2815, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.074 I/KONG    ( 4018): [WebView]: Loaded: ApplicationRoute.afterModel, time: 689, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.144 I/KONG    ( 4018): [WebView]: Scroll polyfill: true, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.144 I/KONG    ( 4018): [WebView]: Loaded: ApplicationView, time: 766, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.164 I/KONG    ( 4018): [WebView]: URL changed: /sleep, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.184 D/KONG    ( 4018): [WebView]: Finished cache preload https://mobile-panel.kongregate.com/assets/images/game_icos/more-games-icos-android-8a50ef32a0fe71b2f13503c770467d9d.png, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.454 D/KONG    ( 4018): [WebView]: Finished cache preload https://cdn1.kongcdn.com/assets/avatars/defaults/robotboy.png?i10c=img.resize(width:140), https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.454 D/KONG    ( 4018): [WebView]: Finished cache preload https://cdn1.kongcdn.com/assets/avatars/defaults/robotboy.png?i10c=img.resize(width:40), https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.494 D/KONG    ( 4018): [WebView]: Finished cache preload https://cdn1.kongcdn.com/assets/native_game_chat_backgrounds/0000/0005/ga-bg-000.jpg, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.504 D/KONG    ( 4018): [WebView]: Finished cache preload https://cdn3.kongcdn.com/assets/native_game_backgrounds/0000/0016/ga-bg-2.jpg, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.504 I/KONG    ( 4018): WebView Page finished: https://m.kongregate.com/mobile_api?api=1.2.1.1#/sleep
-10-23 01:53:39.644 I/KONG    ( 4018): WebView API message: menu-state data: {"visible":true}
-10-23 01:53:39.664 I/KONG    ( 4018): WebView API message: panel-version data: {"current":"mobile-panel:20c2815","latest":"mobile-panel:20c2815"}
-10-23 01:53:39.664 I/KONG    ( 4018): Panel version info received
-10-23 01:53:39.664 D/KONG    ( 4018): Fingerprint info received, current=mobile-panel:20c2815, latest=mobile-panel:20c2815
-10-23 01:53:39.674 I/KONG    ( 4018): WebView API message: load-info data: {"data":{"id":0,"username":"Guest","premium":false,"join_date":null,"spent_on_kreds":0,"notifications_count":0,"accepted_privacy_policy":true,"accepted_privacy_policy_version":null,"privacy_policy_accepted_at":null,"parent_email_required":false},"token":"84983c60f7daadc1cb8698621f802c0d9f9a3c3c295c810748fb048115c186ec"}
-10-23 01:53:39.674 I/KONG    ( 4018): found secret in prefs
-10-23 01:53:39.674 I/KONG    ( 4018): shared filename is: m.kongregate.com.api.1630270087.shared
-10-23 01:53:39.704 I/KONG    ( 4018): WebView API message: url-changed data: {"has_history":false}
-10-23 01:53:39.754 D/dalvikvm( 4018): GC_FOR_ALLOC freed 912K, 14% free 6913K/7980K, paused 6ms, total 7ms
-10-23 01:53:39.754 I/KONG    ( 4018): WebView API message: initialized data: {}
-10-23 01:53:39.754 I/KONG    ( 4018): Sending message to WebView - config: {"inline_video":true,"subtasks":true,"persistent":true,"fb_connect":true,"file_chooser":[],"native_menu_button":true,"reload":true,"character_token":""}
-10-23 01:53:39.804 D/dalvikvm( 4018): GC_CONCURRENT freed 18K, 14% free 6916K/7980K, paused 3ms+9ms, total 48ms
-10-23 01:53:39.804 I/KONG    ( 4018): [WebView]: Konduit message: config={"inline_video":true,"subtasks":true,"persistent":true,"fb_connect":true,"file_chooser":[],"native_menu_button":true,"reload":true,"character_token":""}, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.804 I/KONG    ( 4018): [WebView]: Character token received, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.804 E/KONG    ( 4018): [WebView]: Invalid character token: CharacterToken [valid=false character=undefined server=undefined guild=undefined], https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
-10-23 01:53:39.804 I/KONG    ( 4018): read and decrypt data store: /data/data/com.kongregate.mobile.globalassault.google/kongregate_shared_datastore/m.kongregate.com.api.1630270087.shared
-10-23 01:53:39.814 D/KONG    ( 4018): getSharedKongregateCookies from webview cookie store
-10-23 01:53:39.814 D/KONG    ( 4018): Reloading cookies from webview: m.kongregate.com
-10-23 01:53:39.854 I/KONG    ( 4018): commiting to: /data/data/com.kongregate.mobile.globalassault.google/kongregate_shared_datastore
-10-23 01:53:39.874 I/KONG    ( 4018): found secret in prefs
-10-23 01:53:39.874 I/KONG    ( 4018): shared filename is: m.kongregate.com.api.1630270087.shared
-10-23 01:53:39.884 I/KONG    ( 4018): read and decrypt data store: /data/data/com.kongregate.mobile.globalassault.google/kongregate_shared_datastore/m.kongregate.com.api.1630270087.shared
-10-23 01:54:21.774 I/SwrveSDK( 4018): Sending queued events
-10-23 01:54:21.774 I/SwrveSDK( 4018): Sending 6 events to Swrve
-10-23 01:54:22.074 W/System.err( 4018): java.net.ConnectException: failed to connect to 1567.api.swrve.com/2600:9000:2356:2400:11:1825:d7c0:93a1 (port 443) after 15000ms: isConnected failed: ENETUNREACH (Network is unreachable)
-10-23 01:54:22.074 W/System.err( 4018): 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
-10-23 01:54:22.074 W/System.err( 4018): 	at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
-10-23 01:54:22.074 W/System.err( 4018): 	at libcore.io.IoBridge.connect(IoBridge.java:112)
-10-23 01:54:22.074 W/System.err( 4018): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
-10-23 01:54:22.074 W/System.err( 4018): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
-10-23 01:54:22.074 W/System.err( 4018): 	at java.net.Socket.connect(Socket.java:843)
-10-23 01:54:22.074 W/System.err( 4018): 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:131)
-10-23 01:54:22.074 W/System.err( 4018): 	at com.android.okhttp.Connection.connect(Connection.java:101)
-10-23 01:54:22.074 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
-10-23 01:54:22.074 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
-10-23 01:54:22.074 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
-10-23 01:54:22.074 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
-10-23 01:54:22.074 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:89)
-10-23 01:54:22.074 W/System.err( 4018): 	at com.android.okhttp.internal.http.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:161)
-10-23 01:54:22.074 W/System.err( 4018): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:147)
-10-23 01:54:22.074 W/System.err( 4018): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:119)
-10-23 01:54:22.074 W/System.err( 4018): 	at com.swrve.sdk.SwrveImp.postBatchRequest(SwrveImp.java:443)
-10-23 01:54:22.074 W/System.err( 4018): 	at com.swrve.sdk.SwrveBase$5.run(SwrveBase.java:438)
-10-23 01:54:22.074 W/System.err( 4018): 	at com.swrve.sdk.SwrveRunnables$1.run(SwrveRunnables.java:18)
-10-23 01:54:22.074 W/System.err( 4018): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
-10-23 01:54:22.074 W/System.err( 4018): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
-10-23 01:54:22.074 W/System.err( 4018): 	at java.lang.Thread.run(Thread.java:841)
-10-23 01:54:22.074 W/System.err( 4018): Caused by: libcore.io.ErrnoException: isConnected failed: ENETUNREACH (Network is unreachable)
-10-23 01:54:22.074 W/System.err( 4018): 	at libcore.io.IoBridge.isConnected(IoBridge.java:208)
-10-23 01:54:22.074 W/System.err( 4018): 	... 21 more
-10-23 01:54:22.074 E/SwrveSDK( 4018): Batch of events could not be sent, retrying
-10-23 01:54:22.114 D/KONG    ( 4018): Sending SWRVE event: swrve.heartbeat : {}
-10-23 01:54:22.114 I/SwrveSDK( 4018): Not showing message for Kongregate.heartbeat: No campaigns available
-10-23 01:54:22.114 D/KONG    ( 4018): upload events
-10-23 01:54:22.134 I/SwrveSDK( 4018): event event queued
-10-23 01:54:22.174 D/dalvikvm( 4018): GC_CONCURRENT freed 1355K, 18% free 6793K/8284K, paused 5ms+1ms, total 35ms
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018): Response code was NOT 200. It was: 404
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018): Response body was: {"message": "Resource not found.", "error_code": "ResourceNotFoundError"}
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018): Uploaded events: {
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):   "session_starts" : [ {
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "kong_username" : "Guest",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "idfv" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "client_os_version" : "4.4.2",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "first_server_version" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "num_sessions" : 1,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "filter_type" : "jailbroken",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "google_play_services_id" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "first_play_time" : "2026-10-23T01:53:21.651+0000",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "android_id" : "d8d98a7e57bd9728",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "carrier" : "Android",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "first_sdk_version" : "1.2.1.1",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "usd_spent_on_kreds" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "pkg_src" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "data_connection_type" : "mobile LTE",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "site_visitor_id" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "first_play_time_offset" : 0.0,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "imei" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "sdk_version" : "1.2.1.1",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "ad_tracking" : true,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "google_ad_id" : "fdeee302-bba7-4381-b251-8f571a107b09",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "gamecenter_id" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "ip_address" : "10.0.2.15",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "time_skew" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "external_ip_address" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "kong_user_id" : 0,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "event_time" : "2026-10-23T01:53:22.078+0000",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "client_os_type" : "android",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "player_id" : "",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "lang_code" : "en",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "idfa" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "session_id" : "4bb06062-2627-4382-8150-d05b80aa3e60",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "device_type" : "Android SDK built for x86",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "kong_plus" : false,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "device_event_id" : "18234388-9b07-4089-914f-f0ad28c719f2",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "is_from_background" : true,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "dev_client_version" : "101",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "google_play_services_alias" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "country_code" : "US",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "gamecenter_alias" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "days_retained" : 0,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "mac_address" : "52:54:00:12:34:56",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "event_time_offset" : 0.0,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "first_client_version" : "1.30.1",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "num_purchases" : 0,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "pur_tier" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "keen" : {
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):       "timestamp" : "2026-10-23T01:53:22.083+0000"
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     },
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "client_version" : "1.30.1"
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):   } ],
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):   "invalid_states" : [ {
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "kong_username" : "Guest",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "idfv" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "client_os_version" : "4.4.2",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "reason" : "jailbroken",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "first_server_version" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "num_sessions" : 0,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "filter_type" : "jailbroken",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "google_play_services_id" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "first_play_time" : "2026-10-23T01:53:21.651+0000",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "android_id" : "d8d98a7e57bd9728",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "carrier" : "Android",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "first_sdk_version" : "1.2.1.1",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "usd_spent_on_kreds" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "pkg_src" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "data_connection_type" : "mobile LTE",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "site_visitor_id" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "first_play_time_offset" : 0.0,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "imei" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "sdk_version" : "1.2.1.1",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "ad_tracking" : true,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "google_ad_id" : "fdeee302-bba7-4381-b251-8f571a107b09",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "gamecenter_id" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "ip_address" : "10.0.2.15",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "time_skew" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "external_ip_address" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "kong_user_id" : 0,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "event_time" : "2026-10-23T01:53:21.897+0000",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "client_os_type" : "android",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "player_id" : "",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "lang_code" : "en",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "idfa" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "session_id" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "device_type" : "Android SDK built for x86",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "kong_plus" : false,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "device_event_id" : "dad2e474-54d1-4d4d-a0b2-2f1e50e23297",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "dev_client_version" : "101",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "google_play_services_alias" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "country_code" : "US",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "gamecenter_alias" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "days_retained" : 0,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "mac_address" : "52:54:00:12:34:56",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "event_time_offset" : 0.0,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "first_client_version" : "1.30.1",
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "num_purchases" : 0,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "pur_tier" : null,
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "keen" : {
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):       "timestamp" : "2026-10-23T01:53:21.904+0000"
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     },
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):     "client_version" : "1.30.1"
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018):   } ]
-10-23 01:54:22.964 D/KEEN_CLIENT( 4018): }
+10-23 02:18:26.411 I/ActivityManager( 3002): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity} from pid 3990
+10-23 02:18:26.511 I/ActivityManager( 3002): Start proc com.kongregate.mobile.globalassault.google for activity com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity: pid=4003 uid=10057 gids={50057, 3003, 1028, 1015}
+10-23 02:18:26.691 W/ContextImpl( 4003): Failed to ensure directory: /storage/sdcard/Android/obb/com.kongregate.mobile.globalassault.google
+10-23 02:18:26.701 W/ContextImpl( 4003): Failed to ensure directory: /storage/sdcard/Android/data/com.kongregate.mobile.globalassault.google/files
+10-23 02:18:26.701 D/dalvikvm( 4003): Trying to load lib /data/app-lib/com.kongregate.mobile.globalassault.google-1/libmain.so 0x9cfe4390
+10-23 02:18:26.701 D/dalvikvm( 4003): Added shared lib /data/app-lib/com.kongregate.mobile.globalassault.google-1/libmain.so 0x9cfe4390
+10-23 02:18:26.821 D/        ( 4003): HostConnection::get() New Host Connection established 0xb855c080, tid 4003
+10-23 02:18:26.891 I/ActivityManager( 3002): Displayed com.kongregate.mobile.globalassault.google/com.unity3d.player.UnityPlayerNativeActivity: +397ms
+10-23 02:18:26.991 D/        ( 4003): HostConnection::get() New Host Connection established 0xb86bcd30, tid 4020
+10-23 02:18:27.031 D/EGL_emulation( 4003): eglCreateContext: 0xb86bdaf0: maj 2 min 0 rcv 2
+10-23 02:18:27.031 D/EGL_emulation( 4003): eglMakeCurrent: 0xb86bdaf0: ver 2 0
+10-23 02:18:27.051 D/Unity   ( 4003): GL_EXT_debug_marker GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_sync_buffer_data ANDROID_EMU_hwc_color_transform GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+10-23 02:18:27.171 W/libc    ( 4003): pthread_create sched_setscheduler call failed: Operation not permitted
+10-23 02:18:27.211 D/dalvikvm( 4003): GC_CONCURRENT freed 228K, 9% free 3299K/3604K, paused 1ms+2ms, total 10ms
+10-23 02:18:27.301 D/EGL_emulation( 4003): eglMakeCurrent: 0xb86bdaf0: ver 2 0
+10-23 02:18:27.911 I/Unity   ( 4003): NullReferenceException: Object reference not set to an instance of an object
+10-23 02:18:27.911 I/Unity   ( 4003):   at CameraAnchorBinder.Awake () [0x00000] in <filename unknown>:0 
+10-23 02:18:27.911 I/Unity   ( 4003):  
+10-23 02:18:27.911 I/Unity   ( 4003): (Filename:  Line: -1)
+10-23 02:18:27.911 I/Unity   ( 4003): 
+10-23 02:18:27.961 I/Unity   ( 4003): NullReferenceException: Object reference not set to an instance of an object
+10-23 02:18:27.961 I/Unity   ( 4003):   at Background.Start () [0x00000] in <filename unknown>:0 
+10-23 02:18:27.961 I/Unity   ( 4003):  
+10-23 02:18:27.961 I/Unity   ( 4003): (Filename:  Line: -1)
+10-23 02:18:27.961 I/Unity   ( 4003): 
+10-23 02:18:28.731 I/Unity   ( 4003): IAPAmazon OnEnable
+10-23 02:18:28.731 I/Unity   ( 4003):  
+10-23 02:18:28.731 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:28.731 I/Unity   ( 4003): 
+10-23 02:18:28.731 D/dalvikvm( 4003): Trying to load lib /data/app-lib/com.kongregate.mobile.globalassault.google-1/libAmazonIapV2Bridge.so 0x9cfe4390
+10-23 02:18:28.731 D/dalvikvm( 4003): Added shared lib /data/app-lib/com.kongregate.mobile.globalassault.google-1/libAmazonIapV2Bridge.so 0x9cfe4390
+10-23 02:18:28.731 D/AmazonIapV2 Bridge( 4003): JNI_OnLoad: library ( jni/AmazonIapV2Bridge.cpp May  8 2015 14:41:11) loading 
+10-23 02:18:28.741 I/AmazonIapV2( 4003): Start Amazon IAP V2 - Version 1.0.0, Build 9999.9.9.9
+10-23 02:18:28.741 D/d       ( 4003): In App Purchasing SDK - Sandbox Mode: PurchasingListener registered: com.amazon.device.iap.cpt.AmazonIapV2Impl@9d025838
+10-23 02:18:28.741 D/d       ( 4003): In App Purchasing SDK - Sandbox Mode: PurchasingListener Context: android.app.Application@9cfe52a0
+10-23 02:18:28.741 I/AmazonIapV2( 4003): cpt iap plugin initialized
+10-23 02:18:28.741 D/dalvikvm( 4003): Trying to load lib /data/app-lib/com.kongregate.mobile.globalassault.google-1/libAmazonIapV2Bridge.so 0x9cfe4390
+10-23 02:18:28.741 D/dalvikvm( 4003): Shared lib '/data/app-lib/com.kongregate.mobile.globalassault.google-1/libAmazonIapV2Bridge.so' already loaded in same CL 0x9cfe4390
+10-23 02:18:28.741 D/AmazonIapV2 Bridge( 4003): Plugin running in UNITY messaging mode
+10-23 02:18:28.741 D/AmazonIapV2 Bridge( 4003): gameObject registered
+10-23 02:18:28.741 D/AmazonIapV2 Bridge( 4003): Plugin running in UNITY messaging mode
+10-23 02:18:28.741 D/AmazonIapV2 Bridge( 4003): gameObject registered
+10-23 02:18:28.751 I/Unity   ( 4003): Creating FingerGestures using TouchScreen Gestures
+10-23 02:18:28.751 I/Unity   ( 4003):  
+10-23 02:18:28.751 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:28.751 I/Unity   ( 4003): 
+10-23 02:18:28.761 E/Unity   ( 4003): Cannot change GameObject hierarchy while activating or deactivating the parent.
+10-23 02:18:28.761 E/Unity   ( 4003):  
+10-23 02:18:28.761 E/Unity   ( 4003): (Filename:  Line: 583)
+10-23 02:18:28.761 E/Unity   ( 4003): 
+10-23 02:18:28.771 I/Unity   ( 4003): Unity 4.x, set default AllowImmersiveMode to true
+10-23 02:18:28.771 I/Unity   ( 4003):  
+10-23 02:18:28.771 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:28.771 I/Unity   ( 4003): 
+10-23 02:18:28.771 I/Unity   ( 4003): KongregateAPI: DEBUG: initializating from Unity
+10-23 02:18:28.771 I/Unity   ( 4003):  
+10-23 02:18:28.771 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:28.771 I/Unity   ( 4003): 
+10-23 02:18:28.771 I/Unity   ( 4003): Kongregate Initializing from Unity
+10-23 02:18:28.771 I/Unity   ( 4003):  
+10-23 02:18:28.771 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:28.771 I/Unity   ( 4003): 
+10-23 02:18:28.781 D/KONG    ( 4003): UnityWrapper : initializing unity wrapper
+10-23 02:18:28.781 D/KONG    ( 4003): parse adjust event token map: { "sale" : "uzm2g6" }
+10-23 02:18:28.781 D/KONG    ( 4003): API bootstrap - initialize native
+10-23 02:18:28.781 D/dalvikvm( 4003): GC_CONCURRENT freed 335K, 11% free 3383K/3792K, paused 1ms+1ms, total 3ms
+10-23 02:18:28.791 I/KONG    ( 4003): Kongregate NativeAPI initialized, domain: m.kongregate.com
+10-23 02:18:28.791 I/KONG    ( 4003): Registering lifecycle callbacks
+10-23 02:18:28.791 D/KONG    ( 4003): UnityWrapper : initializing API with com.unity3d.player.UnityPlayerNativeActivity@9cfe90d8 198212 on m.kongregate.com
+10-23 02:18:28.791 D/KONG    ( 4003): enter immersive mode
+10-23 02:18:28.791 I/Unity   ( 4003): KongregateAPI: DEBUG: initialization from Unity complete
+10-23 02:18:28.791 I/Unity   ( 4003):  
+10-23 02:18:28.791 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:28.791 I/Unity   ( 4003): 
+10-23 02:18:28.791 I/KONG    ( 4003): SourceDir: /data/app/com.kongregate.mobile.globalassault.google-1.apk
+10-23 02:18:28.791 I/KONG    ( 4003): GlobalConfiguration initialized!
+10-23 02:18:28.791 D/KONG    ( 4003): UnityWrapper : set event listener Kongregate HandleKongregateEvent
+10-23 02:18:28.791 I/Unity   ( 4003): KongregateAPI: DEBUG: Setting common props callback
+10-23 02:18:28.791 I/Unity   ( 4003):  
+10-23 02:18:28.791 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:28.791 I/Unity   ( 4003): 
+10-23 02:18:28.791 I/Unity   ( 4003): KongregateAPI: DEBUG: using CommonPropsCallback
+10-23 02:18:28.791 I/Unity   ( 4003):  
+10-23 02:18:28.791 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:28.791 I/Unity   ( 4003): 
+10-23 02:18:28.791 D/KONG    ( 4003): Updating remote properties
+10-23 02:18:28.791 I/Unity   ( 4003): KongregateAPI: DEBUG: Analytics update common props: { "player_id" : "","client_version" : 30 }
+10-23 02:18:28.791 I/Unity   ( 4003):  
+10-23 02:18:28.791 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:28.791 I/Unity   ( 4003): 
+10-23 02:18:28.801 D/KONG    ( 4003): updating common props from json: { "player_id" : "","client_version" : 30 }
+10-23 02:18:28.801 D/KONG    ( 4003): parsing JSON to analytics map: { "player_id" : "","client_version" : 30 }
+10-23 02:18:28.801 D/KONG    ( 4003): UnityWrapper : set native rendering to false
+10-23 02:18:28.811 I/KONG    ( 4003): Creating database (m.kongregate.com.kongregate_api.db)
+10-23 02:18:28.811 I/KONG    ( 4003): Building DB Version 1
+10-23 02:18:28.821 I/KONG    ( 4003): Upgrading database from version 1 to 4
+10-23 02:18:28.821 I/KONG    ( 4003): Found column _id in table purchase_records
+10-23 02:18:28.821 I/KONG    ( 4003): Disabling foreign keys
+10-23 02:18:28.831 I/Unity   ( 4003): BuildInfo
+10-23 02:18:28.831 I/Unity   ( 4003):  
+10-23 02:18:28.831 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:28.831 I/Unity   ( 4003): 
+10-23 02:18:28.841 D/KONG    ( 4003): Database opened, version=4
+10-23 02:18:28.841 I/KONG    ( 4003): Disabling foreign keys
+10-23 02:18:28.861 I/KONG    ( 4003): Enabling foreign keys
+10-23 02:18:28.861 I/KONG    ( 4003): Disabling foreign keys
+10-23 02:18:28.891 D/KONG    ( 4003): FacebookSDKHelper loaded classes for FB SDK Version: 3.20.0/Unity.6.2.2 supported: true
+10-23 02:18:28.891 D/KONG    ( 4003): User agent set to: HttpClient/4.0
+10-23 02:18:28.891 D/KONG    ( 4003): Reloading cookies from webview: m.kongregate.com
+10-23 02:18:28.931 D/KONG    ( 4003): User agent set to: HttpClient/4.0 KongregateMobileApi/1.2.1.1
+10-23 02:18:28.931 I/KONG    ( 4003): API cookie set to: api:1.2.1.1:198212:android:4.4.2:pw
+10-23 02:18:28.931 I/KONG    ( 4003): check providers for secret
+10-23 02:18:28.941 D/dalvikvm( 4003): GC_CONCURRENT freed 239K, 8% free 3657K/3972K, paused 0ms+0ms, total 2ms
+10-23 02:18:28.941 D/dalvikvm( 4003): WAIT_FOR_CONCURRENT_GC blocked 1ms
+10-23 02:18:28.941 I/KONG    ( 4003): checking authority: com.kongregate.android.api.providers.GlobalAssaultSharedSecretProvider
+10-23 02:18:28.941 I/KONG    ( 4003): query shared secret provider
+10-23 02:18:28.941 I/KONG    ( 4003): provider does not have shared secret
+10-23 02:18:28.941 I/KONG    ( 4003): generated a secret
+10-23 02:18:28.941 I/KONG    ( 4003): shared filename is: m.kongregate.com.api.2112318037.shared
+10-23 02:18:28.961 I/KONG    ( 4003): no data store found
+10-23 02:18:28.961 D/KONG    ( 4003): setting shared cookies from shared storage: 
+10-23 02:18:28.961 D/KONG    ( 4003): Reloading cookies from webview: m.kongregate.com
+10-23 02:18:28.961 I/KONG    ( 4003): Set active user: Guest=0
+10-23 02:18:28.961 D/dalvikvm( 4003): GC_CONCURRENT freed 306K, 10% free 3759K/4144K, paused 0ms+0ms, total 3ms
+10-23 02:18:28.971 D/KONG    ( 4003): active_user updated, rows=1
+10-23 02:18:28.971 D/KONG    ( 4003): getSharedKongregateCookies from webview cookie store
+10-23 02:18:28.971 D/KONG    ( 4003): Reloading cookies from webview: m.kongregate.com
+10-23 02:18:28.991 I/KONG    ( 4003): commiting to: /data/data/com.kongregate.mobile.globalassault.google/kongregate_shared_datastore
+10-23 02:18:29.001 I/KONG    ( 4003): Queueing pre-ready event: KONG_API_EVENT_GAME_AUTH_TOKEN_CHANGED
+10-23 02:18:29.001 I/KONG    ( 4003): Game has a server. Will only track subset of automatic analytics
+10-23 02:18:29.001 I/KONG    ( 4003): filtering props: 
+10-23 02:18:29.011 D/dalvikvm( 4003): GC_CONCURRENT freed 596K, 16% free 3561K/4236K, paused 0ms+1ms, total 2ms
+10-23 02:18:29.031 I/KONG    ( 4003): AnalyticsServices initialized, deferred: false
+10-23 02:18:29.031 I/KONG    ( 4003): Starting Analytics subsystem
+10-23 02:18:29.031 W/KONG    ( 4003): unrecognized field: PLAYER_ID
+10-23 02:18:29.031 W/KONG    ( 4003): Common props is not a string: player_id : null
+10-23 02:18:29.031 D/KONG    ( 4003): initialize Swrve
+10-23 02:18:29.041 I/SwrveSDK( 4003): Your user id is: eb47bff5-2093-44b0-ac14-888c81254353
+10-23 02:18:29.071 I/SwrveSDK( 4003): session_start event queued
+10-23 02:18:29.071 I/SwrveSDK( 4003): Init finished
+10-23 02:18:29.071 D/KONG    ( 4003): Adjust initialize
+10-23 02:18:29.081 I/SwrveSDK( 4003): event event queued
+10-23 02:18:29.081 I/SwrveSDK( 4003): Not showing message for Swrve.user_properties_changed: No campaigns available
+10-23 02:18:29.081 W/KONG    ( 4003): KONGREGATE CONFIGURATION WARNING: missing Adjust event token for event: install
+10-23 02:18:29.081 W/KONG    ( 4003): KONGREGATE CONFIGURATION WARNING: missing Adjust event token for event: session
+10-23 02:18:29.081 D/KONG    ( 4003): Adjust initializing: a4xhb473e7tl : production
+10-23 02:18:29.081 F/Adjust  ( 4003): PRODUCTION: Adjust is running in Production mode. Use this setting only for the build that you want to publish. Set the environment to `sandbox` if you want to test your app!
+10-23 02:18:29.081 D/KONG    ( 4003): keen logging enalbed
+10-23 02:18:29.091 I/SwrveSDK( 4003): user event queued
+10-23 02:18:29.091 I/SwrveSDK( 4003): Sending device info
+10-23 02:18:29.091 E/ActivityThread( 4003): Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+10-23 02:18:29.101 D/dalvikvm( 4003): GC_CONCURRENT freed 315K, 14% free 3685K/4236K, paused 0ms+1ms, total 3ms
+10-23 02:18:29.101 D/KEEN_CLIENT( 4003): Keen using cache /data/data/com.kongregate.mobile.globalassault.google/cache/keen
+10-23 02:18:29.101 D/KONG    ( 4003): Keen initialized
+10-23 02:18:29.101 D/KONG    ( 4003): Analytics services initialized
+10-23 02:18:29.101 I/KONG    ( 4003): adding filter type: jailbroken
+10-23 02:18:29.111 D/KONG    ( 4003): adding event to collection: invalid_states
+10-23 02:18:29.111 I/SwrveSDK( 4003): Not showing message for Kongregate.RawData.invalid_states: No campaigns available
+10-23 02:18:29.111 D/KEEN_CLIENT( 4003): Cache directory for event collection 'invalid_states' doesn't exist. Creating it.
+10-23 02:18:29.111 D/KEEN_CLIENT( 4003): Adding event to collection: invalid_states
+10-23 02:18:29.131 I/SwrveSDK( 4003): event event queued
+10-23 02:18:29.131 D/dalvikvm( 4003): GC_CONCURRENT freed 324K, 11% free 3800K/4236K, paused 4ms+3ms, total 11ms
+10-23 02:18:29.161 D/dalvikvm( 4003): GC_CONCURRENT freed 404K, 11% free 3916K/4364K, paused 2ms+2ms, total 9ms
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003): Wrote event: {
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "kong_username" : "Guest",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "idfv" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "client_os_version" : "4.4.2",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "reason" : "jailbroken",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "first_server_version" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "num_sessions" : 0,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "filter_type" : "jailbroken",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "google_play_services_id" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "first_play_time" : "2026-10-23T02:18:29.017+0000",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "android_id" : "10a259c261cc00dd",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "carrier" : "Android",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "first_sdk_version" : "1.2.1.1",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "usd_spent_on_kreds" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "pkg_src" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "data_connection_type" : "mobile LTE",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "site_visitor_id" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "first_play_time_offset" : 0.0,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "imei" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "sdk_version" : "1.2.1.1",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "ad_tracking" : true,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "google_ad_id" : "46d4c829-4a85-402d-b5de-f720028c33a2",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "gamecenter_id" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "ip_address" : "10.0.2.15",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "time_skew" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "external_ip_address" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "kong_user_id" : 0,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "event_time" : "2026-10-23T02:18:29.119+0000",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "client_os_type" : "android",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "player_id" : "",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "lang_code" : "en",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "idfa" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "session_id" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "device_type" : "Android SDK built for x86",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "kong_plus" : false,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "device_event_id" : "ea24eda2-bc78-42bd-b6be-2725144e39da",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "dev_client_version" : "101",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "google_play_services_alias" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "country_code" : "US",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "gamecenter_alias" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "days_retained" : 0,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "mac_address" : "52:54:00:12:34:56",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "event_time_offset" : 0.0,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "first_client_version" : "1.30.1",
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "num_purchases" : 0,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "pur_tier" : null,
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "keen" : {
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):     "timestamp" : "2026-10-23T02:18:29.123+0000"
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   },
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003):   "client_version" : "1.30.1"
+10-23 02:18:29.191 D/KEEN_CLIENT( 4003): }
+10-23 02:18:29.191 D/KONG    ( 4003): added event to collection: invalid_states
+10-23 02:18:29.191 D/KONG    ( 4003): Adjust - onResume
+10-23 02:18:29.191 D/KONG    ( 4003): adding event to collection: session_starts
+10-23 02:18:29.201 W/KONG    ( 4003): Adjust - no event token for event: session
+10-23 02:18:29.201 I/SwrveSDK( 4003): Not showing message for Kongregate.RawData.session_starts: No campaigns available
+10-23 02:18:29.201 D/dalvikvm( 4003): GC_CONCURRENT freed 497K, 13% free 3882K/4452K, paused 2ms+0ms, total 6ms
+10-23 02:18:29.201 D/KEEN_CLIENT( 4003): Cache directory for event collection 'session_starts' doesn't exist. Creating it.
+10-23 02:18:29.201 D/KEEN_CLIENT( 4003): Adding event to collection: session_starts
+10-23 02:18:29.201 I/SwrveSDK( 4003): event event queued
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003): Wrote event: {
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "kong_username" : "Guest",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "idfv" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "client_os_version" : "4.4.2",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "first_server_version" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "num_sessions" : 1,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "filter_type" : "jailbroken",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "google_play_services_id" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "first_play_time" : "2026-10-23T02:18:29.017+0000",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "android_id" : "10a259c261cc00dd",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "carrier" : "Android",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "first_sdk_version" : "1.2.1.1",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "usd_spent_on_kreds" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "pkg_src" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "data_connection_type" : "mobile LTE",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "site_visitor_id" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "first_play_time_offset" : 0.0,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "imei" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "sdk_version" : "1.2.1.1",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "ad_tracking" : true,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "google_ad_id" : "46d4c829-4a85-402d-b5de-f720028c33a2",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "gamecenter_id" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "ip_address" : "10.0.2.15",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "time_skew" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "external_ip_address" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "kong_user_id" : 0,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "event_time" : "2026-10-23T02:18:29.202+0000",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "client_os_type" : "android",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "player_id" : "",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "lang_code" : "en",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "idfa" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "session_id" : "a6743fdb-f177-4c92-9225-c43fe3e95b88",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "device_type" : "Android SDK built for x86",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "kong_plus" : false,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "device_event_id" : "a5286300-1542-40dc-9756-1f54b08d5c5c",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "is_from_background" : true,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "dev_client_version" : "101",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "google_play_services_alias" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "country_code" : "US",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "gamecenter_alias" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "days_retained" : 0,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "mac_address" : "52:54:00:12:34:56",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "event_time_offset" : 0.0,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "first_client_version" : "1.30.1",
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "num_purchases" : 0,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "pur_tier" : null,
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "keen" : {
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):     "timestamp" : "2026-10-23T02:18:29.213+0000"
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   },
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003):   "client_version" : "1.30.1"
+10-23 02:18:29.211 D/KEEN_CLIENT( 4003): }
+10-23 02:18:29.211 D/KONG    ( 4003): added event to collection: session_starts
+10-23 02:18:29.211 D/KONG    ( 4003): updating swrve user props: {kong.idfv=null, kong.client_os_version=4.4.2, kong.first_play_time=2026-10-23T02:18:29.017+0000, kong.days_retained=0, kong.client_os_type=android, kong.kong_username=Guest, kong.event_time=2026-10-23T02:18:29.218+0000, kong.country_code=US, kong.num_sessions=1, kong.idfa=null, kong.device_type=Android SDK built for x86, kong.client_version=1.30.1, kong.session_id=a6743fdb-f177-4c92-9225-c43fe3e95b88}
+10-23 02:18:29.211 I/SwrveSDK( 4003): Not showing message for Swrve.user_properties_changed: No campaigns available
+10-23 02:18:29.211 D/KONG    ( 4003): Setting WebView reload delay to 120 minutes
+10-23 02:18:29.211 D/KONG    ( 4003): Native API - download user and game info: Guest
+10-23 02:18:29.211 I/KONG    ( 4003): READY: true
+10-23 02:18:29.211 D/KONG    ( 4003): UnityWrapper : Sending event to Unity: KONG_API_EVENT_READY
+10-23 02:18:29.211 D/KONG    ( 4003): UnityWrapper : Sending event to Unity: KONG_API_EVENT_GAME_AUTH_TOKEN_CHANGED
+10-23 02:18:29.211 I/SwrveSDK( 4003): user event queued
+10-23 02:18:29.261 D/EGL_emulation( 4003): eglMakeCurrent: 0xb86bdaf0: ver 2 0
+10-23 02:18:29.271 I/Unity   ( 4003): Kongregate API is ready
+10-23 02:18:29.271 I/Unity   ( 4003):  
+10-23 02:18:29.271 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:29.271 I/Unity   ( 4003): 
+10-23 02:18:29.271 D/KONG    ( 4003): UnityWrapper : checking for guest
+10-23 02:18:29.271 D/KONG    ( 4003): UnityWrapper : message received KONG_API_EVENT_READY
+10-23 02:18:29.271 D/KONG    ( 4003): UnityWrapper : getting user id
+10-23 02:18:29.271 D/KONG    ( 4003): UnityWrapper : getting game auth token
+10-23 02:18:29.271 D/KONG    ( 4003): UnityWrapper : checking for guest
+10-23 02:18:29.281 I/Unity   ( 4003): EVENT GAME AUTH: user 0 is a guest
+10-23 02:18:29.281 I/Unity   ( 4003):  
+10-23 02:18:29.281 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:29.281 I/Unity   ( 4003): 
+10-23 02:18:29.281 I/Unity   ( 4003): game auth has changed to:Guest_Game_Auth_Token
+10-23 02:18:29.281 I/Unity   ( 4003):  
+10-23 02:18:29.281 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:29.281 I/Unity   ( 4003): 
+10-23 02:18:29.281 D/KONG    ( 4003): UnityWrapper : message received KONG_API_EVENT_GAME_AUTH_TOKEN_CHANGED
+10-23 02:18:29.321 I/SwrveSDK( 4003): Sending queued events
+10-23 02:18:29.321 D/KONG    ( 4003): UnityWrapper : Sending event to Unity: KONG_API_EVENT_SWRVE_RESOURCES_UPDATED
+10-23 02:18:29.331 D/dalvikvm( 4003): GC_CONCURRENT freed 393K, 12% free 3930K/4452K, paused 1ms+3ms, total 15ms
+10-23 02:18:29.341 I/SwrveSDK( 4003): Sending 6 events to Swrve
+10-23 02:18:29.371 D/KONG    ( 4003): UnityWrapper : message received KONG_API_EVENT_SWRVE_RESOURCES_UPDATED
+10-23 02:18:29.451 D/KONG    ( 4003): UnityWrapper : checking for guest
+10-23 02:18:29.451 I/Unity   ( 4003): server api: https://havoc.synapse-games.com/api.php?message=getUserAccount&user_id=
+10-23 02:18:29.451 I/Unity   ( 4003):  
+10-23 02:18:29.451 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:29.451 I/Unity   ( 4003): 
+10-23 02:18:29.451 D/KONG    ( 4003): UnityWrapper : checking for guest
+10-23 02:18:29.491 E/KONG    ( 4003): IOException in excuteUrlRequest
+10-23 02:18:29.491 E/KONG    ( 4003): javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb9bb7180: Failure in SSL library, usually a protocol error
+10-23 02:18:29.491 E/KONG    ( 4003): error:14077102:SSL routines:SSL23_GET_SERVER_HELLO:unsupported protocol (external/openssl/ssl/s23_clnt.c:714 0x8d94a990:0x00000000)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:448)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.android.okhttp.Connection.upgradeToTls(Connection.java:146)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.android.okhttp.Connection.connect(Connection.java:107)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:296)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:179)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.android.okhttp.internal.http.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:246)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.kongregate.o.g.a.a(SourceFile:635)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.kongregate.o.g.a.f(SourceFile:394)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.kongregate.o.g.b$1.call(SourceFile:73)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:152)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:265)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at java.lang.Thread.run(Thread.java:841)
+10-23 02:18:29.491 E/KONG    ( 4003): Caused by: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb9bb7180: Failure in SSL library, usually a protocol error
+10-23 02:18:29.491 E/KONG    ( 4003): error:14077102:SSL routines:SSL23_GET_SERVER_HELLO:unsupported protocol (external/openssl/ssl/s23_clnt.c:714 0x8d94a990:0x00000000)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+10-23 02:18:29.491 E/KONG    ( 4003): 	at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:405)
+10-23 02:18:29.491 E/KONG    ( 4003): 	... 18 more
+10-23 02:18:29.491 W/KONG    ( 4003): HTTP request error: 0
+10-23 02:18:29.491 E/KONG    ( 4003): HTTP error: 0
+10-23 02:18:29.501 D/KONG    ( 4003): UnityWrapper : Sending event to Unity: KONG_API_EVENT_SERVICE_UNAVAILABLE
+10-23 02:18:29.511 I/Unity   ( 4003): Kongregate Service Unavailable
+10-23 02:18:29.511 I/Unity   ( 4003):  
+10-23 02:18:29.511 I/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:29.511 I/Unity   ( 4003): 
+10-23 02:18:29.511 D/KONG    ( 4003): UnityWrapper : message received KONG_API_EVENT_SERVICE_UNAVAILABLE
+10-23 02:18:29.551 E/Unity   ( 4003): You are trying to load data from a www stream which had the following error when downloading.
+10-23 02:18:29.551 E/Unity   ( 4003): java.net.UnknownHostException: Unable to resolve host "havoc.synapse-games.com": No address associated with hostname
+10-23 02:18:29.551 E/Unity   ( 4003):  
+10-23 02:18:29.551 E/Unity   ( 4003): (Filename:  Line: 253)
+10-23 02:18:29.551 E/Unity   ( 4003): 
+10-23 02:18:29.551 E/Unity   ( 4003): connection www error: java.net.UnknownHostException: Unable to resolve host "havoc.synapse-games.com": No address associated with hostname
+10-23 02:18:29.551 E/Unity   ( 4003):  
+10-23 02:18:29.551 E/Unity   ( 4003): (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+10-23 02:18:29.551 E/Unity   ( 4003): 
+10-23 02:18:29.741 D/dalvikvm( 4003): GC_CONCURRENT freed 382K, 12% free 3946K/4452K, paused 0ms+1ms, total 5ms
+10-23 02:18:29.741 W/System.err( 4003): java.net.ConnectException: failed to connect to 1567.api.swrve.com/2600:9000:2918:8000:11:1825:d7c0:93a1 (port 443) after 15000ms: isConnected failed: ENETUNREACH (Network is unreachable)
+10-23 02:18:29.741 W/System.err( 4003): 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
+10-23 02:18:29.741 W/System.err( 4003): 	at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
+10-23 02:18:29.741 W/System.err( 4003): 	at libcore.io.IoBridge.connect(IoBridge.java:112)
+10-23 02:18:29.741 W/System.err( 4003): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+10-23 02:18:29.741 W/System.err( 4003): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+10-23 02:18:29.741 W/System.err( 4003): 	at java.net.Socket.connect(Socket.java:843)
+10-23 02:18:29.741 W/System.err( 4003): 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:131)
+10-23 02:18:29.741 W/System.err( 4003): 	at com.android.okhttp.Connection.connect(Connection.java:101)
+10-23 02:18:29.741 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
+10-23 02:18:29.741 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
+10-23 02:18:29.741 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
+10-23 02:18:29.741 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
+10-23 02:18:29.741 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:89)
+10-23 02:18:29.741 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:161)
+10-23 02:18:29.741 W/System.err( 4003): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:147)
+10-23 02:18:29.741 W/System.err( 4003): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:119)
+10-23 02:18:29.741 W/System.err( 4003): 	at com.swrve.sdk.SwrveImp.postBatchRequest(SwrveImp.java:443)
+10-23 02:18:29.741 W/System.err( 4003): 	at com.swrve.sdk.SwrveBase$5.run(SwrveBase.java:438)
+10-23 02:18:29.741 W/System.err( 4003): 	at com.swrve.sdk.SwrveRunnables$1.run(SwrveRunnables.java:18)
+10-23 02:18:29.741 W/System.err( 4003): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+10-23 02:18:29.741 W/System.err( 4003): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+10-23 02:18:29.741 W/System.err( 4003): 	at java.lang.Thread.run(Thread.java:841)
+10-23 02:18:29.741 W/System.err( 4003): Caused by: libcore.io.ErrnoException: isConnected failed: ENETUNREACH (Network is unreachable)
+10-23 02:18:29.741 W/System.err( 4003): 	at libcore.io.IoBridge.isConnected(IoBridge.java:208)
+10-23 02:18:29.741 W/System.err( 4003): 	... 21 more
+10-23 02:18:29.741 E/SwrveSDK( 4003): Batch of events could not be sent, retrying
+10-23 02:18:29.751 I/SwrveSDK( 4003): Sending queued events
+10-23 02:18:29.751 I/SwrveSDK( 4003): Sending 6 events to Swrve
+10-23 02:18:33.961 W/System.err( 4003): java.net.ConnectException: failed to connect to 1567.api.swrve.com/2600:9000:2918:8000:11:1825:d7c0:93a1 (port 443) after 15000ms: isConnected failed: ENETUNREACH (Network is unreachable)
+10-23 02:18:33.961 W/System.err( 4003): 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
+10-23 02:18:33.961 W/System.err( 4003): 	at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
+10-23 02:18:33.961 W/System.err( 4003): 	at libcore.io.IoBridge.connect(IoBridge.java:112)
+10-23 02:18:33.961 W/System.err( 4003): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+10-23 02:18:33.961 W/System.err( 4003): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+10-23 02:18:33.961 W/System.err( 4003): 	at java.net.Socket.connect(Socket.java:843)
+10-23 02:18:33.961 W/System.err( 4003): 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:131)
+10-23 02:18:33.961 W/System.err( 4003): 	at com.android.okhttp.Connection.connect(Connection.java:101)
+10-23 02:18:33.961 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
+10-23 02:18:33.961 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
+10-23 02:18:33.961 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
+10-23 02:18:33.961 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
+10-23 02:18:33.961 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:89)
+10-23 02:18:33.961 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:161)
+10-23 02:18:33.961 W/System.err( 4003): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:147)
+10-23 02:18:33.961 W/System.err( 4003): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:119)
+10-23 02:18:33.961 W/System.err( 4003): 	at com.swrve.sdk.SwrveImp.postBatchRequest(SwrveImp.java:443)
+10-23 02:18:33.961 W/System.err( 4003): 	at com.swrve.sdk.SwrveBase$5.run(SwrveBase.java:438)
+10-23 02:18:33.961 W/System.err( 4003): 	at com.swrve.sdk.SwrveRunnables$1.run(SwrveRunnables.java:18)
+10-23 02:18:33.961 W/System.err( 4003): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+10-23 02:18:33.961 W/System.err( 4003): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+10-23 02:18:33.961 W/System.err( 4003): 	at java.lang.Thread.run(Thread.java:841)
+10-23 02:18:33.961 W/System.err( 4003): Caused by: libcore.io.ErrnoException: isConnected failed: ENETUNREACH (Network is unreachable)
+10-23 02:18:33.961 W/System.err( 4003): 	at libcore.io.IoBridge.isConnected(IoBridge.java:208)
+10-23 02:18:33.961 W/System.err( 4003): 	... 21 more
+10-23 02:18:33.961 E/SwrveSDK( 4003): Batch of events could not be sent, retrying
+10-23 02:18:34.081 D/dalvikvm( 4003): GC_CONCURRENT freed 424K, 12% free 3933K/4452K, paused 0ms+1ms, total 5ms
+10-23 02:18:44.211 V/WebViewChromium( 4003): Binding Chromium to the background looper Looper (main, tid 1) {9cfdeeb8}
+10-23 02:18:44.211 I/chromium( 4003): [INFO:library_loader_hooks.cc(112)] Chromium logging enabled: level = 0, default verbosity = 0
+10-23 02:18:44.211 I/BrowserProcessMain( 4003): Initializing chromium process, renderers=0
+10-23 02:18:44.271 W/chromium( 4003): [WARNING:proxy_service.cc(888)] PAC support disabled because there is no system implementation
+10-23 02:18:44.301 D/EGL_emulation( 4003): eglCreateContext: 0xb9b219c0: maj 2 min 0 rcv 2
+10-23 02:18:44.301 D/EGL_emulation( 4003): eglMakeCurrent: 0xb9b219c0: ver 2 0
+10-23 02:18:44.391 D/dalvikvm( 4003): GC_FOR_ALLOC freed 120K, 12% free 3942K/4436K, paused 6ms, total 6ms
+10-23 02:18:44.391 I/dalvikvm-heap( 4003): Grow heap (frag case) to 4.136MB for 225516-byte allocation
+10-23 02:18:44.391 D/dalvikvm( 4003): GC_FOR_ALLOC freed <1K, 11% free 4162K/4660K, paused 3ms, total 3ms
+10-23 02:18:44.411 D/dalvikvm( 4003): GC_FOR_ALLOC freed <1K, 11% free 4163K/4660K, paused 6ms, total 6ms
+10-23 02:18:44.411 I/dalvikvm-heap( 4003): Grow heap (frag case) to 6.556MB for 2536932-byte allocation
+10-23 02:18:44.421 D/dalvikvm( 4003): GC_FOR_ALLOC freed <1K, 7% free 6640K/7140K, paused 9ms, total 9ms
+10-23 02:18:44.441 D/dalvikvm( 4003): GC_CONCURRENT freed <1K, 7% free 6640K/7140K, paused 1ms+0ms, total 12ms
+10-23 02:18:44.461 D/KONG    ( 4003): FacebookSDKHelper loaded classes for FB SDK Version: 3.20.0/Unity.6.2.2 supported: true
+10-23 02:18:44.461 D/KONG    ( 4003): WebView user-agent: Mozilla/5.0 (Linux; Android 4.4.2; Android SDK built for x86 Build/KK) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 KongregateMobileApi/1.2.1.1
+10-23 02:18:44.461 D/KONG    ( 4003): Pausing WebView
+10-23 02:18:44.461 D/KONG    ( 4003): Panel has not loaded, attempting a reload, reloadAttempt=1
+10-23 02:18:44.461 I/KONG    ( 4003): WebView reloading panel, allowCache=false
+10-23 02:18:44.461 D/KONG    ( 4003): Loading blank html
+10-23 02:18:44.511 I/KONG    ( 4003): WebView Page started: file:///android_res/raw/blank
+10-23 02:18:44.851 I/KONG    ( 4003): WebView Page finished: file:///android_res/raw/blank
+10-23 02:18:44.851 I/KONG    ( 4003): WebView Blank page finished loading, reloading panel
+10-23 02:18:44.861 I/KONG    ( 4003): WebView Page started: https://m.kongregate.com/mobile_api?api=1.2.1.1#/sleep
+10-23 02:18:44.871 I/chromium( 4003): [INFO:simple_index_file.cc(397)] Simple Cache Index is being restored from disk.
+10-23 02:18:45.051 E/KONG    ( 4003): [WebView]: Viewport argument key "viewport-fit" not recognized and ignored., https://m.kongregate.com/mobile_api?api=1.2.1.1#/sleep:8
+10-23 02:18:45.861 I/KONG    ( 4003): [WebView]: Loaded: Preloading application.json, time: 404, https://m.kongregate.com/mobile_api?api=1.2.1.1#/sleep:35
+10-23 02:18:45.901 I/KONG    ( 4003): [WebView]: Loaded: Framework javascripts, time: 441, https://m.kongregate.com/mobile_api?api=1.2.1.1#/sleep:35
+10-23 02:18:46.091 I/KONG    ( 4003): [WebView]: Device.isCacheWarmer: false, osVersion: pw, androidLegacy: false, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:5
+10-23 02:18:46.241 I/KONG    ( 4003): [WebView]: Loaded: ApplicationRoute.beforeModel, time: 787, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:46.251 I/KONG    ( 4003): [WebView]: Using existing application JSON promise: pending, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:46.251 I/KONG    ( 4003): [WebView]: Using existing game info JSON promise: pending, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:46.311 I/KONG    ( 4003): [WebView]: Current fingerprint: mobile-panel:20c2815, latest: mobile-panel:20c2815, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:46.311 I/KONG    ( 4003): WebView Page finished: https://m.kongregate.com/mobile_api?api=1.2.1.1#/sleep
+10-23 02:18:46.311 I/KONG    ( 4003): [WebView]: Loaded: ApplicationRoute.afterModel, time: 856, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:46.431 I/KONG    ( 4003): [WebView]: Scroll polyfill: true, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:46.441 I/KONG    ( 4003): [WebView]: Loaded: ApplicationView, time: 981, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:46.491 I/KONG    ( 4003): [WebView]: URL changed: /sleep, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:46.491 D/KONG    ( 4003): [WebView]: Finished cache preload https://mobile-panel.kongregate.com/assets/images/game_icos/more-games-icos-android-8a50ef32a0fe71b2f13503c770467d9d.png, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:46.741 D/KONG    ( 4003): [WebView]: Finished cache preload https://cdn1.kongcdn.com/assets/avatars/defaults/robotboy.png?i10c=img.resize(width:140), https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:46.761 D/KONG    ( 4003): [WebView]: Finished cache preload https://cdn1.kongcdn.com/assets/avatars/defaults/robotboy.png?i10c=img.resize(width:40), https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:46.761 D/KONG    ( 4003): [WebView]: Finished cache preload https://cdn3.kongcdn.com/assets/native_game_backgrounds/0000/0016/ga-bg-2.jpg, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:46.771 D/KONG    ( 4003): [WebView]: Finished cache preload https://cdn1.kongcdn.com/assets/native_game_chat_backgrounds/0000/0005/ga-bg-000.jpg, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:46.941 I/KONG    ( 4003): WebView API message: menu-state data: {"visible":true}
+10-23 02:18:46.941 I/KONG    ( 4003): WebView API message: panel-version data: {"current":"mobile-panel:20c2815","latest":"mobile-panel:20c2815"}
+10-23 02:18:46.941 I/KONG    ( 4003): Panel version info received
+10-23 02:18:46.941 D/KONG    ( 4003): Fingerprint info received, current=mobile-panel:20c2815, latest=mobile-panel:20c2815
+10-23 02:18:46.951 I/KONG    ( 4003): WebView API message: load-info data: {"data":{"id":0,"username":"Guest","premium":false,"join_date":null,"spent_on_kreds":0,"notifications_count":0,"accepted_privacy_policy":true,"accepted_privacy_policy_version":null,"privacy_policy_accepted_at":null,"parent_email_required":false},"token":"84983c60f7daadc1cb8698621f802c0d9f9a3c3c295c810748fb048115c186ec"}
+10-23 02:18:46.951 I/KONG    ( 4003): found secret in prefs
+10-23 02:18:46.951 I/KONG    ( 4003): shared filename is: m.kongregate.com.api.2112318037.shared
+10-23 02:18:46.971 I/KONG    ( 4003): WebView API message: url-changed data: {"has_history":false}
+10-23 02:18:46.981 I/KONG    ( 4003): WebView API message: initialized data: {}
+10-23 02:18:46.981 I/KONG    ( 4003): Sending message to WebView - config: {"inline_video":true,"subtasks":true,"persistent":true,"fb_connect":true,"file_chooser":[],"native_menu_button":true,"reload":true,"character_token":""}
+10-23 02:18:47.001 D/dalvikvm( 4003): GC_CONCURRENT freed 912K, 12% free 6934K/7864K, paused 5ms+3ms, total 40ms
+10-23 02:18:47.001 I/KONG    ( 4003): [WebView]: Konduit message: config={"inline_video":true,"subtasks":true,"persistent":true,"fb_connect":true,"file_chooser":[],"native_menu_button":true,"reload":true,"character_token":""}, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:47.011 I/KONG    ( 4003): read and decrypt data store: /data/data/com.kongregate.mobile.globalassault.google/kongregate_shared_datastore/m.kongregate.com.api.2112318037.shared
+10-23 02:18:47.011 I/KONG    ( 4003): [WebView]: Character token received, https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:47.011 E/KONG    ( 4003): [WebView]: Invalid character token: CharacterToken [valid=false character=undefined server=undefined guild=undefined], https://mobile-panel.kongregate.com/assets/mobile-panel-bd51a8853086233869a98343f4960f83.js:8
+10-23 02:18:47.021 D/KONG    ( 4003): getSharedKongregateCookies from webview cookie store
+10-23 02:18:47.021 D/KONG    ( 4003): Reloading cookies from webview: m.kongregate.com
+10-23 02:18:47.061 I/KONG    ( 4003): commiting to: /data/data/com.kongregate.mobile.globalassault.google/kongregate_shared_datastore
+10-23 02:18:47.091 I/KONG    ( 4003): found secret in prefs
+10-23 02:18:47.091 I/KONG    ( 4003): shared filename is: m.kongregate.com.api.2112318037.shared
+10-23 02:18:47.111 I/KONG    ( 4003): read and decrypt data store: /data/data/com.kongregate.mobile.globalassault.google/kongregate_shared_datastore/m.kongregate.com.api.2112318037.shared
+10-23 02:19:29.061 I/SwrveSDK( 4003): Sending queued events
+10-23 02:19:29.071 I/SwrveSDK( 4003): Sending 6 events to Swrve
+10-23 02:19:29.211 D/KONG    ( 4003): Sending SWRVE event: swrve.heartbeat : {}
+10-23 02:19:29.211 I/SwrveSDK( 4003): Not showing message for Kongregate.heartbeat: No campaigns available
+10-23 02:19:29.211 D/KONG    ( 4003): upload events
+10-23 02:19:29.231 I/SwrveSDK( 4003): event event queued
+10-23 02:19:29.281 D/dalvikvm( 4003): GC_CONCURRENT freed 1315K, 18% free 6785K/8176K, paused 2ms+1ms, total 11ms
+10-23 02:19:29.741 D/KEEN_CLIENT( 4003): Response code was NOT 200. It was: 404
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003): Response body was: {"message": "Resource not found.", "error_code": "ResourceNotFoundError"}
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003): Uploaded events: {
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):   "session_starts" : [ {
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "kong_username" : "Guest",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "idfv" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "client_os_version" : "4.4.2",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "first_server_version" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "num_sessions" : 1,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "filter_type" : "jailbroken",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "google_play_services_id" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "first_play_time" : "2026-10-23T02:18:29.017+0000",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "android_id" : "10a259c261cc00dd",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "carrier" : "Android",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "first_sdk_version" : "1.2.1.1",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "usd_spent_on_kreds" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "pkg_src" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "data_connection_type" : "mobile LTE",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "site_visitor_id" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "first_play_time_offset" : 0.0,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "imei" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "sdk_version" : "1.2.1.1",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "ad_tracking" : true,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "google_ad_id" : "46d4c829-4a85-402d-b5de-f720028c33a2",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "gamecenter_id" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "ip_address" : "10.0.2.15",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "time_skew" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "external_ip_address" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "kong_user_id" : 0,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "event_time" : "2026-10-23T02:18:29.202+0000",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "client_os_type" : "android",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "player_id" : "",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "lang_code" : "en",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "idfa" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "session_id" : "a6743fdb-f177-4c92-9225-c43fe3e95b88",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "device_type" : "Android SDK built for x86",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "kong_plus" : false,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "device_event_id" : "a5286300-1542-40dc-9756-1f54b08d5c5c",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "is_from_background" : true,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "dev_client_version" : "101",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "google_play_services_alias" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "country_code" : "US",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "gamecenter_alias" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "days_retained" : 0,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "mac_address" : "52:54:00:12:34:56",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "event_time_offset" : 0.0,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "first_client_version" : "1.30.1",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "num_purchases" : 0,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "pur_tier" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "keen" : {
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):       "timestamp" : "2026-10-23T02:18:29.213+0000"
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     },
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "client_version" : "1.30.1"
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):   } ],
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):   "invalid_states" : [ {
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "kong_username" : "Guest",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "idfv" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "client_os_version" : "4.4.2",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "reason" : "jailbroken",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "first_server_version" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "num_sessions" : 0,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "filter_type" : "jailbroken",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "google_play_services_id" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "first_play_time" : "2026-10-23T02:18:29.017+0000",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "android_id" : "10a259c261cc00dd",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "carrier" : "Android",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "first_sdk_version" : "1.2.1.1",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "usd_spent_on_kreds" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "pkg_src" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "data_connection_type" : "mobile LTE",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "site_visitor_id" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "first_play_time_offset" : 0.0,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "imei" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "sdk_version" : "1.2.1.1",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "ad_tracking" : true,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "google_ad_id" : "46d4c829-4a85-402d-b5de-f720028c33a2",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "gamecenter_id" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "ip_address" : "10.0.2.15",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "time_skew" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "external_ip_address" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "kong_user_id" : 0,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "event_time" : "2026-10-23T02:18:29.119+0000",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "client_os_type" : "android",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "player_id" : "",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "lang_code" : "en",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "idfa" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "session_id" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "device_type" : "Android SDK built for x86",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "kong_plus" : false,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "bundle_id" : "com.kongregate.mobile.globalassault.google",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "device_event_id" : "ea24eda2-bc78-42bd-b6be-2725144e39da",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "dev_client_version" : "101",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "google_play_services_alias" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "country_code" : "US",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "gamecenter_alias" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "days_retained" : 0,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "mac_address" : "52:54:00:12:34:56",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "event_time_offset" : 0.0,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "first_client_version" : "1.30.1",
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "num_purchases" : 0,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "pur_tier" : null,
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "keen" : {
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):       "timestamp" : "2026-10-23T02:18:29.123+0000"
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     },
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):     "client_version" : "1.30.1"
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003):   } ]
+10-23 02:19:29.751 D/KEEN_CLIENT( 4003): }
+10-23 02:19:31.301 W/System.err( 4003): java.net.ConnectException: failed to connect to 1567.api.swrve.com/2600:9000:2918:b800:11:1825:d7c0:93a1 (port 443) after 15000ms: isConnected failed: ENETUNREACH (Network is unreachable)
+10-23 02:19:31.301 W/System.err( 4003): 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
+10-23 02:19:31.301 W/System.err( 4003): 	at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
+10-23 02:19:31.301 W/System.err( 4003): 	at libcore.io.IoBridge.connect(IoBridge.java:112)
+10-23 02:19:31.301 W/System.err( 4003): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+10-23 02:19:31.301 W/System.err( 4003): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+10-23 02:19:31.301 W/System.err( 4003): 	at java.net.Socket.connect(Socket.java:843)
+10-23 02:19:31.301 W/System.err( 4003): 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:131)
+10-23 02:19:31.301 W/System.err( 4003): 	at com.android.okhttp.Connection.connect(Connection.java:101)
+10-23 02:19:31.301 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
+10-23 02:19:31.301 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
+10-23 02:19:31.301 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
+10-23 02:19:31.301 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
+10-23 02:19:31.301 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:89)
+10-23 02:19:31.301 W/System.err( 4003): 	at com.android.okhttp.internal.http.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:161)
+10-23 02:19:31.301 W/System.err( 4003): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:147)
+10-23 02:19:31.301 W/System.err( 4003): 	at com.swrve.sdk.rest.RESTClient.post(RESTClient.java:119)
+10-23 02:19:31.301 W/System.err( 4003): 	at com.swrve.sdk.SwrveImp.postBatchRequest(SwrveImp.java:443)
+10-23 02:19:31.301 W/System.err( 4003): 	at com.swrve.sdk.SwrveBase$5.run(SwrveBase.java:438)
+10-23 02:19:31.301 W/System.err( 4003): 	at com.swrve.sdk.SwrveRunnables$1.run(SwrveRunnables.java:18)
+10-23 02:19:31.301 W/System.err( 4003): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+10-23 02:19:31.301 W/System.err( 4003): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+10-23 02:19:31.301 W/System.err( 4003): 	at java.lang.Thread.run(Thread.java:841)
+10-23 02:19:31.301 W/System.err( 4003): Caused by: libcore.io.ErrnoException: isConnected failed: ENETUNREACH (Network is unreachable)
+10-23 02:19:31.301 W/System.err( 4003): 	at libcore.io.IoBridge.isConnected(IoBridge.java:208)
+10-23 02:19:31.301 W/System.err( 4003): 	... 21 more
+10-23 02:19:31.301 E/SwrveSDK( 4003): Batch of events could not be sent, retrying
