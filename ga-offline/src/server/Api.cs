@@ -219,7 +219,7 @@ namespace GAOffline
                     if (Json.I(u, "deck_id") == id) units.Add(u);
                 decks.Add(new Dictionary<string, object> {
                     { "deck_id", id }, { "name", Json.S(d, "name") }, { "commander_item_id", Json.I(d, "commander_item_id") },
-                    { "power_level", "1" }, { "units", units },
+                    { "power_level", Units.SquadPower(s, id).ToString() }, { "units", units },
                     // squad repair: battles leave no damage offline; repair_speed must be non-zero (the client divides by it)
                     { "squad_damage", 0 }, { "max_damage", Research.SquadHealth(s) }, { "repair_speed", 60 }, { "retreat_damage", 0 },
                     { "repair_start_time", 0 }, { "repair_end_time", 0 } });
@@ -280,6 +280,7 @@ namespace GAOffline
         static List<object> Campaigns(Save s)
         {
             var list = new List<object>();
+            int squad = Units.SquadPower(s, s.Int("active_deck"));
             foreach (Dictionary<string, object> c in GameData.Campaigns)
             {
                 long id = Json.N(c, "id");
@@ -300,6 +301,12 @@ namespace GAOffline
                     { "speech_map", new Dictionary<string, object> { { "line", Json.L(m, "speech_map") } } },
                 };
                 if (Json.S(m, "map") != "") { e["map"] = Json.S(m, "map"); e["map_bundle"] = 0; }
+                // recommended power: the mission's enemy squad by the same formula as the player's; the map's meter sits
+                // at enemy / (enemy + active squad), so 0.5 when they are even
+                int enemy = 0;
+                foreach (List<object> card in Json.L(m, "deck")) enemy += Units.Power(Convert.ToInt32(card[0]), Convert.ToInt32(card[1]), 0);
+                e["power_level"] = enemy;
+                e["difficulty_level"] = enemy + squad > 0 ? (double)enemy / (enemy + squad) : 0.5;
                 list.Add(e);
             }
             return list;

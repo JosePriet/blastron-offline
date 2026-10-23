@@ -22,7 +22,7 @@ namespace GAOffline
             new[] { 40, 45, 60, 75, 100, 125 }, new[] { 80, 85, 100, 125, 175, 250 }, new[] { 120, 125, 140, 165, 225, 300 } };
         public const int VcPerHour = 6;
 
-        class Info { public int Rarity = 1, MaxLevel = 1; }
+        class Info { public int Rarity = 1, MaxLevel = 1; public List<int[]> Stats = new List<int[]>(); }  // {level, attack, health}
         static Dictionary<int, Info> cards;
 
         static Info Card(int id)
@@ -36,6 +36,13 @@ namespace GAOffline
                     var i = new Info();
                     i.Rarity = Num(u, "rarity", 1);
                     i.MaxLevel = 1 + Regex.Matches(u, "<upgrade>").Count;
+                    int a = 0, h = 0;
+                    foreach (string part in Regex.Split(u, "<upgrade>"))
+                    {
+                        a = Num(part, "attack", a);
+                        h = Num(part, "health", h);
+                        i.Stats.Add(new[] { Num(part, "level", 1), a, h });
+                    }
                     cards[Num(u, "id", 0)] = i;
                 }
             }
@@ -68,6 +75,30 @@ namespace GAOffline
             return false;
         }
         public static int MaxLevel(int cardId) { return Card(cardId).MaxLevel; }
+
+        // squad and mission power (ours; the server's formula is lost; owner decision 2026-10-23): per unit,
+        // attack + defense at its level (equipment bonuses included) + stars x level
+        public static int Power(int cardId, int level, int equipmentId)
+        {
+            int attack = 0, health = 0;
+            foreach (var l in Card(cardId).Stats)
+                if (l[0] <= level) { attack = l[1]; health = l[2]; }
+            var e = Equipment.Find(equipmentId);
+            if (e != null)
+            {
+                if (attack > 0) attack += Json.I(e, "attack");  // as Battle.EquippedCard: no attack for 0-attack units
+                health += Json.I(e, "health");
+            }
+            return attack + health + Rarity(cardId) * level;
+        }
+
+        public static int SquadPower(Save s, int deckId)
+        {
+            int p = 0;
+            foreach (Dictionary<string, object> u in s.Units)
+                if (Json.I(u, "deck_id") == deckId) p += Power(Json.I(u, "unit_id"), Json.I(u, "level", 1), Json.I(u, "equipment_id"));
+            return p;
+        }
 
         static int Step(int[] t, int level) { return t[Math.Max(0, Math.Min(t.Length, level) - 1)]; }
 
