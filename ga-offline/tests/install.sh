@@ -1,8 +1,7 @@
 #!/bin/bash
 # Install and launch Global Assault builds on the running emulator; everything goes to $1.
 #   A: release.apk (targetSdk 23), installed as a user would (storage permission not granted)
-#   D: release.apk forced to the ARM libraries (--abi armeabi-v7a, run by the image's ARM translator), as on a phone
-#   C: release-v1.apk (targetSdk 21, the first release), to tell an SDK-target problem from an emulator one
+#   E: original.apk (the unmodified 1.30.1 game), to tell our changes from the old Unity/Mono runtime
 # A run that stays black gets a native stack dump (debuggerd) and a Java one (SIGQUIT).
 OUT=${1:-out}; mkdir -p $OUT; PKG=com.kongregate.mobile.globalassault.google
 adb shell getprop ro.build.version.sdk > $OUT/sdk.txt
@@ -16,7 +15,7 @@ run() { # name apk install-flags
   adb logcat -c
   adb shell monkey -p $PKG -c android.intent.category.LAUNCHER 1 > $D/launch.txt 2>&1
   # a targetSdk < 23 app first shows the permission review screen: press Continue, then dismiss any old-app warning
-  if [ "$N" = C ]; then sleep 8; adb exec-out screencap -p > $D/shot_0.png; adb shell input tap 976 2203; sleep 4; adb shell input keyevent 66; fi
+  if [ "$N" = E ]; then sleep 8; adb exec-out screencap -p > $D/shot_0.png; adb shell input tap 976 2203; sleep 4; adb shell input keyevent 66; fi
   for i in 1 2 3 4; do
     sleep 25
     adb shell pidof $PKG >> $D/pid.txt; echo "--- $((i*25))s" >> $D/pid.txt
@@ -34,6 +33,5 @@ run() { # name apk install-flags
   adb shell am force-stop $PKG
 }
 run A ga-offline/tests/apk/release.apk ""
-run D ga-offline/tests/apk/release.apk "--abi armeabi-v7a"
-[ -f ga-offline/tests/apk/release-v1.apk ] && run C ga-offline/tests/apk/release-v1.apk ""
+run E ga-offline/tests/apk/original.apk ""
 true
