@@ -23,9 +23,9 @@ dotnet "$CSC" -nologo -nostdlib -noconfig -target:library -langversion:7.3 -opti
 dotnet build -c Release -o "$W/patcher" "$HERE/src/patcher" >/dev/null
 dotnet "$W/patcher/patcher.dll" $M/Assembly-CSharp.dll "$W/GAOffline.dll" "$W/Assembly-CSharp.dll"
 
-# 3. target SDK 23: Android 14+ refuses to install apps targeting below 23 (tools/patch_manifest.py)
+# 3. target SDK 24: Android 14 refuses to install apps targeting below 23, Android 15+ below 24 (tools/patch_manifest.py)
 unzip -q -o "$APK" AndroidManifest.xml -d "$W"
-python3 "$HERE/tools/patch_manifest.py" "$W/AndroidManifest.xml" "$W/AndroidManifest.patched.xml" 23
+python3 "$HERE/tools/patch_manifest.py" "$W/AndroidManifest.xml" "$W/AndroidManifest.patched.xml" 24
 
 MD=assets/bin/Data/Managed
 python3 "$HERE/tools/repack.py" "$APK" "$W/unsigned.apk" $MD/Assembly-CSharp.dll="$W/Assembly-CSharp.dll" $MD/GAOffline.dll="$W/GAOffline.dll" \
