@@ -179,6 +179,7 @@ namespace GAOffline
         // init / update: everything InitResponse and the managers read at startup.
         static Dictionary<string, object> Full(Save s)
         {
+            Store.TutorialScrap(s);
             var r = Squads(s);
             r["user_tasks"] = Units.Tasks(s);
             r["user_items"] = Json.O(s.D, "items");

@@ -229,6 +229,7 @@ namespace GAOffline
                     }
                 }
                 camps[CampaignId.ToString()] = st;
+                Store.TutorialScrap(s);
             }
             s.Write();
             Current = null;

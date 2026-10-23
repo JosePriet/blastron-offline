@@ -172,6 +172,21 @@ namespace GAOffline
             if (s.Int("money") < cost) s.Set("money", cost);
         }
 
+        // The tutorial's second battle is followed by its upgrade step ("We've got enough scrap now to upgrade Darius"),
+        // which the player cannot leave; two wins at 2-3 Scrap can leave 4, one short of the first upgrade (5). Once
+        // that battle is won, Scrap is topped up to the first upgrade's cost, once per save (also for saves that were
+        // already stuck there, on their next server call).
+        public const int FirstUpgradeScrap = 5;
+        public static void TutorialScrap(Save s)
+        {
+            if (s.Int("tutorial_scrap") != 0) return;
+            var st = Json.O(Json.O(s.D, "campaigns"), TutorialCampaign.ToString());
+            if (st == null || (Json.I(st, "progress") < 2 && Json.I(st, "level") <= 0)) return;
+            if (s.Int("salvage") < FirstUpgradeScrap) s.Set("salvage", FirstUpgradeScrap);
+            s.Set("tutorial_scrap", 1);
+            s.Write();
+        }
+
         // Credits never pass the cap (the Generator's Max Credits, see Research) and a balance above it is kept
         public static void AddMoney(Save s, int n) { int m = s.Int("money"); s.Set("money", Math.Max(m, Math.Min(Research.MoneyCap(s), m + n))); }
     }
