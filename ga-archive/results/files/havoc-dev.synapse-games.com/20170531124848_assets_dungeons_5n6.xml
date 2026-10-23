@@ -1,0 +1,3355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<event>
+		<id>40001</id> <!-- must be unique across ALL event types -->
+		<name>Test Dungeon</name>
+		<desc>Compete with other players to reach the highest level of this dungeon and earn exclusive rewards!</desc>
+		<location_id>25</location_id>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>10</overcharge_rate> 
+		<start_time>1436803200</start_time>
+		<tracking_end_time>1437408000</tracking_end_time> <!--scoring stops -->
+		<claim_delay>60</claim_delay> <!-- minutes -->
+		<end_time>1437753600</end_time>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<!-- Deck -->
+		<health>5</health>
+		<deck>
+			<card id='103' level='1' slot='1' />
+            <card id='103' level='1' slot='5' />
+            <card id='103' level='1' slot='3' />
+		</deck>
+		<!-- Rewards -->
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='11040' level='1' /> <!-- Legendary Card -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>2</min_rank>
+			</req>
+			<unit id='1040' level='4' /> <!-- Legendary Card -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>3</min_rank>
+			</req>
+			<unit id='1040' level='1' /> <!-- Legendary Card -->
+		</event_reward>
+	</event>
+	<event>
+		<id>40002</id> <!-- must be unique across ALL event types -->
+		<name>Gauntlet: Fury</name>
+		<desc>Compete with other players to reach the highest level of this dungeon and earn exclusive rewards!</desc>
+		<location_id>22</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1452884400</start_time> <!-- 1/15/2016 1:00 PM  -->
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1453143600</tracking_end_time> <!-- 1/18/2016 1:00 PM  -->
+		<claim_delay>1200</claim_delay> <!-- seconds -->
+		<end_time>1453402800</end_time> <!-- 1/21/2016 1:00 PM  -->
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<!-- Deck -->
+		<health>200</health>
+		<deck>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='20' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='40' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='43' name="King Vulture"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='46' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='52' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='55' name="Zig"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='58' name="Zig"/>
+			<card id="713" level='1' min_mastery_level='20'  max_mastery_level='60' name="Gonka"/>			
+			<card id="711" level='1' min_mastery_level='30' name="King Vulture V2"/>
+			<card id="716" level='1' min_mastery_level='40'  name="Peracles"/>
+			<card id="714" level='1' min_mastery_level='43'  max_mastery_level='62' name="Depth Chargers"/>
+			<card id="712" level='1' min_mastery_level='46' name="Orangutan V2"/>
+			<card id="712" level='1' min_mastery_level='52' name="Orangutan V2"/>
+			<card id="710" level='1' min_mastery_level='55' name="Choppex V2"/>					
+			<card id="715" level='1' min_mastery_level='58' name="Zig V2"/>			
+			<card id="723" level='1' min_mastery_level='60'  name="Depth Chargers V2"/>
+			<card id="724" level='1' min_mastery_level='62'  name="Gonka V2"/>
+			<card id="724" level='1' min_mastery_level='65'  name="Gonka V2"/>							
+		</deck>
+		<!-- Rewards -->
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> <!-- Machete -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='729' level='1' /> <!-- Warrior -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>10</min_rank>
+			</req>
+			<unit id='730' level='1' /> <!-- Roadburn -->
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<item id='1106' level='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<unit id='563' level='1' /> <!-- Weaver -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<item id='1106' level='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<unit id='565' level='1' /> <!-- Supply Drone -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<unit id='530' level='1' /> <!-- Solis -->
+		</event_reward>
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='18' level='1' /> <!-- Whirlwind -->
+		</event_reward>
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='17' num='1'/> <!-- Zeus -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='965' level='1' /> <!-- Swarm -->
+		</event_reward>
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='49' level='1' /> <!-- Thunderbird -->
+		</event_reward>
+	</event>
+ 
+	<event>
+		<id>40003</id> 
+		<name>Gauntlet: Wrath</name>
+		<desc>Compete with other players to reach the highest level of this dungeon and earn exclusive rewards!</desc>
+		<location_id>32</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1453402800</start_time> <!-- 1/21/2016 1:00 PM -->
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1453748400</tracking_end_time> <!-- 1/25/2016 1:00 PM  -->
+		<claim_delay>1200</claim_delay> <!-- seconds -->
+		<end_time>1454007600</end_time> <!-- 1/28/2016 1:00 PM -->
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+		<deck>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='15' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='20' name="King Vulture"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='25' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='35' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='40' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='43' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='5' max_mastery_level='45' name="Niner"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='47' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='10' max_mastery_level='50' name="Niner"/>
+			<card id="735" level='1' min_mastery_level='15' max_mastery_level='55' name="godHunter"/>
+			<card id="735" level='1' min_mastery_level='20' max_mastery_level='60' name="godHunter"/>			
+			<card id="711" level='1' min_mastery_level='25' max_mastery_level='65' name="King Vulture V2"/>
+			<card id="713" level='1' min_mastery_level='30' max_mastery_level='70' name="Gonka"/>
+			<card id="734" level='1' min_mastery_level='35' max_mastery_level='75' name="Cuteblue"/>
+			<card id="737" level='1' min_mastery_level='40' max_mastery_level='80' name="Bluengine"/>
+			<card id="738" level='1' min_mastery_level='45' max_mastery_level='85' name="Conffin Tank"/>
+			<card id="716" level='1' min_mastery_level='50' max_mastery_level='90'  name="Peracles"/>	
+			<card id="714" level='1' min_mastery_level='55'  max_mastery_level='95' name="Depth Chargers"/>		
+			<card id="712" level='1' min_mastery_level='60' max_mastery_level='100' name="Orangutan V2"/>							
+			<card id="710" level='1' min_mastery_level='65' name="Choppex V2"/>		
+			<card id="733" level='1' min_mastery_level='70'  name="Sploder"/>	
+			<card id="736" level='1' min_mastery_level='75'  name="Udead"/>
+			<card id="739" level='1' min_mastery_level='80'  name="Zag"/>			
+			<card id="715" level='1' min_mastery_level='85' name="Zig V2"/>	
+			<card id="724" level='1' min_mastery_level='90'  name="Gonka V2"/>		
+			<card id="723" level='1' min_mastery_level='95'  name="Depth Chargers V2"/>
+			<card id="739" level='1' min_mastery_level='100'  name="Zag"/>	
+									
+		</deck>
+		
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> <!-- Machete -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='729' level='1' /> <!-- Warrior -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<unit id='585' level='1' /> <!-- Siren -->
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<unit id='718' level='1' /> <!-- Jotun -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<unit id='586' level='1' /> <!-- Citadel -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>250</min_rank>
+			</req>
+			<item id='1106' level='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<unit id='21' level='1' /> <!-- Firefly -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_rank>1250</min_rank>
+			</req>
+			<unit id='997' level='1' /> <!-- T4 Salvage Crate -->
+		</event_reward>	
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_rank>2500</min_rank>
+			</req>
+			<unit id='630' level='1' /> <!-- Gallium -->
+		</event_reward>				
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<unit id='561' level='1' trait_id='1001'/> <!-- +5 health Carbine -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='519' level='1' /> <!-- Cutlass -->
+		</event_reward>
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='550' num='1'/> <!-- Hatchet -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='632' level='1' /> <!-- Gyro -->
+		</event_reward>
+		<event_reward>
+			<tier>14</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='50' level='1' /> <!-- Needler -->
+		</event_reward>
+	</event>
+	
+	<event>
+		<id>40004</id> 
+		<name>Gauntlet: Crush</name>
+		<desc>Compete with other players to reach the highest level of this dungeon and earn exclusive rewards!</desc>
+		<location_id>32</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1455908400</start_time> <!-- 2/19/2016 1:00 PM -->
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1456167600</tracking_end_time> <!-- 2/22/2016 1:00 PM  -->
+		<claim_delay>1200</claim_delay> <!-- 1200 seconds -->
+		<end_time>1456426800</end_time> <!-- 2/25/2016 1:00 PM -->
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+		<deck>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='15' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='20' name="King Vulture"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='25' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='35' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='40' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='43' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='5' max_mastery_level='45' name="Niner"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='47' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='10' max_mastery_level='50' name="Niner"/>
+			<card id="735" level='1' min_mastery_level='15' max_mastery_level='55' name="godHunter"/>
+			<card id="735" level='1' min_mastery_level='20' max_mastery_level='60' name="godHunter"/>			
+			<card id="711" level='1' min_mastery_level='25' max_mastery_level='65' name="King Vulture V2"/>
+			<card id="713" level='1' min_mastery_level='30' max_mastery_level='70' name="Gonka"/>
+			<card id="734" level='1' min_mastery_level='35' max_mastery_level='75' name="Cuteblue"/>
+			<card id="737" level='1' min_mastery_level='40' max_mastery_level='80' name="Bluengine"/>
+			<card id="738" level='1' min_mastery_level='45' max_mastery_level='85' name="Conffin Tank"/>
+			<card id="716" level='1' min_mastery_level='50' max_mastery_level='90'  name="Peracles"/>	
+			<card id="714" level='1' min_mastery_level='55'  max_mastery_level='95' name="Depth Chargers"/>		
+			<card id="712" level='1' min_mastery_level='60' max_mastery_level='100' name="Orangutan V2"/>							
+			<card id="710" level='1' min_mastery_level='65' name="Choppex V2"/>		
+			<card id="733" level='1' min_mastery_level='70'  name="Sploder"/>	
+			<card id="736" level='1' min_mastery_level='75'  name="Udead"/>
+			<card id="739" level='1' min_mastery_level='80'  name="Zag"/>			
+			<card id="715" level='1' min_mastery_level='85' name="Zig V2"/>	
+			<card id="724" level='1' min_mastery_level='90'  name="Gonka V2"/>		
+			<card id="723" level='1' min_mastery_level='95'  name="Depth Chargers V2"/>
+			<card id="739" level='1' min_mastery_level='100'  name="Zag"/>	
+									
+		</deck>
+		
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> <!-- Machete -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='729' level='1' /> <!-- Warrior -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 cores -->
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<unit id='730' level='1' /> <!-- Roadburn -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<unit id='626' level='1' /> <!-- Invader -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>250</min_rank>
+			</req>
+			<item id='1106' num='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<unit id='21' level='1' /> <!-- Firefly -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_rank>1250</min_rank>
+			</req>
+			<unit id='997' level='1' /> <!-- T4 Salvage Crate -->
+		</event_reward>	
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_rank>2500</min_rank>
+			</req>
+			<unit id='965' level='1' /> <!-- Swarm -->
+		</event_reward>	
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>75</min_points>
+			</req>
+			<unit id='702' level='1'/> <!-- Cruiser -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>60</min_points>
+			</req>
+			<item id='1900' num='3' /> <!-- T6 cores -->
+		</event_reward>							
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<unit id='627' level='1' trait_id='1001'/> <!-- +5 health Katar -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='963' level='1' /> <!-- Nomingia -->
+		</event_reward>
+		<event_reward>
+			<tier>14</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='550' level='1'/> <!-- Hatchet -->
+		</event_reward>
+		<event_reward>
+			<tier>15</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='566' level='1' /> <!-- Mantidae -->
+		</event_reward>
+		<event_reward>
+			<tier>16</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='4' level='1' /> <!-- Phoenix -->
+		</event_reward>
+	</event>
+	
+	<event>
+		<id>40005</id> 
+		<name>Gauntlet: Fury</name>
+		<desc>Compete with other players to reach the highest level of this dungeon and earn exclusive rewards!</desc>
+		<location_id>22</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1458327600</start_time> <!-- 3/18/2016 1:00 PM  -->
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1458586800</tracking_end_time> <!-- 3/21/2016 1:00 PM  -->
+		<claim_delay>1200</claim_delay> <!-- 1200 seconds -->
+		<end_time>1458846000</end_time> <!-- 3/24/2016 1:00 PM  -->
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<!-- Deck -->
+		<health>100</health>
+		<deck>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='20' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='40' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='43' name="King Vulture"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='46' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='52' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='55' name="Zig"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='58' name="Zig"/>
+			<card id="713" level='1' min_mastery_level='20'  max_mastery_level='60' name="Gonka"/>			
+			<card id="711" level='1' min_mastery_level='30' name="King Vulture V2"/>
+			<card id="716" level='1' min_mastery_level='40'  name="Peracles"/>
+			<card id="714" level='1' min_mastery_level='43'  max_mastery_level='62' name="Depth Chargers"/>
+			<card id="712" level='1' min_mastery_level='46' name="Orangutan V2"/>
+			<card id="712" level='1' min_mastery_level='52' name="Orangutan V2"/>
+			<card id="710" level='1' min_mastery_level='55' name="Choppex V2"/>					
+			<card id="715" level='1' min_mastery_level='58' name="Zig V2"/>			
+			<card id="723" level='1' min_mastery_level='60'  name="Depth Chargers V2"/>
+			<card id="724" level='1' min_mastery_level='62'  name="Gonka V2"/>
+			<card id="724" level='1' min_mastery_level='65'  name="Gonka V2"/>							
+		</deck>
+		<!-- Rewards -->
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> <!-- Machete -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='750' level='1' /> <!-- Reaver Zebra -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<unit id='750' level='1' /> <!-- Reaver Zebra -->
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<unit id='748' level='1' /> <!-- Reaver Dingo -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<unit id='748' level='1' /> <!-- Reaver Dingo -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>250</min_rank>
+			</req>
+			<item id='1106' num='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 cores -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_rank>1250</min_rank>
+			</req>
+			<unit id='747' level='1' /> <!-- Reaver Corvus -->
+		</event_reward>	
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_rank>2500</min_rank>
+			</req>
+			<unit id='746' level='1' /> <!-- Reaver Canidae -->
+		</event_reward>	
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>75</min_points>
+			</req>
+			<unit id='702' level='1'/> <!-- Cruiser -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>60</min_points>
+			</req>
+			<item id='1900' num='3' /> <!-- T6 cores -->
+		</event_reward>							
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<unit id='748' level='1' /> <!-- Reaver Dingo -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='747' level='1' /> <!-- Reaver Corvus -->
+		</event_reward>
+		<event_reward>
+			<tier>14</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='550' level='1'/> <!-- Hatchet -->
+		</event_reward>
+		<event_reward>
+			<tier>15</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='746' level='1' /> <!-- Reaver Canidae -->
+		</event_reward>
+		<event_reward>
+			<tier>16</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='4' level='1' /> <!-- Phoenix -->
+		</event_reward>
+	</event>
+	
+	<event>
+		<id>40006</id> 
+		<name>Gauntlet: Destroy</name>
+		<desc>Compete with other players to reach the highest level of this dungeon and earn exclusive rewards!</desc>
+		<location_id>32</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1460746800</start_time> <!-- 4/15/2016 2:00 PM -->
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1461006000</tracking_end_time> <!-- 4/18/2016 2:00 PM  -->
+		<claim_delay>1200</claim_delay> <!-- 1200 seconds -->
+		<end_time>1461265200</end_time> <!-- 4/21/2016 2:00 PM -->
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+		<deck>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='15' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='20' name="King Vulture"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='25' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='35' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='40' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='43' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='5' max_mastery_level='45' name="Niner"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='47' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='10' max_mastery_level='50' name="Niner"/>
+			<card id="735" level='1' min_mastery_level='15' max_mastery_level='55' name="godHunter"/>
+			<card id="735" level='1' min_mastery_level='20' max_mastery_level='60' name="godHunter"/>			
+			<card id="711" level='1' min_mastery_level='25' max_mastery_level='65' name="King Vulture V2"/>
+			<card id="713" level='1' min_mastery_level='30' max_mastery_level='70' name="Gonka"/>
+			<card id="734" level='1' min_mastery_level='35' max_mastery_level='75' name="Cuteblue"/>
+			<card id="737" level='1' min_mastery_level='40' max_mastery_level='80' name="Bluengine"/>
+			<card id="738" level='1' min_mastery_level='45' max_mastery_level='85' name="Conffin Tank"/>
+			<card id="716" level='1' min_mastery_level='50' max_mastery_level='90'  name="Peracles"/>	
+			<card id="714" level='1' min_mastery_level='55'  max_mastery_level='95' name="Depth Chargers"/>		
+			<card id="712" level='1' min_mastery_level='60' max_mastery_level='100' name="Orangutan V2"/>							
+			<card id="710" level='1' min_mastery_level='65' name="Choppex V2"/>		
+			<card id="733" level='1' min_mastery_level='70'  name="Sploder"/>	
+			<card id="736" level='1' min_mastery_level='75'  name="Udead"/>
+			<card id="739" level='1' min_mastery_level='80'  name="Zag"/>			
+			<card id="715" level='1' min_mastery_level='85' name="Zig V2"/>	
+			<card id="724" level='1' min_mastery_level='90'  name="Gonka V2"/>		
+			<card id="723" level='1' min_mastery_level='95'  name="Depth Chargers V2"/>
+			<card id="739" level='1' min_mastery_level='100'  name="Zag"/>	
+									
+		</deck>
+		
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> <!-- Machete -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='729' level='1' /> <!-- Warrior -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<unit id='729' level='1' /> <!-- Warrior -->
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<unit id='730' level='1' /> <!-- Roadburn -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<unit id='730' level='1' /> <!-- Roadburn -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>250</min_rank>
+			</req>
+			<item id='1106' num='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 cores -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_rank>1250</min_rank>
+			</req>
+			<unit id='747' level='1' /> <!-- Reaver Corvus -->
+		</event_reward>	
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_rank>2500</min_rank>
+			</req>
+			<unit id='965' level='1' /> <!-- Swarm -->
+		</event_reward>	
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>75</min_points>
+			</req>
+			<unit id='704' level='1'/> <!-- Curtana -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>60</min_points>
+			</req>
+			<item id='1900' num='3' /> <!-- T6 cores -->
+		</event_reward>							
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<unit id='730' level='1' trait_id='1001'/> <!-- +5 health Roadburn -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='747' level='1' /> <!-- Reaver Corvus -->
+		</event_reward>
+		<event_reward>
+			<tier>14</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='963' level='1'/> <!-- Nomingia -->
+		</event_reward>
+		<event_reward>
+			<tier>15</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='965' level='1' /> <!-- Swarm -->
+		</event_reward>
+		<event_reward>
+			<tier>16</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='46' level='1' /> <!-- Auroch -->
+		</event_reward>
+	</event>
+	
+	<event>
+		<id>40007</id> 
+		<name>Gauntlet: Flame</name>
+		<desc>Compete with other players to reach the highest level of this Gauntlet and earn exclusive rewards!</desc>
+		<location_id>22</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1463166000</start_time> <!-- 5/13/2016 1:00 PM  -->
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1463425200</tracking_end_time> <!-- 5/16/2016 1:00 PM  -->
+		<claim_delay>1200</claim_delay> <!-- 1200 seconds -->
+		<end_time>1463684400</end_time> <!-- 5/19/2016 1:00 PM  -->
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<!-- Deck -->
+		<health>100</health>
+		<deck>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='20' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='40' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='43' name="King Vulture"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='46' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='52' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='55' name="Zig"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='58' name="Zig"/>
+			<card id="713" level='1' min_mastery_level='20'  max_mastery_level='60' name="Gonka"/>			
+			<card id="711" level='1' min_mastery_level='30' name="King Vulture V2"/>
+			<card id="716" level='1' min_mastery_level='40'  name="Peracles"/>
+			<card id="714" level='1' min_mastery_level='43'  max_mastery_level='62' name="Depth Chargers"/>
+			<card id="712" level='1' min_mastery_level='46' name="Orangutan V2"/>
+			<card id="712" level='1' min_mastery_level='52' name="Orangutan V2"/>
+			<card id="710" level='1' min_mastery_level='55' name="Choppex V2"/>					
+			<card id="715" level='1' min_mastery_level='58' name="Zig V2"/>			
+			<card id="723" level='1' min_mastery_level='60'  name="Depth Chargers V2"/>
+			<card id="724" level='1' min_mastery_level='62'  name="Gonka V2"/>
+			<card id="724" level='1' min_mastery_level='65'  name="Gonka V2"/>							
+		</deck>
+		<!-- Rewards -->
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> <!-- Machete -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='756' level='1' /> <!-- Pharaoh -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<unit id='756' level='1' /> <!-- Pharaoh -->
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<unit id='626' level='1' /> <!-- Invader -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<unit id='626' level='1' /> <!-- Invader -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>250</min_rank>
+			</req>
+			<item id='1106' num='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 cores -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_rank>1250</min_rank>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>	
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_rank>2500</min_rank>
+			</req>
+			<unit id='630' level='1'/> <!-- Gallium -->
+		</event_reward>	
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>75</min_points>
+			</req>
+			<unit id='758' level='1'/> <!-- Stryder -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>60</min_points>
+			</req>
+			<item id='1900' num='3' /> <!-- T6 cores -->
+		</event_reward>							
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<unit id='626' level='1' /> <!-- Invader -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>
+		<event_reward>
+			<tier>14</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='563' level='1'/> <!-- Weaver -->
+		</event_reward>
+		<event_reward>
+			<tier>15</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='746' level='1' /> <!-- Reaver Canidae -->
+		</event_reward>
+		<event_reward>
+			<tier>16</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='4' level='1' /> <!-- Phoenix -->
+		</event_reward>
+	</event>
+	
+	<event>
+		<id>40008</id> 
+		<name>Gauntlet: Destroy</name>
+		<desc>Compete with other players to reach the highest level of this dungeon and earn exclusive rewards!</desc>
+		<location_id>32</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1466190000</start_time> <!-- 6/17/2016 2:00 PM -->
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1466449200</tracking_end_time> <!-- 6/20/2016 2:00 PM  -->
+		<claim_delay>1200</claim_delay> <!-- 1200 seconds -->
+		<end_time>1466708400</end_time> <!-- 6/23/2016 2:00 PM -->
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+		<deck>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='15' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='20' name="King Vulture"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='25' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='35' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='40' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='43' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='5' max_mastery_level='45' name="Niner"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='47' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='10' max_mastery_level='50' name="Niner"/>
+			<card id="735" level='1' min_mastery_level='15' max_mastery_level='55' name="godHunter"/>
+			<card id="735" level='1' min_mastery_level='20' max_mastery_level='60' name="godHunter"/>			
+			<card id="711" level='1' min_mastery_level='25' max_mastery_level='65' name="King Vulture V2"/>
+			<card id="713" level='1' min_mastery_level='30' max_mastery_level='70' name="Gonka"/>
+			<card id="734" level='1' min_mastery_level='35' max_mastery_level='75' name="Cuteblue"/>
+			<card id="737" level='1' min_mastery_level='40' max_mastery_level='80' name="Bluengine"/>
+			<card id="738" level='1' min_mastery_level='45' max_mastery_level='85' name="Conffin Tank"/>
+			<card id="716" level='1' min_mastery_level='50' max_mastery_level='90'  name="Peracles"/>	
+			<card id="714" level='1' min_mastery_level='55'  max_mastery_level='95' name="Depth Chargers"/>		
+			<card id="712" level='1' min_mastery_level='60' max_mastery_level='100' name="Orangutan V2"/>							
+			<card id="710" level='1' min_mastery_level='65' name="Choppex V2"/>		
+			<card id="733" level='1' min_mastery_level='70'  name="Sploder"/>	
+			<card id="736" level='1' min_mastery_level='75'  name="Udead"/>
+			<card id="739" level='1' min_mastery_level='80'  name="Zag"/>			
+			<card id="715" level='1' min_mastery_level='85' name="Zig V2"/>	
+			<card id="724" level='1' min_mastery_level='90'  name="Gonka V2"/>		
+			<card id="723" level='1' min_mastery_level='95'  name="Depth Chargers V2"/>
+			<card id="739" level='1' min_mastery_level='100'  name="Zag"/>	
+									
+		</deck>
+		
+	<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> <!-- Machete -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='758' level='1' /> <!-- Stryder -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<unit id='758' level='1' /> <!-- Stryder -->
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<unit id='626' level='1' /> <!-- Invader -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<unit id='626' level='1' /> <!-- Invader -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>250</min_rank>
+			</req>
+			<item id='1106' num='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 cores -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_rank>1250</min_rank>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>	
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_rank>2500</min_rank>
+			</req>
+			<unit id='630' level='1'/> <!-- Gallium -->
+		</event_reward>	
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>75</min_points>
+			</req>
+			<unit id='756' level='1'/> <!-- Pharaoh -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>60</min_points>
+			</req>
+			<item id='1900' num='3' /> <!-- T6 cores -->
+		</event_reward>							
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<unit id='626' level='1' /> <!-- Invader -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>
+		<event_reward>
+			<tier>14</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='563' level='1'/> <!-- Weaver -->
+		</event_reward>
+		<event_reward>
+			<tier>15</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='746' level='1' /> <!-- Reaver Canidae -->
+		</event_reward>
+		<event_reward>
+			<tier>16</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='4' level='1' /> <!-- Phoenix -->
+		</event_reward>
+	</event>
+	
+	<event>
+		<id>40009</id> 
+		<name>Gauntlet: Inferno</name>
+		<desc>Compete with other players to reach the highest level of this Gauntlet and earn exclusive rewards!</desc>
+		<location_id>22</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1468609200</start_time> <!-- 7/15/2016 1:00 PM  -->
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1468868400</tracking_end_time> <!-- 7/18/2016 1:00 PM  -->
+		<claim_delay>1200</claim_delay> <!-- 1200 seconds -->
+		<end_time>1469127600</end_time> <!-- 7/21/2016 1:00 PM  -->
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<!-- Deck -->
+		<health>100</health>
+		<deck>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='20' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='40' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='43' name="King Vulture"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='46' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='52' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='55' name="Zig"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='58' name="Zig"/>
+			<card id="713" level='1' min_mastery_level='20'  max_mastery_level='60' name="Gonka"/>			
+			<card id="711" level='1' min_mastery_level='30' name="King Vulture V2"/>
+			<card id="716" level='1' min_mastery_level='40'  name="Peracles"/>
+			<card id="714" level='1' min_mastery_level='43'  max_mastery_level='62' name="Depth Chargers"/>
+			<card id="712" level='1' min_mastery_level='46' name="Orangutan V2"/>
+			<card id="712" level='1' min_mastery_level='52' name="Orangutan V2"/>
+			<card id="710" level='1' min_mastery_level='55' name="Choppex V2"/>					
+			<card id="715" level='1' min_mastery_level='58' name="Zig V2"/>			
+			<card id="723" level='1' min_mastery_level='60'  name="Depth Chargers V2"/>
+			<card id="724" level='1' min_mastery_level='62'  name="Gonka V2"/>
+			<card id="724" level='1' min_mastery_level='65'  name="Gonka V2"/>							
+		</deck>
+		<!-- Rewards -->
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> <!-- Machete -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='756' level='1' /> <!-- Pharaoh -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<unit id='756' level='1' /> <!-- Pharaoh -->
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<unit id='626' level='1' /> <!-- Invader -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<unit id='626' level='1' /> <!-- Invader -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>250</min_rank>
+			</req>
+			<item id='1106' num='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 cores -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_rank>1250</min_rank>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>	
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_rank>2500</min_rank>
+			</req>
+			<unit id='630' level='1'/> <!-- Gallium -->
+		</event_reward>	
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>75</min_points>
+			</req>
+			<unit id='758' level='1'/> <!-- Stryder -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>60</min_points>
+			</req>
+			<item id='1900' num='3' /> <!-- T6 cores -->
+		</event_reward>							
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<unit id='626' level='1' /> <!-- Invader -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>
+		<event_reward>
+			<tier>14</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='563' level='1'/> <!-- Weaver -->
+		</event_reward>
+		<event_reward>
+			<tier>15</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='746' level='1' /> <!-- Reaver Canidae -->
+		</event_reward>
+		<event_reward>
+			<tier>16</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='4' level='1' /> <!-- Phoenix -->
+		</event_reward>
+	</event>
+	<!-- 
+	<event>
+		<id>40011</id> 
+		<name>Gauntlet: Annihilate</name>
+		<desc>Compete with other players to reach the highest level of this dungeon and earn exclusive rewards!</desc>
+		<location_id>32</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1470423600</start_time> 
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1470682800</tracking_end_time> 
+		<claim_delay>1200</claim_delay> 
+		<end_time>1470942000</end_time> 
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+		<deck>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='15' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='20' name="King Vulture"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='25' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='35' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='40' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='43' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='5' max_mastery_level='45' name="Niner"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='47' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='10' max_mastery_level='50' name="Niner"/>
+			<card id="735" level='1' min_mastery_level='15' max_mastery_level='55' name="godHunter"/>
+			<card id="735" level='1' min_mastery_level='20' max_mastery_level='60' name="godHunter"/>			
+			<card id="711" level='1' min_mastery_level='25' max_mastery_level='65' name="King Vulture V2"/>
+			<card id="713" level='1' min_mastery_level='30' max_mastery_level='70' name="Gonka"/>
+			<card id="734" level='1' min_mastery_level='35' max_mastery_level='75' name="Cuteblue"/>
+			<card id="737" level='1' min_mastery_level='40' max_mastery_level='80' name="Bluengine"/>
+			<card id="738" level='1' min_mastery_level='45' max_mastery_level='85' name="Conffin Tank"/>
+			<card id="716" level='1' min_mastery_level='50' max_mastery_level='90'  name="Peracles"/>	
+			<card id="714" level='1' min_mastery_level='55'  max_mastery_level='95' name="Depth Chargers"/>		
+			<card id="712" level='1' min_mastery_level='60' max_mastery_level='100' name="Orangutan V2"/>							
+			<card id="710" level='1' min_mastery_level='65' name="Choppex V2"/>		
+			<card id="733" level='1' min_mastery_level='70'  name="Sploder"/>	
+			<card id="736" level='1' min_mastery_level='75'  name="Udead"/>
+			<card id="739" level='1' min_mastery_level='80'  name="Zag"/>			
+			<card id="715" level='1' min_mastery_level='85' name="Zig V2"/>	
+			<card id="724" level='1' min_mastery_level='90'  name="Gonka V2"/>		
+			<card id="723" level='1' min_mastery_level='95'  name="Depth Chargers V2"/>
+			<card id="739" level='1' min_mastery_level='100'  name="Zag"/>	
+									
+		</deck>
+		
+	<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='758' level='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<unit id='758' level='1' />
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<item id='1126' num='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<unit id='748' level='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>250</min_rank>
+			</req>
+			<item id='1125' num='5' /> 
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<item id='1900' num='5' /> 
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_rank>1250</min_rank>
+			</req>
+			<unit id='964' level='1' /> 
+		</event_reward>	
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_rank>2500</min_rank>
+			</req>
+			<unit id='630' level='1'/> 
+		</event_reward>	
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>75</min_points>
+			</req>
+			<unit id='756' level='1'/> 
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>60</min_points>
+			</req>
+			<item id='1900' num='3' /> 
+		</event_reward>							
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<unit id='626' level='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='964' level='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>14</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='563' level='1'/> 
+		</event_reward>
+		<event_reward>
+			<tier>15</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='746' level='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>16</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='746' level='1' /> 
+		</event_reward>
+	</event>
+	 --> 
+	<event>
+		<id>40012</id> 
+		<name>Gauntlet: Flame</name>
+		<desc>Compete with other players to reach the highest level of this dungeon and earn exclusive rewards!</desc>
+		<location_id>32</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1470510000</start_time> 
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1470769200</tracking_end_time> 
+		<claim_delay>1200</claim_delay>
+		<end_time>1471028400</end_time> 
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+		<deck>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='15' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='20' name="King Vulture"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='25' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='35' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='40' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='43' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='5' max_mastery_level='45' name="Niner"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='47' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='10' max_mastery_level='50' name="Niner"/>
+			<card id="735" level='1' min_mastery_level='15' max_mastery_level='55' name="godHunter"/>
+			<card id="735" level='1' min_mastery_level='20' max_mastery_level='60' name="godHunter"/>			
+			<card id="711" level='1' min_mastery_level='25' max_mastery_level='65' name="King Vulture V2"/>
+			<card id="713" level='1' min_mastery_level='30' max_mastery_level='70' name="Gonka"/>
+			<card id="734" level='1' min_mastery_level='35' max_mastery_level='75' name="Cuteblue"/>
+			<card id="737" level='1' min_mastery_level='40' max_mastery_level='80' name="Bluengine"/>
+			<card id="738" level='1' min_mastery_level='45' max_mastery_level='85' name="Conffin Tank"/>
+			<card id="716" level='1' min_mastery_level='50' max_mastery_level='90'  name="Peracles"/>	
+			<card id="714" level='1' min_mastery_level='55'  max_mastery_level='95' name="Depth Chargers"/>		
+			<card id="712" level='1' min_mastery_level='60' max_mastery_level='100' name="Orangutan V2"/>							
+			<card id="710" level='1' min_mastery_level='65' name="Choppex V2"/>		
+			<card id="733" level='1' min_mastery_level='70'  name="Sploder"/>	
+			<card id="736" level='1' min_mastery_level='75'  name="Udead"/>
+			<card id="739" level='1' min_mastery_level='80'  name="Zag"/>			
+			<card id="715" level='1' min_mastery_level='85' name="Zig V2"/>	
+			<card id="724" level='1' min_mastery_level='90'  name="Gonka V2"/>		
+			<card id="723" level='1' min_mastery_level='95'  name="Depth Chargers V2"/>
+			<card id="739" level='1' min_mastery_level='100'  name="Zag"/>	
+									
+		</deck>
+		
+	<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='758' level='1' />
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<unit id='758' level='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<item id='1126' num='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<unit id='748' level='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>250</min_rank>
+			</req>
+			<item id='1125' num='5' /> 
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<item id='1900' num='5' /> 
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_rank>1250</min_rank>
+			</req>
+			<unit id='964' level='1' /> 
+		</event_reward>	
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_rank>2500</min_rank>
+			</req>
+			<unit id='630' level='1'/> 
+		</event_reward>	
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>75</min_points>
+			</req>
+			<unit id='756' level='1'/> 
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>60</min_points>
+			</req>
+			<item id='1900' num='3' /> 
+		</event_reward>							
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<unit id='626' level='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='964' level='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>14</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='563' level='1'/> 
+		</event_reward>
+		<event_reward>
+			<tier>15</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='746' level='1' /> 
+		</event_reward>
+		<event_reward>
+			<tier>16</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='746' level='1' />  
+		</event_reward>
+	</event>
+	
+	<event>
+		<id>40015</id> 
+		<name>Gauntlet</name>
+		<desc>Compete with other players to reach the highest level of this dungeon and earn exclusive rewards!</desc>
+		<location_id>32</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1474657200</start_time> 
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1474916400</tracking_end_time> 
+		<claim_delay>1200</claim_delay>
+		<end_time>1475175600</end_time> 
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+		<deck>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='15' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='20' name="King Vulture"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='25' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='35' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='40' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='43' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='5' max_mastery_level='45' name="Niner"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='47' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='10' max_mastery_level='50' name="Niner"/>
+			<card id="735" level='1' min_mastery_level='15' max_mastery_level='55' name="godHunter"/>
+			<card id="735" level='1' min_mastery_level='20' max_mastery_level='60' name="godHunter"/>			
+			<card id="711" level='1' min_mastery_level='25' max_mastery_level='65' name="King Vulture V2"/>
+			<card id="713" level='1' min_mastery_level='30' max_mastery_level='70' name="Gonka"/>
+			<card id="734" level='1' min_mastery_level='35' max_mastery_level='75' name="Cuteblue"/>
+			<card id="737" level='1' min_mastery_level='40' max_mastery_level='80' name="Bluengine"/>
+			<card id="738" level='1' min_mastery_level='45' max_mastery_level='85' name="Conffin Tank"/>
+			<card id="716" level='1' min_mastery_level='50' max_mastery_level='90'  name="Peracles"/>	
+			<card id="714" level='1' min_mastery_level='55'  max_mastery_level='95' name="Depth Chargers"/>		
+			<card id="712" level='1' min_mastery_level='60' max_mastery_level='100' name="Orangutan V2"/>							
+			<card id="710" level='1' min_mastery_level='65' name="Choppex V2"/>		
+			<card id="733" level='1' min_mastery_level='70'  name="Sploder"/>	
+			<card id="736" level='1' min_mastery_level='75'  name="Udead"/>
+			<card id="739" level='1' min_mastery_level='80'  name="Zag"/>			
+			<card id="715" level='1' min_mastery_level='85' name="Zig V2"/>	
+			<card id="724" level='1' min_mastery_level='90'  name="Gonka V2"/>		
+			<card id="723" level='1' min_mastery_level='95'  name="Depth Chargers V2"/>
+			<card id="739" level='1' min_mastery_level='100'  name="Zag"/>	
+									
+		</deck>
+		
+	<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> <!-- Machete -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='772' level='1' /> <!-- Slyph -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<unit id='758' level='1' /> <!-- Stryder -->
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<unit id='961' level='1' /> <!-- Osprey -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprint -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>250</min_rank>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_rank>1250</min_rank>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>	
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_rank>2500</min_rank>
+			</req>
+			<unit id='62' level='1'/> <!-- Jackrabbit -->
+		</event_reward>	
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>75</min_points>
+			</req>
+			<unit id='756' level='1'/> <!-- Pharaoh -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>60</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>							
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprint -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='962' level='1' /> <!-- Xiphos -->
+		</event_reward>
+		<event_reward>
+			<tier>14</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>
+		<event_reward>
+			<tier>15</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='564' level='1'/> <!-- Rapier --> 
+		</event_reward>
+		<event_reward>
+			<tier>16</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='965' level='1' /> <!-- Swarm -->
+		</event_reward>
+	</event>
+	
+	<event>
+		<id>40016</id> 
+		<name>Gauntlet</name>
+		<desc>Compete with other players to reach the highest level of this dungeon and earn exclusive rewards!</desc>
+		<location_id>32</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1479495600</start_time> <!-- 11/18/2016 1:00 PM -->
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1479754800</tracking_end_time> <!-- 11/21/2016 1:00 PM -->
+		<claim_delay>1200</claim_delay>
+		<end_time>1480014000</end_time> <!-- 11/24/2016 1:00 PM -->
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+		<deck>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='15' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='20' name="King Vulture"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='25' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='35' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='40' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='43' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='5' max_mastery_level='45' name="Niner"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='47' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='10' max_mastery_level='50' name="Niner"/>
+			<card id="735" level='1' min_mastery_level='15' max_mastery_level='55' name="godHunter"/>
+			<card id="735" level='1' min_mastery_level='20' max_mastery_level='60' name="godHunter"/>			
+			<card id="711" level='1' min_mastery_level='25' max_mastery_level='65' name="King Vulture V2"/>
+			<card id="713" level='1' min_mastery_level='30' max_mastery_level='70' name="Gonka"/>
+			<card id="734" level='1' min_mastery_level='35' max_mastery_level='75' name="Cuteblue"/>
+			<card id="737" level='1' min_mastery_level='40' max_mastery_level='80' name="Bluengine"/>
+			<card id="738" level='1' min_mastery_level='45' max_mastery_level='85' name="Conffin Tank"/>
+			<card id="716" level='1' min_mastery_level='50' max_mastery_level='90'  name="Peracles"/>	
+			<card id="714" level='1' min_mastery_level='55'  max_mastery_level='95' name="Depth Chargers"/>		
+			<card id="712" level='1' min_mastery_level='60' max_mastery_level='100' name="Orangutan V2"/>							
+			<card id="710" level='1' min_mastery_level='65' name="Choppex V2"/>		
+			<card id="733" level='1' min_mastery_level='70'  name="Sploder"/>	
+			<card id="736" level='1' min_mastery_level='75'  name="Udead"/>
+			<card id="739" level='1' min_mastery_level='80'  name="Zag"/>			
+			<card id="715" level='1' min_mastery_level='85' name="Zig V2"/>	
+			<card id="724" level='1' min_mastery_level='90'  name="Gonka V2"/>		
+			<card id="723" level='1' min_mastery_level='95'  name="Depth Chargers V2"/>
+			<card id="739" level='1' min_mastery_level='100'  name="Zag"/>	
+									
+		</deck>
+		
+	<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> <!-- Machete -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='772' level='1' /> <!-- Slyph -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<unit id='758' level='1' /> <!-- Stryder -->
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<unit id='961' level='1' /> <!-- Osprey -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprint -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>250</min_rank>
+			</req>
+			<item id='1901' num='5' /> <!-- T7 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_rank>1250</min_rank>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>	
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_rank>2500</min_rank>
+			</req>
+			<unit id='62' level='1'/> <!-- Jackrabbit -->
+		</event_reward>	
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>75</min_points>
+			</req>
+			<unit id='756' level='1'/> <!-- Pharaoh -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>60</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>							
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprint -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='962' level='1' /> <!-- Xiphos -->
+		</event_reward>
+		<event_reward>
+			<tier>14</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>
+		<event_reward>
+			<tier>15</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='564' level='1'/> <!-- Rapier --> 
+		</event_reward>
+		<event_reward>
+			<tier>16</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='965' level='1' /> <!-- Swarm -->
+		</event_reward>
+	</event>
+	
+	<event>
+		<id>40017</id> 
+		<name>Gauntlet</name>
+		<desc>Compete with other players to reach the highest level of this dungeon and earn exclusive rewards!</desc>
+		<location_id>32</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1490382000</start_time> <!-- 3/24/2017 1:00 PM -->
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1490641200</tracking_end_time> <!-- 3/27/2017 1:00 PM -->
+		<claim_delay>1200</claim_delay>
+		<end_time>1490900400</end_time> <!-- 3/30/2017 1:00 PM -->
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+		<deck>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='15' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='20' name="King Vulture"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='25' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='35' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='40' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='43' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='5' max_mastery_level='45' name="Niner"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='47' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='10' max_mastery_level='50' name="Niner"/>
+			<card id="735" level='1' min_mastery_level='15' max_mastery_level='55' name="godHunter"/>
+			<card id="735" level='1' min_mastery_level='20' max_mastery_level='60' name="godHunter"/>			
+			<card id="711" level='1' min_mastery_level='25' max_mastery_level='65' name="King Vulture V2"/>
+			<card id="713" level='1' min_mastery_level='30' max_mastery_level='70' name="Gonka"/>
+			<card id="734" level='1' min_mastery_level='35' max_mastery_level='75' name="Cuteblue"/>
+			<card id="737" level='1' min_mastery_level='40' max_mastery_level='80' name="Bluengine"/>
+			<card id="738" level='1' min_mastery_level='45' max_mastery_level='85' name="Conffin Tank"/>
+			<card id="716" level='1' min_mastery_level='50' max_mastery_level='90'  name="Peracles"/>	
+			<card id="714" level='1' min_mastery_level='55'  max_mastery_level='95' name="Depth Chargers"/>		
+			<card id="712" level='1' min_mastery_level='60' max_mastery_level='100' name="Orangutan V2"/>							
+			<card id="710" level='1' min_mastery_level='65' name="Choppex V2"/>		
+			<card id="733" level='1' min_mastery_level='70'  name="Sploder"/>	
+			<card id="736" level='1' min_mastery_level='75'  name="Udead"/>
+			<card id="739" level='1' min_mastery_level='80'  name="Zag"/>			
+			<card id="715" level='1' min_mastery_level='85' name="Zig V2"/>	
+			<card id="724" level='1' min_mastery_level='90'  name="Gonka V2"/>		
+			<card id="723" level='1' min_mastery_level='95'  name="Depth Chargers V2"/>
+			<card id="739" level='1' min_mastery_level='100'  name="Zag"/>	
+									
+		</deck>
+		
+	<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> <!-- Machete -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='772' level='1' /> <!-- Slyph -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<unit id='758' level='1' /> <!-- Stryder -->
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<unit id='961' level='1' /> <!-- Osprey -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprint -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>250</min_rank>
+			</req>
+			<item id='1901' num='5' /> <!-- T7 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_rank>1250</min_rank>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>	
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_rank>2500</min_rank>
+			</req>
+			<unit id='62' level='1'/> <!-- Jackrabbit -->
+		</event_reward>	
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>75</min_points>
+			</req>
+			<unit id='756' level='1'/> <!-- Pharaoh -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>60</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>							
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprint -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='962' level='1' /> <!-- Xiphos -->
+		</event_reward>
+		<event_reward>
+			<tier>14</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>
+		<event_reward>
+			<tier>15</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='564' level='1'/> <!-- Rapier --> 
+		</event_reward>
+		<event_reward>
+			<tier>16</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='965' level='1' /> <!-- Swarm -->
+		</event_reward>
+	</event>
+	<event>
+		<id>40018</id> 
+		<name>Gauntlet</name>
+		<desc>Compete with other players to reach the highest level of this dungeon and earn exclusive rewards!</desc>
+		<location_id>22</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate> 
+		<commander>9009</commander>
+		<start_time>1495220400</start_time> <!-- 5/19/2017 1:00 PM -->
+		<points_icon>lightning_bolt_map_marker.png</points_icon> 
+		<tracking_end_time>1495479600</tracking_end_time> <!-- 5/22/2017 1:00 PM -->
+		<claim_delay>1200</claim_delay>
+		<end_time>1495738800</end_time> <!-- 5/25/2017 1:00 PM -->
+		<web_picture>gauntlet_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+		<deck>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='15' name="King Vulture"/>
+			<card id="720" level='1' min_mastery_level='1' max_mastery_level='20' name="King Vulture"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='25' name="Choppex"/>
+			<card id="719" level='1' min_mastery_level='1' max_mastery_level='30' name="Choppex"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='35' name="Orangutan"/>
+			<card id="721" level='1' min_mastery_level='1' max_mastery_level='40' name="Orangutan"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='43' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='5' max_mastery_level='45' name="Niner"/>
+			<card id="722" level='1' min_mastery_level='1' max_mastery_level='47' name="Zig"/>
+			<card id="732" level='1' min_mastery_level='10' max_mastery_level='50' name="Niner"/>
+			<card id="735" level='1' min_mastery_level='15' max_mastery_level='55' name="godHunter"/>
+			<card id="735" level='1' min_mastery_level='20' max_mastery_level='60' name="godHunter"/>			
+			<card id="711" level='1' min_mastery_level='25' max_mastery_level='65' name="King Vulture V2"/>
+			<card id="713" level='1' min_mastery_level='30' max_mastery_level='70' name="Gonka"/>
+			<card id="734" level='1' min_mastery_level='35' max_mastery_level='75' name="Cuteblue"/>
+			<card id="737" level='1' min_mastery_level='40' max_mastery_level='80' name="Bluengine"/>
+			<card id="738" level='1' min_mastery_level='45' max_mastery_level='85' name="Conffin Tank"/>
+			<card id="716" level='1' min_mastery_level='50' max_mastery_level='90'  name="Peracles"/>	
+			<card id="714" level='1' min_mastery_level='55'  max_mastery_level='95' name="Depth Chargers"/>		
+			<card id="712" level='1' min_mastery_level='60' max_mastery_level='100' name="Orangutan V2"/>							
+			<card id="710" level='1' min_mastery_level='65' name="Choppex V2"/>		
+			<card id="733" level='1' min_mastery_level='70'  name="Sploder"/>	
+			<card id="736" level='1' min_mastery_level='75'  name="Udead"/>
+			<card id="739" level='1' min_mastery_level='80'  name="Zag"/>			
+			<card id="715" level='1' min_mastery_level='85' name="Zig V2"/>	
+			<card id="724" level='1' min_mastery_level='90'  name="Gonka V2"/>		
+			<card id="723" level='1' min_mastery_level='95'  name="Depth Chargers V2"/>
+			<card id="739" level='1' min_mastery_level='100'  name="Zag"/>	
+									
+		</deck>
+		
+	<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_rank>1</min_rank>
+			</req>
+			<unit id='728' level='1' /> <!-- Machete -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_rank>3</min_rank> 
+			</req>
+			<unit id='772' level='1' /> <!-- Slyph -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_rank>25</min_rank>
+			</req>
+			<unit id='758' level='1' /> <!-- Stryder -->
+		</event_reward>
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_rank>50</min_rank>
+			</req>
+			<unit id='961' level='1' /> <!-- Osprey -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_rank>100</min_rank>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprint -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_rank>250</min_rank>
+			</req>
+			<item id='1901' num='5' /> <!-- T7 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_rank>500</min_rank>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_rank>1250</min_rank>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>	
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_rank>2500</min_rank>
+			</req>
+			<unit id='62' level='1'/> <!-- Jackrabbit -->
+		</event_reward>	
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>75</min_points>
+			</req>
+			<unit id='756' level='1'/> <!-- Pharaoh -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>60</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>							
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>50</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprint -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>40</min_points>
+			</req>
+			<unit id='962' level='1' /> <!-- Xiphos -->
+		</event_reward>
+		<event_reward>
+			<tier>14</tier>
+			<req>
+				<min_points>30</min_points>
+			</req>
+			<unit id='964' level='1' /> <!-- Surnia -->
+		</event_reward>
+		<event_reward>
+			<tier>15</tier>
+			<req>
+				<min_points>20</min_points>
+			</req>
+			<unit id='564' level='1'/> <!-- Rapier --> 
+		</event_reward>
+		<event_reward>
+			<tier>16</tier>
+			<req>
+				<min_points>10</min_points>
+			</req>
+			<unit id='965' level='1' /> <!-- Swarm -->
+		</event_reward>
+	</event>
+	
+	<event>
+		<id>41001</id> 
+		<name>Onslaught</name>
+		<desc>Enter the Onslaught and fight your way up 100 levels of enemies!</desc>
+		<location_id>22</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		
+		<is_onslaught>1</is_onslaught>
+		<attempt_name>Battle</attempt_name>
+		<energy_per_battle>1</energy_per_battle>
+		<hide_rankings>1</hide_rankings>
+		
+		
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate>
+		<commander>9009</commander>
+		<start_time>1472670000</start_time> 
+		<points_icon>map_onslaught_icon</points_icon> 
+		<tracking_end_time>1473274800</tracking_end_time> 
+		<claim_delay>1200</claim_delay> 
+		<end_time>1473706800</end_time> 
+		<web_picture>onslaught_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+        <level_effects>
+        	<bg_effect id='1002' min_level='51' max_level='100' percent_per_level='2' />
+        </level_effects>
+		
+		
+		<deck>
+		<card id="769" min_mastery_level='1' max_mastery_level='16' />
+		<card id="768" min_mastery_level='1' max_mastery_level='16' />
+		<card id="770" min_mastery_level='1' max_mastery_level='16' />
+		<card id="770" min_mastery_level='1' max_mastery_level='16' />
+		<card id="771" min_mastery_level='1' max_mastery_level='16' />
+		<card id="771" min_mastery_level='1' max_mastery_level='16' />
+		<card id="772" min_mastery_level='1' max_mastery_level='16' />
+		<card id="772" min_mastery_level='1' max_mastery_level='16' />
+		<card id="961" min_mastery_level='1' max_mastery_level='16' />
+		<card id="961" min_mastery_level='1' max_mastery_level='16' />
+		<card id="962" min_mastery_level='1' max_mastery_level='16' />
+		<card id="962" min_mastery_level='1' max_mastery_level='16' />
+		<card id="561" min_mastery_level='1' max_mastery_level='16' />
+		<card id="561" min_mastery_level='1' max_mastery_level='16' />
+		<card id="515" min_mastery_level='1' max_mastery_level='16' />
+		<card id="515" min_mastery_level='1' max_mastery_level='16' />
+		<card id="1819" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1817" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1819" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1817" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1821" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1821" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1823" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1823" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1825" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1825" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1795" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1795" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1410" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1500" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1344" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1342" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1796" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+									
+		</deck>
+		
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_points>59500</min_points>
+			</req>
+			<unit id='778' level='1'/> <!-- Aesir -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_points>55200</min_points>
+			</req>
+			<unit id='769' level='1'/> <!-- Triton -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_points>50050</min_points>
+			</req>
+			<item id='1901' num='5' /> <!-- T7 Fusion Core -->
+		</event_reward>							
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_points>45150</min_points>
+			</req>
+			<unit id='774' level='1' /> <!-- Skratti -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_points>31950</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_points>24400</min_points>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_points>17850</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprints -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_points>12300</min_points>
+			</req>
+			<unit id='771' level='1' /> <!-- Vanadrott -->
+		</event_reward>
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_points>7750</min_points>
+			</req>
+			<item id='1110' num='1' /> <!-- Trait Catalyst MK2 -->
+		</event_reward>
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>5850</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>4200</min_points>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>1650</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprints -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>750</min_points>
+			</req>
+			<item id='1106' num='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		</event>
+		
+		<event>
+		<id>41002</id> 
+		<name>Onslaught</name>
+		<desc>Enter the Onslaught and fight your way up 100 levels of enemies!</desc>
+		<location_id>22</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		
+		<is_onslaught>1</is_onslaught>
+		<attempt_name>Battle</attempt_name>
+		<energy_per_battle>1</energy_per_battle>
+		<hide_rankings>1</hide_rankings>
+		
+		
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate>
+		<commander>9009</commander>
+		<start_time>1476298800</start_time> <!-- 10/12/2016 -->
+		<points_icon>map_onslaught_icon</points_icon> 
+		<tracking_end_time>1476903600</tracking_end_time> <!-- 10/19/2016 -->
+		<claim_delay>1200</claim_delay>
+		<end_time>1477335600</end_time> <!-- 10/24/2016 -->
+		<web_picture>onslaught_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+        <level_effects>
+        	<bg_effect id='1002' min_level='51' max_level='100' percent_per_level='2' />
+        </level_effects>
+		
+		
+		<deck>
+		<card id="769" min_mastery_level='1' max_mastery_level='16' />
+		<card id="768" min_mastery_level='1' max_mastery_level='16' />
+		<card id="770" min_mastery_level='1' max_mastery_level='16' />
+		<card id="770" min_mastery_level='1' max_mastery_level='16' />
+		<card id="771" min_mastery_level='1' max_mastery_level='16' />
+		<card id="771" min_mastery_level='1' max_mastery_level='16' />
+		<card id="772" min_mastery_level='1' max_mastery_level='16' />
+		<card id="772" min_mastery_level='1' max_mastery_level='16' />
+		<card id="961" min_mastery_level='1' max_mastery_level='16' />
+		<card id="961" min_mastery_level='1' max_mastery_level='16' />
+		<card id="962" min_mastery_level='1' max_mastery_level='16' />
+		<card id="962" min_mastery_level='1' max_mastery_level='16' />
+		<card id="561" min_mastery_level='1' max_mastery_level='16' />
+		<card id="561" min_mastery_level='1' max_mastery_level='16' />
+		<card id="515" min_mastery_level='1' max_mastery_level='16' />
+		<card id="515" min_mastery_level='1' max_mastery_level='16' />
+		<card id="1819" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1817" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1819" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1817" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1821" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1821" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1823" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1823" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1825" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1825" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1795" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1795" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1410" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1500" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1344" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1342" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1796" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+									
+		</deck>
+		
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_points>59500</min_points>
+			</req>
+			<unit id='778' level='1'/> <!-- Aesir -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_points>55200</min_points>
+			</req>
+			<unit id='769' level='1'/> <!-- Triton -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_points>50050</min_points>
+			</req>
+			<item id='1901' num='5' /> <!-- T7 Fusion Core -->
+		</event_reward>							
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_points>45150</min_points>
+			</req>
+			<unit id='772' level='1' /> <!-- Slyph -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_points>31950</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_points>24400</min_points>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_points>17850</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprints -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_points>12300</min_points>
+			</req>
+			<unit id='704' level='1' /> <!-- Curtana -->
+		</event_reward>
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_points>7750</min_points>
+			</req>
+			<item id='1110' num='1' /> <!-- Trait Catalyst MK2 -->
+		</event_reward>
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>5850</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>4200</min_points>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>1650</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprints -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>750</min_points>
+			</req>
+			<item id='1106' num='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		</event>
+		
+		<event>
+		<id>41003</id> 
+		<name>Onslaught</name>
+		<desc>Enter the Onslaught and fight your way up 100 levels of enemies!</desc>
+		<location_id>22</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		
+		<is_onslaught>1</is_onslaught>
+		<attempt_name>Battle</attempt_name>
+		<energy_per_battle>1</energy_per_battle>
+		<hide_rankings>1</hide_rankings>
+		
+		
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate>
+		<commander>9009</commander>
+		<start_time>1481310000</start_time> <!-- 12/9/2016 -->
+		<points_icon>map_onslaught_icon</points_icon> 
+		<tracking_end_time>1481914800</tracking_end_time> <!-- 12/16/2016 -->
+		<claim_delay>1200</claim_delay>
+		<end_time>1482260400</end_time> <!-- 12/20/2016 -->
+		<web_picture>onslaught_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+        <level_effects>
+        	<bg_effect id='1002' min_level='51' max_level='100' percent_per_level='2' />
+        </level_effects>
+		
+		
+		<deck>
+		<card id="769" min_mastery_level='1' max_mastery_level='16' />
+		<card id="768" min_mastery_level='1' max_mastery_level='16' />
+		<card id="770" min_mastery_level='1' max_mastery_level='16' />
+		<card id="770" min_mastery_level='1' max_mastery_level='16' />
+		<card id="771" min_mastery_level='1' max_mastery_level='16' />
+		<card id="771" min_mastery_level='1' max_mastery_level='16' />
+		<card id="772" min_mastery_level='1' max_mastery_level='16' />
+		<card id="772" min_mastery_level='1' max_mastery_level='16' />
+		<card id="961" min_mastery_level='1' max_mastery_level='16' />
+		<card id="961" min_mastery_level='1' max_mastery_level='16' />
+		<card id="962" min_mastery_level='1' max_mastery_level='16' />
+		<card id="962" min_mastery_level='1' max_mastery_level='16' />
+		<card id="561" min_mastery_level='1' max_mastery_level='16' />
+		<card id="561" min_mastery_level='1' max_mastery_level='16' />
+		<card id="515" min_mastery_level='1' max_mastery_level='16' />
+		<card id="515" min_mastery_level='1' max_mastery_level='16' />
+		<card id="1819" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1817" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1819" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1817" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1821" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1821" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1823" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1823" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1825" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1825" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1795" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1795" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1410" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1500" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1344" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1342" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1796" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+									
+		</deck>
+		
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_points>59500</min_points>
+			</req>
+			<unit id='778' level='1'/> <!-- Aesir -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_points>55200</min_points>
+			</req>
+			<unit id='769' level='1'/> <!-- Triton -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_points>50050</min_points>
+			</req>
+			<item id='1901' num='5' /> <!-- T7 Fusion Core -->
+		</event_reward>							
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_points>45150</min_points>
+			</req>
+			<unit id='772' level='1' /> <!-- Slyph -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_points>31950</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_points>24400</min_points>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_points>17850</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprints -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_points>12300</min_points>
+			</req>
+			<unit id='704' level='1' /> <!-- Curtana -->
+		</event_reward>
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_points>7750</min_points>
+			</req>
+			<item id='1110' num='1' /> <!-- Trait Catalyst MK2 -->
+		</event_reward>
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>5850</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>4200</min_points>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>1650</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprints -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>750</min_points>
+			</req>
+			<item id='1106' num='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		</event>
+		
+		<event>
+		<id>41004</id> 
+		<name>Onslaught</name>
+		<desc>Enter the Onslaught and fight your way up 100 levels of enemies!</desc>
+		<location_id>25</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		
+		<is_onslaught>1</is_onslaught>
+		<attempt_name>Battle</attempt_name>
+		<energy_per_battle>1</energy_per_battle>
+		<hide_rankings>1</hide_rankings>
+		
+		
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate>
+		<commander>9009</commander>
+		<start_time>1484938800</start_time> <!-- 1/20/2017 -->
+		<points_icon>map_onslaught_icon</points_icon> 
+		<tracking_end_time>1485543600</tracking_end_time> <!-- 1/27/2017 -->
+		<claim_delay>1200</claim_delay>
+		<end_time>1485889200</end_time> <!-- 1/31/2017 -->
+		<web_picture>onslaught_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+        <level_effects>
+        	<bg_effect id='1002' min_level='51' max_level='100' percent_per_level='2' />
+        </level_effects>
+		
+		
+		<deck>
+		<card id="769" min_mastery_level='1' max_mastery_level='16' />
+		<card id="768" min_mastery_level='1' max_mastery_level='16' />
+		<card id="770" min_mastery_level='1' max_mastery_level='16' />
+		<card id="770" min_mastery_level='1' max_mastery_level='16' />
+		<card id="771" min_mastery_level='1' max_mastery_level='16' />
+		<card id="771" min_mastery_level='1' max_mastery_level='16' />
+		<card id="772" min_mastery_level='1' max_mastery_level='16' />
+		<card id="772" min_mastery_level='1' max_mastery_level='16' />
+		<card id="961" min_mastery_level='1' max_mastery_level='16' />
+		<card id="961" min_mastery_level='1' max_mastery_level='16' />
+		<card id="962" min_mastery_level='1' max_mastery_level='16' />
+		<card id="962" min_mastery_level='1' max_mastery_level='16' />
+		<card id="561" min_mastery_level='1' max_mastery_level='16' />
+		<card id="561" min_mastery_level='1' max_mastery_level='16' />
+		<card id="515" min_mastery_level='1' max_mastery_level='16' />
+		<card id="515" min_mastery_level='1' max_mastery_level='16' />
+		<card id="1819" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1817" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1819" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1817" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1821" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1821" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1823" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1823" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1825" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1825" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1795" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1795" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1410" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1500" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1344" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1342" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1796" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+									
+		</deck>
+		
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_points>59500</min_points>
+			</req>
+			<unit id='778' level='1'/> <!-- Aesir -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_points>55200</min_points>
+			</req>
+			<unit id='769' level='1'/> <!-- Triton -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_points>50050</min_points>
+			</req>
+			<item id='1901' num='5' /> <!-- T7 Fusion Core -->
+		</event_reward>							
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_points>45150</min_points>
+			</req>
+			<unit id='772' level='1' /> <!-- Slyph -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_points>31950</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_points>24400</min_points>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_points>17850</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprints -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_points>12300</min_points>
+			</req>
+			<unit id='704' level='1' /> <!-- Curtana -->
+		</event_reward>
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_points>7750</min_points>
+			</req>
+			<item id='1110' num='1' /> <!-- Trait Catalyst MK2 -->
+		</event_reward>
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>5850</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>4200</min_points>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>1650</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprints -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>750</min_points>
+			</req>
+			<item id='1106' num='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		</event>
+		
+		<event>
+		<id>41005</id> 
+		<name>Onslaught</name>
+		<desc>Enter the Onslaught and fight your way up 100 levels of enemies!</desc>
+		<location_id>25</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		
+		<is_onslaught>1</is_onslaught>
+		<attempt_name>Battle</attempt_name>
+		<energy_per_battle>1</energy_per_battle>
+		<hide_rankings>1</hide_rankings>
+		
+		
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate>
+		<commander>9009</commander>
+		<start_time>1488567600</start_time> <!-- 3/3/2017 -->
+		<points_icon>map_onslaught_icon</points_icon> 
+		<tracking_end_time>1489172400</tracking_end_time> <!-- 3/10/2017 -->
+		<claim_delay>1200</claim_delay>
+		<end_time>1489518000</end_time> <!-- 3/14/2017 -->
+		<web_picture>onslaught_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+        <level_effects>
+        	<bg_effect id='1002' min_level='51' max_level='100' percent_per_level='2' />
+        </level_effects>
+		
+		
+		<deck>
+		<card id="769" min_mastery_level='1' max_mastery_level='16' />
+		<card id="768" min_mastery_level='1' max_mastery_level='16' />
+		<card id="770" min_mastery_level='1' max_mastery_level='16' />
+		<card id="770" min_mastery_level='1' max_mastery_level='16' />
+		<card id="771" min_mastery_level='1' max_mastery_level='16' />
+		<card id="771" min_mastery_level='1' max_mastery_level='16' />
+		<card id="772" min_mastery_level='1' max_mastery_level='16' />
+		<card id="772" min_mastery_level='1' max_mastery_level='16' />
+		<card id="961" min_mastery_level='1' max_mastery_level='16' />
+		<card id="961" min_mastery_level='1' max_mastery_level='16' />
+		<card id="962" min_mastery_level='1' max_mastery_level='16' />
+		<card id="962" min_mastery_level='1' max_mastery_level='16' />
+		<card id="561" min_mastery_level='1' max_mastery_level='16' />
+		<card id="561" min_mastery_level='1' max_mastery_level='16' />
+		<card id="515" min_mastery_level='1' max_mastery_level='16' />
+		<card id="515" min_mastery_level='1' max_mastery_level='16' />
+		<card id="1819" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1817" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1819" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1817" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1821" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1821" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1823" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1823" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1825" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1825" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1795" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1795" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1410" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1500" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1344" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1342" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1796" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+									
+		</deck>
+		
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_points>59500</min_points>
+			</req>
+			<unit id='778' level='1'/> <!-- Aesir -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_points>55200</min_points>
+			</req>
+			<unit id='769' level='1'/> <!-- Triton -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_points>50050</min_points>
+			</req>
+			<item id='1901' num='5' /> <!-- T7 Fusion Core -->
+		</event_reward>							
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_points>45150</min_points>
+			</req>
+			<unit id='772' level='1' /> <!-- Slyph -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_points>31950</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_points>24400</min_points>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_points>17850</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprints -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_points>12300</min_points>
+			</req>
+			<unit id='704' level='1' /> <!-- Curtana -->
+		</event_reward>
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_points>7750</min_points>
+			</req>
+			<item id='1110' num='1' /> <!-- Trait Catalyst MK2 -->
+		</event_reward>
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>5850</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>4200</min_points>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>1650</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprints -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>750</min_points>
+			</req>
+			<item id='1106' num='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		</event>
+		
+		<event>
+		<id>41006</id> 
+		<name>Onslaught</name>
+		<desc>Enter the Onslaught and fight your way up 100 levels of enemies!</desc>
+		<location_id>25</location_id>
+		<priority>50</priority>
+		<type>3</type>
+		<event_type>8</event_type>
+		
+		<is_onslaught>1</is_onslaught>
+		<attempt_name>Battle</attempt_name>
+		<energy_per_battle>1</energy_per_battle>
+		<hide_rankings>1</hide_rankings>
+		
+		
+		<start_level>10</start_level>
+		<overcharge_rate>2</overcharge_rate>
+		<commander>9009</commander>
+		<start_time>1491591600</start_time> <!-- 4/7/2017 -->
+		<points_icon>map_onslaught_icon</points_icon> 
+		<tracking_end_time>1492196400</tracking_end_time> <!-- 4/14/2017 -->
+		<claim_delay>1200</claim_delay>
+		<end_time>1492542000</end_time> <!-- 4/18/2017 -->
+		<web_picture>onslaught_banner.png</web_picture>
+		<map>prefab_gauntlet_terrain</map>
+		<map_bundle>45</map_bundle>
+		<health>100</health>
+        <level_effects>
+        	<bg_effect id='1002' min_level='51' max_level='100' percent_per_level='2' />
+        </level_effects>
+		
+		
+		<deck>
+		<card id="769" min_mastery_level='1' max_mastery_level='16' />
+		<card id="768" min_mastery_level='1' max_mastery_level='16' />
+		<card id="770" min_mastery_level='1' max_mastery_level='16' />
+		<card id="770" min_mastery_level='1' max_mastery_level='16' />
+		<card id="771" min_mastery_level='1' max_mastery_level='16' />
+		<card id="771" min_mastery_level='1' max_mastery_level='16' />
+		<card id="772" min_mastery_level='1' max_mastery_level='16' />
+		<card id="772" min_mastery_level='1' max_mastery_level='16' />
+		<card id="961" min_mastery_level='1' max_mastery_level='16' />
+		<card id="961" min_mastery_level='1' max_mastery_level='16' />
+		<card id="962" min_mastery_level='1' max_mastery_level='16' />
+		<card id="962" min_mastery_level='1' max_mastery_level='16' />
+		<card id="561" min_mastery_level='1' max_mastery_level='16' />
+		<card id="561" min_mastery_level='1' max_mastery_level='16' />
+		<card id="515" min_mastery_level='1' max_mastery_level='16' />
+		<card id="515" min_mastery_level='1' max_mastery_level='16' />
+		<card id="1819" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1817" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1819" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1817" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1821" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1821" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1823" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1823" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1825" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1825" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1795" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1795" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1410" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1500" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1344" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1342" min_mastery_level='17' max_mastery_level='33' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1820" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1818" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1822" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1824" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1826" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+		<card id="1796" min_mastery_level='34' max_mastery_level='100' maxed_at_level='50' />
+									
+		</deck>
+		
+		<event_reward>
+			<tier>1</tier>
+			<req>
+				<min_points>59500</min_points>
+			</req>
+			<unit id='778' level='1'/> <!-- Aesir -->
+		</event_reward>
+		<event_reward>
+			<tier>2</tier>
+			<req>
+				<min_points>55200</min_points>
+			</req>
+			<unit id='769' level='1'/> <!-- Triton -->
+		</event_reward>
+		<event_reward>
+			<tier>3</tier>
+			<req>
+				<min_points>50050</min_points>
+			</req>
+			<item id='1901' num='5' /> <!-- T7 Fusion Core -->
+		</event_reward>							
+		<event_reward>
+			<tier>4</tier>
+			<req>
+				<min_points>45150</min_points>
+			</req>
+			<unit id='772' level='1' /> <!-- Slyph -->
+		</event_reward>
+		<event_reward>
+			<tier>5</tier>
+			<req>
+				<min_points>31950</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>6</tier>
+			<req>
+				<min_points>24400</min_points>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>7</tier>
+			<req>
+				<min_points>17850</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprints -->
+		</event_reward>
+		<event_reward>
+			<tier>8</tier>
+			<req>
+				<min_points>12300</min_points>
+			</req>
+			<unit id='704' level='1' /> <!-- Curtana -->
+		</event_reward>
+		<event_reward>
+			<tier>9</tier>
+			<req>
+				<min_points>7750</min_points>
+			</req>
+			<item id='1110' num='1' /> <!-- Trait Catalyst MK2 -->
+		</event_reward>
+		<event_reward>
+			<tier>10</tier>
+			<req>
+				<min_points>5850</min_points>
+			</req>
+			<item id='1900' num='5' /> <!-- T6 Fusion Core -->
+		</event_reward>
+		<event_reward>
+			<tier>11</tier>
+			<req>
+				<min_points>4200</min_points>
+			</req>
+			<item id='1125' num='5' /> <!-- Empty Catalyst -->
+		</event_reward>
+		<event_reward>
+			<tier>12</tier>
+			<req>
+				<min_points>1650</min_points>
+			</req>
+			<item id='1126' num='1' /> <!-- Havoc Blueprints -->
+		</event_reward>
+		<event_reward>
+			<tier>13</tier>
+			<req>
+				<min_points>750</min_points>
+			</req>
+			<item id='1106' num='1' /> <!-- Trait Catalyst -->
+		</event_reward>
+		</event>
+		
+</root>

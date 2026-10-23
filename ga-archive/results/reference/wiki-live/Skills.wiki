@@ -1,0 +1,97 @@
+Skills affect combat in different ways than the normal attack. Units may have up to 3 skills, which are displayed when clicked/tapped on a unit.
+
+On this page, skills are classified into 4 types, depending on when the skill is triggered. Italic sentences are the in-game skill descriptions.
+
+==Activation==
+Skills which activate during the card's turn.
+<br>
+=== Barrier ===
+''Creates a protective barrier around units.''
+
+Absorbs damage equal to amount of Barrier. 
+Барьер защищает от страйка, линейной атаки и пирса. Цифра обозначающая перк говорит о том, сколько он дамага или пирса заблокирует. В отличии от брони барьер не будет висеть на вас весь ход, а исчезнет сразу, как заблокирует свой урон.<br>
+Взаимодействие со страйком: сначала сносит барьер, затем хп.<br>
+Взаимодействие с линейной атакой: сносит барьер, сносит броню (при наличии), сносит хп.<br>
+Взаимодействие с пирсом: сначала сносится барьер, затем броня.<br>
+Взаимодействие с лазером: аналогично линейной атаке.
+
+<br>
+===Cover===
+''Unit will move to unprotected lanes.''
+<br>
+
+===Flank===
+''Unit will move to unprotected enemy lanes.''
+<br>
+
+===Mark===
+''Increase damage dealt to a random enemy unit.''
+
+If a unit is marked more than once, only the highest Mark value applies.
+
+e.g. An enemy Fury is targeted with Mark 2, and then subsequently with Mark 3.  All damage against that Fury will be increased 3, and not 5.
+<br>Every damage dealt to marked unit is affected. If the marked unit is hit more than once that turn, the mark is added to every damage .
+
+=== Rally ===
+''Increases the attack of a random allied unit.''
+<br>
+===Strike===
+''Launches a missile at a random enemy unit.''
+<br>
+===Suppress===
+''Smoke screen reduces the effectiveness of a random enemy unit's attack.''
+
+It also removes camouflage from  the opponents unit if it exists, so it's generally a smart idea to place suppress units topmost right, following the right vertical lane down and continue topleft the deployment. 
+
+The topright corner always starts to fire, so make sure you place the suppress units '''before''' the attack units (eg strike) in the fire sequence''.''
+<br>
+==Defensive==
+Skills which activate when the card is attacked or targeted by activation skills. Defensive skills can activate even while the card is still on delay.
+<br>
+===Armor===
+''Advanced alloys reduce damage taken by attacks.''
+
+Limited to normal attack damage only.  Does not reduce damage taken from enemy skills like Strike, Incendiary, Shrapnel.<br>
+===Camouflage===
+''Active camouflage allows a unit to evade enemy skills.''
+
+Limited to Strike, Suppress, Mark only. Can not Evade other skills like  Retaliate, Pierce, Incendiary
+
+<br>
+=== Retaliate ===
+''When attacked on an enemy's turn, this unit will attack back.''
+
+Damage equals Retaliate + Unit's Attack power.  Retaliate also triggers Berzerk.
+
+==Combat Modifier==
+Skills which affect the card's normal attack against an opposite enemy.
+<br>
+=== Blitz ===
+''Unit is able to attack immediately after being deployed. ''
+
+=== Laser ===
+''Attacks target all units in a lane.''
+
+===Pierce===
+''High-velocity weaponry pierces through armor.''
+
+===Shrapnel===
+''Attacks cause additional damage to adjacent units.''
+
+==Damage Dependent==
+Skills which affect the card's normal attack against an opposite enemy.
+<br>
+===Berserk===
+''Damage is increased after each successful attack.''
+<br>
+Note: main attack must damage a unit or base to be considered "successful".
+
+===Incendiary===
+''Target takes fire damage over time.''
+note: does not "catch" if damage is completely blocked.
+
+==Remarks==
+
+Only Berserk's effect can stack.
+
+Barrier, Incendiary, Rally, Mark, Suppress only counts the highest effect. For example, if a unit get Mark 2, then get Mark 3 again. It will count as Mark 3 instead of Mark 5.

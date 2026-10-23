@@ -1,0 +1,57 @@
+name: ga-emulator-test
+# Global Assault offline smoke test. Runs when a new test APK is pushed to ga-offline/tests/apk/;
+# results (screenshots, videos, logs) are committed back to ga-offline/tests/results/ on the same branch.
+on:
+  push:
+    paths: ['ga-offline/tests/apk/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ga-emulator-test
+  cancel-in-progress: true
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Emulator run
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 19
+          arch: x86
+          target: google_apis
+          profile: Nexus 5
+          cores: 4
+          ram-size: 1536M
+          disk-size: 6000M
+          emulator-options: -no-window -gpu swiftshader_indirect -feature -GLESDynamicVersion -noaudio -no-boot-anim -no-snapshot
+          disable-animations: true
+          emulator-boot-timeout: 900
+          script: OUT=out ABI= timeout 1500 bash ga-offline/tests/run.sh || true
+      - name: Build videos from frames
+        if: always()
+        timeout-minutes: 8
+        run: |
+          mkdir -p out/frames
+          timeout 240 sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || true
+          for p in o a b; do
+            if ls out/frames/$p*.png >/dev/null 2>&1; then
+              timeout 180 ffmpeg -nostdin -loglevel error -framerate 2 -pattern_type glob -i "out/frames/$p*.png" -vf "scale=1140:-2,format=yuv420p" -c:v libx264 -crf 30 out/video_$p.mp4 || true
+            fi
+          done
+          rm -rf out/frames out/.stop
+      - name: Commit results to ga-offline/tests/results
+        if: always()
+        run: |
+          echo "run ${{ github.run_number }} sha ${{ github.sha }} $(date -u)" > out/RUN.txt
+          rm -rf ga-offline/tests/results && mkdir -p ga-offline/tests && mv out ga-offline/tests/results
+          git config user.name "emulator-bot"; git config user.email "emulator-bot@users.noreply.github.com"
+          RES=ga-offline/tests/results; MSG="ga emulator results run ${{ github.run_number }}"  # committed onto the branch tip: only this folder comes from this run
+          for i in 1 2 3; do git fetch -q origin "${GITHUB_REF_NAME}" && git reset -q --soft FETCH_HEAD && git reset -q && git add -A "$RES" && git commit -qm "$MSG" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 5; done

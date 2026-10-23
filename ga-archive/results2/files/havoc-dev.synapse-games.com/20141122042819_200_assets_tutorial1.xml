@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<tutorial>
+		<id>5</id>
+		<name>In First Mission</name>
+		<completion>
+			<flagreq id='completedMission' key='1' value='1' /> <!-- Completed the first mission -->
+		</completion>
+		<!-- <step>
+			<step_id>5</step_id>
+			<message>Welcome, Commander!  We are currently deploying troops against rebels.</message>
+			<confirm>1</confirm>
+		</step> -->
+		<step>
+			<step_id>1</step_id>
+		</step>
+		
+		<step>
+			<step_id>5</step_id>
+			<flagreq id='popup' key='combatHand' value='1' />
+			<message>
+				<line>
+					<commander>elia</commander>
+					<text>Commander, deploy the Cobra to the front of the battlefield.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		<step>
+			<step_id>10</step_id>
+			<arrow id='card.2' target_id='battlefield2.front' /> <!-- Shows a "drag" animation from the first card to the battlefield -->
+		</step>
+		
+		<step>
+			<step_id>15</step_id>
+			<flagreq id='playedCard' value='1' /> <!-- true when the player has played one card -->
+			<message>
+				<line>
+					<commander>elia</commander>
+					<text>The Cobra will take a turn to activate.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		
+		<step>
+			<step_id>16</step_id>
+			<flagreq id='popup' key='combatHand' value='1' />
+			<message>
+				<line>
+					<commander>darius</commander>
+					<text>The Cobra will provide protection for me.  I'm going in!</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		<step>
+			<step_id>17</step_id>
+			<arrow id='card.502' target_id='battlefield2.back' /> 
+		</step>
+		
+		<step>
+			<step_id>18</step_id>
+			<flagreq id='playedCard' value='1' /> <!-- true when the player has played one card -->
+			<message>
+				<line>
+					<commander>elia</commander>
+					<text>Units attack the first enemy unit in their lane.  For now, Darius is protected by the Cobra.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		
+		<step>
+			<step_id>20</step_id>
+			<flagreq id='popup' key='combatHand' value='1' />
+			<message>
+				<line>
+					<commander>darius</commander>
+					<text>Deploy the Javelin in another lane.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		<step>
+			<step_id>25</step_id>
+			<arrow id='card.10' target_id='battlefield3.front' /> 
+		</step>
+		
+		<step>
+			<step_id>30</step_id>
+			<flagreq id='playedCard' value='1' />
+			<message>
+				<line>
+					<commander>elia</commander>
+					<text>If there are no defenders in the lane, your units will attack the Command Pod.  Kill it to win!</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+	</tutorial>
+
+	<tutorial>
+		<id>10</id>
+		<name>Store</name>
+		<completion>
+			<flagreq id='receivedNewUnit' value='1' /> <!-- true when the player is in the store -->
+			<flagreq id="popup" key="newUnit" value="0" />
+		</completion>
+		<step>
+			<step_id>1</step_id>
+		</step>
+		<step>
+			<step_id>5</step_id>
+			<flagreq id='screen' value='Base' />
+			<message>
+				<line>
+					<commander>elia</commander>
+					<text>Excellent work!  Incoming message from our escort, Havoc-2.</text>
+				</line>
+				<line>
+					<commander>kara</commander>
+					<text>Fine work, Commander!  We've given you Credits to buy a Supply Drop and bolster your forces.</text>
+					<move_camera>1</move_camera>
+					
+			        <icon>icon_currency_soft</icon>
+			        <icon_label>Credits</icon_label>
+				</line>
+				<line>
+					<commander>elia</commander>
+					<text>The extra weaponry will come in handy.  We're not done with the rebels yet!</text>
+					<move_camera>0</move_camera>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		
+		<step>
+			<step_id>7</step_id>
+			<arrow id='storeButton' /> <!-- highlight the store -->
+			<highlight id='storeButton' /> <!-- highlight the store -->
+		</step>
+		
+		<step>
+			<step_id>10</step_id>
+			<flagreq id="loadedStoreItem" value="1" />
+			<arrow id='storeItem.1' />
+			<highlight id='storeItem.1' />
+		</step>
+		
+		<step>
+			<step_id>20</step_id>
+			<flagreq id="popup" key="newUnit" value="1" />
+			<arrow id='newUnitSquadButton' />
+			<highlight id='newUnitSquadButton' />
+		</step>
+	</tutorial>
+
+	<tutorial>
+		<id>35</id>
+		<name>Second Mission</name>
+		<completion>
+			<flagreq id='completedMission' key='1' value='1' />
+		</completion>
+		<step>
+			<step_id>1</step_id>
+			<arrow id='heli.2' />
+			<highlight id='heli.2' />
+		</step>
+		
+		<step>
+			<step_id>10</step_id>
+			<flagreq id="popup" key="squad" value="1" />
+			<arrow id='reserveUnit' target_id='squadSlot.0'/> <!-- Shows a "press" animation -->
+		</step>
+		
+		<step>
+			<step_id>12</step_id>
+			<flagreq id="numCardsInDeck" value="+4" />
+			<arrow id='finishEditButton' />
+		</step>
+		
+		<step>
+			<step_id>15</step_id>
+			<flagreq id="launchSquadVisible" value="1" />
+			<message>
+				<line>
+					<commander>elia</commander>
+					<text>Great work.  Let's finish up those rebels.  Launch the Alpha Squad!</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		
+		
+		<step>
+			<step_id>20</step_id>
+			<arrow id='deployButton' /> <!-- Shows a "press" animation -->
+		</step>
+		
+		<step>
+			<step_id>25</step_id>
+			<message>
+				<line>
+					<commander>elia</commander>
+					<text>This is the tactical map.  From here you can launch your Squad to complete missions.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		<step>
+			<step_id>30</step_id>
+			<arrow id='battleButton' />
+		</step>
+	</tutorial>
+	
+	
+	<tutorial>
+		<id>40</id>
+		<name>Upgrade Unit</name>
+		<completion>
+			<flagreq id='finishedLastStep' value='1' />
+		</completion>
+		<step>
+			<step_id>1</step_id>
+		</step>
+		
+		<step>
+			<step_id>5</step_id>
+			<flagreq id='inBase' value='1' />
+			<arrow id='heli.2' />
+			<highlight id='heli.2' />
+		</step>
+		
+		<step>
+			<step_id>10</step_id>
+			<flagreq id="popup" key="squad" value="1" />
+			<message>
+				<line>
+					<commander>elia</commander>
+					<text>We've got enough scrap now to upgrade Darius's equipment.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		
+		<step>
+			<step_id>15</step_id>
+			<arrow id='squadSlot.502' /> <!-- Shows a "press" animation -->
+		</step>
+		
+		<step>
+			<step_id>20</step_id>
+			<flagreq id="nav" value="unitInfoUpgrade" />
+			<message>
+				<line>
+					<commander>darius</commander>
+					<text>Using the Scrap we've collected from missions, we can boost my power and add a new skill: Strike.</text>
+			        <icon>icon_scrap</icon>
+			        <icon_label>Scrap</icon_label>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		
+		<step>
+			<step_id>25</step_id>
+			<arrow id='upgradeButton' /> <!-- Shows a "press" animation -->
+		</step>
+		
+		<step>
+			<step_id>30</step_id>
+			<flagreq id="upgradedCard" value="1" />
+			<message>
+				<line>
+					<commander>elia</commander>
+					<text>Upgrades take time, but we can speed it up using Volt Coins.</text>
+			        <icon>icon_currency_hard</icon>
+			        <icon_label>Volt Coins</icon_label>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		
+		<step>
+			<step_id>35</step_id>
+			<arrow id='speedUpUpgradeButton' /> <!-- Shows a "press" animation -->
+		</step>
+		
+		<step>
+			<step_id>40</step_id>
+			<flagreq id="upgradeCardFinished" value="1" />
+			<message>
+				<line>
+					<commander>darius</commander>
+					<text>Excellent!  This new Strike gear is going to help blast a hole in those Armored units.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+	</tutorial>
+	
+	<!-- <tutorial>
+		<id>50</id>
+		<name>Helicarrier</name>
+		<completion>
+			<flagreq id='inCombat' value='1' />
+		</completion>
+		<step>
+			<step_id>1</step_id>
+			<message>
+				<line>
+					<commander>darius</commander>
+					<text>I must admit... that was a solid victory, Commander.</text>
+				</line>
+				<line>
+					<commander>elia</commander>
+					<text>The Havoc Helicarrier is equipped with an on-board Generator which produces Credits over time.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		
+		<step>
+			<step_id>5</step_id>
+			<arrow id='heli.1' />
+			<highlight id='heli.1' />
+		</step>
+		
+		<step>
+			<step_id>10</step_id>
+			<flagreq id="tappedGenerator" value="1" />
+			<message>
+				<line>
+					<commander>elia</commander>
+					<text>Now open up the Squad Bay to deploy your squad.  The rebels are on their last leg!</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		
+		<step>
+			<step_id>15</step_id>
+			<arrow id='heli.2' />
+			<highlight id='heli.2' />
+		</step>
+		
+		<step>
+			<step_id>20</step_id>
+			<flagreq id="popup" key="squad" value="1" />
+			<arrow id='deployButton' />
+		</step>
+	</tutorial> -->
+	
+	
+	<guide>
+		<id>1</id>
+		<name>upgradeSquad</name>
+		<trigger>
+			<flagreq id='nav' value='unitSquadUpgrade' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<message>
+				<line>
+					<text>You can Upgrade a unit from the Squad Bay, which will make it more powerful and sometimes earn new skills.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	
+	<!-- <guide>
+		<id>2</id>
+		<name>upgradeInfo</name>
+		<trigger>
+			<flagreq id='nav' value='unitInfoUpgrade' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<message>
+			    <line>
+			        <text>Upgrading a unit requires scrap, which you can earn from missions and from Salvaging units.</text>
+			        <icon>icon_scrap</icon>
+			        <icon_label>Scrap</icon_label>
+				</line>
+				
+				<line><text>Salvaging will permanently remove the unit from your inventory, so only salvage units you no longer need.
+				</text></line></message>
+			<confirm>1</confirm>
+		</step>
+	</guide> -->
+
+	<guide>
+		<id>3</id>
+		<name>deploySquad</name>
+		<trigger>
+			<flagreq id='inBase' value='1' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<message>
+				<line>
+					<text>Open the Squad Bay to launch attacks and to upgrade units.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		<step>
+			<step_id>20</step_id>
+			<arrow id='heli.2' />
+			<highlight id='heli.2' />
+		</step>
+	</guide>
+	
+	
+	<guide>
+		<id>4</id>
+		<name>researchFusion</name>
+		<trigger>
+			<flagreq id='popup' key='researchFusion' value='1' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<message>
+				<line>
+					<commander>zoe</commander>
+					<text>Fusion projects let you combine your current units into much stronger units.</text>
+				</line>
+				<line>
+					<commander>zoe</commander>
+					<text>Once a Fusion project is researched, you can start building it in the Armory.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	<guide>
+		<id>5</id>
+		<name>researchHeli</name>
+		<trigger>
+			<flagreq id='popup' key='researchHeli' value='1' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<message>
+				<line>
+					<commander>zoe</commander>
+					<text>We can research improvements to the Helicarrier.</text>
+				</line>
+				<line>
+					<commander>zoe</commander>
+					<text>For example, we can research increased Generator capacity.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	
+	<guide>
+		<id>6</id>
+		<name>fusion</name>
+		<trigger>
+			<flagreq id='popup' key='fusion' value='1' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<message>
+				<line>
+					<commander>ajax</commander>
+					<text>Once researched, we can build our fusion projects here in the Armory.</text>
+				</line>
+				<line>
+					<commander>ajax</commander>
+					<text>Fusions will take two max level units and combine them into a single, much stronger unit.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	
+	<guide>
+		<id>7</id>
+		<name>researchEquipment</name>
+		<trigger>
+			<flagreq id='popup' key='researchEquipment' value='1' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<message>
+				<line>
+					<commander>zoe</commander>
+					<text>Once researched, you can build Equipment in the Armory.</text>
+				</line>
+				<line>
+					<commander>zoe</commander>
+					<text>Equipment can be installed on units to give them special upgrades.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	
+	
+	<guide>
+		<id>8</id>
+		<name>scanner</name>
+		<trigger>
+			<flagreq id='scansAvailable' value='1' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<message>
+				<line>
+					<text>Commander, our Scanner is back online.  We can use it to find enemy rivals.</text>
+			        <icon>scan_button_active</icon>
+			        <icon_label></icon_label>
+				</line>
+				<line>
+					<text>Defeat enemy mercenaries to earn components and increase our Dominance!</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	
+	
+	<guide>
+		<id>9</id>
+		<name>objectives</name>
+		<trigger>
+			<flagreq id='hasCompletedObjective' value='1' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<message>
+				<line>
+					<text>You've completed an Objective!  Be sure to claim your Objective rewards frequently.</text>
+			        <icon>button_objectives</icon>
+			        <icon_label></icon_label>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	
+	<!-- <guide>
+		<id>100</id>
+		<name>playedArmor</name>
+		<trigger>
+			<flagreq id='playedSkill' value='armored' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<highlight id='cardWithSkill' value='armored' />
+			<message><line><text>This unit has Armor.  Direct attacks to this unit will do less damage based on the Armor value.
+			</text></line></message>
+			<confirm>1</confirm>
+		</step>
+	</guide> -->
+	<guide>
+		<id>101</id>
+		<name>playedCover</name>
+		<trigger>
+			<flagreq id='playedSkill' value='cover' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<highlight id='cardWithSkill' value='cover' />
+			<message>
+			<line>
+			<skill>cover</skill>
+			<text>This unit has Cover.  It will move to undefended locations if an enemy threatens them.
+			</text></line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	<guide>
+		<id>102</id>
+		<name>playedPierce</name>
+		<trigger>
+			<flagreq id='playedSkill' value='pierce' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<highlight id='cardWithSkill' value='pierce' />
+			<message><line>
+			<skill>pierce</skill><text>This unit has Pierce. When it attacks, it will partially ignore enemy Armor.
+			</text></line></message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	<guide>
+		<id>103</id>
+		<name>playedBarrier</name>
+		<trigger>
+			<flagreq id='playedSkill' value='barrier' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<highlight id='cardWithSkill' value='barrier' />
+			<message><line>
+			<skill>barrier</skill><text>This unit has Barrier.  It will protect allied units with a Barrier that absorbs damage.
+			</text></line></message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	<guide>
+		<id>104</id>
+		<name>playedCounter</name>
+		<trigger>
+			<flagreq id='playedSkill' value='counter' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<highlight id='cardWithSkill' value='counter' />
+			<message><line>
+			<skill>counter</skill><text>This unit has Retaliate. When attacked, it will deal damage to
+				its attacker.
+			</text></line></message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	<guide>
+		<id>105</id>
+		<name>playedRally</name>
+		<trigger>
+			<flagreq id='playedSkill' value='rally' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<highlight id='cardWithSkill' value='rally' />
+			<message><line>
+			<skill>rally</skill><text>This unit has Rally. When active, this unit will temporarily
+				increase the attack of an allied unit.
+			</text></line></message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	<guide>
+		<id>106</id>
+		<name>playedStrike</name>
+		<trigger>
+			<flagreq id='playedSkill' value='strike' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<highlight id='cardWithSkill' value='strike' />
+			<message><line>
+			<skill>strike</skill><text>This unit has Strike. When active, this unit will launch a missile strike that damages a random enemy unit.
+			</text></line></message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	<guide>
+		<id>108</id>
+		<name>playedWeaken</name>
+		<trigger>
+			<flagreq id='playedSkill' value='weaken' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<highlight id='cardWithSkill' value='weaken' />
+			<message><line>
+			<skill>weaken</skill><text>This unit has Suppression. When active, this unit will
+				launch a smoke grenade that lowers an enemy's attack.
+			</text></line></message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+	<guide>
+		<id>109</id>
+		<name>playedPoison</name>
+		<trigger>
+			<flagreq id='playedSkill' value='poison' />
+		</trigger>
+		<step>
+			<step_id>10</step_id>
+			<highlight id='cardWithSkill' value='poison' />
+			<message><line>
+			<skill>poison</skill><text>This unit has Incendiary. Enemy units damaged by this attack will take damage the following turn.
+			</text></line></message>
+			<confirm>1</confirm>
+		</step>
+	</guide>
+</root>

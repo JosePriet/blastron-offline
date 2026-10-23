@@ -1,0 +1,46 @@
+name: ga-install-test
+# Global Assault offline: install and launch the release APK on Android 11 (API 30, the newest image that runs 32-bit apps on CI; Android 14+ also refuses apps
+# targeting below SDK 23, which the manifest now avoids). Results go to ga-offline/tests/results-install/ on the same branch.
+on:
+  push:
+    paths: ['ga-offline/tests/apk/release*.apk', 'ga-offline/tests/install.sh']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [24, 28, 30]
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Emulator run
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: ${{ matrix.api }}
+          arch: x86
+          target: google_apis
+          profile: pixel_6
+          cores: 4
+          ram-size: 4096M
+          disk-size: 8000M
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -no-snapshot
+          disable-animations: true
+          emulator-boot-timeout: 900
+          script: bash ga-offline/tests/install.sh out
+      - name: Commit results to ga-offline/tests/results-install
+        if: always()
+        run: |
+          mkdir -p out; echo "run ${{ github.run_number }} sha ${{ github.sha }} $(date -u)" > out/RUN.txt
+          R=ga-offline/tests/results-install/api${{ matrix.api }}; rm -rf $R && mkdir -p $(dirname $R) && mv out $R
+          git config user.name "emulator-bot"; git config user.email "emulator-bot@users.noreply.github.com"
+          RES=$R; MSG="ga install test results run ${{ github.run_number }}"  # committed onto the branch tip: only this folder comes from this run
+          for i in 1 2 3; do git fetch -q origin "${GITHUB_REF_NAME}" && git reset -q --soft FETCH_HEAD && git reset -q && git add -A "$RES" && git commit -qm "$MSG" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 5; done
