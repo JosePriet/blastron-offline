@@ -54,4 +54,4 @@ jobs:
           rm -rf ga-offline/tests/results && mkdir -p ga-offline/tests && mv out ga-offline/tests/results
           git config user.name "emulator-bot"; git config user.email "emulator-bot@users.noreply.github.com"
           git add -A ga-offline/tests/results && git commit -qm "ga emulator results run ${{ github.run_number }}"
-          for i in 1 2 3; do git pull -q --rebase origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 5; done
+          for i in 1 2 3; do git pull -q --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 5; done

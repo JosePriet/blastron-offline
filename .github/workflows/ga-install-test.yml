@@ -43,4 +43,4 @@ jobs:
           R=ga-offline/tests/results-install/api${{ matrix.api }}; rm -rf $R && mkdir -p $(dirname $R) && mv out $R
           git config user.name "emulator-bot"; git config user.email "emulator-bot@users.noreply.github.com"
           git add -A ga-offline/tests/results-install && git commit -qm "ga install test results run ${{ github.run_number }}"
-          for i in 1 2 3; do git pull -q --rebase origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 5; done
+          for i in 1 2 3; do git pull -q --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 5; done
