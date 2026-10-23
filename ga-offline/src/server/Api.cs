@@ -306,7 +306,10 @@ namespace GAOffline
                 int enemy = 0;
                 foreach (List<object> card in Json.L(m, "deck")) enemy += Units.Power(Convert.ToInt32(card[0]), Convert.ToInt32(card[1]), 0);
                 e["power_level"] = enemy;
-                e["difficulty_level"] = enemy + squad > 0 ? (double)enemy / (enemy + squad) : 0.5;
+                // a string in the current culture: the client parses it with float.TryParse in that culture (a JSON
+                // number such as 0.31 reads as 31 where "." groups thousands), and this server runs in the same process
+                double rating = enemy + squad > 0 ? (double)enemy / (enemy + squad) : 0.5;
+                e["difficulty_level"] = rating.ToString("0.###", System.Globalization.CultureInfo.CurrentCulture);
                 list.Add(e);
             }
             return list;
