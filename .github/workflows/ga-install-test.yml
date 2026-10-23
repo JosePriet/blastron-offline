@@ -3,7 +3,7 @@ name: ga-install-test
 # targeting below SDK 23, which the manifest now avoids). Results go to ga-offline/tests/results-install/ on the same branch.
 on:
   push:
-    paths: ['ga-offline/tests/apk/release.apk']
+    paths: ['ga-offline/tests/apk/release*.apk', 'ga-offline/tests/install.sh']
   workflow_dispatch:
 permissions:
   contents: write

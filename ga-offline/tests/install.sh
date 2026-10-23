@@ -1,22 +1,37 @@
 #!/bin/bash
-# Install and launch ga-offline/tests/apk/release.apk on the running emulator; everything goes to $1.
+# Install and launch Global Assault builds on the running emulator; everything goes to $1.
+#   A: release.apk (targetSdk 23), installed as a user would (storage permission not granted)
+#   B: release.apk with every runtime permission granted (-g)
+#   C: release-v1.apk (targetSdk 21, the first release), to tell an SDK-target problem from an emulator one
+# A run that stays black gets a native stack dump (debuggerd) and a Java one (SIGQUIT).
 OUT=${1:-out}; mkdir -p $OUT; PKG=com.kongregate.mobile.globalassault.google
 adb shell getprop ro.build.version.sdk > $OUT/sdk.txt
 adb shell getprop ro.product.cpu.abilist > $OUT/abilist.txt
-adb install -r ga-offline/tests/apk/release.apk > $OUT/install.txt 2>&1; echo "exit $?" >> $OUT/install.txt
-adb shell dumpsys package $PKG | grep -E "primaryCpuAbi|targetSdk|versionName" > $OUT/package.txt
-adb logcat -c
-adb shell monkey -p $PKG -c android.intent.category.LAUNCHER 1 > $OUT/launch.txt 2>&1
-for i in 1 2 3 4 5 6; do
-  sleep 30
-  adb shell pidof $PKG >> $OUT/pid.txt; echo "--- $((i*30))s" >> $OUT/pid.txt
-  adb exec-out screencap -p > $OUT/shot_$i.png
-done
-# one tap in the middle to get past any dialog, then a last look
-adb shell input tap 540 1200; sleep 20; adb exec-out screencap -p > $OUT/shot_7.png
-adb shell pidof $PKG >> $OUT/pid.txt
-adb logcat -d > $OUT/logcat.txt
-adb logcat -d | grep -E "GAOffline|Unity|AndroidRuntime|FATAL|DEBUG" | tail -400 > $OUT/game.txt
-adb shell run-as $PKG ls 2>/dev/null > $OUT/files.txt
-adb shell ls /sdcard/Android/data/$PKG/files/ga_offline >> $OUT/files.txt 2>&1
+adb root >/dev/null 2>&1; sleep 5; adb wait-for-device
+run() { # name apk install-flags
+  local N=$1 D=$OUT/$1; mkdir -p $D
+  adb uninstall $PKG >/dev/null 2>&1
+  adb install $3 $2 > $D/install.txt 2>&1; echo "exit $?" >> $D/install.txt
+  adb shell dumpsys package $PKG | grep -E "primaryCpuAbi|targetSdk|versionName|WRITE_EXTERNAL" > $D/package.txt
+  adb logcat -c
+  adb shell monkey -p $PKG -c android.intent.category.LAUNCHER 1 > $D/launch.txt 2>&1
+  for i in 1 2 3 4; do
+    sleep 25
+    adb shell pidof $PKG >> $D/pid.txt; echo "--- $((i*25))s" >> $D/pid.txt
+    adb exec-out screencap -p > $D/shot_$i.png
+  done
+  local P=$(adb shell pidof $PKG | tr -d '\r')
+  if [ -n "$P" ]; then
+    adb shell debuggerd -b $P > $D/native_stacks.txt 2>&1
+    adb shell kill -3 $P; sleep 3
+    adb shell "ls -t /data/anr | head -1 | xargs -I{} cat /data/anr/{}" > $D/java_stacks.txt 2>&1
+  fi
+  adb logcat -d > $D/logcat.txt
+  adb logcat -d | grep -E "GAOffline|Unity|Mono|mono|AndroidRuntime|FATAL|DEBUG|linker|dlopen" | tail -400 > $D/game.txt
+  adb shell ls -lR /data/data/$PKG /sdcard/Android/data/$PKG > $D/files.txt 2>&1
+  adb shell am force-stop $PKG
+}
+run A ga-offline/tests/apk/release.apk ""
+run B ga-offline/tests/apk/release.apk "-g"
+[ -f ga-offline/tests/apk/release-v1.apk ] && run C ga-offline/tests/apk/release-v1.apk ""
 true
