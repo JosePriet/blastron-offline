@@ -77,6 +77,9 @@ namespace GAOffline
                 case "buyStoreItem":
                     r = Store.Buy(s, ArgInt(args, "item_id"));
                     break;
+                case "buyCoins":
+                    r = Store.BuyCredits(s, ArgInt(args, "amount"));
+                    break;
                 case "upgradeUnit":
                     r = Units.Upgrade(s, ArgInt(args, "unit_index"));
                     break;

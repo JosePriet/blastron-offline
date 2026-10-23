@@ -75,6 +75,22 @@ namespace GAOffline
             return r;
         }
 
+        // the client's "Recharge the missing resources?" popup: Credits for Volt Coins at the client's own price
+        // (StoreManager.getResourceCost with its built-in SC_BASE 0.2 and SC_EXP 0.75; the server never overrode them)
+        public static Dictionary<string, object> BuyCredits(Save s, int amount)
+        {
+            if (amount <= 0) return Refuse(s, "Nothing to recharge.");
+            if (amount > Research.MoneyCap(s) - s.Int("money")) return Refuse(s, "You must upgrade your Generator before you can afford that.");
+            int cost = (int)Math.Ceiling((double)0.2f * Math.Pow(amount, 0.75)); // float 0.2 as the client, so whole results round alike
+            if (s.Int("tokens") < cost) return Refuse(s, "Not enough Volt Coins.");
+            s.Set("tokens", s.Int("tokens") - cost);
+            s.Set("money", s.Int("money") + amount);
+            s.Write();
+            var r = Api.Squads(s);
+            r["store_items"] = Items(s);
+            return r;
+        }
+
         // higher drop tiers are offered from a player level on (rewards.json unlock_level)
         static bool Locked(Save s, Dictionary<string, object> d) { return s.Int("level") < Json.I(d, "unlock_level"); }
 
