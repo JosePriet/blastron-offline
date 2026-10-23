@@ -104,6 +104,14 @@ sleep 15; shot B_boot
 for i in $(seq 1 30); do sleep 11; hintok; tap 540 960 B_dialogue; sleep 2; shot B_$i; done
 stopframes; gamelog B
 a shell cat $DATA/save.json > $OUT/B_save.json 2>&1; a shell cat $DATA/log.txt > $OUT/B_trace.txt 2>&1  # log.txt is appended: B continues A
+# run C: the seeded save at player level 2 (the Store's front page unlocks at 2), no autopilot: open the Store
+log "run C: level 2 save, Store"
+a shell am force-stop $PKG; sleep 2; a shell rm -f $DATA/autotest
+python3 -c "import json,sys; d=json.load(open(sys.argv[1])); d['level']=2; json.dump(d,open(sys.argv[2],'w'))" $T/seed_save.json $OUT/C_seed.json
+a push $OUT/C_seed.json $DATA/save.json >/dev/null 2>&1; a shell chown $U:$U $DATA/save.json; a shell chmod 0660 $DATA/save.json
+launch; sleep 40; hintok; shot C_base
+tap 1824 960 C_store; sleep 8; shot C_store_1; sleep 8; shot C_store_2
+gamelog C; a shell cat $DATA/log.txt > $OUT/C_trace.txt 2>&1
 a logcat -d -b crash > $OUT/crash.txt 2>&1
 log "done"
 exit 0
