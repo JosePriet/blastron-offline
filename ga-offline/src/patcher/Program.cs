@@ -8,6 +8,9 @@ using Mono.Cecil.Cil;
 //   Begin(url, form): "var w = LocalServer.BeginForm(this, url, form); if (w != null) return w;" then the original body
 //   Begin(url):       "url = LocalServer.MapUrl(url);" then the original body
 // and calls GAOffline.Trace.Install() at the start of AbstractManagers.Awake.
+// PagedGrid.UpdateElements: "if (_maxPage < 0) _maxPage = 0;" after _maxPage is computed. An empty list on a
+// one-cell grid gives _maxPage -1, page -1 and List[-1]: the offline store has no banner items, so every Store
+// open threw in QuartermasterPopup.onStoreUpdated before DisplayStorefront, leaving front page and crates overlapped.
 class P {
   static int Main(string[] a) {
     var res = new DefaultAssemblyResolver();
@@ -43,8 +46,19 @@ class P {
     il = awake.Body.GetILProcessor();
     il.InsertBefore(awake.Body.Instructions[0], il.Create(OpCodes.Call, install));
 
+    var paged = mod.GetType("PagedGrid");
+    var maxPage = paged.Fields.Single(f => f.Name == "_maxPage");
+    var update = paged.Methods.Single(m => m.Name == "UpdateElements");
+    il = update.Body.GetILProcessor();
+    var store = update.Body.Instructions.First(i => i.OpCode == OpCodes.Stfld && i.Operand == maxPage);
+    var next = store.Next;
+    var fix = new[] {
+        il.Create(OpCodes.Ldarg_0), il.Create(OpCodes.Ldfld, maxPage), il.Create(OpCodes.Ldc_I4_0), il.Create(OpCodes.Bge, next),
+        il.Create(OpCodes.Ldarg_0), il.Create(OpCodes.Ldc_I4_0), il.Create(OpCodes.Stfld, maxPage) };
+    foreach (var i in fix.Reverse()) il.InsertAfter(store, i);
+
     asm.Write(a[2]);
-    Console.WriteLine("patched WWWManager.Begin(url, form), Begin(url) and AbstractManagers.Awake");
+    Console.WriteLine("patched WWWManager.Begin(url, form), Begin(url), AbstractManagers.Awake and PagedGrid.UpdateElements");
     return 0;
   }
 }
