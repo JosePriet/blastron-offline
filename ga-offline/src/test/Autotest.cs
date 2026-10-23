@@ -11,7 +11,8 @@ namespace GAOffline
     public class Autotest : MonoBehaviour
     {
         static readonly int[] ToBuy = { 1, 1, 2, 3, 4, 304 };
-        int wanted = -1, started, bought, step;
+        int wanted = -1, started, bought, step, mapStage;
+        float mapAt;
         bool off;
         float next, onBaseSince = -1, finishedAt = -1;
         Battle seen;
@@ -63,6 +64,17 @@ namespace GAOffline
                 Managers.ScreenMgr.NavigateTo(TScreen.Base, false, string.Empty);
                 return;
             }
+            // the map screen, opened once before the battles: after 12 s it should show the open campaign's marker,
+            // selected, with its info panel (MapController.Start ran to the end when BattleButton.waitForCue is off)
+            if (mapStage == 1 && screen == TScreen.Map && Time.realtimeSinceStartup - mapAt > 12f)
+            {
+                var panel = Object.FindObjectOfType(typeof(MapInfoPanel)) as MapInfoPanel;
+                Debug.Log("[GAOffline] autotest: map markers " + Object.FindObjectsOfType(typeof(BattleButton)).Length
+                          + ", start finished " + !BattleButton.waitForCue + ", info panel " + (panel != null && panel.gameObject.activeInHierarchy));
+                mapStage = 2;
+                Managers.ScreenMgr.NavigateTo(TScreen.Base, false, string.Empty);
+                return;
+            }
             if (screen != TScreen.Base || Battle.Current != null) { onBaseSince = -1; return; }
             if (onBaseSince < 0) onBaseSince = Time.realtimeSinceStartup;
             if (Time.realtimeSinceStartup - onBaseSince < 8f) return;
@@ -111,6 +123,14 @@ namespace GAOffline
                     case 13: Managers.Equipment.equipItem(1, 11); break;
                 }
                 onBaseSince = Time.realtimeSinceStartup;
+                return;
+            }
+            if (mapStage == 0)
+            {
+                Debug.Log("[GAOffline] autotest: opening the map");
+                mapStage = 1;
+                mapAt = Time.realtimeSinceStartup;
+                Managers.ScreenMgr.NavigateTo(TScreen.Map, false, string.Empty);
                 return;
             }
             if (started >= wanted)

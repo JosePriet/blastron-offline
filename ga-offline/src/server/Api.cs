@@ -196,6 +196,10 @@ namespace GAOffline
             r["feature_locks"] = FeatureLocks(s);
             r["locations"] = GameData.Locations;
             r["current_campaigns"] = Campaigns(s);
+            // empty PvP targets and raids: the map screen reads both lists right after placing the mission markers and
+            // stops (null list) before selecting a mission, showing the markers and colouring the regions
+            r["hunting_targets"] = new List<object>();
+            r["raids"] = new List<object>();
             r["client_version"] = 0;
             return r;
         }
