@@ -105,8 +105,7 @@ namespace GAOffline
             if (f != null && Json.I(f, "item_id") > 0) Equipment.Add(s, Json.I(f, "item_id"), Json.I(f, "number", 1));
             var unit = f != null && Json.I(f, "card_id") > 0 ? s.AddUnit(Json.I(f, "card_id"), 1) : null;
             s.Write();
-            var r = Units.Reply(s);
-            r["store_items"] = Store.Items(s);
+            var r = Units.Reply(s); // no "store_items": see Store.Buy
             if (unit != null) r["new_units"] = new List<object> { Units.Decorated(unit) };
             return r;
         }

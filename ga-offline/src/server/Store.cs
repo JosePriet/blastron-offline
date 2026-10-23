@@ -68,8 +68,10 @@ namespace GAOffline
             var unit = s.AddUnit(cardId, 1);
             s.Write();
             string mesh = drop != null ? Json.S(drop, "model") : "eventcrate";
+            // no "store_items" here: refreshing the open Store grid throws in the client (PagedGrid.UpdateElements),
+            // which stops the reply's handling before the new-unit popup and its crate animation open. The grid
+            // reloads the items each time the Store is opened.
             var r = Api.Squads(s);
-            r["store_items"] = Items(s);
             r["new_units"] = new List<object> { Units.Decorated(unit) };
             r["new_units_mesh"] = mesh;
             return r;
@@ -86,9 +88,7 @@ namespace GAOffline
             s.Set("tokens", s.Int("tokens") - cost);
             s.Set("money", s.Int("money") + amount);
             s.Write();
-            var r = Api.Squads(s);
-            r["store_items"] = Items(s);
-            return r;
+            return Api.Squads(s); // no "store_items": see Buy
         }
 
         // higher drop tiers are offered from a player level on (rewards.json unlock_level)
