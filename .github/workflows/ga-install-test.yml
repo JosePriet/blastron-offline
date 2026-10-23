@@ -1,0 +1,45 @@
+name: ga-install-test
+# Global Assault offline: install and launch the release APK on a current Android (API 34), where installs of apps
+# targeting below SDK 23 are refused. Results go to ga-offline/tests/results-install/ on the same branch.
+on:
+  push:
+    paths: ['ga-offline/tests/apk/release.apk']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ga-install-test
+  cancel-in-progress: true
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Emulator run
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          arch: x86_64
+          target: google_apis
+          profile: pixel_6
+          cores: 4
+          ram-size: 4096M
+          disk-size: 8000M
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -no-snapshot
+          disable-animations: true
+          emulator-boot-timeout: 900
+          script: bash ga-offline/tests/install.sh out
+      - name: Commit results to ga-offline/tests/results-install
+        if: always()
+        run: |
+          mkdir -p out; echo "run ${{ github.run_number }} sha ${{ github.sha }} $(date -u)" > out/RUN.txt
+          rm -rf ga-offline/tests/results-install && mv out ga-offline/tests/results-install
+          git config user.name "emulator-bot"; git config user.email "emulator-bot@users.noreply.github.com"
+          git add -A ga-offline/tests/results-install && git commit -qm "ga install test results run ${{ github.run_number }}"
+          for i in 1 2 3; do git pull -q --rebase origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 5; done
