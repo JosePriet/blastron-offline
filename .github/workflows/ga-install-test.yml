@@ -1,6 +1,6 @@
 name: ga-install-test
-# Global Assault offline: install and launch the release APK on a current Android (API 34), where installs of apps
-# targeting below SDK 23 are refused. Results go to ga-offline/tests/results-install/ on the same branch.
+# Global Assault offline: install and launch the release APK on Android 11 (API 30, the newest image that runs 32-bit apps on CI; Android 14+ also refuses apps
+# targeting below SDK 23, which the manifest now avoids). Results go to ga-offline/tests/results-install/ on the same branch.
 on:
   push:
     paths: ['ga-offline/tests/apk/release.apk']
@@ -24,8 +24,8 @@ jobs:
       - name: Emulator run
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 34
-          arch: x86_64
+          api-level: 30
+          arch: x86
           target: google_apis
           profile: pixel_6
           cores: 4
