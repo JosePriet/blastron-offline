@@ -1,0 +1,109 @@
+name: galaxy-x-fetch
+on:
+  push:
+    branches: [claude/project-thread-mntuv9]
+    paths: [.github/workflows/gx-fetch.yml]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Search sources
+        run: |
+          set -x
+          mkdir -p gx/results gx/dl
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
+          for q in 'com.xcogames.GX' 'galaxy-x xcogames' 'xcogames' 'GALAXY-X apk'; do
+            curl -sSG -A "$UA" "https://archive.org/advancedsearch.php" --data-urlencode "q=$q" \
+              --data-urlencode "fl[]=identifier" --data-urlencode "fl[]=title" --data-urlencode "rows=100" \
+              --data-urlencode "output=json" >> gx/results/archive-search.json || true
+            echo >> gx/results/archive-search.json
+          done
+          # full-text search of file listings
+          curl -sSG -A "$UA" "https://archive.org/services/search/v1/scrape" --data-urlencode "q=com.xcogames.GX" --data-urlencode "fields=identifier,title" > gx/results/archive-scrape.json || true
+          # Wayback CDX for the Play listing and any apk urls
+          curl -sS -A "$UA" "https://web.archive.org/cdx/search/cdx?url=play.google.com/store/apps/details?id=com.xcogames.GX*&output=json&limit=200" > gx/results/wb-play.json || true
+          for pat in 'apkcombo.com/*xcogames*' 'apkpure.com/*xcogames*' 'apkmirror.com/*xcogames*' 'uptodown.com/*galaxy-x*' '*com.xcogames.GX*.apk'; do
+            curl -sS -A "$UA" "https://web.archive.org/cdx/search/cdx?url=$pat&output=json&limit=200" >> gx/results/wb-mirrors.json || true; echo >> gx/results/wb-mirrors.json
+          done
+          curl -sSL -A "$UA" -o gx/results/taptap.html -w "taptap %{http_code} %{url_effective}\n" "https://www.taptap.io/app/33696054" | tee gx/results/http.txt || true
+          curl -sSL -A "$UA" -o gx/results/taptap-api.json -w "taptapapi %{http_code}\n" "https://www.taptap.io/webapiv2/app/v4/detail?id=33696054&X-UA=V%3D1%26PN%3DWebAppIntl2%26LANG%3Den_US%26VN_CODE%3D115%26VN%3D0.1.0%26LOC%3DCN%26PLT%3DPC%26DS%3DAndroid%26UID%3D1%26OS%3DLinux%26OSV%3D1" | tee -a gx/results/http.txt || true
+          curl -sSL -A "$UA" -o gx/results/apkpure.html -w "apkpure %{http_code} %{url_effective}\n" "https://apkpure.com/galaxy-x/com.xcogames.GX" | tee -a gx/results/http.txt || true
+          curl -sSL -A "$UA" -o gx/results/apkpure-versions.html -w "apkpurev %{http_code}\n" "https://apkpure.com/galaxy-x/com.xcogames.GX/versions" | tee -a gx/results/http.txt || true
+      - name: Download candidates
+        run: |
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
+          python3 - <<'PY'
+          import json,re,subprocess,os,urllib.parse
+          ids=set()
+          for line in open('gx/results/archive-search.json'):
+              line=line.strip()
+              if not line: continue
+              try:
+                  for d in json.loads(line)['response']['docs']: ids.add(d['identifier'])
+              except Exception: pass
+          try:
+              for d in json.load(open('gx/results/archive-scrape.json')).get('items',[]): ids.add(d['identifier'])
+          except Exception: pass
+          out=open('gx/results/archive-items.txt','w')
+          n=0
+          for i in sorted(ids):
+              try:
+                  meta=json.loads(subprocess.run(['curl','-sS',f'https://archive.org/metadata/{i}'],capture_output=True,text=True).stdout)
+              except Exception: continue
+              for f in meta.get('files',[]):
+                  nm=f.get('name','')
+                  out.write(f"{i}\t{nm}\t{f.get('size','')}\t{f.get('md5','')}\n")
+                  if re.search(r'(xcogames|galaxy[-_ ]?x)',nm,re.I) and re.search(r'\.(apk|xapk|apks|obb|zip)$',nm,re.I) and n<6:
+                      n+=1
+                      dst=f'gx/dl/archive_{n}_'+re.sub(r'[^A-Za-z0-9._-]','_',os.path.basename(nm))
+                      subprocess.run(['curl','-sSL','-o',dst,f'https://archive.org/download/{i}/'+urllib.parse.quote(nm)])
+          PY
+          # Wayback-captured apk files
+          python3 - <<'PY'
+          import json,subprocess,re
+          n=0
+          for line in open('gx/results/wb-mirrors.json'):
+              try: rows=json.loads(line)
+              except Exception: continue
+              for r in rows[1:]:
+                  url,ts,mime,status=r[2],r[1],r[3],r[4]
+                  if status=='200' and ('android.package' in mime or url.lower().endswith(('.apk','.xapk'))) and n<4:
+                      n+=1
+                      subprocess.run(['curl','-sSL','-o',f'gx/dl/wayback_{n}.apk',f'https://web.archive.org/web/{ts}id_/{url}'])
+          PY
+          ls -la gx/dl | tee gx/results/downloads.txt
+      - name: Analyse
+        run: |
+          BT=$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -1)
+          cd gx/dl
+          for f in *; do
+            [ -f "$f" ] || continue
+            echo "=== $f" >> ../results/analysis.txt
+            file "$f" >> ../results/analysis.txt
+            sha256sum "$f" >> ../results/analysis.txt
+            case "$f" in *.xapk|*.zip|*.apks) mkdir -p "x_$f"; unzip -oq "$f" -d "x_$f" || true; unzip -l "$f" >> ../results/analysis.txt || true;; esac
+          done
+          for a in $(find . -name '*.apk'); do
+            echo "=== APK $a" >> ../results/analysis.txt
+            $BT/aapt dump badging "$a" 2>&1 | head -30 >> ../results/analysis.txt
+            $BT/apksigner verify --print-certs -v "$a" 2>&1 | head -30 >> ../results/analysis.txt
+            unzip -l "$a" | grep -E 'lib/|Managed/|\.so$|bin/Data/[^/]+$|classes|il2cpp|global-metadata' | head -80 >> ../results/analysis.txt
+            mkdir -p "u_$(basename $a)"; unzip -oq "$a" -d "u_$(basename $a)" || true
+            echo "--- hosts/SDKs" >> ../results/analysis.txt
+            grep -rhoaE 'https?://[A-Za-z0-9._/-]{4,80}' "u_$(basename $a)" | sort | uniq -c | sort -rn | head -80 >> ../results/analysis.txt
+            grep -rhoaE '(com/google/android/gms/games|com/google/android/gms/ads|com/chartboost|com/unity3d/ads|com/facebook|com/flurry|com/tapjoy|com/applovin|com/vungle|com/adcolony|com/playhaven|com/revmob|com/heyzap|com/everyplay|com/prime31|com/android/vending/licensing|com/google/android/vending)' "u_$(basename $a)" | sort | uniq -c >> ../results/analysis.txt
+            strings -a $(find "u_$(basename $a)" -name 'libunity.so' | head -1) 2>/dev/null | grep -m3 -E '^[0-9]\.[0-9]+\.[0-9]+[fp][0-9]' >> ../results/analysis.txt || true
+          done
+          cd ..; mkdir -p apk
+          for a in $(find dl -maxdepth 1 -type f \( -name '*.apk' -o -name '*.xapk' -o -name '*.zip' -o -name '*.obb' \)); do
+            split -b 90m -d "$a" "apk/$(basename $a).part" ; done
+          rm -rf dl
+      - name: Commit results
+        run: |
+          git config user.name gx-bot; git config user.email gx-bot@users.noreply.github.com
+          git add gx; git commit -qm "galaxy-x fetch results" || true
+          git push origin HEAD:claude/project-thread-mntuv9
