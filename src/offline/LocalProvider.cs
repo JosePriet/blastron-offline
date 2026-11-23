@@ -10,7 +10,16 @@ namespace EB.Sparx
 	{
 		private EB.IAP.Config _config;
 
-		private int _nextOrder = 1;
+		internal static bool IsReceipt(string value)
+		{
+			if (value == null || !value.StartsWith("offline.") || value.Length != 40) return false;
+			for (int i = 8; i < value.Length; i++)
+			{
+				char c = value[i];
+				if (!(c >= '0' && c <= '9') && !(c >= 'a' && c <= 'f')) return false;
+			}
+			return true;
+		}
 
 		public string Name => "offline";
 
@@ -41,9 +50,9 @@ namespace EB.Sparx
 		public void PurchaseItem(Item item)
 		{
 			Transaction transaction = new Transaction();
-			transaction.transactionId = "offline." + _nextOrder++;
+			transaction.transactionId = "offline." + System.Guid.NewGuid().ToString("N");
 			transaction.productId = item.productId;
-			transaction.payload = item.developerPayload;
+			transaction.payload = transaction.transactionId;
 			transaction.signature = string.Empty;
 			Coroutines.NextFrame(delegate
 			{

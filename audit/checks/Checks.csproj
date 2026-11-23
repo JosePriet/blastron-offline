@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <NoWarn>$(NoWarn);CS0436</NoWarn>
+    <OfflineSource Condition="'$(OfflineSource)' == ''">../../src/offline</OfflineSource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(OfflineSource)/*.cs" />
+    <Reference Include="Assembly-CSharp-firstpass" HintPath="$(GameManaged)/Assembly-CSharp-firstpass.dll" />
+    <Reference Include="UnityEngine" HintPath="$(GameManaged)/UnityEngine.dll" />
+  </ItemGroup>
+</Project>
