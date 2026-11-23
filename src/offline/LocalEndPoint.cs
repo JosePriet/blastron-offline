@@ -20,6 +20,8 @@ namespace EB.Sparx
 		// Shared: the master-server code also creates endpoints through the factory.
 		private static Hashtable _state;
 
+		private static bool _primaryValid;
+
 		private Hashtable _data = new Hashtable();
 
 		private int _nextId = 1;
@@ -32,7 +34,6 @@ namespace EB.Sparx
 			// The push socket and master-server ping have no server to reach.
 			Hub.Instance.Config.UsePush = false;
 			Hub.Instance.Config.GameManagerConfig.PingEnabled = false;
-			Load();
 		}
 
 		public override void AddData(string key, string value)
@@ -78,7 +79,20 @@ namespace EB.Sparx
 			{
 				Request request = _queue[0];
 				_queue.RemoveAt(0);
-				Response response = Handle(request);
+				Response response;
+				try
+				{
+					Load();
+					response = Handle(request);
+				}
+				catch (IOException)
+				{
+					response = StorageError(request);
+				}
+				catch (UnauthorizedAccessException)
+				{
+					response = StorageError(request);
+				}
 				_doneId = request.id;
 				Action<Response> callback = request.userData as Action<Response>;
 				if (callback != null)
@@ -99,21 +113,20 @@ namespace EB.Sparx
 			{
 				return;
 			}
-			try
+			string primary = StatePath;
+			string backup = primary + ".bak";
+			FinishPendingSave(primary);
+			_state = ReadState(primary);
+			_primaryValid = _state != null;
+			if (!_primaryValid)
 			{
-				if (File.Exists(StatePath))
+				_state = ReadState(backup);
+				if (_state == null && (File.Exists(primary) || File.Exists(backup)))
 				{
-					_state = JSON.Parse(Encoding.GetString(File.ReadAllBytes(StatePath))) as Hashtable;
+					throw new IOException("Unreadable offline account");
 				}
 			}
-			catch (Exception ex)
-			{
-				UnityEngine.Debug.LogError("LocalEndPoint: failed to read state " + ex);
-			}
-			if (_state == null)
-			{
-				_state = new Hashtable();
-			}
+			if (_state == null) _state = new Hashtable();
 			if (Obj("wallet") == null)
 			{
 				_state["wallet"] = new Hashtable { { "balance", 0 } };
@@ -129,19 +142,74 @@ namespace EB.Sparx
 			}
 		}
 
-		private void Save()
+		private static Hashtable ReadState(string path)
 		{
+			if (!File.Exists(path)) return null;
+			string json = Encoding.GetString(File.ReadAllBytes(path));
 			try
 			{
-				byte[] bytes = Encoding.GetBytes(JSON.Stringify(_state));
-				using (FileStream stream = new FileStream(StatePath, FileMode.Create, FileAccess.Write))
-				{
-					stream.Write(bytes, 0, bytes.Length);
-				}
+				return JSON.Parse(json) as Hashtable;
 			}
-			catch (Exception ex)
+			catch (FormatException)
 			{
-				UnityEngine.Debug.LogError("LocalEndPoint: failed to write state " + ex);
+				return null;
+			}
+			catch (IndexOutOfRangeException)
+			{
+				return null;
+			}
+			catch (ArgumentOutOfRangeException)
+			{
+				return null;
+			}
+			catch (OverflowException)
+			{
+				return null;
+			}
+		}
+
+		private Response StorageError(Request request)
+		{
+			// Another endpoint shares this account. Reload its last commit on the next request.
+			_state = null;
+			UnityEngine.Debug.LogError("LocalEndPoint: offline account storage unavailable");
+			return Fail(request, "ID_SPARX_ERROR_UNKNOWN");
+		}
+
+		// The stripped Unity runtime lacks File.Move. A zero-length marker commits a
+		// complete staging file. Interrupted copies can resume before the next read.
+		private static void FinishPendingSave(string path)
+		{
+			string marker = path + ".commit";
+			if (!File.Exists(marker)) return;
+			byte[] committed = File.ReadAllBytes(path + ".tmp");
+			File.WriteAllBytes(path, committed);
+			File.Delete(marker);
+		}
+
+		private void Save()
+		{
+			string path = StatePath;
+			FinishPendingSave(path);
+			string json = JSON.Stringify(_state);
+			if (json == null) throw new IOException("Could not serialize offline account");
+			File.WriteAllBytes(path + ".tmp", Encoding.GetBytes(json));
+			if (_primaryValid) File.WriteAllBytes(path + ".bak", File.ReadAllBytes(path));
+			using (File.Create(path + ".commit")) {}
+			_primaryValid = true;
+			// The complete staging file remains authoritative if copying to the legacy path
+			// fails. Leave the marker in place for a later save or process restart.
+			try
+			{
+				FinishPendingSave(path);
+			}
+			catch (IOException)
+			{
+				UnityEngine.Debug.LogError("LocalEndPoint: account copy pending");
+			}
+			catch (UnauthorizedAccessException)
+			{
+				UnityEngine.Debug.LogError("LocalEndPoint: account copy pending");
 			}
 		}
 
@@ -244,7 +312,6 @@ namespace EB.Sparx
 			Time.Now = (int)(DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds;
 			string path = request.uri.Path;
 			Hashtable data = Copy(request.data) ?? new Hashtable();
-			UnityEngine.Debug.Log("LocalEndPoint: " + path + " " + JSON.Stringify(data));
 			switch (path)
 			{
 			case "/kabam/register":
@@ -339,7 +406,22 @@ namespace EB.Sparx
 			case "/store/verify-payout":
 			{
 				// Gear packs are free offline: credit the pack's gears.
-				Balance += OfflineCatalog.PayoutValue(Dot.Integer("data.payoutid", data, 0));
+				int payout = Dot.Integer("data.payoutid", data, 0);
+				int credit = OfflineCatalog.PayoutValue(payout);
+				string receipt = Dot.String("data.response-data", data, string.Empty);
+				if (credit <= 0 || !LocalProvider.IsReceipt(receipt))
+				{
+					return Fail(request, "ID_SPARX_ERROR_UNKNOWN");
+				}
+				Hashtable receipts = Obj("receipts");
+				if (receipts == null) _state["receipts"] = receipts = new Hashtable();
+				if (receipts.ContainsKey(receipt))
+				{
+					return Convert.ToInt32(receipts[receipt]) == payout
+						? Ok(request, Obj("wallet")) : Fail(request, "ID_SPARX_ERROR_UNKNOWN");
+				}
+				receipts[receipt] = payout;
+				Balance += credit;
 				Save();
 				return Ok(request, Obj("wallet"));
 			}
@@ -365,7 +447,10 @@ namespace EB.Sparx
 				return Ok(request, count);
 			}
 			case "/gacha/getSet":
-				return Ok(request, OfflineCatalog.GachaSet(Dot.String("group", data, string.Empty)));
+				{
+				Hashtable set = OfflineCatalog.GachaSet(Dot.String("group", data, string.Empty));
+				return set == null ? Fail(request, "ID_SPARX_ERROR_UNKNOWN") : Ok(request, set);
+			}
 			case "/gacha/getTimestamp":
 				return Ok(request, new Hashtable { { "version", OfflineCatalog.GachaVersion } });
 			case "/gacha/pick":
@@ -373,6 +458,11 @@ namespace EB.Sparx
 			}
 			if (path.StartsWith("/ds/"))
 			{
+				string[] route = path.Split('/');
+				if (route[2] != kUid || route.Length > 4 || (request.isPost && route.Length != 3))
+				{
+					return Fail(request, "ID_SPARX_ERROR_UNKNOWN");
+				}
 				Hashtable ds = Obj("ds");
 				if (request.isPost)
 				{
@@ -386,6 +476,12 @@ namespace EB.Sparx
 					}
 					Save();
 					return Ok(request, new Hashtable());
+				}
+				if (route.Length == 4 && route[3].Length > 0)
+				{
+					Hashtable fragment = new Hashtable();
+					if (ds.ContainsKey(route[3])) fragment[route[3]] = ds[route[3]];
+					return Ok(request, fragment);
 				}
 				return Ok(request, ds);
 			}

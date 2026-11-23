@@ -107,8 +107,13 @@ namespace EB.Sparx
 		// Rivets per gear, from items the game prices in both currencies.
 		public static float RivetsPerGear()
 		{
+			return RivetsPerGear(Items());
+		}
+
+		private static float RivetsPerGear(List<InventoryDB.MetaData> items)
+		{
 			List<float> ratios = new List<float>();
-			foreach (InventoryDB.MetaData item in Items())
+			foreach (InventoryDB.MetaData item in items)
 			{
 				if (item.softCost > 0 && item.hardCost > 0)
 				{
@@ -170,14 +175,15 @@ namespace EB.Sparx
 			return (count != 0) ? (sum / count) : 0f;
 		}
 
-		private static void Build()
+		private static bool Build()
 		{
 			if (_groups != null)
 			{
-				return;
+				return true;
 			}
-			float rivetsPerGear = RivetsPerGear();
 			List<InventoryDB.MetaData> items = Items();
+			if (items.Count == 0) return false;
+			float rivetsPerGear = RivetsPerGear(items);
 			items.Sort((InventoryDB.MetaData a, InventoryDB.MetaData b) => a.levelRequired.CompareTo(b.levelRequired));
 			List<CharacterDB.MetaData> parts = Parts();
 			List<InventoryDB.MetaData> bronzeItems = items.FindAll((InventoryDB.MetaData i) => i.levelRequired <= kBronzeMaxItemLevel);
@@ -240,6 +246,7 @@ namespace EB.Sparx
 			_groups = new Dictionary<string, List<Box>>();
 			_groups["base"] = boxes;
 			_groups["tutorial"] = new List<Box> { tutorial };
+			return true;
 		}
 
 		private static Hashtable PrizeTable(Prize prize, int index)
@@ -254,7 +261,7 @@ namespace EB.Sparx
 
 		public static Hashtable GachaSet(string group)
 		{
-			Build();
+			if (!Build()) return null;
 			List<Box> boxes;
 			if (!_groups.TryGetValue(group, out boxes))
 			{
@@ -300,12 +307,12 @@ namespace EB.Sparx
 		// Picks a prize uniformly from the box. Returns null for an unknown box.
 		public static Hashtable Pick(string group, string boxName, out string token, out int softCost, out int hardCost, out string itemKey, out int itemCount)
 		{
-			Build();
 			token = null;
 			softCost = 0;
 			hardCost = 0;
 			itemKey = null;
 			itemCount = 0;
+			if (!Build()) return null;
 			List<Box> boxes;
 			if (!_groups.TryGetValue(group, out boxes))
 			{
@@ -377,22 +384,22 @@ namespace EB.Sparx
 
 		private static ArrayList SoftOffers()
 		{
-			if (_softOffers == null)
+			if (_softOffers != null) return _softOffers;
+			List<InventoryDB.MetaData> items = Items();
+			float rivetsPerGear = RivetsPerGear(items);
+			ArrayList offers = new ArrayList();
+			for (int i = 0; i < kSoftPackCosts.Length; i++)
 			{
-				float rivetsPerGear = RivetsPerGear();
-				_softOffers = new ArrayList();
-				for (int i = 0; i < kSoftPackCosts.Length; i++)
+				offers.Add(new Hashtable
 				{
-					_softOffers.Add(new Hashtable
-					{
-						{ "productId", "offline_rivets_" + (i + 1) },
-						{ "value", Round(kSoftPackCosts[i] * rivetsPerGear * kSoftPackBonus[i], 50) },
-						{ "cost", kSoftPackCosts[i] },
-						{ "info", new Hashtable { { "art", i + 1 } } }
-					});
-				}
+					{ "productId", "offline_rivets_" + (i + 1) },
+					{ "value", Round(kSoftPackCosts[i] * rivetsPerGear * kSoftPackBonus[i], 50) },
+					{ "cost", kSoftPackCosts[i] },
+					{ "info", new Hashtable { { "art", i + 1 } } }
+				});
 			}
-			return _softOffers;
+			if (items.Count > 0) _softOffers = offers;
+			return offers;
 		}
 	}
 }
